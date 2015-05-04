@@ -9,7 +9,7 @@ namespace ghostSCSIM
     static class Program
     {
         /// <summary>
-        /// Der Haupteinstiegspunkt für die Anwendung. Test 270415
+        /// Der Haupteinstiegspunkt für die Anwendung. Test 270415 Test
         /// </summary>
         [STAThread]
         static void Main()
