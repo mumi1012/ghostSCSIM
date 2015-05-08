@@ -62,7 +62,7 @@ namespace ghostSCSIM.Domain
 		this.produktionsauftrag_naechste_periode = produktionsauftrag_naechste_periode;
 	}
 
-	public override String toString() {
+	public override string ToString() {
 		return "Teil_dispohelp [reihe=" + reihe + ", nummer=" + nummer
 				+ ", geplante_lagermenge=" + geplante_lagermenge
 				+ ", lagerbestand_ende_vorperiode="
