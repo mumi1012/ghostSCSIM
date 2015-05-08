@@ -160,4 +160,7 @@
   <data name="stockvalue.HeaderText" xml:space="preserve">
     <value>Stockvalue</value>
   </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Load XML 2</value>
+  </data>
 </root>

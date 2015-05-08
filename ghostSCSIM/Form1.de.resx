@@ -127,6 +127,9 @@
   <data name="button1.Text" xml:space="preserve">
     <value>XML laden</value>
   </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>XML laden 2</value>
+  </data>
   <data name="wsLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 20</value>
   </data>

@@ -43,6 +43,19 @@ namespace ghostSCSIM
             
         }
 
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var fileDialog = new OpenFileDialog { };
+            if (fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                XmlIO xmlInput = new XmlIO(fileDialog.FileName);
+
+                xmlData = (DataContainer)xmlInput.xml;
+
+            }
+        }
+
         private void dEToolStripMenuItem_Click(object sender, EventArgs e)
         {
            
