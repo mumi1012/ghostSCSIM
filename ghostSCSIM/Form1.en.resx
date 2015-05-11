@@ -127,10 +127,40 @@
   <data name="button1.Text" xml:space="preserve">
     <value>Load XML</value>
   </data>
+  <data name="articleID.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
   <data name="spracheToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 29</value>
   </data>
   <data name="spracheToolStripMenuItem.Text" xml:space="preserve">
     <value>Language</value>
+  </data>
+  <data name="dEToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 30</value>
+  </data>
+  <data name="eNToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 30</value>
+  </data>
+  <data name="amount.HeaderText" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="id.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="pct.HeaderText" xml:space="preserve">
+    <value>in Percent</value>
+  </data>
+  <data name="price.HeaderText" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="startamount.HeaderText" xml:space="preserve">
+    <value>Startamount</value>
+  </data>
+  <data name="stockvalue.HeaderText" xml:space="preserve">
+    <value>Stockvalue</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Load XML 2</value>
   </data>
 </root>

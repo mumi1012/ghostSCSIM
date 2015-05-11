@@ -119,10 +119,14 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1146, 55</value>
+    <value>743, 98</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 33</value>
+    <value>50, 21</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
@@ -144,10 +148,13 @@
     <value>3</value>
   </data>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 73</value>
+    <value>18, 47</value>
+  </data>
+  <data name="dataGridView1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>908, 340</value>
+    <value>605, 221</value>
   </data>
   <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -168,10 +175,13 @@
     <value>True</value>
   </data>
   <data name="dataGridLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>803, 50</value>
+    <value>535, 32</value>
+  </data>
+  <data name="dataGridLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="dataGridLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 20</value>
+    <value>77, 13</value>
   </data>
   <data name="dataGridLabel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -198,49 +208,49 @@
     <value>17, 17</value>
   </metadata>
   <data name="dEToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 30</value>
+    <value>89, 22</value>
   </data>
   <data name="dEToolStripMenuItem.Text" xml:space="preserve">
     <value>DE</value>
   </data>
   <data name="eNToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 30</value>
+    <value>89, 22</value>
   </data>
   <data name="eNToolStripMenuItem.Text" xml:space="preserve">
     <value>EN</value>
   </data>
   <data name="spracheToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 29</value>
+    <value>61, 22</value>
   </data>
   <data name="spracheToolStripMenuItem.Text" xml:space="preserve">
     <value>Sprache</value>
   </data>
   <data name="warehouseStockToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 30</value>
+    <value>240, 22</value>
   </data>
   <data name="warehouseStockToolStripMenuItem.Text" xml:space="preserve">
     <value>Warehouse Stock</value>
   </data>
   <data name="waitingListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 30</value>
+    <value>240, 22</value>
   </data>
   <data name="waitingListToolStripMenuItem.Text" xml:space="preserve">
     <value>Waiting List Workstations</value>
   </data>
   <data name="ordersInWorkToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 30</value>
+    <value>240, 22</value>
   </data>
   <data name="ordersInWorkToolStripMenuItem.Text" xml:space="preserve">
     <value>Orders in work</value>
   </data>
   <data name="futureInwardStockMovementToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 30</value>
+    <value>240, 22</value>
   </data>
   <data name="futureInwardStockMovementToolStripMenuItem.Text" xml:space="preserve">
     <value>Future inward Stock Movement</value>
   </data>
   <data name="selectDataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 29</value>
+    <value>77, 22</value>
   </data>
   <data name="selectDataToolStripMenuItem.Text" xml:space="preserve">
     <value>Select Data</value>
@@ -248,8 +258,11 @@
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 1, 0, 1</value>
+  </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1313, 33</value>
+    <value>875, 24</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -270,16 +283,16 @@
     <value>4</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1034, 139</value>
+    <value>18, 294</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 32</value>
+    <value>75, 23</value>
   </data>
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="button2.Text" xml:space="preserve">
-    <value>showTableLagerTest</value>
+    <value>button2</value>
   </data>
   <data name="&gt;&gt;button2.Name" xml:space="preserve">
     <value>button2</value>
@@ -297,10 +310,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 20</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1313, 592</value>
+    <value>875, 385</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Form1</value>
