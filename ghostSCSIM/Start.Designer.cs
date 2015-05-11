@@ -39,7 +39,6 @@
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPrognose = new System.Windows.Forms.TabPage();
-            this.tabProdplan = new System.Windows.Forms.TabPage();
             this.herren_prog_p4 = new System.Windows.Forms.NumericUpDown();
             this.herren_prog_p3 = new System.Windows.Forms.NumericUpDown();
             this.herren_prog_p2 = new System.Windows.Forms.NumericUpDown();
@@ -59,18 +58,19 @@
             this.label_prognose_n1 = new System.Windows.Forms.Label();
             this.label_prognose_n = new System.Windows.Forms.Label();
             this.kinder_prog_p1 = new System.Windows.Forms.NumericUpDown();
-            this.tabKapa = new System.Windows.Forms.TabPage();
-            this.tabBestellung = new System.Windows.Forms.TabPage();
-            this.tabDirektV = new System.Windows.Forms.TabPage();
+            this.tabProdplan = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabKinderf = new System.Windows.Forms.TabPage();
             this.tabDamenf = new System.Windows.Forms.TabPage();
             this.tabHerrenf = new System.Windows.Forms.TabPage();
             this.tabPUebersicht = new System.Windows.Forms.TabPage();
+            this.tabKapa = new System.Windows.Forms.TabPage();
+            this.tabBestellung = new System.Windows.Forms.TabPage();
+            this.tabDirektV = new System.Windows.Forms.TabPage();
+            this.kf_label_p2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPrognose.SuspendLayout();
-            this.tabProdplan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.herren_prog_p4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.herren_prog_p3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.herren_prog_p2)).BeginInit();
@@ -83,7 +83,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.herren_prog_p1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.damen_prog_p1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kinder_prog_p1)).BeginInit();
+            this.tabProdplan.SuspendLayout();
             this.tabControl2.SuspendLayout();
+            this.tabKinderf.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -124,6 +126,7 @@
             resources.ApplyResources(this.xmlInputButton, "xmlInputButton");
             this.xmlInputButton.Name = "xmlInputButton";
             this.xmlInputButton.UseVisualStyleBackColor = true;
+            this.xmlInputButton.Click += new System.EventHandler(this.xmlInputButton_Click);
             // 
             // notifyIcon1
             // 
@@ -167,13 +170,6 @@
             resources.ApplyResources(this.tabPrognose, "tabPrognose");
             this.tabPrognose.Name = "tabPrognose";
             this.tabPrognose.UseVisualStyleBackColor = true;
-            // 
-            // tabProdplan
-            // 
-            this.tabProdplan.Controls.Add(this.tabControl2);
-            resources.ApplyResources(this.tabProdplan, "tabProdplan");
-            this.tabProdplan.Name = "tabProdplan";
-            this.tabProdplan.UseVisualStyleBackColor = true;
             // 
             // herren_prog_p4
             // 
@@ -450,23 +446,12 @@
             0,
             0});
             // 
-            // tabKapa
+            // tabProdplan
             // 
-            resources.ApplyResources(this.tabKapa, "tabKapa");
-            this.tabKapa.Name = "tabKapa";
-            this.tabKapa.UseVisualStyleBackColor = true;
-            // 
-            // tabBestellung
-            // 
-            resources.ApplyResources(this.tabBestellung, "tabBestellung");
-            this.tabBestellung.Name = "tabBestellung";
-            this.tabBestellung.UseVisualStyleBackColor = true;
-            // 
-            // tabDirektV
-            // 
-            resources.ApplyResources(this.tabDirektV, "tabDirektV");
-            this.tabDirektV.Name = "tabDirektV";
-            this.tabDirektV.UseVisualStyleBackColor = true;
+            this.tabProdplan.Controls.Add(this.tabControl2);
+            resources.ApplyResources(this.tabProdplan, "tabProdplan");
+            this.tabProdplan.Name = "tabProdplan";
+            this.tabProdplan.UseVisualStyleBackColor = true;
             // 
             // tabControl2
             // 
@@ -481,6 +466,7 @@
             // 
             // tabKinderf
             // 
+            this.tabKinderf.Controls.Add(this.kf_label_p2);
             resources.ApplyResources(this.tabKinderf, "tabKinderf");
             this.tabKinderf.Name = "tabKinderf";
             this.tabKinderf.UseVisualStyleBackColor = true;
@@ -503,6 +489,29 @@
             this.tabPUebersicht.Name = "tabPUebersicht";
             this.tabPUebersicht.UseVisualStyleBackColor = true;
             // 
+            // tabKapa
+            // 
+            resources.ApplyResources(this.tabKapa, "tabKapa");
+            this.tabKapa.Name = "tabKapa";
+            this.tabKapa.UseVisualStyleBackColor = true;
+            // 
+            // tabBestellung
+            // 
+            resources.ApplyResources(this.tabBestellung, "tabBestellung");
+            this.tabBestellung.Name = "tabBestellung";
+            this.tabBestellung.UseVisualStyleBackColor = true;
+            // 
+            // tabDirektV
+            // 
+            resources.ApplyResources(this.tabDirektV, "tabDirektV");
+            this.tabDirektV.Name = "tabDirektV";
+            this.tabDirektV.UseVisualStyleBackColor = true;
+            // 
+            // kf_label_p2
+            // 
+            resources.ApplyResources(this.kf_label_p2, "kf_label_p2");
+            this.kf_label_p2.Name = "kf_label_p2";
+            // 
             // Start
             // 
             resources.ApplyResources(this, "$this");
@@ -516,7 +525,6 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPrognose.ResumeLayout(false);
             this.tabPrognose.PerformLayout();
-            this.tabProdplan.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.herren_prog_p4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.herren_prog_p3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.herren_prog_p2)).EndInit();
@@ -529,7 +537,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.herren_prog_p1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.damen_prog_p1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kinder_prog_p1)).EndInit();
+            this.tabProdplan.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
+            this.tabKinderf.ResumeLayout(false);
+            this.tabKinderf.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -576,6 +587,7 @@
         private System.Windows.Forms.TabPage tabDamenf;
         private System.Windows.Forms.TabPage tabHerrenf;
         private System.Windows.Forms.TabPage tabPUebersicht;
+        private System.Windows.Forms.Label kf_label_p2;
     }
 }
 
