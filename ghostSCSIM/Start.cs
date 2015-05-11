@@ -18,46 +18,14 @@ namespace ghostSCSIM
     public partial class Start : Form
     {
         // Neuen Datenbehälter für den XML Input anlegen
-        DataContainer xmlData = new DataContainer();
+        DataContainer xmlData = null;
 
         public Start()
         {
             InitializeComponent();
             
         }
-        //Datenbehälter mit den XML Daten füllen
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var fileDialog = new OpenFileDialog { };
-            if (fileDialog.ShowDialog() == DialogResult.OK)
-            {
-                XmlIO xmlInput = new XmlIO(fileDialog.FileName);
-                
-                xmlData = (DataContainer)xmlInput.xml;
-                
-               
-               
-                
-                
-            }
-            
-           
-            
-        }
-
-
-        private void buttonX_Click(object sender, EventArgs e)
-        {
-            var fileDialog = new OpenFileDialog { };
-            if (fileDialog.ShowDialog() == DialogResult.OK)
-            {
-                XmlIO xmlInput = new XmlIO(fileDialog.FileName);
-
-                xmlData = (DataContainer)xmlInput.xml;
-
-            }
-        }
-
+             
         private void dEToolStripMenuItem_Click(object sender, EventArgs e)
         {
            
@@ -172,6 +140,7 @@ namespace ghostSCSIM
 
        private void xmlInputButton_Click(object sender, EventArgs e)
        {
+           xmlData = new DataContainer();
            var fileDialog = new OpenFileDialog { };
            if (fileDialog.ShowDialog() == DialogResult.OK)
            {
@@ -184,6 +153,16 @@ namespace ghostSCSIM
                    MessageBox.Show("XML Datei: " + fileDialog.FileName + " erfolgreich importiert!");
                }
            }
+       }
+       private void fillFormsWithData(object sender, EventArgs e)
+       {
+           if (xmlData != null)
+           {
+               pp_p1_lager.Text = xmlData.warehouseStock.article[0].amount.ToString();
+           }
+         
+           
+          
        }
 
        

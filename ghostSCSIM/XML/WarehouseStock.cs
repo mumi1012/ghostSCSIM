@@ -35,6 +35,6 @@ namespace ghostSCSIM.XML
         [XmlAttribute]
         public double stockvalue { get; set; }
 
-
+        
     }
 }

@@ -26,9 +26,12 @@ namespace ghostSCSIM.XML
         public int item { get; set; }
 
         [XmlAttribute]
-        public int amount { get; set; }
+        public int amount { get ; set; }
 
         [XmlAttribute]
         public int timeneed { get; set; }
+
+        
+      
     }
 }
