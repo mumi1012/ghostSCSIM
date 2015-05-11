@@ -122,13 +122,13 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="dEToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 30</value>
+    <value>106, 30</value>
   </data>
   <data name="dEToolStripMenuItem.Text" xml:space="preserve">
     <value>DE</value>
   </data>
   <data name="eNToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 30</value>
+    <value>106, 30</value>
   </data>
   <data name="eNToolStripMenuItem.Text" xml:space="preserve">
     <value>EN</value>
@@ -171,7 +171,7 @@
     <value>1</value>
   </data>
   <data name="xmlInputButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1116, 455</value>
+    <value>52, 435</value>
   </data>
   <data name="xmlInputButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 52</value>
@@ -694,6 +694,33 @@
     <value>tabControl1</value>
   </data>
   <data name="&gt;&gt;tabPrognose.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="kf_label_p2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="kf_label_p2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 29</value>
+  </data>
+  <data name="kf_label_p2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 20</value>
+  </data>
+  <data name="kf_label_p2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="kf_label_p2.Text" xml:space="preserve">
+    <value>P2</value>
+  </data>
+  <data name="&gt;&gt;kf_label_p2.Name" xml:space="preserve">
+    <value>kf_label_p2</value>
+  </data>
+  <data name="&gt;&gt;kf_label_p2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;kf_label_p2.Parent" xml:space="preserve">
+    <value>tabKinderf</value>
+  </data>
+  <data name="&gt;&gt;kf_label_p2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="tabKinderf.Location" type="System.Drawing.Point, System.Drawing">

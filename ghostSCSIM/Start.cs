@@ -170,6 +170,22 @@ namespace ghostSCSIM
 
            }
 
+       private void xmlInputButton_Click(object sender, EventArgs e)
+       {
+           var fileDialog = new OpenFileDialog { };
+           if (fileDialog.ShowDialog() == DialogResult.OK)
+           {
+               XmlIO xmlInput = new XmlIO(fileDialog.FileName);
+
+               xmlData = (DataContainer)xmlInput.xml;
+
+               if (xmlData != null)
+               {
+                   MessageBox.Show("XML Datei: " + fileDialog.FileName + " erfolgreich importiert!");
+               }
+           }
+       }
+
        
 
         
