@@ -1,0 +1,1005 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dEToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 30</value>
+  </data>
+  <data name="dEToolStripMenuItem.Text" xml:space="preserve">
+    <value>DE</value>
+  </data>
+  <data name="eNToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 30</value>
+  </data>
+  <data name="eNToolStripMenuItem.Text" xml:space="preserve">
+    <value>EN</value>
+  </data>
+  <data name="spracheToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 29</value>
+  </data>
+  <data name="spracheToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="einstellungenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 29</value>
+  </data>
+  <data name="einstellungenToolStripMenuItem.Text" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1312, 33</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="xmlInputButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1116, 455</value>
+  </data>
+  <data name="xmlInputButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 52</value>
+  </data>
+  <data name="xmlInputButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="xmlInputButton.Text" xml:space="preserve">
+    <value>XML Importieren</value>
+  </data>
+  <data name="&gt;&gt;xmlInputButton.Name" xml:space="preserve">
+    <value>xmlInputButton</value>
+  </data>
+  <data name="&gt;&gt;xmlInputButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;xmlInputButton.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;xmlInputButton.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>165, 17</value>
+  </metadata>
+  <data name="notifyIcon1.Text" xml:space="preserve">
+    <value>notifyIcon1</value>
+  </data>
+  <data name="notifyIcon1.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabControl1.Alignment" type="System.Windows.Forms.TabAlignment, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="herren_prog_p4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>722, 305</value>
+  </data>
+  <data name="herren_prog_p4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 26</value>
+  </data>
+  <data name="herren_prog_p4.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;herren_prog_p4.Name" xml:space="preserve">
+    <value>herren_prog_p4</value>
+  </data>
+  <data name="&gt;&gt;herren_prog_p4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;herren_prog_p4.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;herren_prog_p4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="herren_prog_p3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>556, 305</value>
+  </data>
+  <data name="herren_prog_p3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 26</value>
+  </data>
+  <data name="herren_prog_p3.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;herren_prog_p3.Name" xml:space="preserve">
+    <value>herren_prog_p3</value>
+  </data>
+  <data name="&gt;&gt;herren_prog_p3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;herren_prog_p3.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;herren_prog_p3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="herren_prog_p2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 305</value>
+  </data>
+  <data name="herren_prog_p2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 26</value>
+  </data>
+  <data name="herren_prog_p2.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;herren_prog_p2.Name" xml:space="preserve">
+    <value>herren_prog_p2</value>
+  </data>
+  <data name="&gt;&gt;herren_prog_p2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;herren_prog_p2.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;herren_prog_p2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="damen_prog_p4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>722, 243</value>
+  </data>
+  <data name="damen_prog_p4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 26</value>
+  </data>
+  <data name="damen_prog_p4.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;damen_prog_p4.Name" xml:space="preserve">
+    <value>damen_prog_p4</value>
+  </data>
+  <data name="&gt;&gt;damen_prog_p4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;damen_prog_p4.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;damen_prog_p4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="damen_prog_p3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>556, 243</value>
+  </data>
+  <data name="damen_prog_p3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 26</value>
+  </data>
+  <data name="damen_prog_p3.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;damen_prog_p3.Name" xml:space="preserve">
+    <value>damen_prog_p3</value>
+  </data>
+  <data name="&gt;&gt;damen_prog_p3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;damen_prog_p3.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;damen_prog_p3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="damen_prog_p2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 243</value>
+  </data>
+  <data name="damen_prog_p2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 26</value>
+  </data>
+  <data name="damen_prog_p2.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;damen_prog_p2.Name" xml:space="preserve">
+    <value>damen_prog_p2</value>
+  </data>
+  <data name="&gt;&gt;damen_prog_p2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;damen_prog_p2.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;damen_prog_p2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="kinder_prog_p4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>722, 174</value>
+  </data>
+  <data name="kinder_prog_p4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 26</value>
+  </data>
+  <data name="kinder_prog_p4.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;kinder_prog_p4.Name" xml:space="preserve">
+    <value>kinder_prog_p4</value>
+  </data>
+  <data name="&gt;&gt;kinder_prog_p4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;kinder_prog_p4.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;kinder_prog_p4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="kinder_prog_p3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>556, 176</value>
+  </data>
+  <data name="kinder_prog_p3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 26</value>
+  </data>
+  <data name="kinder_prog_p3.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;kinder_prog_p3.Name" xml:space="preserve">
+    <value>kinder_prog_p3</value>
+  </data>
+  <data name="&gt;&gt;kinder_prog_p3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;kinder_prog_p3.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;kinder_prog_p3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="kinder_prog_p2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>393, 176</value>
+  </data>
+  <data name="kinder_prog_p2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 26</value>
+  </data>
+  <data name="kinder_prog_p2.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;kinder_prog_p2.Name" xml:space="preserve">
+    <value>kinder_prog_p2</value>
+  </data>
+  <data name="&gt;&gt;kinder_prog_p2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;kinder_prog_p2.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;kinder_prog_p2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="herren_prog_p1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 305</value>
+  </data>
+  <data name="herren_prog_p1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 26</value>
+  </data>
+  <data name="herren_prog_p1.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;herren_prog_p1.Name" xml:space="preserve">
+    <value>herren_prog_p1</value>
+  </data>
+  <data name="&gt;&gt;herren_prog_p1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;herren_prog_p1.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;herren_prog_p1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="damen_prog_p1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 243</value>
+  </data>
+  <data name="damen_prog_p1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 26</value>
+  </data>
+  <data name="damen_prog_p1.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;damen_prog_p1.Name" xml:space="preserve">
+    <value>damen_prog_p1</value>
+  </data>
+  <data name="&gt;&gt;damen_prog_p1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;damen_prog_p1.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;damen_prog_p1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label_kinderf.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_kinderf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_kinderf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 176</value>
+  </data>
+  <data name="label_kinderf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 20</value>
+  </data>
+  <data name="label_kinderf.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="label_kinderf.Text" xml:space="preserve">
+    <value>Kinderfahrrad</value>
+  </data>
+  <data name="&gt;&gt;label_kinderf.Name" xml:space="preserve">
+    <value>label_kinderf</value>
+  </data>
+  <data name="&gt;&gt;label_kinderf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_kinderf.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;label_kinderf.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label_damenf.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_damenf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_damenf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 249</value>
+  </data>
+  <data name="label_damenf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 20</value>
+  </data>
+  <data name="label_damenf.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="label_damenf.Text" xml:space="preserve">
+    <value>Damenfahrrad</value>
+  </data>
+  <data name="&gt;&gt;label_damenf.Name" xml:space="preserve">
+    <value>label_damenf</value>
+  </data>
+  <data name="&gt;&gt;label_damenf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_damenf.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;label_damenf.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label_herrenf.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_herrenf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_herrenf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 311</value>
+  </data>
+  <data name="label_herrenf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 20</value>
+  </data>
+  <data name="label_herrenf.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="label_herrenf.Text" xml:space="preserve">
+    <value>Herrenfahrrad</value>
+  </data>
+  <data name="&gt;&gt;label_herrenf.Name" xml:space="preserve">
+    <value>label_herrenf</value>
+  </data>
+  <data name="&gt;&gt;label_herrenf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_herrenf.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;label_herrenf.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label_prognose_n3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_prognose_n3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_prognose_n3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>718, 133</value>
+  </data>
+  <data name="label_prognose_n3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 20</value>
+  </data>
+  <data name="label_prognose_n3.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="label_prognose_n3.Text" xml:space="preserve">
+    <value>Periode n+3</value>
+  </data>
+  <data name="&gt;&gt;label_prognose_n3.Name" xml:space="preserve">
+    <value>label_prognose_n3</value>
+  </data>
+  <data name="&gt;&gt;label_prognose_n3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_prognose_n3.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;label_prognose_n3.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label_prognose_n2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_prognose_n2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_prognose_n2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>552, 133</value>
+  </data>
+  <data name="label_prognose_n2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 20</value>
+  </data>
+  <data name="label_prognose_n2.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="label_prognose_n2.Text" xml:space="preserve">
+    <value>Periode n+2</value>
+  </data>
+  <data name="&gt;&gt;label_prognose_n2.Name" xml:space="preserve">
+    <value>label_prognose_n2</value>
+  </data>
+  <data name="&gt;&gt;label_prognose_n2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_prognose_n2.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;label_prognose_n2.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="label_prognose_n1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_prognose_n1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_prognose_n1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 133</value>
+  </data>
+  <data name="label_prognose_n1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 20</value>
+  </data>
+  <data name="label_prognose_n1.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="label_prognose_n1.Text" xml:space="preserve">
+    <value>Periode n+1</value>
+  </data>
+  <data name="&gt;&gt;label_prognose_n1.Name" xml:space="preserve">
+    <value>label_prognose_n1</value>
+  </data>
+  <data name="&gt;&gt;label_prognose_n1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_prognose_n1.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;label_prognose_n1.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label_prognose_n.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_prognose_n.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_prognose_n.Location" type="System.Drawing.Point, System.Drawing">
+    <value>223, 133</value>
+  </data>
+  <data name="label_prognose_n.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="label_prognose_n.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="label_prognose_n.Text" xml:space="preserve">
+    <value>Periode n</value>
+  </data>
+  <data name="&gt;&gt;label_prognose_n.Name" xml:space="preserve">
+    <value>label_prognose_n</value>
+  </data>
+  <data name="&gt;&gt;label_prognose_n.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_prognose_n.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;label_prognose_n.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="kinder_prog_p1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 176</value>
+  </data>
+  <data name="kinder_prog_p1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 26</value>
+  </data>
+  <data name="kinder_prog_p1.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;kinder_prog_p1.Name" xml:space="preserve">
+    <value>kinder_prog_p1</value>
+  </data>
+  <data name="&gt;&gt;kinder_prog_p1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;kinder_prog_p1.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;kinder_prog_p1.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="tabPrognose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 4</value>
+  </data>
+  <data name="tabPrognose.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPrognose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1280, 551</value>
+  </data>
+  <data name="tabPrognose.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPrognose.Text" xml:space="preserve">
+    <value>Prognose</value>
+  </data>
+  <data name="&gt;&gt;tabPrognose.Name" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;tabPrognose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPrognose.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPrognose.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabKinderf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="tabKinderf.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabKinderf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1266, 519</value>
+  </data>
+  <data name="tabKinderf.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabKinderf.Text" xml:space="preserve">
+    <value>Kinderfahrrad</value>
+  </data>
+  <data name="&gt;&gt;tabKinderf.Name" xml:space="preserve">
+    <value>tabKinderf</value>
+  </data>
+  <data name="&gt;&gt;tabKinderf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabKinderf.Parent" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabKinderf.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabDamenf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="tabDamenf.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabDamenf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1266, 519</value>
+  </data>
+  <data name="tabDamenf.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabDamenf.Text" xml:space="preserve">
+    <value>Damenfahrrad</value>
+  </data>
+  <data name="&gt;&gt;tabDamenf.Name" xml:space="preserve">
+    <value>tabDamenf</value>
+  </data>
+  <data name="&gt;&gt;tabDamenf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabDamenf.Parent" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabDamenf.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabHerrenf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="tabHerrenf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1266, 519</value>
+  </data>
+  <data name="tabHerrenf.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabHerrenf.Text" xml:space="preserve">
+    <value>Herrenfahrrad</value>
+  </data>
+  <data name="&gt;&gt;tabHerrenf.Name" xml:space="preserve">
+    <value>tabHerrenf</value>
+  </data>
+  <data name="&gt;&gt;tabHerrenf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabHerrenf.Parent" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabHerrenf.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabPUebersicht.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 29</value>
+  </data>
+  <data name="tabPUebersicht.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1266, 519</value>
+  </data>
+  <data name="tabPUebersicht.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabPUebersicht.Text" xml:space="preserve">
+    <value>Übersicht</value>
+  </data>
+  <data name="&gt;&gt;tabPUebersicht.Name" xml:space="preserve">
+    <value>tabPUebersicht</value>
+  </data>
+  <data name="&gt;&gt;tabPUebersicht.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPUebersicht.Parent" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabPUebersicht.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="tabControl2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8pt</value>
+  </data>
+  <data name="tabControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="tabControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1274, 552</value>
+  </data>
+  <data name="tabControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.Name" xml:space="preserve">
+    <value>tabControl2</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.Parent" xml:space="preserve">
+    <value>tabProdplan</value>
+  </data>
+  <data name="&gt;&gt;tabControl2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabProdplan.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 4</value>
+  </data>
+  <data name="tabProdplan.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabProdplan.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1280, 551</value>
+  </data>
+  <data name="tabProdplan.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabProdplan.Text" xml:space="preserve">
+    <value>Produktionsplan</value>
+  </data>
+  <data name="&gt;&gt;tabProdplan.Name" xml:space="preserve">
+    <value>tabProdplan</value>
+  </data>
+  <data name="&gt;&gt;tabProdplan.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabProdplan.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabProdplan.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabKapa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 4</value>
+  </data>
+  <data name="tabKapa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1280, 551</value>
+  </data>
+  <data name="tabKapa.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabKapa.Text" xml:space="preserve">
+    <value>Kapazitätsplan</value>
+  </data>
+  <data name="&gt;&gt;tabKapa.Name" xml:space="preserve">
+    <value>tabKapa</value>
+  </data>
+  <data name="&gt;&gt;tabKapa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabKapa.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabKapa.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabBestellung.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 4</value>
+  </data>
+  <data name="tabBestellung.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1280, 551</value>
+  </data>
+  <data name="tabBestellung.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabBestellung.Text" xml:space="preserve">
+    <value>Bestellung</value>
+  </data>
+  <data name="&gt;&gt;tabBestellung.Name" xml:space="preserve">
+    <value>tabBestellung</value>
+  </data>
+  <data name="&gt;&gt;tabBestellung.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabBestellung.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabBestellung.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabDirektV.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 4</value>
+  </data>
+  <data name="tabDirektV.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1280, 551</value>
+  </data>
+  <data name="tabDirektV.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tabDirektV.Text" xml:space="preserve">
+    <value>Direktverkauf</value>
+  </data>
+  <data name="&gt;&gt;tabDirektV.Name" xml:space="preserve">
+    <value>tabDirektV</value>
+  </data>
+  <data name="&gt;&gt;tabDirektV.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabDirektV.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabDirektV.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tabControl1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8pt</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 33</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1312, 559</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1312, 592</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ghostSCSIM</value>
+  </data>
+  <data name="&gt;&gt;spracheToolStripMenuItem.Name" xml:space="preserve">
+    <value>spracheToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;spracheToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dEToolStripMenuItem.Name" xml:space="preserve">
+    <value>dEToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;dEToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;eNToolStripMenuItem.Name" xml:space="preserve">
+    <value>eNToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;eNToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;einstellungenToolStripMenuItem.Name" xml:space="preserve">
+    <value>einstellungenToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;einstellungenToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;notifyIcon1.Name" xml:space="preserve">
+    <value>notifyIcon1</value>
+  </data>
+  <data name="&gt;&gt;notifyIcon1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
