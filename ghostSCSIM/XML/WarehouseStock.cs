@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,14 +27,34 @@ namespace ghostSCSIM.XML
         [XmlAttribute]
         public int startamount { get; set; }
 
-        [XmlAttribute]
-        public double pct { get; set; }
+        [XmlIgnore]
+        public decimal pct { get; set; }
 
-        [XmlAttribute]
-        public double price { get; set; }
+        [XmlElement("pct")]
+        public string pctFormatted
+        {
+            get { return pct.ToString(CultureInfo.GetCultureInfo("de-DE").NumberFormat); }
+            set { pct = decimal.Parse(value, CultureInfo.GetCultureInfo("de-DE").NumberFormat); }
+        }
 
-        [XmlAttribute]
-        public double stockvalue { get; set; }
+        [XmlIgnore]
+        public decimal price { get; set; }
+
+        [XmlElement("price")]
+            public string priceFormatted {
+                get { return price.ToString(CultureInfo.GetCultureInfo("de-DE").NumberFormat); }
+                set { price = decimal.Parse(value, CultureInfo.GetCultureInfo("de-DE").NumberFormat); } 
+            }
+
+        [XmlIgnore]
+        public decimal stockvalue { get; set; }
+
+        [XmlElement("stockvalue")]
+        public string stockvalueFormatted
+        {
+            get { return stockvalue.ToString(CultureInfo.GetCultureInfo("de-DE").NumberFormat); }
+            set { stockvalue = decimal.Parse(value, CultureInfo.GetCultureInfo("de-DE").NumberFormat); }
+        }
 
         
     }
