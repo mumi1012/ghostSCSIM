@@ -50,6 +50,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatenbankDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DatenbankZugriffTest.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

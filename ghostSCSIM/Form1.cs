@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Globalization;
 using ghostSCSIM.XML;
+using System.Data.OleDb;
+using ghostSCSIM.DatenbankDataSetTableAdapters;
 
 namespace ghostSCSIM
 {
@@ -107,7 +109,53 @@ namespace ghostSCSIM
        {
            changeLabelTextAndVisibility(this.waitingListToolStripMenuItem.Text);
            dataGridView1.DataSource = xmlData.waitingListWorkstations.workplaces;
+         
        }
+
+        /// <summary>
+        /// Test Database-Connection 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+       private void button2_Click(object sender, EventArgs e)
+       {
+
+           string connectionString =
+                         @"Provider=Microsoft.ACE.OLEDB.12.0;" +
+                         @"Data Source=C:\users\michael\documents\visual studio 2013\Projects\ghostSCSIM\ghostSCSIM\Datenbank.accdb;";
+                        
+          
+           OleDbConnection connection;
+           OleDbDataAdapter oledbAdapter;
+           DataSet ds = new DataSet();
+           string sql = null;
+           int i = 0;
+
+           sql = "SELECT * FROM Lager";
+           connection = new OleDbConnection(connectionString);
+
+           try
+           {
+               connection.Open();
+               oledbAdapter = new OleDbDataAdapter(sql, connection);
+               oledbAdapter.Fill(ds);
+               oledbAdapter.Dispose();
+               connection.Close();
+               //Ausgabe der Daten aus der DB an den Datagrid
+               dataGridView1.DataSource = ds.Tables[0];
+               //MessageBox.Show(ds.Tables[0].Rows.Count.ToString());
+               //
+               //for (i = 0; i <= ds.Tables[0].Rows.Count - 1; i++)
+               //{
+               //    MessageBox.Show(ds.Tables[0].Rows[i].ItemArray[0] + " -- " + ds.Tables[0].Rows[i].ItemArray[1]);
+               //}
+           }
+           catch (Exception ex)
+           {
+               MessageBox.Show("Exception: "+ex.Message);
+           }
+
+           }
          
        
 

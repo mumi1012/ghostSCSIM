@@ -38,9 +38,10 @@
             this.eNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.warehouseStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.waitingListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordersInWorkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.futureInwardStockMovementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.waitingListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -108,6 +109,12 @@
             resources.ApplyResources(this.warehouseStockToolStripMenuItem, "warehouseStockToolStripMenuItem");
             this.warehouseStockToolStripMenuItem.Click += new System.EventHandler(this.warehouseStockToolStripMenuItem_Click);
             // 
+            // waitingListToolStripMenuItem
+            // 
+            this.waitingListToolStripMenuItem.Name = "waitingListToolStripMenuItem";
+            resources.ApplyResources(this.waitingListToolStripMenuItem, "waitingListToolStripMenuItem");
+            this.waitingListToolStripMenuItem.Click += new System.EventHandler(this.waitingListToolStripMenuItem_Click);
+            // 
             // ordersInWorkToolStripMenuItem
             // 
             this.ordersInWorkToolStripMenuItem.Name = "ordersInWorkToolStripMenuItem";
@@ -120,16 +127,18 @@
             resources.ApplyResources(this.futureInwardStockMovementToolStripMenuItem, "futureInwardStockMovementToolStripMenuItem");
             this.futureInwardStockMovementToolStripMenuItem.Click += new System.EventHandler(this.futureInwardStockMovementToolStripMenuItem_Click_1);
             // 
-            // waitingListToolStripMenuItem
+            // button2
             // 
-            this.waitingListToolStripMenuItem.Name = "waitingListToolStripMenuItem";
-            resources.ApplyResources(this.waitingListToolStripMenuItem, "waitingListToolStripMenuItem");
-            this.waitingListToolStripMenuItem.Click += new System.EventHandler(this.waitingListToolStripMenuItem_Click);
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridLabel);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
@@ -160,6 +169,7 @@
         private System.Windows.Forms.ToolStripMenuItem ordersInWorkToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem futureInwardStockMovementToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem waitingListToolStripMenuItem;
+        private System.Windows.Forms.Button button2;
     }
 }
 

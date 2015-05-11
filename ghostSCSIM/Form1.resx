@@ -141,7 +141,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 73</value>
@@ -162,7 +162,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="dataGridLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -192,11 +192,59 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dataGridLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="dEToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 30</value>
+  </data>
+  <data name="dEToolStripMenuItem.Text" xml:space="preserve">
+    <value>DE</value>
+  </data>
+  <data name="eNToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 30</value>
+  </data>
+  <data name="eNToolStripMenuItem.Text" xml:space="preserve">
+    <value>EN</value>
+  </data>
+  <data name="spracheToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 29</value>
+  </data>
+  <data name="spracheToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="warehouseStockToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 30</value>
+  </data>
+  <data name="warehouseStockToolStripMenuItem.Text" xml:space="preserve">
+    <value>Warehouse Stock</value>
+  </data>
+  <data name="waitingListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 30</value>
+  </data>
+  <data name="waitingListToolStripMenuItem.Text" xml:space="preserve">
+    <value>Waiting List Workstations</value>
+  </data>
+  <data name="ordersInWorkToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 30</value>
+  </data>
+  <data name="ordersInWorkToolStripMenuItem.Text" xml:space="preserve">
+    <value>Orders in work</value>
+  </data>
+  <data name="futureInwardStockMovementToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>332, 30</value>
+  </data>
+  <data name="futureInwardStockMovementToolStripMenuItem.Text" xml:space="preserve">
+    <value>Future inward Stock Movement</value>
+  </data>
+  <data name="selectDataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 29</value>
+  </data>
+  <data name="selectDataToolStripMenuItem.Text" xml:space="preserve">
+    <value>Select Data</value>
+  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -219,55 +267,31 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
-  <data name="spracheToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 29</value>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1034, 139</value>
   </data>
-  <data name="spracheToolStripMenuItem.Text" xml:space="preserve">
-    <value>Sprache</value>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 32</value>
   </data>
-  <data name="dEToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 30</value>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="dEToolStripMenuItem.Text" xml:space="preserve">
-    <value>DE</value>
+  <data name="button2.Text" xml:space="preserve">
+    <value>showTableLagerTest</value>
   </data>
-  <data name="eNToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 30</value>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
   </data>
-  <data name="eNToolStripMenuItem.Text" xml:space="preserve">
-    <value>EN</value>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="selectDataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 29</value>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="selectDataToolStripMenuItem.Text" xml:space="preserve">
-    <value>Select Data</value>
-  </data>
-  <data name="warehouseStockToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 30</value>
-  </data>
-  <data name="warehouseStockToolStripMenuItem.Text" xml:space="preserve">
-    <value>Warehouse Stock</value>
-  </data>
-  <data name="ordersInWorkToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 30</value>
-  </data>
-  <data name="ordersInWorkToolStripMenuItem.Text" xml:space="preserve">
-    <value>Orders in work</value>
-  </data>
-  <data name="futureInwardStockMovementToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 30</value>
-  </data>
-  <data name="futureInwardStockMovementToolStripMenuItem.Text" xml:space="preserve">
-    <value>Future inward Stock Movement</value>
-  </data>
-  <data name="waitingListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>332, 30</value>
-  </data>
-  <data name="waitingListToolStripMenuItem.Text" xml:space="preserve">
-    <value>Waiting List Workstations</value>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -311,6 +335,12 @@
   <data name="&gt;&gt;warehouseStockToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;waitingListToolStripMenuItem.Name" xml:space="preserve">
+    <value>waitingListToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;waitingListToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;ordersInWorkToolStripMenuItem.Name" xml:space="preserve">
     <value>ordersInWorkToolStripMenuItem</value>
   </data>
@@ -321,12 +351,6 @@
     <value>futureInwardStockMovementToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;futureInwardStockMovementToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;waitingListToolStripMenuItem.Name" xml:space="preserve">
-    <value>waitingListToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;waitingListToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
