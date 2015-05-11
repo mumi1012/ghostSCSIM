@@ -15,12 +15,12 @@ using ghostSCSIM.DatenbankDataSetTableAdapters;
 
 namespace ghostSCSIM
 {
-    public partial class Form1 : Form
+    public partial class Start : Form
     {
         // Neuen Datenbehälter für den XML Input anlegen
         DataContainer xmlData = new DataContainer();
 
-        public Form1()
+        public Start()
         {
             InitializeComponent();
             
@@ -46,7 +46,7 @@ namespace ghostSCSIM
         }
 
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonX_Click(object sender, EventArgs e)
         {
             var fileDialog = new OpenFileDialog { };
             if (fileDialog.ShowDialog() == DialogResult.OK)
@@ -73,7 +73,7 @@ namespace ghostSCSIM
         {
             foreach (Control c in this.Controls)
             {
-                ComponentResourceManager resourcesManager = new ComponentResourceManager(typeof(Form1));
+                ComponentResourceManager resourcesManager = new ComponentResourceManager(typeof(Start));
                 resourcesManager.ApplyResources(c, c.Name, new CultureInfo(language));
 
                 if (c.GetType() == typeof(DataGridView))
@@ -90,40 +90,40 @@ namespace ghostSCSIM
 
               
 
-       private void changeLabelTextAndVisibility(String clickedItem) 
-        {
-            if (dataGridLabel.Visible == false) 
-                dataGridLabel.Visible = true;
+     //private void changeLabelTextAndVisibility(String clickedItem) 
+     //   {
+     //       if (dataGridLabel.Visible == false) 
+     //           dataGridLabel.Visible = true;
 
-            dataGridLabel.Text = clickedItem;
-        }
+     //       dataGridLabel.Text = clickedItem;
+     //   }
 
-       private void warehouseStockToolStripMenuItem_Click(object sender, EventArgs e)
-       {
-           changeLabelTextAndVisibility(this.warehouseStockToolStripMenuItem.Text);
-           dataGridView1.DataSource = xmlData.warehouseStock.article;
+     //  private void warehouseStockToolStripMenuItem_Click(object sender, EventArgs e)
+     //  {
+     //      changeLabelTextAndVisibility(this.warehouseStockToolStripMenuItem.Text);
+     //      dataGridView1.DataSource = xmlData.warehouseStock.article;
            
            
-       }
+     //  }
 
-       private void ordersInWorkToolStripMenuItem_Click_1(object sender, EventArgs e)
-       {
-           changeLabelTextAndVisibility(this.ordersInWorkToolStripMenuItem.Text);
-           dataGridView1.DataSource = xmlData.ordersInWork.workplace;
-       }
+     //  private void ordersInWorkToolStripMenuItem_Click_1(object sender, EventArgs e)
+     //  {
+     //      changeLabelTextAndVisibility(this.ordersInWorkToolStripMenuItem.Text);
+     //      dataGridView1.DataSource = xmlData.ordersInWork.workplace;
+     //  }
 
-       private void futureInwardStockMovementToolStripMenuItem_Click_1(object sender, EventArgs e)
-       {
-           changeLabelTextAndVisibility(this.futureInwardStockMovementToolStripMenuItem.Text);
-           dataGridView1.DataSource = xmlData.futureInwardStockMovement.orders;
-       }
+     //  private void futureInwardStockMovementToolStripMenuItem_Click_1(object sender, EventArgs e)
+     //  {
+     //      changeLabelTextAndVisibility(this.futureInwardStockMovementToolStripMenuItem.Text);
+     //      dataGridView1.DataSource = xmlData.futureInwardStockMovement.orders;
+     //  }
 
-       private void waitingListToolStripMenuItem_Click(object sender, EventArgs e)
-       {
-           changeLabelTextAndVisibility(this.waitingListToolStripMenuItem.Text);
-           dataGridView1.DataSource = xmlData.waitingListWorkstations.workplaces;
+     //  private void waitingListToolStripMenuItem_Click(object sender, EventArgs e)
+     //  {
+     //      changeLabelTextAndVisibility(this.waitingListToolStripMenuItem.Text);
+     //      dataGridView1.DataSource = xmlData.waitingListWorkstations.workplaces;
          
-       }
+     //  }
 
         /// <summary>
         /// Test Database-Connection 
@@ -155,7 +155,7 @@ namespace ghostSCSIM
                oledbAdapter.Dispose();
                connection.Close();
                //Ausgabe der Daten aus der DB an den Datagrid
-               dataGridView1.DataSource = ds.Tables[0];
+               //dataGridView1.DataSource = ds.Tables[0];
                //MessageBox.Show(ds.Tables[0].Rows.Count.ToString());
                //
                //for (i = 0; i <= ds.Tables[0].Rows.Count - 1; i++)
@@ -169,7 +169,7 @@ namespace ghostSCSIM
            }
 
            }
-         
+
        
 
         

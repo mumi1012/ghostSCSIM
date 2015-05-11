@@ -51,11 +51,20 @@
       <DependentUpon>DatenbankDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="DatenbankZugriffTest.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Domain\ArbeitsplatzKosten.cs" />
+    <Compile Include="Domain\Bestelltyp.cs" />
+    <Compile Include="Domain\Bestellung.cs" />
+    <Compile Include="Domain\MengenStueckliste.cs" />
+    <Compile Include="Domain\MengenStuecklisteItem.cs" />
+    <Compile Include="Domain\Teil.cs" />
+    <Compile Include="Domain\TeilDisposition.cs" />
+    <Compile Include="Domain\TeilLieferdaten.cs" />
+    <Compile Include="Domain\Verwendung.cs" />
+    <Compile Include="Start.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
     </Compile>
     <Compile Include="XML\FutureInwardStockMovement.cs" />
     <Compile Include="XML\IdletimeCosts.cs" />
@@ -67,9 +76,9 @@
     <Compile Include="XML\WarehouseStock.cs" />
     <Compile Include="XML\Workplace.cs" />
     <Compile Include="XML\XmlIO.cs" />
-    <EmbeddedResource Include="Form1.de.resx" />
-    <EmbeddedResource Include="Form1.en.resx" />
-    <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Start.de.resx" />
+    <EmbeddedResource Include="Start.en.resx" />
+    <EmbeddedResource Include="Start.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
