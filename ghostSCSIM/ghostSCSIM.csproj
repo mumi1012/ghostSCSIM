@@ -50,7 +50,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatenbankDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DatenbankZugriffTest.cs" />
     <Compile Include="Domain\ArbeitsplatzKosten.cs" />
     <Compile Include="Domain\Bestelltyp.cs" />
     <Compile Include="Domain\Bestellung.cs" />
