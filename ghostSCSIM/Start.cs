@@ -158,11 +158,58 @@ namespace ghostSCSIM
        {
            if (xmlData != null)
            {
-               pp_p1_lager.Text = xmlData.warehouseStock.article[0].amount.ToString();
+               pp_p1_p1_lager.Text = xmlData.warehouseStock.article[0].amount.ToString();
+               pp_p1_26_lager.Text = xmlData.warehouseStock.article[25].amount.ToString();
+               pp_p1_51_lager.Text = xmlData.warehouseStock.article[50].amount.ToString();
+               pp_p1_16_lager.Text = xmlData.warehouseStock.article[15].amount.ToString();
+               pp_p1_17_lager.Text = xmlData.warehouseStock.article[16].amount.ToString();
+               pp_p1_50_lager.Text = xmlData.warehouseStock.article[49].amount.ToString();
+               pp_p1_4_lager.Text = xmlData.warehouseStock.article[3].amount.ToString();
+               pp_p1_10_lager.Text = xmlData.warehouseStock.article[9].amount.ToString();
+               pp_p1_49_lager.Text = xmlData.warehouseStock.article[48].amount.ToString();
+               pp_p1_7_lager.Text = xmlData.warehouseStock.article[6].amount.ToString();
+               pp_p1_13_lager.Text = xmlData.warehouseStock.article[12].amount.ToString();
+               pp_p1_18_lager.Text = xmlData.warehouseStock.article[18].amount.ToString();
+
+               pp_p2_p2_lager.Text = xmlData.warehouseStock.article[1].amount.ToString();
+               pp_p2_26_lager.Text = xmlData.warehouseStock.article[25].amount.ToString();
+               pp_p2_56_lager.Text = xmlData.warehouseStock.article[55].amount.ToString();
+               pp_p2_16_lager.Text = xmlData.warehouseStock.article[15].amount.ToString();
+               pp_p2_17_lager.Text = xmlData.warehouseStock.article[16].amount.ToString();
+               pp_p2_55_lager.Text = xmlData.warehouseStock.article[54].amount.ToString();
+               pp_p2_5_lager.Text = xmlData.warehouseStock.article[4].amount.ToString();
+               pp_p2_11_lager.Text = xmlData.warehouseStock.article[10].amount.ToString();
+               pp_p2_54_lager.Text = xmlData.warehouseStock.article[53].amount.ToString();
+               pp_p2_8_lager.Text = xmlData.warehouseStock.article[7].amount.ToString();
+               pp_p2_14_lager.Text = xmlData.warehouseStock.article[13].amount.ToString();
+               pp_p2_19_lager.Text = xmlData.warehouseStock.article[18].amount.ToString();
+
+               pp_p3_p3_lager.Text = xmlData.warehouseStock.article[2].amount.ToString();
+               pp_p3_26_lager.Text = xmlData.warehouseStock.article[25].amount.ToString();
+               pp_p3_31_lager.Text = xmlData.warehouseStock.article[30].amount.ToString();
+               pp_p3_16_lager.Text = xmlData.warehouseStock.article[15].amount.ToString();
+               pp_p3_17_lager.Text = xmlData.warehouseStock.article[16].amount.ToString();
+               pp_p3_30_lager.Text = xmlData.warehouseStock.article[29].amount.ToString();
+               pp_p3_6_lager.Text = xmlData.warehouseStock.article[5].amount.ToString();
+               pp_p3_12_lager.Text = xmlData.warehouseStock.article[11].amount.ToString();
+               pp_p3_29_lager.Text = xmlData.warehouseStock.article[28].amount.ToString();
+               pp_p3_9_lager.Text = xmlData.warehouseStock.article[8].amount.ToString();
+               pp_p3_15_lager.Text = xmlData.warehouseStock.article[14].amount.ToString();
+               pp_p3_20_lager.Text = xmlData.warehouseStock.article[19].amount.ToString();
            }
          
            
           
+       }
+
+       private void label18_Click(object sender, EventArgs e)
+       {
+
+       }
+
+       private void label_pp_p2_59_Click(object sender, EventArgs e)
+       {
+
        }
 
        

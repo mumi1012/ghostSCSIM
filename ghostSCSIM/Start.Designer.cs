@@ -61,98 +61,278 @@
             this.tabProdplan = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabKinderf = new System.Windows.Forms.TabPage();
-            this.textBox49 = new System.Windows.Forms.TextBox();
-            this.textBox50 = new System.Windows.Forms.TextBox();
-            this.textBox51 = new System.Windows.Forms.TextBox();
-            this.textBox52 = new System.Windows.Forms.TextBox();
-            this.textBox53 = new System.Windows.Forms.TextBox();
-            this.textBox54 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox55 = new System.Windows.Forms.TextBox();
-            this.textBox56 = new System.Windows.Forms.TextBox();
-            this.textBox57 = new System.Windows.Forms.TextBox();
-            this.textBox58 = new System.Windows.Forms.TextBox();
-            this.textBox59 = new System.Windows.Forms.TextBox();
-            this.textBox60 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox61 = new System.Windows.Forms.TextBox();
-            this.textBox62 = new System.Windows.Forms.TextBox();
-            this.textBox63 = new System.Windows.Forms.TextBox();
-            this.textBox64 = new System.Windows.Forms.TextBox();
-            this.textBox65 = new System.Windows.Forms.TextBox();
-            this.textBox66 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox67 = new System.Windows.Forms.TextBox();
-            this.textBox68 = new System.Windows.Forms.TextBox();
-            this.textBox69 = new System.Windows.Forms.TextBox();
-            this.textBox70 = new System.Windows.Forms.TextBox();
-            this.textBox71 = new System.Windows.Forms.TextBox();
-            this.textBox72 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox31 = new System.Windows.Forms.TextBox();
-            this.textBox32 = new System.Windows.Forms.TextBox();
-            this.textBox33 = new System.Windows.Forms.TextBox();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.textBox41 = new System.Windows.Forms.TextBox();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox43 = new System.Windows.Forms.TextBox();
-            this.textBox44 = new System.Windows.Forms.TextBox();
-            this.textBox45 = new System.Windows.Forms.TextBox();
-            this.textBox46 = new System.Windows.Forms.TextBox();
-            this.textBox47 = new System.Windows.Forms.TextBox();
-            this.textBox48 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.pp_p1_lager = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label_pp_prod = new System.Windows.Forms.Label();
-            this.label_pp_ib = new System.Windows.Forms.Label();
-            this.label_pp_ws = new System.Windows.Forms.Label();
-            this.label_pp_lager = new System.Windows.Forms.Label();
-            this.label_pp_sb = new System.Windows.Forms.Label();
-            this.label_pp_vw = new System.Windows.Forms.Label();
-            this.kf_label_p2 = new System.Windows.Forms.Label();
+            this.pp_p1_18_prod = new System.Windows.Forms.TextBox();
+            this.pp_p1_18_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p1_18_ws = new System.Windows.Forms.TextBox();
+            this.pp_p1_18_lager = new System.Windows.Forms.TextBox();
+            this.pp_p1_18_sb = new System.Windows.Forms.TextBox();
+            this.pp_p1_18_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p1_18 = new System.Windows.Forms.Label();
+            this.pp_p1_13_prod = new System.Windows.Forms.TextBox();
+            this.pp_p1_13_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p1_13_ws = new System.Windows.Forms.TextBox();
+            this.pp_p1_13_lager = new System.Windows.Forms.TextBox();
+            this.pp_p1_13_sb = new System.Windows.Forms.TextBox();
+            this.pp_p1_13_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p1_13 = new System.Windows.Forms.Label();
+            this.pp_p1_7_prod = new System.Windows.Forms.TextBox();
+            this.pp_p1_7_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p1_7_ws = new System.Windows.Forms.TextBox();
+            this.pp_p1_7_lager = new System.Windows.Forms.TextBox();
+            this.pp_p1_7_sb = new System.Windows.Forms.TextBox();
+            this.pp_p1_7_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p1_7 = new System.Windows.Forms.Label();
+            this.pp_p1_49_prod = new System.Windows.Forms.TextBox();
+            this.pp_p1_49_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p1_49_ws = new System.Windows.Forms.TextBox();
+            this.pp_p1_49_lager = new System.Windows.Forms.TextBox();
+            this.pp_p1_49_sb = new System.Windows.Forms.TextBox();
+            this.pp_p1_49_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p1_49 = new System.Windows.Forms.Label();
+            this.pp_p1_10_prod = new System.Windows.Forms.TextBox();
+            this.pp_p1_10_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p1_10_ws = new System.Windows.Forms.TextBox();
+            this.pp_p1_10_lager = new System.Windows.Forms.TextBox();
+            this.pp_p1_10_sb = new System.Windows.Forms.TextBox();
+            this.pp_p1_10_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p1_10 = new System.Windows.Forms.Label();
+            this.pp_p1_4_prod = new System.Windows.Forms.TextBox();
+            this.pp_p1_4_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p1_4_ws = new System.Windows.Forms.TextBox();
+            this.pp_p1_4_lager = new System.Windows.Forms.TextBox();
+            this.pp_p1_4_sb = new System.Windows.Forms.TextBox();
+            this.pp_p1_4_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p1_5 = new System.Windows.Forms.Label();
+            this.pp_p1_50_prod = new System.Windows.Forms.TextBox();
+            this.pp_p1_50_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p1_50_ws = new System.Windows.Forms.TextBox();
+            this.pp_p1_50_lager = new System.Windows.Forms.TextBox();
+            this.pp_p1_50_sb = new System.Windows.Forms.TextBox();
+            this.pp_p1_50_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p1_50 = new System.Windows.Forms.Label();
+            this.pp_p1_17_prod = new System.Windows.Forms.TextBox();
+            this.pp_p1_17_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p1_17_ws = new System.Windows.Forms.TextBox();
+            this.pp_p1_17_lager = new System.Windows.Forms.TextBox();
+            this.pp_p1_17_sb = new System.Windows.Forms.TextBox();
+            this.pp_p1_17_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p1_17 = new System.Windows.Forms.Label();
+            this.pp_p1_16_prod = new System.Windows.Forms.TextBox();
+            this.pp_p1_16_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p1_16_ws = new System.Windows.Forms.TextBox();
+            this.pp_p1_16_lager = new System.Windows.Forms.TextBox();
+            this.pp_p1_16_sb = new System.Windows.Forms.TextBox();
+            this.pp_p1_16_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p1_16 = new System.Windows.Forms.Label();
+            this.pp_p1_51_prod = new System.Windows.Forms.TextBox();
+            this.pp_p1_51_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p1_51_ws = new System.Windows.Forms.TextBox();
+            this.pp_p1_51_lager = new System.Windows.Forms.TextBox();
+            this.pp_p1_51_sb = new System.Windows.Forms.TextBox();
+            this.pp_p1_51_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p1_51 = new System.Windows.Forms.Label();
+            this.pp_p1_26_prod = new System.Windows.Forms.TextBox();
+            this.pp_p1_26_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p1_26_ws = new System.Windows.Forms.TextBox();
+            this.pp_p1_26_lager = new System.Windows.Forms.TextBox();
+            this.pp_p1_26_sb = new System.Windows.Forms.TextBox();
+            this.pp_p1_26_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p1_26 = new System.Windows.Forms.Label();
+            this.pp_p1_p1_prod = new System.Windows.Forms.TextBox();
+            this.pp_p1_p1_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p1_p1_ws = new System.Windows.Forms.TextBox();
+            this.pp_p1_p1_lager = new System.Windows.Forms.TextBox();
+            this.pp_p1_p1_sb = new System.Windows.Forms.TextBox();
+            this.pp_p1_p1_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p1_prod = new System.Windows.Forms.Label();
+            this.label_pp_p1_bearb = new System.Windows.Forms.Label();
+            this.label_pp_p1_ws = new System.Windows.Forms.Label();
+            this.label_pp_p1_lager = new System.Windows.Forms.Label();
+            this.label_pp_p1_sb = new System.Windows.Forms.Label();
+            this.label_pp_p1_vw = new System.Windows.Forms.Label();
+            this.label_pp_p1_p1 = new System.Windows.Forms.Label();
             this.tabDamenf = new System.Windows.Forms.TabPage();
+            this.pp_p2_19_prod = new System.Windows.Forms.TextBox();
+            this.pp_p2_19_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p2_19_ws = new System.Windows.Forms.TextBox();
+            this.pp_p2_19_lager = new System.Windows.Forms.TextBox();
+            this.pp_p2_19_sb = new System.Windows.Forms.TextBox();
+            this.pp_p2_19_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p2_19 = new System.Windows.Forms.Label();
+            this.pp_p2_14_prod = new System.Windows.Forms.TextBox();
+            this.pp_p2_14_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p2_14_ws = new System.Windows.Forms.TextBox();
+            this.pp_p2_14_lager = new System.Windows.Forms.TextBox();
+            this.pp_p2_14_sb = new System.Windows.Forms.TextBox();
+            this.pp_p2_14_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p2_14 = new System.Windows.Forms.Label();
+            this.pp_p2_8_prod = new System.Windows.Forms.TextBox();
+            this.pp_p2_8_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p2_8_ws = new System.Windows.Forms.TextBox();
+            this.pp_p2_8_lager = new System.Windows.Forms.TextBox();
+            this.pp_p2_8_sb = new System.Windows.Forms.TextBox();
+            this.pp_p2_8_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p2_8 = new System.Windows.Forms.Label();
+            this.pp_p2_54_prod = new System.Windows.Forms.TextBox();
+            this.pp_p2_54_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p2_54_ws = new System.Windows.Forms.TextBox();
+            this.pp_p2_54_lager = new System.Windows.Forms.TextBox();
+            this.pp_p2_54_sb = new System.Windows.Forms.TextBox();
+            this.pp_p2_54_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p2_54 = new System.Windows.Forms.Label();
+            this.pp_p2_11_prod = new System.Windows.Forms.TextBox();
+            this.pp_p2_11_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p2_11_ws = new System.Windows.Forms.TextBox();
+            this.pp_p2_11_lager = new System.Windows.Forms.TextBox();
+            this.pp_p2_11_sb = new System.Windows.Forms.TextBox();
+            this.pp_p2_11_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p2_11 = new System.Windows.Forms.Label();
+            this.pp_p2_5_prod = new System.Windows.Forms.TextBox();
+            this.pp_p2_5_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p2_5_ws = new System.Windows.Forms.TextBox();
+            this.pp_p2_5_lager = new System.Windows.Forms.TextBox();
+            this.pp_p2_5_sb = new System.Windows.Forms.TextBox();
+            this.pp_p2_5_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p2_5 = new System.Windows.Forms.Label();
+            this.pp_p2_55_prod = new System.Windows.Forms.TextBox();
+            this.pp_p2_55_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p2_55_ws = new System.Windows.Forms.TextBox();
+            this.pp_p2_55_lager = new System.Windows.Forms.TextBox();
+            this.pp_p2_55_sb = new System.Windows.Forms.TextBox();
+            this.pp_p2_55_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p2_55 = new System.Windows.Forms.Label();
+            this.pp_p2_17_prod = new System.Windows.Forms.TextBox();
+            this.pp_p2_17_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p2_17_ws = new System.Windows.Forms.TextBox();
+            this.pp_p2_17_lager = new System.Windows.Forms.TextBox();
+            this.pp_p2_17_sb = new System.Windows.Forms.TextBox();
+            this.pp_p2_17_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p2_17 = new System.Windows.Forms.Label();
+            this.pp_p2_16_prod = new System.Windows.Forms.TextBox();
+            this.pp_p2_16_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p2_16_ws = new System.Windows.Forms.TextBox();
+            this.pp_p2_16_lager = new System.Windows.Forms.TextBox();
+            this.pp_p2_16_sb = new System.Windows.Forms.TextBox();
+            this.pp_p2_16_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p2_16 = new System.Windows.Forms.Label();
+            this.pp_p2_56_prod = new System.Windows.Forms.TextBox();
+            this.pp_p2_56_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p2_56_ws = new System.Windows.Forms.TextBox();
+            this.pp_p2_56_lager = new System.Windows.Forms.TextBox();
+            this.pp_p2_56_sb = new System.Windows.Forms.TextBox();
+            this.pp_p2_56_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p2_56 = new System.Windows.Forms.Label();
+            this.pp_p2_26_prod = new System.Windows.Forms.TextBox();
+            this.pp_p2_26_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p2_26_ws = new System.Windows.Forms.TextBox();
+            this.pp_p2_26_lager = new System.Windows.Forms.TextBox();
+            this.pp_p2_26_sb = new System.Windows.Forms.TextBox();
+            this.pp_p2_26_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p2_26 = new System.Windows.Forms.Label();
+            this.pp_p2_p2_prod = new System.Windows.Forms.TextBox();
+            this.pp_p2_p2_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p2_p2_ws = new System.Windows.Forms.TextBox();
+            this.pp_p2_p2_lager = new System.Windows.Forms.TextBox();
+            this.pp_p2_p2_sb = new System.Windows.Forms.TextBox();
+            this.pp_p2_p2_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p2_prod = new System.Windows.Forms.Label();
+            this.label_pp_p2_bearb = new System.Windows.Forms.Label();
+            this.label_pp_p2_ws = new System.Windows.Forms.Label();
+            this.label_pp_p2_lager = new System.Windows.Forms.Label();
+            this.label_pp_p2_sb = new System.Windows.Forms.Label();
+            this.label_pp_p2_vw = new System.Windows.Forms.Label();
+            this.label_pp_p2_p2 = new System.Windows.Forms.Label();
             this.tabHerrenf = new System.Windows.Forms.TabPage();
+            this.pp_p3_20_prod = new System.Windows.Forms.TextBox();
+            this.pp_p3_20_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p3_20_ws = new System.Windows.Forms.TextBox();
+            this.pp_p3_20_lager = new System.Windows.Forms.TextBox();
+            this.pp_p3_20_sb = new System.Windows.Forms.TextBox();
+            this.pp_p3_20_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p3_20 = new System.Windows.Forms.Label();
+            this.pp_p3_15_prod = new System.Windows.Forms.TextBox();
+            this.pp_p3_15_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p3_15_ws = new System.Windows.Forms.TextBox();
+            this.pp_p3_15_lager = new System.Windows.Forms.TextBox();
+            this.pp_p3_15_sb = new System.Windows.Forms.TextBox();
+            this.pp_p3_15_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p3_15 = new System.Windows.Forms.Label();
+            this.pp_p3_9_prod = new System.Windows.Forms.TextBox();
+            this.pp_p3_9_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p3_9_ws = new System.Windows.Forms.TextBox();
+            this.pp_p3_9_lager = new System.Windows.Forms.TextBox();
+            this.pp_p3_9_sb = new System.Windows.Forms.TextBox();
+            this.pp_p3_9_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p3_9 = new System.Windows.Forms.Label();
+            this.pp_p3_29_prod = new System.Windows.Forms.TextBox();
+            this.pp_p3_29_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p3_29_ws = new System.Windows.Forms.TextBox();
+            this.pp_p3_29_lager = new System.Windows.Forms.TextBox();
+            this.pp_p3_29_sb = new System.Windows.Forms.TextBox();
+            this.pp_p3_29_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p3_29 = new System.Windows.Forms.Label();
+            this.pp_p3_12_prod = new System.Windows.Forms.TextBox();
+            this.pp_p3_12_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p3_12_ws = new System.Windows.Forms.TextBox();
+            this.pp_p3_12_lager = new System.Windows.Forms.TextBox();
+            this.pp_p3_12_sb = new System.Windows.Forms.TextBox();
+            this.pp_p3_12_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p3_12 = new System.Windows.Forms.Label();
+            this.pp_p3_6_prod = new System.Windows.Forms.TextBox();
+            this.pp_p3_6_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p3_6_ws = new System.Windows.Forms.TextBox();
+            this.pp_p3_6_lager = new System.Windows.Forms.TextBox();
+            this.pp_p3_6_sb = new System.Windows.Forms.TextBox();
+            this.pp_p3_6_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p3_6 = new System.Windows.Forms.Label();
+            this.pp_p3_30_prod = new System.Windows.Forms.TextBox();
+            this.pp_p3_30_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p3_30_ws = new System.Windows.Forms.TextBox();
+            this.pp_p3_30_lager = new System.Windows.Forms.TextBox();
+            this.pp_p3_30_sb = new System.Windows.Forms.TextBox();
+            this.pp_p3_30_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p3_30 = new System.Windows.Forms.Label();
+            this.pp_p3_17_prod = new System.Windows.Forms.TextBox();
+            this.pp_p3_17_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p3_17_ws = new System.Windows.Forms.TextBox();
+            this.pp_p3_17_lager = new System.Windows.Forms.TextBox();
+            this.pp_p3_17_sb = new System.Windows.Forms.TextBox();
+            this.pp_p3_17_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p3_17 = new System.Windows.Forms.Label();
+            this.pp_p3_16_prod = new System.Windows.Forms.TextBox();
+            this.pp_p3_16_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p3_16_ws = new System.Windows.Forms.TextBox();
+            this.pp_p3_16_lager = new System.Windows.Forms.TextBox();
+            this.pp_p3_16_sb = new System.Windows.Forms.TextBox();
+            this.pp_p3_16_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p3_16 = new System.Windows.Forms.Label();
+            this.pp_p3_31_prod = new System.Windows.Forms.TextBox();
+            this.pp_p3_31_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p3_31_ws = new System.Windows.Forms.TextBox();
+            this.pp_p3_31_lager = new System.Windows.Forms.TextBox();
+            this.pp_p3_31_sb = new System.Windows.Forms.TextBox();
+            this.pp_p3_31_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p3_31 = new System.Windows.Forms.Label();
+            this.pp_p3_26_prod = new System.Windows.Forms.TextBox();
+            this.pp_p3_26_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p3_26_ws = new System.Windows.Forms.TextBox();
+            this.pp_p3_26_lager = new System.Windows.Forms.TextBox();
+            this.pp_p3_26_sb = new System.Windows.Forms.TextBox();
+            this.pp_p3_26_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p3_26 = new System.Windows.Forms.Label();
+            this.pp_p3_p3_prod = new System.Windows.Forms.TextBox();
+            this.pp_p3_p3_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p3_p3_ws = new System.Windows.Forms.TextBox();
+            this.pp_p3_p3_lager = new System.Windows.Forms.TextBox();
+            this.pp_p3_p3_sb = new System.Windows.Forms.TextBox();
+            this.pp_p3_p3_vw = new System.Windows.Forms.TextBox();
+            this.label_pp_p3_prod = new System.Windows.Forms.Label();
+            this.label_pp_p3_bearb = new System.Windows.Forms.Label();
+            this.label_pp_p3_ws = new System.Windows.Forms.Label();
+            this.label_pp_p3_lager = new System.Windows.Forms.Label();
+            this.label_pp_p3_sb = new System.Windows.Forms.Label();
+            this.label_pp_p3_vw = new System.Windows.Forms.Label();
+            this.label_pp_p3_p3 = new System.Windows.Forms.Label();
             this.tabPUebersicht = new System.Windows.Forms.TabPage();
             this.tabKapa = new System.Windows.Forms.TabPage();
             this.tabBestellung = new System.Windows.Forms.TabPage();
@@ -175,6 +355,8 @@
             this.tabProdplan.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabKinderf.SuspendLayout();
+            this.tabDamenf.SuspendLayout();
+            this.tabHerrenf.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -556,561 +738,1643 @@
             // 
             // tabKinderf
             // 
-            this.tabKinderf.Controls.Add(this.textBox49);
-            this.tabKinderf.Controls.Add(this.textBox50);
-            this.tabKinderf.Controls.Add(this.textBox51);
-            this.tabKinderf.Controls.Add(this.textBox52);
-            this.tabKinderf.Controls.Add(this.textBox53);
-            this.tabKinderf.Controls.Add(this.textBox54);
-            this.tabKinderf.Controls.Add(this.label8);
-            this.tabKinderf.Controls.Add(this.textBox55);
-            this.tabKinderf.Controls.Add(this.textBox56);
-            this.tabKinderf.Controls.Add(this.textBox57);
-            this.tabKinderf.Controls.Add(this.textBox58);
-            this.tabKinderf.Controls.Add(this.textBox59);
-            this.tabKinderf.Controls.Add(this.textBox60);
-            this.tabKinderf.Controls.Add(this.label9);
-            this.tabKinderf.Controls.Add(this.textBox61);
-            this.tabKinderf.Controls.Add(this.textBox62);
-            this.tabKinderf.Controls.Add(this.textBox63);
-            this.tabKinderf.Controls.Add(this.textBox64);
-            this.tabKinderf.Controls.Add(this.textBox65);
-            this.tabKinderf.Controls.Add(this.textBox66);
-            this.tabKinderf.Controls.Add(this.label10);
-            this.tabKinderf.Controls.Add(this.textBox67);
-            this.tabKinderf.Controls.Add(this.textBox68);
-            this.tabKinderf.Controls.Add(this.textBox69);
-            this.tabKinderf.Controls.Add(this.textBox70);
-            this.tabKinderf.Controls.Add(this.textBox71);
-            this.tabKinderf.Controls.Add(this.textBox72);
-            this.tabKinderf.Controls.Add(this.label11);
-            this.tabKinderf.Controls.Add(this.textBox25);
-            this.tabKinderf.Controls.Add(this.textBox26);
-            this.tabKinderf.Controls.Add(this.textBox27);
-            this.tabKinderf.Controls.Add(this.textBox28);
-            this.tabKinderf.Controls.Add(this.textBox29);
-            this.tabKinderf.Controls.Add(this.textBox30);
-            this.tabKinderf.Controls.Add(this.label4);
-            this.tabKinderf.Controls.Add(this.textBox31);
-            this.tabKinderf.Controls.Add(this.textBox32);
-            this.tabKinderf.Controls.Add(this.textBox33);
-            this.tabKinderf.Controls.Add(this.textBox34);
-            this.tabKinderf.Controls.Add(this.textBox35);
-            this.tabKinderf.Controls.Add(this.textBox36);
-            this.tabKinderf.Controls.Add(this.label5);
-            this.tabKinderf.Controls.Add(this.textBox37);
-            this.tabKinderf.Controls.Add(this.textBox38);
-            this.tabKinderf.Controls.Add(this.textBox39);
-            this.tabKinderf.Controls.Add(this.textBox40);
-            this.tabKinderf.Controls.Add(this.textBox41);
-            this.tabKinderf.Controls.Add(this.textBox42);
-            this.tabKinderf.Controls.Add(this.label6);
-            this.tabKinderf.Controls.Add(this.textBox43);
-            this.tabKinderf.Controls.Add(this.textBox44);
-            this.tabKinderf.Controls.Add(this.textBox45);
-            this.tabKinderf.Controls.Add(this.textBox46);
-            this.tabKinderf.Controls.Add(this.textBox47);
-            this.tabKinderf.Controls.Add(this.textBox48);
-            this.tabKinderf.Controls.Add(this.label7);
-            this.tabKinderf.Controls.Add(this.textBox13);
-            this.tabKinderf.Controls.Add(this.textBox14);
-            this.tabKinderf.Controls.Add(this.textBox15);
-            this.tabKinderf.Controls.Add(this.textBox16);
-            this.tabKinderf.Controls.Add(this.textBox17);
-            this.tabKinderf.Controls.Add(this.textBox18);
-            this.tabKinderf.Controls.Add(this.label2);
-            this.tabKinderf.Controls.Add(this.textBox19);
-            this.tabKinderf.Controls.Add(this.textBox20);
-            this.tabKinderf.Controls.Add(this.textBox21);
-            this.tabKinderf.Controls.Add(this.textBox22);
-            this.tabKinderf.Controls.Add(this.textBox23);
-            this.tabKinderf.Controls.Add(this.textBox24);
-            this.tabKinderf.Controls.Add(this.label3);
-            this.tabKinderf.Controls.Add(this.textBox7);
-            this.tabKinderf.Controls.Add(this.textBox8);
-            this.tabKinderf.Controls.Add(this.textBox9);
-            this.tabKinderf.Controls.Add(this.textBox10);
-            this.tabKinderf.Controls.Add(this.textBox11);
-            this.tabKinderf.Controls.Add(this.textBox12);
-            this.tabKinderf.Controls.Add(this.label1);
-            this.tabKinderf.Controls.Add(this.textBox6);
-            this.tabKinderf.Controls.Add(this.textBox5);
-            this.tabKinderf.Controls.Add(this.textBox4);
-            this.tabKinderf.Controls.Add(this.pp_p1_lager);
-            this.tabKinderf.Controls.Add(this.textBox2);
-            this.tabKinderf.Controls.Add(this.textBox1);
-            this.tabKinderf.Controls.Add(this.label_pp_prod);
-            this.tabKinderf.Controls.Add(this.label_pp_ib);
-            this.tabKinderf.Controls.Add(this.label_pp_ws);
-            this.tabKinderf.Controls.Add(this.label_pp_lager);
-            this.tabKinderf.Controls.Add(this.label_pp_sb);
-            this.tabKinderf.Controls.Add(this.label_pp_vw);
-            this.tabKinderf.Controls.Add(this.kf_label_p2);
+            this.tabKinderf.Controls.Add(this.pp_p1_18_prod);
+            this.tabKinderf.Controls.Add(this.pp_p1_18_bearb);
+            this.tabKinderf.Controls.Add(this.pp_p1_18_ws);
+            this.tabKinderf.Controls.Add(this.pp_p1_18_lager);
+            this.tabKinderf.Controls.Add(this.pp_p1_18_sb);
+            this.tabKinderf.Controls.Add(this.pp_p1_18_vw);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_18);
+            this.tabKinderf.Controls.Add(this.pp_p1_13_prod);
+            this.tabKinderf.Controls.Add(this.pp_p1_13_bearb);
+            this.tabKinderf.Controls.Add(this.pp_p1_13_ws);
+            this.tabKinderf.Controls.Add(this.pp_p1_13_lager);
+            this.tabKinderf.Controls.Add(this.pp_p1_13_sb);
+            this.tabKinderf.Controls.Add(this.pp_p1_13_vw);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_13);
+            this.tabKinderf.Controls.Add(this.pp_p1_7_prod);
+            this.tabKinderf.Controls.Add(this.pp_p1_7_bearb);
+            this.tabKinderf.Controls.Add(this.pp_p1_7_ws);
+            this.tabKinderf.Controls.Add(this.pp_p1_7_lager);
+            this.tabKinderf.Controls.Add(this.pp_p1_7_sb);
+            this.tabKinderf.Controls.Add(this.pp_p1_7_vw);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_7);
+            this.tabKinderf.Controls.Add(this.pp_p1_49_prod);
+            this.tabKinderf.Controls.Add(this.pp_p1_49_bearb);
+            this.tabKinderf.Controls.Add(this.pp_p1_49_ws);
+            this.tabKinderf.Controls.Add(this.pp_p1_49_lager);
+            this.tabKinderf.Controls.Add(this.pp_p1_49_sb);
+            this.tabKinderf.Controls.Add(this.pp_p1_49_vw);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_49);
+            this.tabKinderf.Controls.Add(this.pp_p1_10_prod);
+            this.tabKinderf.Controls.Add(this.pp_p1_10_bearb);
+            this.tabKinderf.Controls.Add(this.pp_p1_10_ws);
+            this.tabKinderf.Controls.Add(this.pp_p1_10_lager);
+            this.tabKinderf.Controls.Add(this.pp_p1_10_sb);
+            this.tabKinderf.Controls.Add(this.pp_p1_10_vw);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_10);
+            this.tabKinderf.Controls.Add(this.pp_p1_4_prod);
+            this.tabKinderf.Controls.Add(this.pp_p1_4_bearb);
+            this.tabKinderf.Controls.Add(this.pp_p1_4_ws);
+            this.tabKinderf.Controls.Add(this.pp_p1_4_lager);
+            this.tabKinderf.Controls.Add(this.pp_p1_4_sb);
+            this.tabKinderf.Controls.Add(this.pp_p1_4_vw);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_5);
+            this.tabKinderf.Controls.Add(this.pp_p1_50_prod);
+            this.tabKinderf.Controls.Add(this.pp_p1_50_bearb);
+            this.tabKinderf.Controls.Add(this.pp_p1_50_ws);
+            this.tabKinderf.Controls.Add(this.pp_p1_50_lager);
+            this.tabKinderf.Controls.Add(this.pp_p1_50_sb);
+            this.tabKinderf.Controls.Add(this.pp_p1_50_vw);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_50);
+            this.tabKinderf.Controls.Add(this.pp_p1_17_prod);
+            this.tabKinderf.Controls.Add(this.pp_p1_17_bearb);
+            this.tabKinderf.Controls.Add(this.pp_p1_17_ws);
+            this.tabKinderf.Controls.Add(this.pp_p1_17_lager);
+            this.tabKinderf.Controls.Add(this.pp_p1_17_sb);
+            this.tabKinderf.Controls.Add(this.pp_p1_17_vw);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_17);
+            this.tabKinderf.Controls.Add(this.pp_p1_16_prod);
+            this.tabKinderf.Controls.Add(this.pp_p1_16_bearb);
+            this.tabKinderf.Controls.Add(this.pp_p1_16_ws);
+            this.tabKinderf.Controls.Add(this.pp_p1_16_lager);
+            this.tabKinderf.Controls.Add(this.pp_p1_16_sb);
+            this.tabKinderf.Controls.Add(this.pp_p1_16_vw);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_16);
+            this.tabKinderf.Controls.Add(this.pp_p1_51_prod);
+            this.tabKinderf.Controls.Add(this.pp_p1_51_bearb);
+            this.tabKinderf.Controls.Add(this.pp_p1_51_ws);
+            this.tabKinderf.Controls.Add(this.pp_p1_51_lager);
+            this.tabKinderf.Controls.Add(this.pp_p1_51_sb);
+            this.tabKinderf.Controls.Add(this.pp_p1_51_vw);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_51);
+            this.tabKinderf.Controls.Add(this.pp_p1_26_prod);
+            this.tabKinderf.Controls.Add(this.pp_p1_26_bearb);
+            this.tabKinderf.Controls.Add(this.pp_p1_26_ws);
+            this.tabKinderf.Controls.Add(this.pp_p1_26_lager);
+            this.tabKinderf.Controls.Add(this.pp_p1_26_sb);
+            this.tabKinderf.Controls.Add(this.pp_p1_26_vw);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_26);
+            this.tabKinderf.Controls.Add(this.pp_p1_p1_prod);
+            this.tabKinderf.Controls.Add(this.pp_p1_p1_bearb);
+            this.tabKinderf.Controls.Add(this.pp_p1_p1_ws);
+            this.tabKinderf.Controls.Add(this.pp_p1_p1_lager);
+            this.tabKinderf.Controls.Add(this.pp_p1_p1_sb);
+            this.tabKinderf.Controls.Add(this.pp_p1_p1_vw);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_prod);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_bearb);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_ws);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_lager);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_sb);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_vw);
+            this.tabKinderf.Controls.Add(this.label_pp_p1_p1);
             resources.ApplyResources(this.tabKinderf, "tabKinderf");
             this.tabKinderf.Name = "tabKinderf";
             this.tabKinderf.UseVisualStyleBackColor = true;
             // 
-            // textBox49
+            // pp_p1_18_prod
             // 
-            resources.ApplyResources(this.textBox49, "textBox49");
-            this.textBox49.Name = "textBox49";
+            resources.ApplyResources(this.pp_p1_18_prod, "pp_p1_18_prod");
+            this.pp_p1_18_prod.Name = "pp_p1_18_prod";
             // 
-            // textBox50
+            // pp_p1_18_bearb
             // 
-            resources.ApplyResources(this.textBox50, "textBox50");
-            this.textBox50.Name = "textBox50";
+            resources.ApplyResources(this.pp_p1_18_bearb, "pp_p1_18_bearb");
+            this.pp_p1_18_bearb.Name = "pp_p1_18_bearb";
             // 
-            // textBox51
+            // pp_p1_18_ws
             // 
-            resources.ApplyResources(this.textBox51, "textBox51");
-            this.textBox51.Name = "textBox51";
+            resources.ApplyResources(this.pp_p1_18_ws, "pp_p1_18_ws");
+            this.pp_p1_18_ws.Name = "pp_p1_18_ws";
             // 
-            // textBox52
+            // pp_p1_18_lager
             // 
-            resources.ApplyResources(this.textBox52, "textBox52");
-            this.textBox52.Name = "textBox52";
+            resources.ApplyResources(this.pp_p1_18_lager, "pp_p1_18_lager");
+            this.pp_p1_18_lager.Name = "pp_p1_18_lager";
             // 
-            // textBox53
+            // pp_p1_18_sb
             // 
-            resources.ApplyResources(this.textBox53, "textBox53");
-            this.textBox53.Name = "textBox53";
+            resources.ApplyResources(this.pp_p1_18_sb, "pp_p1_18_sb");
+            this.pp_p1_18_sb.Name = "pp_p1_18_sb";
             // 
-            // textBox54
+            // pp_p1_18_vw
             // 
-            resources.ApplyResources(this.textBox54, "textBox54");
-            this.textBox54.Name = "textBox54";
+            resources.ApplyResources(this.pp_p1_18_vw, "pp_p1_18_vw");
+            this.pp_p1_18_vw.Name = "pp_p1_18_vw";
             // 
-            // label8
+            // label_pp_p1_18
             // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
+            resources.ApplyResources(this.label_pp_p1_18, "label_pp_p1_18");
+            this.label_pp_p1_18.Name = "label_pp_p1_18";
             // 
-            // textBox55
+            // pp_p1_13_prod
             // 
-            resources.ApplyResources(this.textBox55, "textBox55");
-            this.textBox55.Name = "textBox55";
+            resources.ApplyResources(this.pp_p1_13_prod, "pp_p1_13_prod");
+            this.pp_p1_13_prod.Name = "pp_p1_13_prod";
             // 
-            // textBox56
+            // pp_p1_13_bearb
             // 
-            resources.ApplyResources(this.textBox56, "textBox56");
-            this.textBox56.Name = "textBox56";
+            resources.ApplyResources(this.pp_p1_13_bearb, "pp_p1_13_bearb");
+            this.pp_p1_13_bearb.Name = "pp_p1_13_bearb";
             // 
-            // textBox57
+            // pp_p1_13_ws
             // 
-            resources.ApplyResources(this.textBox57, "textBox57");
-            this.textBox57.Name = "textBox57";
+            resources.ApplyResources(this.pp_p1_13_ws, "pp_p1_13_ws");
+            this.pp_p1_13_ws.Name = "pp_p1_13_ws";
             // 
-            // textBox58
+            // pp_p1_13_lager
             // 
-            resources.ApplyResources(this.textBox58, "textBox58");
-            this.textBox58.Name = "textBox58";
+            resources.ApplyResources(this.pp_p1_13_lager, "pp_p1_13_lager");
+            this.pp_p1_13_lager.Name = "pp_p1_13_lager";
             // 
-            // textBox59
+            // pp_p1_13_sb
             // 
-            resources.ApplyResources(this.textBox59, "textBox59");
-            this.textBox59.Name = "textBox59";
+            resources.ApplyResources(this.pp_p1_13_sb, "pp_p1_13_sb");
+            this.pp_p1_13_sb.Name = "pp_p1_13_sb";
             // 
-            // textBox60
+            // pp_p1_13_vw
             // 
-            resources.ApplyResources(this.textBox60, "textBox60");
-            this.textBox60.Name = "textBox60";
+            resources.ApplyResources(this.pp_p1_13_vw, "pp_p1_13_vw");
+            this.pp_p1_13_vw.Name = "pp_p1_13_vw";
             // 
-            // label9
+            // label_pp_p1_13
             // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
+            resources.ApplyResources(this.label_pp_p1_13, "label_pp_p1_13");
+            this.label_pp_p1_13.Name = "label_pp_p1_13";
             // 
-            // textBox61
+            // pp_p1_7_prod
             // 
-            resources.ApplyResources(this.textBox61, "textBox61");
-            this.textBox61.Name = "textBox61";
+            resources.ApplyResources(this.pp_p1_7_prod, "pp_p1_7_prod");
+            this.pp_p1_7_prod.Name = "pp_p1_7_prod";
             // 
-            // textBox62
+            // pp_p1_7_bearb
             // 
-            resources.ApplyResources(this.textBox62, "textBox62");
-            this.textBox62.Name = "textBox62";
+            resources.ApplyResources(this.pp_p1_7_bearb, "pp_p1_7_bearb");
+            this.pp_p1_7_bearb.Name = "pp_p1_7_bearb";
             // 
-            // textBox63
+            // pp_p1_7_ws
             // 
-            resources.ApplyResources(this.textBox63, "textBox63");
-            this.textBox63.Name = "textBox63";
+            resources.ApplyResources(this.pp_p1_7_ws, "pp_p1_7_ws");
+            this.pp_p1_7_ws.Name = "pp_p1_7_ws";
             // 
-            // textBox64
+            // pp_p1_7_lager
             // 
-            resources.ApplyResources(this.textBox64, "textBox64");
-            this.textBox64.Name = "textBox64";
+            resources.ApplyResources(this.pp_p1_7_lager, "pp_p1_7_lager");
+            this.pp_p1_7_lager.Name = "pp_p1_7_lager";
             // 
-            // textBox65
+            // pp_p1_7_sb
             // 
-            resources.ApplyResources(this.textBox65, "textBox65");
-            this.textBox65.Name = "textBox65";
+            resources.ApplyResources(this.pp_p1_7_sb, "pp_p1_7_sb");
+            this.pp_p1_7_sb.Name = "pp_p1_7_sb";
             // 
-            // textBox66
+            // pp_p1_7_vw
             // 
-            resources.ApplyResources(this.textBox66, "textBox66");
-            this.textBox66.Name = "textBox66";
+            resources.ApplyResources(this.pp_p1_7_vw, "pp_p1_7_vw");
+            this.pp_p1_7_vw.Name = "pp_p1_7_vw";
             // 
-            // label10
+            // label_pp_p1_7
             // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.Name = "label10";
+            resources.ApplyResources(this.label_pp_p1_7, "label_pp_p1_7");
+            this.label_pp_p1_7.Name = "label_pp_p1_7";
             // 
-            // textBox67
+            // pp_p1_49_prod
             // 
-            resources.ApplyResources(this.textBox67, "textBox67");
-            this.textBox67.Name = "textBox67";
+            resources.ApplyResources(this.pp_p1_49_prod, "pp_p1_49_prod");
+            this.pp_p1_49_prod.Name = "pp_p1_49_prod";
             // 
-            // textBox68
+            // pp_p1_49_bearb
             // 
-            resources.ApplyResources(this.textBox68, "textBox68");
-            this.textBox68.Name = "textBox68";
+            resources.ApplyResources(this.pp_p1_49_bearb, "pp_p1_49_bearb");
+            this.pp_p1_49_bearb.Name = "pp_p1_49_bearb";
             // 
-            // textBox69
+            // pp_p1_49_ws
             // 
-            resources.ApplyResources(this.textBox69, "textBox69");
-            this.textBox69.Name = "textBox69";
+            resources.ApplyResources(this.pp_p1_49_ws, "pp_p1_49_ws");
+            this.pp_p1_49_ws.Name = "pp_p1_49_ws";
             // 
-            // textBox70
+            // pp_p1_49_lager
             // 
-            resources.ApplyResources(this.textBox70, "textBox70");
-            this.textBox70.Name = "textBox70";
+            resources.ApplyResources(this.pp_p1_49_lager, "pp_p1_49_lager");
+            this.pp_p1_49_lager.Name = "pp_p1_49_lager";
             // 
-            // textBox71
+            // pp_p1_49_sb
             // 
-            resources.ApplyResources(this.textBox71, "textBox71");
-            this.textBox71.Name = "textBox71";
+            resources.ApplyResources(this.pp_p1_49_sb, "pp_p1_49_sb");
+            this.pp_p1_49_sb.Name = "pp_p1_49_sb";
             // 
-            // textBox72
+            // pp_p1_49_vw
             // 
-            resources.ApplyResources(this.textBox72, "textBox72");
-            this.textBox72.Name = "textBox72";
+            resources.ApplyResources(this.pp_p1_49_vw, "pp_p1_49_vw");
+            this.pp_p1_49_vw.Name = "pp_p1_49_vw";
             // 
-            // label11
+            // label_pp_p1_49
             // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
+            resources.ApplyResources(this.label_pp_p1_49, "label_pp_p1_49");
+            this.label_pp_p1_49.Name = "label_pp_p1_49";
             // 
-            // textBox25
+            // pp_p1_10_prod
             // 
-            resources.ApplyResources(this.textBox25, "textBox25");
-            this.textBox25.Name = "textBox25";
+            resources.ApplyResources(this.pp_p1_10_prod, "pp_p1_10_prod");
+            this.pp_p1_10_prod.Name = "pp_p1_10_prod";
             // 
-            // textBox26
+            // pp_p1_10_bearb
             // 
-            resources.ApplyResources(this.textBox26, "textBox26");
-            this.textBox26.Name = "textBox26";
+            resources.ApplyResources(this.pp_p1_10_bearb, "pp_p1_10_bearb");
+            this.pp_p1_10_bearb.Name = "pp_p1_10_bearb";
             // 
-            // textBox27
+            // pp_p1_10_ws
             // 
-            resources.ApplyResources(this.textBox27, "textBox27");
-            this.textBox27.Name = "textBox27";
+            resources.ApplyResources(this.pp_p1_10_ws, "pp_p1_10_ws");
+            this.pp_p1_10_ws.Name = "pp_p1_10_ws";
             // 
-            // textBox28
+            // pp_p1_10_lager
             // 
-            resources.ApplyResources(this.textBox28, "textBox28");
-            this.textBox28.Name = "textBox28";
+            resources.ApplyResources(this.pp_p1_10_lager, "pp_p1_10_lager");
+            this.pp_p1_10_lager.Name = "pp_p1_10_lager";
             // 
-            // textBox29
+            // pp_p1_10_sb
             // 
-            resources.ApplyResources(this.textBox29, "textBox29");
-            this.textBox29.Name = "textBox29";
+            resources.ApplyResources(this.pp_p1_10_sb, "pp_p1_10_sb");
+            this.pp_p1_10_sb.Name = "pp_p1_10_sb";
             // 
-            // textBox30
+            // pp_p1_10_vw
             // 
-            resources.ApplyResources(this.textBox30, "textBox30");
-            this.textBox30.Name = "textBox30";
+            resources.ApplyResources(this.pp_p1_10_vw, "pp_p1_10_vw");
+            this.pp_p1_10_vw.Name = "pp_p1_10_vw";
             // 
-            // label4
+            // label_pp_p1_10
             // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
+            resources.ApplyResources(this.label_pp_p1_10, "label_pp_p1_10");
+            this.label_pp_p1_10.Name = "label_pp_p1_10";
             // 
-            // textBox31
+            // pp_p1_4_prod
             // 
-            resources.ApplyResources(this.textBox31, "textBox31");
-            this.textBox31.Name = "textBox31";
+            resources.ApplyResources(this.pp_p1_4_prod, "pp_p1_4_prod");
+            this.pp_p1_4_prod.Name = "pp_p1_4_prod";
             // 
-            // textBox32
+            // pp_p1_4_bearb
             // 
-            resources.ApplyResources(this.textBox32, "textBox32");
-            this.textBox32.Name = "textBox32";
+            resources.ApplyResources(this.pp_p1_4_bearb, "pp_p1_4_bearb");
+            this.pp_p1_4_bearb.Name = "pp_p1_4_bearb";
             // 
-            // textBox33
+            // pp_p1_4_ws
             // 
-            resources.ApplyResources(this.textBox33, "textBox33");
-            this.textBox33.Name = "textBox33";
+            resources.ApplyResources(this.pp_p1_4_ws, "pp_p1_4_ws");
+            this.pp_p1_4_ws.Name = "pp_p1_4_ws";
             // 
-            // textBox34
+            // pp_p1_4_lager
             // 
-            resources.ApplyResources(this.textBox34, "textBox34");
-            this.textBox34.Name = "textBox34";
+            resources.ApplyResources(this.pp_p1_4_lager, "pp_p1_4_lager");
+            this.pp_p1_4_lager.Name = "pp_p1_4_lager";
             // 
-            // textBox35
+            // pp_p1_4_sb
             // 
-            resources.ApplyResources(this.textBox35, "textBox35");
-            this.textBox35.Name = "textBox35";
+            resources.ApplyResources(this.pp_p1_4_sb, "pp_p1_4_sb");
+            this.pp_p1_4_sb.Name = "pp_p1_4_sb";
             // 
-            // textBox36
+            // pp_p1_4_vw
             // 
-            resources.ApplyResources(this.textBox36, "textBox36");
-            this.textBox36.Name = "textBox36";
+            resources.ApplyResources(this.pp_p1_4_vw, "pp_p1_4_vw");
+            this.pp_p1_4_vw.Name = "pp_p1_4_vw";
             // 
-            // label5
+            // label_pp_p1_5
             // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.Name = "label5";
+            resources.ApplyResources(this.label_pp_p1_5, "label_pp_p1_5");
+            this.label_pp_p1_5.Name = "label_pp_p1_5";
             // 
-            // textBox37
+            // pp_p1_50_prod
             // 
-            resources.ApplyResources(this.textBox37, "textBox37");
-            this.textBox37.Name = "textBox37";
+            resources.ApplyResources(this.pp_p1_50_prod, "pp_p1_50_prod");
+            this.pp_p1_50_prod.Name = "pp_p1_50_prod";
             // 
-            // textBox38
+            // pp_p1_50_bearb
             // 
-            resources.ApplyResources(this.textBox38, "textBox38");
-            this.textBox38.Name = "textBox38";
+            resources.ApplyResources(this.pp_p1_50_bearb, "pp_p1_50_bearb");
+            this.pp_p1_50_bearb.Name = "pp_p1_50_bearb";
             // 
-            // textBox39
+            // pp_p1_50_ws
             // 
-            resources.ApplyResources(this.textBox39, "textBox39");
-            this.textBox39.Name = "textBox39";
+            resources.ApplyResources(this.pp_p1_50_ws, "pp_p1_50_ws");
+            this.pp_p1_50_ws.Name = "pp_p1_50_ws";
             // 
-            // textBox40
+            // pp_p1_50_lager
             // 
-            resources.ApplyResources(this.textBox40, "textBox40");
-            this.textBox40.Name = "textBox40";
+            resources.ApplyResources(this.pp_p1_50_lager, "pp_p1_50_lager");
+            this.pp_p1_50_lager.Name = "pp_p1_50_lager";
             // 
-            // textBox41
+            // pp_p1_50_sb
             // 
-            resources.ApplyResources(this.textBox41, "textBox41");
-            this.textBox41.Name = "textBox41";
+            resources.ApplyResources(this.pp_p1_50_sb, "pp_p1_50_sb");
+            this.pp_p1_50_sb.Name = "pp_p1_50_sb";
             // 
-            // textBox42
+            // pp_p1_50_vw
             // 
-            resources.ApplyResources(this.textBox42, "textBox42");
-            this.textBox42.Name = "textBox42";
+            resources.ApplyResources(this.pp_p1_50_vw, "pp_p1_50_vw");
+            this.pp_p1_50_vw.Name = "pp_p1_50_vw";
             // 
-            // label6
+            // label_pp_p1_50
             // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
+            resources.ApplyResources(this.label_pp_p1_50, "label_pp_p1_50");
+            this.label_pp_p1_50.Name = "label_pp_p1_50";
             // 
-            // textBox43
+            // pp_p1_17_prod
             // 
-            resources.ApplyResources(this.textBox43, "textBox43");
-            this.textBox43.Name = "textBox43";
+            resources.ApplyResources(this.pp_p1_17_prod, "pp_p1_17_prod");
+            this.pp_p1_17_prod.Name = "pp_p1_17_prod";
             // 
-            // textBox44
+            // pp_p1_17_bearb
             // 
-            resources.ApplyResources(this.textBox44, "textBox44");
-            this.textBox44.Name = "textBox44";
+            resources.ApplyResources(this.pp_p1_17_bearb, "pp_p1_17_bearb");
+            this.pp_p1_17_bearb.Name = "pp_p1_17_bearb";
             // 
-            // textBox45
+            // pp_p1_17_ws
             // 
-            resources.ApplyResources(this.textBox45, "textBox45");
-            this.textBox45.Name = "textBox45";
+            resources.ApplyResources(this.pp_p1_17_ws, "pp_p1_17_ws");
+            this.pp_p1_17_ws.Name = "pp_p1_17_ws";
             // 
-            // textBox46
+            // pp_p1_17_lager
             // 
-            resources.ApplyResources(this.textBox46, "textBox46");
-            this.textBox46.Name = "textBox46";
+            resources.ApplyResources(this.pp_p1_17_lager, "pp_p1_17_lager");
+            this.pp_p1_17_lager.Name = "pp_p1_17_lager";
             // 
-            // textBox47
+            // pp_p1_17_sb
             // 
-            resources.ApplyResources(this.textBox47, "textBox47");
-            this.textBox47.Name = "textBox47";
+            resources.ApplyResources(this.pp_p1_17_sb, "pp_p1_17_sb");
+            this.pp_p1_17_sb.Name = "pp_p1_17_sb";
             // 
-            // textBox48
+            // pp_p1_17_vw
             // 
-            resources.ApplyResources(this.textBox48, "textBox48");
-            this.textBox48.Name = "textBox48";
+            resources.ApplyResources(this.pp_p1_17_vw, "pp_p1_17_vw");
+            this.pp_p1_17_vw.Name = "pp_p1_17_vw";
             // 
-            // label7
+            // label_pp_p1_17
             // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
+            resources.ApplyResources(this.label_pp_p1_17, "label_pp_p1_17");
+            this.label_pp_p1_17.Name = "label_pp_p1_17";
             // 
-            // textBox13
+            // pp_p1_16_prod
             // 
-            resources.ApplyResources(this.textBox13, "textBox13");
-            this.textBox13.Name = "textBox13";
+            resources.ApplyResources(this.pp_p1_16_prod, "pp_p1_16_prod");
+            this.pp_p1_16_prod.Name = "pp_p1_16_prod";
             // 
-            // textBox14
+            // pp_p1_16_bearb
             // 
-            resources.ApplyResources(this.textBox14, "textBox14");
-            this.textBox14.Name = "textBox14";
+            resources.ApplyResources(this.pp_p1_16_bearb, "pp_p1_16_bearb");
+            this.pp_p1_16_bearb.Name = "pp_p1_16_bearb";
             // 
-            // textBox15
+            // pp_p1_16_ws
             // 
-            resources.ApplyResources(this.textBox15, "textBox15");
-            this.textBox15.Name = "textBox15";
+            resources.ApplyResources(this.pp_p1_16_ws, "pp_p1_16_ws");
+            this.pp_p1_16_ws.Name = "pp_p1_16_ws";
             // 
-            // textBox16
+            // pp_p1_16_lager
             // 
-            resources.ApplyResources(this.textBox16, "textBox16");
-            this.textBox16.Name = "textBox16";
+            resources.ApplyResources(this.pp_p1_16_lager, "pp_p1_16_lager");
+            this.pp_p1_16_lager.Name = "pp_p1_16_lager";
             // 
-            // textBox17
+            // pp_p1_16_sb
             // 
-            resources.ApplyResources(this.textBox17, "textBox17");
-            this.textBox17.Name = "textBox17";
+            resources.ApplyResources(this.pp_p1_16_sb, "pp_p1_16_sb");
+            this.pp_p1_16_sb.Name = "pp_p1_16_sb";
             // 
-            // textBox18
+            // pp_p1_16_vw
             // 
-            resources.ApplyResources(this.textBox18, "textBox18");
-            this.textBox18.Name = "textBox18";
+            resources.ApplyResources(this.pp_p1_16_vw, "pp_p1_16_vw");
+            this.pp_p1_16_vw.Name = "pp_p1_16_vw";
             // 
-            // label2
+            // label_pp_p1_16
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.label_pp_p1_16, "label_pp_p1_16");
+            this.label_pp_p1_16.Name = "label_pp_p1_16";
             // 
-            // textBox19
+            // pp_p1_51_prod
             // 
-            resources.ApplyResources(this.textBox19, "textBox19");
-            this.textBox19.Name = "textBox19";
+            resources.ApplyResources(this.pp_p1_51_prod, "pp_p1_51_prod");
+            this.pp_p1_51_prod.Name = "pp_p1_51_prod";
             // 
-            // textBox20
+            // pp_p1_51_bearb
             // 
-            resources.ApplyResources(this.textBox20, "textBox20");
-            this.textBox20.Name = "textBox20";
+            resources.ApplyResources(this.pp_p1_51_bearb, "pp_p1_51_bearb");
+            this.pp_p1_51_bearb.Name = "pp_p1_51_bearb";
             // 
-            // textBox21
+            // pp_p1_51_ws
             // 
-            resources.ApplyResources(this.textBox21, "textBox21");
-            this.textBox21.Name = "textBox21";
+            resources.ApplyResources(this.pp_p1_51_ws, "pp_p1_51_ws");
+            this.pp_p1_51_ws.Name = "pp_p1_51_ws";
             // 
-            // textBox22
+            // pp_p1_51_lager
             // 
-            resources.ApplyResources(this.textBox22, "textBox22");
-            this.textBox22.Name = "textBox22";
+            resources.ApplyResources(this.pp_p1_51_lager, "pp_p1_51_lager");
+            this.pp_p1_51_lager.Name = "pp_p1_51_lager";
             // 
-            // textBox23
+            // pp_p1_51_sb
             // 
-            resources.ApplyResources(this.textBox23, "textBox23");
-            this.textBox23.Name = "textBox23";
+            resources.ApplyResources(this.pp_p1_51_sb, "pp_p1_51_sb");
+            this.pp_p1_51_sb.Name = "pp_p1_51_sb";
             // 
-            // textBox24
+            // pp_p1_51_vw
             // 
-            resources.ApplyResources(this.textBox24, "textBox24");
-            this.textBox24.Name = "textBox24";
+            resources.ApplyResources(this.pp_p1_51_vw, "pp_p1_51_vw");
+            this.pp_p1_51_vw.Name = "pp_p1_51_vw";
             // 
-            // label3
+            // label_pp_p1_51
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
+            resources.ApplyResources(this.label_pp_p1_51, "label_pp_p1_51");
+            this.label_pp_p1_51.Name = "label_pp_p1_51";
             // 
-            // textBox7
+            // pp_p1_26_prod
             // 
-            resources.ApplyResources(this.textBox7, "textBox7");
-            this.textBox7.Name = "textBox7";
+            resources.ApplyResources(this.pp_p1_26_prod, "pp_p1_26_prod");
+            this.pp_p1_26_prod.Name = "pp_p1_26_prod";
             // 
-            // textBox8
+            // pp_p1_26_bearb
             // 
-            resources.ApplyResources(this.textBox8, "textBox8");
-            this.textBox8.Name = "textBox8";
+            resources.ApplyResources(this.pp_p1_26_bearb, "pp_p1_26_bearb");
+            this.pp_p1_26_bearb.Name = "pp_p1_26_bearb";
             // 
-            // textBox9
+            // pp_p1_26_ws
             // 
-            resources.ApplyResources(this.textBox9, "textBox9");
-            this.textBox9.Name = "textBox9";
+            resources.ApplyResources(this.pp_p1_26_ws, "pp_p1_26_ws");
+            this.pp_p1_26_ws.Name = "pp_p1_26_ws";
             // 
-            // textBox10
+            // pp_p1_26_lager
             // 
-            resources.ApplyResources(this.textBox10, "textBox10");
-            this.textBox10.Name = "textBox10";
+            resources.ApplyResources(this.pp_p1_26_lager, "pp_p1_26_lager");
+            this.pp_p1_26_lager.Name = "pp_p1_26_lager";
             // 
-            // textBox11
+            // pp_p1_26_sb
             // 
-            resources.ApplyResources(this.textBox11, "textBox11");
-            this.textBox11.Name = "textBox11";
+            resources.ApplyResources(this.pp_p1_26_sb, "pp_p1_26_sb");
+            this.pp_p1_26_sb.Name = "pp_p1_26_sb";
             // 
-            // textBox12
+            // pp_p1_26_vw
             // 
-            resources.ApplyResources(this.textBox12, "textBox12");
-            this.textBox12.Name = "textBox12";
+            resources.ApplyResources(this.pp_p1_26_vw, "pp_p1_26_vw");
+            this.pp_p1_26_vw.Name = "pp_p1_26_vw";
             // 
-            // label1
+            // label_pp_p1_26
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.label_pp_p1_26, "label_pp_p1_26");
+            this.label_pp_p1_26.Name = "label_pp_p1_26";
             // 
-            // textBox6
+            // pp_p1_p1_prod
             // 
-            resources.ApplyResources(this.textBox6, "textBox6");
-            this.textBox6.Name = "textBox6";
+            resources.ApplyResources(this.pp_p1_p1_prod, "pp_p1_p1_prod");
+            this.pp_p1_p1_prod.Name = "pp_p1_p1_prod";
             // 
-            // textBox5
+            // pp_p1_p1_bearb
             // 
-            resources.ApplyResources(this.textBox5, "textBox5");
-            this.textBox5.Name = "textBox5";
+            resources.ApplyResources(this.pp_p1_p1_bearb, "pp_p1_p1_bearb");
+            this.pp_p1_p1_bearb.Name = "pp_p1_p1_bearb";
             // 
-            // textBox4
+            // pp_p1_p1_ws
             // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
+            resources.ApplyResources(this.pp_p1_p1_ws, "pp_p1_p1_ws");
+            this.pp_p1_p1_ws.Name = "pp_p1_p1_ws";
             // 
-            // pp_p1_lager
+            // pp_p1_p1_lager
             // 
-            resources.ApplyResources(this.pp_p1_lager, "pp_p1_lager");
-            this.pp_p1_lager.Name = "pp_p1_lager";
+            resources.ApplyResources(this.pp_p1_p1_lager, "pp_p1_p1_lager");
+            this.pp_p1_p1_lager.Name = "pp_p1_p1_lager";
             // 
-            // textBox2
+            // pp_p1_p1_sb
             // 
-            resources.ApplyResources(this.textBox2, "textBox2");
-            this.textBox2.Name = "textBox2";
+            resources.ApplyResources(this.pp_p1_p1_sb, "pp_p1_p1_sb");
+            this.pp_p1_p1_sb.Name = "pp_p1_p1_sb";
             // 
-            // textBox1
+            // pp_p1_p1_vw
             // 
-            resources.ApplyResources(this.textBox1, "textBox1");
-            this.textBox1.Name = "textBox1";
+            resources.ApplyResources(this.pp_p1_p1_vw, "pp_p1_p1_vw");
+            this.pp_p1_p1_vw.Name = "pp_p1_p1_vw";
             // 
-            // label_pp_prod
+            // label_pp_p1_prod
             // 
-            resources.ApplyResources(this.label_pp_prod, "label_pp_prod");
-            this.label_pp_prod.Name = "label_pp_prod";
+            resources.ApplyResources(this.label_pp_p1_prod, "label_pp_p1_prod");
+            this.label_pp_p1_prod.Name = "label_pp_p1_prod";
             // 
-            // label_pp_ib
+            // label_pp_p1_bearb
             // 
-            resources.ApplyResources(this.label_pp_ib, "label_pp_ib");
-            this.label_pp_ib.Name = "label_pp_ib";
+            resources.ApplyResources(this.label_pp_p1_bearb, "label_pp_p1_bearb");
+            this.label_pp_p1_bearb.Name = "label_pp_p1_bearb";
             // 
-            // label_pp_ws
+            // label_pp_p1_ws
             // 
-            resources.ApplyResources(this.label_pp_ws, "label_pp_ws");
-            this.label_pp_ws.Name = "label_pp_ws";
+            resources.ApplyResources(this.label_pp_p1_ws, "label_pp_p1_ws");
+            this.label_pp_p1_ws.Name = "label_pp_p1_ws";
             // 
-            // label_pp_lager
+            // label_pp_p1_lager
             // 
-            resources.ApplyResources(this.label_pp_lager, "label_pp_lager");
-            this.label_pp_lager.Name = "label_pp_lager";
+            resources.ApplyResources(this.label_pp_p1_lager, "label_pp_p1_lager");
+            this.label_pp_p1_lager.Name = "label_pp_p1_lager";
             // 
-            // label_pp_sb
+            // label_pp_p1_sb
             // 
-            resources.ApplyResources(this.label_pp_sb, "label_pp_sb");
-            this.label_pp_sb.Name = "label_pp_sb";
+            resources.ApplyResources(this.label_pp_p1_sb, "label_pp_p1_sb");
+            this.label_pp_p1_sb.Name = "label_pp_p1_sb";
             // 
-            // label_pp_vw
+            // label_pp_p1_vw
             // 
-            resources.ApplyResources(this.label_pp_vw, "label_pp_vw");
-            this.label_pp_vw.Name = "label_pp_vw";
+            resources.ApplyResources(this.label_pp_p1_vw, "label_pp_p1_vw");
+            this.label_pp_p1_vw.Name = "label_pp_p1_vw";
             // 
-            // kf_label_p2
+            // label_pp_p1_p1
             // 
-            resources.ApplyResources(this.kf_label_p2, "kf_label_p2");
-            this.kf_label_p2.Name = "kf_label_p2";
+            resources.ApplyResources(this.label_pp_p1_p1, "label_pp_p1_p1");
+            this.label_pp_p1_p1.Name = "label_pp_p1_p1";
             // 
             // tabDamenf
             // 
+            this.tabDamenf.Controls.Add(this.pp_p2_19_prod);
+            this.tabDamenf.Controls.Add(this.pp_p2_19_bearb);
+            this.tabDamenf.Controls.Add(this.pp_p2_19_ws);
+            this.tabDamenf.Controls.Add(this.pp_p2_19_lager);
+            this.tabDamenf.Controls.Add(this.pp_p2_19_sb);
+            this.tabDamenf.Controls.Add(this.pp_p2_19_vw);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_19);
+            this.tabDamenf.Controls.Add(this.pp_p2_14_prod);
+            this.tabDamenf.Controls.Add(this.pp_p2_14_bearb);
+            this.tabDamenf.Controls.Add(this.pp_p2_14_ws);
+            this.tabDamenf.Controls.Add(this.pp_p2_14_lager);
+            this.tabDamenf.Controls.Add(this.pp_p2_14_sb);
+            this.tabDamenf.Controls.Add(this.pp_p2_14_vw);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_14);
+            this.tabDamenf.Controls.Add(this.pp_p2_8_prod);
+            this.tabDamenf.Controls.Add(this.pp_p2_8_bearb);
+            this.tabDamenf.Controls.Add(this.pp_p2_8_ws);
+            this.tabDamenf.Controls.Add(this.pp_p2_8_lager);
+            this.tabDamenf.Controls.Add(this.pp_p2_8_sb);
+            this.tabDamenf.Controls.Add(this.pp_p2_8_vw);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_8);
+            this.tabDamenf.Controls.Add(this.pp_p2_54_prod);
+            this.tabDamenf.Controls.Add(this.pp_p2_54_bearb);
+            this.tabDamenf.Controls.Add(this.pp_p2_54_ws);
+            this.tabDamenf.Controls.Add(this.pp_p2_54_lager);
+            this.tabDamenf.Controls.Add(this.pp_p2_54_sb);
+            this.tabDamenf.Controls.Add(this.pp_p2_54_vw);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_54);
+            this.tabDamenf.Controls.Add(this.pp_p2_11_prod);
+            this.tabDamenf.Controls.Add(this.pp_p2_11_bearb);
+            this.tabDamenf.Controls.Add(this.pp_p2_11_ws);
+            this.tabDamenf.Controls.Add(this.pp_p2_11_lager);
+            this.tabDamenf.Controls.Add(this.pp_p2_11_sb);
+            this.tabDamenf.Controls.Add(this.pp_p2_11_vw);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_11);
+            this.tabDamenf.Controls.Add(this.pp_p2_5_prod);
+            this.tabDamenf.Controls.Add(this.pp_p2_5_bearb);
+            this.tabDamenf.Controls.Add(this.pp_p2_5_ws);
+            this.tabDamenf.Controls.Add(this.pp_p2_5_lager);
+            this.tabDamenf.Controls.Add(this.pp_p2_5_sb);
+            this.tabDamenf.Controls.Add(this.pp_p2_5_vw);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_5);
+            this.tabDamenf.Controls.Add(this.pp_p2_55_prod);
+            this.tabDamenf.Controls.Add(this.pp_p2_55_bearb);
+            this.tabDamenf.Controls.Add(this.pp_p2_55_ws);
+            this.tabDamenf.Controls.Add(this.pp_p2_55_lager);
+            this.tabDamenf.Controls.Add(this.pp_p2_55_sb);
+            this.tabDamenf.Controls.Add(this.pp_p2_55_vw);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_55);
+            this.tabDamenf.Controls.Add(this.pp_p2_17_prod);
+            this.tabDamenf.Controls.Add(this.pp_p2_17_bearb);
+            this.tabDamenf.Controls.Add(this.pp_p2_17_ws);
+            this.tabDamenf.Controls.Add(this.pp_p2_17_lager);
+            this.tabDamenf.Controls.Add(this.pp_p2_17_sb);
+            this.tabDamenf.Controls.Add(this.pp_p2_17_vw);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_17);
+            this.tabDamenf.Controls.Add(this.pp_p2_16_prod);
+            this.tabDamenf.Controls.Add(this.pp_p2_16_bearb);
+            this.tabDamenf.Controls.Add(this.pp_p2_16_ws);
+            this.tabDamenf.Controls.Add(this.pp_p2_16_lager);
+            this.tabDamenf.Controls.Add(this.pp_p2_16_sb);
+            this.tabDamenf.Controls.Add(this.pp_p2_16_vw);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_16);
+            this.tabDamenf.Controls.Add(this.pp_p2_56_prod);
+            this.tabDamenf.Controls.Add(this.pp_p2_56_bearb);
+            this.tabDamenf.Controls.Add(this.pp_p2_56_ws);
+            this.tabDamenf.Controls.Add(this.pp_p2_56_lager);
+            this.tabDamenf.Controls.Add(this.pp_p2_56_sb);
+            this.tabDamenf.Controls.Add(this.pp_p2_56_vw);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_56);
+            this.tabDamenf.Controls.Add(this.pp_p2_26_prod);
+            this.tabDamenf.Controls.Add(this.pp_p2_26_bearb);
+            this.tabDamenf.Controls.Add(this.pp_p2_26_ws);
+            this.tabDamenf.Controls.Add(this.pp_p2_26_lager);
+            this.tabDamenf.Controls.Add(this.pp_p2_26_sb);
+            this.tabDamenf.Controls.Add(this.pp_p2_26_vw);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_26);
+            this.tabDamenf.Controls.Add(this.pp_p2_p2_prod);
+            this.tabDamenf.Controls.Add(this.pp_p2_p2_bearb);
+            this.tabDamenf.Controls.Add(this.pp_p2_p2_ws);
+            this.tabDamenf.Controls.Add(this.pp_p2_p2_lager);
+            this.tabDamenf.Controls.Add(this.pp_p2_p2_sb);
+            this.tabDamenf.Controls.Add(this.pp_p2_p2_vw);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_prod);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_bearb);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_ws);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_lager);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_sb);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_vw);
+            this.tabDamenf.Controls.Add(this.label_pp_p2_p2);
             resources.ApplyResources(this.tabDamenf, "tabDamenf");
             this.tabDamenf.Name = "tabDamenf";
             this.tabDamenf.UseVisualStyleBackColor = true;
             // 
+            // pp_p2_19_prod
+            // 
+            resources.ApplyResources(this.pp_p2_19_prod, "pp_p2_19_prod");
+            this.pp_p2_19_prod.Name = "pp_p2_19_prod";
+            // 
+            // pp_p2_19_bearb
+            // 
+            resources.ApplyResources(this.pp_p2_19_bearb, "pp_p2_19_bearb");
+            this.pp_p2_19_bearb.Name = "pp_p2_19_bearb";
+            // 
+            // pp_p2_19_ws
+            // 
+            resources.ApplyResources(this.pp_p2_19_ws, "pp_p2_19_ws");
+            this.pp_p2_19_ws.Name = "pp_p2_19_ws";
+            // 
+            // pp_p2_19_lager
+            // 
+            resources.ApplyResources(this.pp_p2_19_lager, "pp_p2_19_lager");
+            this.pp_p2_19_lager.Name = "pp_p2_19_lager";
+            // 
+            // pp_p2_19_sb
+            // 
+            resources.ApplyResources(this.pp_p2_19_sb, "pp_p2_19_sb");
+            this.pp_p2_19_sb.Name = "pp_p2_19_sb";
+            // 
+            // pp_p2_19_vw
+            // 
+            resources.ApplyResources(this.pp_p2_19_vw, "pp_p2_19_vw");
+            this.pp_p2_19_vw.Name = "pp_p2_19_vw";
+            // 
+            // label_pp_p2_19
+            // 
+            resources.ApplyResources(this.label_pp_p2_19, "label_pp_p2_19");
+            this.label_pp_p2_19.Name = "label_pp_p2_19";
+            // 
+            // pp_p2_14_prod
+            // 
+            resources.ApplyResources(this.pp_p2_14_prod, "pp_p2_14_prod");
+            this.pp_p2_14_prod.Name = "pp_p2_14_prod";
+            // 
+            // pp_p2_14_bearb
+            // 
+            resources.ApplyResources(this.pp_p2_14_bearb, "pp_p2_14_bearb");
+            this.pp_p2_14_bearb.Name = "pp_p2_14_bearb";
+            // 
+            // pp_p2_14_ws
+            // 
+            resources.ApplyResources(this.pp_p2_14_ws, "pp_p2_14_ws");
+            this.pp_p2_14_ws.Name = "pp_p2_14_ws";
+            // 
+            // pp_p2_14_lager
+            // 
+            resources.ApplyResources(this.pp_p2_14_lager, "pp_p2_14_lager");
+            this.pp_p2_14_lager.Name = "pp_p2_14_lager";
+            // 
+            // pp_p2_14_sb
+            // 
+            resources.ApplyResources(this.pp_p2_14_sb, "pp_p2_14_sb");
+            this.pp_p2_14_sb.Name = "pp_p2_14_sb";
+            // 
+            // pp_p2_14_vw
+            // 
+            resources.ApplyResources(this.pp_p2_14_vw, "pp_p2_14_vw");
+            this.pp_p2_14_vw.Name = "pp_p2_14_vw";
+            // 
+            // label_pp_p2_14
+            // 
+            resources.ApplyResources(this.label_pp_p2_14, "label_pp_p2_14");
+            this.label_pp_p2_14.Name = "label_pp_p2_14";
+            // 
+            // pp_p2_8_prod
+            // 
+            resources.ApplyResources(this.pp_p2_8_prod, "pp_p2_8_prod");
+            this.pp_p2_8_prod.Name = "pp_p2_8_prod";
+            // 
+            // pp_p2_8_bearb
+            // 
+            resources.ApplyResources(this.pp_p2_8_bearb, "pp_p2_8_bearb");
+            this.pp_p2_8_bearb.Name = "pp_p2_8_bearb";
+            // 
+            // pp_p2_8_ws
+            // 
+            resources.ApplyResources(this.pp_p2_8_ws, "pp_p2_8_ws");
+            this.pp_p2_8_ws.Name = "pp_p2_8_ws";
+            // 
+            // pp_p2_8_lager
+            // 
+            resources.ApplyResources(this.pp_p2_8_lager, "pp_p2_8_lager");
+            this.pp_p2_8_lager.Name = "pp_p2_8_lager";
+            // 
+            // pp_p2_8_sb
+            // 
+            resources.ApplyResources(this.pp_p2_8_sb, "pp_p2_8_sb");
+            this.pp_p2_8_sb.Name = "pp_p2_8_sb";
+            // 
+            // pp_p2_8_vw
+            // 
+            resources.ApplyResources(this.pp_p2_8_vw, "pp_p2_8_vw");
+            this.pp_p2_8_vw.Name = "pp_p2_8_vw";
+            // 
+            // label_pp_p2_8
+            // 
+            resources.ApplyResources(this.label_pp_p2_8, "label_pp_p2_8");
+            this.label_pp_p2_8.Name = "label_pp_p2_8";
+            // 
+            // pp_p2_54_prod
+            // 
+            resources.ApplyResources(this.pp_p2_54_prod, "pp_p2_54_prod");
+            this.pp_p2_54_prod.Name = "pp_p2_54_prod";
+            // 
+            // pp_p2_54_bearb
+            // 
+            resources.ApplyResources(this.pp_p2_54_bearb, "pp_p2_54_bearb");
+            this.pp_p2_54_bearb.Name = "pp_p2_54_bearb";
+            // 
+            // pp_p2_54_ws
+            // 
+            resources.ApplyResources(this.pp_p2_54_ws, "pp_p2_54_ws");
+            this.pp_p2_54_ws.Name = "pp_p2_54_ws";
+            // 
+            // pp_p2_54_lager
+            // 
+            resources.ApplyResources(this.pp_p2_54_lager, "pp_p2_54_lager");
+            this.pp_p2_54_lager.Name = "pp_p2_54_lager";
+            // 
+            // pp_p2_54_sb
+            // 
+            resources.ApplyResources(this.pp_p2_54_sb, "pp_p2_54_sb");
+            this.pp_p2_54_sb.Name = "pp_p2_54_sb";
+            // 
+            // pp_p2_54_vw
+            // 
+            resources.ApplyResources(this.pp_p2_54_vw, "pp_p2_54_vw");
+            this.pp_p2_54_vw.Name = "pp_p2_54_vw";
+            // 
+            // label_pp_p2_54
+            // 
+            resources.ApplyResources(this.label_pp_p2_54, "label_pp_p2_54");
+            this.label_pp_p2_54.Name = "label_pp_p2_54";
+            // 
+            // pp_p2_11_prod
+            // 
+            resources.ApplyResources(this.pp_p2_11_prod, "pp_p2_11_prod");
+            this.pp_p2_11_prod.Name = "pp_p2_11_prod";
+            // 
+            // pp_p2_11_bearb
+            // 
+            resources.ApplyResources(this.pp_p2_11_bearb, "pp_p2_11_bearb");
+            this.pp_p2_11_bearb.Name = "pp_p2_11_bearb";
+            // 
+            // pp_p2_11_ws
+            // 
+            resources.ApplyResources(this.pp_p2_11_ws, "pp_p2_11_ws");
+            this.pp_p2_11_ws.Name = "pp_p2_11_ws";
+            // 
+            // pp_p2_11_lager
+            // 
+            resources.ApplyResources(this.pp_p2_11_lager, "pp_p2_11_lager");
+            this.pp_p2_11_lager.Name = "pp_p2_11_lager";
+            // 
+            // pp_p2_11_sb
+            // 
+            resources.ApplyResources(this.pp_p2_11_sb, "pp_p2_11_sb");
+            this.pp_p2_11_sb.Name = "pp_p2_11_sb";
+            // 
+            // pp_p2_11_vw
+            // 
+            resources.ApplyResources(this.pp_p2_11_vw, "pp_p2_11_vw");
+            this.pp_p2_11_vw.Name = "pp_p2_11_vw";
+            // 
+            // label_pp_p2_11
+            // 
+            resources.ApplyResources(this.label_pp_p2_11, "label_pp_p2_11");
+            this.label_pp_p2_11.Name = "label_pp_p2_11";
+            // 
+            // pp_p2_5_prod
+            // 
+            resources.ApplyResources(this.pp_p2_5_prod, "pp_p2_5_prod");
+            this.pp_p2_5_prod.Name = "pp_p2_5_prod";
+            // 
+            // pp_p2_5_bearb
+            // 
+            resources.ApplyResources(this.pp_p2_5_bearb, "pp_p2_5_bearb");
+            this.pp_p2_5_bearb.Name = "pp_p2_5_bearb";
+            // 
+            // pp_p2_5_ws
+            // 
+            resources.ApplyResources(this.pp_p2_5_ws, "pp_p2_5_ws");
+            this.pp_p2_5_ws.Name = "pp_p2_5_ws";
+            // 
+            // pp_p2_5_lager
+            // 
+            resources.ApplyResources(this.pp_p2_5_lager, "pp_p2_5_lager");
+            this.pp_p2_5_lager.Name = "pp_p2_5_lager";
+            // 
+            // pp_p2_5_sb
+            // 
+            resources.ApplyResources(this.pp_p2_5_sb, "pp_p2_5_sb");
+            this.pp_p2_5_sb.Name = "pp_p2_5_sb";
+            // 
+            // pp_p2_5_vw
+            // 
+            resources.ApplyResources(this.pp_p2_5_vw, "pp_p2_5_vw");
+            this.pp_p2_5_vw.Name = "pp_p2_5_vw";
+            // 
+            // label_pp_p2_5
+            // 
+            resources.ApplyResources(this.label_pp_p2_5, "label_pp_p2_5");
+            this.label_pp_p2_5.Name = "label_pp_p2_5";
+            // 
+            // pp_p2_55_prod
+            // 
+            resources.ApplyResources(this.pp_p2_55_prod, "pp_p2_55_prod");
+            this.pp_p2_55_prod.Name = "pp_p2_55_prod";
+            // 
+            // pp_p2_55_bearb
+            // 
+            resources.ApplyResources(this.pp_p2_55_bearb, "pp_p2_55_bearb");
+            this.pp_p2_55_bearb.Name = "pp_p2_55_bearb";
+            // 
+            // pp_p2_55_ws
+            // 
+            resources.ApplyResources(this.pp_p2_55_ws, "pp_p2_55_ws");
+            this.pp_p2_55_ws.Name = "pp_p2_55_ws";
+            // 
+            // pp_p2_55_lager
+            // 
+            resources.ApplyResources(this.pp_p2_55_lager, "pp_p2_55_lager");
+            this.pp_p2_55_lager.Name = "pp_p2_55_lager";
+            // 
+            // pp_p2_55_sb
+            // 
+            resources.ApplyResources(this.pp_p2_55_sb, "pp_p2_55_sb");
+            this.pp_p2_55_sb.Name = "pp_p2_55_sb";
+            // 
+            // pp_p2_55_vw
+            // 
+            resources.ApplyResources(this.pp_p2_55_vw, "pp_p2_55_vw");
+            this.pp_p2_55_vw.Name = "pp_p2_55_vw";
+            // 
+            // label_pp_p2_55
+            // 
+            resources.ApplyResources(this.label_pp_p2_55, "label_pp_p2_55");
+            this.label_pp_p2_55.Name = "label_pp_p2_55";
+            this.label_pp_p2_55.Click += new System.EventHandler(this.label18_Click);
+            // 
+            // pp_p2_17_prod
+            // 
+            resources.ApplyResources(this.pp_p2_17_prod, "pp_p2_17_prod");
+            this.pp_p2_17_prod.Name = "pp_p2_17_prod";
+            // 
+            // pp_p2_17_bearb
+            // 
+            resources.ApplyResources(this.pp_p2_17_bearb, "pp_p2_17_bearb");
+            this.pp_p2_17_bearb.Name = "pp_p2_17_bearb";
+            // 
+            // pp_p2_17_ws
+            // 
+            resources.ApplyResources(this.pp_p2_17_ws, "pp_p2_17_ws");
+            this.pp_p2_17_ws.Name = "pp_p2_17_ws";
+            // 
+            // pp_p2_17_lager
+            // 
+            resources.ApplyResources(this.pp_p2_17_lager, "pp_p2_17_lager");
+            this.pp_p2_17_lager.Name = "pp_p2_17_lager";
+            // 
+            // pp_p2_17_sb
+            // 
+            resources.ApplyResources(this.pp_p2_17_sb, "pp_p2_17_sb");
+            this.pp_p2_17_sb.Name = "pp_p2_17_sb";
+            // 
+            // pp_p2_17_vw
+            // 
+            resources.ApplyResources(this.pp_p2_17_vw, "pp_p2_17_vw");
+            this.pp_p2_17_vw.Name = "pp_p2_17_vw";
+            // 
+            // label_pp_p2_17
+            // 
+            resources.ApplyResources(this.label_pp_p2_17, "label_pp_p2_17");
+            this.label_pp_p2_17.Name = "label_pp_p2_17";
+            // 
+            // pp_p2_16_prod
+            // 
+            resources.ApplyResources(this.pp_p2_16_prod, "pp_p2_16_prod");
+            this.pp_p2_16_prod.Name = "pp_p2_16_prod";
+            // 
+            // pp_p2_16_bearb
+            // 
+            resources.ApplyResources(this.pp_p2_16_bearb, "pp_p2_16_bearb");
+            this.pp_p2_16_bearb.Name = "pp_p2_16_bearb";
+            // 
+            // pp_p2_16_ws
+            // 
+            resources.ApplyResources(this.pp_p2_16_ws, "pp_p2_16_ws");
+            this.pp_p2_16_ws.Name = "pp_p2_16_ws";
+            // 
+            // pp_p2_16_lager
+            // 
+            resources.ApplyResources(this.pp_p2_16_lager, "pp_p2_16_lager");
+            this.pp_p2_16_lager.Name = "pp_p2_16_lager";
+            // 
+            // pp_p2_16_sb
+            // 
+            resources.ApplyResources(this.pp_p2_16_sb, "pp_p2_16_sb");
+            this.pp_p2_16_sb.Name = "pp_p2_16_sb";
+            // 
+            // pp_p2_16_vw
+            // 
+            resources.ApplyResources(this.pp_p2_16_vw, "pp_p2_16_vw");
+            this.pp_p2_16_vw.Name = "pp_p2_16_vw";
+            // 
+            // label_pp_p2_16
+            // 
+            resources.ApplyResources(this.label_pp_p2_16, "label_pp_p2_16");
+            this.label_pp_p2_16.Name = "label_pp_p2_16";
+            // 
+            // pp_p2_56_prod
+            // 
+            resources.ApplyResources(this.pp_p2_56_prod, "pp_p2_56_prod");
+            this.pp_p2_56_prod.Name = "pp_p2_56_prod";
+            // 
+            // pp_p2_56_bearb
+            // 
+            resources.ApplyResources(this.pp_p2_56_bearb, "pp_p2_56_bearb");
+            this.pp_p2_56_bearb.Name = "pp_p2_56_bearb";
+            // 
+            // pp_p2_56_ws
+            // 
+            resources.ApplyResources(this.pp_p2_56_ws, "pp_p2_56_ws");
+            this.pp_p2_56_ws.Name = "pp_p2_56_ws";
+            // 
+            // pp_p2_56_lager
+            // 
+            resources.ApplyResources(this.pp_p2_56_lager, "pp_p2_56_lager");
+            this.pp_p2_56_lager.Name = "pp_p2_56_lager";
+            // 
+            // pp_p2_56_sb
+            // 
+            resources.ApplyResources(this.pp_p2_56_sb, "pp_p2_56_sb");
+            this.pp_p2_56_sb.Name = "pp_p2_56_sb";
+            // 
+            // pp_p2_56_vw
+            // 
+            resources.ApplyResources(this.pp_p2_56_vw, "pp_p2_56_vw");
+            this.pp_p2_56_vw.Name = "pp_p2_56_vw";
+            // 
+            // label_pp_p2_56
+            // 
+            resources.ApplyResources(this.label_pp_p2_56, "label_pp_p2_56");
+            this.label_pp_p2_56.Name = "label_pp_p2_56";
+            this.label_pp_p2_56.Click += new System.EventHandler(this.label_pp_p2_59_Click);
+            // 
+            // pp_p2_26_prod
+            // 
+            resources.ApplyResources(this.pp_p2_26_prod, "pp_p2_26_prod");
+            this.pp_p2_26_prod.Name = "pp_p2_26_prod";
+            // 
+            // pp_p2_26_bearb
+            // 
+            resources.ApplyResources(this.pp_p2_26_bearb, "pp_p2_26_bearb");
+            this.pp_p2_26_bearb.Name = "pp_p2_26_bearb";
+            // 
+            // pp_p2_26_ws
+            // 
+            resources.ApplyResources(this.pp_p2_26_ws, "pp_p2_26_ws");
+            this.pp_p2_26_ws.Name = "pp_p2_26_ws";
+            // 
+            // pp_p2_26_lager
+            // 
+            resources.ApplyResources(this.pp_p2_26_lager, "pp_p2_26_lager");
+            this.pp_p2_26_lager.Name = "pp_p2_26_lager";
+            // 
+            // pp_p2_26_sb
+            // 
+            resources.ApplyResources(this.pp_p2_26_sb, "pp_p2_26_sb");
+            this.pp_p2_26_sb.Name = "pp_p2_26_sb";
+            // 
+            // pp_p2_26_vw
+            // 
+            resources.ApplyResources(this.pp_p2_26_vw, "pp_p2_26_vw");
+            this.pp_p2_26_vw.Name = "pp_p2_26_vw";
+            // 
+            // label_pp_p2_26
+            // 
+            resources.ApplyResources(this.label_pp_p2_26, "label_pp_p2_26");
+            this.label_pp_p2_26.Name = "label_pp_p2_26";
+            // 
+            // pp_p2_p2_prod
+            // 
+            resources.ApplyResources(this.pp_p2_p2_prod, "pp_p2_p2_prod");
+            this.pp_p2_p2_prod.Name = "pp_p2_p2_prod";
+            // 
+            // pp_p2_p2_bearb
+            // 
+            resources.ApplyResources(this.pp_p2_p2_bearb, "pp_p2_p2_bearb");
+            this.pp_p2_p2_bearb.Name = "pp_p2_p2_bearb";
+            // 
+            // pp_p2_p2_ws
+            // 
+            resources.ApplyResources(this.pp_p2_p2_ws, "pp_p2_p2_ws");
+            this.pp_p2_p2_ws.Name = "pp_p2_p2_ws";
+            // 
+            // pp_p2_p2_lager
+            // 
+            resources.ApplyResources(this.pp_p2_p2_lager, "pp_p2_p2_lager");
+            this.pp_p2_p2_lager.Name = "pp_p2_p2_lager";
+            // 
+            // pp_p2_p2_sb
+            // 
+            resources.ApplyResources(this.pp_p2_p2_sb, "pp_p2_p2_sb");
+            this.pp_p2_p2_sb.Name = "pp_p2_p2_sb";
+            // 
+            // pp_p2_p2_vw
+            // 
+            resources.ApplyResources(this.pp_p2_p2_vw, "pp_p2_p2_vw");
+            this.pp_p2_p2_vw.Name = "pp_p2_p2_vw";
+            // 
+            // label_pp_p2_prod
+            // 
+            resources.ApplyResources(this.label_pp_p2_prod, "label_pp_p2_prod");
+            this.label_pp_p2_prod.Name = "label_pp_p2_prod";
+            // 
+            // label_pp_p2_bearb
+            // 
+            resources.ApplyResources(this.label_pp_p2_bearb, "label_pp_p2_bearb");
+            this.label_pp_p2_bearb.Name = "label_pp_p2_bearb";
+            // 
+            // label_pp_p2_ws
+            // 
+            resources.ApplyResources(this.label_pp_p2_ws, "label_pp_p2_ws");
+            this.label_pp_p2_ws.Name = "label_pp_p2_ws";
+            // 
+            // label_pp_p2_lager
+            // 
+            resources.ApplyResources(this.label_pp_p2_lager, "label_pp_p2_lager");
+            this.label_pp_p2_lager.Name = "label_pp_p2_lager";
+            // 
+            // label_pp_p2_sb
+            // 
+            resources.ApplyResources(this.label_pp_p2_sb, "label_pp_p2_sb");
+            this.label_pp_p2_sb.Name = "label_pp_p2_sb";
+            // 
+            // label_pp_p2_vw
+            // 
+            resources.ApplyResources(this.label_pp_p2_vw, "label_pp_p2_vw");
+            this.label_pp_p2_vw.Name = "label_pp_p2_vw";
+            // 
+            // label_pp_p2_p2
+            // 
+            resources.ApplyResources(this.label_pp_p2_p2, "label_pp_p2_p2");
+            this.label_pp_p2_p2.Name = "label_pp_p2_p2";
+            // 
             // tabHerrenf
             // 
+            this.tabHerrenf.Controls.Add(this.pp_p3_20_prod);
+            this.tabHerrenf.Controls.Add(this.pp_p3_20_bearb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_20_ws);
+            this.tabHerrenf.Controls.Add(this.pp_p3_20_lager);
+            this.tabHerrenf.Controls.Add(this.pp_p3_20_sb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_20_vw);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_20);
+            this.tabHerrenf.Controls.Add(this.pp_p3_15_prod);
+            this.tabHerrenf.Controls.Add(this.pp_p3_15_bearb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_15_ws);
+            this.tabHerrenf.Controls.Add(this.pp_p3_15_lager);
+            this.tabHerrenf.Controls.Add(this.pp_p3_15_sb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_15_vw);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_15);
+            this.tabHerrenf.Controls.Add(this.pp_p3_9_prod);
+            this.tabHerrenf.Controls.Add(this.pp_p3_9_bearb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_9_ws);
+            this.tabHerrenf.Controls.Add(this.pp_p3_9_lager);
+            this.tabHerrenf.Controls.Add(this.pp_p3_9_sb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_9_vw);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_9);
+            this.tabHerrenf.Controls.Add(this.pp_p3_29_prod);
+            this.tabHerrenf.Controls.Add(this.pp_p3_29_bearb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_29_ws);
+            this.tabHerrenf.Controls.Add(this.pp_p3_29_lager);
+            this.tabHerrenf.Controls.Add(this.pp_p3_29_sb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_29_vw);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_29);
+            this.tabHerrenf.Controls.Add(this.pp_p3_12_prod);
+            this.tabHerrenf.Controls.Add(this.pp_p3_12_bearb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_12_ws);
+            this.tabHerrenf.Controls.Add(this.pp_p3_12_lager);
+            this.tabHerrenf.Controls.Add(this.pp_p3_12_sb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_12_vw);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_12);
+            this.tabHerrenf.Controls.Add(this.pp_p3_6_prod);
+            this.tabHerrenf.Controls.Add(this.pp_p3_6_bearb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_6_ws);
+            this.tabHerrenf.Controls.Add(this.pp_p3_6_lager);
+            this.tabHerrenf.Controls.Add(this.pp_p3_6_sb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_6_vw);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_6);
+            this.tabHerrenf.Controls.Add(this.pp_p3_30_prod);
+            this.tabHerrenf.Controls.Add(this.pp_p3_30_bearb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_30_ws);
+            this.tabHerrenf.Controls.Add(this.pp_p3_30_lager);
+            this.tabHerrenf.Controls.Add(this.pp_p3_30_sb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_30_vw);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_30);
+            this.tabHerrenf.Controls.Add(this.pp_p3_17_prod);
+            this.tabHerrenf.Controls.Add(this.pp_p3_17_bearb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_17_ws);
+            this.tabHerrenf.Controls.Add(this.pp_p3_17_lager);
+            this.tabHerrenf.Controls.Add(this.pp_p3_17_sb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_17_vw);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_17);
+            this.tabHerrenf.Controls.Add(this.pp_p3_16_prod);
+            this.tabHerrenf.Controls.Add(this.pp_p3_16_bearb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_16_ws);
+            this.tabHerrenf.Controls.Add(this.pp_p3_16_lager);
+            this.tabHerrenf.Controls.Add(this.pp_p3_16_sb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_16_vw);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_16);
+            this.tabHerrenf.Controls.Add(this.pp_p3_31_prod);
+            this.tabHerrenf.Controls.Add(this.pp_p3_31_bearb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_31_ws);
+            this.tabHerrenf.Controls.Add(this.pp_p3_31_lager);
+            this.tabHerrenf.Controls.Add(this.pp_p3_31_sb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_31_vw);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_31);
+            this.tabHerrenf.Controls.Add(this.pp_p3_26_prod);
+            this.tabHerrenf.Controls.Add(this.pp_p3_26_bearb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_26_ws);
+            this.tabHerrenf.Controls.Add(this.pp_p3_26_lager);
+            this.tabHerrenf.Controls.Add(this.pp_p3_26_sb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_26_vw);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_26);
+            this.tabHerrenf.Controls.Add(this.pp_p3_p3_prod);
+            this.tabHerrenf.Controls.Add(this.pp_p3_p3_bearb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_p3_ws);
+            this.tabHerrenf.Controls.Add(this.pp_p3_p3_lager);
+            this.tabHerrenf.Controls.Add(this.pp_p3_p3_sb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_p3_vw);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_prod);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_bearb);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_ws);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_lager);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_sb);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_vw);
+            this.tabHerrenf.Controls.Add(this.label_pp_p3_p3);
             resources.ApplyResources(this.tabHerrenf, "tabHerrenf");
             this.tabHerrenf.Name = "tabHerrenf";
             this.tabHerrenf.UseVisualStyleBackColor = true;
+            // 
+            // pp_p3_20_prod
+            // 
+            resources.ApplyResources(this.pp_p3_20_prod, "pp_p3_20_prod");
+            this.pp_p3_20_prod.Name = "pp_p3_20_prod";
+            // 
+            // pp_p3_20_bearb
+            // 
+            resources.ApplyResources(this.pp_p3_20_bearb, "pp_p3_20_bearb");
+            this.pp_p3_20_bearb.Name = "pp_p3_20_bearb";
+            // 
+            // pp_p3_20_ws
+            // 
+            resources.ApplyResources(this.pp_p3_20_ws, "pp_p3_20_ws");
+            this.pp_p3_20_ws.Name = "pp_p3_20_ws";
+            // 
+            // pp_p3_20_lager
+            // 
+            resources.ApplyResources(this.pp_p3_20_lager, "pp_p3_20_lager");
+            this.pp_p3_20_lager.Name = "pp_p3_20_lager";
+            // 
+            // pp_p3_20_sb
+            // 
+            resources.ApplyResources(this.pp_p3_20_sb, "pp_p3_20_sb");
+            this.pp_p3_20_sb.Name = "pp_p3_20_sb";
+            // 
+            // pp_p3_20_vw
+            // 
+            resources.ApplyResources(this.pp_p3_20_vw, "pp_p3_20_vw");
+            this.pp_p3_20_vw.Name = "pp_p3_20_vw";
+            // 
+            // label_pp_p3_20
+            // 
+            resources.ApplyResources(this.label_pp_p3_20, "label_pp_p3_20");
+            this.label_pp_p3_20.Name = "label_pp_p3_20";
+            // 
+            // pp_p3_15_prod
+            // 
+            resources.ApplyResources(this.pp_p3_15_prod, "pp_p3_15_prod");
+            this.pp_p3_15_prod.Name = "pp_p3_15_prod";
+            // 
+            // pp_p3_15_bearb
+            // 
+            resources.ApplyResources(this.pp_p3_15_bearb, "pp_p3_15_bearb");
+            this.pp_p3_15_bearb.Name = "pp_p3_15_bearb";
+            // 
+            // pp_p3_15_ws
+            // 
+            resources.ApplyResources(this.pp_p3_15_ws, "pp_p3_15_ws");
+            this.pp_p3_15_ws.Name = "pp_p3_15_ws";
+            // 
+            // pp_p3_15_lager
+            // 
+            resources.ApplyResources(this.pp_p3_15_lager, "pp_p3_15_lager");
+            this.pp_p3_15_lager.Name = "pp_p3_15_lager";
+            // 
+            // pp_p3_15_sb
+            // 
+            resources.ApplyResources(this.pp_p3_15_sb, "pp_p3_15_sb");
+            this.pp_p3_15_sb.Name = "pp_p3_15_sb";
+            // 
+            // pp_p3_15_vw
+            // 
+            resources.ApplyResources(this.pp_p3_15_vw, "pp_p3_15_vw");
+            this.pp_p3_15_vw.Name = "pp_p3_15_vw";
+            // 
+            // label_pp_p3_15
+            // 
+            resources.ApplyResources(this.label_pp_p3_15, "label_pp_p3_15");
+            this.label_pp_p3_15.Name = "label_pp_p3_15";
+            // 
+            // pp_p3_9_prod
+            // 
+            resources.ApplyResources(this.pp_p3_9_prod, "pp_p3_9_prod");
+            this.pp_p3_9_prod.Name = "pp_p3_9_prod";
+            // 
+            // pp_p3_9_bearb
+            // 
+            resources.ApplyResources(this.pp_p3_9_bearb, "pp_p3_9_bearb");
+            this.pp_p3_9_bearb.Name = "pp_p3_9_bearb";
+            // 
+            // pp_p3_9_ws
+            // 
+            resources.ApplyResources(this.pp_p3_9_ws, "pp_p3_9_ws");
+            this.pp_p3_9_ws.Name = "pp_p3_9_ws";
+            // 
+            // pp_p3_9_lager
+            // 
+            resources.ApplyResources(this.pp_p3_9_lager, "pp_p3_9_lager");
+            this.pp_p3_9_lager.Name = "pp_p3_9_lager";
+            // 
+            // pp_p3_9_sb
+            // 
+            resources.ApplyResources(this.pp_p3_9_sb, "pp_p3_9_sb");
+            this.pp_p3_9_sb.Name = "pp_p3_9_sb";
+            // 
+            // pp_p3_9_vw
+            // 
+            resources.ApplyResources(this.pp_p3_9_vw, "pp_p3_9_vw");
+            this.pp_p3_9_vw.Name = "pp_p3_9_vw";
+            // 
+            // label_pp_p3_9
+            // 
+            resources.ApplyResources(this.label_pp_p3_9, "label_pp_p3_9");
+            this.label_pp_p3_9.Name = "label_pp_p3_9";
+            // 
+            // pp_p3_29_prod
+            // 
+            resources.ApplyResources(this.pp_p3_29_prod, "pp_p3_29_prod");
+            this.pp_p3_29_prod.Name = "pp_p3_29_prod";
+            // 
+            // pp_p3_29_bearb
+            // 
+            resources.ApplyResources(this.pp_p3_29_bearb, "pp_p3_29_bearb");
+            this.pp_p3_29_bearb.Name = "pp_p3_29_bearb";
+            // 
+            // pp_p3_29_ws
+            // 
+            resources.ApplyResources(this.pp_p3_29_ws, "pp_p3_29_ws");
+            this.pp_p3_29_ws.Name = "pp_p3_29_ws";
+            // 
+            // pp_p3_29_lager
+            // 
+            resources.ApplyResources(this.pp_p3_29_lager, "pp_p3_29_lager");
+            this.pp_p3_29_lager.Name = "pp_p3_29_lager";
+            // 
+            // pp_p3_29_sb
+            // 
+            resources.ApplyResources(this.pp_p3_29_sb, "pp_p3_29_sb");
+            this.pp_p3_29_sb.Name = "pp_p3_29_sb";
+            // 
+            // pp_p3_29_vw
+            // 
+            resources.ApplyResources(this.pp_p3_29_vw, "pp_p3_29_vw");
+            this.pp_p3_29_vw.Name = "pp_p3_29_vw";
+            // 
+            // label_pp_p3_29
+            // 
+            resources.ApplyResources(this.label_pp_p3_29, "label_pp_p3_29");
+            this.label_pp_p3_29.Name = "label_pp_p3_29";
+            // 
+            // pp_p3_12_prod
+            // 
+            resources.ApplyResources(this.pp_p3_12_prod, "pp_p3_12_prod");
+            this.pp_p3_12_prod.Name = "pp_p3_12_prod";
+            // 
+            // pp_p3_12_bearb
+            // 
+            resources.ApplyResources(this.pp_p3_12_bearb, "pp_p3_12_bearb");
+            this.pp_p3_12_bearb.Name = "pp_p3_12_bearb";
+            // 
+            // pp_p3_12_ws
+            // 
+            resources.ApplyResources(this.pp_p3_12_ws, "pp_p3_12_ws");
+            this.pp_p3_12_ws.Name = "pp_p3_12_ws";
+            // 
+            // pp_p3_12_lager
+            // 
+            resources.ApplyResources(this.pp_p3_12_lager, "pp_p3_12_lager");
+            this.pp_p3_12_lager.Name = "pp_p3_12_lager";
+            // 
+            // pp_p3_12_sb
+            // 
+            resources.ApplyResources(this.pp_p3_12_sb, "pp_p3_12_sb");
+            this.pp_p3_12_sb.Name = "pp_p3_12_sb";
+            // 
+            // pp_p3_12_vw
+            // 
+            resources.ApplyResources(this.pp_p3_12_vw, "pp_p3_12_vw");
+            this.pp_p3_12_vw.Name = "pp_p3_12_vw";
+            // 
+            // label_pp_p3_12
+            // 
+            resources.ApplyResources(this.label_pp_p3_12, "label_pp_p3_12");
+            this.label_pp_p3_12.Name = "label_pp_p3_12";
+            // 
+            // pp_p3_6_prod
+            // 
+            resources.ApplyResources(this.pp_p3_6_prod, "pp_p3_6_prod");
+            this.pp_p3_6_prod.Name = "pp_p3_6_prod";
+            // 
+            // pp_p3_6_bearb
+            // 
+            resources.ApplyResources(this.pp_p3_6_bearb, "pp_p3_6_bearb");
+            this.pp_p3_6_bearb.Name = "pp_p3_6_bearb";
+            // 
+            // pp_p3_6_ws
+            // 
+            resources.ApplyResources(this.pp_p3_6_ws, "pp_p3_6_ws");
+            this.pp_p3_6_ws.Name = "pp_p3_6_ws";
+            // 
+            // pp_p3_6_lager
+            // 
+            resources.ApplyResources(this.pp_p3_6_lager, "pp_p3_6_lager");
+            this.pp_p3_6_lager.Name = "pp_p3_6_lager";
+            // 
+            // pp_p3_6_sb
+            // 
+            resources.ApplyResources(this.pp_p3_6_sb, "pp_p3_6_sb");
+            this.pp_p3_6_sb.Name = "pp_p3_6_sb";
+            // 
+            // pp_p3_6_vw
+            // 
+            resources.ApplyResources(this.pp_p3_6_vw, "pp_p3_6_vw");
+            this.pp_p3_6_vw.Name = "pp_p3_6_vw";
+            // 
+            // label_pp_p3_6
+            // 
+            resources.ApplyResources(this.label_pp_p3_6, "label_pp_p3_6");
+            this.label_pp_p3_6.Name = "label_pp_p3_6";
+            // 
+            // pp_p3_30_prod
+            // 
+            resources.ApplyResources(this.pp_p3_30_prod, "pp_p3_30_prod");
+            this.pp_p3_30_prod.Name = "pp_p3_30_prod";
+            // 
+            // pp_p3_30_bearb
+            // 
+            resources.ApplyResources(this.pp_p3_30_bearb, "pp_p3_30_bearb");
+            this.pp_p3_30_bearb.Name = "pp_p3_30_bearb";
+            // 
+            // pp_p3_30_ws
+            // 
+            resources.ApplyResources(this.pp_p3_30_ws, "pp_p3_30_ws");
+            this.pp_p3_30_ws.Name = "pp_p3_30_ws";
+            // 
+            // pp_p3_30_lager
+            // 
+            resources.ApplyResources(this.pp_p3_30_lager, "pp_p3_30_lager");
+            this.pp_p3_30_lager.Name = "pp_p3_30_lager";
+            // 
+            // pp_p3_30_sb
+            // 
+            resources.ApplyResources(this.pp_p3_30_sb, "pp_p3_30_sb");
+            this.pp_p3_30_sb.Name = "pp_p3_30_sb";
+            // 
+            // pp_p3_30_vw
+            // 
+            resources.ApplyResources(this.pp_p3_30_vw, "pp_p3_30_vw");
+            this.pp_p3_30_vw.Name = "pp_p3_30_vw";
+            // 
+            // label_pp_p3_30
+            // 
+            resources.ApplyResources(this.label_pp_p3_30, "label_pp_p3_30");
+            this.label_pp_p3_30.Name = "label_pp_p3_30";
+            // 
+            // pp_p3_17_prod
+            // 
+            resources.ApplyResources(this.pp_p3_17_prod, "pp_p3_17_prod");
+            this.pp_p3_17_prod.Name = "pp_p3_17_prod";
+            // 
+            // pp_p3_17_bearb
+            // 
+            resources.ApplyResources(this.pp_p3_17_bearb, "pp_p3_17_bearb");
+            this.pp_p3_17_bearb.Name = "pp_p3_17_bearb";
+            // 
+            // pp_p3_17_ws
+            // 
+            resources.ApplyResources(this.pp_p3_17_ws, "pp_p3_17_ws");
+            this.pp_p3_17_ws.Name = "pp_p3_17_ws";
+            // 
+            // pp_p3_17_lager
+            // 
+            resources.ApplyResources(this.pp_p3_17_lager, "pp_p3_17_lager");
+            this.pp_p3_17_lager.Name = "pp_p3_17_lager";
+            // 
+            // pp_p3_17_sb
+            // 
+            resources.ApplyResources(this.pp_p3_17_sb, "pp_p3_17_sb");
+            this.pp_p3_17_sb.Name = "pp_p3_17_sb";
+            // 
+            // pp_p3_17_vw
+            // 
+            resources.ApplyResources(this.pp_p3_17_vw, "pp_p3_17_vw");
+            this.pp_p3_17_vw.Name = "pp_p3_17_vw";
+            // 
+            // label_pp_p3_17
+            // 
+            resources.ApplyResources(this.label_pp_p3_17, "label_pp_p3_17");
+            this.label_pp_p3_17.Name = "label_pp_p3_17";
+            // 
+            // pp_p3_16_prod
+            // 
+            resources.ApplyResources(this.pp_p3_16_prod, "pp_p3_16_prod");
+            this.pp_p3_16_prod.Name = "pp_p3_16_prod";
+            // 
+            // pp_p3_16_bearb
+            // 
+            resources.ApplyResources(this.pp_p3_16_bearb, "pp_p3_16_bearb");
+            this.pp_p3_16_bearb.Name = "pp_p3_16_bearb";
+            // 
+            // pp_p3_16_ws
+            // 
+            resources.ApplyResources(this.pp_p3_16_ws, "pp_p3_16_ws");
+            this.pp_p3_16_ws.Name = "pp_p3_16_ws";
+            // 
+            // pp_p3_16_lager
+            // 
+            resources.ApplyResources(this.pp_p3_16_lager, "pp_p3_16_lager");
+            this.pp_p3_16_lager.Name = "pp_p3_16_lager";
+            // 
+            // pp_p3_16_sb
+            // 
+            resources.ApplyResources(this.pp_p3_16_sb, "pp_p3_16_sb");
+            this.pp_p3_16_sb.Name = "pp_p3_16_sb";
+            // 
+            // pp_p3_16_vw
+            // 
+            resources.ApplyResources(this.pp_p3_16_vw, "pp_p3_16_vw");
+            this.pp_p3_16_vw.Name = "pp_p3_16_vw";
+            // 
+            // label_pp_p3_16
+            // 
+            resources.ApplyResources(this.label_pp_p3_16, "label_pp_p3_16");
+            this.label_pp_p3_16.Name = "label_pp_p3_16";
+            // 
+            // pp_p3_31_prod
+            // 
+            resources.ApplyResources(this.pp_p3_31_prod, "pp_p3_31_prod");
+            this.pp_p3_31_prod.Name = "pp_p3_31_prod";
+            // 
+            // pp_p3_31_bearb
+            // 
+            resources.ApplyResources(this.pp_p3_31_bearb, "pp_p3_31_bearb");
+            this.pp_p3_31_bearb.Name = "pp_p3_31_bearb";
+            // 
+            // pp_p3_31_ws
+            // 
+            resources.ApplyResources(this.pp_p3_31_ws, "pp_p3_31_ws");
+            this.pp_p3_31_ws.Name = "pp_p3_31_ws";
+            // 
+            // pp_p3_31_lager
+            // 
+            resources.ApplyResources(this.pp_p3_31_lager, "pp_p3_31_lager");
+            this.pp_p3_31_lager.Name = "pp_p3_31_lager";
+            // 
+            // pp_p3_31_sb
+            // 
+            resources.ApplyResources(this.pp_p3_31_sb, "pp_p3_31_sb");
+            this.pp_p3_31_sb.Name = "pp_p3_31_sb";
+            // 
+            // pp_p3_31_vw
+            // 
+            resources.ApplyResources(this.pp_p3_31_vw, "pp_p3_31_vw");
+            this.pp_p3_31_vw.Name = "pp_p3_31_vw";
+            // 
+            // label_pp_p3_31
+            // 
+            resources.ApplyResources(this.label_pp_p3_31, "label_pp_p3_31");
+            this.label_pp_p3_31.Name = "label_pp_p3_31";
+            // 
+            // pp_p3_26_prod
+            // 
+            resources.ApplyResources(this.pp_p3_26_prod, "pp_p3_26_prod");
+            this.pp_p3_26_prod.Name = "pp_p3_26_prod";
+            // 
+            // pp_p3_26_bearb
+            // 
+            resources.ApplyResources(this.pp_p3_26_bearb, "pp_p3_26_bearb");
+            this.pp_p3_26_bearb.Name = "pp_p3_26_bearb";
+            // 
+            // pp_p3_26_ws
+            // 
+            resources.ApplyResources(this.pp_p3_26_ws, "pp_p3_26_ws");
+            this.pp_p3_26_ws.Name = "pp_p3_26_ws";
+            // 
+            // pp_p3_26_lager
+            // 
+            resources.ApplyResources(this.pp_p3_26_lager, "pp_p3_26_lager");
+            this.pp_p3_26_lager.Name = "pp_p3_26_lager";
+            // 
+            // pp_p3_26_sb
+            // 
+            resources.ApplyResources(this.pp_p3_26_sb, "pp_p3_26_sb");
+            this.pp_p3_26_sb.Name = "pp_p3_26_sb";
+            // 
+            // pp_p3_26_vw
+            // 
+            resources.ApplyResources(this.pp_p3_26_vw, "pp_p3_26_vw");
+            this.pp_p3_26_vw.Name = "pp_p3_26_vw";
+            // 
+            // label_pp_p3_26
+            // 
+            resources.ApplyResources(this.label_pp_p3_26, "label_pp_p3_26");
+            this.label_pp_p3_26.Name = "label_pp_p3_26";
+            // 
+            // pp_p3_p3_prod
+            // 
+            resources.ApplyResources(this.pp_p3_p3_prod, "pp_p3_p3_prod");
+            this.pp_p3_p3_prod.Name = "pp_p3_p3_prod";
+            // 
+            // pp_p3_p3_bearb
+            // 
+            resources.ApplyResources(this.pp_p3_p3_bearb, "pp_p3_p3_bearb");
+            this.pp_p3_p3_bearb.Name = "pp_p3_p3_bearb";
+            // 
+            // pp_p3_p3_ws
+            // 
+            resources.ApplyResources(this.pp_p3_p3_ws, "pp_p3_p3_ws");
+            this.pp_p3_p3_ws.Name = "pp_p3_p3_ws";
+            // 
+            // pp_p3_p3_lager
+            // 
+            resources.ApplyResources(this.pp_p3_p3_lager, "pp_p3_p3_lager");
+            this.pp_p3_p3_lager.Name = "pp_p3_p3_lager";
+            // 
+            // pp_p3_p3_sb
+            // 
+            resources.ApplyResources(this.pp_p3_p3_sb, "pp_p3_p3_sb");
+            this.pp_p3_p3_sb.Name = "pp_p3_p3_sb";
+            // 
+            // pp_p3_p3_vw
+            // 
+            resources.ApplyResources(this.pp_p3_p3_vw, "pp_p3_p3_vw");
+            this.pp_p3_p3_vw.Name = "pp_p3_p3_vw";
+            // 
+            // label_pp_p3_prod
+            // 
+            resources.ApplyResources(this.label_pp_p3_prod, "label_pp_p3_prod");
+            this.label_pp_p3_prod.Name = "label_pp_p3_prod";
+            // 
+            // label_pp_p3_bearb
+            // 
+            resources.ApplyResources(this.label_pp_p3_bearb, "label_pp_p3_bearb");
+            this.label_pp_p3_bearb.Name = "label_pp_p3_bearb";
+            // 
+            // label_pp_p3_ws
+            // 
+            resources.ApplyResources(this.label_pp_p3_ws, "label_pp_p3_ws");
+            this.label_pp_p3_ws.Name = "label_pp_p3_ws";
+            // 
+            // label_pp_p3_lager
+            // 
+            resources.ApplyResources(this.label_pp_p3_lager, "label_pp_p3_lager");
+            this.label_pp_p3_lager.Name = "label_pp_p3_lager";
+            // 
+            // label_pp_p3_sb
+            // 
+            resources.ApplyResources(this.label_pp_p3_sb, "label_pp_p3_sb");
+            this.label_pp_p3_sb.Name = "label_pp_p3_sb";
+            // 
+            // label_pp_p3_vw
+            // 
+            resources.ApplyResources(this.label_pp_p3_vw, "label_pp_p3_vw");
+            this.label_pp_p3_vw.Name = "label_pp_p3_vw";
+            // 
+            // label_pp_p3_p3
+            // 
+            resources.ApplyResources(this.label_pp_p3_p3, "label_pp_p3_p3");
+            this.label_pp_p3_p3.Name = "label_pp_p3_p3";
             // 
             // tabPUebersicht
             // 
@@ -1165,6 +2429,10 @@
             this.tabControl2.ResumeLayout(false);
             this.tabKinderf.ResumeLayout(false);
             this.tabKinderf.PerformLayout();
+            this.tabDamenf.ResumeLayout(false);
+            this.tabDamenf.PerformLayout();
+            this.tabHerrenf.ResumeLayout(false);
+            this.tabHerrenf.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1211,96 +2479,276 @@
         private System.Windows.Forms.TabPage tabDamenf;
         private System.Windows.Forms.TabPage tabHerrenf;
         private System.Windows.Forms.TabPage tabPUebersicht;
-        private System.Windows.Forms.Label kf_label_p2;
-        private System.Windows.Forms.TextBox textBox49;
-        private System.Windows.Forms.TextBox textBox50;
-        private System.Windows.Forms.TextBox textBox51;
-        private System.Windows.Forms.TextBox textBox52;
-        private System.Windows.Forms.TextBox textBox53;
-        private System.Windows.Forms.TextBox textBox54;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox55;
-        private System.Windows.Forms.TextBox textBox56;
-        private System.Windows.Forms.TextBox textBox57;
-        private System.Windows.Forms.TextBox textBox58;
-        private System.Windows.Forms.TextBox textBox59;
-        private System.Windows.Forms.TextBox textBox60;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox61;
-        private System.Windows.Forms.TextBox textBox62;
-        private System.Windows.Forms.TextBox textBox63;
-        private System.Windows.Forms.TextBox textBox64;
-        private System.Windows.Forms.TextBox textBox65;
-        private System.Windows.Forms.TextBox textBox66;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox67;
-        private System.Windows.Forms.TextBox textBox68;
-        private System.Windows.Forms.TextBox textBox69;
-        private System.Windows.Forms.TextBox textBox70;
-        private System.Windows.Forms.TextBox textBox71;
-        private System.Windows.Forms.TextBox textBox72;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox31;
-        private System.Windows.Forms.TextBox textBox32;
-        private System.Windows.Forms.TextBox textBox33;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.TextBox textBox39;
-        private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.TextBox textBox41;
-        private System.Windows.Forms.TextBox textBox42;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox43;
-        private System.Windows.Forms.TextBox textBox44;
-        private System.Windows.Forms.TextBox textBox45;
-        private System.Windows.Forms.TextBox textBox46;
-        private System.Windows.Forms.TextBox textBox47;
-        private System.Windows.Forms.TextBox textBox48;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox pp_p1_lager;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label_pp_prod;
-        private System.Windows.Forms.Label label_pp_ib;
-        private System.Windows.Forms.Label label_pp_ws;
-        private System.Windows.Forms.Label label_pp_lager;
-        private System.Windows.Forms.Label label_pp_sb;
-        private System.Windows.Forms.Label label_pp_vw;
+        private System.Windows.Forms.TextBox pp_p1_18_prod;
+        private System.Windows.Forms.TextBox pp_p1_18_bearb;
+        private System.Windows.Forms.TextBox pp_p1_18_ws;
+        private System.Windows.Forms.TextBox pp_p1_18_lager;
+        private System.Windows.Forms.TextBox pp_p1_18_sb;
+        private System.Windows.Forms.TextBox pp_p1_18_vw;
+        private System.Windows.Forms.Label label_pp_p1_18;
+        private System.Windows.Forms.TextBox pp_p1_13_prod;
+        private System.Windows.Forms.TextBox pp_p1_13_bearb;
+        private System.Windows.Forms.TextBox pp_p1_13_ws;
+        private System.Windows.Forms.TextBox pp_p1_13_lager;
+        private System.Windows.Forms.TextBox pp_p1_13_sb;
+        private System.Windows.Forms.TextBox pp_p1_13_vw;
+        private System.Windows.Forms.Label label_pp_p1_13;
+        private System.Windows.Forms.TextBox pp_p1_7_prod;
+        private System.Windows.Forms.TextBox pp_p1_7_bearb;
+        private System.Windows.Forms.TextBox pp_p1_7_ws;
+        private System.Windows.Forms.TextBox pp_p1_7_lager;
+        private System.Windows.Forms.TextBox pp_p1_7_sb;
+        private System.Windows.Forms.TextBox pp_p1_7_vw;
+        private System.Windows.Forms.Label label_pp_p1_7;
+        private System.Windows.Forms.TextBox pp_p1_49_prod;
+        private System.Windows.Forms.TextBox pp_p1_49_bearb;
+        private System.Windows.Forms.TextBox pp_p1_49_ws;
+        private System.Windows.Forms.TextBox pp_p1_49_lager;
+        private System.Windows.Forms.TextBox pp_p1_49_sb;
+        private System.Windows.Forms.TextBox pp_p1_49_vw;
+        private System.Windows.Forms.Label label_pp_p1_49;
+        private System.Windows.Forms.TextBox pp_p1_10_prod;
+        private System.Windows.Forms.TextBox pp_p1_10_bearb;
+        private System.Windows.Forms.TextBox pp_p1_10_ws;
+        private System.Windows.Forms.TextBox pp_p1_10_lager;
+        private System.Windows.Forms.TextBox pp_p1_10_sb;
+        private System.Windows.Forms.TextBox pp_p1_10_vw;
+        private System.Windows.Forms.Label label_pp_p1_10;
+        private System.Windows.Forms.TextBox pp_p1_4_prod;
+        private System.Windows.Forms.TextBox pp_p1_4_bearb;
+        private System.Windows.Forms.TextBox pp_p1_4_ws;
+        private System.Windows.Forms.TextBox pp_p1_4_lager;
+        private System.Windows.Forms.TextBox pp_p1_4_sb;
+        private System.Windows.Forms.TextBox pp_p1_4_vw;
+        private System.Windows.Forms.Label label_pp_p1_5;
+        private System.Windows.Forms.TextBox pp_p1_50_prod;
+        private System.Windows.Forms.TextBox pp_p1_50_bearb;
+        private System.Windows.Forms.TextBox pp_p1_50_ws;
+        private System.Windows.Forms.TextBox pp_p1_50_lager;
+        private System.Windows.Forms.TextBox pp_p1_50_sb;
+        private System.Windows.Forms.TextBox pp_p1_50_vw;
+        private System.Windows.Forms.Label label_pp_p1_50;
+        private System.Windows.Forms.TextBox pp_p1_17_prod;
+        private System.Windows.Forms.TextBox pp_p1_17_bearb;
+        private System.Windows.Forms.TextBox pp_p1_17_ws;
+        private System.Windows.Forms.TextBox pp_p1_17_lager;
+        private System.Windows.Forms.TextBox pp_p1_17_sb;
+        private System.Windows.Forms.TextBox pp_p1_17_vw;
+        private System.Windows.Forms.Label label_pp_p1_17;
+        private System.Windows.Forms.TextBox pp_p1_16_prod;
+        private System.Windows.Forms.TextBox pp_p1_16_bearb;
+        private System.Windows.Forms.TextBox pp_p1_16_ws;
+        private System.Windows.Forms.TextBox pp_p1_16_lager;
+        private System.Windows.Forms.TextBox pp_p1_16_sb;
+        private System.Windows.Forms.TextBox pp_p1_16_vw;
+        private System.Windows.Forms.Label label_pp_p1_16;
+        private System.Windows.Forms.TextBox pp_p1_51_prod;
+        private System.Windows.Forms.TextBox pp_p1_51_bearb;
+        private System.Windows.Forms.TextBox pp_p1_51_ws;
+        private System.Windows.Forms.TextBox pp_p1_51_lager;
+        private System.Windows.Forms.TextBox pp_p1_51_sb;
+        private System.Windows.Forms.TextBox pp_p1_51_vw;
+        private System.Windows.Forms.Label label_pp_p1_51;
+        private System.Windows.Forms.TextBox pp_p1_26_prod;
+        private System.Windows.Forms.TextBox pp_p1_26_bearb;
+        private System.Windows.Forms.TextBox pp_p1_26_ws;
+        private System.Windows.Forms.TextBox pp_p1_26_lager;
+        private System.Windows.Forms.TextBox pp_p1_26_sb;
+        private System.Windows.Forms.TextBox pp_p1_26_vw;
+        private System.Windows.Forms.Label label_pp_p1_26;
+        private System.Windows.Forms.TextBox pp_p1_p1_prod;
+        private System.Windows.Forms.TextBox pp_p1_p1_bearb;
+        private System.Windows.Forms.TextBox pp_p1_p1_ws;
+        private System.Windows.Forms.TextBox pp_p1_p1_lager;
+        private System.Windows.Forms.TextBox pp_p1_p1_sb;
+        private System.Windows.Forms.TextBox pp_p1_p1_vw;
+        private System.Windows.Forms.Label label_pp_p1_prod;
+        private System.Windows.Forms.Label label_pp_p1_bearb;
+        private System.Windows.Forms.Label label_pp_p1_ws;
+        private System.Windows.Forms.Label label_pp_p1_lager;
+        private System.Windows.Forms.Label label_pp_p1_sb;
+        private System.Windows.Forms.Label label_pp_p1_vw;
+        private System.Windows.Forms.Label label_pp_p1_p1;
+        private System.Windows.Forms.TextBox pp_p2_19_prod;
+        private System.Windows.Forms.TextBox pp_p2_19_bearb;
+        private System.Windows.Forms.TextBox pp_p2_19_ws;
+        private System.Windows.Forms.TextBox pp_p2_19_lager;
+        private System.Windows.Forms.TextBox pp_p2_19_sb;
+        private System.Windows.Forms.TextBox pp_p2_19_vw;
+        private System.Windows.Forms.Label label_pp_p2_19;
+        private System.Windows.Forms.TextBox pp_p2_14_prod;
+        private System.Windows.Forms.TextBox pp_p2_14_bearb;
+        private System.Windows.Forms.TextBox pp_p2_14_ws;
+        private System.Windows.Forms.TextBox pp_p2_14_lager;
+        private System.Windows.Forms.TextBox pp_p2_14_sb;
+        private System.Windows.Forms.TextBox pp_p2_14_vw;
+        private System.Windows.Forms.Label label_pp_p2_14;
+        private System.Windows.Forms.TextBox pp_p2_8_prod;
+        private System.Windows.Forms.TextBox pp_p2_8_bearb;
+        private System.Windows.Forms.TextBox pp_p2_8_ws;
+        private System.Windows.Forms.TextBox pp_p2_8_lager;
+        private System.Windows.Forms.TextBox pp_p2_8_sb;
+        private System.Windows.Forms.TextBox pp_p2_8_vw;
+        private System.Windows.Forms.Label label_pp_p2_8;
+        private System.Windows.Forms.TextBox pp_p2_54_prod;
+        private System.Windows.Forms.TextBox pp_p2_54_bearb;
+        private System.Windows.Forms.TextBox pp_p2_54_ws;
+        private System.Windows.Forms.TextBox pp_p2_54_lager;
+        private System.Windows.Forms.TextBox pp_p2_54_sb;
+        private System.Windows.Forms.TextBox pp_p2_54_vw;
+        private System.Windows.Forms.Label label_pp_p2_54;
+        private System.Windows.Forms.TextBox pp_p2_11_prod;
+        private System.Windows.Forms.TextBox pp_p2_11_bearb;
+        private System.Windows.Forms.TextBox pp_p2_11_ws;
+        private System.Windows.Forms.TextBox pp_p2_11_lager;
+        private System.Windows.Forms.TextBox pp_p2_11_sb;
+        private System.Windows.Forms.TextBox pp_p2_11_vw;
+        private System.Windows.Forms.Label label_pp_p2_11;
+        private System.Windows.Forms.TextBox pp_p2_5_prod;
+        private System.Windows.Forms.TextBox pp_p2_5_bearb;
+        private System.Windows.Forms.TextBox pp_p2_5_ws;
+        private System.Windows.Forms.TextBox pp_p2_5_lager;
+        private System.Windows.Forms.TextBox pp_p2_5_sb;
+        private System.Windows.Forms.TextBox pp_p2_5_vw;
+        private System.Windows.Forms.Label label_pp_p2_5;
+        private System.Windows.Forms.TextBox pp_p2_55_prod;
+        private System.Windows.Forms.TextBox pp_p2_55_bearb;
+        private System.Windows.Forms.TextBox pp_p2_55_ws;
+        private System.Windows.Forms.TextBox pp_p2_55_lager;
+        private System.Windows.Forms.TextBox pp_p2_55_sb;
+        private System.Windows.Forms.TextBox pp_p2_55_vw;
+        private System.Windows.Forms.Label label_pp_p2_55;
+        private System.Windows.Forms.TextBox pp_p2_17_prod;
+        private System.Windows.Forms.TextBox pp_p2_17_bearb;
+        private System.Windows.Forms.TextBox pp_p2_17_ws;
+        private System.Windows.Forms.TextBox pp_p2_17_lager;
+        private System.Windows.Forms.TextBox pp_p2_17_sb;
+        private System.Windows.Forms.TextBox pp_p2_17_vw;
+        private System.Windows.Forms.Label label_pp_p2_17;
+        private System.Windows.Forms.TextBox pp_p2_16_prod;
+        private System.Windows.Forms.TextBox pp_p2_16_bearb;
+        private System.Windows.Forms.TextBox pp_p2_16_ws;
+        private System.Windows.Forms.TextBox pp_p2_16_lager;
+        private System.Windows.Forms.TextBox pp_p2_16_sb;
+        private System.Windows.Forms.TextBox pp_p2_16_vw;
+        private System.Windows.Forms.Label label_pp_p2_16;
+        private System.Windows.Forms.TextBox pp_p2_56_prod;
+        private System.Windows.Forms.TextBox pp_p2_56_bearb;
+        private System.Windows.Forms.TextBox pp_p2_56_ws;
+        private System.Windows.Forms.TextBox pp_p2_56_lager;
+        private System.Windows.Forms.TextBox pp_p2_56_sb;
+        private System.Windows.Forms.TextBox pp_p2_56_vw;
+        private System.Windows.Forms.Label label_pp_p2_56;
+        private System.Windows.Forms.TextBox pp_p2_26_prod;
+        private System.Windows.Forms.TextBox pp_p2_26_bearb;
+        private System.Windows.Forms.TextBox pp_p2_26_ws;
+        private System.Windows.Forms.TextBox pp_p2_26_lager;
+        private System.Windows.Forms.TextBox pp_p2_26_sb;
+        private System.Windows.Forms.TextBox pp_p2_26_vw;
+        private System.Windows.Forms.Label label_pp_p2_26;
+        private System.Windows.Forms.TextBox pp_p2_p2_prod;
+        private System.Windows.Forms.TextBox pp_p2_p2_bearb;
+        private System.Windows.Forms.TextBox pp_p2_p2_ws;
+        private System.Windows.Forms.TextBox pp_p2_p2_lager;
+        private System.Windows.Forms.TextBox pp_p2_p2_sb;
+        private System.Windows.Forms.TextBox pp_p2_p2_vw;
+        private System.Windows.Forms.Label label_pp_p2_prod;
+        private System.Windows.Forms.Label label_pp_p2_bearb;
+        private System.Windows.Forms.Label label_pp_p2_ws;
+        private System.Windows.Forms.Label label_pp_p2_lager;
+        private System.Windows.Forms.Label label_pp_p2_sb;
+        private System.Windows.Forms.Label label_pp_p2_vw;
+        private System.Windows.Forms.Label label_pp_p2_p2;
+        private System.Windows.Forms.TextBox pp_p3_20_prod;
+        private System.Windows.Forms.TextBox pp_p3_20_bearb;
+        private System.Windows.Forms.TextBox pp_p3_20_ws;
+        private System.Windows.Forms.TextBox pp_p3_20_lager;
+        private System.Windows.Forms.TextBox pp_p3_20_sb;
+        private System.Windows.Forms.TextBox pp_p3_20_vw;
+        private System.Windows.Forms.Label label_pp_p3_20;
+        private System.Windows.Forms.TextBox pp_p3_15_prod;
+        private System.Windows.Forms.TextBox pp_p3_15_bearb;
+        private System.Windows.Forms.TextBox pp_p3_15_ws;
+        private System.Windows.Forms.TextBox pp_p3_15_lager;
+        private System.Windows.Forms.TextBox pp_p3_15_sb;
+        private System.Windows.Forms.TextBox pp_p3_15_vw;
+        private System.Windows.Forms.Label label_pp_p3_15;
+        private System.Windows.Forms.TextBox pp_p3_9_prod;
+        private System.Windows.Forms.TextBox pp_p3_9_bearb;
+        private System.Windows.Forms.TextBox pp_p3_9_ws;
+        private System.Windows.Forms.TextBox pp_p3_9_lager;
+        private System.Windows.Forms.TextBox pp_p3_9_sb;
+        private System.Windows.Forms.TextBox pp_p3_9_vw;
+        private System.Windows.Forms.Label label_pp_p3_9;
+        private System.Windows.Forms.TextBox pp_p3_29_prod;
+        private System.Windows.Forms.TextBox pp_p3_29_bearb;
+        private System.Windows.Forms.TextBox pp_p3_29_ws;
+        private System.Windows.Forms.TextBox pp_p3_29_lager;
+        private System.Windows.Forms.TextBox pp_p3_29_sb;
+        private System.Windows.Forms.TextBox pp_p3_29_vw;
+        private System.Windows.Forms.Label label_pp_p3_29;
+        private System.Windows.Forms.TextBox pp_p3_12_prod;
+        private System.Windows.Forms.TextBox pp_p3_12_bearb;
+        private System.Windows.Forms.TextBox pp_p3_12_ws;
+        private System.Windows.Forms.TextBox pp_p3_12_lager;
+        private System.Windows.Forms.TextBox pp_p3_12_sb;
+        private System.Windows.Forms.TextBox pp_p3_12_vw;
+        private System.Windows.Forms.Label label_pp_p3_12;
+        private System.Windows.Forms.TextBox pp_p3_6_prod;
+        private System.Windows.Forms.TextBox pp_p3_6_bearb;
+        private System.Windows.Forms.TextBox pp_p3_6_ws;
+        private System.Windows.Forms.TextBox pp_p3_6_lager;
+        private System.Windows.Forms.TextBox pp_p3_6_sb;
+        private System.Windows.Forms.TextBox pp_p3_6_vw;
+        private System.Windows.Forms.Label label_pp_p3_6;
+        private System.Windows.Forms.TextBox pp_p3_30_prod;
+        private System.Windows.Forms.TextBox pp_p3_30_bearb;
+        private System.Windows.Forms.TextBox pp_p3_30_ws;
+        private System.Windows.Forms.TextBox pp_p3_30_lager;
+        private System.Windows.Forms.TextBox pp_p3_30_sb;
+        private System.Windows.Forms.TextBox pp_p3_30_vw;
+        private System.Windows.Forms.Label label_pp_p3_30;
+        private System.Windows.Forms.TextBox pp_p3_17_prod;
+        private System.Windows.Forms.TextBox pp_p3_17_bearb;
+        private System.Windows.Forms.TextBox pp_p3_17_ws;
+        private System.Windows.Forms.TextBox pp_p3_17_lager;
+        private System.Windows.Forms.TextBox pp_p3_17_sb;
+        private System.Windows.Forms.TextBox pp_p3_17_vw;
+        private System.Windows.Forms.Label label_pp_p3_17;
+        private System.Windows.Forms.TextBox pp_p3_16_prod;
+        private System.Windows.Forms.TextBox pp_p3_16_bearb;
+        private System.Windows.Forms.TextBox pp_p3_16_ws;
+        private System.Windows.Forms.TextBox pp_p3_16_lager;
+        private System.Windows.Forms.TextBox pp_p3_16_sb;
+        private System.Windows.Forms.TextBox pp_p3_16_vw;
+        private System.Windows.Forms.Label label_pp_p3_16;
+        private System.Windows.Forms.TextBox pp_p3_31_prod;
+        private System.Windows.Forms.TextBox pp_p3_31_bearb;
+        private System.Windows.Forms.TextBox pp_p3_31_ws;
+        private System.Windows.Forms.TextBox pp_p3_31_lager;
+        private System.Windows.Forms.TextBox pp_p3_31_sb;
+        private System.Windows.Forms.TextBox pp_p3_31_vw;
+        private System.Windows.Forms.Label label_pp_p3_31;
+        private System.Windows.Forms.TextBox pp_p3_26_prod;
+        private System.Windows.Forms.TextBox pp_p3_26_bearb;
+        private System.Windows.Forms.TextBox pp_p3_26_ws;
+        private System.Windows.Forms.TextBox pp_p3_26_lager;
+        private System.Windows.Forms.TextBox pp_p3_26_sb;
+        private System.Windows.Forms.TextBox pp_p3_26_vw;
+        private System.Windows.Forms.Label label_pp_p3_26;
+        private System.Windows.Forms.TextBox pp_p3_p3_prod;
+        private System.Windows.Forms.TextBox pp_p3_p3_bearb;
+        private System.Windows.Forms.TextBox pp_p3_p3_ws;
+        private System.Windows.Forms.TextBox pp_p3_p3_lager;
+        private System.Windows.Forms.TextBox pp_p3_p3_sb;
+        private System.Windows.Forms.TextBox pp_p3_p3_vw;
+        private System.Windows.Forms.Label label_pp_p3_prod;
+        private System.Windows.Forms.Label label_pp_p3_bearb;
+        private System.Windows.Forms.Label label_pp_p3_ws;
+        private System.Windows.Forms.Label label_pp_p3_lager;
+        private System.Windows.Forms.Label label_pp_p3_sb;
+        private System.Windows.Forms.Label label_pp_p3_vw;
+        private System.Windows.Forms.Label label_pp_p3_p3;
     }
 }
 
