@@ -336,7 +336,13 @@
             this.tabPUebersicht = new System.Windows.Forms.TabPage();
             this.tabKapa = new System.Windows.Forms.TabPage();
             this.tabBestellung = new System.Windows.Forms.TabPage();
+            this.bestelldatenBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.datenbankDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.datenbankDataSet = new ghostSCSIM.DatenbankDataSet();
             this.tabDirektV = new System.Windows.Forms.TabPage();
+            this.datenbankDataSet1 = new ghostSCSIM.DatenbankDataSet();
+            this.bestelldatenTableAdapter = new ghostSCSIM.DatenbankDataSetTableAdapters.BestelldatenTableAdapter();
+            this.testButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPrognose.SuspendLayout();
@@ -357,6 +363,11 @@
             this.tabKinderf.SuspendLayout();
             this.tabDamenf.SuspendLayout();
             this.tabHerrenf.SuspendLayout();
+            this.tabBestellung.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bestelldatenBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datenbankDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datenbankDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datenbankDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -2390,15 +2401,47 @@
             // 
             // tabBestellung
             // 
+            this.tabBestellung.Controls.Add(this.testButton);
             resources.ApplyResources(this.tabBestellung, "tabBestellung");
             this.tabBestellung.Name = "tabBestellung";
             this.tabBestellung.UseVisualStyleBackColor = true;
+            // 
+            // bestelldatenBindingSource
+            // 
+            this.bestelldatenBindingSource.DataMember = "Bestelldaten";
+            this.bestelldatenBindingSource.DataSource = this.datenbankDataSetBindingSource;
+            // 
+            // datenbankDataSetBindingSource
+            // 
+            this.datenbankDataSetBindingSource.DataSource = this.datenbankDataSet;
+            this.datenbankDataSetBindingSource.Position = 0;
+            // 
+            // datenbankDataSet
+            // 
+            this.datenbankDataSet.DataSetName = "DatenbankDataSet";
+            this.datenbankDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tabDirektV
             // 
             resources.ApplyResources(this.tabDirektV, "tabDirektV");
             this.tabDirektV.Name = "tabDirektV";
             this.tabDirektV.UseVisualStyleBackColor = true;
+            // 
+            // datenbankDataSet1
+            // 
+            this.datenbankDataSet1.DataSetName = "DatenbankDataSet";
+            this.datenbankDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bestelldatenTableAdapter
+            // 
+            this.bestelldatenTableAdapter.ClearBeforeFill = true;
+            // 
+            // testButton
+            // 
+            resources.ApplyResources(this.testButton, "testButton");
+            this.testButton.Name = "testButton";
+            this.testButton.UseVisualStyleBackColor = true;
+            this.testButton.Click += new System.EventHandler(this.testButton_Click);
             // 
             // Start
             // 
@@ -2408,6 +2451,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Start";
+            this.Load += new System.EventHandler(this.Start_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
@@ -2433,6 +2477,11 @@
             this.tabDamenf.PerformLayout();
             this.tabHerrenf.ResumeLayout(false);
             this.tabHerrenf.PerformLayout();
+            this.tabBestellung.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bestelldatenBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datenbankDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datenbankDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datenbankDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2749,6 +2798,12 @@
         private System.Windows.Forms.Label label_pp_p3_sb;
         private System.Windows.Forms.Label label_pp_p3_vw;
         private System.Windows.Forms.Label label_pp_p3_p3;
+        private DatenbankDataSet datenbankDataSet1;
+        private System.Windows.Forms.BindingSource datenbankDataSetBindingSource;
+        private DatenbankDataSet datenbankDataSet;
+        private System.Windows.Forms.BindingSource bestelldatenBindingSource;
+        private DatenbankDataSetTableAdapters.BestelldatenTableAdapter bestelldatenTableAdapter;
+        private System.Windows.Forms.Button testButton;
     }
 }
 

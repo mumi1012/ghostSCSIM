@@ -27,6 +27,15 @@ namespace ghostSCSIM.Domain
             this.bezeichnung = bezeichnung;
             this.buchstabe = buchstabe;
             this.wert = wert;
+            this.verwendung = verwendung;
+        }
+
+        public Teil(int nummer, String bezeichnung, String buchstabe, double wert)
+        {
+            this.nummer = nummer;
+            this.bezeichnung = bezeichnung;
+            this.buchstabe = buchstabe;
+            this.wert = wert;
         }
 
         public int getNummer()

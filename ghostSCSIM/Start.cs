@@ -12,6 +12,8 @@ using System.Globalization;
 using ghostSCSIM.XML;
 using System.Data.OleDb;
 using ghostSCSIM.DatenbankDataSetTableAdapters;
+using ghostSCSIM.DAO;
+using ghostSCSIM.Domain;
 
 namespace ghostSCSIM
 {
@@ -196,11 +198,16 @@ namespace ghostSCSIM
                pp_p3_9_lager.Text = xmlData.warehouseStock.article[8].amount.ToString();
                pp_p3_15_lager.Text = xmlData.warehouseStock.article[14].amount.ToString();
                pp_p3_20_lager.Text = xmlData.warehouseStock.article[19].amount.ToString();
+
+                            
+                   
            }
          
            
           
        }
+
+        
 
        private void label18_Click(object sender, EventArgs e)
        {
@@ -210,6 +217,23 @@ namespace ghostSCSIM
        private void label_pp_p2_59_Click(object sender, EventArgs e)
        {
 
+       }
+
+       private void Start_Load(object sender, EventArgs e)
+       {
+           // TODO: Diese Codezeile lädt Daten in die Tabelle "datenbankDataSet.Bestelldaten". Sie können sie bei Bedarf verschieben oder entfernen.
+           this.bestelldatenTableAdapter.Fill(this.datenbankDataSet.Bestelldaten);
+          
+
+       }
+
+       private void testButton_Click(object sender, EventArgs e)
+       {
+           DaoHelper daoHelper = new DaoHelper();
+
+           List<Teil> teileListe = daoHelper.getTeilStammdaten();
+
+           MessageBox.Show(teileListe[0].getVerwendung().ToString());
        }
 
        
