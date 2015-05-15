@@ -236,6 +236,41 @@ namespace ghostSCSIM
            MessageBox.Show(teileListe[0].getVerwendung().ToString());
        }
 
+       private void textBox2_TextChanged(object sender, EventArgs e)
+       {
+
+       }
+
+       private void dataGridView_best_bestellliste_CellContentClick(object sender, DataGridViewCellEventArgs e)
+       {
+
+       }
+
+       private void tabPage_best_kaufteilverbrauch_Click(object sender, EventArgs e)
+       {
+
+       }
+
+       private void dataGridView_best_kaufteillager_CellContentClick(object sender, DataGridViewCellEventArgs e)
+       {
+
+       }
+
+       private void tabPage1_Click(object sender, EventArgs e)
+       {
+
+       }
+
+       private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+       {
+
+       }
+
+       private void label1_Click(object sender, EventArgs e)
+       {
+
+       }
+
        
 
         
