@@ -142,15 +142,15 @@ namespace ghostSCSIM
 
        private void xmlInputButton_Click(object sender, EventArgs e)
        {
-           xmlData = new DataContainer();
+           
            var fileDialog = new OpenFileDialog { };
            if (fileDialog.ShowDialog() == DialogResult.OK)
            {
                XmlIO xmlInput = new XmlIO(fileDialog.FileName);
-
+               xmlData = new DataContainer();
                xmlData = (DataContainer)xmlInput.xml;
 
-               if (xmlData != null)
+              if (xmlData.getXmlImported())
                {
                    MessageBox.Show("XML Datei: " + fileDialog.FileName + " erfolgreich importiert!");
                }
@@ -233,7 +233,10 @@ namespace ghostSCSIM
 
            List<Teil> teileListe = daoHelper.getTeilStammdaten();
 
+           TeilLieferdaten lieferDaten = daoHelper.getTeilLieferdatenByTeilenummer(21);
+
            MessageBox.Show(teileListe[0].getVerwendung().ToString());
+           MessageBox.Show(lieferDaten.ToString());
        }
 
        private void textBox2_TextChanged(object sender, EventArgs e)
