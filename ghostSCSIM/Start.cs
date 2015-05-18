@@ -153,8 +153,10 @@ namespace ghostSCSIM
                MessageBox.Show("XML_File erfolgreich importiert!");
            }
        }
+
+
        private void fillFormsWithData(object sender, EventArgs e)
-       {
+       {           
            if (xmlData.getXmlImported())
            {
                pp_p1_p1_lager.Text = xmlData.warehouseStock.article[0].amount.ToString();
@@ -196,7 +198,23 @@ namespace ghostSCSIM
                pp_p3_15_lager.Text = xmlData.warehouseStock.article[14].amount.ToString();
                pp_p3_20_lager.Text = xmlData.warehouseStock.article[19].amount.ToString();
 
-                            
+               //Warteschleife und InBearbeitung 
+               pp_p1_p1_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
+               pp_p1_p1_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
+
+
+              
+
+               //Vertriebswünsche 
+               pp_p1_p1_vw.Text = kinder_prog_p1.Value.ToString();
+               pp_p2_p2_vw.Text = damen_prog_p1.Value.ToString();
+               pp_p3_p3_vw.Text = herren_prog_p1.Value.ToString();
+
+               //Produktion 
+               pp_p1_p1_prod.Text = (int.Parse(pp_p1_p1_vw.Text.ToString()) + int.Parse(pp_p1_p1_sb.Text.ToString()) - int.Parse(pp_p1_p1_lager.Text.ToString()) - int.Parse(pp_p1_p1_ws.Text.ToString()) - int.Parse(pp_p1_p1_bearb.Text.ToString())).ToString();
+               
+
+                        
                    
            }
          
@@ -269,15 +287,6 @@ namespace ghostSCSIM
        private void label1_Click(object sender, EventArgs e)
        {
 
-       }
-
-       
-
-        
-       
-
-      
-
-      
+       } 
     }
 }
