@@ -12,6 +12,22 @@ namespace ghostSCSIM.XML
     {
         [XmlElement("workplace")]
         public List<WlWorkplace> workplaces = new List<WlWorkplace>();
+
+        public int getWarteschlangeMengeByItem(int item)
+        {
+            int returnValue = 0;
+            foreach (WlWorkplace wp in workplaces) {
+                if (wp.waitinglist != null)
+                {
+                    if (wp.waitinglist.item.Equals(item))
+                    {
+                        returnValue = wp.waitinglist.amount;
+                    }
+                }
+                
+            }
+            return returnValue;
+        }
     }
    
     public class WlWorkplace

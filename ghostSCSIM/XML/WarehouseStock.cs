@@ -14,6 +14,19 @@ namespace ghostSCSIM.XML
     {
         [XmlElement("article")]
         public List<Article> article = new List<Article>();
+
+        public int getIndexOfArticleById(int id)
+        {
+            int index = 0;
+            foreach (Article a in this.article)
+            {
+                if (a.id.Equals(id))
+                {
+                    index = article.IndexOf(a);
+                }
+            }
+            return index;
+        }
     }
 
     public class Article
