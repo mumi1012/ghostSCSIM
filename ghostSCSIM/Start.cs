@@ -20,7 +20,7 @@ namespace ghostSCSIM
     public partial class Start : Form
     {
         // Neuen Datenbehälter für den XML Input anlegen
-        DataContainer xmlData = null;
+        DataContainer xmlData = new DataContainer();
 
         public Start()
         {
@@ -144,21 +144,18 @@ namespace ghostSCSIM
        {
            
            var fileDialog = new OpenFileDialog { };
-           if (fileDialog.ShowDialog() == DialogResult.OK)
+           if (fileDialog.ShowDialog() == DialogResult.OK && xmlData.getXmlImported() == false)
            {
                XmlIO xmlInput = new XmlIO(fileDialog.FileName);
-               xmlData = new DataContainer();
                xmlData = (DataContainer)xmlInput.xml;
 
-              if (xmlData.getXmlImported())
-               {
-                   MessageBox.Show("XML Datei: " + fileDialog.FileName + " erfolgreich importiert!");
-               }
+               xmlData.setXmlImported(true);
+               MessageBox.Show("XML_File erfolgreich importiert!");
            }
        }
        private void fillFormsWithData(object sender, EventArgs e)
        {
-           if (xmlData != null)
+           if (xmlData.getXmlImported())
            {
                pp_p1_p1_lager.Text = xmlData.warehouseStock.article[0].amount.ToString();
                pp_p1_26_lager.Text = xmlData.warehouseStock.article[25].amount.ToString();
