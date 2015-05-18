@@ -46,10 +46,10 @@ namespace ghostSCSIM
         {
             return xmlImported;
         }
-
         public DataContainer()
         {
-            xmlImported = true;
+            this.xmlImported = false;
         }
+
     }
 }
