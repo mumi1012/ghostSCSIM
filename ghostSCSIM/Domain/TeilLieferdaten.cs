@@ -84,6 +84,19 @@ namespace ghostSCSIM.Domain
 	public void setTeileNummer(int teileNummer) {
 		this.teileNummer = teileNummer;
 	}
-
+    //Periode in Tage konvertieren
+    public void convertPeriodeZuTage(double wiederBeschaffungszeitPeriode, double abweichungPeriode) {
+        setAbweichungTage(Convert.ToInt32(abweichungPeriode*5));
+        setWiederbeschaffungszeitTage(Convert.ToInt32(wiederbeschaffungszeitPeriode*5));
+    }
+    public override string ToString()
+    {
+        return "Teil_Lieferdaten: [teilenummer= " + teileNummer
+            + ", Wiederbeschaffungszeit/Periode= " + wiederbeschaffungszeitPeriode
+                    + ", Wiederbeschaffungszeit/Tage= " + wiederbeschaffungszeitTage
+                        +   ", Abweichung/Periode= " + abweichungPeriode
+                            +   ", Abweichung/Tage=" + abweichungtage
+                                + " , Diskontmenge/Stk= " + diskontMenge + "]";
+    }
     }
 }

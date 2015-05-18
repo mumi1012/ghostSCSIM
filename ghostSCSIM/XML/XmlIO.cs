@@ -16,6 +16,11 @@ namespace ghostSCSIM.XML
         public TextReader reader;
         public object xml;
 
+        /// <summary>
+        /// Achtung der Serializer kann keine Kommata "," im XML-Dokument lesen, -> Exception
+        /// Workaround: Alle Kommata mit Punkt "." ersetzen
+        /// </summary>
+        /// <param name="filepath"></param>
         public XmlIO(String filepath)
         {
             deserializer = new XmlSerializer(typeof(DataContainer));

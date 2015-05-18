@@ -32,8 +32,24 @@ namespace ghostSCSIM
         public WaitingListWorkstations waitingListWorkstations { get; set; }
 
         [XmlElement("ordersinwork")]
-        public OrdersInWork ordersInWork { get; set; } 
+        public OrdersInWork ordersInWork { get; set; }
 
+        //Boolean Flag
+        private bool xmlImported;
 
+        public void setXmlImported(bool flag)
+        {
+            this.xmlImported = flag;
+        }
+
+        public bool getXmlImported()
+        {
+            return xmlImported;
+        }
+
+        public DataContainer()
+        {
+            xmlImported = true;
+        }
     }
 }
