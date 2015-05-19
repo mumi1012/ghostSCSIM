@@ -235,7 +235,7 @@ WHERE (Teil_FK = ?)</CommandText>
             </Mappings>
             <Sources />
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="E-TeildistrubutionTableAdapter" GeneratorDataComponentClassName="E_TeildistrubutionTableAdapter" Name="E-Teildistrubution" UserDataComponentName="E-TeildistrubutionTableAdapter">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ETeildistrubutionTableAdapter" GeneratorDataComponentClassName="ETeildistrubutionTableAdapter" Name="ETeildistrubution" UserDataComponentName="ETeildistrubutionTableAdapter">
             <MainSource>
               <DbSource ConnectionRef="DatenbankConnectionString (Settings)" DbObjectName="E-Teildistrubution" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
@@ -803,7 +803,7 @@ WHERE (Teil_FK=?)</CommandText>
   <xs:element name="DatenbankDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DatenbankDataSet" msprop:Generator_UserDSName="DatenbankDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Teil" msprop:Generator_TableClassName="TeilDataTable" msprop:Generator_TableVarName="tableTeil" msprop:Generator_RowChangedName="TeilRowChanged" msprop:Generator_TablePropName="Teil" msprop:Generator_RowDeletingName="TeilRowDeleting" msprop:Generator_RowChangingName="TeilRowChanging" msprop:Generator_RowEvHandlerName="TeilRowChangeEventHandler" msprop:Generator_RowDeletedName="TeilRowDeleted" msprop:Generator_RowClassName="TeilRow" msprop:Generator_UserTableName="Teil" msprop:Generator_RowEvArgName="TeilRowChangeEvent">
+        <xs:element name="Teil" msprop:Generator_TableClassName="TeilDataTable" msprop:Generator_TableVarName="tableTeil" msprop:Generator_TablePropName="Teil" msprop:Generator_RowDeletingName="TeilRowDeleting" msprop:Generator_RowChangingName="TeilRowChanging" msprop:Generator_RowEvHandlerName="TeilRowChangeEventHandler" msprop:Generator_RowDeletedName="TeilRowDeleted" msprop:Generator_UserTableName="Teil" msprop:Generator_RowChangedName="TeilRowChanged" msprop:Generator_RowEvArgName="TeilRowChangeEvent" msprop:Generator_RowClassName="TeilRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -832,7 +832,7 @@ WHERE (Teil_FK=?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Bestelldaten" msprop:Generator_TableClassName="BestelldatenDataTable" msprop:Generator_TableVarName="tableBestelldaten" msprop:Generator_TablePropName="Bestelldaten" msprop:Generator_RowDeletingName="BestelldatenRowDeleting" msprop:Generator_RowChangingName="BestelldatenRowChanging" msprop:Generator_RowEvHandlerName="BestelldatenRowChangeEventHandler" msprop:Generator_RowDeletedName="BestelldatenRowDeleted" msprop:Generator_UserTableName="Bestelldaten" msprop:Generator_RowChangedName="BestelldatenRowChanged" msprop:Generator_RowEvArgName="BestelldatenRowChangeEvent" msprop:Generator_RowClassName="BestelldatenRow">
+        <xs:element name="Bestelldaten" msprop:Generator_TableClassName="BestelldatenDataTable" msprop:Generator_TableVarName="tableBestelldaten" msprop:Generator_RowChangedName="BestelldatenRowChanged" msprop:Generator_TablePropName="Bestelldaten" msprop:Generator_RowDeletingName="BestelldatenRowDeleting" msprop:Generator_RowChangingName="BestelldatenRowChanging" msprop:Generator_RowEvHandlerName="BestelldatenRowChangeEventHandler" msprop:Generator_RowDeletedName="BestelldatenRowDeleted" msprop:Generator_RowClassName="BestelldatenRow" msprop:Generator_UserTableName="Bestelldaten" msprop:Generator_RowEvArgName="BestelldatenRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -845,7 +845,7 @@ WHERE (Teil_FK=?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Arbeitsplatz_Teil" msprop:Generator_TableClassName="Arbeitsplatz_TeilDataTable" msprop:Generator_TableVarName="tableArbeitsplatz_Teil" msprop:Generator_TablePropName="Arbeitsplatz_Teil" msprop:Generator_RowDeletingName="Arbeitsplatz_TeilRowDeleting" msprop:Generator_RowChangingName="Arbeitsplatz_TeilRowChanging" msprop:Generator_RowEvHandlerName="Arbeitsplatz_TeilRowChangeEventHandler" msprop:Generator_RowDeletedName="Arbeitsplatz_TeilRowDeleted" msprop:Generator_UserTableName="Arbeitsplatz_Teil" msprop:Generator_RowChangedName="Arbeitsplatz_TeilRowChanged" msprop:Generator_RowEvArgName="Arbeitsplatz_TeilRowChangeEvent" msprop:Generator_RowClassName="Arbeitsplatz_TeilRow">
+        <xs:element name="Arbeitsplatz_Teil" msprop:Generator_TableClassName="Arbeitsplatz_TeilDataTable" msprop:Generator_TableVarName="tableArbeitsplatz_Teil" msprop:Generator_RowChangedName="Arbeitsplatz_TeilRowChanged" msprop:Generator_TablePropName="Arbeitsplatz_Teil" msprop:Generator_RowDeletingName="Arbeitsplatz_TeilRowDeleting" msprop:Generator_RowChangingName="Arbeitsplatz_TeilRowChanging" msprop:Generator_RowEvHandlerName="Arbeitsplatz_TeilRowChangeEventHandler" msprop:Generator_RowDeletedName="Arbeitsplatz_TeilRowDeleted" msprop:Generator_RowClassName="Arbeitsplatz_TeilRow" msprop:Generator_UserTableName="Arbeitsplatz_Teil" msprop:Generator_RowEvArgName="Arbeitsplatz_TeilRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -856,7 +856,7 @@ WHERE (Teil_FK=?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="E-Teildistrubution" msprop:Generator_TableClassName="_E_TeildistrubutionDataTable" msprop:Generator_TableVarName="_tableE_Teildistrubution" msprop:Generator_TablePropName="_E_Teildistrubution" msprop:Generator_RowDeletingName="_E_TeildistrubutionRowDeleting" msprop:Generator_RowChangingName="_E_TeildistrubutionRowChanging" msprop:Generator_RowEvHandlerName="_E_TeildistrubutionRowChangeEventHandler" msprop:Generator_RowDeletedName="_E_TeildistrubutionRowDeleted" msprop:Generator_UserTableName="E-Teildistrubution" msprop:Generator_RowChangedName="_E_TeildistrubutionRowChanged" msprop:Generator_RowEvArgName="_E_TeildistrubutionRowChangeEvent" msprop:Generator_RowClassName="_E_TeildistrubutionRow">
+        <xs:element name="ETeildistrubution" msprop:Generator_TableClassName="ETeildistrubutionDataTable" msprop:Generator_TableVarName="tableETeildistrubution" msprop:Generator_RowChangedName="ETeildistrubutionRowChanged" msprop:Generator_TablePropName="ETeildistrubution" msprop:Generator_RowDeletingName="ETeildistrubutionRowDeleting" msprop:Generator_RowChangingName="ETeildistrubutionRowChanging" msprop:Generator_RowEvHandlerName="ETeildistrubutionRowChangeEventHandler" msprop:Generator_RowDeletedName="ETeildistrubutionRowDeleted" msprop:Generator_RowClassName="ETeildistrubutionRow" msprop:Generator_UserTableName="ETeildistrubution" msprop:Generator_RowEvArgName="ETeildistrubutionRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -905,15 +905,15 @@ WHERE (Teil_FK=?)</CommandText>
       <xs:selector xpath=".//mstns:Arbeitsplatz_Teil" />
       <xs:field xpath="mstns:ID" />
     </xs:unique>
-    <xs:unique name="E-Teildistrubution_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:E-Teildistrubution" />
+    <xs:unique name="ETeildistrubution_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ETeildistrubution" />
       <xs:field xpath="mstns:ID" />
     </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="TeilBestelldaten" msdata:parent="Teil" msdata:child="Bestelldaten" msdata:parentkey="ID" msdata:childkey="Teil_FK" msprop:Generator_UserChildTable="Bestelldaten" msprop:Generator_ChildPropName="GetBestelldatenRows" msprop:Generator_UserRelationName="TeilBestelldaten" msprop:Generator_ParentPropName="TeilRow" msprop:Generator_RelationVarName="relationTeilBestelldaten" msprop:Generator_UserParentTable="Teil" />
-      <msdata:Relationship name="TeilArbeitsplatz_Teil" msdata:parent="Teil" msdata:child="Arbeitsplatz_Teil" msdata:parentkey="ID" msdata:childkey="Teil_FK" msprop:Generator_UserChildTable="Arbeitsplatz_Teil" msprop:Generator_ChildPropName="GetArbeitsplatz_TeilRows" msprop:Generator_UserRelationName="TeilArbeitsplatz_Teil" msprop:Generator_ParentPropName="TeilRow" msprop:Generator_RelationVarName="relationTeilArbeitsplatz_Teil" msprop:Generator_UserParentTable="Teil" />
+      <msdata:Relationship name="TeilBestelldaten" msdata:parent="Teil" msdata:child="Bestelldaten" msdata:parentkey="ID" msdata:childkey="Teil_FK" msprop:Generator_UserChildTable="Bestelldaten" msprop:Generator_ChildPropName="GetBestelldatenRows" msprop:Generator_UserRelationName="TeilBestelldaten" msprop:Generator_RelationVarName="relationTeilBestelldaten" msprop:Generator_UserParentTable="Teil" msprop:Generator_ParentPropName="TeilRow" />
+      <msdata:Relationship name="TeilArbeitsplatz_Teil" msdata:parent="Teil" msdata:child="Arbeitsplatz_Teil" msdata:parentkey="ID" msdata:childkey="Teil_FK" msprop:Generator_UserChildTable="Arbeitsplatz_Teil" msprop:Generator_ChildPropName="GetArbeitsplatz_TeilRows" msprop:Generator_UserRelationName="TeilArbeitsplatz_Teil" msprop:Generator_RelationVarName="relationTeilArbeitsplatz_Teil" msprop:Generator_UserParentTable="Teil" msprop:Generator_ParentPropName="TeilRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

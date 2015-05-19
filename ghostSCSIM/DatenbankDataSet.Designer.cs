@@ -30,7 +30,7 @@ namespace ghostSCSIM {
         
         private Arbeitsplatz_TeilDataTable tableArbeitsplatz_Teil;
         
-        private _E_TeildistrubutionDataTable _tableE_Teildistrubution;
+        private ETeildistrubutionDataTable tableETeildistrubution;
         
         private global::System.Data.DataRelation relationTeilBestelldaten;
         
@@ -73,8 +73,8 @@ namespace ghostSCSIM {
                 if ((ds.Tables["Arbeitsplatz_Teil"] != null)) {
                     base.Tables.Add(new Arbeitsplatz_TeilDataTable(ds.Tables["Arbeitsplatz_Teil"]));
                 }
-                if ((ds.Tables["E-Teildistrubution"] != null)) {
-                    base.Tables.Add(new _E_TeildistrubutionDataTable(ds.Tables["E-Teildistrubution"]));
+                if ((ds.Tables["ETeildistrubution"] != null)) {
+                    base.Tables.Add(new ETeildistrubutionDataTable(ds.Tables["ETeildistrubution"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -128,9 +128,9 @@ namespace ghostSCSIM {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public _E_TeildistrubutionDataTable _E_Teildistrubution {
+        public ETeildistrubutionDataTable ETeildistrubution {
             get {
-                return this._tableE_Teildistrubution;
+                return this.tableETeildistrubution;
             }
         }
         
@@ -210,8 +210,8 @@ namespace ghostSCSIM {
                 if ((ds.Tables["Arbeitsplatz_Teil"] != null)) {
                     base.Tables.Add(new Arbeitsplatz_TeilDataTable(ds.Tables["Arbeitsplatz_Teil"]));
                 }
-                if ((ds.Tables["E-Teildistrubution"] != null)) {
-                    base.Tables.Add(new _E_TeildistrubutionDataTable(ds.Tables["E-Teildistrubution"]));
+                if ((ds.Tables["ETeildistrubution"] != null)) {
+                    base.Tables.Add(new ETeildistrubutionDataTable(ds.Tables["ETeildistrubution"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -264,10 +264,10 @@ namespace ghostSCSIM {
                     this.tableArbeitsplatz_Teil.InitVars();
                 }
             }
-            this._tableE_Teildistrubution = ((_E_TeildistrubutionDataTable)(base.Tables["E-Teildistrubution"]));
+            this.tableETeildistrubution = ((ETeildistrubutionDataTable)(base.Tables["ETeildistrubution"]));
             if ((initTable == true)) {
-                if ((this._tableE_Teildistrubution != null)) {
-                    this._tableE_Teildistrubution.InitVars();
+                if ((this.tableETeildistrubution != null)) {
+                    this.tableETeildistrubution.InitVars();
                 }
             }
             this.relationTeilBestelldaten = this.Relations["TeilBestelldaten"];
@@ -288,8 +288,8 @@ namespace ghostSCSIM {
             base.Tables.Add(this.tableBestelldaten);
             this.tableArbeitsplatz_Teil = new Arbeitsplatz_TeilDataTable();
             base.Tables.Add(this.tableArbeitsplatz_Teil);
-            this._tableE_Teildistrubution = new _E_TeildistrubutionDataTable();
-            base.Tables.Add(this._tableE_Teildistrubution);
+            this.tableETeildistrubution = new ETeildistrubutionDataTable();
+            base.Tables.Add(this.tableETeildistrubution);
             this.relationTeilBestelldaten = new global::System.Data.DataRelation("TeilBestelldaten", new global::System.Data.DataColumn[] {
                         this.tableTeil.IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableBestelldaten.Teil_FKColumn}, false);
@@ -320,7 +320,7 @@ namespace ghostSCSIM {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerialize_E_Teildistrubution() {
+        private bool ShouldSerializeETeildistrubution() {
             return false;
         }
         
@@ -389,7 +389,7 @@ namespace ghostSCSIM {
         public delegate void Arbeitsplatz_TeilRowChangeEventHandler(object sender, Arbeitsplatz_TeilRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void _E_TeildistrubutionRowChangeEventHandler(object sender, _E_TeildistrubutionRowChangeEvent e);
+        public delegate void ETeildistrubutionRowChangeEventHandler(object sender, ETeildistrubutionRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -1384,7 +1384,7 @@ namespace ghostSCSIM {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class _E_TeildistrubutionDataTable : global::System.Data.TypedTableBase<_E_TeildistrubutionRow> {
+        public partial class ETeildistrubutionDataTable : global::System.Data.TypedTableBase<ETeildistrubutionRow> {
             
             private global::System.Data.DataColumn columnID;
             
@@ -1446,8 +1446,8 @@ namespace ghostSCSIM {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public _E_TeildistrubutionDataTable() {
-                this.TableName = "E-Teildistrubution";
+            public ETeildistrubutionDataTable() {
+                this.TableName = "ETeildistrubution";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -1455,7 +1455,7 @@ namespace ghostSCSIM {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal _E_TeildistrubutionDataTable(global::System.Data.DataTable table) {
+            internal ETeildistrubutionDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -1472,7 +1472,7 @@ namespace ghostSCSIM {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected _E_TeildistrubutionDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected ETeildistrubutionDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -1720,33 +1720,33 @@ namespace ghostSCSIM {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public _E_TeildistrubutionRow this[int index] {
+            public ETeildistrubutionRow this[int index] {
                 get {
-                    return ((_E_TeildistrubutionRow)(this.Rows[index]));
+                    return ((ETeildistrubutionRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event _E_TeildistrubutionRowChangeEventHandler _E_TeildistrubutionRowChanging;
+            public event ETeildistrubutionRowChangeEventHandler ETeildistrubutionRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event _E_TeildistrubutionRowChangeEventHandler _E_TeildistrubutionRowChanged;
+            public event ETeildistrubutionRowChangeEventHandler ETeildistrubutionRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event _E_TeildistrubutionRowChangeEventHandler _E_TeildistrubutionRowDeleting;
+            public event ETeildistrubutionRowChangeEventHandler ETeildistrubutionRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event _E_TeildistrubutionRowChangeEventHandler _E_TeildistrubutionRowDeleted;
+            public event ETeildistrubutionRowChangeEventHandler ETeildistrubutionRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Add_E_TeildistrubutionRow(_E_TeildistrubutionRow row) {
+            public void AddETeildistrubutionRow(ETeildistrubutionRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public _E_TeildistrubutionRow Add_E_TeildistrubutionRow(
+            public ETeildistrubutionRow AddETeildistrubutionRow(
                         int Teil_FK, 
                         int E4, 
                         int E5, 
@@ -1775,7 +1775,7 @@ namespace ghostSCSIM {
                         int E54, 
                         int E55, 
                         int E56) {
-                _E_TeildistrubutionRow row_E_TeildistrubutionRow = ((_E_TeildistrubutionRow)(this.NewRow()));
+                ETeildistrubutionRow rowETeildistrubutionRow = ((ETeildistrubutionRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         Teil_FK,
@@ -1806,22 +1806,22 @@ namespace ghostSCSIM {
                         E54,
                         E55,
                         E56};
-                row_E_TeildistrubutionRow.ItemArray = columnValuesArray;
-                this.Rows.Add(row_E_TeildistrubutionRow);
-                return row_E_TeildistrubutionRow;
+                rowETeildistrubutionRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowETeildistrubutionRow);
+                return rowETeildistrubutionRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public _E_TeildistrubutionRow FindByID(int ID) {
-                return ((_E_TeildistrubutionRow)(this.Rows.Find(new object[] {
+            public ETeildistrubutionRow FindByID(int ID) {
+                return ((ETeildistrubutionRow)(this.Rows.Find(new object[] {
                             ID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                _E_TeildistrubutionDataTable cln = ((_E_TeildistrubutionDataTable)(base.Clone()));
+                ETeildistrubutionDataTable cln = ((ETeildistrubutionDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -1829,7 +1829,7 @@ namespace ghostSCSIM {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new _E_TeildistrubutionDataTable();
+                return new ETeildistrubutionDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1934,34 +1934,32 @@ namespace ghostSCSIM {
                 this.columnID.AutoIncrementStep = -1;
                 this.columnID.AllowDBNull = false;
                 this.columnID.Unique = true;
-                this.ExtendedProperties.Add("Generator_TableVarName", "_tableE_Teildistrubution");
-                this.ExtendedProperties.Add("Generator_UserTableName", "E-Teildistrubution");
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public _E_TeildistrubutionRow New_E_TeildistrubutionRow() {
-                return ((_E_TeildistrubutionRow)(this.NewRow()));
+            public ETeildistrubutionRow NewETeildistrubutionRow() {
+                return ((ETeildistrubutionRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new _E_TeildistrubutionRow(builder);
+                return new ETeildistrubutionRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(_E_TeildistrubutionRow);
+                return typeof(ETeildistrubutionRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this._E_TeildistrubutionRowChanged != null)) {
-                    this._E_TeildistrubutionRowChanged(this, new _E_TeildistrubutionRowChangeEvent(((_E_TeildistrubutionRow)(e.Row)), e.Action));
+                if ((this.ETeildistrubutionRowChanged != null)) {
+                    this.ETeildistrubutionRowChanged(this, new ETeildistrubutionRowChangeEvent(((ETeildistrubutionRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1969,8 +1967,8 @@ namespace ghostSCSIM {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this._E_TeildistrubutionRowChanging != null)) {
-                    this._E_TeildistrubutionRowChanging(this, new _E_TeildistrubutionRowChangeEvent(((_E_TeildistrubutionRow)(e.Row)), e.Action));
+                if ((this.ETeildistrubutionRowChanging != null)) {
+                    this.ETeildistrubutionRowChanging(this, new ETeildistrubutionRowChangeEvent(((ETeildistrubutionRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1978,8 +1976,8 @@ namespace ghostSCSIM {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this._E_TeildistrubutionRowDeleted != null)) {
-                    this._E_TeildistrubutionRowDeleted(this, new _E_TeildistrubutionRowChangeEvent(((_E_TeildistrubutionRow)(e.Row)), e.Action));
+                if ((this.ETeildistrubutionRowDeleted != null)) {
+                    this.ETeildistrubutionRowDeleted(this, new ETeildistrubutionRowChangeEvent(((ETeildistrubutionRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1987,14 +1985,14 @@ namespace ghostSCSIM {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this._E_TeildistrubutionRowDeleting != null)) {
-                    this._E_TeildistrubutionRowDeleting(this, new _E_TeildistrubutionRowChangeEvent(((_E_TeildistrubutionRow)(e.Row)), e.Action));
+                if ((this.ETeildistrubutionRowDeleting != null)) {
+                    this.ETeildistrubutionRowDeleting(this, new ETeildistrubutionRowChangeEvent(((ETeildistrubutionRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Remove_E_TeildistrubutionRow(_E_TeildistrubutionRow row) {
+            public void RemoveETeildistrubutionRow(ETeildistrubutionRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -2021,7 +2019,7 @@ namespace ghostSCSIM {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "_E_TeildistrubutionDataTable";
+                attribute2.FixedValue = "ETeildistrubutionDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -2579,25 +2577,25 @@ namespace ghostSCSIM {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class _E_TeildistrubutionRow : global::System.Data.DataRow {
+        public partial class ETeildistrubutionRow : global::System.Data.DataRow {
             
-            private _E_TeildistrubutionDataTable _tableE_Teildistrubution;
+            private ETeildistrubutionDataTable tableETeildistrubution;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal _E_TeildistrubutionRow(global::System.Data.DataRowBuilder rb) : 
+            internal ETeildistrubutionRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this._tableE_Teildistrubution = ((_E_TeildistrubutionDataTable)(this.Table));
+                this.tableETeildistrubution = ((ETeildistrubutionDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int ID {
                 get {
-                    return ((int)(this[this._tableE_Teildistrubution.IDColumn]));
+                    return ((int)(this[this.tableETeildistrubution.IDColumn]));
                 }
                 set {
-                    this[this._tableE_Teildistrubution.IDColumn] = value;
+                    this[this.tableETeildistrubution.IDColumn] = value;
                 }
             }
             
@@ -2606,14 +2604,14 @@ namespace ghostSCSIM {
             public int Teil_FK {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.Teil_FKColumn]));
+                        return ((int)(this[this.tableETeildistrubution.Teil_FKColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Teil_FK\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Teil_FK\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.Teil_FKColumn] = value;
+                    this[this.tableETeildistrubution.Teil_FKColumn] = value;
                 }
             }
             
@@ -2622,14 +2620,14 @@ namespace ghostSCSIM {
             public int E4 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E4Column]));
+                        return ((int)(this[this.tableETeildistrubution.E4Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E4\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E4\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E4Column] = value;
+                    this[this.tableETeildistrubution.E4Column] = value;
                 }
             }
             
@@ -2638,14 +2636,14 @@ namespace ghostSCSIM {
             public int E5 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E5Column]));
+                        return ((int)(this[this.tableETeildistrubution.E5Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E5\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E5\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E5Column] = value;
+                    this[this.tableETeildistrubution.E5Column] = value;
                 }
             }
             
@@ -2654,14 +2652,14 @@ namespace ghostSCSIM {
             public int E6 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E6Column]));
+                        return ((int)(this[this.tableETeildistrubution.E6Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E6\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E6\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E6Column] = value;
+                    this[this.tableETeildistrubution.E6Column] = value;
                 }
             }
             
@@ -2670,14 +2668,14 @@ namespace ghostSCSIM {
             public int E7 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E7Column]));
+                        return ((int)(this[this.tableETeildistrubution.E7Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E7\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E7\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E7Column] = value;
+                    this[this.tableETeildistrubution.E7Column] = value;
                 }
             }
             
@@ -2686,14 +2684,14 @@ namespace ghostSCSIM {
             public int E8 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E8Column]));
+                        return ((int)(this[this.tableETeildistrubution.E8Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E8\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E8\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E8Column] = value;
+                    this[this.tableETeildistrubution.E8Column] = value;
                 }
             }
             
@@ -2702,14 +2700,14 @@ namespace ghostSCSIM {
             public int E9 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E9Column]));
+                        return ((int)(this[this.tableETeildistrubution.E9Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E9\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E9\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E9Column] = value;
+                    this[this.tableETeildistrubution.E9Column] = value;
                 }
             }
             
@@ -2718,14 +2716,14 @@ namespace ghostSCSIM {
             public int E10 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E10Column]));
+                        return ((int)(this[this.tableETeildistrubution.E10Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E10\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E10\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E10Column] = value;
+                    this[this.tableETeildistrubution.E10Column] = value;
                 }
             }
             
@@ -2734,14 +2732,14 @@ namespace ghostSCSIM {
             public int E11 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E11Column]));
+                        return ((int)(this[this.tableETeildistrubution.E11Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E11\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E11\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E11Column] = value;
+                    this[this.tableETeildistrubution.E11Column] = value;
                 }
             }
             
@@ -2750,14 +2748,14 @@ namespace ghostSCSIM {
             public int E12 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E12Column]));
+                        return ((int)(this[this.tableETeildistrubution.E12Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E12\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E12\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E12Column] = value;
+                    this[this.tableETeildistrubution.E12Column] = value;
                 }
             }
             
@@ -2766,14 +2764,14 @@ namespace ghostSCSIM {
             public int E13 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E13Column]));
+                        return ((int)(this[this.tableETeildistrubution.E13Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E13\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E13\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E13Column] = value;
+                    this[this.tableETeildistrubution.E13Column] = value;
                 }
             }
             
@@ -2782,14 +2780,14 @@ namespace ghostSCSIM {
             public int E14 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E14Column]));
+                        return ((int)(this[this.tableETeildistrubution.E14Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E14\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E14\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E14Column] = value;
+                    this[this.tableETeildistrubution.E14Column] = value;
                 }
             }
             
@@ -2798,14 +2796,14 @@ namespace ghostSCSIM {
             public int E15 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E15Column]));
+                        return ((int)(this[this.tableETeildistrubution.E15Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E15\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E15\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E15Column] = value;
+                    this[this.tableETeildistrubution.E15Column] = value;
                 }
             }
             
@@ -2814,14 +2812,14 @@ namespace ghostSCSIM {
             public int E16 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E16Column]));
+                        return ((int)(this[this.tableETeildistrubution.E16Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E16\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E16\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E16Column] = value;
+                    this[this.tableETeildistrubution.E16Column] = value;
                 }
             }
             
@@ -2830,14 +2828,14 @@ namespace ghostSCSIM {
             public int E17 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E17Column]));
+                        return ((int)(this[this.tableETeildistrubution.E17Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E17\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E17\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E17Column] = value;
+                    this[this.tableETeildistrubution.E17Column] = value;
                 }
             }
             
@@ -2846,14 +2844,14 @@ namespace ghostSCSIM {
             public int E18 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E18Column]));
+                        return ((int)(this[this.tableETeildistrubution.E18Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E18\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E18\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E18Column] = value;
+                    this[this.tableETeildistrubution.E18Column] = value;
                 }
             }
             
@@ -2862,14 +2860,14 @@ namespace ghostSCSIM {
             public int E19 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E19Column]));
+                        return ((int)(this[this.tableETeildistrubution.E19Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E19\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E19\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E19Column] = value;
+                    this[this.tableETeildistrubution.E19Column] = value;
                 }
             }
             
@@ -2878,14 +2876,14 @@ namespace ghostSCSIM {
             public int E20 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E20Column]));
+                        return ((int)(this[this.tableETeildistrubution.E20Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E20\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E20\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E20Column] = value;
+                    this[this.tableETeildistrubution.E20Column] = value;
                 }
             }
             
@@ -2894,14 +2892,14 @@ namespace ghostSCSIM {
             public int E26 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E26Column]));
+                        return ((int)(this[this.tableETeildistrubution.E26Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E26\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E26\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E26Column] = value;
+                    this[this.tableETeildistrubution.E26Column] = value;
                 }
             }
             
@@ -2910,14 +2908,14 @@ namespace ghostSCSIM {
             public int E29 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E29Column]));
+                        return ((int)(this[this.tableETeildistrubution.E29Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E29\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E29\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E29Column] = value;
+                    this[this.tableETeildistrubution.E29Column] = value;
                 }
             }
             
@@ -2926,14 +2924,14 @@ namespace ghostSCSIM {
             public int E30 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E30Column]));
+                        return ((int)(this[this.tableETeildistrubution.E30Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E30\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E30\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E30Column] = value;
+                    this[this.tableETeildistrubution.E30Column] = value;
                 }
             }
             
@@ -2942,14 +2940,14 @@ namespace ghostSCSIM {
             public int E31 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E31Column]));
+                        return ((int)(this[this.tableETeildistrubution.E31Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E31\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E31\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E31Column] = value;
+                    this[this.tableETeildistrubution.E31Column] = value;
                 }
             }
             
@@ -2958,14 +2956,14 @@ namespace ghostSCSIM {
             public int E49 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E49Column]));
+                        return ((int)(this[this.tableETeildistrubution.E49Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E49\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E49\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E49Column] = value;
+                    this[this.tableETeildistrubution.E49Column] = value;
                 }
             }
             
@@ -2974,14 +2972,14 @@ namespace ghostSCSIM {
             public int E50 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E50Column]));
+                        return ((int)(this[this.tableETeildistrubution.E50Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E50\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E50\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E50Column] = value;
+                    this[this.tableETeildistrubution.E50Column] = value;
                 }
             }
             
@@ -2990,14 +2988,14 @@ namespace ghostSCSIM {
             public int E51 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E51Column]));
+                        return ((int)(this[this.tableETeildistrubution.E51Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E51\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E51\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E51Column] = value;
+                    this[this.tableETeildistrubution.E51Column] = value;
                 }
             }
             
@@ -3006,14 +3004,14 @@ namespace ghostSCSIM {
             public int E54 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E54Column]));
+                        return ((int)(this[this.tableETeildistrubution.E54Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E54\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E54\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E54Column] = value;
+                    this[this.tableETeildistrubution.E54Column] = value;
                 }
             }
             
@@ -3022,14 +3020,14 @@ namespace ghostSCSIM {
             public int E55 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E55Column]));
+                        return ((int)(this[this.tableETeildistrubution.E55Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E55\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E55\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E55Column] = value;
+                    this[this.tableETeildistrubution.E55Column] = value;
                 }
             }
             
@@ -3038,351 +3036,351 @@ namespace ghostSCSIM {
             public int E56 {
                 get {
                     try {
-                        return ((int)(this[this._tableE_Teildistrubution.E56Column]));
+                        return ((int)(this[this.tableETeildistrubution.E56Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'E56\' in table \'E-Teildistrubution\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'E56\' in table \'ETeildistrubution\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this._tableE_Teildistrubution.E56Column] = value;
+                    this[this.tableETeildistrubution.E56Column] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsTeil_FKNull() {
-                return this.IsNull(this._tableE_Teildistrubution.Teil_FKColumn);
+                return this.IsNull(this.tableETeildistrubution.Teil_FKColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetTeil_FKNull() {
-                this[this._tableE_Teildistrubution.Teil_FKColumn] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.Teil_FKColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE4Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E4Column);
+                return this.IsNull(this.tableETeildistrubution.E4Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE4Null() {
-                this[this._tableE_Teildistrubution.E4Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E4Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE5Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E5Column);
+                return this.IsNull(this.tableETeildistrubution.E5Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE5Null() {
-                this[this._tableE_Teildistrubution.E5Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E5Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE6Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E6Column);
+                return this.IsNull(this.tableETeildistrubution.E6Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE6Null() {
-                this[this._tableE_Teildistrubution.E6Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E6Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE7Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E7Column);
+                return this.IsNull(this.tableETeildistrubution.E7Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE7Null() {
-                this[this._tableE_Teildistrubution.E7Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E7Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE8Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E8Column);
+                return this.IsNull(this.tableETeildistrubution.E8Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE8Null() {
-                this[this._tableE_Teildistrubution.E8Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E8Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE9Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E9Column);
+                return this.IsNull(this.tableETeildistrubution.E9Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE9Null() {
-                this[this._tableE_Teildistrubution.E9Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E9Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE10Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E10Column);
+                return this.IsNull(this.tableETeildistrubution.E10Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE10Null() {
-                this[this._tableE_Teildistrubution.E10Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E10Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE11Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E11Column);
+                return this.IsNull(this.tableETeildistrubution.E11Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE11Null() {
-                this[this._tableE_Teildistrubution.E11Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E11Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE12Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E12Column);
+                return this.IsNull(this.tableETeildistrubution.E12Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE12Null() {
-                this[this._tableE_Teildistrubution.E12Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E12Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE13Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E13Column);
+                return this.IsNull(this.tableETeildistrubution.E13Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE13Null() {
-                this[this._tableE_Teildistrubution.E13Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E13Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE14Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E14Column);
+                return this.IsNull(this.tableETeildistrubution.E14Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE14Null() {
-                this[this._tableE_Teildistrubution.E14Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E14Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE15Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E15Column);
+                return this.IsNull(this.tableETeildistrubution.E15Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE15Null() {
-                this[this._tableE_Teildistrubution.E15Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E15Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE16Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E16Column);
+                return this.IsNull(this.tableETeildistrubution.E16Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE16Null() {
-                this[this._tableE_Teildistrubution.E16Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E16Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE17Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E17Column);
+                return this.IsNull(this.tableETeildistrubution.E17Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE17Null() {
-                this[this._tableE_Teildistrubution.E17Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E17Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE18Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E18Column);
+                return this.IsNull(this.tableETeildistrubution.E18Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE18Null() {
-                this[this._tableE_Teildistrubution.E18Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E18Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE19Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E19Column);
+                return this.IsNull(this.tableETeildistrubution.E19Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE19Null() {
-                this[this._tableE_Teildistrubution.E19Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E19Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE20Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E20Column);
+                return this.IsNull(this.tableETeildistrubution.E20Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE20Null() {
-                this[this._tableE_Teildistrubution.E20Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E20Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE26Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E26Column);
+                return this.IsNull(this.tableETeildistrubution.E26Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE26Null() {
-                this[this._tableE_Teildistrubution.E26Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E26Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE29Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E29Column);
+                return this.IsNull(this.tableETeildistrubution.E29Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE29Null() {
-                this[this._tableE_Teildistrubution.E29Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E29Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE30Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E30Column);
+                return this.IsNull(this.tableETeildistrubution.E30Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE30Null() {
-                this[this._tableE_Teildistrubution.E30Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E30Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE31Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E31Column);
+                return this.IsNull(this.tableETeildistrubution.E31Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE31Null() {
-                this[this._tableE_Teildistrubution.E31Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E31Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE49Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E49Column);
+                return this.IsNull(this.tableETeildistrubution.E49Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE49Null() {
-                this[this._tableE_Teildistrubution.E49Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E49Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE50Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E50Column);
+                return this.IsNull(this.tableETeildistrubution.E50Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE50Null() {
-                this[this._tableE_Teildistrubution.E50Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E50Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE51Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E51Column);
+                return this.IsNull(this.tableETeildistrubution.E51Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE51Null() {
-                this[this._tableE_Teildistrubution.E51Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E51Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE54Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E54Column);
+                return this.IsNull(this.tableETeildistrubution.E54Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE54Null() {
-                this[this._tableE_Teildistrubution.E54Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E54Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE55Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E55Column);
+                return this.IsNull(this.tableETeildistrubution.E55Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE55Null() {
-                this[this._tableE_Teildistrubution.E55Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E55Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsE56Null() {
-                return this.IsNull(this._tableE_Teildistrubution.E56Column);
+                return this.IsNull(this.tableETeildistrubution.E56Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetE56Null() {
-                this[this._tableE_Teildistrubution.E56Column] = global::System.Convert.DBNull;
+                this[this.tableETeildistrubution.E56Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -3492,22 +3490,22 @@ namespace ghostSCSIM {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class _E_TeildistrubutionRowChangeEvent : global::System.EventArgs {
+        public class ETeildistrubutionRowChangeEvent : global::System.EventArgs {
             
-            private _E_TeildistrubutionRow eventRow;
+            private ETeildistrubutionRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public _E_TeildistrubutionRowChangeEvent(_E_TeildistrubutionRow row, global::System.Data.DataRowAction action) {
+            public ETeildistrubutionRowChangeEvent(ETeildistrubutionRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public _E_TeildistrubutionRow Row {
+            public ETeildistrubutionRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -4897,7 +4895,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class E_TeildistrubutionTableAdapter : global::System.ComponentModel.Component {
+    public partial class ETeildistrubutionTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.OleDb.OleDbDataAdapter _adapter;
         
@@ -4911,7 +4909,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public E_TeildistrubutionTableAdapter() {
+        public ETeildistrubutionTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -5008,7 +5006,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             this._adapter = new global::System.Data.OleDb.OleDbDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "E-Teildistrubution";
+            tableMapping.DataSetTable = "ETeildistrubution";
             tableMapping.ColumnMappings.Add("ID", "ID");
             tableMapping.ColumnMappings.Add("Teil_FK", "Teil_FK");
             tableMapping.ColumnMappings.Add("E4", "E4");
@@ -5401,7 +5399,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DatenbankDataSet._E_TeildistrubutionDataTable dataTable) {
+        public virtual int Fill(DatenbankDataSet.ETeildistrubutionDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5414,9 +5412,9 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetData() {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5425,7 +5423,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE10(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE10(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5433,7 +5431,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5442,7 +5440,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE11(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE11(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[2];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5450,7 +5448,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5459,7 +5457,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE12(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE12(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[3];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5467,7 +5465,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5476,7 +5474,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE13(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE13(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[4];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5484,7 +5482,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5493,7 +5491,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE14(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE14(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[5];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5501,7 +5499,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5510,7 +5508,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE15(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE15(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[6];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5518,7 +5516,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5527,7 +5525,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE16(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE16(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[7];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5535,7 +5533,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5544,7 +5542,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE17(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE17(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[8];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5552,7 +5550,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5561,7 +5559,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE18(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE18(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[9];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5569,7 +5567,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5578,7 +5576,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE19(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE19(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[10];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5586,7 +5584,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5595,7 +5593,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE20(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE20(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[11];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5603,7 +5601,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5612,7 +5610,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE26(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE26(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[12];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5620,7 +5618,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5629,7 +5627,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE29(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE29(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[13];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5637,7 +5635,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5646,7 +5644,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE30(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE30(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[14];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5654,7 +5652,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5663,7 +5661,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE31(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE31(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[15];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5671,7 +5669,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5680,7 +5678,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE4(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE4(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[16];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5688,7 +5686,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5697,7 +5695,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE49(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE49(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[17];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5705,7 +5703,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5714,7 +5712,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE5(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE5(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[18];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5722,7 +5720,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5731,7 +5729,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE50(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE50(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[19];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5739,7 +5737,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5748,7 +5746,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE51(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE51(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[20];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5756,7 +5754,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5765,7 +5763,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE54(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE54(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[21];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5773,7 +5771,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5782,7 +5780,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE55(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE55(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[22];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5790,7 +5788,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5799,7 +5797,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE56(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE56(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[23];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5807,7 +5805,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5816,7 +5814,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE6(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE6(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[24];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5824,7 +5822,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5833,7 +5831,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE7(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE7(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[25];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5841,7 +5839,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5850,7 +5848,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE8(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE8(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[26];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5858,7 +5856,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5867,7 +5865,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatenbankDataSet._E_TeildistrubutionDataTable GetE9(global::System.Nullable<int> Teil_FK) {
+        public virtual DatenbankDataSet.ETeildistrubutionDataTable GetE9(global::System.Nullable<int> Teil_FK) {
             this.Adapter.SelectCommand = this.CommandCollection[27];
             if ((Teil_FK.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(Teil_FK.Value));
@@ -5875,7 +5873,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            DatenbankDataSet._E_TeildistrubutionDataTable dataTable = new DatenbankDataSet._E_TeildistrubutionDataTable();
+            DatenbankDataSet.ETeildistrubutionDataTable dataTable = new DatenbankDataSet.ETeildistrubutionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5883,7 +5881,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DatenbankDataSet._E_TeildistrubutionDataTable dataTable) {
+        public virtual int Update(DatenbankDataSet.ETeildistrubutionDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -5891,7 +5889,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(DatenbankDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "E-Teildistrubution");
+            return this.Adapter.Update(dataSet, "ETeildistrubution");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6891,7 +6889,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         
         private Arbeitsplatz_TeilTableAdapter _arbeitsplatz_TeilTableAdapter;
         
-        private E_TeildistrubutionTableAdapter _e_TeildistrubutionTableAdapter;
+        private ETeildistrubutionTableAdapter _eTeildistrubutionTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -6955,12 +6953,12 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public E_TeildistrubutionTableAdapter E_TeildistrubutionTableAdapter {
+        public ETeildistrubutionTableAdapter ETeildistrubutionTableAdapter {
             get {
-                return this._e_TeildistrubutionTableAdapter;
+                return this._eTeildistrubutionTableAdapter;
             }
             set {
-                this._e_TeildistrubutionTableAdapter = value;
+                this._eTeildistrubutionTableAdapter = value;
             }
         }
         
@@ -6995,9 +6993,9 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
                             && (this._arbeitsplatz_TeilTableAdapter.Connection != null))) {
                     return this._arbeitsplatz_TeilTableAdapter.Connection;
                 }
-                if (((this._e_TeildistrubutionTableAdapter != null) 
-                            && (this._e_TeildistrubutionTableAdapter.Connection != null))) {
-                    return this._e_TeildistrubutionTableAdapter.Connection;
+                if (((this._eTeildistrubutionTableAdapter != null) 
+                            && (this._eTeildistrubutionTableAdapter.Connection != null))) {
+                    return this._eTeildistrubutionTableAdapter.Connection;
                 }
                 return null;
             }
@@ -7021,7 +7019,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
                 if ((this._arbeitsplatz_TeilTableAdapter != null)) {
                     count = (count + 1);
                 }
-                if ((this._e_TeildistrubutionTableAdapter != null)) {
+                if ((this._eTeildistrubutionTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -7062,12 +7060,12 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._e_TeildistrubutionTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet._E_Teildistrubution.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._eTeildistrubutionTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.ETeildistrubution.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._e_TeildistrubutionTableAdapter.Update(updatedRows));
+                    result = (result + this._eTeildistrubutionTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -7105,11 +7103,11 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._e_TeildistrubutionTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet._E_Teildistrubution.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._eTeildistrubutionTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.ETeildistrubution.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._e_TeildistrubutionTableAdapter.Update(addedRows));
+                    result = (result + this._eTeildistrubutionTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -7123,11 +7121,11 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateDeletedRows(DatenbankDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._e_TeildistrubutionTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet._E_Teildistrubution.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._eTeildistrubutionTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.ETeildistrubution.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._e_TeildistrubutionTableAdapter.Update(deletedRows));
+                    result = (result + this._eTeildistrubutionTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -7209,8 +7207,8 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._e_TeildistrubutionTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._e_TeildistrubutionTableAdapter.Connection) == false))) {
+            if (((this._eTeildistrubutionTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._eTeildistrubutionTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -7273,13 +7271,13 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
                         adaptersWithAcceptChangesDuringUpdate.Add(this._arbeitsplatz_TeilTableAdapter.Adapter);
                     }
                 }
-                if ((this._e_TeildistrubutionTableAdapter != null)) {
-                    revertConnections.Add(this._e_TeildistrubutionTableAdapter, this._e_TeildistrubutionTableAdapter.Connection);
-                    this._e_TeildistrubutionTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(workConnection));
-                    this._e_TeildistrubutionTableAdapter.Transaction = ((global::System.Data.OleDb.OleDbTransaction)(workTransaction));
-                    if (this._e_TeildistrubutionTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._e_TeildistrubutionTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._e_TeildistrubutionTableAdapter.Adapter);
+                if ((this._eTeildistrubutionTableAdapter != null)) {
+                    revertConnections.Add(this._eTeildistrubutionTableAdapter, this._eTeildistrubutionTableAdapter.Connection);
+                    this._eTeildistrubutionTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(workConnection));
+                    this._eTeildistrubutionTableAdapter.Transaction = ((global::System.Data.OleDb.OleDbTransaction)(workTransaction));
+                    if (this._eTeildistrubutionTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._eTeildistrubutionTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._eTeildistrubutionTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -7352,9 +7350,9 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
                     this._arbeitsplatz_TeilTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(revertConnections[this._arbeitsplatz_TeilTableAdapter]));
                     this._arbeitsplatz_TeilTableAdapter.Transaction = null;
                 }
-                if ((this._e_TeildistrubutionTableAdapter != null)) {
-                    this._e_TeildistrubutionTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(revertConnections[this._e_TeildistrubutionTableAdapter]));
-                    this._e_TeildistrubutionTableAdapter.Transaction = null;
+                if ((this._eTeildistrubutionTableAdapter != null)) {
+                    this._eTeildistrubutionTableAdapter.Connection = ((global::System.Data.OleDb.OleDbConnection)(revertConnections[this._eTeildistrubutionTableAdapter]));
+                    this._eTeildistrubutionTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
