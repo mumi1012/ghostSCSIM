@@ -382,12 +382,18 @@ namespace ghostSCSIM
        {
            DaoHelper daoHelper = new DaoHelper();
 
+           int wert = daoHelper.getBedarfE4(21);
+
+           MessageBox.Show(wert.ToString());
+
+           /*
            List<Teil> teileListe = daoHelper.getTeilStammdaten();
 
            TeilLieferdaten lieferDaten = daoHelper.getTeilLieferdatenByTeilenummer(21);
 
            MessageBox.Show(teileListe[0].getVerwendung().ToString());
            MessageBox.Show(lieferDaten.ToString());
+            */
        }
 
        private void textBox2_TextChanged(object sender, EventArgs e)
