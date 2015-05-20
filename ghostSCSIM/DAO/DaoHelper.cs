@@ -68,5 +68,19 @@ namespace ghostSCSIM.DAO
 
         }
 
+        public int getBedarfE4(int Teil_FK)
+        {
+            int bedarfn = 0;
+
+            DatenbankDataSet datenbankDataSet = new DatenbankDataSet();
+            DatenbankDataSetTableAdapters.ETeildistrubutionTableAdapter teilE4Adapter = new DatenbankDataSetTableAdapters.ETeildistrubutionTableAdapter();
+
+            DataTable resultTable = teilE4Adapter.GetE4(Teil_FK);
+
+            return bedarfn;
+        }
+
+
+
     }
 }
