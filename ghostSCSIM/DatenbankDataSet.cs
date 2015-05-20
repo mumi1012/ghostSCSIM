@@ -19,4 +19,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
     
     public partial class TeilTableAdapter {
     }
+
+    partial class ETeildistrubutionTableAdapter {
+    }
 }
