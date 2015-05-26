@@ -134,7 +134,7 @@ namespace ghostSCSIM.Domain
 
         //K39
 
-        int k39bedarf = e11bedarf + e12bedarf + e13bedarf + e14bedarf + e15bedarf;
+        int k39bedarf = e10bedarf + e11bedarf + e12bedarf + e13bedarf + e14bedarf + e15bedarf;
 
         //K40
 
