@@ -198,6 +198,9 @@ namespace ghostSCSIM
                pp_p3_15_lager.Text = xmlData.warehouseStock.article[14].amount.ToString();
                pp_p3_20_lager.Text = xmlData.warehouseStock.article[19].amount.ToString();
 
+               //Bestellung
+               bestellung_k21_id.Text = xmlData.warehouseStock.article[20].id.ToString();
+
                //Warteschleife und InBearbeitung 
                pp_p1_p1_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
                pp_p1_p1_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
@@ -350,7 +353,11 @@ namespace ghostSCSIM
                pp_p3_15_prod.Text = (int.Parse(pp_p3_29_vw.Text.ToString()) + int.Parse(pp_p3_15_sb.Text.ToString()) - int.Parse(pp_p3_15_lager.Text.ToString()) - int.Parse(pp_p3_15_ws.Text.ToString()) - int.Parse(pp_p3_15_bearb.Text.ToString())).ToString();
                pp_p3_15_vw.Text = pp_p3_29_prod.Text;
                pp_p3_20_prod.Text = (int.Parse(pp_p3_29_vw.Text.ToString()) + int.Parse(pp_p3_20_sb.Text.ToString()) - int.Parse(pp_p3_20_lager.Text.ToString()) - int.Parse(pp_p3_20_ws.Text.ToString()) - int.Parse(pp_p3_20_bearb.Text.ToString())).ToString();
-               pp_p3_20_vw.Text = pp_p3_29_prod.Text;     
+               pp_p3_20_vw.Text = pp_p3_29_prod.Text; 
+    
+               //Bestellung
+               //TODO nicht editierbar, Rest hinzufügen
+               bestellung_k21_id.Text = (int.Parse(bestellung_k21_id.Text.ToString()).ToString());
                              
            }
          
@@ -421,6 +428,16 @@ namespace ghostSCSIM
        }
 
        private void label1_Click(object sender, EventArgs e)
+       {
+
+       }
+
+       private void pp_p1_p1_sb_TextChanged(object sender, EventArgs e)
+       {
+
+       }
+
+       private void pp_p1_p1_vw_TextChanged(object sender, EventArgs e)
        {
 
        } 

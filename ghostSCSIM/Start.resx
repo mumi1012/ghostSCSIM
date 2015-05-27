@@ -8880,6 +8880,153 @@
   <data name="&gt;&gt;tabKapa.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="bestellung_k21_ausstehend.Location" type="System.Drawing.Point, System.Drawing">
+    <value>702, 39</value>
+  </data>
+  <data name="bestellung_k21_ausstehend.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 20</value>
+  </data>
+  <data name="bestellung_k21_ausstehend.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_ausstehend.Name" xml:space="preserve">
+    <value>bestellung_k21_ausstehend</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_ausstehend.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_ausstehend.Parent" xml:space="preserve">
+    <value>tabPage_best_kaufteileverbrauch</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_ausstehend.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bestellung_k21_bestandn2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 39</value>
+  </data>
+  <data name="bestellung_k21_bestandn2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 20</value>
+  </data>
+  <data name="bestellung_k21_bestandn2.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bestandn2.Name" xml:space="preserve">
+    <value>bestellung_k21_bestandn2</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bestandn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bestandn2.Parent" xml:space="preserve">
+    <value>tabPage_best_kaufteileverbrauch</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bestandn2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bestellung_k21_bestandn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>472, 39</value>
+  </data>
+  <data name="bestellung_k21_bestandn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 20</value>
+  </data>
+  <data name="bestellung_k21_bestandn.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bestandn.Name" xml:space="preserve">
+    <value>bestellung_k21_bestandn</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bestandn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bestandn.Parent" xml:space="preserve">
+    <value>tabPage_best_kaufteileverbrauch</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bestandn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="bestellung_k21_bedarfn2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>359, 39</value>
+  </data>
+  <data name="bestellung_k21_bedarfn2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 20</value>
+  </data>
+  <data name="bestellung_k21_bedarfn2.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bedarfn2.Name" xml:space="preserve">
+    <value>bestellung_k21_bedarfn2</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bedarfn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bedarfn2.Parent" xml:space="preserve">
+    <value>tabPage_best_kaufteileverbrauch</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bedarfn2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bestellung_k21_bedarfn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>240, 39</value>
+  </data>
+  <data name="bestellung_k21_bedarfn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 20</value>
+  </data>
+  <data name="bestellung_k21_bedarfn.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bedarfn.Name" xml:space="preserve">
+    <value>bestellung_k21_bedarfn</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bedarfn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bedarfn.Parent" xml:space="preserve">
+    <value>tabPage_best_kaufteileverbrauch</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bedarfn.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="bestellung_k21_bestand.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 39</value>
+  </data>
+  <data name="bestellung_k21_bestand.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 20</value>
+  </data>
+  <data name="bestellung_k21_bestand.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bestand.Name" xml:space="preserve">
+    <value>bestellung_k21_bestand</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bestand.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bestand.Parent" xml:space="preserve">
+    <value>tabPage_best_kaufteileverbrauch</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_bestand.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="bestellung_k21_id.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 39</value>
+  </data>
+  <data name="bestellung_k21_id.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 20</value>
+  </data>
+  <data name="bestellung_k21_id.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_id.Name" xml:space="preserve">
+    <value>bestellung_k21_id</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_id.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_id.Parent" xml:space="preserve">
+    <value>tabPage_best_kaufteileverbrauch</value>
+  </data>
+  <data name="&gt;&gt;bestellung_k21_id.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="testButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -8908,7 +9055,7 @@
     <value>tabPage_best_kaufteileverbrauch</value>
   </data>
   <data name="&gt;&gt;testButton.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>7</value>
   </data>
   <metadata name="Column_best_kaufteileverbrauch_nummer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -8974,7 +9121,7 @@
     <value>tabPage_best_kaufteileverbrauch</value>
   </data>
   <data name="&gt;&gt;dataGridView_best_kaufteileverbrauch.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>8</value>
   </data>
   <data name="tabPage_best_kaufteileverbrauch.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>

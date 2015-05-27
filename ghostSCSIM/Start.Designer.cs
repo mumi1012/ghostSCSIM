@@ -406,6 +406,13 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
+            this.bestellung_k21_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k21_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k21_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k21_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k21_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k21_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k21_ausstehend = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPrognose.SuspendLayout();
@@ -1335,11 +1342,13 @@
             // 
             resources.ApplyResources(this.pp_p1_p1_sb, "pp_p1_p1_sb");
             this.pp_p1_p1_sb.Name = "pp_p1_p1_sb";
+            this.pp_p1_p1_sb.TextChanged += new System.EventHandler(this.pp_p1_p1_sb_TextChanged);
             // 
             // pp_p1_p1_vw
             // 
             resources.ApplyResources(this.pp_p1_p1_vw, "pp_p1_p1_vw");
             this.pp_p1_p1_vw.Name = "pp_p1_p1_vw";
+            this.pp_p1_p1_vw.TextChanged += new System.EventHandler(this.pp_p1_p1_vw_TextChanged);
             // 
             // label_pp_p1_prod
             // 
@@ -2697,6 +2706,13 @@
             // 
             // tabPage_best_kaufteileverbrauch
             // 
+            this.tabPage_best_kaufteileverbrauch.Controls.Add(this.bestellung_k21_ausstehend);
+            this.tabPage_best_kaufteileverbrauch.Controls.Add(this.bestellung_k21_bestandn2);
+            this.tabPage_best_kaufteileverbrauch.Controls.Add(this.bestellung_k21_bestandn);
+            this.tabPage_best_kaufteileverbrauch.Controls.Add(this.bestellung_k21_bedarfn2);
+            this.tabPage_best_kaufteileverbrauch.Controls.Add(this.bestellung_k21_bedarfn);
+            this.tabPage_best_kaufteileverbrauch.Controls.Add(this.bestellung_k21_bestand);
+            this.tabPage_best_kaufteileverbrauch.Controls.Add(this.bestellung_k21_id);
             this.tabPage_best_kaufteileverbrauch.Controls.Add(this.testButton);
             this.tabPage_best_kaufteileverbrauch.Controls.Add(this.dataGridView_best_kaufteileverbrauch);
             resources.ApplyResources(this.tabPage_best_kaufteileverbrauch, "tabPage_best_kaufteileverbrauch");
@@ -3054,6 +3070,41 @@
             resources.ApplyResources(this.imageList3, "imageList3");
             this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // bestellung_k21_id
+            // 
+            resources.ApplyResources(this.bestellung_k21_id, "bestellung_k21_id");
+            this.bestellung_k21_id.Name = "bestellung_k21_id";
+            // 
+            // bestellung_k21_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k21_bestand, "bestellung_k21_bestand");
+            this.bestellung_k21_bestand.Name = "bestellung_k21_bestand";
+            // 
+            // bestellung_k21_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k21_bedarfn, "bestellung_k21_bedarfn");
+            this.bestellung_k21_bedarfn.Name = "bestellung_k21_bedarfn";
+            // 
+            // bestellung_k21_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k21_bedarfn2, "bestellung_k21_bedarfn2");
+            this.bestellung_k21_bedarfn2.Name = "bestellung_k21_bedarfn2";
+            // 
+            // bestellung_k21_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k21_bestandn, "bestellung_k21_bestandn");
+            this.bestellung_k21_bestandn.Name = "bestellung_k21_bestandn";
+            // 
+            // bestellung_k21_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k21_bestandn2, "bestellung_k21_bestandn2");
+            this.bestellung_k21_bestandn2.Name = "bestellung_k21_bestandn2";
+            // 
+            // bestellung_k21_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k21_ausstehend, "bestellung_k21_ausstehend");
+            this.bestellung_k21_ausstehend.Name = "bestellung_k21_ausstehend";
+            // 
             // Start
             // 
             resources.ApplyResources(this, "$this");
@@ -3099,6 +3150,7 @@
             this.tabBestellung.ResumeLayout(false);
             this.tabControl_best.ResumeLayout(false);
             this.tabPage_best_kaufteileverbrauch.ResumeLayout(false);
+            this.tabPage_best_kaufteileverbrauch.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_best_kaufteileverbrauch)).EndInit();
             this.tabPage_best_kaufteillager.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_best_kaufteillager)).EndInit();
@@ -3497,6 +3549,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_menge;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_preis;
         private System.Windows.Forms.DataGridViewButtonColumn Column_dirver_direktverkauf_loeschenButton;
+        private System.Windows.Forms.TextBox bestellung_k21_ausstehend;
+        private System.Windows.Forms.TextBox bestellung_k21_bestandn2;
+        private System.Windows.Forms.TextBox bestellung_k21_bestandn;
+        private System.Windows.Forms.TextBox bestellung_k21_bedarfn2;
+        private System.Windows.Forms.TextBox bestellung_k21_bedarfn;
+        private System.Windows.Forms.TextBox bestellung_k21_bestand;
+        private System.Windows.Forms.TextBox bestellung_k21_id;
     }
 }
 
