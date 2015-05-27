@@ -43,7 +43,7 @@ namespace ghostSCSIM.service
             return k22bedarf;
         }
 
-        public int getk22bedarf(int p3bedarf)
+        public int getk23bedarf(int p3bedarf)
         {
 
             int k23bedarf = p3bedarf;
