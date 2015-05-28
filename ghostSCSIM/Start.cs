@@ -440,6 +440,11 @@ namespace ghostSCSIM
        private void pp_p1_p1_vw_TextChanged(object sender, EventArgs e)
        {
 
+       }
+
+       private void dataGridView_best_kaufteileverbrauch_CellContentClick(object sender, DataGridViewCellEventArgs e)
+       {
+           dataGridView_best_kaufteileverbrauch.ScrollBars = ScrollBars.Both; 
        } 
     }
 }
