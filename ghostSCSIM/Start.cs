@@ -200,6 +200,64 @@ namespace ghostSCSIM
 
                //Bestellung
                bestellung_k21_id.Text = xmlData.warehouseStock.article[20].id.ToString();
+               bestellung_k22_id.Text = xmlData.warehouseStock.article[21].id.ToString();
+               bestellung_k23_id.Text = xmlData.warehouseStock.article[22].id.ToString();
+               bestellung_k24_id.Text = xmlData.warehouseStock.article[23].id.ToString();
+               bestellung_k25_id.Text = xmlData.warehouseStock.article[24].id.ToString();
+               bestellung_k27_id.Text = xmlData.warehouseStock.article[26].id.ToString();
+               bestellung_k28_id.Text = xmlData.warehouseStock.article[27].id.ToString();
+               bestellung_k32_id.Text = xmlData.warehouseStock.article[31].id.ToString();
+               bestellung_k33_id.Text = xmlData.warehouseStock.article[32].id.ToString();
+               bestellung_k34_id.Text = xmlData.warehouseStock.article[33].id.ToString();
+               bestellung_k35_id.Text = xmlData.warehouseStock.article[34].id.ToString();
+               bestellung_k36_id.Text = xmlData.warehouseStock.article[35].id.ToString();
+               bestellung_k37_id.Text = xmlData.warehouseStock.article[36].id.ToString();
+               bestellung_k38_id.Text = xmlData.warehouseStock.article[37].id.ToString();
+               bestellung_k39_id.Text = xmlData.warehouseStock.article[38].id.ToString();
+               bestellung_k40_id.Text = xmlData.warehouseStock.article[39].id.ToString();
+               bestellung_k41_id.Text = xmlData.warehouseStock.article[40].id.ToString();
+               bestellung_k42_id.Text = xmlData.warehouseStock.article[41].id.ToString();
+               bestellung_k43_id.Text = xmlData.warehouseStock.article[42].id.ToString();
+               bestellung_k44_id.Text = xmlData.warehouseStock.article[43].id.ToString();
+               bestellung_k45_id.Text = xmlData.warehouseStock.article[44].id.ToString();
+               bestellung_k46_id.Text = xmlData.warehouseStock.article[45].id.ToString();
+               bestellung_k47_id.Text = xmlData.warehouseStock.article[46].id.ToString();
+               bestellung_k48_id.Text = xmlData.warehouseStock.article[47].id.ToString();
+               bestellung_k52_id.Text = xmlData.warehouseStock.article[51].id.ToString();
+               bestellung_k53_id.Text = xmlData.warehouseStock.article[52].id.ToString();
+               bestellung_k57_id.Text = xmlData.warehouseStock.article[56].id.ToString();
+               bestellung_k58_id.Text = xmlData.warehouseStock.article[57].id.ToString();
+               bestellung_k59_id.Text = xmlData.warehouseStock.article[58].id.ToString();
+
+               bestellung_k21_bestand.Text = xmlData.warehouseStock.article[20].amount.ToString();
+               bestellung_k22_bestand.Text = xmlData.warehouseStock.article[21].amount.ToString();
+               bestellung_k23_bestand.Text = xmlData.warehouseStock.article[22].amount.ToString();
+               bestellung_k24_bestand.Text = xmlData.warehouseStock.article[23].amount.ToString();
+               bestellung_k25_bestand.Text = xmlData.warehouseStock.article[24].amount.ToString();
+               bestellung_k27_bestand.Text = xmlData.warehouseStock.article[26].amount.ToString();
+               bestellung_k28_bestand.Text = xmlData.warehouseStock.article[27].amount.ToString();
+               bestellung_k32_bestand.Text = xmlData.warehouseStock.article[31].amount.ToString();
+               bestellung_k33_bestand.Text = xmlData.warehouseStock.article[32].amount.ToString();
+               bestellung_k34_bestand.Text = xmlData.warehouseStock.article[33].amount.ToString();
+               bestellung_k35_bestand.Text = xmlData.warehouseStock.article[34].amount.ToString();
+               bestellung_k36_bestand.Text = xmlData.warehouseStock.article[35].amount.ToString();
+               bestellung_k37_bestand.Text = xmlData.warehouseStock.article[36].amount.ToString();
+               bestellung_k38_bestand.Text = xmlData.warehouseStock.article[37].amount.ToString();
+               bestellung_k39_bestand.Text = xmlData.warehouseStock.article[38].amount.ToString();
+               bestellung_k40_bestand.Text = xmlData.warehouseStock.article[39].amount.ToString();
+               bestellung_k41_bestand.Text = xmlData.warehouseStock.article[40].amount.ToString();
+               bestellung_k42_bestand.Text = xmlData.warehouseStock.article[41].amount.ToString();
+               bestellung_k43_bestand.Text = xmlData.warehouseStock.article[42].amount.ToString();
+               bestellung_k44_bestand.Text = xmlData.warehouseStock.article[43].amount.ToString();
+               bestellung_k45_bestand.Text = xmlData.warehouseStock.article[44].amount.ToString();
+               bestellung_k46_bestand.Text = xmlData.warehouseStock.article[45].amount.ToString();
+               bestellung_k47_bestand.Text = xmlData.warehouseStock.article[46].amount.ToString();
+               bestellung_k48_bestand.Text = xmlData.warehouseStock.article[47].amount.ToString();
+               bestellung_k52_bestand.Text = xmlData.warehouseStock.article[51].amount.ToString();
+               bestellung_k53_bestand.Text = xmlData.warehouseStock.article[52].amount.ToString();
+               bestellung_k57_bestand.Text = xmlData.warehouseStock.article[56].amount.ToString();
+               bestellung_k58_bestand.Text = xmlData.warehouseStock.article[57].amount.ToString();
+               bestellung_k59_bestand.Text = xmlData.warehouseStock.article[58].amount.ToString();
 
                //Warteschleife und InBearbeitung 
                pp_p1_p1_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
@@ -358,6 +416,64 @@ namespace ghostSCSIM
                //Bestellung
                //TODO nicht editierbar, Rest hinzufügen
                bestellung_k21_id.Text = (int.Parse(bestellung_k21_id.Text.ToString()).ToString());
+               bestellung_k22_id.Text = (int.Parse(bestellung_k22_id.Text.ToString()).ToString());
+               bestellung_k23_id.Text = (int.Parse(bestellung_k23_id.Text.ToString()).ToString());
+               bestellung_k24_id.Text = (int.Parse(bestellung_k24_id.Text.ToString()).ToString());
+               bestellung_k25_id.Text = (int.Parse(bestellung_k25_id.Text.ToString()).ToString());
+               bestellung_k27_id.Text = (int.Parse(bestellung_k27_id.Text.ToString()).ToString());
+               bestellung_k28_id.Text = (int.Parse(bestellung_k28_id.Text.ToString()).ToString());
+               bestellung_k32_id.Text = (int.Parse(bestellung_k32_id.Text.ToString()).ToString());
+               bestellung_k33_id.Text = (int.Parse(bestellung_k33_id.Text.ToString()).ToString());
+               bestellung_k34_id.Text = (int.Parse(bestellung_k34_id.Text.ToString()).ToString());
+               bestellung_k35_id.Text = (int.Parse(bestellung_k35_id.Text.ToString()).ToString());
+               bestellung_k36_id.Text = (int.Parse(bestellung_k36_id.Text.ToString()).ToString());
+               bestellung_k37_id.Text = (int.Parse(bestellung_k37_id.Text.ToString()).ToString());
+               bestellung_k38_id.Text = (int.Parse(bestellung_k38_id.Text.ToString()).ToString());
+               bestellung_k39_id.Text = (int.Parse(bestellung_k39_id.Text.ToString()).ToString());
+               bestellung_k40_id.Text = (int.Parse(bestellung_k40_id.Text.ToString()).ToString());
+               bestellung_k41_id.Text = (int.Parse(bestellung_k41_id.Text.ToString()).ToString());
+               bestellung_k42_id.Text = (int.Parse(bestellung_k42_id.Text.ToString()).ToString());
+               bestellung_k43_id.Text = (int.Parse(bestellung_k43_id.Text.ToString()).ToString());
+               bestellung_k44_id.Text = (int.Parse(bestellung_k44_id.Text.ToString()).ToString());
+               bestellung_k45_id.Text = (int.Parse(bestellung_k45_id.Text.ToString()).ToString());
+               bestellung_k46_id.Text = (int.Parse(bestellung_k46_id.Text.ToString()).ToString());
+               bestellung_k47_id.Text = (int.Parse(bestellung_k47_id.Text.ToString()).ToString());
+               bestellung_k48_id.Text = (int.Parse(bestellung_k48_id.Text.ToString()).ToString());
+               bestellung_k52_id.Text = (int.Parse(bestellung_k52_id.Text.ToString()).ToString());
+               bestellung_k53_id.Text = (int.Parse(bestellung_k53_id.Text.ToString()).ToString());
+               bestellung_k57_id.Text = (int.Parse(bestellung_k57_id.Text.ToString()).ToString());
+               bestellung_k58_id.Text = (int.Parse(bestellung_k58_id.Text.ToString()).ToString());
+               bestellung_k59_id.Text = (int.Parse(bestellung_k59_id.Text.ToString()).ToString());
+
+               bestellung_k21_bestand.Text = (int.Parse(bestellung_k21_bestand.Text.ToString()).ToString());
+               bestellung_k22_bestand.Text = (int.Parse(bestellung_k22_bestand.Text.ToString()).ToString());
+               bestellung_k23_bestand.Text = (int.Parse(bestellung_k23_bestand.Text.ToString()).ToString());
+               bestellung_k24_bestand.Text = (int.Parse(bestellung_k24_bestand.Text.ToString()).ToString());
+               bestellung_k25_bestand.Text = (int.Parse(bestellung_k25_bestand.Text.ToString()).ToString());
+               bestellung_k27_bestand.Text = (int.Parse(bestellung_k27_bestand.Text.ToString()).ToString());
+               bestellung_k28_bestand.Text = (int.Parse(bestellung_k28_bestand.Text.ToString()).ToString());
+               bestellung_k32_bestand.Text = (int.Parse(bestellung_k32_bestand.Text.ToString()).ToString());
+               bestellung_k33_bestand.Text = (int.Parse(bestellung_k33_bestand.Text.ToString()).ToString());
+               bestellung_k34_bestand.Text = (int.Parse(bestellung_k34_bestand.Text.ToString()).ToString());
+               bestellung_k35_bestand.Text = (int.Parse(bestellung_k35_bestand.Text.ToString()).ToString());
+               bestellung_k36_bestand.Text = (int.Parse(bestellung_k36_bestand.Text.ToString()).ToString());
+               bestellung_k37_bestand.Text = (int.Parse(bestellung_k37_bestand.Text.ToString()).ToString());
+               bestellung_k38_bestand.Text = (int.Parse(bestellung_k38_bestand.Text.ToString()).ToString());
+               bestellung_k39_bestand.Text = (int.Parse(bestellung_k39_bestand.Text.ToString()).ToString());
+               bestellung_k40_bestand.Text = (int.Parse(bestellung_k40_bestand.Text.ToString()).ToString());
+               bestellung_k41_bestand.Text = (int.Parse(bestellung_k41_bestand.Text.ToString()).ToString());
+               bestellung_k42_bestand.Text = (int.Parse(bestellung_k42_bestand.Text.ToString()).ToString());
+               bestellung_k43_bestand.Text = (int.Parse(bestellung_k43_bestand.Text.ToString()).ToString());
+               bestellung_k44_bestand.Text = (int.Parse(bestellung_k44_bestand.Text.ToString()).ToString());
+               bestellung_k45_bestand.Text = (int.Parse(bestellung_k45_bestand.Text.ToString()).ToString());
+               bestellung_k46_bestand.Text = (int.Parse(bestellung_k46_bestand.Text.ToString()).ToString());
+               bestellung_k47_bestand.Text = (int.Parse(bestellung_k47_bestand.Text.ToString()).ToString());
+               bestellung_k48_bestand.Text = (int.Parse(bestellung_k48_bestand.Text.ToString()).ToString());
+               bestellung_k52_bestand.Text = (int.Parse(bestellung_k52_bestand.Text.ToString()).ToString());
+               bestellung_k53_bestand.Text = (int.Parse(bestellung_k53_bestand.Text.ToString()).ToString());
+               bestellung_k57_bestand.Text = (int.Parse(bestellung_k57_bestand.Text.ToString()).ToString());
+               bestellung_k58_bestand.Text = (int.Parse(bestellung_k58_bestand.Text.ToString()).ToString());
+               bestellung_k59_bestand.Text = (int.Parse(bestellung_k59_bestand.Text.ToString()).ToString());
                              
            }
          

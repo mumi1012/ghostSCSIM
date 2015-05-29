@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.spracheToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -363,6 +363,202 @@
             this.tabBestellung = new System.Windows.Forms.TabPage();
             this.tabControl_best = new System.Windows.Forms.TabControl();
             this.tabPage_best_kaufteileverbrauch = new System.Windows.Forms.TabPage();
+            this.bestellung_k59_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k59_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k59_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k59_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k59_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k59_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k59_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k58_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k57_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k53_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k52_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k46_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k48_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k45_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k47_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k44_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k43_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k40_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k42_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k39_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k41_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k38_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k37_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k34_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k36_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k33_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k35_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k32_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k28_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k24_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k27_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k23_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k25_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k22_ausstehend = new System.Windows.Forms.TextBox();
+            this.bestellung_k58_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k57_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k53_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k52_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k46_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k48_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k45_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k47_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k44_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k43_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k40_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k42_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k39_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k41_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k38_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k37_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k34_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k36_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k33_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k35_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k32_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k28_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k24_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k27_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k23_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k25_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k22_bestandn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k58_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k57_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k53_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k52_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k46_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k48_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k45_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k47_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k44_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k43_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k40_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k42_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k39_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k41_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k38_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k37_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k34_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k36_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k33_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k35_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k32_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k28_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k24_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k27_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k23_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k25_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k22_bestandn = new System.Windows.Forms.TextBox();
+            this.bestellung_k58_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k57_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k53_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k52_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k46_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k48_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k45_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k47_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k44_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k43_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k40_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k42_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k39_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k41_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k38_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k37_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k34_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k36_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k33_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k35_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k32_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k28_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k24_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k27_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k23_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k25_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k22_bedarfn2 = new System.Windows.Forms.TextBox();
+            this.bestellung_k58_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k57_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k53_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k52_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k48_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k47_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k46_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k45_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k44_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k43_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k42_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k41_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k40_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k39_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k38_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k37_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k36_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k35_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k34_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k33_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k32_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k28_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k27_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k25_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k24_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k23_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k22_bedarfn = new System.Windows.Forms.TextBox();
+            this.bestellung_k58_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k57_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k53_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k52_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k48_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k47_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k46_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k45_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k44_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k43_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k42_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k41_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k40_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k39_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k38_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k37_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k36_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k35_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k34_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k33_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k32_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k28_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k27_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k25_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k24_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k23_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k58_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k57_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k53_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k52_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k48_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k47_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k46_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k45_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k44_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k43_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k42_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k41_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k40_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k39_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k38_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k37_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k36_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k35_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k34_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k33_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k32_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k28_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k27_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k25_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k24_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k23_id = new System.Windows.Forms.TextBox();
+            this.bestellung_k22_bestand = new System.Windows.Forms.TextBox();
+            this.bestellung_k22_id = new System.Windows.Forms.TextBox();
             this.bestellung_k21_ausstehend = new System.Windows.Forms.TextBox();
             this.bestellung_k21_bestandn2 = new System.Windows.Forms.TextBox();
             this.bestellung_k21_bestandn = new System.Windows.Forms.TextBox();
@@ -412,202 +608,6 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
-            this.bestellung_k22_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k22_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k23_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k24_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k25_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k27_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k28_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k32_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k33_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k34_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k35_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k36_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k37_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k38_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k39_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k40_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k41_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k42_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k43_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k44_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k45_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k46_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k47_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k48_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k52_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k53_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k57_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k58_id = new System.Windows.Forms.TextBox();
-            this.bestellung_k23_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k24_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k25_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k27_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k28_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k32_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k33_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k34_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k35_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k36_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k37_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k38_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k39_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k40_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k41_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k42_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k43_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k44_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k45_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k46_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k47_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k48_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k52_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k53_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k57_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k58_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k22_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k23_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k24_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k25_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k27_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k28_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k32_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k40_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k39_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k38_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k37_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k36_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k35_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k34_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k33_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k47_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k46_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k45_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k44_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k43_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k42_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k41_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k58_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k57_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k53_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k52_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k48_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k22_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k25_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k23_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k27_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k24_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k34_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k36_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k33_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k35_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k32_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k28_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k40_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k42_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k39_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k41_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k38_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k37_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k46_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k48_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k45_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k47_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k44_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k43_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k52_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k53_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k57_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k58_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k58_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k57_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k53_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k52_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k46_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k48_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k45_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k47_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k44_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k43_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k40_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k42_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k39_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k41_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k38_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k37_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k34_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k36_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k33_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k35_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k32_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k28_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k24_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k27_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k23_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k25_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k22_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k58_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k57_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k53_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k52_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k46_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k48_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k45_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k47_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k44_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k43_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k40_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k42_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k39_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k41_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k38_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k37_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k34_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k36_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k33_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k35_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k32_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k28_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k24_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k27_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k23_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k25_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k22_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k58_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k57_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k53_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k52_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k46_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k48_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k45_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k47_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k44_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k43_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k40_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k42_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k39_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k41_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k38_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k37_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k34_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k36_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k33_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k35_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k32_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k28_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k24_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k27_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k23_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k25_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k22_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k59_ausstehend = new System.Windows.Forms.TextBox();
-            this.bestellung_k59_bestandn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k59_bestandn = new System.Windows.Forms.TextBox();
-            this.bestellung_k59_bedarfn2 = new System.Windows.Forms.TextBox();
-            this.bestellung_k59_bedarfn = new System.Windows.Forms.TextBox();
-            this.bestellung_k59_bestand = new System.Windows.Forms.TextBox();
-            this.bestellung_k59_id = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPrognose.SuspendLayout();
@@ -3110,6 +3110,986 @@
             this.tabPage_best_kaufteileverbrauch.UseVisualStyleBackColor = true;
             this.tabPage_best_kaufteileverbrauch.Click += new System.EventHandler(this.tabPage1_Click);
             // 
+            // bestellung_k59_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k59_ausstehend, "bestellung_k59_ausstehend");
+            this.bestellung_k59_ausstehend.Name = "bestellung_k59_ausstehend";
+            // 
+            // bestellung_k59_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k59_bestandn2, "bestellung_k59_bestandn2");
+            this.bestellung_k59_bestandn2.Name = "bestellung_k59_bestandn2";
+            // 
+            // bestellung_k59_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k59_bestandn, "bestellung_k59_bestandn");
+            this.bestellung_k59_bestandn.Name = "bestellung_k59_bestandn";
+            // 
+            // bestellung_k59_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k59_bedarfn2, "bestellung_k59_bedarfn2");
+            this.bestellung_k59_bedarfn2.Name = "bestellung_k59_bedarfn2";
+            // 
+            // bestellung_k59_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k59_bedarfn, "bestellung_k59_bedarfn");
+            this.bestellung_k59_bedarfn.Name = "bestellung_k59_bedarfn";
+            // 
+            // bestellung_k59_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k59_bestand, "bestellung_k59_bestand");
+            this.bestellung_k59_bestand.Name = "bestellung_k59_bestand";
+            // 
+            // bestellung_k59_id
+            // 
+            resources.ApplyResources(this.bestellung_k59_id, "bestellung_k59_id");
+            this.bestellung_k59_id.Name = "bestellung_k59_id";
+            // 
+            // bestellung_k58_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k58_ausstehend, "bestellung_k58_ausstehend");
+            this.bestellung_k58_ausstehend.Name = "bestellung_k58_ausstehend";
+            // 
+            // bestellung_k57_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k57_ausstehend, "bestellung_k57_ausstehend");
+            this.bestellung_k57_ausstehend.Name = "bestellung_k57_ausstehend";
+            // 
+            // bestellung_k53_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k53_ausstehend, "bestellung_k53_ausstehend");
+            this.bestellung_k53_ausstehend.Name = "bestellung_k53_ausstehend";
+            // 
+            // bestellung_k52_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k52_ausstehend, "bestellung_k52_ausstehend");
+            this.bestellung_k52_ausstehend.Name = "bestellung_k52_ausstehend";
+            // 
+            // bestellung_k46_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k46_ausstehend, "bestellung_k46_ausstehend");
+            this.bestellung_k46_ausstehend.Name = "bestellung_k46_ausstehend";
+            // 
+            // bestellung_k48_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k48_ausstehend, "bestellung_k48_ausstehend");
+            this.bestellung_k48_ausstehend.Name = "bestellung_k48_ausstehend";
+            // 
+            // bestellung_k45_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k45_ausstehend, "bestellung_k45_ausstehend");
+            this.bestellung_k45_ausstehend.Name = "bestellung_k45_ausstehend";
+            // 
+            // bestellung_k47_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k47_ausstehend, "bestellung_k47_ausstehend");
+            this.bestellung_k47_ausstehend.Name = "bestellung_k47_ausstehend";
+            // 
+            // bestellung_k44_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k44_ausstehend, "bestellung_k44_ausstehend");
+            this.bestellung_k44_ausstehend.Name = "bestellung_k44_ausstehend";
+            // 
+            // bestellung_k43_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k43_ausstehend, "bestellung_k43_ausstehend");
+            this.bestellung_k43_ausstehend.Name = "bestellung_k43_ausstehend";
+            // 
+            // bestellung_k40_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k40_ausstehend, "bestellung_k40_ausstehend");
+            this.bestellung_k40_ausstehend.Name = "bestellung_k40_ausstehend";
+            // 
+            // bestellung_k42_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k42_ausstehend, "bestellung_k42_ausstehend");
+            this.bestellung_k42_ausstehend.Name = "bestellung_k42_ausstehend";
+            // 
+            // bestellung_k39_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k39_ausstehend, "bestellung_k39_ausstehend");
+            this.bestellung_k39_ausstehend.Name = "bestellung_k39_ausstehend";
+            // 
+            // bestellung_k41_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k41_ausstehend, "bestellung_k41_ausstehend");
+            this.bestellung_k41_ausstehend.Name = "bestellung_k41_ausstehend";
+            // 
+            // bestellung_k38_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k38_ausstehend, "bestellung_k38_ausstehend");
+            this.bestellung_k38_ausstehend.Name = "bestellung_k38_ausstehend";
+            // 
+            // bestellung_k37_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k37_ausstehend, "bestellung_k37_ausstehend");
+            this.bestellung_k37_ausstehend.Name = "bestellung_k37_ausstehend";
+            // 
+            // bestellung_k34_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k34_ausstehend, "bestellung_k34_ausstehend");
+            this.bestellung_k34_ausstehend.Name = "bestellung_k34_ausstehend";
+            // 
+            // bestellung_k36_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k36_ausstehend, "bestellung_k36_ausstehend");
+            this.bestellung_k36_ausstehend.Name = "bestellung_k36_ausstehend";
+            // 
+            // bestellung_k33_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k33_ausstehend, "bestellung_k33_ausstehend");
+            this.bestellung_k33_ausstehend.Name = "bestellung_k33_ausstehend";
+            // 
+            // bestellung_k35_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k35_ausstehend, "bestellung_k35_ausstehend");
+            this.bestellung_k35_ausstehend.Name = "bestellung_k35_ausstehend";
+            // 
+            // bestellung_k32_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k32_ausstehend, "bestellung_k32_ausstehend");
+            this.bestellung_k32_ausstehend.Name = "bestellung_k32_ausstehend";
+            // 
+            // bestellung_k28_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k28_ausstehend, "bestellung_k28_ausstehend");
+            this.bestellung_k28_ausstehend.Name = "bestellung_k28_ausstehend";
+            // 
+            // bestellung_k24_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k24_ausstehend, "bestellung_k24_ausstehend");
+            this.bestellung_k24_ausstehend.Name = "bestellung_k24_ausstehend";
+            // 
+            // bestellung_k27_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k27_ausstehend, "bestellung_k27_ausstehend");
+            this.bestellung_k27_ausstehend.Name = "bestellung_k27_ausstehend";
+            // 
+            // bestellung_k23_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k23_ausstehend, "bestellung_k23_ausstehend");
+            this.bestellung_k23_ausstehend.Name = "bestellung_k23_ausstehend";
+            // 
+            // bestellung_k25_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k25_ausstehend, "bestellung_k25_ausstehend");
+            this.bestellung_k25_ausstehend.Name = "bestellung_k25_ausstehend";
+            // 
+            // bestellung_k22_ausstehend
+            // 
+            resources.ApplyResources(this.bestellung_k22_ausstehend, "bestellung_k22_ausstehend");
+            this.bestellung_k22_ausstehend.Name = "bestellung_k22_ausstehend";
+            // 
+            // bestellung_k58_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k58_bestandn2, "bestellung_k58_bestandn2");
+            this.bestellung_k58_bestandn2.Name = "bestellung_k58_bestandn2";
+            // 
+            // bestellung_k57_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k57_bestandn2, "bestellung_k57_bestandn2");
+            this.bestellung_k57_bestandn2.Name = "bestellung_k57_bestandn2";
+            // 
+            // bestellung_k53_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k53_bestandn2, "bestellung_k53_bestandn2");
+            this.bestellung_k53_bestandn2.Name = "bestellung_k53_bestandn2";
+            // 
+            // bestellung_k52_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k52_bestandn2, "bestellung_k52_bestandn2");
+            this.bestellung_k52_bestandn2.Name = "bestellung_k52_bestandn2";
+            // 
+            // bestellung_k46_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k46_bestandn2, "bestellung_k46_bestandn2");
+            this.bestellung_k46_bestandn2.Name = "bestellung_k46_bestandn2";
+            // 
+            // bestellung_k48_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k48_bestandn2, "bestellung_k48_bestandn2");
+            this.bestellung_k48_bestandn2.Name = "bestellung_k48_bestandn2";
+            // 
+            // bestellung_k45_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k45_bestandn2, "bestellung_k45_bestandn2");
+            this.bestellung_k45_bestandn2.Name = "bestellung_k45_bestandn2";
+            // 
+            // bestellung_k47_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k47_bestandn2, "bestellung_k47_bestandn2");
+            this.bestellung_k47_bestandn2.Name = "bestellung_k47_bestandn2";
+            // 
+            // bestellung_k44_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k44_bestandn2, "bestellung_k44_bestandn2");
+            this.bestellung_k44_bestandn2.Name = "bestellung_k44_bestandn2";
+            // 
+            // bestellung_k43_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k43_bestandn2, "bestellung_k43_bestandn2");
+            this.bestellung_k43_bestandn2.Name = "bestellung_k43_bestandn2";
+            // 
+            // bestellung_k40_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k40_bestandn2, "bestellung_k40_bestandn2");
+            this.bestellung_k40_bestandn2.Name = "bestellung_k40_bestandn2";
+            // 
+            // bestellung_k42_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k42_bestandn2, "bestellung_k42_bestandn2");
+            this.bestellung_k42_bestandn2.Name = "bestellung_k42_bestandn2";
+            // 
+            // bestellung_k39_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k39_bestandn2, "bestellung_k39_bestandn2");
+            this.bestellung_k39_bestandn2.Name = "bestellung_k39_bestandn2";
+            // 
+            // bestellung_k41_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k41_bestandn2, "bestellung_k41_bestandn2");
+            this.bestellung_k41_bestandn2.Name = "bestellung_k41_bestandn2";
+            // 
+            // bestellung_k38_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k38_bestandn2, "bestellung_k38_bestandn2");
+            this.bestellung_k38_bestandn2.Name = "bestellung_k38_bestandn2";
+            // 
+            // bestellung_k37_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k37_bestandn2, "bestellung_k37_bestandn2");
+            this.bestellung_k37_bestandn2.Name = "bestellung_k37_bestandn2";
+            // 
+            // bestellung_k34_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k34_bestandn2, "bestellung_k34_bestandn2");
+            this.bestellung_k34_bestandn2.Name = "bestellung_k34_bestandn2";
+            // 
+            // bestellung_k36_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k36_bestandn2, "bestellung_k36_bestandn2");
+            this.bestellung_k36_bestandn2.Name = "bestellung_k36_bestandn2";
+            // 
+            // bestellung_k33_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k33_bestandn2, "bestellung_k33_bestandn2");
+            this.bestellung_k33_bestandn2.Name = "bestellung_k33_bestandn2";
+            // 
+            // bestellung_k35_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k35_bestandn2, "bestellung_k35_bestandn2");
+            this.bestellung_k35_bestandn2.Name = "bestellung_k35_bestandn2";
+            // 
+            // bestellung_k32_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k32_bestandn2, "bestellung_k32_bestandn2");
+            this.bestellung_k32_bestandn2.Name = "bestellung_k32_bestandn2";
+            // 
+            // bestellung_k28_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k28_bestandn2, "bestellung_k28_bestandn2");
+            this.bestellung_k28_bestandn2.Name = "bestellung_k28_bestandn2";
+            // 
+            // bestellung_k24_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k24_bestandn2, "bestellung_k24_bestandn2");
+            this.bestellung_k24_bestandn2.Name = "bestellung_k24_bestandn2";
+            // 
+            // bestellung_k27_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k27_bestandn2, "bestellung_k27_bestandn2");
+            this.bestellung_k27_bestandn2.Name = "bestellung_k27_bestandn2";
+            // 
+            // bestellung_k23_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k23_bestandn2, "bestellung_k23_bestandn2");
+            this.bestellung_k23_bestandn2.Name = "bestellung_k23_bestandn2";
+            // 
+            // bestellung_k25_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k25_bestandn2, "bestellung_k25_bestandn2");
+            this.bestellung_k25_bestandn2.Name = "bestellung_k25_bestandn2";
+            // 
+            // bestellung_k22_bestandn2
+            // 
+            resources.ApplyResources(this.bestellung_k22_bestandn2, "bestellung_k22_bestandn2");
+            this.bestellung_k22_bestandn2.Name = "bestellung_k22_bestandn2";
+            // 
+            // bestellung_k58_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k58_bestandn, "bestellung_k58_bestandn");
+            this.bestellung_k58_bestandn.Name = "bestellung_k58_bestandn";
+            // 
+            // bestellung_k57_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k57_bestandn, "bestellung_k57_bestandn");
+            this.bestellung_k57_bestandn.Name = "bestellung_k57_bestandn";
+            // 
+            // bestellung_k53_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k53_bestandn, "bestellung_k53_bestandn");
+            this.bestellung_k53_bestandn.Name = "bestellung_k53_bestandn";
+            // 
+            // bestellung_k52_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k52_bestandn, "bestellung_k52_bestandn");
+            this.bestellung_k52_bestandn.Name = "bestellung_k52_bestandn";
+            // 
+            // bestellung_k46_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k46_bestandn, "bestellung_k46_bestandn");
+            this.bestellung_k46_bestandn.Name = "bestellung_k46_bestandn";
+            // 
+            // bestellung_k48_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k48_bestandn, "bestellung_k48_bestandn");
+            this.bestellung_k48_bestandn.Name = "bestellung_k48_bestandn";
+            // 
+            // bestellung_k45_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k45_bestandn, "bestellung_k45_bestandn");
+            this.bestellung_k45_bestandn.Name = "bestellung_k45_bestandn";
+            // 
+            // bestellung_k47_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k47_bestandn, "bestellung_k47_bestandn");
+            this.bestellung_k47_bestandn.Name = "bestellung_k47_bestandn";
+            // 
+            // bestellung_k44_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k44_bestandn, "bestellung_k44_bestandn");
+            this.bestellung_k44_bestandn.Name = "bestellung_k44_bestandn";
+            // 
+            // bestellung_k43_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k43_bestandn, "bestellung_k43_bestandn");
+            this.bestellung_k43_bestandn.Name = "bestellung_k43_bestandn";
+            // 
+            // bestellung_k40_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k40_bestandn, "bestellung_k40_bestandn");
+            this.bestellung_k40_bestandn.Name = "bestellung_k40_bestandn";
+            // 
+            // bestellung_k42_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k42_bestandn, "bestellung_k42_bestandn");
+            this.bestellung_k42_bestandn.Name = "bestellung_k42_bestandn";
+            // 
+            // bestellung_k39_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k39_bestandn, "bestellung_k39_bestandn");
+            this.bestellung_k39_bestandn.Name = "bestellung_k39_bestandn";
+            // 
+            // bestellung_k41_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k41_bestandn, "bestellung_k41_bestandn");
+            this.bestellung_k41_bestandn.Name = "bestellung_k41_bestandn";
+            // 
+            // bestellung_k38_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k38_bestandn, "bestellung_k38_bestandn");
+            this.bestellung_k38_bestandn.Name = "bestellung_k38_bestandn";
+            // 
+            // bestellung_k37_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k37_bestandn, "bestellung_k37_bestandn");
+            this.bestellung_k37_bestandn.Name = "bestellung_k37_bestandn";
+            // 
+            // bestellung_k34_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k34_bestandn, "bestellung_k34_bestandn");
+            this.bestellung_k34_bestandn.Name = "bestellung_k34_bestandn";
+            // 
+            // bestellung_k36_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k36_bestandn, "bestellung_k36_bestandn");
+            this.bestellung_k36_bestandn.Name = "bestellung_k36_bestandn";
+            // 
+            // bestellung_k33_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k33_bestandn, "bestellung_k33_bestandn");
+            this.bestellung_k33_bestandn.Name = "bestellung_k33_bestandn";
+            // 
+            // bestellung_k35_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k35_bestandn, "bestellung_k35_bestandn");
+            this.bestellung_k35_bestandn.Name = "bestellung_k35_bestandn";
+            // 
+            // bestellung_k32_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k32_bestandn, "bestellung_k32_bestandn");
+            this.bestellung_k32_bestandn.Name = "bestellung_k32_bestandn";
+            // 
+            // bestellung_k28_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k28_bestandn, "bestellung_k28_bestandn");
+            this.bestellung_k28_bestandn.Name = "bestellung_k28_bestandn";
+            // 
+            // bestellung_k24_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k24_bestandn, "bestellung_k24_bestandn");
+            this.bestellung_k24_bestandn.Name = "bestellung_k24_bestandn";
+            // 
+            // bestellung_k27_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k27_bestandn, "bestellung_k27_bestandn");
+            this.bestellung_k27_bestandn.Name = "bestellung_k27_bestandn";
+            // 
+            // bestellung_k23_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k23_bestandn, "bestellung_k23_bestandn");
+            this.bestellung_k23_bestandn.Name = "bestellung_k23_bestandn";
+            // 
+            // bestellung_k25_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k25_bestandn, "bestellung_k25_bestandn");
+            this.bestellung_k25_bestandn.Name = "bestellung_k25_bestandn";
+            // 
+            // bestellung_k22_bestandn
+            // 
+            resources.ApplyResources(this.bestellung_k22_bestandn, "bestellung_k22_bestandn");
+            this.bestellung_k22_bestandn.Name = "bestellung_k22_bestandn";
+            // 
+            // bestellung_k58_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k58_bedarfn2, "bestellung_k58_bedarfn2");
+            this.bestellung_k58_bedarfn2.Name = "bestellung_k58_bedarfn2";
+            // 
+            // bestellung_k57_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k57_bedarfn2, "bestellung_k57_bedarfn2");
+            this.bestellung_k57_bedarfn2.Name = "bestellung_k57_bedarfn2";
+            // 
+            // bestellung_k53_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k53_bedarfn2, "bestellung_k53_bedarfn2");
+            this.bestellung_k53_bedarfn2.Name = "bestellung_k53_bedarfn2";
+            // 
+            // bestellung_k52_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k52_bedarfn2, "bestellung_k52_bedarfn2");
+            this.bestellung_k52_bedarfn2.Name = "bestellung_k52_bedarfn2";
+            // 
+            // bestellung_k46_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k46_bedarfn2, "bestellung_k46_bedarfn2");
+            this.bestellung_k46_bedarfn2.Name = "bestellung_k46_bedarfn2";
+            // 
+            // bestellung_k48_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k48_bedarfn2, "bestellung_k48_bedarfn2");
+            this.bestellung_k48_bedarfn2.Name = "bestellung_k48_bedarfn2";
+            // 
+            // bestellung_k45_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k45_bedarfn2, "bestellung_k45_bedarfn2");
+            this.bestellung_k45_bedarfn2.Name = "bestellung_k45_bedarfn2";
+            // 
+            // bestellung_k47_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k47_bedarfn2, "bestellung_k47_bedarfn2");
+            this.bestellung_k47_bedarfn2.Name = "bestellung_k47_bedarfn2";
+            // 
+            // bestellung_k44_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k44_bedarfn2, "bestellung_k44_bedarfn2");
+            this.bestellung_k44_bedarfn2.Name = "bestellung_k44_bedarfn2";
+            // 
+            // bestellung_k43_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k43_bedarfn2, "bestellung_k43_bedarfn2");
+            this.bestellung_k43_bedarfn2.Name = "bestellung_k43_bedarfn2";
+            // 
+            // bestellung_k40_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k40_bedarfn2, "bestellung_k40_bedarfn2");
+            this.bestellung_k40_bedarfn2.Name = "bestellung_k40_bedarfn2";
+            // 
+            // bestellung_k42_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k42_bedarfn2, "bestellung_k42_bedarfn2");
+            this.bestellung_k42_bedarfn2.Name = "bestellung_k42_bedarfn2";
+            // 
+            // bestellung_k39_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k39_bedarfn2, "bestellung_k39_bedarfn2");
+            this.bestellung_k39_bedarfn2.Name = "bestellung_k39_bedarfn2";
+            // 
+            // bestellung_k41_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k41_bedarfn2, "bestellung_k41_bedarfn2");
+            this.bestellung_k41_bedarfn2.Name = "bestellung_k41_bedarfn2";
+            // 
+            // bestellung_k38_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k38_bedarfn2, "bestellung_k38_bedarfn2");
+            this.bestellung_k38_bedarfn2.Name = "bestellung_k38_bedarfn2";
+            // 
+            // bestellung_k37_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k37_bedarfn2, "bestellung_k37_bedarfn2");
+            this.bestellung_k37_bedarfn2.Name = "bestellung_k37_bedarfn2";
+            // 
+            // bestellung_k34_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k34_bedarfn2, "bestellung_k34_bedarfn2");
+            this.bestellung_k34_bedarfn2.Name = "bestellung_k34_bedarfn2";
+            // 
+            // bestellung_k36_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k36_bedarfn2, "bestellung_k36_bedarfn2");
+            this.bestellung_k36_bedarfn2.Name = "bestellung_k36_bedarfn2";
+            // 
+            // bestellung_k33_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k33_bedarfn2, "bestellung_k33_bedarfn2");
+            this.bestellung_k33_bedarfn2.Name = "bestellung_k33_bedarfn2";
+            // 
+            // bestellung_k35_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k35_bedarfn2, "bestellung_k35_bedarfn2");
+            this.bestellung_k35_bedarfn2.Name = "bestellung_k35_bedarfn2";
+            // 
+            // bestellung_k32_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k32_bedarfn2, "bestellung_k32_bedarfn2");
+            this.bestellung_k32_bedarfn2.Name = "bestellung_k32_bedarfn2";
+            // 
+            // bestellung_k28_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k28_bedarfn2, "bestellung_k28_bedarfn2");
+            this.bestellung_k28_bedarfn2.Name = "bestellung_k28_bedarfn2";
+            // 
+            // bestellung_k24_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k24_bedarfn2, "bestellung_k24_bedarfn2");
+            this.bestellung_k24_bedarfn2.Name = "bestellung_k24_bedarfn2";
+            // 
+            // bestellung_k27_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k27_bedarfn2, "bestellung_k27_bedarfn2");
+            this.bestellung_k27_bedarfn2.Name = "bestellung_k27_bedarfn2";
+            // 
+            // bestellung_k23_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k23_bedarfn2, "bestellung_k23_bedarfn2");
+            this.bestellung_k23_bedarfn2.Name = "bestellung_k23_bedarfn2";
+            // 
+            // bestellung_k25_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k25_bedarfn2, "bestellung_k25_bedarfn2");
+            this.bestellung_k25_bedarfn2.Name = "bestellung_k25_bedarfn2";
+            // 
+            // bestellung_k22_bedarfn2
+            // 
+            resources.ApplyResources(this.bestellung_k22_bedarfn2, "bestellung_k22_bedarfn2");
+            this.bestellung_k22_bedarfn2.Name = "bestellung_k22_bedarfn2";
+            // 
+            // bestellung_k58_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k58_bedarfn, "bestellung_k58_bedarfn");
+            this.bestellung_k58_bedarfn.Name = "bestellung_k58_bedarfn";
+            // 
+            // bestellung_k57_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k57_bedarfn, "bestellung_k57_bedarfn");
+            this.bestellung_k57_bedarfn.Name = "bestellung_k57_bedarfn";
+            // 
+            // bestellung_k53_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k53_bedarfn, "bestellung_k53_bedarfn");
+            this.bestellung_k53_bedarfn.Name = "bestellung_k53_bedarfn";
+            // 
+            // bestellung_k52_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k52_bedarfn, "bestellung_k52_bedarfn");
+            this.bestellung_k52_bedarfn.Name = "bestellung_k52_bedarfn";
+            // 
+            // bestellung_k48_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k48_bedarfn, "bestellung_k48_bedarfn");
+            this.bestellung_k48_bedarfn.Name = "bestellung_k48_bedarfn";
+            // 
+            // bestellung_k47_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k47_bedarfn, "bestellung_k47_bedarfn");
+            this.bestellung_k47_bedarfn.Name = "bestellung_k47_bedarfn";
+            // 
+            // bestellung_k46_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k46_bedarfn, "bestellung_k46_bedarfn");
+            this.bestellung_k46_bedarfn.Name = "bestellung_k46_bedarfn";
+            // 
+            // bestellung_k45_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k45_bedarfn, "bestellung_k45_bedarfn");
+            this.bestellung_k45_bedarfn.Name = "bestellung_k45_bedarfn";
+            // 
+            // bestellung_k44_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k44_bedarfn, "bestellung_k44_bedarfn");
+            this.bestellung_k44_bedarfn.Name = "bestellung_k44_bedarfn";
+            // 
+            // bestellung_k43_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k43_bedarfn, "bestellung_k43_bedarfn");
+            this.bestellung_k43_bedarfn.Name = "bestellung_k43_bedarfn";
+            // 
+            // bestellung_k42_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k42_bedarfn, "bestellung_k42_bedarfn");
+            this.bestellung_k42_bedarfn.Name = "bestellung_k42_bedarfn";
+            // 
+            // bestellung_k41_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k41_bedarfn, "bestellung_k41_bedarfn");
+            this.bestellung_k41_bedarfn.Name = "bestellung_k41_bedarfn";
+            // 
+            // bestellung_k40_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k40_bedarfn, "bestellung_k40_bedarfn");
+            this.bestellung_k40_bedarfn.Name = "bestellung_k40_bedarfn";
+            // 
+            // bestellung_k39_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k39_bedarfn, "bestellung_k39_bedarfn");
+            this.bestellung_k39_bedarfn.Name = "bestellung_k39_bedarfn";
+            // 
+            // bestellung_k38_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k38_bedarfn, "bestellung_k38_bedarfn");
+            this.bestellung_k38_bedarfn.Name = "bestellung_k38_bedarfn";
+            // 
+            // bestellung_k37_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k37_bedarfn, "bestellung_k37_bedarfn");
+            this.bestellung_k37_bedarfn.Name = "bestellung_k37_bedarfn";
+            // 
+            // bestellung_k36_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k36_bedarfn, "bestellung_k36_bedarfn");
+            this.bestellung_k36_bedarfn.Name = "bestellung_k36_bedarfn";
+            // 
+            // bestellung_k35_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k35_bedarfn, "bestellung_k35_bedarfn");
+            this.bestellung_k35_bedarfn.Name = "bestellung_k35_bedarfn";
+            // 
+            // bestellung_k34_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k34_bedarfn, "bestellung_k34_bedarfn");
+            this.bestellung_k34_bedarfn.Name = "bestellung_k34_bedarfn";
+            // 
+            // bestellung_k33_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k33_bedarfn, "bestellung_k33_bedarfn");
+            this.bestellung_k33_bedarfn.Name = "bestellung_k33_bedarfn";
+            // 
+            // bestellung_k32_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k32_bedarfn, "bestellung_k32_bedarfn");
+            this.bestellung_k32_bedarfn.Name = "bestellung_k32_bedarfn";
+            // 
+            // bestellung_k28_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k28_bedarfn, "bestellung_k28_bedarfn");
+            this.bestellung_k28_bedarfn.Name = "bestellung_k28_bedarfn";
+            // 
+            // bestellung_k27_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k27_bedarfn, "bestellung_k27_bedarfn");
+            this.bestellung_k27_bedarfn.Name = "bestellung_k27_bedarfn";
+            // 
+            // bestellung_k25_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k25_bedarfn, "bestellung_k25_bedarfn");
+            this.bestellung_k25_bedarfn.Name = "bestellung_k25_bedarfn";
+            // 
+            // bestellung_k24_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k24_bedarfn, "bestellung_k24_bedarfn");
+            this.bestellung_k24_bedarfn.Name = "bestellung_k24_bedarfn";
+            // 
+            // bestellung_k23_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k23_bedarfn, "bestellung_k23_bedarfn");
+            this.bestellung_k23_bedarfn.Name = "bestellung_k23_bedarfn";
+            // 
+            // bestellung_k22_bedarfn
+            // 
+            resources.ApplyResources(this.bestellung_k22_bedarfn, "bestellung_k22_bedarfn");
+            this.bestellung_k22_bedarfn.Name = "bestellung_k22_bedarfn";
+            // 
+            // bestellung_k58_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k58_bestand, "bestellung_k58_bestand");
+            this.bestellung_k58_bestand.Name = "bestellung_k58_bestand";
+            // 
+            // bestellung_k57_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k57_bestand, "bestellung_k57_bestand");
+            this.bestellung_k57_bestand.Name = "bestellung_k57_bestand";
+            // 
+            // bestellung_k53_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k53_bestand, "bestellung_k53_bestand");
+            this.bestellung_k53_bestand.Name = "bestellung_k53_bestand";
+            // 
+            // bestellung_k52_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k52_bestand, "bestellung_k52_bestand");
+            this.bestellung_k52_bestand.Name = "bestellung_k52_bestand";
+            // 
+            // bestellung_k48_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k48_bestand, "bestellung_k48_bestand");
+            this.bestellung_k48_bestand.Name = "bestellung_k48_bestand";
+            // 
+            // bestellung_k47_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k47_bestand, "bestellung_k47_bestand");
+            this.bestellung_k47_bestand.Name = "bestellung_k47_bestand";
+            // 
+            // bestellung_k46_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k46_bestand, "bestellung_k46_bestand");
+            this.bestellung_k46_bestand.Name = "bestellung_k46_bestand";
+            // 
+            // bestellung_k45_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k45_bestand, "bestellung_k45_bestand");
+            this.bestellung_k45_bestand.Name = "bestellung_k45_bestand";
+            // 
+            // bestellung_k44_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k44_bestand, "bestellung_k44_bestand");
+            this.bestellung_k44_bestand.Name = "bestellung_k44_bestand";
+            // 
+            // bestellung_k43_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k43_bestand, "bestellung_k43_bestand");
+            this.bestellung_k43_bestand.Name = "bestellung_k43_bestand";
+            // 
+            // bestellung_k42_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k42_bestand, "bestellung_k42_bestand");
+            this.bestellung_k42_bestand.Name = "bestellung_k42_bestand";
+            // 
+            // bestellung_k41_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k41_bestand, "bestellung_k41_bestand");
+            this.bestellung_k41_bestand.Name = "bestellung_k41_bestand";
+            // 
+            // bestellung_k40_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k40_bestand, "bestellung_k40_bestand");
+            this.bestellung_k40_bestand.Name = "bestellung_k40_bestand";
+            // 
+            // bestellung_k39_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k39_bestand, "bestellung_k39_bestand");
+            this.bestellung_k39_bestand.Name = "bestellung_k39_bestand";
+            // 
+            // bestellung_k38_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k38_bestand, "bestellung_k38_bestand");
+            this.bestellung_k38_bestand.Name = "bestellung_k38_bestand";
+            // 
+            // bestellung_k37_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k37_bestand, "bestellung_k37_bestand");
+            this.bestellung_k37_bestand.Name = "bestellung_k37_bestand";
+            // 
+            // bestellung_k36_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k36_bestand, "bestellung_k36_bestand");
+            this.bestellung_k36_bestand.Name = "bestellung_k36_bestand";
+            // 
+            // bestellung_k35_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k35_bestand, "bestellung_k35_bestand");
+            this.bestellung_k35_bestand.Name = "bestellung_k35_bestand";
+            // 
+            // bestellung_k34_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k34_bestand, "bestellung_k34_bestand");
+            this.bestellung_k34_bestand.Name = "bestellung_k34_bestand";
+            // 
+            // bestellung_k33_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k33_bestand, "bestellung_k33_bestand");
+            this.bestellung_k33_bestand.Name = "bestellung_k33_bestand";
+            // 
+            // bestellung_k32_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k32_bestand, "bestellung_k32_bestand");
+            this.bestellung_k32_bestand.Name = "bestellung_k32_bestand";
+            // 
+            // bestellung_k28_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k28_bestand, "bestellung_k28_bestand");
+            this.bestellung_k28_bestand.Name = "bestellung_k28_bestand";
+            // 
+            // bestellung_k27_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k27_bestand, "bestellung_k27_bestand");
+            this.bestellung_k27_bestand.Name = "bestellung_k27_bestand";
+            // 
+            // bestellung_k25_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k25_bestand, "bestellung_k25_bestand");
+            this.bestellung_k25_bestand.Name = "bestellung_k25_bestand";
+            // 
+            // bestellung_k24_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k24_bestand, "bestellung_k24_bestand");
+            this.bestellung_k24_bestand.Name = "bestellung_k24_bestand";
+            // 
+            // bestellung_k23_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k23_bestand, "bestellung_k23_bestand");
+            this.bestellung_k23_bestand.Name = "bestellung_k23_bestand";
+            // 
+            // bestellung_k58_id
+            // 
+            resources.ApplyResources(this.bestellung_k58_id, "bestellung_k58_id");
+            this.bestellung_k58_id.Name = "bestellung_k58_id";
+            // 
+            // bestellung_k57_id
+            // 
+            resources.ApplyResources(this.bestellung_k57_id, "bestellung_k57_id");
+            this.bestellung_k57_id.Name = "bestellung_k57_id";
+            // 
+            // bestellung_k53_id
+            // 
+            resources.ApplyResources(this.bestellung_k53_id, "bestellung_k53_id");
+            this.bestellung_k53_id.Name = "bestellung_k53_id";
+            // 
+            // bestellung_k52_id
+            // 
+            resources.ApplyResources(this.bestellung_k52_id, "bestellung_k52_id");
+            this.bestellung_k52_id.Name = "bestellung_k52_id";
+            // 
+            // bestellung_k48_id
+            // 
+            resources.ApplyResources(this.bestellung_k48_id, "bestellung_k48_id");
+            this.bestellung_k48_id.Name = "bestellung_k48_id";
+            // 
+            // bestellung_k47_id
+            // 
+            resources.ApplyResources(this.bestellung_k47_id, "bestellung_k47_id");
+            this.bestellung_k47_id.Name = "bestellung_k47_id";
+            // 
+            // bestellung_k46_id
+            // 
+            resources.ApplyResources(this.bestellung_k46_id, "bestellung_k46_id");
+            this.bestellung_k46_id.Name = "bestellung_k46_id";
+            // 
+            // bestellung_k45_id
+            // 
+            resources.ApplyResources(this.bestellung_k45_id, "bestellung_k45_id");
+            this.bestellung_k45_id.Name = "bestellung_k45_id";
+            // 
+            // bestellung_k44_id
+            // 
+            resources.ApplyResources(this.bestellung_k44_id, "bestellung_k44_id");
+            this.bestellung_k44_id.Name = "bestellung_k44_id";
+            // 
+            // bestellung_k43_id
+            // 
+            resources.ApplyResources(this.bestellung_k43_id, "bestellung_k43_id");
+            this.bestellung_k43_id.Name = "bestellung_k43_id";
+            // 
+            // bestellung_k42_id
+            // 
+            resources.ApplyResources(this.bestellung_k42_id, "bestellung_k42_id");
+            this.bestellung_k42_id.Name = "bestellung_k42_id";
+            // 
+            // bestellung_k41_id
+            // 
+            resources.ApplyResources(this.bestellung_k41_id, "bestellung_k41_id");
+            this.bestellung_k41_id.Name = "bestellung_k41_id";
+            // 
+            // bestellung_k40_id
+            // 
+            resources.ApplyResources(this.bestellung_k40_id, "bestellung_k40_id");
+            this.bestellung_k40_id.Name = "bestellung_k40_id";
+            // 
+            // bestellung_k39_id
+            // 
+            resources.ApplyResources(this.bestellung_k39_id, "bestellung_k39_id");
+            this.bestellung_k39_id.Name = "bestellung_k39_id";
+            // 
+            // bestellung_k38_id
+            // 
+            resources.ApplyResources(this.bestellung_k38_id, "bestellung_k38_id");
+            this.bestellung_k38_id.Name = "bestellung_k38_id";
+            // 
+            // bestellung_k37_id
+            // 
+            resources.ApplyResources(this.bestellung_k37_id, "bestellung_k37_id");
+            this.bestellung_k37_id.Name = "bestellung_k37_id";
+            // 
+            // bestellung_k36_id
+            // 
+            resources.ApplyResources(this.bestellung_k36_id, "bestellung_k36_id");
+            this.bestellung_k36_id.Name = "bestellung_k36_id";
+            // 
+            // bestellung_k35_id
+            // 
+            resources.ApplyResources(this.bestellung_k35_id, "bestellung_k35_id");
+            this.bestellung_k35_id.Name = "bestellung_k35_id";
+            // 
+            // bestellung_k34_id
+            // 
+            resources.ApplyResources(this.bestellung_k34_id, "bestellung_k34_id");
+            this.bestellung_k34_id.Name = "bestellung_k34_id";
+            // 
+            // bestellung_k33_id
+            // 
+            resources.ApplyResources(this.bestellung_k33_id, "bestellung_k33_id");
+            this.bestellung_k33_id.Name = "bestellung_k33_id";
+            // 
+            // bestellung_k32_id
+            // 
+            resources.ApplyResources(this.bestellung_k32_id, "bestellung_k32_id");
+            this.bestellung_k32_id.Name = "bestellung_k32_id";
+            // 
+            // bestellung_k28_id
+            // 
+            resources.ApplyResources(this.bestellung_k28_id, "bestellung_k28_id");
+            this.bestellung_k28_id.Name = "bestellung_k28_id";
+            // 
+            // bestellung_k27_id
+            // 
+            resources.ApplyResources(this.bestellung_k27_id, "bestellung_k27_id");
+            this.bestellung_k27_id.Name = "bestellung_k27_id";
+            // 
+            // bestellung_k25_id
+            // 
+            resources.ApplyResources(this.bestellung_k25_id, "bestellung_k25_id");
+            this.bestellung_k25_id.Name = "bestellung_k25_id";
+            // 
+            // bestellung_k24_id
+            // 
+            resources.ApplyResources(this.bestellung_k24_id, "bestellung_k24_id");
+            this.bestellung_k24_id.Name = "bestellung_k24_id";
+            // 
+            // bestellung_k23_id
+            // 
+            resources.ApplyResources(this.bestellung_k23_id, "bestellung_k23_id");
+            this.bestellung_k23_id.Name = "bestellung_k23_id";
+            // 
+            // bestellung_k22_bestand
+            // 
+            resources.ApplyResources(this.bestellung_k22_bestand, "bestellung_k22_bestand");
+            this.bestellung_k22_bestand.Name = "bestellung_k22_bestand";
+            // 
+            // bestellung_k22_id
+            // 
+            resources.ApplyResources(this.bestellung_k22_id, "bestellung_k22_id");
+            this.bestellung_k22_id.Name = "bestellung_k22_id";
+            // 
             // bestellung_k21_ausstehend
             // 
             resources.ApplyResources(this.bestellung_k21_ausstehend, "bestellung_k21_ausstehend");
@@ -3326,18 +4306,18 @@
             // 
             // Column_best_bestelliste_nummer
             // 
-            dataGridViewCellStyle1.Format = "N0";
-            dataGridViewCellStyle1.NullValue = null;
-            this.Column_best_bestelliste_nummer.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Format = "N0";
+            dataGridViewCellStyle3.NullValue = null;
+            this.Column_best_bestelliste_nummer.DefaultCellStyle = dataGridViewCellStyle3;
             resources.ApplyResources(this.Column_best_bestelliste_nummer, "Column_best_bestelliste_nummer");
             this.Column_best_bestelliste_nummer.Name = "Column_best_bestelliste_nummer";
             this.Column_best_bestelliste_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Column_best_bestelliste_menge
             // 
-            dataGridViewCellStyle2.Format = "N0";
-            dataGridViewCellStyle2.NullValue = null;
-            this.Column_best_bestelliste_menge.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Format = "N0";
+            dataGridViewCellStyle4.NullValue = null;
+            this.Column_best_bestelliste_menge.DefaultCellStyle = dataGridViewCellStyle4;
             resources.ApplyResources(this.Column_best_bestelliste_menge, "Column_best_bestelliste_menge");
             this.Column_best_bestelliste_menge.Name = "Column_best_bestelliste_menge";
             this.Column_best_bestelliste_menge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -3487,986 +4467,6 @@
             this.imageList3.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
             resources.ApplyResources(this.imageList3, "imageList3");
             this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // bestellung_k22_id
-            // 
-            resources.ApplyResources(this.bestellung_k22_id, "bestellung_k22_id");
-            this.bestellung_k22_id.Name = "bestellung_k22_id";
-            // 
-            // bestellung_k22_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k22_bestand, "bestellung_k22_bestand");
-            this.bestellung_k22_bestand.Name = "bestellung_k22_bestand";
-            // 
-            // bestellung_k23_id
-            // 
-            resources.ApplyResources(this.bestellung_k23_id, "bestellung_k23_id");
-            this.bestellung_k23_id.Name = "bestellung_k23_id";
-            // 
-            // bestellung_k24_id
-            // 
-            resources.ApplyResources(this.bestellung_k24_id, "bestellung_k24_id");
-            this.bestellung_k24_id.Name = "bestellung_k24_id";
-            // 
-            // bestellung_k25_id
-            // 
-            resources.ApplyResources(this.bestellung_k25_id, "bestellung_k25_id");
-            this.bestellung_k25_id.Name = "bestellung_k25_id";
-            // 
-            // bestellung_k27_id
-            // 
-            resources.ApplyResources(this.bestellung_k27_id, "bestellung_k27_id");
-            this.bestellung_k27_id.Name = "bestellung_k27_id";
-            // 
-            // bestellung_k28_id
-            // 
-            resources.ApplyResources(this.bestellung_k28_id, "bestellung_k28_id");
-            this.bestellung_k28_id.Name = "bestellung_k28_id";
-            // 
-            // bestellung_k32_id
-            // 
-            resources.ApplyResources(this.bestellung_k32_id, "bestellung_k32_id");
-            this.bestellung_k32_id.Name = "bestellung_k32_id";
-            // 
-            // bestellung_k33_id
-            // 
-            resources.ApplyResources(this.bestellung_k33_id, "bestellung_k33_id");
-            this.bestellung_k33_id.Name = "bestellung_k33_id";
-            // 
-            // bestellung_k34_id
-            // 
-            resources.ApplyResources(this.bestellung_k34_id, "bestellung_k34_id");
-            this.bestellung_k34_id.Name = "bestellung_k34_id";
-            // 
-            // bestellung_k35_id
-            // 
-            resources.ApplyResources(this.bestellung_k35_id, "bestellung_k35_id");
-            this.bestellung_k35_id.Name = "bestellung_k35_id";
-            // 
-            // bestellung_k36_id
-            // 
-            resources.ApplyResources(this.bestellung_k36_id, "bestellung_k36_id");
-            this.bestellung_k36_id.Name = "bestellung_k36_id";
-            // 
-            // bestellung_k37_id
-            // 
-            resources.ApplyResources(this.bestellung_k37_id, "bestellung_k37_id");
-            this.bestellung_k37_id.Name = "bestellung_k37_id";
-            // 
-            // bestellung_k38_id
-            // 
-            resources.ApplyResources(this.bestellung_k38_id, "bestellung_k38_id");
-            this.bestellung_k38_id.Name = "bestellung_k38_id";
-            // 
-            // bestellung_k39_id
-            // 
-            resources.ApplyResources(this.bestellung_k39_id, "bestellung_k39_id");
-            this.bestellung_k39_id.Name = "bestellung_k39_id";
-            // 
-            // bestellung_k40_id
-            // 
-            resources.ApplyResources(this.bestellung_k40_id, "bestellung_k40_id");
-            this.bestellung_k40_id.Name = "bestellung_k40_id";
-            // 
-            // bestellung_k41_id
-            // 
-            resources.ApplyResources(this.bestellung_k41_id, "bestellung_k41_id");
-            this.bestellung_k41_id.Name = "bestellung_k41_id";
-            // 
-            // bestellung_k42_id
-            // 
-            resources.ApplyResources(this.bestellung_k42_id, "bestellung_k42_id");
-            this.bestellung_k42_id.Name = "bestellung_k42_id";
-            // 
-            // bestellung_k43_id
-            // 
-            resources.ApplyResources(this.bestellung_k43_id, "bestellung_k43_id");
-            this.bestellung_k43_id.Name = "bestellung_k43_id";
-            // 
-            // bestellung_k44_id
-            // 
-            resources.ApplyResources(this.bestellung_k44_id, "bestellung_k44_id");
-            this.bestellung_k44_id.Name = "bestellung_k44_id";
-            // 
-            // bestellung_k45_id
-            // 
-            resources.ApplyResources(this.bestellung_k45_id, "bestellung_k45_id");
-            this.bestellung_k45_id.Name = "bestellung_k45_id";
-            // 
-            // bestellung_k46_id
-            // 
-            resources.ApplyResources(this.bestellung_k46_id, "bestellung_k46_id");
-            this.bestellung_k46_id.Name = "bestellung_k46_id";
-            // 
-            // bestellung_k47_id
-            // 
-            resources.ApplyResources(this.bestellung_k47_id, "bestellung_k47_id");
-            this.bestellung_k47_id.Name = "bestellung_k47_id";
-            // 
-            // bestellung_k48_id
-            // 
-            resources.ApplyResources(this.bestellung_k48_id, "bestellung_k48_id");
-            this.bestellung_k48_id.Name = "bestellung_k48_id";
-            // 
-            // bestellung_k52_id
-            // 
-            resources.ApplyResources(this.bestellung_k52_id, "bestellung_k52_id");
-            this.bestellung_k52_id.Name = "bestellung_k52_id";
-            // 
-            // bestellung_k53_id
-            // 
-            resources.ApplyResources(this.bestellung_k53_id, "bestellung_k53_id");
-            this.bestellung_k53_id.Name = "bestellung_k53_id";
-            // 
-            // bestellung_k57_id
-            // 
-            resources.ApplyResources(this.bestellung_k57_id, "bestellung_k57_id");
-            this.bestellung_k57_id.Name = "bestellung_k57_id";
-            // 
-            // bestellung_k58_id
-            // 
-            resources.ApplyResources(this.bestellung_k58_id, "bestellung_k58_id");
-            this.bestellung_k58_id.Name = "bestellung_k58_id";
-            // 
-            // bestellung_k23_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k23_bestand, "bestellung_k23_bestand");
-            this.bestellung_k23_bestand.Name = "bestellung_k23_bestand";
-            // 
-            // bestellung_k24_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k24_bestand, "bestellung_k24_bestand");
-            this.bestellung_k24_bestand.Name = "bestellung_k24_bestand";
-            // 
-            // bestellung_k25_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k25_bestand, "bestellung_k25_bestand");
-            this.bestellung_k25_bestand.Name = "bestellung_k25_bestand";
-            // 
-            // bestellung_k27_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k27_bestand, "bestellung_k27_bestand");
-            this.bestellung_k27_bestand.Name = "bestellung_k27_bestand";
-            // 
-            // bestellung_k28_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k28_bestand, "bestellung_k28_bestand");
-            this.bestellung_k28_bestand.Name = "bestellung_k28_bestand";
-            // 
-            // bestellung_k32_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k32_bestand, "bestellung_k32_bestand");
-            this.bestellung_k32_bestand.Name = "bestellung_k32_bestand";
-            // 
-            // bestellung_k33_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k33_bestand, "bestellung_k33_bestand");
-            this.bestellung_k33_bestand.Name = "bestellung_k33_bestand";
-            // 
-            // bestellung_k34_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k34_bestand, "bestellung_k34_bestand");
-            this.bestellung_k34_bestand.Name = "bestellung_k34_bestand";
-            // 
-            // bestellung_k35_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k35_bestand, "bestellung_k35_bestand");
-            this.bestellung_k35_bestand.Name = "bestellung_k35_bestand";
-            // 
-            // bestellung_k36_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k36_bestand, "bestellung_k36_bestand");
-            this.bestellung_k36_bestand.Name = "bestellung_k36_bestand";
-            // 
-            // bestellung_k37_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k37_bestand, "bestellung_k37_bestand");
-            this.bestellung_k37_bestand.Name = "bestellung_k37_bestand";
-            // 
-            // bestellung_k38_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k38_bestand, "bestellung_k38_bestand");
-            this.bestellung_k38_bestand.Name = "bestellung_k38_bestand";
-            // 
-            // bestellung_k39_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k39_bestand, "bestellung_k39_bestand");
-            this.bestellung_k39_bestand.Name = "bestellung_k39_bestand";
-            // 
-            // bestellung_k40_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k40_bestand, "bestellung_k40_bestand");
-            this.bestellung_k40_bestand.Name = "bestellung_k40_bestand";
-            // 
-            // bestellung_k41_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k41_bestand, "bestellung_k41_bestand");
-            this.bestellung_k41_bestand.Name = "bestellung_k41_bestand";
-            // 
-            // bestellung_k42_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k42_bestand, "bestellung_k42_bestand");
-            this.bestellung_k42_bestand.Name = "bestellung_k42_bestand";
-            // 
-            // bestellung_k43_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k43_bestand, "bestellung_k43_bestand");
-            this.bestellung_k43_bestand.Name = "bestellung_k43_bestand";
-            // 
-            // bestellung_k44_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k44_bestand, "bestellung_k44_bestand");
-            this.bestellung_k44_bestand.Name = "bestellung_k44_bestand";
-            // 
-            // bestellung_k45_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k45_bestand, "bestellung_k45_bestand");
-            this.bestellung_k45_bestand.Name = "bestellung_k45_bestand";
-            // 
-            // bestellung_k46_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k46_bestand, "bestellung_k46_bestand");
-            this.bestellung_k46_bestand.Name = "bestellung_k46_bestand";
-            // 
-            // bestellung_k47_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k47_bestand, "bestellung_k47_bestand");
-            this.bestellung_k47_bestand.Name = "bestellung_k47_bestand";
-            // 
-            // bestellung_k48_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k48_bestand, "bestellung_k48_bestand");
-            this.bestellung_k48_bestand.Name = "bestellung_k48_bestand";
-            // 
-            // bestellung_k52_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k52_bestand, "bestellung_k52_bestand");
-            this.bestellung_k52_bestand.Name = "bestellung_k52_bestand";
-            // 
-            // bestellung_k53_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k53_bestand, "bestellung_k53_bestand");
-            this.bestellung_k53_bestand.Name = "bestellung_k53_bestand";
-            // 
-            // bestellung_k57_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k57_bestand, "bestellung_k57_bestand");
-            this.bestellung_k57_bestand.Name = "bestellung_k57_bestand";
-            // 
-            // bestellung_k58_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k58_bestand, "bestellung_k58_bestand");
-            this.bestellung_k58_bestand.Name = "bestellung_k58_bestand";
-            // 
-            // bestellung_k22_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k22_bedarfn, "bestellung_k22_bedarfn");
-            this.bestellung_k22_bedarfn.Name = "bestellung_k22_bedarfn";
-            // 
-            // bestellung_k23_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k23_bedarfn, "bestellung_k23_bedarfn");
-            this.bestellung_k23_bedarfn.Name = "bestellung_k23_bedarfn";
-            // 
-            // bestellung_k24_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k24_bedarfn, "bestellung_k24_bedarfn");
-            this.bestellung_k24_bedarfn.Name = "bestellung_k24_bedarfn";
-            // 
-            // bestellung_k25_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k25_bedarfn, "bestellung_k25_bedarfn");
-            this.bestellung_k25_bedarfn.Name = "bestellung_k25_bedarfn";
-            // 
-            // bestellung_k27_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k27_bedarfn, "bestellung_k27_bedarfn");
-            this.bestellung_k27_bedarfn.Name = "bestellung_k27_bedarfn";
-            // 
-            // bestellung_k28_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k28_bedarfn, "bestellung_k28_bedarfn");
-            this.bestellung_k28_bedarfn.Name = "bestellung_k28_bedarfn";
-            // 
-            // bestellung_k32_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k32_bedarfn, "bestellung_k32_bedarfn");
-            this.bestellung_k32_bedarfn.Name = "bestellung_k32_bedarfn";
-            // 
-            // bestellung_k40_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k40_bedarfn, "bestellung_k40_bedarfn");
-            this.bestellung_k40_bedarfn.Name = "bestellung_k40_bedarfn";
-            // 
-            // bestellung_k39_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k39_bedarfn, "bestellung_k39_bedarfn");
-            this.bestellung_k39_bedarfn.Name = "bestellung_k39_bedarfn";
-            // 
-            // bestellung_k38_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k38_bedarfn, "bestellung_k38_bedarfn");
-            this.bestellung_k38_bedarfn.Name = "bestellung_k38_bedarfn";
-            // 
-            // bestellung_k37_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k37_bedarfn, "bestellung_k37_bedarfn");
-            this.bestellung_k37_bedarfn.Name = "bestellung_k37_bedarfn";
-            // 
-            // bestellung_k36_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k36_bedarfn, "bestellung_k36_bedarfn");
-            this.bestellung_k36_bedarfn.Name = "bestellung_k36_bedarfn";
-            // 
-            // bestellung_k35_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k35_bedarfn, "bestellung_k35_bedarfn");
-            this.bestellung_k35_bedarfn.Name = "bestellung_k35_bedarfn";
-            // 
-            // bestellung_k34_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k34_bedarfn, "bestellung_k34_bedarfn");
-            this.bestellung_k34_bedarfn.Name = "bestellung_k34_bedarfn";
-            // 
-            // bestellung_k33_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k33_bedarfn, "bestellung_k33_bedarfn");
-            this.bestellung_k33_bedarfn.Name = "bestellung_k33_bedarfn";
-            // 
-            // bestellung_k47_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k47_bedarfn, "bestellung_k47_bedarfn");
-            this.bestellung_k47_bedarfn.Name = "bestellung_k47_bedarfn";
-            // 
-            // bestellung_k46_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k46_bedarfn, "bestellung_k46_bedarfn");
-            this.bestellung_k46_bedarfn.Name = "bestellung_k46_bedarfn";
-            // 
-            // bestellung_k45_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k45_bedarfn, "bestellung_k45_bedarfn");
-            this.bestellung_k45_bedarfn.Name = "bestellung_k45_bedarfn";
-            // 
-            // bestellung_k44_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k44_bedarfn, "bestellung_k44_bedarfn");
-            this.bestellung_k44_bedarfn.Name = "bestellung_k44_bedarfn";
-            // 
-            // bestellung_k43_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k43_bedarfn, "bestellung_k43_bedarfn");
-            this.bestellung_k43_bedarfn.Name = "bestellung_k43_bedarfn";
-            // 
-            // bestellung_k42_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k42_bedarfn, "bestellung_k42_bedarfn");
-            this.bestellung_k42_bedarfn.Name = "bestellung_k42_bedarfn";
-            // 
-            // bestellung_k41_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k41_bedarfn, "bestellung_k41_bedarfn");
-            this.bestellung_k41_bedarfn.Name = "bestellung_k41_bedarfn";
-            // 
-            // bestellung_k58_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k58_bedarfn, "bestellung_k58_bedarfn");
-            this.bestellung_k58_bedarfn.Name = "bestellung_k58_bedarfn";
-            // 
-            // bestellung_k57_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k57_bedarfn, "bestellung_k57_bedarfn");
-            this.bestellung_k57_bedarfn.Name = "bestellung_k57_bedarfn";
-            // 
-            // bestellung_k53_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k53_bedarfn, "bestellung_k53_bedarfn");
-            this.bestellung_k53_bedarfn.Name = "bestellung_k53_bedarfn";
-            // 
-            // bestellung_k52_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k52_bedarfn, "bestellung_k52_bedarfn");
-            this.bestellung_k52_bedarfn.Name = "bestellung_k52_bedarfn";
-            // 
-            // bestellung_k48_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k48_bedarfn, "bestellung_k48_bedarfn");
-            this.bestellung_k48_bedarfn.Name = "bestellung_k48_bedarfn";
-            // 
-            // bestellung_k22_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k22_bedarfn2, "bestellung_k22_bedarfn2");
-            this.bestellung_k22_bedarfn2.Name = "bestellung_k22_bedarfn2";
-            // 
-            // bestellung_k25_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k25_bedarfn2, "bestellung_k25_bedarfn2");
-            this.bestellung_k25_bedarfn2.Name = "bestellung_k25_bedarfn2";
-            // 
-            // bestellung_k23_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k23_bedarfn2, "bestellung_k23_bedarfn2");
-            this.bestellung_k23_bedarfn2.Name = "bestellung_k23_bedarfn2";
-            // 
-            // bestellung_k27_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k27_bedarfn2, "bestellung_k27_bedarfn2");
-            this.bestellung_k27_bedarfn2.Name = "bestellung_k27_bedarfn2";
-            // 
-            // bestellung_k24_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k24_bedarfn2, "bestellung_k24_bedarfn2");
-            this.bestellung_k24_bedarfn2.Name = "bestellung_k24_bedarfn2";
-            // 
-            // bestellung_k34_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k34_bedarfn2, "bestellung_k34_bedarfn2");
-            this.bestellung_k34_bedarfn2.Name = "bestellung_k34_bedarfn2";
-            // 
-            // bestellung_k36_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k36_bedarfn2, "bestellung_k36_bedarfn2");
-            this.bestellung_k36_bedarfn2.Name = "bestellung_k36_bedarfn2";
-            // 
-            // bestellung_k33_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k33_bedarfn2, "bestellung_k33_bedarfn2");
-            this.bestellung_k33_bedarfn2.Name = "bestellung_k33_bedarfn2";
-            // 
-            // bestellung_k35_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k35_bedarfn2, "bestellung_k35_bedarfn2");
-            this.bestellung_k35_bedarfn2.Name = "bestellung_k35_bedarfn2";
-            // 
-            // bestellung_k32_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k32_bedarfn2, "bestellung_k32_bedarfn2");
-            this.bestellung_k32_bedarfn2.Name = "bestellung_k32_bedarfn2";
-            // 
-            // bestellung_k28_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k28_bedarfn2, "bestellung_k28_bedarfn2");
-            this.bestellung_k28_bedarfn2.Name = "bestellung_k28_bedarfn2";
-            // 
-            // bestellung_k40_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k40_bedarfn2, "bestellung_k40_bedarfn2");
-            this.bestellung_k40_bedarfn2.Name = "bestellung_k40_bedarfn2";
-            // 
-            // bestellung_k42_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k42_bedarfn2, "bestellung_k42_bedarfn2");
-            this.bestellung_k42_bedarfn2.Name = "bestellung_k42_bedarfn2";
-            // 
-            // bestellung_k39_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k39_bedarfn2, "bestellung_k39_bedarfn2");
-            this.bestellung_k39_bedarfn2.Name = "bestellung_k39_bedarfn2";
-            // 
-            // bestellung_k41_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k41_bedarfn2, "bestellung_k41_bedarfn2");
-            this.bestellung_k41_bedarfn2.Name = "bestellung_k41_bedarfn2";
-            // 
-            // bestellung_k38_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k38_bedarfn2, "bestellung_k38_bedarfn2");
-            this.bestellung_k38_bedarfn2.Name = "bestellung_k38_bedarfn2";
-            // 
-            // bestellung_k37_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k37_bedarfn2, "bestellung_k37_bedarfn2");
-            this.bestellung_k37_bedarfn2.Name = "bestellung_k37_bedarfn2";
-            // 
-            // bestellung_k46_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k46_bedarfn2, "bestellung_k46_bedarfn2");
-            this.bestellung_k46_bedarfn2.Name = "bestellung_k46_bedarfn2";
-            // 
-            // bestellung_k48_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k48_bedarfn2, "bestellung_k48_bedarfn2");
-            this.bestellung_k48_bedarfn2.Name = "bestellung_k48_bedarfn2";
-            // 
-            // bestellung_k45_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k45_bedarfn2, "bestellung_k45_bedarfn2");
-            this.bestellung_k45_bedarfn2.Name = "bestellung_k45_bedarfn2";
-            // 
-            // bestellung_k47_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k47_bedarfn2, "bestellung_k47_bedarfn2");
-            this.bestellung_k47_bedarfn2.Name = "bestellung_k47_bedarfn2";
-            // 
-            // bestellung_k44_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k44_bedarfn2, "bestellung_k44_bedarfn2");
-            this.bestellung_k44_bedarfn2.Name = "bestellung_k44_bedarfn2";
-            // 
-            // bestellung_k43_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k43_bedarfn2, "bestellung_k43_bedarfn2");
-            this.bestellung_k43_bedarfn2.Name = "bestellung_k43_bedarfn2";
-            // 
-            // bestellung_k52_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k52_bedarfn2, "bestellung_k52_bedarfn2");
-            this.bestellung_k52_bedarfn2.Name = "bestellung_k52_bedarfn2";
-            // 
-            // bestellung_k53_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k53_bedarfn2, "bestellung_k53_bedarfn2");
-            this.bestellung_k53_bedarfn2.Name = "bestellung_k53_bedarfn2";
-            // 
-            // bestellung_k57_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k57_bedarfn2, "bestellung_k57_bedarfn2");
-            this.bestellung_k57_bedarfn2.Name = "bestellung_k57_bedarfn2";
-            // 
-            // bestellung_k58_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k58_bedarfn2, "bestellung_k58_bedarfn2");
-            this.bestellung_k58_bedarfn2.Name = "bestellung_k58_bedarfn2";
-            // 
-            // bestellung_k58_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k58_bestandn, "bestellung_k58_bestandn");
-            this.bestellung_k58_bestandn.Name = "bestellung_k58_bestandn";
-            // 
-            // bestellung_k57_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k57_bestandn, "bestellung_k57_bestandn");
-            this.bestellung_k57_bestandn.Name = "bestellung_k57_bestandn";
-            // 
-            // bestellung_k53_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k53_bestandn, "bestellung_k53_bestandn");
-            this.bestellung_k53_bestandn.Name = "bestellung_k53_bestandn";
-            // 
-            // bestellung_k52_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k52_bestandn, "bestellung_k52_bestandn");
-            this.bestellung_k52_bestandn.Name = "bestellung_k52_bestandn";
-            // 
-            // bestellung_k46_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k46_bestandn, "bestellung_k46_bestandn");
-            this.bestellung_k46_bestandn.Name = "bestellung_k46_bestandn";
-            // 
-            // bestellung_k48_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k48_bestandn, "bestellung_k48_bestandn");
-            this.bestellung_k48_bestandn.Name = "bestellung_k48_bestandn";
-            // 
-            // bestellung_k45_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k45_bestandn, "bestellung_k45_bestandn");
-            this.bestellung_k45_bestandn.Name = "bestellung_k45_bestandn";
-            // 
-            // bestellung_k47_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k47_bestandn, "bestellung_k47_bestandn");
-            this.bestellung_k47_bestandn.Name = "bestellung_k47_bestandn";
-            // 
-            // bestellung_k44_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k44_bestandn, "bestellung_k44_bestandn");
-            this.bestellung_k44_bestandn.Name = "bestellung_k44_bestandn";
-            // 
-            // bestellung_k43_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k43_bestandn, "bestellung_k43_bestandn");
-            this.bestellung_k43_bestandn.Name = "bestellung_k43_bestandn";
-            // 
-            // bestellung_k40_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k40_bestandn, "bestellung_k40_bestandn");
-            this.bestellung_k40_bestandn.Name = "bestellung_k40_bestandn";
-            // 
-            // bestellung_k42_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k42_bestandn, "bestellung_k42_bestandn");
-            this.bestellung_k42_bestandn.Name = "bestellung_k42_bestandn";
-            // 
-            // bestellung_k39_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k39_bestandn, "bestellung_k39_bestandn");
-            this.bestellung_k39_bestandn.Name = "bestellung_k39_bestandn";
-            // 
-            // bestellung_k41_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k41_bestandn, "bestellung_k41_bestandn");
-            this.bestellung_k41_bestandn.Name = "bestellung_k41_bestandn";
-            // 
-            // bestellung_k38_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k38_bestandn, "bestellung_k38_bestandn");
-            this.bestellung_k38_bestandn.Name = "bestellung_k38_bestandn";
-            // 
-            // bestellung_k37_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k37_bestandn, "bestellung_k37_bestandn");
-            this.bestellung_k37_bestandn.Name = "bestellung_k37_bestandn";
-            // 
-            // bestellung_k34_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k34_bestandn, "bestellung_k34_bestandn");
-            this.bestellung_k34_bestandn.Name = "bestellung_k34_bestandn";
-            // 
-            // bestellung_k36_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k36_bestandn, "bestellung_k36_bestandn");
-            this.bestellung_k36_bestandn.Name = "bestellung_k36_bestandn";
-            // 
-            // bestellung_k33_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k33_bestandn, "bestellung_k33_bestandn");
-            this.bestellung_k33_bestandn.Name = "bestellung_k33_bestandn";
-            // 
-            // bestellung_k35_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k35_bestandn, "bestellung_k35_bestandn");
-            this.bestellung_k35_bestandn.Name = "bestellung_k35_bestandn";
-            // 
-            // bestellung_k32_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k32_bestandn, "bestellung_k32_bestandn");
-            this.bestellung_k32_bestandn.Name = "bestellung_k32_bestandn";
-            // 
-            // bestellung_k28_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k28_bestandn, "bestellung_k28_bestandn");
-            this.bestellung_k28_bestandn.Name = "bestellung_k28_bestandn";
-            // 
-            // bestellung_k24_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k24_bestandn, "bestellung_k24_bestandn");
-            this.bestellung_k24_bestandn.Name = "bestellung_k24_bestandn";
-            // 
-            // bestellung_k27_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k27_bestandn, "bestellung_k27_bestandn");
-            this.bestellung_k27_bestandn.Name = "bestellung_k27_bestandn";
-            // 
-            // bestellung_k23_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k23_bestandn, "bestellung_k23_bestandn");
-            this.bestellung_k23_bestandn.Name = "bestellung_k23_bestandn";
-            // 
-            // bestellung_k25_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k25_bestandn, "bestellung_k25_bestandn");
-            this.bestellung_k25_bestandn.Name = "bestellung_k25_bestandn";
-            // 
-            // bestellung_k22_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k22_bestandn, "bestellung_k22_bestandn");
-            this.bestellung_k22_bestandn.Name = "bestellung_k22_bestandn";
-            // 
-            // bestellung_k58_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k58_bestandn2, "bestellung_k58_bestandn2");
-            this.bestellung_k58_bestandn2.Name = "bestellung_k58_bestandn2";
-            // 
-            // bestellung_k57_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k57_bestandn2, "bestellung_k57_bestandn2");
-            this.bestellung_k57_bestandn2.Name = "bestellung_k57_bestandn2";
-            // 
-            // bestellung_k53_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k53_bestandn2, "bestellung_k53_bestandn2");
-            this.bestellung_k53_bestandn2.Name = "bestellung_k53_bestandn2";
-            // 
-            // bestellung_k52_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k52_bestandn2, "bestellung_k52_bestandn2");
-            this.bestellung_k52_bestandn2.Name = "bestellung_k52_bestandn2";
-            // 
-            // bestellung_k46_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k46_bestandn2, "bestellung_k46_bestandn2");
-            this.bestellung_k46_bestandn2.Name = "bestellung_k46_bestandn2";
-            // 
-            // bestellung_k48_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k48_bestandn2, "bestellung_k48_bestandn2");
-            this.bestellung_k48_bestandn2.Name = "bestellung_k48_bestandn2";
-            // 
-            // bestellung_k45_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k45_bestandn2, "bestellung_k45_bestandn2");
-            this.bestellung_k45_bestandn2.Name = "bestellung_k45_bestandn2";
-            // 
-            // bestellung_k47_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k47_bestandn2, "bestellung_k47_bestandn2");
-            this.bestellung_k47_bestandn2.Name = "bestellung_k47_bestandn2";
-            // 
-            // bestellung_k44_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k44_bestandn2, "bestellung_k44_bestandn2");
-            this.bestellung_k44_bestandn2.Name = "bestellung_k44_bestandn2";
-            // 
-            // bestellung_k43_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k43_bestandn2, "bestellung_k43_bestandn2");
-            this.bestellung_k43_bestandn2.Name = "bestellung_k43_bestandn2";
-            // 
-            // bestellung_k40_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k40_bestandn2, "bestellung_k40_bestandn2");
-            this.bestellung_k40_bestandn2.Name = "bestellung_k40_bestandn2";
-            // 
-            // bestellung_k42_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k42_bestandn2, "bestellung_k42_bestandn2");
-            this.bestellung_k42_bestandn2.Name = "bestellung_k42_bestandn2";
-            // 
-            // bestellung_k39_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k39_bestandn2, "bestellung_k39_bestandn2");
-            this.bestellung_k39_bestandn2.Name = "bestellung_k39_bestandn2";
-            // 
-            // bestellung_k41_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k41_bestandn2, "bestellung_k41_bestandn2");
-            this.bestellung_k41_bestandn2.Name = "bestellung_k41_bestandn2";
-            // 
-            // bestellung_k38_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k38_bestandn2, "bestellung_k38_bestandn2");
-            this.bestellung_k38_bestandn2.Name = "bestellung_k38_bestandn2";
-            // 
-            // bestellung_k37_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k37_bestandn2, "bestellung_k37_bestandn2");
-            this.bestellung_k37_bestandn2.Name = "bestellung_k37_bestandn2";
-            // 
-            // bestellung_k34_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k34_bestandn2, "bestellung_k34_bestandn2");
-            this.bestellung_k34_bestandn2.Name = "bestellung_k34_bestandn2";
-            // 
-            // bestellung_k36_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k36_bestandn2, "bestellung_k36_bestandn2");
-            this.bestellung_k36_bestandn2.Name = "bestellung_k36_bestandn2";
-            // 
-            // bestellung_k33_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k33_bestandn2, "bestellung_k33_bestandn2");
-            this.bestellung_k33_bestandn2.Name = "bestellung_k33_bestandn2";
-            // 
-            // bestellung_k35_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k35_bestandn2, "bestellung_k35_bestandn2");
-            this.bestellung_k35_bestandn2.Name = "bestellung_k35_bestandn2";
-            // 
-            // bestellung_k32_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k32_bestandn2, "bestellung_k32_bestandn2");
-            this.bestellung_k32_bestandn2.Name = "bestellung_k32_bestandn2";
-            // 
-            // bestellung_k28_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k28_bestandn2, "bestellung_k28_bestandn2");
-            this.bestellung_k28_bestandn2.Name = "bestellung_k28_bestandn2";
-            // 
-            // bestellung_k24_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k24_bestandn2, "bestellung_k24_bestandn2");
-            this.bestellung_k24_bestandn2.Name = "bestellung_k24_bestandn2";
-            // 
-            // bestellung_k27_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k27_bestandn2, "bestellung_k27_bestandn2");
-            this.bestellung_k27_bestandn2.Name = "bestellung_k27_bestandn2";
-            // 
-            // bestellung_k23_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k23_bestandn2, "bestellung_k23_bestandn2");
-            this.bestellung_k23_bestandn2.Name = "bestellung_k23_bestandn2";
-            // 
-            // bestellung_k25_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k25_bestandn2, "bestellung_k25_bestandn2");
-            this.bestellung_k25_bestandn2.Name = "bestellung_k25_bestandn2";
-            // 
-            // bestellung_k22_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k22_bestandn2, "bestellung_k22_bestandn2");
-            this.bestellung_k22_bestandn2.Name = "bestellung_k22_bestandn2";
-            // 
-            // bestellung_k58_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k58_ausstehend, "bestellung_k58_ausstehend");
-            this.bestellung_k58_ausstehend.Name = "bestellung_k58_ausstehend";
-            // 
-            // bestellung_k57_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k57_ausstehend, "bestellung_k57_ausstehend");
-            this.bestellung_k57_ausstehend.Name = "bestellung_k57_ausstehend";
-            // 
-            // bestellung_k53_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k53_ausstehend, "bestellung_k53_ausstehend");
-            this.bestellung_k53_ausstehend.Name = "bestellung_k53_ausstehend";
-            // 
-            // bestellung_k52_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k52_ausstehend, "bestellung_k52_ausstehend");
-            this.bestellung_k52_ausstehend.Name = "bestellung_k52_ausstehend";
-            // 
-            // bestellung_k46_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k46_ausstehend, "bestellung_k46_ausstehend");
-            this.bestellung_k46_ausstehend.Name = "bestellung_k46_ausstehend";
-            // 
-            // bestellung_k48_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k48_ausstehend, "bestellung_k48_ausstehend");
-            this.bestellung_k48_ausstehend.Name = "bestellung_k48_ausstehend";
-            // 
-            // bestellung_k45_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k45_ausstehend, "bestellung_k45_ausstehend");
-            this.bestellung_k45_ausstehend.Name = "bestellung_k45_ausstehend";
-            // 
-            // bestellung_k47_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k47_ausstehend, "bestellung_k47_ausstehend");
-            this.bestellung_k47_ausstehend.Name = "bestellung_k47_ausstehend";
-            // 
-            // bestellung_k44_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k44_ausstehend, "bestellung_k44_ausstehend");
-            this.bestellung_k44_ausstehend.Name = "bestellung_k44_ausstehend";
-            // 
-            // bestellung_k43_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k43_ausstehend, "bestellung_k43_ausstehend");
-            this.bestellung_k43_ausstehend.Name = "bestellung_k43_ausstehend";
-            // 
-            // bestellung_k40_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k40_ausstehend, "bestellung_k40_ausstehend");
-            this.bestellung_k40_ausstehend.Name = "bestellung_k40_ausstehend";
-            // 
-            // bestellung_k42_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k42_ausstehend, "bestellung_k42_ausstehend");
-            this.bestellung_k42_ausstehend.Name = "bestellung_k42_ausstehend";
-            // 
-            // bestellung_k39_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k39_ausstehend, "bestellung_k39_ausstehend");
-            this.bestellung_k39_ausstehend.Name = "bestellung_k39_ausstehend";
-            // 
-            // bestellung_k41_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k41_ausstehend, "bestellung_k41_ausstehend");
-            this.bestellung_k41_ausstehend.Name = "bestellung_k41_ausstehend";
-            // 
-            // bestellung_k38_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k38_ausstehend, "bestellung_k38_ausstehend");
-            this.bestellung_k38_ausstehend.Name = "bestellung_k38_ausstehend";
-            // 
-            // bestellung_k37_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k37_ausstehend, "bestellung_k37_ausstehend");
-            this.bestellung_k37_ausstehend.Name = "bestellung_k37_ausstehend";
-            // 
-            // bestellung_k34_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k34_ausstehend, "bestellung_k34_ausstehend");
-            this.bestellung_k34_ausstehend.Name = "bestellung_k34_ausstehend";
-            // 
-            // bestellung_k36_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k36_ausstehend, "bestellung_k36_ausstehend");
-            this.bestellung_k36_ausstehend.Name = "bestellung_k36_ausstehend";
-            // 
-            // bestellung_k33_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k33_ausstehend, "bestellung_k33_ausstehend");
-            this.bestellung_k33_ausstehend.Name = "bestellung_k33_ausstehend";
-            // 
-            // bestellung_k35_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k35_ausstehend, "bestellung_k35_ausstehend");
-            this.bestellung_k35_ausstehend.Name = "bestellung_k35_ausstehend";
-            // 
-            // bestellung_k32_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k32_ausstehend, "bestellung_k32_ausstehend");
-            this.bestellung_k32_ausstehend.Name = "bestellung_k32_ausstehend";
-            // 
-            // bestellung_k28_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k28_ausstehend, "bestellung_k28_ausstehend");
-            this.bestellung_k28_ausstehend.Name = "bestellung_k28_ausstehend";
-            // 
-            // bestellung_k24_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k24_ausstehend, "bestellung_k24_ausstehend");
-            this.bestellung_k24_ausstehend.Name = "bestellung_k24_ausstehend";
-            // 
-            // bestellung_k27_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k27_ausstehend, "bestellung_k27_ausstehend");
-            this.bestellung_k27_ausstehend.Name = "bestellung_k27_ausstehend";
-            // 
-            // bestellung_k23_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k23_ausstehend, "bestellung_k23_ausstehend");
-            this.bestellung_k23_ausstehend.Name = "bestellung_k23_ausstehend";
-            // 
-            // bestellung_k25_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k25_ausstehend, "bestellung_k25_ausstehend");
-            this.bestellung_k25_ausstehend.Name = "bestellung_k25_ausstehend";
-            // 
-            // bestellung_k22_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k22_ausstehend, "bestellung_k22_ausstehend");
-            this.bestellung_k22_ausstehend.Name = "bestellung_k22_ausstehend";
-            // 
-            // bestellung_k59_ausstehend
-            // 
-            resources.ApplyResources(this.bestellung_k59_ausstehend, "bestellung_k59_ausstehend");
-            this.bestellung_k59_ausstehend.Name = "bestellung_k59_ausstehend";
-            // 
-            // bestellung_k59_bestandn2
-            // 
-            resources.ApplyResources(this.bestellung_k59_bestandn2, "bestellung_k59_bestandn2");
-            this.bestellung_k59_bestandn2.Name = "bestellung_k59_bestandn2";
-            // 
-            // bestellung_k59_bestandn
-            // 
-            resources.ApplyResources(this.bestellung_k59_bestandn, "bestellung_k59_bestandn");
-            this.bestellung_k59_bestandn.Name = "bestellung_k59_bestandn";
-            // 
-            // bestellung_k59_bedarfn2
-            // 
-            resources.ApplyResources(this.bestellung_k59_bedarfn2, "bestellung_k59_bedarfn2");
-            this.bestellung_k59_bedarfn2.Name = "bestellung_k59_bedarfn2";
-            // 
-            // bestellung_k59_bedarfn
-            // 
-            resources.ApplyResources(this.bestellung_k59_bedarfn, "bestellung_k59_bedarfn");
-            this.bestellung_k59_bedarfn.Name = "bestellung_k59_bedarfn";
-            // 
-            // bestellung_k59_bestand
-            // 
-            resources.ApplyResources(this.bestellung_k59_bestand, "bestellung_k59_bestand");
-            this.bestellung_k59_bestand.Name = "bestellung_k59_bestand";
-            // 
-            // bestellung_k59_id
-            // 
-            resources.ApplyResources(this.bestellung_k59_id, "bestellung_k59_id");
-            this.bestellung_k59_id.Name = "bestellung_k59_id";
             // 
             // Start
             // 
