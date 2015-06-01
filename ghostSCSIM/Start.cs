@@ -153,13 +153,14 @@ namespace ghostSCSIM
                MessageBox.Show("XML_File erfolgreich importiert!");
            }
        }
-
+       
+       
 
        private void fillFormsWithData(object sender, EventArgs e)
        {           
            if (xmlData.getXmlImported())
            {
-               pp_p1_p1_lager.Text = xmlData.warehouseStock.article[0].amount.ToString();
+               pp_p1_1_lager.Text = xmlData.warehouseStock.article[0].amount.ToString();
                pp_p1_26_lager.Text = ((xmlData.warehouseStock.article[25].amount) / 3).ToString();
                pp_p1_51_lager.Text = xmlData.warehouseStock.article[50].amount.ToString();
                pp_p1_16_lager.Text = ((xmlData.warehouseStock.article[15].amount) / 3).ToString();
@@ -172,7 +173,7 @@ namespace ghostSCSIM
                pp_p1_13_lager.Text = xmlData.warehouseStock.article[12].amount.ToString();
                pp_p1_18_lager.Text = xmlData.warehouseStock.article[18].amount.ToString();
 
-               pp_p2_p2_lager.Text = xmlData.warehouseStock.article[1].amount.ToString();
+               pp_p2_2_lager.Text = xmlData.warehouseStock.article[1].amount.ToString();
                pp_p2_26_lager.Text = ((xmlData.warehouseStock.article[25].amount) / 3).ToString();
                pp_p2_56_lager.Text = xmlData.warehouseStock.article[55].amount.ToString();
                pp_p2_16_lager.Text = ((xmlData.warehouseStock.article[15].amount) / 3).ToString();
@@ -185,7 +186,7 @@ namespace ghostSCSIM
                pp_p2_14_lager.Text = xmlData.warehouseStock.article[13].amount.ToString();
                pp_p2_19_lager.Text = xmlData.warehouseStock.article[18].amount.ToString();
 
-               pp_p3_p3_lager.Text = xmlData.warehouseStock.article[2].amount.ToString();
+               pp_p3_3_lager.Text = xmlData.warehouseStock.article[2].amount.ToString();
                pp_p3_26_lager.Text = ((xmlData.warehouseStock.article[25].amount) / 3).ToString();
                pp_p3_31_lager.Text = xmlData.warehouseStock.article[30].amount.ToString();
                pp_p3_16_lager.Text = ((xmlData.warehouseStock.article[15].amount) / 3).ToString();
@@ -260,8 +261,8 @@ namespace ghostSCSIM
                bestellung_k59_bestand.Text = xmlData.warehouseStock.article[58].amount.ToString();
 
                //Warteschleife und InBearbeitung 
-               pp_p1_p1_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p1_p1_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
+               pp_p1_1_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
+               pp_p1_1_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
                pp_p1_26_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(26).ToString();
                pp_p1_26_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(26).ToString();
                pp_p1_51_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(51).ToString();
@@ -285,67 +286,67 @@ namespace ghostSCSIM
                pp_p1_18_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(18).ToString();
                pp_p1_18_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(18).ToString();
 
-               pp_p2_p2_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p2_p2_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p2_26_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p2_26_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p2_56_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p2_56_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p2_16_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p2_16_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p2_17_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p2_17_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p2_55_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p2_55_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p2_5_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p2_5_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p2_11_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p2_11_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p2_54_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p2_54_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p2_8_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p2_8_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p2_14_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p2_14_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p2_19_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p2_19_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
+               pp_p2_2_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(2).ToString();
+               pp_p2_2_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(2).ToString();
+               pp_p2_26_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(26).ToString();
+               pp_p2_26_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(26).ToString();
+               pp_p2_56_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(56).ToString();
+               pp_p2_56_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(56).ToString();
+               pp_p2_16_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(16).ToString();
+               pp_p2_16_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(16).ToString();
+               pp_p2_17_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(17).ToString();
+               pp_p2_17_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(17).ToString();
+               pp_p2_55_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(55).ToString();
+               pp_p2_55_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(55).ToString();
+               pp_p2_5_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(5).ToString();
+               pp_p2_5_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(5).ToString();
+               pp_p2_11_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(11).ToString();
+               pp_p2_11_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(11).ToString();
+               pp_p2_54_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(54).ToString();
+               pp_p2_54_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(54).ToString();
+               pp_p2_8_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(8).ToString();
+               pp_p2_8_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(8).ToString();
+               pp_p2_14_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(14).ToString();
+               pp_p2_14_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(14).ToString();
+               pp_p2_19_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(19).ToString();
+               pp_p2_19_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(19).ToString();
 
-               pp_p3_p3_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p3_p3_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p3_26_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p3_26_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p3_31_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p3_31_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p3_16_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p3_16_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p3_17_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p3_17_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p3_30_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p3_30_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p3_6_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p3_6_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p3_12_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p3_12_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p3_29_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p3_29_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p3_9_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p3_9_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p3_15_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p3_15_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-               pp_p3_20_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
-               pp_p3_20_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
+               pp_p3_3_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(3).ToString();
+               pp_p3_3_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(3).ToString();
+               pp_p3_26_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(26).ToString();
+               pp_p3_26_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(26).ToString();
+               pp_p3_31_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(31).ToString();
+               pp_p3_31_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(31).ToString();
+               pp_p3_16_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(16).ToString();
+               pp_p3_16_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(16).ToString();
+               pp_p3_17_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(17).ToString();
+               pp_p3_17_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(17).ToString();
+               pp_p3_30_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(30).ToString();
+               pp_p3_30_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(30).ToString();
+               pp_p3_6_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(6).ToString();
+               pp_p3_6_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(6).ToString();
+               pp_p3_12_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(12).ToString();
+               pp_p3_12_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(12).ToString();
+               pp_p3_29_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(29).ToString();
+               pp_p3_29_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(29).ToString();
+               pp_p3_9_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(9).ToString();
+               pp_p3_9_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(9).ToString();
+               pp_p3_15_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(15).ToString();
+               pp_p3_15_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(15).ToString();
+               pp_p3_20_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(20).ToString();
+               pp_p3_20_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(20).ToString();
 
                //Vertriebswünsche P1 P2 P3
-               pp_p1_p1_vw.Text = kinder_prog_p1.Value.ToString();   
-               pp_p2_p2_vw.Text = damen_prog_p1.Value.ToString();
-               pp_p3_p3_vw.Text = herren_prog_p1.Value.ToString();        
+               pp_p1_1_vw.Text = kinder_prog_p1.Value.ToString();   
+               pp_p2_2_vw.Text = damen_prog_p1.Value.ToString();
+               pp_p3_3_vw.Text = herren_prog_p1.Value.ToString();        
                
                //Produktion 
-               pp_p1_p1_prod.Text = (int.Parse(pp_p1_p1_vw.Text.ToString()) + int.Parse(pp_p1_p1_sb.Text.ToString()) - int.Parse(pp_p1_p1_lager.Text.ToString()) - int.Parse(pp_p1_p1_ws.Text.ToString()) - int.Parse(pp_p1_p1_bearb.Text.ToString())).ToString();
-               pp_p1_26_prod.Text = (int.Parse(pp_p1_p1_prod.Text.ToString()) + int.Parse(pp_p1_26_sb.Text.ToString()) - int.Parse(pp_p1_26_lager.Text.ToString()) - int.Parse(pp_p1_26_ws.Text.ToString()) - int.Parse(pp_p1_26_bearb.Text.ToString())).ToString();
-               pp_p1_26_vw.Text = pp_p1_p1_prod.Text;               
-               pp_p1_51_prod.Text = (int.Parse(pp_p1_p1_prod.Text.ToString()) + int.Parse(pp_p1_51_sb.Text.ToString()) - int.Parse(pp_p1_51_lager.Text.ToString()) - int.Parse(pp_p1_51_ws.Text.ToString()) - int.Parse(pp_p1_51_bearb.Text.ToString())).ToString();
-               pp_p1_51_vw.Text = pp_p1_p1_prod.Text;
+               pp_p1_1_prod.Text = (int.Parse(pp_p1_1_vw.Text.ToString()) + int.Parse(pp_p1_1_sb.Text.ToString()) - int.Parse(pp_p1_1_lager.Text.ToString()) - int.Parse(pp_p1_1_ws.Text.ToString()) - int.Parse(pp_p1_1_bearb.Text.ToString())).ToString();
+               pp_p1_26_prod.Text = (int.Parse(pp_p1_1_prod.Text.ToString()) + int.Parse(pp_p1_26_sb.Text.ToString()) - int.Parse(pp_p1_26_lager.Text.ToString()) - int.Parse(pp_p1_26_ws.Text.ToString()) - int.Parse(pp_p1_26_bearb.Text.ToString())).ToString();
+               pp_p1_26_vw.Text = pp_p1_1_prod.Text;               
+               pp_p1_51_prod.Text = (int.Parse(pp_p1_1_prod.Text.ToString()) + int.Parse(pp_p1_51_sb.Text.ToString()) - int.Parse(pp_p1_51_lager.Text.ToString()) - int.Parse(pp_p1_51_ws.Text.ToString()) - int.Parse(pp_p1_51_bearb.Text.ToString())).ToString();
+               pp_p1_51_vw.Text = pp_p1_1_prod.Text;
                pp_p1_16_prod.Text = (int.Parse(pp_p1_51_prod.Text.ToString()) + int.Parse(pp_p1_16_sb.Text.ToString()) - int.Parse(pp_p1_16_lager.Text.ToString()) - int.Parse(pp_p1_16_ws.Text.ToString()) - int.Parse(pp_p1_16_bearb.Text.ToString())).ToString();
                pp_p1_16_vw.Text = pp_p1_51_prod.Text;
                pp_p1_17_prod.Text = (int.Parse(pp_p1_51_prod.Text.ToString()) + int.Parse(pp_p1_17_sb.Text.ToString()) - int.Parse(pp_p1_17_lager.Text.ToString()) - int.Parse(pp_p1_17_ws.Text.ToString()) - int.Parse(pp_p1_17_bearb.Text.ToString())).ToString();
@@ -365,11 +366,11 @@ namespace ghostSCSIM
                pp_p1_18_prod.Text = (int.Parse(pp_p1_49_prod.Text.ToString()) + int.Parse(pp_p1_18_sb.Text.ToString()) - int.Parse(pp_p1_18_lager.Text.ToString()) - int.Parse(pp_p1_18_ws.Text.ToString()) - int.Parse(pp_p1_18_bearb.Text.ToString())).ToString();
                pp_p1_18_vw.Text = pp_p1_49_prod.Text;
 
-               pp_p2_p2_prod.Text = (int.Parse(pp_p2_p2_vw.Text.ToString()) + int.Parse(pp_p2_p2_sb.Text.ToString()) - int.Parse(pp_p2_p2_lager.Text.ToString()) - int.Parse(pp_p2_p2_ws.Text.ToString()) - int.Parse(pp_p2_p2_bearb.Text.ToString())).ToString();
-               pp_p2_26_prod.Text = (int.Parse(pp_p2_p2_vw.Text.ToString()) + int.Parse(pp_p2_26_sb.Text.ToString()) - int.Parse(pp_p2_26_lager.Text.ToString()) - int.Parse(pp_p2_26_ws.Text.ToString()) - int.Parse(pp_p2_26_bearb.Text.ToString())).ToString();
-               pp_p2_26_vw.Text = pp_p2_p2_prod.Text;
-               pp_p2_56_prod.Text = (int.Parse(pp_p2_p2_vw.Text.ToString()) + int.Parse(pp_p2_56_sb.Text.ToString()) - int.Parse(pp_p2_56_lager.Text.ToString()) - int.Parse(pp_p2_56_ws.Text.ToString()) - int.Parse(pp_p2_56_bearb.Text.ToString())).ToString();
-               pp_p2_56_vw.Text = pp_p2_p2_prod.Text;
+               pp_p2_2_prod.Text = (int.Parse(pp_p2_2_vw.Text.ToString()) + int.Parse(pp_p2_2_sb.Text.ToString()) - int.Parse(pp_p2_2_lager.Text.ToString()) - int.Parse(pp_p2_2_ws.Text.ToString()) - int.Parse(pp_p2_2_bearb.Text.ToString())).ToString();
+               pp_p2_26_prod.Text = (int.Parse(pp_p2_2_vw.Text.ToString()) + int.Parse(pp_p2_26_sb.Text.ToString()) - int.Parse(pp_p2_26_lager.Text.ToString()) - int.Parse(pp_p2_26_ws.Text.ToString()) - int.Parse(pp_p2_26_bearb.Text.ToString())).ToString();
+               pp_p2_26_vw.Text = pp_p2_2_prod.Text;
+               pp_p2_56_prod.Text = (int.Parse(pp_p2_2_vw.Text.ToString()) + int.Parse(pp_p2_56_sb.Text.ToString()) - int.Parse(pp_p2_56_lager.Text.ToString()) - int.Parse(pp_p2_56_ws.Text.ToString()) - int.Parse(pp_p2_56_bearb.Text.ToString())).ToString();
+               pp_p2_56_vw.Text = pp_p2_2_prod.Text;
                pp_p2_16_prod.Text = (int.Parse(pp_p2_56_vw.Text.ToString()) + int.Parse(pp_p2_16_sb.Text.ToString()) - int.Parse(pp_p2_16_lager.Text.ToString()) - int.Parse(pp_p2_16_ws.Text.ToString()) - int.Parse(pp_p2_16_bearb.Text.ToString())).ToString();
                pp_p2_16_vw.Text = pp_p2_56_prod.Text;
                pp_p2_17_prod.Text = (int.Parse(pp_p2_56_vw.Text.ToString()) + int.Parse(pp_p2_17_sb.Text.ToString()) - int.Parse(pp_p2_17_lager.Text.ToString()) - int.Parse(pp_p2_17_ws.Text.ToString()) - int.Parse(pp_p2_17_bearb.Text.ToString())).ToString();
@@ -389,11 +390,11 @@ namespace ghostSCSIM
                pp_p2_19_prod.Text = (int.Parse(pp_p2_54_vw.Text.ToString()) + int.Parse(pp_p2_19_sb.Text.ToString()) - int.Parse(pp_p2_19_lager.Text.ToString()) - int.Parse(pp_p2_19_ws.Text.ToString()) - int.Parse(pp_p2_19_bearb.Text.ToString())).ToString();
                pp_p2_19_vw.Text = pp_p2_54_prod.Text;
 
-               pp_p3_p3_prod.Text = (int.Parse(pp_p3_p3_vw.Text.ToString()) + int.Parse(pp_p3_p3_sb.Text.ToString()) - int.Parse(pp_p3_p3_lager.Text.ToString()) - int.Parse(pp_p3_p3_ws.Text.ToString()) - int.Parse(pp_p3_p3_bearb.Text.ToString())).ToString();
-               pp_p3_26_prod.Text = (int.Parse(pp_p3_p3_vw.Text.ToString()) + int.Parse(pp_p3_26_sb.Text.ToString()) - int.Parse(pp_p3_26_lager.Text.ToString()) - int.Parse(pp_p3_26_ws.Text.ToString()) - int.Parse(pp_p3_26_bearb.Text.ToString())).ToString();
-               pp_p3_26_vw.Text = pp_p3_p3_prod.Text;
-               pp_p3_31_prod.Text = (int.Parse(pp_p3_p3_vw.Text.ToString()) + int.Parse(pp_p3_31_sb.Text.ToString()) - int.Parse(pp_p3_31_lager.Text.ToString()) - int.Parse(pp_p3_31_ws.Text.ToString()) - int.Parse(pp_p3_31_bearb.Text.ToString())).ToString();
-               pp_p3_31_vw.Text = pp_p3_p3_prod.Text;
+               pp_p3_3_prod.Text = (int.Parse(pp_p3_3_vw.Text.ToString()) + int.Parse(pp_p3_3_sb.Text.ToString()) - int.Parse(pp_p3_3_lager.Text.ToString()) - int.Parse(pp_p3_3_ws.Text.ToString()) - int.Parse(pp_p3_3_bearb.Text.ToString())).ToString();
+               pp_p3_26_prod.Text = (int.Parse(pp_p3_3_vw.Text.ToString()) + int.Parse(pp_p3_26_sb.Text.ToString()) - int.Parse(pp_p3_26_lager.Text.ToString()) - int.Parse(pp_p3_26_ws.Text.ToString()) - int.Parse(pp_p3_26_bearb.Text.ToString())).ToString();
+               pp_p3_26_vw.Text = pp_p3_3_prod.Text;
+               pp_p3_31_prod.Text = (int.Parse(pp_p3_3_vw.Text.ToString()) + int.Parse(pp_p3_31_sb.Text.ToString()) - int.Parse(pp_p3_31_lager.Text.ToString()) - int.Parse(pp_p3_31_ws.Text.ToString()) - int.Parse(pp_p3_31_bearb.Text.ToString())).ToString();
+               pp_p3_31_vw.Text = pp_p3_3_prod.Text;
                pp_p3_16_prod.Text = (int.Parse(pp_p3_31_vw.Text.ToString()) + int.Parse(pp_p3_16_sb.Text.ToString()) - int.Parse(pp_p3_16_lager.Text.ToString()) - int.Parse(pp_p3_16_ws.Text.ToString()) - int.Parse(pp_p3_16_bearb.Text.ToString())).ToString();
                pp_p3_16_vw.Text = pp_p3_31_prod.Text;
                pp_p3_17_prod.Text = (int.Parse(pp_p3_31_vw.Text.ToString()) + int.Parse(pp_p3_17_sb.Text.ToString()) - int.Parse(pp_p3_17_lager.Text.ToString()) - int.Parse(pp_p3_17_ws.Text.ToString()) - int.Parse(pp_p3_17_bearb.Text.ToString())).ToString();
@@ -474,7 +475,32 @@ namespace ghostSCSIM
                bestellung_k57_bestand.Text = (int.Parse(bestellung_k57_bestand.Text.ToString()).ToString());
                bestellung_k58_bestand.Text = (int.Parse(bestellung_k58_bestand.Text.ToString()).ToString());
                bestellung_k59_bestand.Text = (int.Parse(bestellung_k59_bestand.Text.ToString()).ToString());
-                             
+
+               DaoHelper dao = new DaoHelper();
+               List<Teil> teilListe = new List<Teil>();
+               teilListe = dao.getTeilStammdaten();
+             
+               foreach(Teil teil in teilListe)
+               {
+                   string name = teil.getBezeichnung(); 
+                   int nummer = teil.getNummer();
+                   int lagerbestand = xmlData.warehouseStock.article[nummer-1].amount;
+
+                   //TODO: Decimalzahl wird nicht übertragen von XML eingelesen -> immer null
+                   decimal prozent = xmlData.warehouseStock.article[nummer-1].pct;
+
+                   //TODO: Warteschlange wird eventuell nicht bei allen gelesen!
+                   int warteschlange = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(nummer);
+                   int bearbeitung = xmlData.ordersInWork.getInBearbeitungMengeByItem(nummer);
+                   
+
+                              
+                   string[] row = { nummer.ToString(), name, lagerbestand.ToString(), prozent.ToString(), warteschlange.ToString(), bearbeitung.ToString()};
+                   pp_uebersicht_grid.Rows.Add(row); 
+                  
+               }
+               
+
            }
          
            

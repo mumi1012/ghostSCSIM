@@ -121,18 +121,6 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="spracheToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 22</value>
-  </data>
-  <data name="spracheToolStripMenuItem.Text" xml:space="preserve">
-    <value>Sprache</value>
-  </data>
-  <data name="einstellungenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 22</value>
-  </data>
-  <data name="einstellungenToolStripMenuItem.Text" xml:space="preserve">
-    <value>Einstellungen</value>
-  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -162,6 +150,12 @@
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="spracheToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 22</value>
+  </data>
+  <data name="spracheToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
   <data name="dEToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 22</value>
   </data>
@@ -173,6 +167,12 @@
   </data>
   <data name="eNToolStripMenuItem.Text" xml:space="preserve">
     <value>EN</value>
+  </data>
+  <data name="einstellungenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 22</value>
+  </data>
+  <data name="einstellungenToolStripMenuItem.Text" xml:space="preserve">
+    <value>Einstellungen</value>
   </data>
   <data name="xmlInputButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>35, 283</value>
@@ -451,7 +451,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabPrognose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 403</value>
+    <value>832, 376</value>
   </data>
   <data name="tabPrognose.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -493,7 +493,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabProdplan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 403</value>
+    <value>832, 471</value>
   </data>
   <data name="tabProdplan.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -512,6 +512,297 @@
   </data>
   <data name="&gt;&gt;tabProdplan.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_arbeitsplatz.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_arbeitsplatz.HeaderText" xml:space="preserve">
+    <value>Arbeitsplatz</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_kapazitaetsbedarf.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_kapazitaetsbedarf.HeaderText" xml:space="preserve">
+    <value>Kapazitätsbedarf</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_ruestzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_ruestzeit.HeaderText" xml:space="preserve">
+    <value>Rüstzeit</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_preKapazitaetsbedarf.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_preKapazitaetsbedarf.HeaderText" xml:space="preserve">
+    <value>Kapazitätsbedarf aus Rückständen</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_preRuestzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_preRuestzeit.HeaderText" xml:space="preserve">
+    <value>Rüstzeit aus Rückständen</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_gesamt.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_gesamt.HeaderText" xml:space="preserve">
+    <value>Gesamt</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_ueberstunden.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_ueberstunden.HeaderText" xml:space="preserve">
+    <value>Überstunden</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_2schicht.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_2schicht.HeaderText" xml:space="preserve">
+    <value>2. Schicht</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_3schicht.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_3schicht.HeaderText" xml:space="preserve">
+    <value>3. Schicht</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_leerzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_leerzeit.HeaderText" xml:space="preserve">
+    <value>Leerzeit</value>
+  </data>
+  <data name="dataGridView_kp_uebersicht.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dataGridView_kp_uebersicht.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="dataGridView_kp_uebersicht.Size" type="System.Drawing.Size, System.Drawing">
+    <value>818, 439</value>
+  </data>
+  <data name="dataGridView_kp_uebersicht.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_uebersicht.Name" xml:space="preserve">
+    <value>dataGridView_kp_uebersicht</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_uebersicht.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_uebersicht.Parent" xml:space="preserve">
+    <value>tabPage_kp_uebersicht</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_uebersicht.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage_kp_uebersicht.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage_kp_uebersicht.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage_kp_uebersicht.Size" type="System.Drawing.Size, System.Drawing">
+    <value>824, 445</value>
+  </data>
+  <data name="tabPage_kp_uebersicht.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage_kp_uebersicht.Text" xml:space="preserve">
+    <value>Übersicht</value>
+  </data>
+  <data name="tabPage_kp_uebersicht.ToolTipText" xml:space="preserve">
+    <value>Übersicht zur Kapazitätsplanung</value>
+  </data>
+  <data name="&gt;&gt;tabPage_kp_uebersicht.Name" xml:space="preserve">
+    <value>tabPage_kp_uebersicht</value>
+  </data>
+  <data name="&gt;&gt;tabPage_kp_uebersicht.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_kp_uebersicht.Parent" xml:space="preserve">
+    <value>tabControl_kp</value>
+  </data>
+  <data name="&gt;&gt;tabPage_kp_uebersicht.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="Column_kp_aufloesung_arbeitsplatz.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_aufloesung_arbeitsplatz.HeaderText" xml:space="preserve">
+    <value>Arbeitsplatz</value>
+  </data>
+  <metadata name="Column_kp_aufloesung_teil.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_aufloesung_teil.HeaderText" xml:space="preserve">
+    <value>Teil</value>
+  </data>
+  <metadata name="Column_kp_aufloesung_fertigungszeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_aufloesung_fertigungszeit.HeaderText" xml:space="preserve">
+    <value>Fertigungszeit pro Stk.</value>
+  </data>
+  <metadata name="Column_kp_aufloesung_kapazitaetsbedarfTeil.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_aufloesung_kapazitaetsbedarfTeil.HeaderText" xml:space="preserve">
+    <value>Kapazitätsbedarf</value>
+  </data>
+  <metadata name="Column_kp_aufloesung_ruestzeitTeil.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_aufloesung_ruestzeitTeil.HeaderText" xml:space="preserve">
+    <value>Rüstzeit</value>
+  </data>
+  <data name="dataGridView_kp_aufloesung.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dataGridView_kp_aufloesung.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="dataGridView_kp_aufloesung.Size" type="System.Drawing.Size, System.Drawing">
+    <value>818, 439</value>
+  </data>
+  <data name="dataGridView_kp_aufloesung.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_aufloesung.Name" xml:space="preserve">
+    <value>dataGridView_kp_aufloesung</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_aufloesung.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_aufloesung.Parent" xml:space="preserve">
+    <value>tabPage_kp_aufloesung</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_aufloesung.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage_kp_aufloesung.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage_kp_aufloesung.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage_kp_aufloesung.Size" type="System.Drawing.Size, System.Drawing">
+    <value>824, 445</value>
+  </data>
+  <data name="tabPage_kp_aufloesung.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage_kp_aufloesung.Text" xml:space="preserve">
+    <value>Auflösung</value>
+  </data>
+  <data name="tabPage_kp_aufloesung.ToolTipText" xml:space="preserve">
+    <value>Auflösung des Kapazitätsbedarfs nach Teilen</value>
+  </data>
+  <data name="&gt;&gt;tabPage_kp_aufloesung.Name" xml:space="preserve">
+    <value>tabPage_kp_aufloesung</value>
+  </data>
+  <data name="&gt;&gt;tabPage_kp_aufloesung.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_kp_aufloesung.Parent" xml:space="preserve">
+    <value>tabControl_kp</value>
+  </data>
+  <data name="&gt;&gt;tabPage_kp_aufloesung.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_comment.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label_comment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 153</value>
+  </data>
+  <data name="label_comment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 13</value>
+  </data>
+  <data name="label_comment.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label_comment.Text" xml:space="preserve">
+    <value> &gt; Abhängigkeiten von Teilen / Maschinen</value>
+  </data>
+  <data name="&gt;&gt;label_comment.Name" xml:space="preserve">
+    <value>label_comment</value>
+  </data>
+  <data name="&gt;&gt;label_comment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_comment.Parent" xml:space="preserve">
+    <value>tabPage_kp_info</value>
+  </data>
+  <data name="&gt;&gt;label_comment.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBox_comment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 130</value>
+  </data>
+  <data name="textBox_comment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>531, 20</value>
+  </data>
+  <data name="textBox_comment.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="textBox_comment.Text" xml:space="preserve">
+    <value>Eventuell Fertigungsdurchlauf / Stückliste (Als Bild).</value>
+  </data>
+  <data name="&gt;&gt;textBox_comment.Name" xml:space="preserve">
+    <value>textBox_comment</value>
+  </data>
+  <data name="&gt;&gt;textBox_comment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_comment.Parent" xml:space="preserve">
+    <value>tabPage_kp_info</value>
+  </data>
+  <data name="&gt;&gt;textBox_comment.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPage_kp_info.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage_kp_info.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage_kp_info.Size" type="System.Drawing.Size, System.Drawing">
+    <value>824, 445</value>
+  </data>
+  <data name="tabPage_kp_info.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabPage_kp_info.Text" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="tabPage_kp_info.ToolTipText" xml:space="preserve">
+    <value>Weiterführende Informationen</value>
+  </data>
+  <data name="&gt;&gt;tabPage_kp_info.Name" xml:space="preserve">
+    <value>tabPage_kp_info</value>
+  </data>
+  <data name="&gt;&gt;tabPage_kp_info.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_kp_info.Parent" xml:space="preserve">
+    <value>tabControl_kp</value>
+  </data>
+  <data name="&gt;&gt;tabPage_kp_info.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabControl_kp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tabControl_kp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tabControl_kp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>832, 471</value>
+  </data>
+  <data name="tabControl_kp.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;tabControl_kp.Name" xml:space="preserve">
     <value>tabControl_kp</value>
@@ -532,7 +823,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabKapa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 403</value>
+    <value>832, 471</value>
   </data>
   <data name="tabKapa.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -5500,7 +5791,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_best_kaufteileverbrauch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>818, 344</value>
+    <value>818, 439</value>
   </data>
   <data name="dataGridView_best_kaufteileverbrauch.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -5524,7 +5815,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_best_kaufteileverbrauch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>824, 350</value>
+    <value>824, 445</value>
   </data>
   <data name="tabPage_best_kaufteileverbrauch.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -5543,6 +5834,60 @@
   </data>
   <data name="&gt;&gt;tabPage_best_kaufteileverbrauch.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <metadata name="Column_best_kaufteillager_nummer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_best_kaufteillager_nummer.HeaderText" xml:space="preserve">
+    <value>Nummer</value>
+  </data>
+  <metadata name="Column_best_kaufteillager_bezeichnung.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_best_kaufteillager_bezeichnung.HeaderText" xml:space="preserve">
+    <value>Bezeichnung</value>
+  </data>
+  <metadata name="Column_best_kaufteillager_bestand.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_best_kaufteillager_bestand.HeaderText" xml:space="preserve">
+    <value>Bestand</value>
+  </data>
+  <metadata name="Column_best_kaufteillager_wareneingang.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_best_kaufteillager_wareneingang.HeaderText" xml:space="preserve">
+    <value>Wareneingang</value>
+  </data>
+  <metadata name="Column_best_kaufteillager_lieferdauer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_best_kaufteillager_lieferdauer.HeaderText" xml:space="preserve">
+    <value>Lieferdauer</value>
+  </data>
+  <metadata name="Column_best_kaufteillager_diskontmenge.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_best_kaufteillager_diskontmenge.HeaderText" xml:space="preserve">
+    <value>Diskontmenge</value>
+  </data>
+  <metadata name="Column_best_kaufteillager_bestellkosten.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_best_kaufteillager_bestellkosten.HeaderText" xml:space="preserve">
+    <value>Bestellkosten</value>
+  </data>
+  <data name="dataGridView_best_kaufteillager.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dataGridView_best_kaufteillager.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="dataGridView_best_kaufteillager.Size" type="System.Drawing.Size, System.Drawing">
+    <value>818, 439</value>
+  </data>
+  <data name="dataGridView_best_kaufteillager.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;dataGridView_best_kaufteillager.Name" xml:space="preserve">
     <value>dataGridView_best_kaufteillager</value>
@@ -5563,7 +5908,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_best_kaufteillager.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 377</value>
+    <value>824, 445</value>
   </data>
   <data name="tabPage_best_kaufteillager.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -5602,7 +5947,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_best_bestellung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 377</value>
+    <value>824, 350</value>
   </data>
   <data name="tabPage_best_bestellung.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5629,7 +5974,7 @@
     <value>0, 0</value>
   </data>
   <data name="tabControl_best.Size" type="System.Drawing.Size, System.Drawing">
-    <value>832, 376</value>
+    <value>832, 471</value>
   </data>
   <data name="tabControl_best.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -5653,7 +5998,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabBestellung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>832, 376</value>
+    <value>832, 471</value>
   </data>
   <data name="tabBestellung.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -5692,7 +6037,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabDirektV.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 403</value>
+    <value>832, 376</value>
   </data>
   <data name="tabDirektV.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -5725,7 +6070,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>859, 384</value>
+    <value>859, 479</value>
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -6322,7 +6667,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>831, 359</value>
+    <value>828, 467</value>
   </data>
   <data name="tabControl2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -7263,76 +7608,76 @@
   <data name="&gt;&gt;label_pp_p1_26.ZOrder" xml:space="preserve">
     <value>76</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_prod.Name" xml:space="preserve">
-    <value>pp_p1_p1_prod</value>
+  <data name="&gt;&gt;pp_p1_1_prod.Name" xml:space="preserve">
+    <value>pp_p1_1_prod</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_prod.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_prod.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_prod.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_prod.Parent" xml:space="preserve">
     <value>tabKinderf</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_prod.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_prod.ZOrder" xml:space="preserve">
     <value>77</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_bearb.Name" xml:space="preserve">
-    <value>pp_p1_p1_bearb</value>
+  <data name="&gt;&gt;pp_p1_1_bearb.Name" xml:space="preserve">
+    <value>pp_p1_1_bearb</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_bearb.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_bearb.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_bearb.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_bearb.Parent" xml:space="preserve">
     <value>tabKinderf</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_bearb.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_bearb.ZOrder" xml:space="preserve">
     <value>78</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_ws.Name" xml:space="preserve">
-    <value>pp_p1_p1_ws</value>
+  <data name="&gt;&gt;pp_p1_1_ws.Name" xml:space="preserve">
+    <value>pp_p1_1_ws</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_ws.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_ws.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_ws.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_ws.Parent" xml:space="preserve">
     <value>tabKinderf</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_ws.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_ws.ZOrder" xml:space="preserve">
     <value>79</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_lager.Name" xml:space="preserve">
-    <value>pp_p1_p1_lager</value>
+  <data name="&gt;&gt;pp_p1_1_lager.Name" xml:space="preserve">
+    <value>pp_p1_1_lager</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_lager.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_lager.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_lager.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_lager.Parent" xml:space="preserve">
     <value>tabKinderf</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_lager.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_lager.ZOrder" xml:space="preserve">
     <value>80</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_sb.Name" xml:space="preserve">
-    <value>pp_p1_p1_sb</value>
+  <data name="&gt;&gt;pp_p1_1_sb.Name" xml:space="preserve">
+    <value>pp_p1_1_sb</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_sb.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_sb.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_sb.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_sb.Parent" xml:space="preserve">
     <value>tabKinderf</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_sb.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_sb.ZOrder" xml:space="preserve">
     <value>81</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_vw.Name" xml:space="preserve">
-    <value>pp_p1_p1_vw</value>
+  <data name="&gt;&gt;pp_p1_1_vw.Name" xml:space="preserve">
+    <value>pp_p1_1_vw</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_vw.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_vw.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_vw.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_vw.Parent" xml:space="preserve">
     <value>tabKinderf</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_vw.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_vw.ZOrder" xml:space="preserve">
     <value>82</value>
   </data>
   <data name="&gt;&gt;label_pp_p1_prod.Name" xml:space="preserve">
@@ -7429,7 +7774,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabKinderf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>823, 333</value>
+    <value>820, 333</value>
   </data>
   <data name="tabKinderf.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -9594,166 +9939,166 @@
   <data name="&gt;&gt;label_pp_p1_26.ZOrder" xml:space="preserve">
     <value>76</value>
   </data>
-  <data name="pp_p1_p1_prod.Enabled" type="System.Boolean, mscorlib">
+  <data name="pp_p1_1_prod.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="pp_p1_p1_prod.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p1_1_prod.Location" type="System.Drawing.Point, System.Drawing">
     <value>718, 33</value>
   </data>
-  <data name="pp_p1_p1_prod.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p1_1_prod.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p1_p1_prod.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p1_1_prod.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p1_p1_prod.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p1_1_prod.TabIndex" type="System.Int32, mscorlib">
     <value>102</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_prod.Name" xml:space="preserve">
-    <value>pp_p1_p1_prod</value>
+  <data name="&gt;&gt;pp_p1_1_prod.Name" xml:space="preserve">
+    <value>pp_p1_1_prod</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_prod.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_prod.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_prod.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_prod.Parent" xml:space="preserve">
     <value>tabKinderf</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_prod.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_prod.ZOrder" xml:space="preserve">
     <value>77</value>
   </data>
-  <data name="pp_p1_p1_bearb.Enabled" type="System.Boolean, mscorlib">
+  <data name="pp_p1_1_bearb.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="pp_p1_p1_bearb.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p1_1_bearb.Location" type="System.Drawing.Point, System.Drawing">
     <value>617, 33</value>
   </data>
-  <data name="pp_p1_p1_bearb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p1_1_bearb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p1_p1_bearb.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p1_1_bearb.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p1_p1_bearb.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p1_1_bearb.TabIndex" type="System.Int32, mscorlib">
     <value>101</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_bearb.Name" xml:space="preserve">
-    <value>pp_p1_p1_bearb</value>
+  <data name="&gt;&gt;pp_p1_1_bearb.Name" xml:space="preserve">
+    <value>pp_p1_1_bearb</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_bearb.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_bearb.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_bearb.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_bearb.Parent" xml:space="preserve">
     <value>tabKinderf</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_bearb.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_bearb.ZOrder" xml:space="preserve">
     <value>78</value>
   </data>
-  <data name="pp_p1_p1_ws.Enabled" type="System.Boolean, mscorlib">
+  <data name="pp_p1_1_ws.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="pp_p1_p1_ws.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p1_1_ws.Location" type="System.Drawing.Point, System.Drawing">
     <value>518, 33</value>
   </data>
-  <data name="pp_p1_p1_ws.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p1_1_ws.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p1_p1_ws.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p1_1_ws.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p1_p1_ws.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p1_1_ws.TabIndex" type="System.Int32, mscorlib">
     <value>100</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_ws.Name" xml:space="preserve">
-    <value>pp_p1_p1_ws</value>
+  <data name="&gt;&gt;pp_p1_1_ws.Name" xml:space="preserve">
+    <value>pp_p1_1_ws</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_ws.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_ws.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_ws.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_ws.Parent" xml:space="preserve">
     <value>tabKinderf</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_ws.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_ws.ZOrder" xml:space="preserve">
     <value>79</value>
   </data>
-  <data name="pp_p1_p1_lager.Enabled" type="System.Boolean, mscorlib">
+  <data name="pp_p1_1_lager.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="pp_p1_p1_lager.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p1_1_lager.Location" type="System.Drawing.Point, System.Drawing">
     <value>417, 33</value>
   </data>
-  <data name="pp_p1_p1_lager.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p1_1_lager.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p1_p1_lager.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p1_1_lager.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p1_p1_lager.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p1_1_lager.TabIndex" type="System.Int32, mscorlib">
     <value>99</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_lager.Name" xml:space="preserve">
-    <value>pp_p1_p1_lager</value>
+  <data name="&gt;&gt;pp_p1_1_lager.Name" xml:space="preserve">
+    <value>pp_p1_1_lager</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_lager.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_lager.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_lager.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_lager.Parent" xml:space="preserve">
     <value>tabKinderf</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_lager.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_lager.ZOrder" xml:space="preserve">
     <value>80</value>
   </data>
-  <data name="pp_p1_p1_sb.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p1_1_sb.Location" type="System.Drawing.Point, System.Drawing">
     <value>289, 33</value>
   </data>
-  <data name="pp_p1_p1_sb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p1_1_sb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p1_p1_sb.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p1_1_sb.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p1_p1_sb.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p1_1_sb.TabIndex" type="System.Int32, mscorlib">
     <value>98</value>
   </data>
-  <data name="pp_p1_p1_sb.Text" xml:space="preserve">
+  <data name="pp_p1_1_sb.Text" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_sb.Name" xml:space="preserve">
-    <value>pp_p1_p1_sb</value>
+  <data name="&gt;&gt;pp_p1_1_sb.Name" xml:space="preserve">
+    <value>pp_p1_1_sb</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_sb.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_sb.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_sb.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_sb.Parent" xml:space="preserve">
     <value>tabKinderf</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_sb.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_sb.ZOrder" xml:space="preserve">
     <value>81</value>
   </data>
-  <data name="pp_p1_p1_vw.Enabled" type="System.Boolean, mscorlib">
+  <data name="pp_p1_1_vw.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="pp_p1_p1_vw.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p1_1_vw.Location" type="System.Drawing.Point, System.Drawing">
     <value>97, 33</value>
   </data>
-  <data name="pp_p1_p1_vw.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p1_1_vw.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p1_p1_vw.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p1_1_vw.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p1_p1_vw.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p1_1_vw.TabIndex" type="System.Int32, mscorlib">
     <value>97</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_vw.Name" xml:space="preserve">
-    <value>pp_p1_p1_vw</value>
+  <data name="&gt;&gt;pp_p1_1_vw.Name" xml:space="preserve">
+    <value>pp_p1_1_vw</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_vw.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_vw.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_vw.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_vw.Parent" xml:space="preserve">
     <value>tabKinderf</value>
   </data>
-  <data name="&gt;&gt;pp_p1_p1_vw.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p1_1_vw.ZOrder" xml:space="preserve">
     <value>82</value>
   </data>
   <data name="label_pp_p1_prod.AutoSize" type="System.Boolean, mscorlib">
@@ -10911,76 +11256,76 @@
   <data name="&gt;&gt;label_pp_p2_26.ZOrder" xml:space="preserve">
     <value>76</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_prod.Name" xml:space="preserve">
-    <value>pp_p2_p2_prod</value>
+  <data name="&gt;&gt;pp_p2_2_prod.Name" xml:space="preserve">
+    <value>pp_p2_2_prod</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_prod.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_prod.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_prod.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_prod.Parent" xml:space="preserve">
     <value>tabDamenf</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_prod.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_prod.ZOrder" xml:space="preserve">
     <value>77</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_bearb.Name" xml:space="preserve">
-    <value>pp_p2_p2_bearb</value>
+  <data name="&gt;&gt;pp_p2_2_bearb.Name" xml:space="preserve">
+    <value>pp_p2_2_bearb</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_bearb.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_bearb.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_bearb.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_bearb.Parent" xml:space="preserve">
     <value>tabDamenf</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_bearb.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_bearb.ZOrder" xml:space="preserve">
     <value>78</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_ws.Name" xml:space="preserve">
-    <value>pp_p2_p2_ws</value>
+  <data name="&gt;&gt;pp_p2_2_ws.Name" xml:space="preserve">
+    <value>pp_p2_2_ws</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_ws.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_ws.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_ws.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_ws.Parent" xml:space="preserve">
     <value>tabDamenf</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_ws.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_ws.ZOrder" xml:space="preserve">
     <value>79</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_lager.Name" xml:space="preserve">
-    <value>pp_p2_p2_lager</value>
+  <data name="&gt;&gt;pp_p2_2_lager.Name" xml:space="preserve">
+    <value>pp_p2_2_lager</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_lager.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_lager.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_lager.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_lager.Parent" xml:space="preserve">
     <value>tabDamenf</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_lager.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_lager.ZOrder" xml:space="preserve">
     <value>80</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_sb.Name" xml:space="preserve">
-    <value>pp_p2_p2_sb</value>
+  <data name="&gt;&gt;pp_p2_2_sb.Name" xml:space="preserve">
+    <value>pp_p2_2_sb</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_sb.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_sb.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_sb.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_sb.Parent" xml:space="preserve">
     <value>tabDamenf</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_sb.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_sb.ZOrder" xml:space="preserve">
     <value>81</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_vw.Name" xml:space="preserve">
-    <value>pp_p2_p2_vw</value>
+  <data name="&gt;&gt;pp_p2_2_vw.Name" xml:space="preserve">
+    <value>pp_p2_2_vw</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_vw.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_vw.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_vw.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_vw.Parent" xml:space="preserve">
     <value>tabDamenf</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_vw.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_vw.ZOrder" xml:space="preserve">
     <value>82</value>
   </data>
   <data name="&gt;&gt;label_pp_p2_prod.Name" xml:space="preserve">
@@ -11077,7 +11422,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabDamenf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 333</value>
+    <value>820, 333</value>
   </data>
   <data name="tabDamenf.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -13242,166 +13587,166 @@
   <data name="&gt;&gt;label_pp_p2_26.ZOrder" xml:space="preserve">
     <value>76</value>
   </data>
-  <data name="pp_p2_p2_prod.Enabled" type="System.Boolean, mscorlib">
+  <data name="pp_p2_2_prod.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="pp_p2_p2_prod.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p2_2_prod.Location" type="System.Drawing.Point, System.Drawing">
     <value>718, 33</value>
   </data>
-  <data name="pp_p2_p2_prod.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p2_2_prod.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p2_p2_prod.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p2_2_prod.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p2_p2_prod.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p2_2_prod.TabIndex" type="System.Int32, mscorlib">
     <value>102</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_prod.Name" xml:space="preserve">
-    <value>pp_p2_p2_prod</value>
+  <data name="&gt;&gt;pp_p2_2_prod.Name" xml:space="preserve">
+    <value>pp_p2_2_prod</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_prod.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_prod.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_prod.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_prod.Parent" xml:space="preserve">
     <value>tabDamenf</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_prod.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_prod.ZOrder" xml:space="preserve">
     <value>77</value>
   </data>
-  <data name="pp_p2_p2_bearb.Enabled" type="System.Boolean, mscorlib">
+  <data name="pp_p2_2_bearb.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="pp_p2_p2_bearb.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p2_2_bearb.Location" type="System.Drawing.Point, System.Drawing">
     <value>617, 33</value>
   </data>
-  <data name="pp_p2_p2_bearb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p2_2_bearb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p2_p2_bearb.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p2_2_bearb.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p2_p2_bearb.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p2_2_bearb.TabIndex" type="System.Int32, mscorlib">
     <value>101</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_bearb.Name" xml:space="preserve">
-    <value>pp_p2_p2_bearb</value>
+  <data name="&gt;&gt;pp_p2_2_bearb.Name" xml:space="preserve">
+    <value>pp_p2_2_bearb</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_bearb.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_bearb.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_bearb.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_bearb.Parent" xml:space="preserve">
     <value>tabDamenf</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_bearb.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_bearb.ZOrder" xml:space="preserve">
     <value>78</value>
   </data>
-  <data name="pp_p2_p2_ws.Enabled" type="System.Boolean, mscorlib">
+  <data name="pp_p2_2_ws.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="pp_p2_p2_ws.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p2_2_ws.Location" type="System.Drawing.Point, System.Drawing">
     <value>518, 33</value>
   </data>
-  <data name="pp_p2_p2_ws.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p2_2_ws.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p2_p2_ws.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p2_2_ws.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p2_p2_ws.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p2_2_ws.TabIndex" type="System.Int32, mscorlib">
     <value>100</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_ws.Name" xml:space="preserve">
-    <value>pp_p2_p2_ws</value>
+  <data name="&gt;&gt;pp_p2_2_ws.Name" xml:space="preserve">
+    <value>pp_p2_2_ws</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_ws.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_ws.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_ws.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_ws.Parent" xml:space="preserve">
     <value>tabDamenf</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_ws.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_ws.ZOrder" xml:space="preserve">
     <value>79</value>
   </data>
-  <data name="pp_p2_p2_lager.Enabled" type="System.Boolean, mscorlib">
+  <data name="pp_p2_2_lager.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="pp_p2_p2_lager.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p2_2_lager.Location" type="System.Drawing.Point, System.Drawing">
     <value>417, 33</value>
   </data>
-  <data name="pp_p2_p2_lager.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p2_2_lager.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p2_p2_lager.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p2_2_lager.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p2_p2_lager.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p2_2_lager.TabIndex" type="System.Int32, mscorlib">
     <value>99</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_lager.Name" xml:space="preserve">
-    <value>pp_p2_p2_lager</value>
+  <data name="&gt;&gt;pp_p2_2_lager.Name" xml:space="preserve">
+    <value>pp_p2_2_lager</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_lager.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_lager.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_lager.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_lager.Parent" xml:space="preserve">
     <value>tabDamenf</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_lager.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_lager.ZOrder" xml:space="preserve">
     <value>80</value>
   </data>
-  <data name="pp_p2_p2_sb.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p2_2_sb.Location" type="System.Drawing.Point, System.Drawing">
     <value>289, 33</value>
   </data>
-  <data name="pp_p2_p2_sb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p2_2_sb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p2_p2_sb.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p2_2_sb.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p2_p2_sb.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p2_2_sb.TabIndex" type="System.Int32, mscorlib">
     <value>98</value>
   </data>
-  <data name="pp_p2_p2_sb.Text" xml:space="preserve">
+  <data name="pp_p2_2_sb.Text" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_sb.Name" xml:space="preserve">
-    <value>pp_p2_p2_sb</value>
+  <data name="&gt;&gt;pp_p2_2_sb.Name" xml:space="preserve">
+    <value>pp_p2_2_sb</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_sb.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_sb.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_sb.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_sb.Parent" xml:space="preserve">
     <value>tabDamenf</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_sb.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_sb.ZOrder" xml:space="preserve">
     <value>81</value>
   </data>
-  <data name="pp_p2_p2_vw.Enabled" type="System.Boolean, mscorlib">
+  <data name="pp_p2_2_vw.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="pp_p2_p2_vw.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p2_2_vw.Location" type="System.Drawing.Point, System.Drawing">
     <value>97, 33</value>
   </data>
-  <data name="pp_p2_p2_vw.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p2_2_vw.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p2_p2_vw.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p2_2_vw.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p2_p2_vw.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p2_2_vw.TabIndex" type="System.Int32, mscorlib">
     <value>97</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_vw.Name" xml:space="preserve">
-    <value>pp_p2_p2_vw</value>
+  <data name="&gt;&gt;pp_p2_2_vw.Name" xml:space="preserve">
+    <value>pp_p2_2_vw</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_vw.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_vw.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_vw.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_vw.Parent" xml:space="preserve">
     <value>tabDamenf</value>
   </data>
-  <data name="&gt;&gt;pp_p2_p2_vw.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p2_2_vw.ZOrder" xml:space="preserve">
     <value>82</value>
   </data>
   <data name="label_pp_p2_prod.AutoSize" type="System.Boolean, mscorlib">
@@ -14559,76 +14904,76 @@
   <data name="&gt;&gt;label_pp_p3_26.ZOrder" xml:space="preserve">
     <value>76</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_prod.Name" xml:space="preserve">
-    <value>pp_p3_p3_prod</value>
+  <data name="&gt;&gt;pp_p3_3_prod.Name" xml:space="preserve">
+    <value>pp_p3_3_prod</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_prod.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_prod.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_prod.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_prod.Parent" xml:space="preserve">
     <value>tabHerrenf</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_prod.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_prod.ZOrder" xml:space="preserve">
     <value>77</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_bearb.Name" xml:space="preserve">
-    <value>pp_p3_p3_bearb</value>
+  <data name="&gt;&gt;pp_p3_3_bearb.Name" xml:space="preserve">
+    <value>pp_p3_3_bearb</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_bearb.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_bearb.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_bearb.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_bearb.Parent" xml:space="preserve">
     <value>tabHerrenf</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_bearb.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_bearb.ZOrder" xml:space="preserve">
     <value>78</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_ws.Name" xml:space="preserve">
-    <value>pp_p3_p3_ws</value>
+  <data name="&gt;&gt;pp_p3_3_ws.Name" xml:space="preserve">
+    <value>pp_p3_3_ws</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_ws.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_ws.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_ws.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_ws.Parent" xml:space="preserve">
     <value>tabHerrenf</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_ws.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_ws.ZOrder" xml:space="preserve">
     <value>79</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_lager.Name" xml:space="preserve">
-    <value>pp_p3_p3_lager</value>
+  <data name="&gt;&gt;pp_p3_3_lager.Name" xml:space="preserve">
+    <value>pp_p3_3_lager</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_lager.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_lager.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_lager.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_lager.Parent" xml:space="preserve">
     <value>tabHerrenf</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_lager.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_lager.ZOrder" xml:space="preserve">
     <value>80</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_sb.Name" xml:space="preserve">
-    <value>pp_p3_p3_sb</value>
+  <data name="&gt;&gt;pp_p3_3_sb.Name" xml:space="preserve">
+    <value>pp_p3_3_sb</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_sb.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_sb.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_sb.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_sb.Parent" xml:space="preserve">
     <value>tabHerrenf</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_sb.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_sb.ZOrder" xml:space="preserve">
     <value>81</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_vw.Name" xml:space="preserve">
-    <value>pp_p3_p3_vw</value>
+  <data name="&gt;&gt;pp_p3_3_vw.Name" xml:space="preserve">
+    <value>pp_p3_3_vw</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_vw.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_vw.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_vw.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_vw.Parent" xml:space="preserve">
     <value>tabHerrenf</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_vw.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_vw.ZOrder" xml:space="preserve">
     <value>82</value>
   </data>
   <data name="&gt;&gt;label_pp_p3_prod.Name" xml:space="preserve">
@@ -14722,7 +15067,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabHerrenf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 333</value>
+    <value>820, 333</value>
   </data>
   <data name="tabHerrenf.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -16887,166 +17232,166 @@
   <data name="&gt;&gt;label_pp_p3_26.ZOrder" xml:space="preserve">
     <value>76</value>
   </data>
-  <data name="pp_p3_p3_prod.Enabled" type="System.Boolean, mscorlib">
+  <data name="pp_p3_3_prod.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="pp_p3_p3_prod.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p3_3_prod.Location" type="System.Drawing.Point, System.Drawing">
     <value>718, 33</value>
   </data>
-  <data name="pp_p3_p3_prod.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p3_3_prod.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p3_p3_prod.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p3_3_prod.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p3_p3_prod.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p3_3_prod.TabIndex" type="System.Int32, mscorlib">
     <value>102</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_prod.Name" xml:space="preserve">
-    <value>pp_p3_p3_prod</value>
+  <data name="&gt;&gt;pp_p3_3_prod.Name" xml:space="preserve">
+    <value>pp_p3_3_prod</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_prod.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_prod.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_prod.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_prod.Parent" xml:space="preserve">
     <value>tabHerrenf</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_prod.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_prod.ZOrder" xml:space="preserve">
     <value>77</value>
   </data>
-  <data name="pp_p3_p3_bearb.Enabled" type="System.Boolean, mscorlib">
+  <data name="pp_p3_3_bearb.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="pp_p3_p3_bearb.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p3_3_bearb.Location" type="System.Drawing.Point, System.Drawing">
     <value>617, 33</value>
   </data>
-  <data name="pp_p3_p3_bearb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p3_3_bearb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p3_p3_bearb.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p3_3_bearb.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p3_p3_bearb.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p3_3_bearb.TabIndex" type="System.Int32, mscorlib">
     <value>101</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_bearb.Name" xml:space="preserve">
-    <value>pp_p3_p3_bearb</value>
+  <data name="&gt;&gt;pp_p3_3_bearb.Name" xml:space="preserve">
+    <value>pp_p3_3_bearb</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_bearb.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_bearb.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_bearb.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_bearb.Parent" xml:space="preserve">
     <value>tabHerrenf</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_bearb.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_bearb.ZOrder" xml:space="preserve">
     <value>78</value>
   </data>
-  <data name="pp_p3_p3_ws.Enabled" type="System.Boolean, mscorlib">
+  <data name="pp_p3_3_ws.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="pp_p3_p3_ws.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p3_3_ws.Location" type="System.Drawing.Point, System.Drawing">
     <value>518, 33</value>
   </data>
-  <data name="pp_p3_p3_ws.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p3_3_ws.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p3_p3_ws.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p3_3_ws.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p3_p3_ws.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p3_3_ws.TabIndex" type="System.Int32, mscorlib">
     <value>100</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_ws.Name" xml:space="preserve">
-    <value>pp_p3_p3_ws</value>
+  <data name="&gt;&gt;pp_p3_3_ws.Name" xml:space="preserve">
+    <value>pp_p3_3_ws</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_ws.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_ws.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_ws.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_ws.Parent" xml:space="preserve">
     <value>tabHerrenf</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_ws.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_ws.ZOrder" xml:space="preserve">
     <value>79</value>
   </data>
-  <data name="pp_p3_p3_lager.Enabled" type="System.Boolean, mscorlib">
+  <data name="pp_p3_3_lager.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="pp_p3_p3_lager.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p3_3_lager.Location" type="System.Drawing.Point, System.Drawing">
     <value>417, 33</value>
   </data>
-  <data name="pp_p3_p3_lager.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p3_3_lager.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p3_p3_lager.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p3_3_lager.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p3_p3_lager.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p3_3_lager.TabIndex" type="System.Int32, mscorlib">
     <value>99</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_lager.Name" xml:space="preserve">
-    <value>pp_p3_p3_lager</value>
+  <data name="&gt;&gt;pp_p3_3_lager.Name" xml:space="preserve">
+    <value>pp_p3_3_lager</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_lager.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_lager.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_lager.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_lager.Parent" xml:space="preserve">
     <value>tabHerrenf</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_lager.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_lager.ZOrder" xml:space="preserve">
     <value>80</value>
   </data>
-  <data name="pp_p3_p3_sb.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p3_3_sb.Location" type="System.Drawing.Point, System.Drawing">
     <value>289, 33</value>
   </data>
-  <data name="pp_p3_p3_sb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p3_3_sb.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p3_p3_sb.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p3_3_sb.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p3_p3_sb.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p3_3_sb.TabIndex" type="System.Int32, mscorlib">
     <value>98</value>
   </data>
-  <data name="pp_p3_p3_sb.Text" xml:space="preserve">
+  <data name="pp_p3_3_sb.Text" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_sb.Name" xml:space="preserve">
-    <value>pp_p3_p3_sb</value>
+  <data name="&gt;&gt;pp_p3_3_sb.Name" xml:space="preserve">
+    <value>pp_p3_3_sb</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_sb.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_sb.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_sb.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_sb.Parent" xml:space="preserve">
     <value>tabHerrenf</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_sb.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_sb.ZOrder" xml:space="preserve">
     <value>81</value>
   </data>
-  <data name="pp_p3_p3_vw.Enabled" type="System.Boolean, mscorlib">
+  <data name="pp_p3_3_vw.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="pp_p3_p3_vw.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_p3_3_vw.Location" type="System.Drawing.Point, System.Drawing">
     <value>97, 33</value>
   </data>
-  <data name="pp_p3_p3_vw.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="pp_p3_3_vw.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="pp_p3_p3_vw.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pp_p3_3_vw.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 20</value>
   </data>
-  <data name="pp_p3_p3_vw.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_p3_3_vw.TabIndex" type="System.Int32, mscorlib">
     <value>97</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_vw.Name" xml:space="preserve">
-    <value>pp_p3_p3_vw</value>
+  <data name="&gt;&gt;pp_p3_3_vw.Name" xml:space="preserve">
+    <value>pp_p3_3_vw</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_vw.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_vw.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_vw.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_vw.Parent" xml:space="preserve">
     <value>tabHerrenf</value>
   </data>
-  <data name="&gt;&gt;pp_p3_p3_vw.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_p3_3_vw.ZOrder" xml:space="preserve">
     <value>82</value>
   </data>
   <data name="label_pp_p3_prod.AutoSize" type="System.Boolean, mscorlib">
@@ -17280,6 +17625,18 @@
   <data name="&gt;&gt;label_pp_p3_p3.ZOrder" xml:space="preserve">
     <value>89</value>
   </data>
+  <data name="&gt;&gt;pp_uebersicht_grid.Name" xml:space="preserve">
+    <value>pp_uebersicht_grid</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_grid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_grid.Parent" xml:space="preserve">
+    <value>tabPUebersicht</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_grid.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="tabPUebersicht.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
@@ -17287,7 +17644,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabPUebersicht.Size" type="System.Drawing.Size, System.Drawing">
-    <value>817, 333</value>
+    <value>820, 441</value>
   </data>
   <data name="tabPUebersicht.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -17307,524 +17664,44 @@
   <data name="&gt;&gt;tabPUebersicht.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;tabPage_kp_uebersicht.Name" xml:space="preserve">
-    <value>tabPage_kp_uebersicht</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_uebersicht.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_uebersicht.Parent" xml:space="preserve">
-    <value>tabControl_kp</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_uebersicht.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_aufloesung.Name" xml:space="preserve">
-    <value>tabPage_kp_aufloesung</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_aufloesung.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_aufloesung.Parent" xml:space="preserve">
-    <value>tabControl_kp</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_aufloesung.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_info.Name" xml:space="preserve">
-    <value>tabPage_kp_info</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_info.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_info.Parent" xml:space="preserve">
-    <value>tabControl_kp</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_info.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="tabControl_kp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tabControl_kp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tabControl_kp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 403</value>
-  </data>
-  <data name="tabControl_kp.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabControl_kp.Name" xml:space="preserve">
-    <value>tabControl_kp</value>
-  </data>
-  <data name="&gt;&gt;tabControl_kp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl_kp.Parent" xml:space="preserve">
-    <value>tabKapa</value>
-  </data>
-  <data name="&gt;&gt;tabControl_kp.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_kp_uebersicht.Name" xml:space="preserve">
-    <value>dataGridView_kp_uebersicht</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_kp_uebersicht.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_kp_uebersicht.Parent" xml:space="preserve">
-    <value>tabPage_kp_uebersicht</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_kp_uebersicht.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage_kp_uebersicht.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage_kp_uebersicht.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage_kp_uebersicht.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 377</value>
-  </data>
-  <data name="tabPage_kp_uebersicht.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tabPage_kp_uebersicht.Text" xml:space="preserve">
-    <value>Übersicht</value>
-  </data>
-  <data name="tabPage_kp_uebersicht.ToolTipText" xml:space="preserve">
-    <value>Übersicht zur Kapazitätsplanung</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_uebersicht.Name" xml:space="preserve">
-    <value>tabPage_kp_uebersicht</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_uebersicht.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_uebersicht.Parent" xml:space="preserve">
-    <value>tabControl_kp</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_uebersicht.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="Column_kp_uebersicht_arbeitsplatz.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="pp_uebersicht_teilnummer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column_kp_uebersicht_kapazitaetsbedarf.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="pp_uebersicht_bezeichnung.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column_kp_uebersicht_ruestzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="pp_uebersicht_Lagerbestand.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column_kp_uebersicht_preKapazitaetsbedarf.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="pp_uebersicht_prozent.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column_kp_uebersicht_preRuestzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="pp_uebersicht_warteschlange.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column_kp_uebersicht_gesamt.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="pp_uebersicht_inBearbeitung.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column_kp_uebersicht_ueberstunden.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_kp_uebersicht_2schicht.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_kp_uebersicht_3schicht.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_kp_uebersicht_leerzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="dataGridView_kp_uebersicht.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="dataGridView_kp_uebersicht.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="pp_uebersicht_grid.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 3</value>
   </data>
-  <data name="dataGridView_kp_uebersicht.Size" type="System.Drawing.Size, System.Drawing">
-    <value>821, 371</value>
+  <data name="pp_uebersicht_grid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>814, 441</value>
   </data>
-  <data name="dataGridView_kp_uebersicht.TabIndex" type="System.Int32, mscorlib">
+  <data name="pp_uebersicht_grid.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;dataGridView_kp_uebersicht.Name" xml:space="preserve">
-    <value>dataGridView_kp_uebersicht</value>
+  <data name="&gt;&gt;pp_uebersicht_grid.Name" xml:space="preserve">
+    <value>pp_uebersicht_grid</value>
   </data>
-  <data name="&gt;&gt;dataGridView_kp_uebersicht.Type" xml:space="preserve">
+  <data name="&gt;&gt;pp_uebersicht_grid.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dataGridView_kp_uebersicht.Parent" xml:space="preserve">
-    <value>tabPage_kp_uebersicht</value>
+  <data name="&gt;&gt;pp_uebersicht_grid.Parent" xml:space="preserve">
+    <value>tabPUebersicht</value>
   </data>
-  <data name="&gt;&gt;dataGridView_kp_uebersicht.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;pp_uebersicht_grid.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <metadata name="Column_kp_uebersicht_arbeitsplatz.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_kp_uebersicht_arbeitsplatz.HeaderText" xml:space="preserve">
-    <value>Arbeitsplatz</value>
-  </data>
-  <metadata name="Column_kp_uebersicht_kapazitaetsbedarf.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_kp_uebersicht_kapazitaetsbedarf.HeaderText" xml:space="preserve">
-    <value>Kapazitätsbedarf</value>
-  </data>
-  <metadata name="Column_kp_uebersicht_ruestzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_kp_uebersicht_ruestzeit.HeaderText" xml:space="preserve">
-    <value>Rüstzeit</value>
-  </data>
-  <metadata name="Column_kp_uebersicht_preKapazitaetsbedarf.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_kp_uebersicht_preKapazitaetsbedarf.HeaderText" xml:space="preserve">
-    <value>Kapazitätsbedarf aus Rückständen</value>
-  </data>
-  <metadata name="Column_kp_uebersicht_preRuestzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_kp_uebersicht_preRuestzeit.HeaderText" xml:space="preserve">
-    <value>Rüstzeit aus Rückständen</value>
-  </data>
-  <metadata name="Column_kp_uebersicht_gesamt.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_kp_uebersicht_gesamt.HeaderText" xml:space="preserve">
-    <value>Gesamt</value>
-  </data>
-  <metadata name="Column_kp_uebersicht_ueberstunden.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_kp_uebersicht_ueberstunden.HeaderText" xml:space="preserve">
-    <value>Überstunden</value>
-  </data>
-  <metadata name="Column_kp_uebersicht_2schicht.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_kp_uebersicht_2schicht.HeaderText" xml:space="preserve">
-    <value>2. Schicht</value>
-  </data>
-  <metadata name="Column_kp_uebersicht_3schicht.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_kp_uebersicht_3schicht.HeaderText" xml:space="preserve">
-    <value>3. Schicht</value>
-  </data>
-  <metadata name="Column_kp_uebersicht_leerzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_kp_uebersicht_leerzeit.HeaderText" xml:space="preserve">
-    <value>Leerzeit</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_kp_aufloesung.Name" xml:space="preserve">
-    <value>dataGridView_kp_aufloesung</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_kp_aufloesung.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_kp_aufloesung.Parent" xml:space="preserve">
-    <value>tabPage_kp_aufloesung</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_kp_aufloesung.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage_kp_aufloesung.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage_kp_aufloesung.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage_kp_aufloesung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>821, 327</value>
-  </data>
-  <data name="tabPage_kp_aufloesung.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPage_kp_aufloesung.Text" xml:space="preserve">
-    <value>Auflösung</value>
-  </data>
-  <data name="tabPage_kp_aufloesung.ToolTipText" xml:space="preserve">
-    <value>Auflösung des Kapazitätsbedarfs nach Teilen</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_aufloesung.Name" xml:space="preserve">
-    <value>tabPage_kp_aufloesung</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_aufloesung.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_aufloesung.Parent" xml:space="preserve">
-    <value>tabControl_kp</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_aufloesung.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="Column_kp_aufloesung_arbeitsplatz.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_kp_aufloesung_teil.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_kp_aufloesung_fertigungszeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_kp_aufloesung_kapazitaetsbedarfTeil.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_kp_aufloesung_ruestzeitTeil.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="dataGridView_kp_aufloesung.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="dataGridView_kp_aufloesung.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="dataGridView_kp_aufloesung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>815, 321</value>
-  </data>
-  <data name="dataGridView_kp_aufloesung.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_kp_aufloesung.Name" xml:space="preserve">
-    <value>dataGridView_kp_aufloesung</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_kp_aufloesung.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_kp_aufloesung.Parent" xml:space="preserve">
-    <value>tabPage_kp_aufloesung</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_kp_aufloesung.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="Column_kp_aufloesung_arbeitsplatz.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_kp_aufloesung_arbeitsplatz.HeaderText" xml:space="preserve">
-    <value>Arbeitsplatz</value>
-  </data>
-  <metadata name="Column_kp_aufloesung_teil.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_kp_aufloesung_teil.HeaderText" xml:space="preserve">
-    <value>Teil</value>
-  </data>
-  <metadata name="Column_kp_aufloesung_fertigungszeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_kp_aufloesung_fertigungszeit.HeaderText" xml:space="preserve">
-    <value>Fertigungszeit pro Stk.</value>
-  </data>
-  <metadata name="Column_kp_aufloesung_kapazitaetsbedarfTeil.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_kp_aufloesung_kapazitaetsbedarfTeil.HeaderText" xml:space="preserve">
-    <value>Kapazitätsbedarf</value>
-  </data>
-  <metadata name="Column_kp_aufloesung_ruestzeitTeil.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_kp_aufloesung_ruestzeitTeil.HeaderText" xml:space="preserve">
-    <value>Rüstzeit</value>
-  </data>
-  <data name="&gt;&gt;label_comment.Name" xml:space="preserve">
-    <value>label_comment</value>
-  </data>
-  <data name="&gt;&gt;label_comment.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_comment.Parent" xml:space="preserve">
-    <value>tabPage_kp_info</value>
-  </data>
-  <data name="&gt;&gt;label_comment.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBox_comment.Name" xml:space="preserve">
-    <value>textBox_comment</value>
-  </data>
-  <data name="&gt;&gt;textBox_comment.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_comment.Parent" xml:space="preserve">
-    <value>tabPage_kp_info</value>
-  </data>
-  <data name="&gt;&gt;textBox_comment.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPage_kp_info.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage_kp_info.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage_kp_info.Size" type="System.Drawing.Size, System.Drawing">
-    <value>821, 327</value>
-  </data>
-  <data name="tabPage_kp_info.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabPage_kp_info.Text" xml:space="preserve">
-    <value>Info</value>
-  </data>
-  <data name="tabPage_kp_info.ToolTipText" xml:space="preserve">
-    <value>Weiterführende Informationen</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_info.Name" xml:space="preserve">
-    <value>tabPage_kp_info</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_info.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_info.Parent" xml:space="preserve">
-    <value>tabControl_kp</value>
-  </data>
-  <data name="&gt;&gt;tabPage_kp_info.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label_comment.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label_comment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 153</value>
-  </data>
-  <data name="label_comment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 13</value>
-  </data>
-  <data name="label_comment.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label_comment.Text" xml:space="preserve">
-    <value> &gt; Abhängigkeiten von Teilen / Maschinen</value>
-  </data>
-  <data name="&gt;&gt;label_comment.Name" xml:space="preserve">
-    <value>label_comment</value>
-  </data>
-  <data name="&gt;&gt;label_comment.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_comment.Parent" xml:space="preserve">
-    <value>tabPage_kp_info</value>
-  </data>
-  <data name="&gt;&gt;label_comment.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="textBox_comment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 130</value>
-  </data>
-  <data name="textBox_comment.Size" type="System.Drawing.Size, System.Drawing">
-    <value>531, 20</value>
-  </data>
-  <data name="textBox_comment.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="textBox_comment.Text" xml:space="preserve">
-    <value>Eventuell Fertigungsdurchlauf / Stückliste (Als Bild).</value>
-  </data>
-  <data name="&gt;&gt;textBox_comment.Name" xml:space="preserve">
-    <value>textBox_comment</value>
-  </data>
-  <data name="&gt;&gt;textBox_comment.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox_comment.Parent" xml:space="preserve">
-    <value>tabPage_kp_info</value>
-  </data>
-  <data name="&gt;&gt;textBox_comment.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <metadata name="Column_best_kaufteillager_nummer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_best_kaufteillager_bezeichnung.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_best_kaufteillager_bestand.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_best_kaufteillager_wareneingang.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_best_kaufteillager_lieferdauer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_best_kaufteillager_diskontmenge.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_best_kaufteillager_bestellkosten.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="dataGridView_best_kaufteillager.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="dataGridView_best_kaufteillager.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="dataGridView_best_kaufteillager.Size" type="System.Drawing.Size, System.Drawing">
-    <value>821, 371</value>
-  </data>
-  <data name="dataGridView_best_kaufteillager.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_best_kaufteillager.Name" xml:space="preserve">
-    <value>dataGridView_best_kaufteillager</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_best_kaufteillager.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_best_kaufteillager.Parent" xml:space="preserve">
-    <value>tabPage_best_kaufteillager</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_best_kaufteillager.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="Column_best_kaufteillager_nummer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_best_kaufteillager_nummer.HeaderText" xml:space="preserve">
-    <value>Nummer</value>
-  </data>
-  <metadata name="Column_best_kaufteillager_bezeichnung.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_best_kaufteillager_bezeichnung.HeaderText" xml:space="preserve">
-    <value>Bezeichnung</value>
-  </data>
-  <metadata name="Column_best_kaufteillager_bestand.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_best_kaufteillager_bestand.HeaderText" xml:space="preserve">
-    <value>Bestand</value>
-  </data>
-  <metadata name="Column_best_kaufteillager_wareneingang.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_best_kaufteillager_wareneingang.HeaderText" xml:space="preserve">
-    <value>Wareneingang</value>
-  </data>
-  <metadata name="Column_best_kaufteillager_lieferdauer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_best_kaufteillager_lieferdauer.HeaderText" xml:space="preserve">
-    <value>Lieferdauer</value>
-  </data>
-  <metadata name="Column_best_kaufteillager_diskontmenge.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_best_kaufteillager_diskontmenge.HeaderText" xml:space="preserve">
-    <value>Diskontmenge</value>
-  </data>
-  <metadata name="Column_best_kaufteillager_bestellkosten.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_best_kaufteillager_bestellkosten.HeaderText" xml:space="preserve">
-    <value>Bestellkosten</value>
   </data>
   <metadata name="Column_best_bestelliste_nummer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -17845,7 +17722,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_best_bestellliste.Size" type="System.Drawing.Size, System.Drawing">
-    <value>821, 371</value>
+    <value>818, 344</value>
   </data>
   <data name="dataGridView_best_bestellliste.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -17917,7 +17794,7 @@
     <value>0, 0</value>
   </data>
   <data name="tabControl_dirver.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 403</value>
+    <value>832, 376</value>
   </data>
   <data name="tabControl_dirver.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -17965,7 +17842,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>827, 377</value>
+    <value>824, 350</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -18064,7 +17941,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_dirver_direktverkauf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>821, 327</value>
+    <value>824, 350</value>
   </data>
   <data name="tabPage_dirver_direktverkauf.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -18103,7 +17980,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_dirver_direktverkauf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>815, 321</value>
+    <value>818, 344</value>
   </data>
   <data name="dataGridView_dirver_direktverkauf.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -18183,6 +18060,42 @@
   <data name="imageList3.ImageSize" type="System.Drawing.Size, System.Drawing">
     <value>16, 16</value>
   </data>
+  <metadata name="pp_uebersicht_teilnummer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="pp_uebersicht_teilnummer.HeaderText" xml:space="preserve">
+    <value>Nr.</value>
+  </data>
+  <metadata name="pp_uebersicht_bezeichnung.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="pp_uebersicht_bezeichnung.HeaderText" xml:space="preserve">
+    <value>Bezeichnung</value>
+  </data>
+  <metadata name="pp_uebersicht_Lagerbestand.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="pp_uebersicht_Lagerbestand.HeaderText" xml:space="preserve">
+    <value>Lagerbestand</value>
+  </data>
+  <metadata name="pp_uebersicht_prozent.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="pp_uebersicht_prozent.HeaderText" xml:space="preserve">
+    <value>Prozent</value>
+  </data>
+  <metadata name="pp_uebersicht_warteschlange.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="pp_uebersicht_warteschlange.HeaderText" xml:space="preserve">
+    <value>Warteschlange</value>
+  </data>
+  <metadata name="pp_uebersicht_inBearbeitung.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="pp_uebersicht_inBearbeitung.HeaderText" xml:space="preserve">
+    <value>InBearbeitung</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -18193,7 +18106,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>859, 408</value>
+    <value>859, 503</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -18230,66 +18143,6 @@
   </data>
   <data name="&gt;&gt;notifyIcon1.Type" xml:space="preserve">
     <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_arbeitsplatz.Name" xml:space="preserve">
-    <value>Column_kp_uebersicht_arbeitsplatz</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_arbeitsplatz.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_kapazitaetsbedarf.Name" xml:space="preserve">
-    <value>Column_kp_uebersicht_kapazitaetsbedarf</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_kapazitaetsbedarf.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_ruestzeit.Name" xml:space="preserve">
-    <value>Column_kp_uebersicht_ruestzeit</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_ruestzeit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_preKapazitaetsbedarf.Name" xml:space="preserve">
-    <value>Column_kp_uebersicht_preKapazitaetsbedarf</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_preKapazitaetsbedarf.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_preRuestzeit.Name" xml:space="preserve">
-    <value>Column_kp_uebersicht_preRuestzeit</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_preRuestzeit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_gesamt.Name" xml:space="preserve">
-    <value>Column_kp_uebersicht_gesamt</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_gesamt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_ueberstunden.Name" xml:space="preserve">
-    <value>Column_kp_uebersicht_ueberstunden</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_ueberstunden.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_2schicht.Name" xml:space="preserve">
-    <value>Column_kp_uebersicht_2schicht</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_2schicht.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_3schicht.Name" xml:space="preserve">
-    <value>Column_kp_uebersicht_3schicht</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_3schicht.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_leerzeit.Name" xml:space="preserve">
-    <value>Column_kp_uebersicht_leerzeit</value>
-  </data>
-  <data name="&gt;&gt;Column_kp_uebersicht_leerzeit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Column_kp_aufloesung_arbeitsplatz.Name" xml:space="preserve">
     <value>Column_kp_aufloesung_arbeitsplatz</value>
@@ -18500,6 +18353,102 @@
   </data>
   <data name="&gt;&gt;imageList3.Type" xml:space="preserve">
     <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_teilnummer.Name" xml:space="preserve">
+    <value>pp_uebersicht_teilnummer</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_teilnummer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_bezeichnung.Name" xml:space="preserve">
+    <value>pp_uebersicht_bezeichnung</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_bezeichnung.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_Lagerbestand.Name" xml:space="preserve">
+    <value>pp_uebersicht_Lagerbestand</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_Lagerbestand.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_prozent.Name" xml:space="preserve">
+    <value>pp_uebersicht_prozent</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_prozent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_warteschlange.Name" xml:space="preserve">
+    <value>pp_uebersicht_warteschlange</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_warteschlange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_inBearbeitung.Name" xml:space="preserve">
+    <value>pp_uebersicht_inBearbeitung</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_inBearbeitung.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_arbeitsplatz.Name" xml:space="preserve">
+    <value>Column_kp_uebersicht_arbeitsplatz</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_arbeitsplatz.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_kapazitaetsbedarf.Name" xml:space="preserve">
+    <value>Column_kp_uebersicht_kapazitaetsbedarf</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_kapazitaetsbedarf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_ruestzeit.Name" xml:space="preserve">
+    <value>Column_kp_uebersicht_ruestzeit</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_ruestzeit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_preKapazitaetsbedarf.Name" xml:space="preserve">
+    <value>Column_kp_uebersicht_preKapazitaetsbedarf</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_preKapazitaetsbedarf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_preRuestzeit.Name" xml:space="preserve">
+    <value>Column_kp_uebersicht_preRuestzeit</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_preRuestzeit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_gesamt.Name" xml:space="preserve">
+    <value>Column_kp_uebersicht_gesamt</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_gesamt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_ueberstunden.Name" xml:space="preserve">
+    <value>Column_kp_uebersicht_ueberstunden</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_ueberstunden.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_2schicht.Name" xml:space="preserve">
+    <value>Column_kp_uebersicht_2schicht</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_2schicht.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_3schicht.Name" xml:space="preserve">
+    <value>Column_kp_uebersicht_3schicht</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_3schicht.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_leerzeit.Name" xml:space="preserve">
+    <value>Column_kp_uebersicht_leerzeit</value>
+  </data>
+  <data name="&gt;&gt;Column_kp_uebersicht_leerzeit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Start</value>

@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.spracheToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -140,12 +140,12 @@
             this.pp_p1_26_sb = new System.Windows.Forms.TextBox();
             this.pp_p1_26_vw = new System.Windows.Forms.TextBox();
             this.label_pp_p1_26 = new System.Windows.Forms.Label();
-            this.pp_p1_p1_prod = new System.Windows.Forms.TextBox();
-            this.pp_p1_p1_bearb = new System.Windows.Forms.TextBox();
-            this.pp_p1_p1_ws = new System.Windows.Forms.TextBox();
-            this.pp_p1_p1_lager = new System.Windows.Forms.TextBox();
-            this.pp_p1_p1_sb = new System.Windows.Forms.TextBox();
-            this.pp_p1_p1_vw = new System.Windows.Forms.TextBox();
+            this.pp_p1_1_prod = new System.Windows.Forms.TextBox();
+            this.pp_p1_1_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p1_1_ws = new System.Windows.Forms.TextBox();
+            this.pp_p1_1_lager = new System.Windows.Forms.TextBox();
+            this.pp_p1_1_sb = new System.Windows.Forms.TextBox();
+            this.pp_p1_1_vw = new System.Windows.Forms.TextBox();
             this.label_pp_p1_prod = new System.Windows.Forms.Label();
             this.label_pp_p1_bearb = new System.Windows.Forms.Label();
             this.label_pp_p1_ws = new System.Windows.Forms.Label();
@@ -231,12 +231,12 @@
             this.pp_p2_26_sb = new System.Windows.Forms.TextBox();
             this.pp_p2_26_vw = new System.Windows.Forms.TextBox();
             this.label_pp_p2_26 = new System.Windows.Forms.Label();
-            this.pp_p2_p2_prod = new System.Windows.Forms.TextBox();
-            this.pp_p2_p2_bearb = new System.Windows.Forms.TextBox();
-            this.pp_p2_p2_ws = new System.Windows.Forms.TextBox();
-            this.pp_p2_p2_lager = new System.Windows.Forms.TextBox();
-            this.pp_p2_p2_sb = new System.Windows.Forms.TextBox();
-            this.pp_p2_p2_vw = new System.Windows.Forms.TextBox();
+            this.pp_p2_2_prod = new System.Windows.Forms.TextBox();
+            this.pp_p2_2_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p2_2_ws = new System.Windows.Forms.TextBox();
+            this.pp_p2_2_lager = new System.Windows.Forms.TextBox();
+            this.pp_p2_2_sb = new System.Windows.Forms.TextBox();
+            this.pp_p2_2_vw = new System.Windows.Forms.TextBox();
             this.label_pp_p2_prod = new System.Windows.Forms.Label();
             this.label_pp_p2_bearb = new System.Windows.Forms.Label();
             this.label_pp_p2_ws = new System.Windows.Forms.Label();
@@ -322,12 +322,12 @@
             this.pp_p3_26_sb = new System.Windows.Forms.TextBox();
             this.pp_p3_26_vw = new System.Windows.Forms.TextBox();
             this.label_pp_p3_26 = new System.Windows.Forms.Label();
-            this.pp_p3_p3_prod = new System.Windows.Forms.TextBox();
-            this.pp_p3_p3_bearb = new System.Windows.Forms.TextBox();
-            this.pp_p3_p3_ws = new System.Windows.Forms.TextBox();
-            this.pp_p3_p3_lager = new System.Windows.Forms.TextBox();
-            this.pp_p3_p3_sb = new System.Windows.Forms.TextBox();
-            this.pp_p3_p3_vw = new System.Windows.Forms.TextBox();
+            this.pp_p3_3_prod = new System.Windows.Forms.TextBox();
+            this.pp_p3_3_bearb = new System.Windows.Forms.TextBox();
+            this.pp_p3_3_ws = new System.Windows.Forms.TextBox();
+            this.pp_p3_3_lager = new System.Windows.Forms.TextBox();
+            this.pp_p3_3_sb = new System.Windows.Forms.TextBox();
+            this.pp_p3_3_vw = new System.Windows.Forms.TextBox();
             this.label_pp_p3_prod = new System.Windows.Forms.Label();
             this.label_pp_p3_bearb = new System.Windows.Forms.Label();
             this.label_pp_p3_ws = new System.Windows.Forms.Label();
@@ -336,20 +336,11 @@
             this.label_pp_p3_vw = new System.Windows.Forms.Label();
             this.label_pp_p3_p3 = new System.Windows.Forms.Label();
             this.tabPUebersicht = new System.Windows.Forms.TabPage();
+            this.pp_uebersicht_grid = new System.Windows.Forms.DataGridView();
             this.tabKapa = new System.Windows.Forms.TabPage();
             this.tabControl_kp = new System.Windows.Forms.TabControl();
             this.tabPage_kp_uebersicht = new System.Windows.Forms.TabPage();
             this.dataGridView_kp_uebersicht = new System.Windows.Forms.DataGridView();
-            this.Column_kp_uebersicht_arbeitsplatz = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_kp_uebersicht_kapazitaetsbedarf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_kp_uebersicht_ruestzeit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_kp_uebersicht_preKapazitaetsbedarf = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_kp_uebersicht_preRuestzeit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_kp_uebersicht_gesamt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_kp_uebersicht_ueberstunden = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_kp_uebersicht_2schicht = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Column_kp_uebersicht_3schicht = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Column_kp_uebersicht_leerzeit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage_kp_aufloesung = new System.Windows.Forms.TabPage();
             this.dataGridView_kp_aufloesung = new System.Windows.Forms.DataGridView();
             this.Column_kp_aufloesung_arbeitsplatz = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -608,6 +599,22 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
+            this.pp_uebersicht_teilnummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pp_uebersicht_bezeichnung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pp_uebersicht_Lagerbestand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pp_uebersicht_prozent = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pp_uebersicht_warteschlange = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pp_uebersicht_inBearbeitung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_kp_uebersicht_arbeitsplatz = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_kp_uebersicht_kapazitaetsbedarf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_kp_uebersicht_ruestzeit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_kp_uebersicht_preKapazitaetsbedarf = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_kp_uebersicht_preRuestzeit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_kp_uebersicht_gesamt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_kp_uebersicht_ueberstunden = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_kp_uebersicht_2schicht = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Column_kp_uebersicht_3schicht = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Column_kp_uebersicht_leerzeit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPrognose.SuspendLayout();
@@ -628,6 +635,8 @@
             this.tabKinderf.SuspendLayout();
             this.tabDamenf.SuspendLayout();
             this.tabHerrenf.SuspendLayout();
+            this.tabPUebersicht.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pp_uebersicht_grid)).BeginInit();
             this.tabKapa.SuspendLayout();
             this.tabControl_kp.SuspendLayout();
             this.tabPage_kp_uebersicht.SuspendLayout();
@@ -1111,12 +1120,12 @@
             this.tabKinderf.Controls.Add(this.pp_p1_26_sb);
             this.tabKinderf.Controls.Add(this.pp_p1_26_vw);
             this.tabKinderf.Controls.Add(this.label_pp_p1_26);
-            this.tabKinderf.Controls.Add(this.pp_p1_p1_prod);
-            this.tabKinderf.Controls.Add(this.pp_p1_p1_bearb);
-            this.tabKinderf.Controls.Add(this.pp_p1_p1_ws);
-            this.tabKinderf.Controls.Add(this.pp_p1_p1_lager);
-            this.tabKinderf.Controls.Add(this.pp_p1_p1_sb);
-            this.tabKinderf.Controls.Add(this.pp_p1_p1_vw);
+            this.tabKinderf.Controls.Add(this.pp_p1_1_prod);
+            this.tabKinderf.Controls.Add(this.pp_p1_1_bearb);
+            this.tabKinderf.Controls.Add(this.pp_p1_1_ws);
+            this.tabKinderf.Controls.Add(this.pp_p1_1_lager);
+            this.tabKinderf.Controls.Add(this.pp_p1_1_sb);
+            this.tabKinderf.Controls.Add(this.pp_p1_1_vw);
             this.tabKinderf.Controls.Add(this.label_pp_p1_prod);
             this.tabKinderf.Controls.Add(this.label_pp_p1_bearb);
             this.tabKinderf.Controls.Add(this.label_pp_p1_ws);
@@ -1513,37 +1522,37 @@
             resources.ApplyResources(this.label_pp_p1_26, "label_pp_p1_26");
             this.label_pp_p1_26.Name = "label_pp_p1_26";
             // 
-            // pp_p1_p1_prod
+            // pp_p1_1_prod
             // 
-            resources.ApplyResources(this.pp_p1_p1_prod, "pp_p1_p1_prod");
-            this.pp_p1_p1_prod.Name = "pp_p1_p1_prod";
+            resources.ApplyResources(this.pp_p1_1_prod, "pp_p1_1_prod");
+            this.pp_p1_1_prod.Name = "pp_p1_1_prod";
             // 
-            // pp_p1_p1_bearb
+            // pp_p1_1_bearb
             // 
-            resources.ApplyResources(this.pp_p1_p1_bearb, "pp_p1_p1_bearb");
-            this.pp_p1_p1_bearb.Name = "pp_p1_p1_bearb";
+            resources.ApplyResources(this.pp_p1_1_bearb, "pp_p1_1_bearb");
+            this.pp_p1_1_bearb.Name = "pp_p1_1_bearb";
             // 
-            // pp_p1_p1_ws
+            // pp_p1_1_ws
             // 
-            resources.ApplyResources(this.pp_p1_p1_ws, "pp_p1_p1_ws");
-            this.pp_p1_p1_ws.Name = "pp_p1_p1_ws";
+            resources.ApplyResources(this.pp_p1_1_ws, "pp_p1_1_ws");
+            this.pp_p1_1_ws.Name = "pp_p1_1_ws";
             // 
-            // pp_p1_p1_lager
+            // pp_p1_1_lager
             // 
-            resources.ApplyResources(this.pp_p1_p1_lager, "pp_p1_p1_lager");
-            this.pp_p1_p1_lager.Name = "pp_p1_p1_lager";
+            resources.ApplyResources(this.pp_p1_1_lager, "pp_p1_1_lager");
+            this.pp_p1_1_lager.Name = "pp_p1_1_lager";
             // 
-            // pp_p1_p1_sb
+            // pp_p1_1_sb
             // 
-            resources.ApplyResources(this.pp_p1_p1_sb, "pp_p1_p1_sb");
-            this.pp_p1_p1_sb.Name = "pp_p1_p1_sb";
-            this.pp_p1_p1_sb.TextChanged += new System.EventHandler(this.pp_p1_p1_sb_TextChanged);
+            resources.ApplyResources(this.pp_p1_1_sb, "pp_p1_1_sb");
+            this.pp_p1_1_sb.Name = "pp_p1_1_sb";
+            this.pp_p1_1_sb.TextChanged += new System.EventHandler(this.pp_p1_p1_sb_TextChanged);
             // 
-            // pp_p1_p1_vw
+            // pp_p1_1_vw
             // 
-            resources.ApplyResources(this.pp_p1_p1_vw, "pp_p1_p1_vw");
-            this.pp_p1_p1_vw.Name = "pp_p1_p1_vw";
-            this.pp_p1_p1_vw.TextChanged += new System.EventHandler(this.pp_p1_p1_vw_TextChanged);
+            resources.ApplyResources(this.pp_p1_1_vw, "pp_p1_1_vw");
+            this.pp_p1_1_vw.Name = "pp_p1_1_vw";
+            this.pp_p1_1_vw.TextChanged += new System.EventHandler(this.pp_p1_p1_vw_TextChanged);
             // 
             // label_pp_p1_prod
             // 
@@ -1659,12 +1668,12 @@
             this.tabDamenf.Controls.Add(this.pp_p2_26_sb);
             this.tabDamenf.Controls.Add(this.pp_p2_26_vw);
             this.tabDamenf.Controls.Add(this.label_pp_p2_26);
-            this.tabDamenf.Controls.Add(this.pp_p2_p2_prod);
-            this.tabDamenf.Controls.Add(this.pp_p2_p2_bearb);
-            this.tabDamenf.Controls.Add(this.pp_p2_p2_ws);
-            this.tabDamenf.Controls.Add(this.pp_p2_p2_lager);
-            this.tabDamenf.Controls.Add(this.pp_p2_p2_sb);
-            this.tabDamenf.Controls.Add(this.pp_p2_p2_vw);
+            this.tabDamenf.Controls.Add(this.pp_p2_2_prod);
+            this.tabDamenf.Controls.Add(this.pp_p2_2_bearb);
+            this.tabDamenf.Controls.Add(this.pp_p2_2_ws);
+            this.tabDamenf.Controls.Add(this.pp_p2_2_lager);
+            this.tabDamenf.Controls.Add(this.pp_p2_2_sb);
+            this.tabDamenf.Controls.Add(this.pp_p2_2_vw);
             this.tabDamenf.Controls.Add(this.label_pp_p2_prod);
             this.tabDamenf.Controls.Add(this.label_pp_p2_bearb);
             this.tabDamenf.Controls.Add(this.label_pp_p2_ws);
@@ -2063,35 +2072,35 @@
             resources.ApplyResources(this.label_pp_p2_26, "label_pp_p2_26");
             this.label_pp_p2_26.Name = "label_pp_p2_26";
             // 
-            // pp_p2_p2_prod
+            // pp_p2_2_prod
             // 
-            resources.ApplyResources(this.pp_p2_p2_prod, "pp_p2_p2_prod");
-            this.pp_p2_p2_prod.Name = "pp_p2_p2_prod";
+            resources.ApplyResources(this.pp_p2_2_prod, "pp_p2_2_prod");
+            this.pp_p2_2_prod.Name = "pp_p2_2_prod";
             // 
-            // pp_p2_p2_bearb
+            // pp_p2_2_bearb
             // 
-            resources.ApplyResources(this.pp_p2_p2_bearb, "pp_p2_p2_bearb");
-            this.pp_p2_p2_bearb.Name = "pp_p2_p2_bearb";
+            resources.ApplyResources(this.pp_p2_2_bearb, "pp_p2_2_bearb");
+            this.pp_p2_2_bearb.Name = "pp_p2_2_bearb";
             // 
-            // pp_p2_p2_ws
+            // pp_p2_2_ws
             // 
-            resources.ApplyResources(this.pp_p2_p2_ws, "pp_p2_p2_ws");
-            this.pp_p2_p2_ws.Name = "pp_p2_p2_ws";
+            resources.ApplyResources(this.pp_p2_2_ws, "pp_p2_2_ws");
+            this.pp_p2_2_ws.Name = "pp_p2_2_ws";
             // 
-            // pp_p2_p2_lager
+            // pp_p2_2_lager
             // 
-            resources.ApplyResources(this.pp_p2_p2_lager, "pp_p2_p2_lager");
-            this.pp_p2_p2_lager.Name = "pp_p2_p2_lager";
+            resources.ApplyResources(this.pp_p2_2_lager, "pp_p2_2_lager");
+            this.pp_p2_2_lager.Name = "pp_p2_2_lager";
             // 
-            // pp_p2_p2_sb
+            // pp_p2_2_sb
             // 
-            resources.ApplyResources(this.pp_p2_p2_sb, "pp_p2_p2_sb");
-            this.pp_p2_p2_sb.Name = "pp_p2_p2_sb";
+            resources.ApplyResources(this.pp_p2_2_sb, "pp_p2_2_sb");
+            this.pp_p2_2_sb.Name = "pp_p2_2_sb";
             // 
-            // pp_p2_p2_vw
+            // pp_p2_2_vw
             // 
-            resources.ApplyResources(this.pp_p2_p2_vw, "pp_p2_p2_vw");
-            this.pp_p2_p2_vw.Name = "pp_p2_p2_vw";
+            resources.ApplyResources(this.pp_p2_2_vw, "pp_p2_2_vw");
+            this.pp_p2_2_vw.Name = "pp_p2_2_vw";
             // 
             // label_pp_p2_prod
             // 
@@ -2207,12 +2216,12 @@
             this.tabHerrenf.Controls.Add(this.pp_p3_26_sb);
             this.tabHerrenf.Controls.Add(this.pp_p3_26_vw);
             this.tabHerrenf.Controls.Add(this.label_pp_p3_26);
-            this.tabHerrenf.Controls.Add(this.pp_p3_p3_prod);
-            this.tabHerrenf.Controls.Add(this.pp_p3_p3_bearb);
-            this.tabHerrenf.Controls.Add(this.pp_p3_p3_ws);
-            this.tabHerrenf.Controls.Add(this.pp_p3_p3_lager);
-            this.tabHerrenf.Controls.Add(this.pp_p3_p3_sb);
-            this.tabHerrenf.Controls.Add(this.pp_p3_p3_vw);
+            this.tabHerrenf.Controls.Add(this.pp_p3_3_prod);
+            this.tabHerrenf.Controls.Add(this.pp_p3_3_bearb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_3_ws);
+            this.tabHerrenf.Controls.Add(this.pp_p3_3_lager);
+            this.tabHerrenf.Controls.Add(this.pp_p3_3_sb);
+            this.tabHerrenf.Controls.Add(this.pp_p3_3_vw);
             this.tabHerrenf.Controls.Add(this.label_pp_p3_prod);
             this.tabHerrenf.Controls.Add(this.label_pp_p3_bearb);
             this.tabHerrenf.Controls.Add(this.label_pp_p3_ws);
@@ -2609,35 +2618,35 @@
             resources.ApplyResources(this.label_pp_p3_26, "label_pp_p3_26");
             this.label_pp_p3_26.Name = "label_pp_p3_26";
             // 
-            // pp_p3_p3_prod
+            // pp_p3_3_prod
             // 
-            resources.ApplyResources(this.pp_p3_p3_prod, "pp_p3_p3_prod");
-            this.pp_p3_p3_prod.Name = "pp_p3_p3_prod";
+            resources.ApplyResources(this.pp_p3_3_prod, "pp_p3_3_prod");
+            this.pp_p3_3_prod.Name = "pp_p3_3_prod";
             // 
-            // pp_p3_p3_bearb
+            // pp_p3_3_bearb
             // 
-            resources.ApplyResources(this.pp_p3_p3_bearb, "pp_p3_p3_bearb");
-            this.pp_p3_p3_bearb.Name = "pp_p3_p3_bearb";
+            resources.ApplyResources(this.pp_p3_3_bearb, "pp_p3_3_bearb");
+            this.pp_p3_3_bearb.Name = "pp_p3_3_bearb";
             // 
-            // pp_p3_p3_ws
+            // pp_p3_3_ws
             // 
-            resources.ApplyResources(this.pp_p3_p3_ws, "pp_p3_p3_ws");
-            this.pp_p3_p3_ws.Name = "pp_p3_p3_ws";
+            resources.ApplyResources(this.pp_p3_3_ws, "pp_p3_3_ws");
+            this.pp_p3_3_ws.Name = "pp_p3_3_ws";
             // 
-            // pp_p3_p3_lager
+            // pp_p3_3_lager
             // 
-            resources.ApplyResources(this.pp_p3_p3_lager, "pp_p3_p3_lager");
-            this.pp_p3_p3_lager.Name = "pp_p3_p3_lager";
+            resources.ApplyResources(this.pp_p3_3_lager, "pp_p3_3_lager");
+            this.pp_p3_3_lager.Name = "pp_p3_3_lager";
             // 
-            // pp_p3_p3_sb
+            // pp_p3_3_sb
             // 
-            resources.ApplyResources(this.pp_p3_p3_sb, "pp_p3_p3_sb");
-            this.pp_p3_p3_sb.Name = "pp_p3_p3_sb";
+            resources.ApplyResources(this.pp_p3_3_sb, "pp_p3_3_sb");
+            this.pp_p3_3_sb.Name = "pp_p3_3_sb";
             // 
-            // pp_p3_p3_vw
+            // pp_p3_3_vw
             // 
-            resources.ApplyResources(this.pp_p3_p3_vw, "pp_p3_p3_vw");
-            this.pp_p3_p3_vw.Name = "pp_p3_p3_vw";
+            resources.ApplyResources(this.pp_p3_3_vw, "pp_p3_3_vw");
+            this.pp_p3_3_vw.Name = "pp_p3_3_vw";
             // 
             // label_pp_p3_prod
             // 
@@ -2676,9 +2685,23 @@
             // 
             // tabPUebersicht
             // 
+            this.tabPUebersicht.Controls.Add(this.pp_uebersicht_grid);
             resources.ApplyResources(this.tabPUebersicht, "tabPUebersicht");
             this.tabPUebersicht.Name = "tabPUebersicht";
             this.tabPUebersicht.UseVisualStyleBackColor = true;
+            // 
+            // pp_uebersicht_grid
+            // 
+            this.pp_uebersicht_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pp_uebersicht_grid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.pp_uebersicht_teilnummer,
+            this.pp_uebersicht_bezeichnung,
+            this.pp_uebersicht_Lagerbestand,
+            this.pp_uebersicht_prozent,
+            this.pp_uebersicht_warteschlange,
+            this.pp_uebersicht_inBearbeitung});
+            resources.ApplyResources(this.pp_uebersicht_grid, "pp_uebersicht_grid");
+            this.pp_uebersicht_grid.Name = "pp_uebersicht_grid";
             // 
             // tabKapa
             // 
@@ -2726,81 +2749,6 @@
             resources.ApplyResources(this.dataGridView_kp_uebersicht, "dataGridView_kp_uebersicht");
             this.dataGridView_kp_uebersicht.Name = "dataGridView_kp_uebersicht";
             this.dataGridView_kp_uebersicht.RowHeadersVisible = false;
-            // 
-            // Column_kp_uebersicht_arbeitsplatz
-            // 
-            this.Column_kp_uebersicht_arbeitsplatz.FillWeight = 80F;
-            resources.ApplyResources(this.Column_kp_uebersicht_arbeitsplatz, "Column_kp_uebersicht_arbeitsplatz");
-            this.Column_kp_uebersicht_arbeitsplatz.Name = "Column_kp_uebersicht_arbeitsplatz";
-            this.Column_kp_uebersicht_arbeitsplatz.ReadOnly = true;
-            this.Column_kp_uebersicht_arbeitsplatz.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_kp_uebersicht_kapazitaetsbedarf
-            // 
-            this.Column_kp_uebersicht_kapazitaetsbedarf.FillWeight = 120F;
-            resources.ApplyResources(this.Column_kp_uebersicht_kapazitaetsbedarf, "Column_kp_uebersicht_kapazitaetsbedarf");
-            this.Column_kp_uebersicht_kapazitaetsbedarf.Name = "Column_kp_uebersicht_kapazitaetsbedarf";
-            this.Column_kp_uebersicht_kapazitaetsbedarf.ReadOnly = true;
-            this.Column_kp_uebersicht_kapazitaetsbedarf.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_kp_uebersicht_ruestzeit
-            // 
-            resources.ApplyResources(this.Column_kp_uebersicht_ruestzeit, "Column_kp_uebersicht_ruestzeit");
-            this.Column_kp_uebersicht_ruestzeit.Name = "Column_kp_uebersicht_ruestzeit";
-            this.Column_kp_uebersicht_ruestzeit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_kp_uebersicht_preKapazitaetsbedarf
-            // 
-            this.Column_kp_uebersicht_preKapazitaetsbedarf.FillWeight = 120F;
-            resources.ApplyResources(this.Column_kp_uebersicht_preKapazitaetsbedarf, "Column_kp_uebersicht_preKapazitaetsbedarf");
-            this.Column_kp_uebersicht_preKapazitaetsbedarf.Name = "Column_kp_uebersicht_preKapazitaetsbedarf";
-            this.Column_kp_uebersicht_preKapazitaetsbedarf.ReadOnly = true;
-            this.Column_kp_uebersicht_preKapazitaetsbedarf.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_kp_uebersicht_preRuestzeit
-            // 
-            resources.ApplyResources(this.Column_kp_uebersicht_preRuestzeit, "Column_kp_uebersicht_preRuestzeit");
-            this.Column_kp_uebersicht_preRuestzeit.Name = "Column_kp_uebersicht_preRuestzeit";
-            this.Column_kp_uebersicht_preRuestzeit.ReadOnly = true;
-            this.Column_kp_uebersicht_preRuestzeit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_kp_uebersicht_gesamt
-            // 
-            this.Column_kp_uebersicht_gesamt.DividerWidth = 3;
-            resources.ApplyResources(this.Column_kp_uebersicht_gesamt, "Column_kp_uebersicht_gesamt");
-            this.Column_kp_uebersicht_gesamt.Name = "Column_kp_uebersicht_gesamt";
-            this.Column_kp_uebersicht_gesamt.ReadOnly = true;
-            this.Column_kp_uebersicht_gesamt.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_kp_uebersicht_ueberstunden
-            // 
-            resources.ApplyResources(this.Column_kp_uebersicht_ueberstunden, "Column_kp_uebersicht_ueberstunden");
-            this.Column_kp_uebersicht_ueberstunden.Name = "Column_kp_uebersicht_ueberstunden";
-            this.Column_kp_uebersicht_ueberstunden.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_kp_uebersicht_2schicht
-            // 
-            this.Column_kp_uebersicht_2schicht.FillWeight = 80F;
-            resources.ApplyResources(this.Column_kp_uebersicht_2schicht, "Column_kp_uebersicht_2schicht");
-            this.Column_kp_uebersicht_2schicht.Name = "Column_kp_uebersicht_2schicht";
-            this.Column_kp_uebersicht_2schicht.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column_kp_uebersicht_2schicht.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // Column_kp_uebersicht_3schicht
-            // 
-            this.Column_kp_uebersicht_3schicht.DividerWidth = 3;
-            this.Column_kp_uebersicht_3schicht.FillWeight = 83F;
-            resources.ApplyResources(this.Column_kp_uebersicht_3schicht, "Column_kp_uebersicht_3schicht");
-            this.Column_kp_uebersicht_3schicht.Name = "Column_kp_uebersicht_3schicht";
-            this.Column_kp_uebersicht_3schicht.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column_kp_uebersicht_3schicht.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // Column_kp_uebersicht_leerzeit
-            // 
-            resources.ApplyResources(this.Column_kp_uebersicht_leerzeit, "Column_kp_uebersicht_leerzeit");
-            this.Column_kp_uebersicht_leerzeit.Name = "Column_kp_uebersicht_leerzeit";
-            this.Column_kp_uebersicht_leerzeit.ReadOnly = true;
-            this.Column_kp_uebersicht_leerzeit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // tabPage_kp_aufloesung
             // 
@@ -4306,18 +4254,18 @@
             // 
             // Column_best_bestelliste_nummer
             // 
-            dataGridViewCellStyle3.Format = "N0";
-            dataGridViewCellStyle3.NullValue = null;
-            this.Column_best_bestelliste_nummer.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Format = "N0";
+            dataGridViewCellStyle9.NullValue = null;
+            this.Column_best_bestelliste_nummer.DefaultCellStyle = dataGridViewCellStyle9;
             resources.ApplyResources(this.Column_best_bestelliste_nummer, "Column_best_bestelliste_nummer");
             this.Column_best_bestelliste_nummer.Name = "Column_best_bestelliste_nummer";
             this.Column_best_bestelliste_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Column_best_bestelliste_menge
             // 
-            dataGridViewCellStyle4.Format = "N0";
-            dataGridViewCellStyle4.NullValue = null;
-            this.Column_best_bestelliste_menge.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle10.Format = "N0";
+            dataGridViewCellStyle10.NullValue = null;
+            this.Column_best_bestelliste_menge.DefaultCellStyle = dataGridViewCellStyle10;
             resources.ApplyResources(this.Column_best_bestelliste_menge, "Column_best_bestelliste_menge");
             this.Column_best_bestelliste_menge.Name = "Column_best_bestelliste_menge";
             this.Column_best_bestelliste_menge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -4468,6 +4416,111 @@
             resources.ApplyResources(this.imageList3, "imageList3");
             this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // pp_uebersicht_teilnummer
+            // 
+            resources.ApplyResources(this.pp_uebersicht_teilnummer, "pp_uebersicht_teilnummer");
+            this.pp_uebersicht_teilnummer.Name = "pp_uebersicht_teilnummer";
+            // 
+            // pp_uebersicht_bezeichnung
+            // 
+            resources.ApplyResources(this.pp_uebersicht_bezeichnung, "pp_uebersicht_bezeichnung");
+            this.pp_uebersicht_bezeichnung.Name = "pp_uebersicht_bezeichnung";
+            // 
+            // pp_uebersicht_Lagerbestand
+            // 
+            resources.ApplyResources(this.pp_uebersicht_Lagerbestand, "pp_uebersicht_Lagerbestand");
+            this.pp_uebersicht_Lagerbestand.Name = "pp_uebersicht_Lagerbestand";
+            // 
+            // pp_uebersicht_prozent
+            // 
+            resources.ApplyResources(this.pp_uebersicht_prozent, "pp_uebersicht_prozent");
+            this.pp_uebersicht_prozent.Name = "pp_uebersicht_prozent";
+            // 
+            // pp_uebersicht_warteschlange
+            // 
+            resources.ApplyResources(this.pp_uebersicht_warteschlange, "pp_uebersicht_warteschlange");
+            this.pp_uebersicht_warteschlange.Name = "pp_uebersicht_warteschlange";
+            // 
+            // pp_uebersicht_inBearbeitung
+            // 
+            resources.ApplyResources(this.pp_uebersicht_inBearbeitung, "pp_uebersicht_inBearbeitung");
+            this.pp_uebersicht_inBearbeitung.Name = "pp_uebersicht_inBearbeitung";
+            // 
+            // Column_kp_uebersicht_arbeitsplatz
+            // 
+            this.Column_kp_uebersicht_arbeitsplatz.FillWeight = 80F;
+            resources.ApplyResources(this.Column_kp_uebersicht_arbeitsplatz, "Column_kp_uebersicht_arbeitsplatz");
+            this.Column_kp_uebersicht_arbeitsplatz.Name = "Column_kp_uebersicht_arbeitsplatz";
+            this.Column_kp_uebersicht_arbeitsplatz.ReadOnly = true;
+            this.Column_kp_uebersicht_arbeitsplatz.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_kp_uebersicht_kapazitaetsbedarf
+            // 
+            this.Column_kp_uebersicht_kapazitaetsbedarf.FillWeight = 120F;
+            resources.ApplyResources(this.Column_kp_uebersicht_kapazitaetsbedarf, "Column_kp_uebersicht_kapazitaetsbedarf");
+            this.Column_kp_uebersicht_kapazitaetsbedarf.Name = "Column_kp_uebersicht_kapazitaetsbedarf";
+            this.Column_kp_uebersicht_kapazitaetsbedarf.ReadOnly = true;
+            this.Column_kp_uebersicht_kapazitaetsbedarf.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_kp_uebersicht_ruestzeit
+            // 
+            resources.ApplyResources(this.Column_kp_uebersicht_ruestzeit, "Column_kp_uebersicht_ruestzeit");
+            this.Column_kp_uebersicht_ruestzeit.Name = "Column_kp_uebersicht_ruestzeit";
+            this.Column_kp_uebersicht_ruestzeit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_kp_uebersicht_preKapazitaetsbedarf
+            // 
+            this.Column_kp_uebersicht_preKapazitaetsbedarf.FillWeight = 120F;
+            resources.ApplyResources(this.Column_kp_uebersicht_preKapazitaetsbedarf, "Column_kp_uebersicht_preKapazitaetsbedarf");
+            this.Column_kp_uebersicht_preKapazitaetsbedarf.Name = "Column_kp_uebersicht_preKapazitaetsbedarf";
+            this.Column_kp_uebersicht_preKapazitaetsbedarf.ReadOnly = true;
+            this.Column_kp_uebersicht_preKapazitaetsbedarf.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_kp_uebersicht_preRuestzeit
+            // 
+            resources.ApplyResources(this.Column_kp_uebersicht_preRuestzeit, "Column_kp_uebersicht_preRuestzeit");
+            this.Column_kp_uebersicht_preRuestzeit.Name = "Column_kp_uebersicht_preRuestzeit";
+            this.Column_kp_uebersicht_preRuestzeit.ReadOnly = true;
+            this.Column_kp_uebersicht_preRuestzeit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_kp_uebersicht_gesamt
+            // 
+            this.Column_kp_uebersicht_gesamt.DividerWidth = 3;
+            resources.ApplyResources(this.Column_kp_uebersicht_gesamt, "Column_kp_uebersicht_gesamt");
+            this.Column_kp_uebersicht_gesamt.Name = "Column_kp_uebersicht_gesamt";
+            this.Column_kp_uebersicht_gesamt.ReadOnly = true;
+            this.Column_kp_uebersicht_gesamt.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_kp_uebersicht_ueberstunden
+            // 
+            resources.ApplyResources(this.Column_kp_uebersicht_ueberstunden, "Column_kp_uebersicht_ueberstunden");
+            this.Column_kp_uebersicht_ueberstunden.Name = "Column_kp_uebersicht_ueberstunden";
+            this.Column_kp_uebersicht_ueberstunden.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_kp_uebersicht_2schicht
+            // 
+            this.Column_kp_uebersicht_2schicht.FillWeight = 80F;
+            resources.ApplyResources(this.Column_kp_uebersicht_2schicht, "Column_kp_uebersicht_2schicht");
+            this.Column_kp_uebersicht_2schicht.Name = "Column_kp_uebersicht_2schicht";
+            this.Column_kp_uebersicht_2schicht.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_kp_uebersicht_2schicht.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Column_kp_uebersicht_3schicht
+            // 
+            this.Column_kp_uebersicht_3schicht.DividerWidth = 3;
+            this.Column_kp_uebersicht_3schicht.FillWeight = 83F;
+            resources.ApplyResources(this.Column_kp_uebersicht_3schicht, "Column_kp_uebersicht_3schicht");
+            this.Column_kp_uebersicht_3schicht.Name = "Column_kp_uebersicht_3schicht";
+            this.Column_kp_uebersicht_3schicht.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_kp_uebersicht_3schicht.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Column_kp_uebersicht_leerzeit
+            // 
+            resources.ApplyResources(this.Column_kp_uebersicht_leerzeit, "Column_kp_uebersicht_leerzeit");
+            this.Column_kp_uebersicht_leerzeit.Name = "Column_kp_uebersicht_leerzeit";
+            this.Column_kp_uebersicht_leerzeit.ReadOnly = true;
+            this.Column_kp_uebersicht_leerzeit.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
             // Start
             // 
             resources.ApplyResources(this, "$this");
@@ -4502,6 +4555,8 @@
             this.tabDamenf.PerformLayout();
             this.tabHerrenf.ResumeLayout(false);
             this.tabHerrenf.PerformLayout();
+            this.tabPUebersicht.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pp_uebersicht_grid)).EndInit();
             this.tabKapa.ResumeLayout(false);
             this.tabControl_kp.ResumeLayout(false);
             this.tabPage_kp_uebersicht.ResumeLayout(false);
@@ -4652,12 +4707,12 @@
         private System.Windows.Forms.TextBox pp_p1_26_sb;
         private System.Windows.Forms.TextBox pp_p1_26_vw;
         private System.Windows.Forms.Label label_pp_p1_26;
-        private System.Windows.Forms.TextBox pp_p1_p1_prod;
-        private System.Windows.Forms.TextBox pp_p1_p1_bearb;
-        private System.Windows.Forms.TextBox pp_p1_p1_ws;
-        private System.Windows.Forms.TextBox pp_p1_p1_lager;
-        private System.Windows.Forms.TextBox pp_p1_p1_sb;
-        private System.Windows.Forms.TextBox pp_p1_p1_vw;
+        private System.Windows.Forms.TextBox pp_p1_1_prod;
+        private System.Windows.Forms.TextBox pp_p1_1_bearb;
+        private System.Windows.Forms.TextBox pp_p1_1_ws;
+        private System.Windows.Forms.TextBox pp_p1_1_lager;
+        private System.Windows.Forms.TextBox pp_p1_1_sb;
+        private System.Windows.Forms.TextBox pp_p1_1_vw;
         private System.Windows.Forms.Label label_pp_p1_prod;
         private System.Windows.Forms.Label label_pp_p1_bearb;
         private System.Windows.Forms.Label label_pp_p1_ws;
@@ -4742,12 +4797,12 @@
         private System.Windows.Forms.TextBox pp_p2_26_sb;
         private System.Windows.Forms.TextBox pp_p2_26_vw;
         private System.Windows.Forms.Label label_pp_p2_26;
-        private System.Windows.Forms.TextBox pp_p2_p2_prod;
-        private System.Windows.Forms.TextBox pp_p2_p2_bearb;
-        private System.Windows.Forms.TextBox pp_p2_p2_ws;
-        private System.Windows.Forms.TextBox pp_p2_p2_lager;
-        private System.Windows.Forms.TextBox pp_p2_p2_sb;
-        private System.Windows.Forms.TextBox pp_p2_p2_vw;
+        private System.Windows.Forms.TextBox pp_p2_2_prod;
+        private System.Windows.Forms.TextBox pp_p2_2_bearb;
+        private System.Windows.Forms.TextBox pp_p2_2_ws;
+        private System.Windows.Forms.TextBox pp_p2_2_lager;
+        private System.Windows.Forms.TextBox pp_p2_2_sb;
+        private System.Windows.Forms.TextBox pp_p2_2_vw;
         private System.Windows.Forms.Label label_pp_p2_prod;
         private System.Windows.Forms.Label label_pp_p2_bearb;
         private System.Windows.Forms.Label label_pp_p2_ws;
@@ -4832,12 +4887,12 @@
         private System.Windows.Forms.TextBox pp_p3_26_sb;
         private System.Windows.Forms.TextBox pp_p3_26_vw;
         private System.Windows.Forms.Label label_pp_p3_26;
-        private System.Windows.Forms.TextBox pp_p3_p3_prod;
-        private System.Windows.Forms.TextBox pp_p3_p3_bearb;
-        private System.Windows.Forms.TextBox pp_p3_p3_ws;
-        private System.Windows.Forms.TextBox pp_p3_p3_lager;
-        private System.Windows.Forms.TextBox pp_p3_p3_sb;
-        private System.Windows.Forms.TextBox pp_p3_p3_vw;
+        private System.Windows.Forms.TextBox pp_p3_3_prod;
+        private System.Windows.Forms.TextBox pp_p3_3_bearb;
+        private System.Windows.Forms.TextBox pp_p3_3_ws;
+        private System.Windows.Forms.TextBox pp_p3_3_lager;
+        private System.Windows.Forms.TextBox pp_p3_3_sb;
+        private System.Windows.Forms.TextBox pp_p3_3_vw;
         private System.Windows.Forms.Label label_pp_p3_prod;
         private System.Windows.Forms.Label label_pp_p3_bearb;
         private System.Windows.Forms.Label label_pp_p3_ws;
@@ -4877,16 +4932,6 @@
         private System.Windows.Forms.Label label_comment_2;
         private System.Windows.Forms.TabPage tabPage_dirver_direktverkauf;
         private System.Windows.Forms.DataGridView dataGridView_dirver_direktverkauf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_arbeitsplatz;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_kapazitaetsbedarf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_ruestzeit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_preKapazitaetsbedarf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_preRuestzeit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_gesamt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_ueberstunden;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column_kp_uebersicht_2schicht;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column_kp_uebersicht_3schicht;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_leerzeit;
         private System.Windows.Forms.Label label_comment_3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_nummer;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bestand;
@@ -5114,6 +5159,23 @@
         private System.Windows.Forms.TextBox bestellung_k59_bedarfn;
         private System.Windows.Forms.TextBox bestellung_k59_bestand;
         private System.Windows.Forms.TextBox bestellung_k59_id;
+        private System.Windows.Forms.DataGridView pp_uebersicht_grid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_teilnummer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_bezeichnung;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_Lagerbestand;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_prozent;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_warteschlange;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_inBearbeitung;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_arbeitsplatz;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_kapazitaetsbedarf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_ruestzeit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_preKapazitaetsbedarf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_preRuestzeit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_gesamt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_ueberstunden;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column_kp_uebersicht_2schicht;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column_kp_uebersicht_3schicht;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_leerzeit;
     }
 }
 
