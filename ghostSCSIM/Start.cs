@@ -475,7 +475,7 @@ namespace ghostSCSIM
                bestellung_k57_bestand.Text = (int.Parse(bestellung_k57_bestand.Text.ToString()).ToString());
                bestellung_k58_bestand.Text = (int.Parse(bestellung_k58_bestand.Text.ToString()).ToString());
                bestellung_k59_bestand.Text = (int.Parse(bestellung_k59_bestand.Text.ToString()).ToString());
-
+                             
                DaoHelper dao = new DaoHelper();
                List<Teil> teilListe = new List<Teil>();
                teilListe = dao.getTeilStammdaten();
@@ -496,10 +496,10 @@ namespace ghostSCSIM
 
                               
                    string[] row = { nummer.ToString(), name, lagerbestand.ToString(), prozent.ToString(), warteschlange.ToString(), bearbeitung.ToString()};
-                   pp_uebersicht_grid.Rows.Add(row); 
-                  
+                   pp_uebersicht_grid.Rows.Add(row);           
                }
-               
+
+               dataGridView_kp_uebersicht.Rows.Add("1", "1", "1", "1", "1", "1", "50%", true, true, "1");
 
            }
          
