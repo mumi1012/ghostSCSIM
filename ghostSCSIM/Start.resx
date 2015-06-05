@@ -7395,12 +7395,13 @@
   <data name="tabKinderf.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="tabKinderf.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabKinderf.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms"></data>
   <data name="tabPrognose.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabPrognose.Size" type="System.Drawing.Size, System.Drawing">
     <value>832, 376</value>
+  </data>
   <data name="tabKinderf.Size" type="System.Drawing.Size, System.Drawing">
     <value>820, 333</value>
   </data>
@@ -11040,7 +11041,7 @@
   <data name="&gt;&gt;label_pp_p2_p2.ZOrder" xml:space="preserve">
     <value>89</value>
   </data>
-  <data name="tabDamenf.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tabDamenf.Location" type="System.Drawing.Point, System.Drawing"></data>
   <data name="tabKinderf.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
@@ -11052,6 +11053,7 @@
   </data>
   <data name="tabKinderf.Size" type="System.Drawing.Size, System.Drawing">
     <value>820, 333</value>
+  </data>
   <data name="tabDamenf.Size" type="System.Drawing.Size, System.Drawing">
     <value>820, 333</value>
   </data>
@@ -13632,7 +13634,7 @@
   <data name="&gt;&gt;tabDamenf.Name" xml:space="preserve">
     <value>tabDamenf</value>
   </data>
-  <data name="&gt;&gt;tabDamenf.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabDamenf.Type" xml:space="preserve"></data>
   <data name="&gt;&gt;pp_p3_20_ws.Parent" xml:space="preserve">
     <value>tabHerrenf</value>
   </data>
@@ -17283,7 +17285,6 @@
   </data>
   <data name="tabPUebersicht.Size" type="System.Drawing.Size, System.Drawing">
     <value>820, 333</value>
-    <value>820, 441</value>
   </data>
   <data name="tabPUebersicht.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -17359,6 +17360,7 @@
   </data>
   <data name="&gt;&gt;tabProdplan.Parent" xml:space="preserve">
     <value>tabControl1</value>
+    </data>
   <metadata name="pp_uebersicht_teilnummer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -17395,8 +17397,9 @@
   <data name="&gt;&gt;pp_uebersicht_grid.Parent" xml:space="preserve">
     <value>tabPUebersicht</value>
   </data>
-  <data name="&gt;&gt;tabProdplan.ZOrder" xml:space="preserve">
+    <data name="&gt;&gt;tabProdplan.ZOrder" xml:space="preserve">
     <value>1</value>
+    </data>
   <data name="&gt;&gt;pp_uebersicht_grid.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
@@ -17677,8 +17680,9 @@
   <data name="&gt;&gt;tabPage_best_kaufteileverbrauch.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="tabPage_kp_info.Size" type="System.Drawing.Size, System.Drawing">
-    <value>824, 350</value>
+    <data name="tabPage_kp_info.Size" type="System.Drawing.Size, System.Drawing">
+      <value>824, 350</value>
+    </data>
   <data name="&gt;&gt;tabPage_best_kaufteillager.Name" xml:space="preserve">
     <value>tabPage_best_kaufteillager</value>
   </data>
@@ -17703,8 +17707,9 @@
   <data name="&gt;&gt;tabPage_best_bestellung.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="tabControl_kp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+    <data name="tabControl_kp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+      <value>Fill</value>
+    </data>
   <data name="tabControl_best.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -17762,18 +17767,21 @@
   <data name="&gt;&gt;bestellung_k59_bestandn.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tabControl_kp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <data name="tabControl_kp.Location" type="System.Drawing.Point, System.Drawing">
+      <value>0, 0</value>
+    </data>
   <data name="&gt;&gt;bestellung_k59_bestandn.Parent" xml:space="preserve">
     <value>tabPage_best_kaufteileverbrauch</value>
   </data>
-  <data name="tabControl_kp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>832, 376</value>
+    <data name="tabControl_kp.Size" type="System.Drawing.Size, System.Drawing">
+      <value>832, 376</value>
+    </data>
   <data name="&gt;&gt;bestellung_k59_bestandn.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="tabControl_kp.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <data name="tabControl_kp.TabIndex" type="System.Int32, mscorlib">
+      <value>0</value>
+    </data>
   <data name="&gt;&gt;bestellung_k59_bedarfn2.Name" xml:space="preserve">
     <value>bestellung_k59_bedarfn2</value>
   </data>
@@ -20227,28 +20235,32 @@
   </data>
   <data name="&gt;&gt;tabControl_kp.Name" xml:space="preserve">
     <value>tabControl_kp</value>
+    </data>
   <data name="&gt;&gt;bestellung_k59_ausstehend.Name" xml:space="preserve">
     <value>bestellung_k59_ausstehend</value>
   </data>
-  <data name="&gt;&gt;tabControl_kp.Type" xml:space="preserve">
+    <data name="&gt;&gt;tabControl_kp.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;bestellung_k59_ausstehend.Type" xml:space="preserve">
+  </data>
+    <data name="&gt;&gt;bestellung_k59_ausstehend.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabControl_kp.Parent" xml:space="preserve">
+    <data name="&gt;&gt;tabControl_kp.Parent" xml:space="preserve">
     <value>tabKapa</value>
+    </data>
   <data name="&gt;&gt;bestellung_k59_ausstehend.Parent" xml:space="preserve">
     <value>tabPage_best_kaufteileverbrauch</value>
   </data>
-  <data name="&gt;&gt;tabControl_kp.ZOrder" xml:space="preserve">
+    <data name="&gt;&gt;tabControl_kp.ZOrder" xml:space="preserve"></data>
   <data name="&gt;&gt;bestellung_k59_ausstehend.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="tabKapa.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 4</value>
   </data>
-  <data name="tabKapa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <data name="tabKapa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+      <value>2, 2, 2, 2</value>
+    </data>
   <data name="bestellung_k59_bestandn2.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -20269,16 +20281,19 @@
   </data>
   <data name="tabKapa.Size" type="System.Drawing.Size, System.Drawing">
     <value>832, 376</value>
+  </data>
   <data name="&gt;&gt;bestellung_k59_bestandn2.Parent" xml:space="preserve">
     <value>tabPage_best_kaufteileverbrauch</value>
   </data>
   <data name="tabKapa.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
   <data name="&gt;&gt;bestellung_k59_bestandn2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tabKapa.Text" xml:space="preserve">
+    <data name="tabKapa.Text" xml:space="preserve">
     <value>Kapazitätsplan</value>
+    </data>
   <data name="bestellung_k59_bestandn.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -25096,17 +25111,20 @@
   </data>
   <data name="&gt;&gt;tabKapa.Name" xml:space="preserve">
     <value>tabKapa</value>
+    </data>
   <data name="&gt;&gt;bestellung_k21_id.Name" xml:space="preserve">
     <value>bestellung_k21_id</value>
   </data>
   <data name="&gt;&gt;tabKapa.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  <data name="&gt;&gt;bestellung_k21_id.Type" xml:space="preserve">
+  </data>
+    <data name="&gt;&gt;bestellung_k21_id.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tabKapa.Parent" xml:space="preserve">
     <value>tabControl1</value>
-  <data name="&gt;&gt;bestellung_k21_id.Parent" xml:space="preserve">
+  </data>
+    <data name="&gt;&gt;bestellung_k21_id.Parent" xml:space="preserve">
     <value>tabPage_best_kaufteileverbrauch</value>
   </data>
   <data name="&gt;&gt;bestellung_k21_id.ZOrder" xml:space="preserve">
@@ -25261,6 +25279,7 @@
   </data>
   <data name="&gt;&gt;tabKapa.ZOrder" xml:space="preserve">
     <value>2</value>
+    </data>
   <data name="&gt;&gt;tabPage_best_kaufteillager.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
@@ -25427,7 +25446,7 @@
   <data name="Column_best_kaufteileverbrauch_bestandN2.ToolTipText" xml:space="preserve">
     <value>Voraussichtlicher Lagerbestand zu Beginn der übernächsten Periode</value>
   </data>
-  <metadata name="Column_best_kaufteileverbrauch_ausstehendeBest.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Column_best_kaufteileverbrauch_ausstehendeBest.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></metadata>
   <data name="&gt;&gt;dataGridView_best_bestellliste.Name" xml:space="preserve">
     <value>dataGridView_best_bestellliste</value>
   </data>
@@ -25493,6 +25512,7 @@
   </data>
   <data name="dataGridView_best_kaufteileverbrauch.Size" type="System.Drawing.Size, System.Drawing">
     <value>818, 344</value>
+  </data>
   <data name="dataGridView_best_bestellliste.Size" type="System.Drawing.Size, System.Drawing">
     <value>818, 439</value>
   </data>
@@ -25606,6 +25626,7 @@
   </data>
   <data name="tabPage_best_bestellung.Size" type="System.Drawing.Size, System.Drawing">
     <value>824, 350</value>
+  </data>
   <data name="tabControl_dirver.Size" type="System.Drawing.Size, System.Drawing">
     <value>832, 376</value>
   </data>
@@ -25659,6 +25680,7 @@
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
     <value>824, 350</value>
+  </data>
   <data name="tabBestellung.Size" type="System.Drawing.Size, System.Drawing">
     <value>832, 376</value>
   </data>
@@ -25862,6 +25884,7 @@
   </data>
   <data name="&gt;&gt;tabControl_dirver.Parent" xml:space="preserve">
     <value>tabDirektV</value>
+    </data>
   <data name="dataGridView_dirver_direktverkauf.Size" type="System.Drawing.Size, System.Drawing">
     <value>818, 344</value>
   </data>
