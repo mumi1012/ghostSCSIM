@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\DaoHelper.cs" />
+    <Compile Include="DAO\TeileHelper.cs" />
     <Compile Include="DataContainer.cs" />
     <Compile Include="DatenbankDataSet.cs">
       <DependentUpon>DatenbankDataSet.xsd</DependentUpon>
@@ -60,7 +61,10 @@
     <Compile Include="Domain\Bestellung.cs" />
     <Compile Include="Domain\MengenStueckliste.cs" />
     <Compile Include="Domain\MengenStuecklisteItem.cs" />
+    <Compile Include="Domain\Stueckliste.cs" />
+    <Compile Include="Domain\StuecklisteItem.cs" />
     <Compile Include="Domain\Teil.cs" />
+    <Compile Include="Domain\TeilComparer.cs" />
     <Compile Include="Domain\TeilDisposition.cs" />
     <Compile Include="Domain\TeilLieferdaten.cs" />
     <Compile Include="Domain\Verwendung.cs" />

@@ -14,6 +14,10 @@ namespace ghostSCSIM.Domain
         private Verwendung verwendung;
         private String buchstabe;
         private double wert;
+        /// <summary>
+        /// Position in der Stückliste, Hilfsvariable für die Sortierung der Teile in der Stückliste
+        /// </summary>
+        private int stuecklistenPos;
 
         public Teil()
         {
@@ -28,6 +32,16 @@ namespace ghostSCSIM.Domain
             this.buchstabe = buchstabe;
             this.wert = wert;
             this.verwendung = verwendung;
+        }
+        public Teil(int nummer, String bezeichnung, Verwendung verwendung,
+             String buchstabe, double wert, int stuecklistenPos)
+        {
+            this.nummer = nummer;
+            this.bezeichnung = bezeichnung;
+            this.buchstabe = buchstabe;
+            this.wert = wert;
+            this.verwendung = verwendung;
+            this.stuecklistenPos = stuecklistenPos;
         }
 
         public Teil(int nummer, String bezeichnung, String buchstabe, double wert)
@@ -91,5 +105,17 @@ namespace ghostSCSIM.Domain
             this.wert = wert;
         }
 
+        public int getStuecklistenPos()
+        {
+            return stuecklistenPos;
+        }
+
+        public override string ToString()
+        {
+            return "Teil: [" + buchstabe + nummer + "]"
+                + ", Bezeichnung= " + bezeichnung
+                        + ", Verwendung= " + verwendung
+                            + ", Wert= " + wert;
+        }
     }
 }
