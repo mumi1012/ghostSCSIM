@@ -39,7 +39,7 @@ namespace ghostSCSIM.XML
 
         [XmlAttribute]
         public int startamount { get; set; }
-
+        
         [XmlIgnore]
         public decimal pct { get; set; }
 

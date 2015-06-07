@@ -59,6 +59,7 @@
     <Compile Include="Domain\ArbeitsplatzKosten.cs" />
     <Compile Include="Domain\Bestelltyp.cs" />
     <Compile Include="Domain\Bestellung.cs" />
+    <Compile Include="Domain\Ebedarf.cs" />
     <Compile Include="Domain\MengenStueckliste.cs" />
     <Compile Include="Domain\MengenStuecklisteItem.cs" />
     <Compile Include="Domain\Stueckliste.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Domain\TeilDisposition.cs" />
     <Compile Include="Domain\TeilLieferdaten.cs" />
     <Compile Include="Domain\Verwendung.cs" />
+    <Compile Include="service\kteilbedarf.cs" />
     <Compile Include="Start.cs">
       <SubType>Form</SubType>
     </Compile>
