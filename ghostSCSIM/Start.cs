@@ -440,7 +440,13 @@ namespace ghostSCSIM
                 teile_Produktion.Add(16, e16);
                 teile_Produktion.Add(17, e17);
 
-
+                foreach (int key in teile_Produktion.Keys.ToList())
+                {
+                    if(teile_Produktion[key] < 0)
+                    {
+                        teile_Produktion[key] = 0;
+                    }
+                }
 
 
                 DaoHelper dao = new DaoHelper();
