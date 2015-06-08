@@ -1347,7 +1347,7 @@
             // 
             resources.ApplyResources(this.pp_p1_p1_vw, "pp_p1_p1_vw");
             this.pp_p1_p1_vw.Name = "pp_p1_p1_vw";
-			// 
+            // 
             // label_pp_p1_prod
             // 
             resources.ApplyResources(this.label_pp_p1_prod, "label_pp_p1_prod");
@@ -1724,7 +1724,7 @@
             resources.ApplyResources(this.label_pp_p2_55, "label_pp_p2_55");
             this.label_pp_p2_55.Name = "label_pp_p2_55";
             this.label_pp_p2_55.Click += new System.EventHandler(this.label18_Click);
-			// 
+            // 
             // pp_p2_17_prod
             // 
             resources.ApplyResources(this.pp_p2_17_prod, "pp_p2_17_prod");
@@ -1830,7 +1830,7 @@
             resources.ApplyResources(this.label_pp_p2_56, "label_pp_p2_56");
             this.label_pp_p2_56.Name = "label_pp_p2_56";
             this.label_pp_p2_56.Click += new System.EventHandler(this.label_pp_p2_59_Click);
-			// 
+            // 
             // pp_p2_26_prod
             // 
             resources.ApplyResources(this.pp_p2_26_prod, "pp_p2_26_prod");
@@ -2479,7 +2479,7 @@
             // 
             // tabPUebersicht
             // 
-			this.tabPUebersicht.Controls.Add(this.pp_uebersicht_grid);
+            this.tabPUebersicht.Controls.Add(this.pp_uebersicht_grid);
             resources.ApplyResources(this.tabPUebersicht, "tabPUebersicht");
             this.tabPUebersicht.Name = "tabPUebersicht";
             this.tabPUebersicht.UseVisualStyleBackColor = true;
@@ -3010,6 +3010,33 @@
             // 
             // Column_dirver_direktverkauf_nummer
             // 
+            resources.ApplyResources(this.Column_dirver_direktverkauf_nummer, "Column_dirver_direktverkauf_nummer");
+            this.Column_dirver_direktverkauf_nummer.Name = "Column_dirver_direktverkauf_nummer";
+            this.Column_dirver_direktverkauf_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_dirver_direktverkauf_menge
+            // 
+            resources.ApplyResources(this.Column_dirver_direktverkauf_menge, "Column_dirver_direktverkauf_menge");
+            this.Column_dirver_direktverkauf_menge.Name = "Column_dirver_direktverkauf_menge";
+            this.Column_dirver_direktverkauf_menge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_dirver_direktverkauf_preis
+            // 
+            this.Column_dirver_direktverkauf_preis.DividerWidth = 3;
+            this.Column_dirver_direktverkauf_preis.FillWeight = 101F;
+            resources.ApplyResources(this.Column_dirver_direktverkauf_preis, "Column_dirver_direktverkauf_preis");
+            this.Column_dirver_direktverkauf_preis.Name = "Column_dirver_direktverkauf_preis";
+            this.Column_dirver_direktverkauf_preis.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_dirver_direktverkauf_loeschenButton
+            // 
+            resources.ApplyResources(this.Column_dirver_direktverkauf_loeschenButton, "Column_dirver_direktverkauf_loeschenButton");
+            this.Column_dirver_direktverkauf_loeschenButton.Name = "Column_dirver_direktverkauf_loeschenButton";
+            this.Column_dirver_direktverkauf_loeschenButton.ReadOnly = true;
+            this.Column_dirver_direktverkauf_loeschenButton.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_dirver_direktverkauf_loeschenButton.Text = "Zeile löschen";
+            this.Column_dirver_direktverkauf_loeschenButton.UseColumnTextForButtonValue = true;
+            // 
             // bestelldatenBindingSource
             // 
             this.bestelldatenBindingSource.DataMember = "Bestelldaten";
@@ -3086,7 +3113,7 @@
             this.tabDamenf.PerformLayout();
             this.tabHerrenf.ResumeLayout(false);
             this.tabHerrenf.PerformLayout();
-			this.tabPUebersicht.ResumeLayout(false);
+            this.tabPUebersicht.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pp_uebersicht_grid)).EndInit();
             this.tabKapa.ResumeLayout(false);
             this.tabControl_kp.ResumeLayout(false);
