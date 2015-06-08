@@ -22,7 +22,7 @@ namespace ghostSCSIM.service
             DaoHelper daoHelper = new DaoHelper();
             List<Teil> teile_stammdaten = new List<Teil>();
 
-
+            teile_stammdaten = daoHelper.getErzeugnisseStammdaten();
             
             //TeilDispoHelper Objekte bauen
             foreach (Teil teil in teile_stammdaten)
@@ -45,6 +45,10 @@ namespace ghostSCSIM.service
                 //Aufträge in Warteschlange
                 int auftraege_warteschlange = dc.waitingListWorkstations.getWarteschlangeMengeByItem(teile_nummer);
                 teil_dispo.setAuftraege_warteschlange(auftraege_warteschlange);
+
+                //Produktionsmenge aus Textboxen
+                //int produktionsMenge = 
+
 
                 ergebnisse.Add(teil_dispo);
             }

@@ -48,12 +48,24 @@ namespace ghostSCSIM.DAO
             DataTable resultTable = teilTableAdapter.getErzeugnisseStammdaten();
             List<Teil> teileListe = new List<Teil>();
 
-            teileListe = (from teil in resultTable.AsEnumerable()
-                          select new Teil
-                          {
-                            //TODO
+            List<TeileHelper> teileHelperListe = new List<TeileHelper>();
+            teileHelperListe = (from teil in resultTable.AsEnumerable()
+                                select new TeileHelper
+                                {
+                                    partId = teil.Field<int>("ID"),
+                                    bezeichnung = teil.Field<string>("Bezeichnung"),
+                                    verwendung = teil.Field<string>("Verwendung"),
+                                    wert = teil.Field<double>("Wert"),
+                                    buchstabe = teil.Field<string>("Buchstabe")
+ 
 
-                          }).ToList();
+                                }).ToList();
+
+            foreach (TeileHelper teileHelper in teileHelperListe)
+            {
+                Teil einzelTeil = new Teil(teileHelper.partId, teileHelper.bezeichnung, (Verwendung)Enum.Parse(typeof(Verwendung), teileHelper.verwendung), teileHelper.buchstabe, teileHelper.wert);
+                teileListe.Add(einzelTeil);
+            }
             return teileListe;
         }
 
