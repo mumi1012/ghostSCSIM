@@ -67,6 +67,108 @@ namespace ghostSCSIM.DAO
 
 
         }
+       public Stueckliste getStueckListeByFahrradnummer(int fahrradnummer)
+       {
+            DatenbankDataSetTableAdapters.PartsListPosTableAdapter partsListPostTbAdapter = new PartsListPosTableAdapter();
 
+            DataTable resultTable = partsListPostTbAdapter.GetStuecklisteByFahrradnummer(fahrradnummer);
+           
+            Stueckliste stueckListe = new Stueckliste();
+            StuecklisteItem item = new StuecklisteItem();
+            LinkedList<StuecklisteItem> verwendeteTeile = null;
+            
+            Teil parent = null;
+
+            //IDs der Teile sammeln, die selbst ein FE sind, also E-Teile
+            List<int> halbFeIdListe = new List<int>();
+            halbFeIdListe = getFETableIds(resultTable);
+
+            foreach (int posId in halbFeIdListe)
+            {
+                TeileHelper parentItem = getParentItem(resultTable, posId);
+                parent = new Teil(parentItem.partId, parentItem.bezeichnung, (Verwendung)Enum.Parse(typeof(Verwendung), parentItem.verwendung), parentItem.buchstabe, parentItem.wert, parentItem.posId);
+
+                List<TeileHelper> unterStueckliste = getUnterStueckliste(resultTable, posId);
+
+                verwendeteTeile = new LinkedList<StuecklisteItem>();
+                //Über teilStueckListe iterieren und Teile zur Stueckliste hinzufügen
+                foreach (TeileHelper einzelTeil in unterStueckliste)
+                {
+                  
+                    Teil teil = new Teil(einzelTeil.partId, einzelTeil.bezeichnung, (Verwendung)Enum.Parse(typeof(Verwendung), einzelTeil.verwendung), einzelTeil.buchstabe, einzelTeil.wert);
+                    //Verwendete Teile Liste aufbauen
+                    verwendeteTeile.AddLast(new StuecklisteItem(teil, parent, einzelTeil.anzahl));
+                }
+                //Verwendete Teile der Stückliste zuweisen, Key = aktuelles Teil, bzw. parent
+                stueckListe.addItemToStueckliste(parent, verwendeteTeile);
+    
+
+            }
+          
+
+
+            return stueckListe;
+        }
+        /// <summary>
+        /// Hilfsmethode um die Unterstückliste zurückzugeben
+        /// </summary>
+        /// <param name="resultTable"></param>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        private List<TeileHelper> getUnterStueckliste(DataTable resultTable, int id)
+        {
+
+            List<TeileHelper> unterStueckliste =  (from items in resultTable.AsEnumerable()
+                                    where items.Field<int>("OTPosId") == id
+                                    select new TeileHelper
+                                    {
+                                        posId = items.Field<int>("ID"),
+                                        partId = items.Field<int>("PartId"),
+                                        otPosId = items.Field<int>("OTPosId"),
+                                        anzahl = items.Field<int>("Anzahl"),
+                                        bezeichnung = items.Field<string>("Bezeichnung"),
+                                        verwendung = items.Field<string>("Verwendung"),
+                                        wert = items.Field<double>("Wert"),
+                                        buchstabe = items.Field<string>("Buchstabe")
+                                                                               
+                                    }).ToList();
+            
+            return unterStueckliste;
+
+            
+        }
+        /// <summary>
+        /// Table IDs zu allen FE Teilen aus der Tabelle ermitteln
+        /// </summary>
+        /// <param name="resultTable"></param>
+        /// <returns></returns>
+        private List<int> getFETableIds(DataTable resultTable)
+        {
+            List<int> resultList = (from items in resultTable.AsEnumerable()
+                                    where items.Field<int>("Flag").Equals(1)
+                                    select items.Field<int>("ID")).ToList();
+
+
+            return resultList;
+        }
+
+        private TeileHelper getParentItem(DataTable resultTable, int posId)
+        {
+            TeileHelper result = (from items in resultTable.AsEnumerable()
+                                  where items.Field<int>("ID") == posId
+                                  select new TeileHelper
+                                  {
+                                      posId = items.Field<int>("ID"),
+                                      partId = items.Field<int>("PartId"),
+                                      otPosId = items.Field<int>("OTPosId"),
+                                      bezeichnung = items.Field<string>("Bezeichnung"),
+                                      verwendung = items.Field<string>("Verwendung"),
+                                      wert = items.Field<double>("Wert"),
+                                      buchstabe = items.Field<string>("Buchstabe")
+                                  }).Single();
+
+            return result;
+        }
+           
     }
 }

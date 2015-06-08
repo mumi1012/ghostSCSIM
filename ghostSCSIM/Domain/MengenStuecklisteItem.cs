@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace ghostSCSIM.Domain
 {
+    [Obsolete("Nicht mehr benutzen!", true)]
     class MengenStuecklisteItem
     {
 
-        private Teil fahrrad;
+        private Teil ETeil;
+        //verwendetes Teil = Kaufteil 
         private Teil verwendetesTeil;
         private int menge;
 
@@ -17,21 +19,21 @@ namespace ghostSCSIM.Domain
         {
         }
 
-        public MengenStuecklisteItem(Teil fahrrad, Teil verwendetesTeil, int menge)
+        public MengenStuecklisteItem(Teil eTeil, Teil verwendetesTeil, int menge)
         {
             this.menge = menge;
             this.verwendetesTeil = verwendetesTeil;
-            this.fahrrad = fahrrad;
+            this.ETeil = eTeil;
         }
 
-        public Teil getFahrrad()
+        public Teil getETeil()
         {
-            return fahrrad;
+            return ETeil;
         }
 
-        public void setFahrrad(Teil fahrrad)
+        public void setETeil(Teil eTeil)
         {
-            this.fahrrad = fahrrad;
+            this.ETeil = eTeil;
         }
 
         public Teil getVerwendetesTeil()
@@ -52,6 +54,14 @@ namespace ghostSCSIM.Domain
         public void setMenge(int menge)
         {
             this.menge = menge;
+        }
+
+      
+        public override string ToString()
+        {
+            return "MengenstueckListe Item: [ETeil= " + ETeil.getNummer()
+            + ", Verwendetes Teil Nr= " + verwendetesTeil.getNummer()
+                    + ", Menge= " + menge + "]";
         }
 
     }
