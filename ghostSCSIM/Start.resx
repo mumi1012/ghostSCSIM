@@ -8436,84 +8436,6 @@
   <data name="&gt;&gt;label_pp_p3_p3.ZOrder" xml:space="preserve">
     <value>89</value>
   </data>
-  <data name="&gt;&gt;pp_uebersicht_grid.Name" xml:space="preserve">
-    <value>pp_uebersicht_grid</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_grid.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_grid.Parent" xml:space="preserve">
-    <value>tabPUebersicht</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_grid.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPUebersicht.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPUebersicht.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="tabPUebersicht.Size" type="System.Drawing.Size, System.Drawing">
-    <value>820, 441</value>
-  </data>
-  <data name="tabPUebersicht.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tabPUebersicht.Text" xml:space="preserve">
-    <value>Übersicht</value>
-  </data>
-  <data name="&gt;&gt;tabPUebersicht.Name" xml:space="preserve">
-    <value>tabPUebersicht</value>
-  </data>
-  <data name="&gt;&gt;tabPUebersicht.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPUebersicht.Parent" xml:space="preserve">
-    <value>tabControl2</value>
-  </data>
-  <data name="&gt;&gt;tabPUebersicht.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <metadata name="pp_uebersicht_teilnummer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="pp_uebersicht_bezeichnung.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="pp_uebersicht_Lagerbestand.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="pp_uebersicht_prozent.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="pp_uebersicht_warteschlange.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="pp_uebersicht_inBearbeitung.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="pp_uebersicht_grid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="pp_uebersicht_grid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>814, 441</value>
-  </data>
-  <data name="pp_uebersicht_grid.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_grid.Name" xml:space="preserve">
-    <value>pp_uebersicht_grid</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_grid.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_grid.Parent" xml:space="preserve">
-    <value>tabPUebersicht</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_grid.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="tabHerrenf.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
@@ -8540,6 +8462,48 @@
   </data>
   <data name="&gt;&gt;tabHerrenf.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <metadata name="pp_uebersicht_teilnummer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="pp_uebersicht_bezeichnung.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="pp_uebersicht_Lagerbestand.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="pp_uebersicht_prozent.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="pp_uebersicht_warteschlange.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="pp_uebersicht_inBearbeitung.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="pp_uebersicht_grid.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pp_uebersicht_grid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pp_uebersicht_grid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>820, 333</value>
+  </data>
+  <data name="pp_uebersicht_grid.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_grid.Name" xml:space="preserve">
+    <value>pp_uebersicht_grid</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_grid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_grid.Parent" xml:space="preserve">
+    <value>tabPUebersicht</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_grid.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="tabPUebersicht.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -9642,6 +9606,42 @@
   <data name="&gt;&gt;notifyIcon1.Type" xml:space="preserve">
     <value>System.Windows.Forms.NotifyIcon, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;pp_uebersicht_teilnummer.Name" xml:space="preserve">
+    <value>pp_uebersicht_teilnummer</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_teilnummer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_bezeichnung.Name" xml:space="preserve">
+    <value>pp_uebersicht_bezeichnung</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_bezeichnung.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_Lagerbestand.Name" xml:space="preserve">
+    <value>pp_uebersicht_Lagerbestand</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_Lagerbestand.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_prozent.Name" xml:space="preserve">
+    <value>pp_uebersicht_prozent</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_prozent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_warteschlange.Name" xml:space="preserve">
+    <value>pp_uebersicht_warteschlange</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_warteschlange.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_inBearbeitung.Name" xml:space="preserve">
+    <value>pp_uebersicht_inBearbeitung</value>
+  </data>
+  <data name="&gt;&gt;pp_uebersicht_inBearbeitung.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;Column_kp_uebersicht_arbeitsplatz.Name" xml:space="preserve">
     <value>Column_kp_uebersicht_arbeitsplatz</value>
   </data>
@@ -9730,114 +9730,6 @@
     <value>Column_kp_aufloesung_ruestzeitTeil</value>
   </data>
   <data name="&gt;&gt;Column_kp_aufloesung_ruestzeitTeil.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_nummer.Name" xml:space="preserve">
-    <value>Column_dirver_direktverkauf_nummer</value>
-  </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_nummer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_menge.Name" xml:space="preserve">
-    <value>Column_dirver_direktverkauf_menge</value>
-  </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_menge.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_preis.Name" xml:space="preserve">
-    <value>Column_dirver_direktverkauf_preis</value>
-  </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_preis.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_loeschenButton.Name" xml:space="preserve">
-    <value>Column_dirver_direktverkauf_loeschenButton</value>
-  </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_loeschenButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bestelldatenBindingSource.Name" xml:space="preserve">
-    <value>bestelldatenBindingSource</value>
-  </data>
-  <data name="&gt;&gt;bestelldatenBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;datenbankDataSetBindingSource.Name" xml:space="preserve">
-    <value>datenbankDataSetBindingSource</value>
-  </data>
-  <data name="&gt;&gt;datenbankDataSetBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;datenbankDataSet.Name" xml:space="preserve">
-    <value>datenbankDataSet</value>
-  </data>
-  <data name="&gt;&gt;datenbankDataSet.Type" xml:space="preserve">
-    <value>ghostSCSIM.DatenbankDataSet, DatenbankDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;datenbankDataSet1.Name" xml:space="preserve">
-    <value>datenbankDataSet1</value>
-  </data>
-  <data name="&gt;&gt;datenbankDataSet1.Type" xml:space="preserve">
-    <value>ghostSCSIM.DatenbankDataSet, DatenbankDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;bestelldatenTableAdapter.Name" xml:space="preserve">
-    <value>bestelldatenTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;bestelldatenTableAdapter.Type" xml:space="preserve">
-    <value>ghostSCSIM.DatenbankDataSetTableAdapters.BestelldatenTableAdapter, DatenbankDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
-    <value>imageList1</value>
-  </data>
-  <data name="&gt;&gt;imageList1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;imageList2.Name" xml:space="preserve">
-    <value>imageList2</value>
-  </data>
-  <data name="&gt;&gt;imageList2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;imageList3.Name" xml:space="preserve">
-    <value>imageList3</value>
-  </data>
-  <data name="&gt;&gt;imageList3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_teilnummer.Name" xml:space="preserve">
-    <value>pp_uebersicht_teilnummer</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_teilnummer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_bezeichnung.Name" xml:space="preserve">
-    <value>pp_uebersicht_bezeichnung</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_bezeichnung.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_Lagerbestand.Name" xml:space="preserve">
-    <value>pp_uebersicht_Lagerbestand</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_Lagerbestand.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_prozent.Name" xml:space="preserve">
-    <value>pp_uebersicht_prozent</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_prozent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_warteschlange.Name" xml:space="preserve">
-    <value>pp_uebersicht_warteschlange</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_warteschlange.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_inBearbeitung.Name" xml:space="preserve">
-    <value>pp_uebersicht_inBearbeitung</value>
-  </data>
-  <data name="&gt;&gt;pp_uebersicht_inBearbeitung.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Column_best_kaufteillager_nummer.Name" xml:space="preserve">
@@ -9941,6 +9833,78 @@
   </data>
   <data name="&gt;&gt;Column_best_bestelliste_loeschenButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_dirver_direktverkauf_nummer.Name" xml:space="preserve">
+    <value>Column_dirver_direktverkauf_nummer</value>
+  </data>
+  <data name="&gt;&gt;Column_dirver_direktverkauf_nummer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_dirver_direktverkauf_menge.Name" xml:space="preserve">
+    <value>Column_dirver_direktverkauf_menge</value>
+  </data>
+  <data name="&gt;&gt;Column_dirver_direktverkauf_menge.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_dirver_direktverkauf_preis.Name" xml:space="preserve">
+    <value>Column_dirver_direktverkauf_preis</value>
+  </data>
+  <data name="&gt;&gt;Column_dirver_direktverkauf_preis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_dirver_direktverkauf_loeschenButton.Name" xml:space="preserve">
+    <value>Column_dirver_direktverkauf_loeschenButton</value>
+  </data>
+  <data name="&gt;&gt;Column_dirver_direktverkauf_loeschenButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bestelldatenBindingSource.Name" xml:space="preserve">
+    <value>bestelldatenBindingSource</value>
+  </data>
+  <data name="&gt;&gt;bestelldatenBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;datenbankDataSetBindingSource.Name" xml:space="preserve">
+    <value>datenbankDataSetBindingSource</value>
+  </data>
+  <data name="&gt;&gt;datenbankDataSetBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;datenbankDataSet.Name" xml:space="preserve">
+    <value>datenbankDataSet</value>
+  </data>
+  <data name="&gt;&gt;datenbankDataSet.Type" xml:space="preserve">
+    <value>ghostSCSIM.DatenbankDataSet, DatenbankDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;datenbankDataSet1.Name" xml:space="preserve">
+    <value>datenbankDataSet1</value>
+  </data>
+  <data name="&gt;&gt;datenbankDataSet1.Type" xml:space="preserve">
+    <value>ghostSCSIM.DatenbankDataSet, DatenbankDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bestelldatenTableAdapter.Name" xml:space="preserve">
+    <value>bestelldatenTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;bestelldatenTableAdapter.Type" xml:space="preserve">
+    <value>ghostSCSIM.DatenbankDataSetTableAdapters.BestelldatenTableAdapter, DatenbankDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
+    <value>imageList1</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imageList2.Name" xml:space="preserve">
+    <value>imageList2</value>
+  </data>
+  <data name="&gt;&gt;imageList2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imageList3.Name" xml:space="preserve">
+    <value>imageList3</value>
+  </data>
+  <data name="&gt;&gt;imageList3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Start</value>

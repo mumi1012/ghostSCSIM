@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.spracheToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -337,6 +337,12 @@
             this.label_pp_p3_p3 = new System.Windows.Forms.Label();
             this.tabPUebersicht = new System.Windows.Forms.TabPage();
             this.pp_uebersicht_grid = new System.Windows.Forms.DataGridView();
+            this.pp_uebersicht_teilnummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pp_uebersicht_bezeichnung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pp_uebersicht_Lagerbestand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pp_uebersicht_prozent = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pp_uebersicht_warteschlange = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pp_uebersicht_inBearbeitung = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabKapa = new System.Windows.Forms.TabPage();
             this.tabControl_kp = new System.Windows.Forms.TabControl();
             this.tabPage_kp_uebersicht = new System.Windows.Forms.TabPage();
@@ -365,10 +371,27 @@
             this.tabControl_best = new System.Windows.Forms.TabControl();
             this.tabPage_best_kaufteillager = new System.Windows.Forms.TabPage();
             this.dataGridView_best_kaufteillager = new System.Windows.Forms.DataGridView();
+            this.Column_best_kaufteillager_nummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteillager_bezeichnung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteillager_bestand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteillager_lieferdauer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteillager_diskontmenge = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteillager_bestellkosten = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage_best_kaufteileverbrauch = new System.Windows.Forms.TabPage();
             this.dataGridView_best_kaufteileverbrauch = new System.Windows.Forms.DataGridView();
+            this.Column_best_kaufteileverbrauch_nummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteileverbrauch_bestand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteileverbrauch_bruttobedarfN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteileverbrauch_bruttobedarfN1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteileverbrauch_bestandN1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteileverbrauch_bestandN2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteileverbrauch_ausstehendeBest = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage_best_bestellung = new System.Windows.Forms.TabPage();
             this.dataGridView_best_bestellliste = new System.Windows.Forms.DataGridView();
+            this.Column_best_bestelliste_nummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_bestelliste_menge = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_bestelliste_eil = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Column_best_bestelliste_loeschenButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tabDirektV = new System.Windows.Forms.TabPage();
             this.tabControl_dirver = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -388,29 +411,6 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
-            this.pp_uebersicht_teilnummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pp_uebersicht_bezeichnung = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pp_uebersicht_Lagerbestand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pp_uebersicht_prozent = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pp_uebersicht_warteschlange = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pp_uebersicht_inBearbeitung = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteillager_nummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteillager_bezeichnung = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteillager_bestand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteillager_lieferdauer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteillager_diskontmenge = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteillager_bestellkosten = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteileverbrauch_nummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteileverbrauch_bestand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteileverbrauch_bruttobedarfN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteileverbrauch_bruttobedarfN1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteileverbrauch_bestandN1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteileverbrauch_bestandN2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteileverbrauch_ausstehendeBest = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_bestelliste_nummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_bestelliste_menge = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_bestelliste_eil = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Column_best_bestelliste_loeschenButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPrognose.SuspendLayout();
@@ -1347,7 +1347,7 @@
             // 
             resources.ApplyResources(this.pp_p1_p1_vw, "pp_p1_p1_vw");
             this.pp_p1_p1_vw.Name = "pp_p1_p1_vw";
-			// 
+            // 
             // label_pp_p1_prod
             // 
             resources.ApplyResources(this.label_pp_p1_prod, "label_pp_p1_prod");
@@ -1724,7 +1724,7 @@
             resources.ApplyResources(this.label_pp_p2_55, "label_pp_p2_55");
             this.label_pp_p2_55.Name = "label_pp_p2_55";
             this.label_pp_p2_55.Click += new System.EventHandler(this.label18_Click);
-			// 
+            // 
             // pp_p2_17_prod
             // 
             resources.ApplyResources(this.pp_p2_17_prod, "pp_p2_17_prod");
@@ -1830,7 +1830,7 @@
             resources.ApplyResources(this.label_pp_p2_56, "label_pp_p2_56");
             this.label_pp_p2_56.Name = "label_pp_p2_56";
             this.label_pp_p2_56.Click += new System.EventHandler(this.label_pp_p2_59_Click);
-			// 
+            // 
             // pp_p2_26_prod
             // 
             resources.ApplyResources(this.pp_p2_26_prod, "pp_p2_26_prod");
@@ -2479,7 +2479,7 @@
             // 
             // tabPUebersicht
             // 
-			this.tabPUebersicht.Controls.Add(this.pp_uebersicht_grid);
+            this.tabPUebersicht.Controls.Add(this.pp_uebersicht_grid);
             resources.ApplyResources(this.tabPUebersicht, "tabPUebersicht");
             this.tabPUebersicht.Name = "tabPUebersicht";
             this.tabPUebersicht.UseVisualStyleBackColor = true;
@@ -2496,7 +2496,31 @@
             this.pp_uebersicht_inBearbeitung});
             resources.ApplyResources(this.pp_uebersicht_grid, "pp_uebersicht_grid");
             this.pp_uebersicht_grid.Name = "pp_uebersicht_grid";
-			// 
+            // 
+            // pp_uebersicht_teilnummer
+            // 
+            this.pp_uebersicht_teilnummer.Name = "pp_uebersicht_teilnummer";
+            // 
+            // pp_uebersicht_bezeichnung
+            // 
+            this.pp_uebersicht_bezeichnung.Name = "pp_uebersicht_bezeichnung";
+            // 
+            // pp_uebersicht_Lagerbestand
+            // 
+            this.pp_uebersicht_Lagerbestand.Name = "pp_uebersicht_Lagerbestand";
+            // 
+            // pp_uebersicht_prozent
+            // 
+            this.pp_uebersicht_prozent.Name = "pp_uebersicht_prozent";
+            // 
+            // pp_uebersicht_warteschlange
+            // 
+            this.pp_uebersicht_warteschlange.Name = "pp_uebersicht_warteschlange";
+            // 
+            // pp_uebersicht_inBearbeitung
+            // 
+            this.pp_uebersicht_inBearbeitung.Name = "pp_uebersicht_inBearbeitung";
+            // 
             // tabKapa
             // 
             this.tabKapa.Controls.Add(this.tabControl_kp);
@@ -2742,6 +2766,49 @@
             this.dataGridView_best_kaufteillager.ReadOnly = true;
             this.dataGridView_best_kaufteillager.RowHeadersVisible = false;
             // 
+            // Column_best_kaufteillager_nummer
+            // 
+            resources.ApplyResources(this.Column_best_kaufteillager_nummer, "Column_best_kaufteillager_nummer");
+            this.Column_best_kaufteillager_nummer.Name = "Column_best_kaufteillager_nummer";
+            this.Column_best_kaufteillager_nummer.ReadOnly = true;
+            this.Column_best_kaufteillager_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteillager_bezeichnung
+            // 
+            resources.ApplyResources(this.Column_best_kaufteillager_bezeichnung, "Column_best_kaufteillager_bezeichnung");
+            this.Column_best_kaufteillager_bezeichnung.Name = "Column_best_kaufteillager_bezeichnung";
+            this.Column_best_kaufteillager_bezeichnung.ReadOnly = true;
+            this.Column_best_kaufteillager_bezeichnung.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteillager_bestand
+            // 
+            this.Column_best_kaufteillager_bestand.DividerWidth = 3;
+            resources.ApplyResources(this.Column_best_kaufteillager_bestand, "Column_best_kaufteillager_bestand");
+            this.Column_best_kaufteillager_bestand.Name = "Column_best_kaufteillager_bestand";
+            this.Column_best_kaufteillager_bestand.ReadOnly = true;
+            this.Column_best_kaufteillager_bestand.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteillager_lieferdauer
+            // 
+            resources.ApplyResources(this.Column_best_kaufteillager_lieferdauer, "Column_best_kaufteillager_lieferdauer");
+            this.Column_best_kaufteillager_lieferdauer.Name = "Column_best_kaufteillager_lieferdauer";
+            this.Column_best_kaufteillager_lieferdauer.ReadOnly = true;
+            this.Column_best_kaufteillager_lieferdauer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteillager_diskontmenge
+            // 
+            resources.ApplyResources(this.Column_best_kaufteillager_diskontmenge, "Column_best_kaufteillager_diskontmenge");
+            this.Column_best_kaufteillager_diskontmenge.Name = "Column_best_kaufteillager_diskontmenge";
+            this.Column_best_kaufteillager_diskontmenge.ReadOnly = true;
+            this.Column_best_kaufteillager_diskontmenge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteillager_bestellkosten
+            // 
+            resources.ApplyResources(this.Column_best_kaufteillager_bestellkosten, "Column_best_kaufteillager_bestellkosten");
+            this.Column_best_kaufteillager_bestellkosten.Name = "Column_best_kaufteillager_bestellkosten";
+            this.Column_best_kaufteillager_bestellkosten.ReadOnly = true;
+            this.Column_best_kaufteillager_bestellkosten.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
             // tabPage_best_kaufteileverbrauch
             // 
             resources.ApplyResources(this.tabPage_best_kaufteileverbrauch, "tabPage_best_kaufteileverbrauch");
@@ -2770,6 +2837,61 @@
             this.dataGridView_best_kaufteileverbrauch.ReadOnly = true;
             this.dataGridView_best_kaufteileverbrauch.RowHeadersVisible = false;
             // 
+            // Column_best_kaufteileverbrauch_nummer
+            // 
+            resources.ApplyResources(this.Column_best_kaufteileverbrauch_nummer, "Column_best_kaufteileverbrauch_nummer");
+            this.Column_best_kaufteileverbrauch_nummer.Name = "Column_best_kaufteileverbrauch_nummer";
+            this.Column_best_kaufteileverbrauch_nummer.ReadOnly = true;
+            this.Column_best_kaufteileverbrauch_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteileverbrauch_bestand
+            // 
+            this.Column_best_kaufteileverbrauch_bestand.DividerWidth = 3;
+            this.Column_best_kaufteileverbrauch_bestand.FillWeight = 101F;
+            resources.ApplyResources(this.Column_best_kaufteileverbrauch_bestand, "Column_best_kaufteileverbrauch_bestand");
+            this.Column_best_kaufteileverbrauch_bestand.Name = "Column_best_kaufteileverbrauch_bestand";
+            this.Column_best_kaufteileverbrauch_bestand.ReadOnly = true;
+            this.Column_best_kaufteileverbrauch_bestand.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteileverbrauch_bruttobedarfN
+            // 
+            resources.ApplyResources(this.Column_best_kaufteileverbrauch_bruttobedarfN, "Column_best_kaufteileverbrauch_bruttobedarfN");
+            this.Column_best_kaufteileverbrauch_bruttobedarfN.Name = "Column_best_kaufteileverbrauch_bruttobedarfN";
+            this.Column_best_kaufteileverbrauch_bruttobedarfN.ReadOnly = true;
+            this.Column_best_kaufteileverbrauch_bruttobedarfN.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteileverbrauch_bruttobedarfN1
+            // 
+            this.Column_best_kaufteileverbrauch_bruttobedarfN1.DividerWidth = 3;
+            this.Column_best_kaufteileverbrauch_bruttobedarfN1.FillWeight = 101F;
+            resources.ApplyResources(this.Column_best_kaufteileverbrauch_bruttobedarfN1, "Column_best_kaufteileverbrauch_bruttobedarfN1");
+            this.Column_best_kaufteileverbrauch_bruttobedarfN1.Name = "Column_best_kaufteileverbrauch_bruttobedarfN1";
+            this.Column_best_kaufteileverbrauch_bruttobedarfN1.ReadOnly = true;
+            this.Column_best_kaufteileverbrauch_bruttobedarfN1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteileverbrauch_bestandN1
+            // 
+            resources.ApplyResources(this.Column_best_kaufteileverbrauch_bestandN1, "Column_best_kaufteileverbrauch_bestandN1");
+            this.Column_best_kaufteileverbrauch_bestandN1.Name = "Column_best_kaufteileverbrauch_bestandN1";
+            this.Column_best_kaufteileverbrauch_bestandN1.ReadOnly = true;
+            this.Column_best_kaufteileverbrauch_bestandN1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteileverbrauch_bestandN2
+            // 
+            this.Column_best_kaufteileverbrauch_bestandN2.DividerWidth = 3;
+            this.Column_best_kaufteileverbrauch_bestandN2.FillWeight = 101F;
+            resources.ApplyResources(this.Column_best_kaufteileverbrauch_bestandN2, "Column_best_kaufteileverbrauch_bestandN2");
+            this.Column_best_kaufteileverbrauch_bestandN2.Name = "Column_best_kaufteileverbrauch_bestandN2";
+            this.Column_best_kaufteileverbrauch_bestandN2.ReadOnly = true;
+            this.Column_best_kaufteileverbrauch_bestandN2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteileverbrauch_ausstehendeBest
+            // 
+            resources.ApplyResources(this.Column_best_kaufteileverbrauch_ausstehendeBest, "Column_best_kaufteileverbrauch_ausstehendeBest");
+            this.Column_best_kaufteileverbrauch_ausstehendeBest.Name = "Column_best_kaufteileverbrauch_ausstehendeBest";
+            this.Column_best_kaufteileverbrauch_ausstehendeBest.ReadOnly = true;
+            this.Column_best_kaufteileverbrauch_ausstehendeBest.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
             // tabPage_best_bestellung
             // 
             this.tabPage_best_bestellung.Controls.Add(this.dataGridView_best_bestellliste);
@@ -2792,6 +2914,42 @@
             this.dataGridView_best_bestellliste.Name = "dataGridView_best_bestellliste";
             this.dataGridView_best_bestellliste.RowHeadersVisible = false;
             this.dataGridView_best_bestellliste.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_best_bestellliste_CellContentClick);
+            // 
+            // Column_best_bestelliste_nummer
+            // 
+            dataGridViewCellStyle1.Format = "N0";
+            dataGridViewCellStyle1.NullValue = null;
+            this.Column_best_bestelliste_nummer.DefaultCellStyle = dataGridViewCellStyle1;
+            resources.ApplyResources(this.Column_best_bestelliste_nummer, "Column_best_bestelliste_nummer");
+            this.Column_best_bestelliste_nummer.Name = "Column_best_bestelliste_nummer";
+            this.Column_best_bestelliste_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_bestelliste_menge
+            // 
+            dataGridViewCellStyle2.Format = "N0";
+            dataGridViewCellStyle2.NullValue = null;
+            this.Column_best_bestelliste_menge.DefaultCellStyle = dataGridViewCellStyle2;
+            resources.ApplyResources(this.Column_best_bestelliste_menge, "Column_best_bestelliste_menge");
+            this.Column_best_bestelliste_menge.Name = "Column_best_bestelliste_menge";
+            this.Column_best_bestelliste_menge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_bestelliste_eil
+            // 
+            this.Column_best_bestelliste_eil.DividerWidth = 3;
+            this.Column_best_bestelliste_eil.FillWeight = 15F;
+            resources.ApplyResources(this.Column_best_bestelliste_eil, "Column_best_bestelliste_eil");
+            this.Column_best_bestelliste_eil.Name = "Column_best_bestelliste_eil";
+            this.Column_best_bestelliste_eil.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_bestelliste_loeschenButton
+            // 
+            resources.ApplyResources(this.Column_best_bestelliste_loeschenButton, "Column_best_bestelliste_loeschenButton");
+            this.Column_best_bestelliste_loeschenButton.Name = "Column_best_bestelliste_loeschenButton";
+            this.Column_best_bestelliste_loeschenButton.ReadOnly = true;
+            this.Column_best_bestelliste_loeschenButton.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_best_bestelliste_loeschenButton.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column_best_bestelliste_loeschenButton.Text = "Zeile löschen";
+            this.Column_best_bestelliste_loeschenButton.UseColumnTextForButtonValue = true;
             // 
             // tabDirektV
             // 
@@ -2921,170 +3079,6 @@
             resources.ApplyResources(this.imageList3, "imageList3");
             this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // pp_uebersicht_teilnummer
-            // 
-            resources.ApplyResources(this.pp_uebersicht_teilnummer, "pp_uebersicht_teilnummer");
-            this.pp_uebersicht_teilnummer.Name = "pp_uebersicht_teilnummer";
-            // 
-            // pp_uebersicht_bezeichnung
-            // 
-            resources.ApplyResources(this.pp_uebersicht_bezeichnung, "pp_uebersicht_bezeichnung");
-            this.pp_uebersicht_bezeichnung.Name = "pp_uebersicht_bezeichnung";
-            // 
-            // pp_uebersicht_Lagerbestand
-            // 
-            resources.ApplyResources(this.pp_uebersicht_Lagerbestand, "pp_uebersicht_Lagerbestand");
-            this.pp_uebersicht_Lagerbestand.Name = "pp_uebersicht_Lagerbestand";
-            // 
-            // pp_uebersicht_prozent
-            // 
-            resources.ApplyResources(this.pp_uebersicht_prozent, "pp_uebersicht_prozent");
-            this.pp_uebersicht_prozent.Name = "pp_uebersicht_prozent";
-            // 
-            // pp_uebersicht_warteschlange
-            // 
-            resources.ApplyResources(this.pp_uebersicht_warteschlange, "pp_uebersicht_warteschlange");
-            this.pp_uebersicht_warteschlange.Name = "pp_uebersicht_warteschlange";
-            // 
-            // pp_uebersicht_inBearbeitung
-            // 
-            resources.ApplyResources(this.pp_uebersicht_inBearbeitung, "pp_uebersicht_inBearbeitung");
-            this.pp_uebersicht_inBearbeitung.Name = "pp_uebersicht_inBearbeitung";
-			// 
-            // Column_best_kaufteillager_nummer
-            // 
-            resources.ApplyResources(this.Column_best_kaufteillager_nummer, "Column_best_kaufteillager_nummer");
-            this.Column_best_kaufteillager_nummer.Name = "Column_best_kaufteillager_nummer";
-            this.Column_best_kaufteillager_nummer.ReadOnly = true;
-            this.Column_best_kaufteillager_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteillager_bezeichnung
-            // 
-            resources.ApplyResources(this.Column_best_kaufteillager_bezeichnung, "Column_best_kaufteillager_bezeichnung");
-            this.Column_best_kaufteillager_bezeichnung.Name = "Column_best_kaufteillager_bezeichnung";
-            this.Column_best_kaufteillager_bezeichnung.ReadOnly = true;
-            this.Column_best_kaufteillager_bezeichnung.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteillager_bestand
-            // 
-            this.Column_best_kaufteillager_bestand.DividerWidth = 3;
-            resources.ApplyResources(this.Column_best_kaufteillager_bestand, "Column_best_kaufteillager_bestand");
-            this.Column_best_kaufteillager_bestand.Name = "Column_best_kaufteillager_bestand";
-            this.Column_best_kaufteillager_bestand.ReadOnly = true;
-            this.Column_best_kaufteillager_bestand.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteillager_lieferdauer
-            // 
-            resources.ApplyResources(this.Column_best_kaufteillager_lieferdauer, "Column_best_kaufteillager_lieferdauer");
-            this.Column_best_kaufteillager_lieferdauer.Name = "Column_best_kaufteillager_lieferdauer";
-            this.Column_best_kaufteillager_lieferdauer.ReadOnly = true;
-            this.Column_best_kaufteillager_lieferdauer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteillager_diskontmenge
-            // 
-            resources.ApplyResources(this.Column_best_kaufteillager_diskontmenge, "Column_best_kaufteillager_diskontmenge");
-            this.Column_best_kaufteillager_diskontmenge.Name = "Column_best_kaufteillager_diskontmenge";
-            this.Column_best_kaufteillager_diskontmenge.ReadOnly = true;
-            this.Column_best_kaufteillager_diskontmenge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteillager_bestellkosten
-            // 
-            resources.ApplyResources(this.Column_best_kaufteillager_bestellkosten, "Column_best_kaufteillager_bestellkosten");
-            this.Column_best_kaufteillager_bestellkosten.Name = "Column_best_kaufteillager_bestellkosten";
-            this.Column_best_kaufteillager_bestellkosten.ReadOnly = true;
-            this.Column_best_kaufteillager_bestellkosten.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteileverbrauch_nummer
-            // 
-            resources.ApplyResources(this.Column_best_kaufteileverbrauch_nummer, "Column_best_kaufteileverbrauch_nummer");
-            this.Column_best_kaufteileverbrauch_nummer.Name = "Column_best_kaufteileverbrauch_nummer";
-            this.Column_best_kaufteileverbrauch_nummer.ReadOnly = true;
-            this.Column_best_kaufteileverbrauch_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteileverbrauch_bestand
-            // 
-            this.Column_best_kaufteileverbrauch_bestand.DividerWidth = 3;
-            this.Column_best_kaufteileverbrauch_bestand.FillWeight = 101F;
-            resources.ApplyResources(this.Column_best_kaufteileverbrauch_bestand, "Column_best_kaufteileverbrauch_bestand");
-            this.Column_best_kaufteileverbrauch_bestand.Name = "Column_best_kaufteileverbrauch_bestand";
-            this.Column_best_kaufteileverbrauch_bestand.ReadOnly = true;
-            this.Column_best_kaufteileverbrauch_bestand.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteileverbrauch_bruttobedarfN
-            // 
-            resources.ApplyResources(this.Column_best_kaufteileverbrauch_bruttobedarfN, "Column_best_kaufteileverbrauch_bruttobedarfN");
-            this.Column_best_kaufteileverbrauch_bruttobedarfN.Name = "Column_best_kaufteileverbrauch_bruttobedarfN";
-            this.Column_best_kaufteileverbrauch_bruttobedarfN.ReadOnly = true;
-            this.Column_best_kaufteileverbrauch_bruttobedarfN.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteileverbrauch_bruttobedarfN1
-            // 
-            this.Column_best_kaufteileverbrauch_bruttobedarfN1.DividerWidth = 3;
-            this.Column_best_kaufteileverbrauch_bruttobedarfN1.FillWeight = 101F;
-            resources.ApplyResources(this.Column_best_kaufteileverbrauch_bruttobedarfN1, "Column_best_kaufteileverbrauch_bruttobedarfN1");
-            this.Column_best_kaufteileverbrauch_bruttobedarfN1.Name = "Column_best_kaufteileverbrauch_bruttobedarfN1";
-            this.Column_best_kaufteileverbrauch_bruttobedarfN1.ReadOnly = true;
-            this.Column_best_kaufteileverbrauch_bruttobedarfN1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteileverbrauch_bestandN1
-            // 
-            resources.ApplyResources(this.Column_best_kaufteileverbrauch_bestandN1, "Column_best_kaufteileverbrauch_bestandN1");
-            this.Column_best_kaufteileverbrauch_bestandN1.Name = "Column_best_kaufteileverbrauch_bestandN1";
-            this.Column_best_kaufteileverbrauch_bestandN1.ReadOnly = true;
-            this.Column_best_kaufteileverbrauch_bestandN1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteileverbrauch_bestandN2
-            // 
-            this.Column_best_kaufteileverbrauch_bestandN2.DividerWidth = 3;
-            this.Column_best_kaufteileverbrauch_bestandN2.FillWeight = 101F;
-            resources.ApplyResources(this.Column_best_kaufteileverbrauch_bestandN2, "Column_best_kaufteileverbrauch_bestandN2");
-            this.Column_best_kaufteileverbrauch_bestandN2.Name = "Column_best_kaufteileverbrauch_bestandN2";
-            this.Column_best_kaufteileverbrauch_bestandN2.ReadOnly = true;
-            this.Column_best_kaufteileverbrauch_bestandN2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteileverbrauch_ausstehendeBest
-            // 
-            resources.ApplyResources(this.Column_best_kaufteileverbrauch_ausstehendeBest, "Column_best_kaufteileverbrauch_ausstehendeBest");
-            this.Column_best_kaufteileverbrauch_ausstehendeBest.Name = "Column_best_kaufteileverbrauch_ausstehendeBest";
-            this.Column_best_kaufteileverbrauch_ausstehendeBest.ReadOnly = true;
-            this.Column_best_kaufteileverbrauch_ausstehendeBest.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_bestelliste_nummer
-            // 
-            dataGridViewCellStyle13.Format = "N0";
-            dataGridViewCellStyle13.NullValue = null;
-            this.Column_best_bestelliste_nummer.DefaultCellStyle = dataGridViewCellStyle13;
-            resources.ApplyResources(this.Column_best_bestelliste_nummer, "Column_best_bestelliste_nummer");
-            this.Column_best_bestelliste_nummer.Name = "Column_best_bestelliste_nummer";
-            this.Column_best_bestelliste_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_bestelliste_menge
-            // 
-            dataGridViewCellStyle14.Format = "N0";
-            dataGridViewCellStyle14.NullValue = null;
-            this.Column_best_bestelliste_menge.DefaultCellStyle = dataGridViewCellStyle14;
-            resources.ApplyResources(this.Column_best_bestelliste_menge, "Column_best_bestelliste_menge");
-            this.Column_best_bestelliste_menge.Name = "Column_best_bestelliste_menge";
-            this.Column_best_bestelliste_menge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_bestelliste_eil
-            // 
-            this.Column_best_bestelliste_eil.DividerWidth = 3;
-            this.Column_best_bestelliste_eil.FillWeight = 15F;
-            resources.ApplyResources(this.Column_best_bestelliste_eil, "Column_best_bestelliste_eil");
-            this.Column_best_bestelliste_eil.Name = "Column_best_bestelliste_eil";
-            this.Column_best_bestelliste_eil.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_bestelliste_loeschenButton
-            // 
-            resources.ApplyResources(this.Column_best_bestelliste_loeschenButton, "Column_best_bestelliste_loeschenButton");
-            this.Column_best_bestelliste_loeschenButton.Name = "Column_best_bestelliste_loeschenButton";
-            this.Column_best_bestelliste_loeschenButton.ReadOnly = true;
-            this.Column_best_bestelliste_loeschenButton.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column_best_bestelliste_loeschenButton.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Column_best_bestelliste_loeschenButton.Text = "Zeile löschen";
-            this.Column_best_bestelliste_loeschenButton.UseColumnTextForButtonValue = true;
-            // 
             // Start
             // 
             resources.ApplyResources(this, "$this");
@@ -3119,7 +3113,7 @@
             this.tabDamenf.PerformLayout();
             this.tabHerrenf.ResumeLayout(false);
             this.tabHerrenf.PerformLayout();
-			this.tabPUebersicht.ResumeLayout(false);
+            this.tabPUebersicht.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pp_uebersicht_grid)).EndInit();
             this.tabKapa.ResumeLayout(false);
             this.tabControl_kp.ResumeLayout(false);

@@ -362,31 +362,91 @@ namespace ghostSCSIM
                 DaoHelper dao = new DaoHelper();
                 List<Teil> teilListe = new List<Teil>();
                 teilListe = dao.getTeilStammdaten();
-              
-                foreach(Teil teil in teilListe)
-                {
-                    string name = teil.getBezeichnung(); 
-                    int nummer = teil.getNummer();
-                    int lagerbestand = xmlData.warehouseStock.article[nummer-1].amount;
- 
-                    //TODO: Decimalzahl wird nicht übertragen von XML eingelesen -> immer null
-                    decimal prozent = xmlData.warehouseStock.article[nummer-1].pct;
- 
-                    //TODO: Warteschlange wird eventuell nicht bei allen gelesen!
-                    int warteschlange = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(nummer);
-                    int bearbeitung = xmlData.ordersInWork.getInBearbeitungMengeByItem(nummer);
-                    
- 
-                               
-                    string[] row = { nummer.ToString(), name, lagerbestand.ToString(), prozent.ToString(), warteschlange.ToString(), bearbeitung.ToString()};
-                 pp_uebersicht_grid.Rows.Add(row); 
-                  
-                  pp_uebersicht_grid.Rows.Add(row);           
-                }
-               
 
-              dataGridView_kp_uebersicht.Rows.Add("1", "1", "1", "1", "1", "1", "50%", true, true, "1");
- 
+                
+                    foreach (Teil teil in teilListe)
+                    {
+                        string name = teil.getBezeichnung();
+                        int nummer = teil.getNummer();
+                        int lagerbestand = xmlData.warehouseStock.article[nummer - 1].amount;
+
+                        //TODO: Decimalzahl wird nicht übertragen von XML eingelesen -> immer null
+                        decimal prozent = xmlData.warehouseStock.article[nummer - 1].pct;
+
+                        //TODO: Warteschlange wird eventuell nicht bei allen gelesen!
+                        int warteschlange = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(nummer);
+                        int bearbeitung = xmlData.ordersInWork.getInBearbeitungMengeByItem(nummer);
+
+
+
+                        string[] row = { nummer.ToString(), name, lagerbestand.ToString(), prozent.ToString(), warteschlange.ToString(), bearbeitung.ToString() };
+                        pp_uebersicht_grid.Rows.Add(row);
+
+                    }
+                
+
+              //dataGridView_kp_uebersicht.Rows.Add("1", "1", "1", "1", "1", "1", "50%", true, true, "1");
+
+              pp_p3_20_vw.Text = pp_p3_29_prod.Text;
+
+
+              //Bestellung Tab
+              List<Teil> teileStammdaten = dao.getTeilStammdaten();
+
+              if (dataGridView_best_kaufteillager.Rows.Count == 0)
+              {
+                  foreach (Teil teil in teileStammdaten)
+                  {
+                      int teilenummer = teil.getNummer();
+
+                      if (teil.getBuchstabe().ToUpper().Equals("K"))
+                      {
+                          String bezeichnung = teil.getBezeichnung();
+                          int warehouseStockIndex = xmlData.warehouseStock.getIndexOfArticleById(teilenummer);
+                          String bestand = xmlData.warehouseStock.article[warehouseStockIndex].amount.ToString();
+
+                          TeilLieferdaten lieferdaten = dao.getTeilLieferdatenByTeilenummer(teilenummer);
+                          String lieferdauerTage = lieferdaten.getWiederbeschaffungszeitTage().ToString();
+                          String diskontmenge = lieferdaten.getDiskontMenge().ToString();
+                          String bestellkosten = lieferdaten.getBestellkosten().ToString();
+
+                          //Kaufteillager DataGridView befüllen
+                          dataGridView_best_kaufteillager.Rows.Add(teilenummer.ToString(), bezeichnung, bestand, lieferdauerTage, diskontmenge, bestellkosten);
+
+                          int ausstehendeBestellungen = 0;
+
+                          foreach (Order o in xmlData.futureInwardStockMovement.orders)
+                          {
+                              if (o.article == teilenummer)
+                              {
+                                  ausstehendeBestellungen = ausstehendeBestellungen + o.amount;
+                              }
+                          }
+
+                          //Kaufteilbedarf DataGridView befüllen
+                          dataGridView_best_kaufteileverbrauch.Rows.Add(teilenummer.ToString(), bestand.ToString(), "bedarf n", "bedarf n+1", "bestand n+1", "bestand n+2", ausstehendeBestellungen.ToString());
+                      }
+                  }
+              }
+
+              //Bestellliste DataGridView
+              //Eingaben validieren! Festlegen wann die Bestellung gesichert wird! > Extra Methode
+              foreach (DataGridViewRow row in dataGridView_best_bestellliste.Rows)
+              {
+                  int teilenummer = Convert.ToInt32(row.Cells[0].Value); //hier sollten nur teilenummern von k teilen angenommen werden
+                  int bestellmenge = Convert.ToInt32(row.Cells[1].Value);
+                  bool eil = (DataGridViewCheckBoxCell)row.Cells[2].Value != null;
+              }
+
+              //Direktverkauf DataGridView
+              //Eingaben validieren! Festlegen wann der Direktverkauf gesichert wird! > Extra Methode
+              foreach (DataGridViewRow row in dataGridView_dirver_direktverkauf.Rows)
+              {
+                  int teilenummer = Convert.ToInt32(row.Cells[0].Value);
+                  int verkaufsMenge = Convert.ToInt32(row.Cells[1].Value);
+                  double preis = Convert.ToDouble(row.Cells[2].Value);
+              }        
+
             }
           
             
@@ -402,63 +462,7 @@ namespace ghostSCSIM
 
         private void label_pp_p2_59_Click(object sender, EventArgs e)
         {
-            pp_p3_20_vw.Text = pp_p3_29_prod.Text;
-
-
-               //Bestellung Tab
-               DaoHelper daoHelper = new DaoHelper();
-               List<Teil> teileStammdaten = daoHelper.getTeilStammdaten();
-
-               foreach (Teil teil in teileStammdaten)
-               {
-                   int teilenummer = teil.getNummer();
-
-                   if (teil.getBuchstabe().ToUpper().Equals("K"))
-                   {
-                       String bezeichnung = teil.getBezeichnung();
-                       int warehouseStockIndex = xmlData.warehouseStock.getIndexOfArticleById(teilenummer);
-                       String bestand = xmlData.warehouseStock.article[warehouseStockIndex].amount.ToString();
-
-                       TeilLieferdaten lieferdaten = daoHelper.getTeilLieferdatenByTeilenummer(teilenummer);
-                       String lieferdauerTage = lieferdaten.getWiederbeschaffungszeitTage().ToString();
-                       String diskontmenge = lieferdaten.getDiskontMenge().ToString();
-                       String bestellkosten = lieferdaten.getBestellkosten().ToString();
-
-                       //Kaufteillager DataGridView befüllen
-                       dataGridView_best_kaufteillager.Rows.Add(teilenummer.ToString(), bezeichnung, bestand, lieferdauerTage, diskontmenge, bestellkosten);
-
-                       int ausstehendeBestellungen = 0;
-
-                       foreach (Order o in xmlData.futureInwardStockMovement.orders)
-                       {
-                           if (o.article == teilenummer)
-                           {
-                               ausstehendeBestellungen = ausstehendeBestellungen + o.amount;
-                           }
-                       }
-
-                       //Kaufteilbedarf DataGridView befüllen
-                       dataGridView_best_kaufteileverbrauch.Rows.Add(teilenummer.ToString(), bestand.ToString(), "bedarf n", "bedarf n+1", "bestand n+1", "bestand n+2", ausstehendeBestellungen.ToString());
-                   }
-               }
-
-               //Bestellliste DataGridView
-               //Eingaben validieren! Festlegen wann die Bestellung gesichert wird! > Extra Methode
-               foreach (DataGridViewRow row in dataGridView_best_bestellliste.Rows)
-               {
-                   int teilenummer = Convert.ToInt32(row.Cells[0].Value); //hier sollten nur teilenummern von k teilen angenommen werden
-                   int bestellmenge = Convert.ToInt32(row.Cells[1].Value);
-                   bool eil = (DataGridViewCheckBoxCell)row.Cells[2].Value != null;
-               }
-
-               //Direktverkauf DataGridView
-               //Eingaben validieren! Festlegen wann der Direktverkauf gesichert wird! > Extra Methode
-               foreach (DataGridViewRow row in dataGridView_dirver_direktverkauf.Rows)
-               {
-                   int teilenummer = Convert.ToInt32(row.Cells[0].Value);
-                   int verkaufsMenge = Convert.ToInt32(row.Cells[1].Value);
-                   double preis = Convert.ToDouble(row.Cells[2].Value);
-               }
+            
 
            }         
         
