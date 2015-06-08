@@ -37,7 +37,7 @@ namespace ghostSCSIM.Domain
         {
             List<Teil> keys = getKeys();
             if (keys == null) { return null; }
-
+            
             Teil teil = keys.First<Teil>(Teil => Teil.getNummer().Equals(number));
             if (teil == null) { return null; }
 

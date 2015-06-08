@@ -56,6 +56,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatenbankDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Domain\ArbeitsplatzKapa.cs" />
     <Compile Include="Domain\ArbeitsplatzKosten.cs" />
     <Compile Include="Domain\Bestelltyp.cs" />
     <Compile Include="Domain\Bestellung.cs" />
@@ -69,7 +70,8 @@
     <Compile Include="Domain\TeilDisposition.cs" />
     <Compile Include="Domain\TeilLieferdaten.cs" />
     <Compile Include="Domain\Verwendung.cs" />
-    <Compile Include="service\kteilbedarf.cs" />
+    <Compile Include="Service\kteilbedarf.cs" />
+    <Compile Include="Service\Produktionsplanung.cs" />
     <Compile Include="Start.cs">
       <SubType>Form</SubType>
     </Compile>

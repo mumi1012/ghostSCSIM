@@ -31,12 +31,30 @@ namespace ghostSCSIM.DAO
             foreach (DataRow dr in resultTable.Rows)
             {
 
-                Teil einTeil = new Teil((int)dr["ID"], (string)dr["Bezeichnung"], (Verwendung)Enum.Parse(typeof(Verwendung), dr["Verwendung"].ToString(), true), (string)dr["Buchstabe"], 5.0);
+                Teil einTeil = new Teil((int)dr["ID"], (string)dr["Bezeichnung"], (Verwendung)Enum.Parse(typeof(Verwendung), dr["Verwendung"].ToString(), true), (string)dr["Buchstabe"], Convert.ToDouble(dr["Wert"]));
                 teileListe.Add(einTeil);
             }
 
             return teileListe;
 
+        }
+        /// <summary>
+        /// Die Stammdaten zu den Halb- und FE auslesen
+        /// </summary>
+        /// <returns></returns>
+        public List<Teil> getErzeugnisseStammdaten()
+        {
+            DatenbankDataSetTableAdapters.TeilTableAdapter teilTableAdapter = new DatenbankDataSetTableAdapters.TeilTableAdapter();
+            DataTable resultTable = teilTableAdapter.getErzeugnisseStammdaten();
+            List<Teil> teileListe = new List<Teil>();
+
+            teileListe = (from teil in resultTable.AsEnumerable()
+                          select new Teil
+                          {
+                            //TODO
+
+                          }).ToList();
+            return teileListe;
         }
 
         public TeilLieferdaten getTeilLieferdatenByTeilenummer(int teileNummer)
@@ -168,6 +186,22 @@ namespace ghostSCSIM.DAO
                                   }).Single();
 
             return result;
+        }
+
+        public List<ArbeitsplatzKapa> getArbeitsplaetzeKapa()
+        {
+            DatenbankDataSetTableAdapters.Arbeitsplatz_TeilTableAdapter arbeitsplatzTeil = new Arbeitsplatz_TeilTableAdapter();
+            DataTable result = arbeitsplatzTeil.GetData();
+            List<ArbeitsplatzKapa> listeArbeitsplatzKapa = new List<ArbeitsplatzKapa>();
+
+            foreach (DataRow dr in result.Rows)
+            {
+                ArbeitsplatzKapa eiDing = new ArbeitsplatzKapa((int)dr["Arbeitsplatz"], (int)dr["Teil_FK"], (int)dr["Rüstzeit"], (int)dr["Fertigungszeit"]);
+                listeArbeitsplatzKapa.Add(eiDing);
+            }
+
+            return listeArbeitsplatzKapa;
+
         }
            
     }

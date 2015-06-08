@@ -73,6 +73,17 @@
               <Mapping SourceColumn="Buchstabe" DataSetColumn="Buchstabe" />
             </Mappings>
             <Sources>
+              <DbSource ConnectionRef="DatenbankConnectionString (Settings)" DbObjectName="Teil" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="getErzeugnisseStammdaten" GetMethodModifier="Public" GetMethodName="getErzeugnisseStammdaten" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="getErzeugnisseStammdaten" UserSourceName="getErzeugnisseStammdaten">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT ID, Bezeichnung, Verwendung, Wert, Buchstabe FROM Teil
+WHERE Buchstabe = 'P'
+OR Buchstabe = 'E'
+ORDER BY ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
               <DbSource ConnectionRef="DatenbankConnectionString (Settings)" DbObjectName="Teil" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="getTeilStammdaten" GetMethodModifier="Public" GetMethodName="getTeilStammdaten" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="getTeilStammdaten" UserSourceName="getTeilStammdaten">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
@@ -375,7 +386,7 @@ WHERE (PartsListPos.PartsListId = ?)</CommandText>
   <xs:element name="DatenbankDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DatenbankDataSet" msprop:Generator_UserDSName="DatenbankDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Teil" msprop:Generator_TableClassName="TeilDataTable" msprop:Generator_TableVarName="tableTeil" msprop:Generator_TablePropName="Teil" msprop:Generator_RowDeletingName="TeilRowDeleting" msprop:Generator_RowChangingName="TeilRowChanging" msprop:Generator_RowEvHandlerName="TeilRowChangeEventHandler" msprop:Generator_RowDeletedName="TeilRowDeleted" msprop:Generator_UserTableName="Teil" msprop:Generator_RowChangedName="TeilRowChanged" msprop:Generator_RowEvArgName="TeilRowChangeEvent" msprop:Generator_RowClassName="TeilRow">
+        <xs:element name="Teil" msprop:Generator_TableClassName="TeilDataTable" msprop:Generator_TableVarName="tableTeil" msprop:Generator_RowChangedName="TeilRowChanged" msprop:Generator_TablePropName="Teil" msprop:Generator_RowDeletingName="TeilRowDeleting" msprop:Generator_RowChangingName="TeilRowChanging" msprop:Generator_RowEvHandlerName="TeilRowChangeEventHandler" msprop:Generator_RowDeletedName="TeilRowDeleted" msprop:Generator_RowClassName="TeilRow" msprop:Generator_UserTableName="Teil" msprop:Generator_RowEvArgName="TeilRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -404,7 +415,7 @@ WHERE (PartsListPos.PartsListId = ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Bestelldaten" msprop:Generator_TableClassName="BestelldatenDataTable" msprop:Generator_TableVarName="tableBestelldaten" msprop:Generator_RowChangedName="BestelldatenRowChanged" msprop:Generator_TablePropName="Bestelldaten" msprop:Generator_RowDeletingName="BestelldatenRowDeleting" msprop:Generator_RowChangingName="BestelldatenRowChanging" msprop:Generator_RowEvHandlerName="BestelldatenRowChangeEventHandler" msprop:Generator_RowDeletedName="BestelldatenRowDeleted" msprop:Generator_RowClassName="BestelldatenRow" msprop:Generator_UserTableName="Bestelldaten" msprop:Generator_RowEvArgName="BestelldatenRowChangeEvent">
+        <xs:element name="Bestelldaten" msprop:Generator_TableClassName="BestelldatenDataTable" msprop:Generator_TableVarName="tableBestelldaten" msprop:Generator_TablePropName="Bestelldaten" msprop:Generator_RowDeletingName="BestelldatenRowDeleting" msprop:Generator_RowChangingName="BestelldatenRowChanging" msprop:Generator_RowEvHandlerName="BestelldatenRowChangeEventHandler" msprop:Generator_RowDeletedName="BestelldatenRowDeleted" msprop:Generator_UserTableName="Bestelldaten" msprop:Generator_RowChangedName="BestelldatenRowChanged" msprop:Generator_RowEvArgName="BestelldatenRowChangeEvent" msprop:Generator_RowClassName="BestelldatenRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -417,7 +428,7 @@ WHERE (PartsListPos.PartsListId = ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Arbeitsplatz_Teil" msprop:Generator_TableClassName="Arbeitsplatz_TeilDataTable" msprop:Generator_TableVarName="tableArbeitsplatz_Teil" msprop:Generator_RowChangedName="Arbeitsplatz_TeilRowChanged" msprop:Generator_TablePropName="Arbeitsplatz_Teil" msprop:Generator_RowDeletingName="Arbeitsplatz_TeilRowDeleting" msprop:Generator_RowChangingName="Arbeitsplatz_TeilRowChanging" msprop:Generator_RowEvHandlerName="Arbeitsplatz_TeilRowChangeEventHandler" msprop:Generator_RowDeletedName="Arbeitsplatz_TeilRowDeleted" msprop:Generator_RowClassName="Arbeitsplatz_TeilRow" msprop:Generator_UserTableName="Arbeitsplatz_Teil" msprop:Generator_RowEvArgName="Arbeitsplatz_TeilRowChangeEvent">
+        <xs:element name="Arbeitsplatz_Teil" msprop:Generator_TableClassName="Arbeitsplatz_TeilDataTable" msprop:Generator_TableVarName="tableArbeitsplatz_Teil" msprop:Generator_TablePropName="Arbeitsplatz_Teil" msprop:Generator_RowDeletingName="Arbeitsplatz_TeilRowDeleting" msprop:Generator_RowChangingName="Arbeitsplatz_TeilRowChanging" msprop:Generator_RowEvHandlerName="Arbeitsplatz_TeilRowChangeEventHandler" msprop:Generator_RowDeletedName="Arbeitsplatz_TeilRowDeleted" msprop:Generator_UserTableName="Arbeitsplatz_Teil" msprop:Generator_RowChangedName="Arbeitsplatz_TeilRowChanged" msprop:Generator_RowEvArgName="Arbeitsplatz_TeilRowChangeEvent" msprop:Generator_RowClassName="Arbeitsplatz_TeilRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -428,14 +439,14 @@ WHERE (PartsListPos.PartsListId = ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="PartsList" msprop:Generator_TableClassName="PartsListDataTable" msprop:Generator_TableVarName="tablePartsList" msprop:Generator_TablePropName="PartsList" msprop:Generator_RowDeletingName="PartsListRowDeleting" msprop:Generator_RowChangingName="PartsListRowChanging" msprop:Generator_RowEvHandlerName="PartsListRowChangeEventHandler" msprop:Generator_RowDeletedName="PartsListRowDeleted" msprop:Generator_UserTableName="PartsList" msprop:Generator_RowChangedName="PartsListRowChanged" msprop:Generator_RowEvArgName="PartsListRowChangeEvent" msprop:Generator_RowClassName="PartsListRow">
+        <xs:element name="PartsList" msprop:Generator_TableClassName="PartsListDataTable" msprop:Generator_TableVarName="tablePartsList" msprop:Generator_RowChangedName="PartsListRowChanged" msprop:Generator_TablePropName="PartsList" msprop:Generator_RowDeletingName="PartsListRowDeleting" msprop:Generator_RowChangingName="PartsListRowChanging" msprop:Generator_RowEvHandlerName="PartsListRowChangeEventHandler" msprop:Generator_RowDeletedName="PartsListRowDeleted" msprop:Generator_RowClassName="PartsListRow" msprop:Generator_UserTableName="PartsList" msprop:Generator_RowEvArgName="PartsListRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="PartsListID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnPartsListID" msprop:Generator_ColumnPropNameInRow="PartsListID" msprop:Generator_ColumnPropNameInTable="PartsListIDColumn" msprop:Generator_UserColumnName="PartsListID" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="PartsListPos" msprop:Generator_TableClassName="PartsListPosDataTable" msprop:Generator_TableVarName="tablePartsListPos" msprop:Generator_TablePropName="PartsListPos" msprop:Generator_RowDeletingName="PartsListPosRowDeleting" msprop:Generator_RowChangingName="PartsListPosRowChanging" msprop:Generator_RowEvHandlerName="PartsListPosRowChangeEventHandler" msprop:Generator_RowDeletedName="PartsListPosRowDeleted" msprop:Generator_UserTableName="PartsListPos" msprop:Generator_RowChangedName="PartsListPosRowChanged" msprop:Generator_RowEvArgName="PartsListPosRowChangeEvent" msprop:Generator_RowClassName="PartsListPosRow">
+        <xs:element name="PartsListPos" msprop:Generator_TableClassName="PartsListPosDataTable" msprop:Generator_TableVarName="tablePartsListPos" msprop:Generator_RowChangedName="PartsListPosRowChanged" msprop:Generator_TablePropName="PartsListPos" msprop:Generator_RowDeletingName="PartsListPosRowDeleting" msprop:Generator_RowChangingName="PartsListPosRowChanging" msprop:Generator_RowEvHandlerName="PartsListPosRowChangeEventHandler" msprop:Generator_RowDeletedName="PartsListPosRowDeleted" msprop:Generator_RowClassName="PartsListPosRow" msprop:Generator_UserTableName="PartsListPos" msprop:Generator_RowEvArgName="PartsListPosRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -471,10 +482,10 @@ WHERE (PartsListPos.PartsListId = ?)</CommandText>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="TeilBestelldaten" msdata:parent="Teil" msdata:child="Bestelldaten" msdata:parentkey="ID" msdata:childkey="Teil_FK" msprop:Generator_UserChildTable="Bestelldaten" msprop:Generator_ChildPropName="GetBestelldatenRows" msprop:Generator_UserRelationName="TeilBestelldaten" msprop:Generator_RelationVarName="relationTeilBestelldaten" msprop:Generator_UserParentTable="Teil" msprop:Generator_ParentPropName="TeilRow" />
-      <msdata:Relationship name="TeilArbeitsplatz_Teil" msdata:parent="Teil" msdata:child="Arbeitsplatz_Teil" msdata:parentkey="ID" msdata:childkey="Teil_FK" msprop:Generator_UserChildTable="Arbeitsplatz_Teil" msprop:Generator_ChildPropName="GetArbeitsplatz_TeilRows" msprop:Generator_UserRelationName="TeilArbeitsplatz_Teil" msprop:Generator_RelationVarName="relationTeilArbeitsplatz_Teil" msprop:Generator_UserParentTable="Teil" msprop:Generator_ParentPropName="TeilRow" />
-      <msdata:Relationship name="PartsListPartsListPos" msdata:parent="PartsList" msdata:child="PartsListPos" msdata:parentkey="PartsListID" msdata:childkey="PartsListId" msprop:Generator_UserChildTable="PartsListPos" msprop:Generator_ChildPropName="GetPartsListPosRows" msprop:Generator_UserRelationName="PartsListPartsListPos" msprop:Generator_ParentPropName="PartsListRow" msprop:Generator_RelationVarName="relationPartsListPartsListPos" msprop:Generator_UserParentTable="PartsList" />
-      <msdata:Relationship name="TeilPartsListPos" msdata:parent="Teil" msdata:child="PartsListPos" msdata:parentkey="ID" msdata:childkey="PartId" msprop:Generator_UserChildTable="PartsListPos" msprop:Generator_ChildPropName="GetPartsListPosRows" msprop:Generator_UserRelationName="TeilPartsListPos" msprop:Generator_ParentPropName="TeilRow" msprop:Generator_RelationVarName="relationTeilPartsListPos" msprop:Generator_UserParentTable="Teil" />
+      <msdata:Relationship name="TeilBestelldaten" msdata:parent="Teil" msdata:child="Bestelldaten" msdata:parentkey="ID" msdata:childkey="Teil_FK" msprop:Generator_UserChildTable="Bestelldaten" msprop:Generator_ChildPropName="GetBestelldatenRows" msprop:Generator_UserRelationName="TeilBestelldaten" msprop:Generator_ParentPropName="TeilRow" msprop:Generator_RelationVarName="relationTeilBestelldaten" msprop:Generator_UserParentTable="Teil" />
+      <msdata:Relationship name="TeilArbeitsplatz_Teil" msdata:parent="Teil" msdata:child="Arbeitsplatz_Teil" msdata:parentkey="ID" msdata:childkey="Teil_FK" msprop:Generator_UserChildTable="Arbeitsplatz_Teil" msprop:Generator_ChildPropName="GetArbeitsplatz_TeilRows" msprop:Generator_UserRelationName="TeilArbeitsplatz_Teil" msprop:Generator_ParentPropName="TeilRow" msprop:Generator_RelationVarName="relationTeilArbeitsplatz_Teil" msprop:Generator_UserParentTable="Teil" />
+      <msdata:Relationship name="PartsListPartsListPos" msdata:parent="PartsList" msdata:child="PartsListPos" msdata:parentkey="PartsListID" msdata:childkey="PartsListId" msprop:Generator_UserChildTable="PartsListPos" msprop:Generator_ChildPropName="GetPartsListPosRows" msprop:Generator_UserRelationName="PartsListPartsListPos" msprop:Generator_RelationVarName="relationPartsListPartsListPos" msprop:Generator_UserParentTable="PartsList" msprop:Generator_ParentPropName="PartsListRow" />
+      <msdata:Relationship name="TeilPartsListPos" msdata:parent="Teil" msdata:child="PartsListPos" msdata:parentkey="ID" msdata:childkey="PartId" msprop:Generator_UserChildTable="PartsListPos" msprop:Generator_ChildPropName="GetPartsListPosRows" msprop:Generator_UserRelationName="TeilPartsListPos" msprop:Generator_RelationVarName="relationTeilPartsListPos" msprop:Generator_UserParentTable="Teil" msprop:Generator_ParentPropName="TeilRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

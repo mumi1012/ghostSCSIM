@@ -14,13 +14,21 @@ using System.Data.OleDb;
 using ghostSCSIM.DatenbankDataSetTableAdapters;
 using ghostSCSIM.DAO;
 using ghostSCSIM.Domain;
+using ghostSCSIM.service;
 
 namespace ghostSCSIM
 {
     public partial class Start : Form
     {
         // Neuen Datenbehälter für den XML Input anlegen
-        DataContainer xmlData = new DataContainer();
+        public static DataContainer xmlData = DataContainer.Instance;
+        public static Dictionary<int, int> teile_Produktion = new Dictionary<int, int>();
+
+        private int e16 = 0;
+        private int e17 = 0;
+        private int e26 = 0;
+
+        private List<String> produktionsMengenAusView = new List<String>();
 
         public Start()
         {
@@ -285,76 +293,151 @@ namespace ghostSCSIM
                 //Produktion 
 
                 pp_p1_p1_prod.Text = (int.Parse(pp_p1_p1_vw.Text.ToString()) + int.Parse(pp_p1_p1_sb.Text.ToString()) - int.Parse(pp_p1_p1_lager.Text.ToString()) - int.Parse(pp_p1_p1_ws.Text.ToString()) - int.Parse(pp_p1_p1_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(1,(int.Parse(pp_p1_p1_prod.Text)));
+                
                 pp_p1_26_prod.Text = (int.Parse(pp_p1_p1_prod.Text.ToString()) + int.Parse(pp_p1_26_sb.Text.ToString()) - int.Parse(pp_p1_26_lager.Text.ToString()) - int.Parse(pp_p1_26_ws.Text.ToString()) - int.Parse(pp_p1_26_bearb.Text.ToString())).ToString();
+                e26 += int.Parse(pp_p1_26_prod.Text);
                 pp_p1_26_vw.Text = pp_p1_p1_prod.Text;
+
                 pp_p1_51_prod.Text = (int.Parse(pp_p1_p1_prod.Text.ToString()) + int.Parse(pp_p1_51_sb.Text.ToString()) - int.Parse(pp_p1_51_lager.Text.ToString()) - int.Parse(pp_p1_51_ws.Text.ToString()) - int.Parse(pp_p1_51_bearb.Text.ToString())).ToString();
                 pp_p1_51_vw.Text = pp_p1_p1_prod.Text;
+                teile_Produktion.Add(51, (int.Parse(pp_p1_51_prod.Text)));
+
                 pp_p1_16_prod.Text = (int.Parse(pp_p1_51_prod.Text.ToString()) + int.Parse(pp_p1_16_sb.Text.ToString()) - int.Parse(pp_p1_16_lager.Text.ToString()) - int.Parse(pp_p1_16_ws.Text.ToString()) - int.Parse(pp_p1_16_bearb.Text.ToString())).ToString();
+                e16 += int.Parse(pp_p1_16_prod.Text);
+                
                 pp_p1_16_vw.Text = pp_p1_51_prod.Text;
                 pp_p1_17_prod.Text = (int.Parse(pp_p1_51_prod.Text.ToString()) + int.Parse(pp_p1_17_sb.Text.ToString()) - int.Parse(pp_p1_17_lager.Text.ToString()) - int.Parse(pp_p1_17_ws.Text.ToString()) - int.Parse(pp_p1_17_bearb.Text.ToString())).ToString();
+                e17 += int.Parse(pp_p1_17_prod.Text);
+
                 pp_p1_17_vw.Text = pp_p1_51_prod.Text;
                 pp_p1_50_prod.Text = (int.Parse(pp_p1_51_prod.Text.ToString()) + int.Parse(pp_p1_50_sb.Text.ToString()) - int.Parse(pp_p1_50_lager.Text.ToString()) - int.Parse(pp_p1_50_ws.Text.ToString()) - int.Parse(pp_p1_50_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(50, (int.Parse(pp_p1_50_prod.Text)));
+                
                 pp_p1_50_vw.Text = pp_p1_51_prod.Text;
                 pp_p1_4_prod.Text = (int.Parse(pp_p1_50_prod.Text.ToString()) + int.Parse(pp_p1_4_sb.Text.ToString()) - int.Parse(pp_p1_4_lager.Text.ToString()) - int.Parse(pp_p1_4_ws.Text.ToString()) - int.Parse(pp_p1_4_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(4, (int.Parse(pp_p1_4_prod.Text)));
+                
                 pp_p1_4_vw.Text = pp_p1_50_prod.Text;
                 pp_p1_10_prod.Text = (int.Parse(pp_p1_50_prod.Text.ToString()) + int.Parse(pp_p1_10_sb.Text.ToString()) - int.Parse(pp_p1_10_lager.Text.ToString()) - int.Parse(pp_p1_10_ws.Text.ToString()) - int.Parse(pp_p1_10_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(10, (int.Parse(pp_p1_10_prod.Text)));
+                
                 pp_p1_10_vw.Text = pp_p1_50_prod.Text;
                 pp_p1_49_prod.Text = (int.Parse(pp_p1_50_prod.Text.ToString()) + int.Parse(pp_p1_49_sb.Text.ToString()) - int.Parse(pp_p1_49_lager.Text.ToString()) - int.Parse(pp_p1_49_ws.Text.ToString()) - int.Parse(pp_p1_49_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(49, (int.Parse(pp_p1_49_prod.Text)));
+                
                 pp_p1_49_vw.Text = pp_p1_50_prod.Text;
                 pp_p1_7_prod.Text = (int.Parse(pp_p1_49_prod.Text.ToString()) + int.Parse(pp_p1_7_sb.Text.ToString()) - int.Parse(pp_p1_7_lager.Text.ToString()) - int.Parse(pp_p1_7_ws.Text.ToString()) - int.Parse(pp_p1_7_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(7, (int.Parse(pp_p1_7_prod.Text)));
+                
                 pp_p1_7_vw.Text = pp_p1_49_prod.Text;
                 pp_p1_13_prod.Text = (int.Parse(pp_p1_49_prod.Text.ToString()) + int.Parse(pp_p1_13_sb.Text.ToString()) - int.Parse(pp_p1_13_lager.Text.ToString()) - int.Parse(pp_p1_13_ws.Text.ToString()) - int.Parse(pp_p1_13_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(13, (int.Parse(pp_p1_13_prod.Text)));
+                
                 pp_p1_13_vw.Text = pp_p1_49_prod.Text;
                 pp_p1_18_prod.Text = (int.Parse(pp_p1_49_prod.Text.ToString()) + int.Parse(pp_p1_18_sb.Text.ToString()) - int.Parse(pp_p1_18_lager.Text.ToString()) - int.Parse(pp_p1_18_ws.Text.ToString()) - int.Parse(pp_p1_18_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(18, (int.Parse(pp_p1_18_prod.Text)));
+                
                 pp_p1_18_vw.Text = pp_p1_49_prod.Text;
 
                 pp_p2_p2_prod.Text = (int.Parse(pp_p2_p2_vw.Text.ToString()) + int.Parse(pp_p2_p2_sb.Text.ToString()) - int.Parse(pp_p2_p2_lager.Text.ToString()) - int.Parse(pp_p2_p2_ws.Text.ToString()) - int.Parse(pp_p2_p2_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(2, (int.Parse(pp_p2_p2_prod.Text)));
+                
                 pp_p2_26_prod.Text = (int.Parse(pp_p2_p2_vw.Text.ToString()) + int.Parse(pp_p2_26_sb.Text.ToString()) - int.Parse(pp_p2_26_lager.Text.ToString()) - int.Parse(pp_p2_26_ws.Text.ToString()) - int.Parse(pp_p2_26_bearb.Text.ToString())).ToString();
+                e26 += int.Parse(pp_p2_26_prod.Text);
+                
                 pp_p2_26_vw.Text = pp_p2_p2_prod.Text;
                 pp_p2_56_prod.Text = (int.Parse(pp_p2_p2_vw.Text.ToString()) + int.Parse(pp_p2_56_sb.Text.ToString()) - int.Parse(pp_p2_56_lager.Text.ToString()) - int.Parse(pp_p2_56_ws.Text.ToString()) - int.Parse(pp_p2_56_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(56, (int.Parse(pp_p2_56_prod.Text)));
+                
                 pp_p2_56_vw.Text = pp_p2_p2_prod.Text;
                 pp_p2_16_prod.Text = (int.Parse(pp_p2_56_vw.Text.ToString()) + int.Parse(pp_p2_16_sb.Text.ToString()) - int.Parse(pp_p2_16_lager.Text.ToString()) - int.Parse(pp_p2_16_ws.Text.ToString()) - int.Parse(pp_p2_16_bearb.Text.ToString())).ToString();
+                e16 += int.Parse(pp_p2_16_prod.Text);
+
                 pp_p2_16_vw.Text = pp_p2_56_prod.Text;
                 pp_p2_17_prod.Text = (int.Parse(pp_p2_56_vw.Text.ToString()) + int.Parse(pp_p2_17_sb.Text.ToString()) - int.Parse(pp_p2_17_lager.Text.ToString()) - int.Parse(pp_p2_17_ws.Text.ToString()) - int.Parse(pp_p2_17_bearb.Text.ToString())).ToString();
+                e17 += int.Parse(pp_p2_17_prod.Text);
+                
                 pp_p2_17_vw.Text = pp_p2_56_prod.Text;
                 pp_p2_55_prod.Text = (int.Parse(pp_p2_56_vw.Text.ToString()) + int.Parse(pp_p2_55_sb.Text.ToString()) - int.Parse(pp_p2_55_lager.Text.ToString()) - int.Parse(pp_p2_55_ws.Text.ToString()) - int.Parse(pp_p2_55_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(55, (int.Parse(pp_p2_55_prod.Text)));
+                
                 pp_p2_55_vw.Text = pp_p2_56_prod.Text;
                 pp_p2_5_prod.Text = (int.Parse(pp_p2_55_vw.Text.ToString()) + int.Parse(pp_p2_5_sb.Text.ToString()) - int.Parse(pp_p2_5_lager.Text.ToString()) - int.Parse(pp_p2_5_ws.Text.ToString()) - int.Parse(pp_p2_5_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(5, (int.Parse(pp_p2_5_prod.Text)));
+                
                 pp_p2_5_vw.Text = pp_p2_55_prod.Text;
                 pp_p2_11_prod.Text = (int.Parse(pp_p2_55_vw.Text.ToString()) + int.Parse(pp_p2_11_sb.Text.ToString()) - int.Parse(pp_p2_11_lager.Text.ToString()) - int.Parse(pp_p2_11_ws.Text.ToString()) - int.Parse(pp_p2_11_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(11, (int.Parse(pp_p2_11_prod.Text)));
+                
                 pp_p2_11_vw.Text = pp_p2_55_prod.Text;
                 pp_p2_54_prod.Text = (int.Parse(pp_p2_55_vw.Text.ToString()) + int.Parse(pp_p2_54_sb.Text.ToString()) - int.Parse(pp_p2_54_lager.Text.ToString()) - int.Parse(pp_p2_54_ws.Text.ToString()) - int.Parse(pp_p2_54_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(54, (int.Parse(pp_p2_54_prod.Text)));
+                
                 pp_p2_54_vw.Text = pp_p2_55_prod.Text;
                 pp_p2_8_prod.Text = (int.Parse(pp_p2_54_vw.Text.ToString()) + int.Parse(pp_p2_8_sb.Text.ToString()) - int.Parse(pp_p2_8_lager.Text.ToString()) - int.Parse(pp_p2_8_ws.Text.ToString()) - int.Parse(pp_p2_8_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(8, (int.Parse(pp_p2_8_prod.Text)));
+                
                 pp_p2_8_vw.Text = pp_p2_54_prod.Text;
                 pp_p2_14_prod.Text = (int.Parse(pp_p2_54_vw.Text.ToString()) + int.Parse(pp_p2_14_sb.Text.ToString()) - int.Parse(pp_p2_14_lager.Text.ToString()) - int.Parse(pp_p2_14_ws.Text.ToString()) - int.Parse(pp_p2_14_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(14, (int.Parse(pp_p2_14_prod.Text)));
+                
                 pp_p2_14_vw.Text = pp_p2_54_prod.Text;
                 pp_p2_19_prod.Text = (int.Parse(pp_p2_54_vw.Text.ToString()) + int.Parse(pp_p2_19_sb.Text.ToString()) - int.Parse(pp_p2_19_lager.Text.ToString()) - int.Parse(pp_p2_19_ws.Text.ToString()) - int.Parse(pp_p2_19_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(19, (int.Parse(pp_p2_19_prod.Text)));
+                
                 pp_p2_19_vw.Text = pp_p2_54_prod.Text;
 
                 pp_p3_p3_prod.Text = (int.Parse(pp_p3_p3_vw.Text.ToString()) + int.Parse(pp_p3_p3_sb.Text.ToString()) - int.Parse(pp_p3_p3_lager.Text.ToString()) - int.Parse(pp_p3_p3_ws.Text.ToString()) - int.Parse(pp_p3_p3_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(3, (int.Parse(pp_p3_p3_prod.Text)));
                 pp_p3_26_prod.Text = (int.Parse(pp_p3_p3_vw.Text.ToString()) + int.Parse(pp_p3_26_sb.Text.ToString()) - int.Parse(pp_p3_26_lager.Text.ToString()) - int.Parse(pp_p3_26_ws.Text.ToString()) - int.Parse(pp_p3_26_bearb.Text.ToString())).ToString();
+                e26 += int.Parse(pp_p3_26_prod.Text);
+                
                 pp_p3_26_vw.Text = pp_p3_p3_prod.Text;
                 pp_p3_31_prod.Text = (int.Parse(pp_p3_p3_vw.Text.ToString()) + int.Parse(pp_p3_31_sb.Text.ToString()) - int.Parse(pp_p3_31_lager.Text.ToString()) - int.Parse(pp_p3_31_ws.Text.ToString()) - int.Parse(pp_p3_31_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(31, (int.Parse(pp_p3_31_prod.Text)));
+                
                 pp_p3_31_vw.Text = pp_p3_p3_prod.Text;
                 pp_p3_16_prod.Text = (int.Parse(pp_p3_31_vw.Text.ToString()) + int.Parse(pp_p3_16_sb.Text.ToString()) - int.Parse(pp_p3_16_lager.Text.ToString()) - int.Parse(pp_p3_16_ws.Text.ToString()) - int.Parse(pp_p3_16_bearb.Text.ToString())).ToString();
+                e16 += int.Parse(pp_p3_16_prod.Text);
+                
                 pp_p3_16_vw.Text = pp_p3_31_prod.Text;
                 pp_p3_17_prod.Text = (int.Parse(pp_p3_31_vw.Text.ToString()) + int.Parse(pp_p3_17_sb.Text.ToString()) - int.Parse(pp_p3_17_lager.Text.ToString()) - int.Parse(pp_p3_17_ws.Text.ToString()) - int.Parse(pp_p3_17_bearb.Text.ToString())).ToString();
+                e17 += int.Parse(pp_p3_17_prod.Text);
+                
                 pp_p3_17_vw.Text = pp_p3_31_prod.Text;
                 pp_p3_30_prod.Text = (int.Parse(pp_p3_31_vw.Text.ToString()) + int.Parse(pp_p3_30_sb.Text.ToString()) - int.Parse(pp_p3_30_lager.Text.ToString()) - int.Parse(pp_p3_30_ws.Text.ToString()) - int.Parse(pp_p3_30_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(30, (int.Parse(pp_p3_30_prod.Text)));
+                
                 pp_p3_30_vw.Text = pp_p3_31_prod.Text;
                 pp_p3_6_prod.Text = (int.Parse(pp_p3_30_vw.Text.ToString()) + int.Parse(pp_p3_6_sb.Text.ToString()) - int.Parse(pp_p3_6_lager.Text.ToString()) - int.Parse(pp_p3_6_ws.Text.ToString()) - int.Parse(pp_p3_6_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(6, (int.Parse(pp_p3_6_prod.Text)));
+                
                 pp_p3_6_vw.Text = pp_p3_30_prod.Text;
                 pp_p3_12_prod.Text = (int.Parse(pp_p3_30_vw.Text.ToString()) + int.Parse(pp_p3_12_sb.Text.ToString()) - int.Parse(pp_p3_12_lager.Text.ToString()) - int.Parse(pp_p3_12_ws.Text.ToString()) - int.Parse(pp_p3_12_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(12, (int.Parse(pp_p3_12_prod.Text)));
+                
                 pp_p3_12_vw.Text = pp_p3_30_prod.Text;
                 pp_p3_29_prod.Text = (int.Parse(pp_p3_30_vw.Text.ToString()) + int.Parse(pp_p3_29_sb.Text.ToString()) - int.Parse(pp_p3_29_lager.Text.ToString()) - int.Parse(pp_p3_29_ws.Text.ToString()) - int.Parse(pp_p3_29_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(29, (int.Parse(pp_p3_29_prod.Text)));
+                
                 pp_p3_29_vw.Text = pp_p3_30_prod.Text;
                 pp_p3_9_prod.Text = (int.Parse(pp_p3_29_vw.Text.ToString()) + int.Parse(pp_p3_9_sb.Text.ToString()) - int.Parse(pp_p3_9_lager.Text.ToString()) - int.Parse(pp_p3_9_ws.Text.ToString()) - int.Parse(pp_p3_9_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(9, (int.Parse(pp_p3_9_prod.Text)));
+                
                 pp_p3_9_vw.Text = pp_p3_29_prod.Text;
                 pp_p3_15_prod.Text = (int.Parse(pp_p3_29_vw.Text.ToString()) + int.Parse(pp_p3_15_sb.Text.ToString()) - int.Parse(pp_p3_15_lager.Text.ToString()) - int.Parse(pp_p3_15_ws.Text.ToString()) - int.Parse(pp_p3_15_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(15, (int.Parse(pp_p3_15_prod.Text)));
+                
                 pp_p3_15_vw.Text = pp_p3_29_prod.Text;
                 pp_p3_20_prod.Text = (int.Parse(pp_p3_29_vw.Text.ToString()) + int.Parse(pp_p3_20_sb.Text.ToString()) - int.Parse(pp_p3_20_lager.Text.ToString()) - int.Parse(pp_p3_20_ws.Text.ToString()) - int.Parse(pp_p3_20_bearb.Text.ToString())).ToString();
+                teile_Produktion.Add(20, (int.Parse(pp_p3_20_prod.Text)));
+                
                 pp_p3_20_vw.Text = pp_p3_29_prod.Text;
+
+                teile_Produktion.Add(26, e26);
+                teile_Produktion.Add(16, e16);
+                teile_Produktion.Add(17, e17);
 
 
 
@@ -386,6 +469,25 @@ namespace ghostSCSIM
 
 
                 //dataGridView_kp_uebersicht.Rows.Add("1", "1", "1", "1", "1", "1", "50%", true, true, "1");
+                List<ArbeitsplatzKapa> liste = dao.getArbeitsplaetzeKapa();
+                if (dataGridView_kp_uebersicht.Rows.Count == 0)
+                {
+                    for (int i = 1; i < 16; i++)
+                    {
+                        List<ArbeitsplatzKapa> l = liste.Where(arbeitsplatzKapa => arbeitsplatzKapa.getArbeitsplatz().Equals(i)).ToList();
+
+                        //Arbeitsplatz 1 Kapa
+                        foreach (ArbeitsplatzKapa ak in l)
+                        {
+                            if (ak.getTeilfk().Equals(49))
+                            {
+                                int fertigungszeit = ak.getFertigungszeit() * int.Parse(pp_p1_49_prod.Text);
+                                dataGridView_kp_uebersicht.Rows.Add(ak.getArbeitsplatz().ToString(), fertigungszeit.ToString());
+                            }
+                        }
+                    }
+                }
+
 
                 pp_p3_20_vw.Text = pp_p3_29_prod.Text;
 
@@ -541,5 +643,25 @@ namespace ghostSCSIM
         {
             dataGridView_best_kaufteileverbrauch.ScrollBars = ScrollBars.Both;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Produktionsplanung prodPlanung = new Produktionsplanung();
+            prodPlanung.generate();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Produktionsplanung prodplan = new Produktionsplanung();
+            prodplan.generate();
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            Produktionsplanung prodplan = new Produktionsplanung();
+            prodplan.generate();
+        }
+
+       
     }
 }
