@@ -168,6 +168,7 @@ namespace ghostSCSIM
         {
             if (xmlData.getXmlImported())
             {
+                teile_Produktion.Clear();
                 pp_p1_p1_lager.Text = xmlData.warehouseStock.article[0].amount.ToString();
                 pp_p1_26_lager.Text = ((xmlData.warehouseStock.article[25].amount) / 3).ToString();
                 pp_p1_51_lager.Text = xmlData.warehouseStock.article[50].amount.ToString();
@@ -470,21 +471,22 @@ namespace ghostSCSIM
 
                 //dataGridView_kp_uebersicht.Rows.Add("1", "1", "1", "1", "1", "1", "50%", true, true, "1");
                 List<ArbeitsplatzKapa> liste = dao.getArbeitsplaetzeKapa();
+                dataGridView_kp_uebersicht.Rows.Clear();
                 if (dataGridView_kp_uebersicht.Rows.Count == 0)
-                {
+                { 
                     for (int i = 1; i < 16; i++)
                     {
                         List<ArbeitsplatzKapa> l = liste.Where(arbeitsplatzKapa => arbeitsplatzKapa.getArbeitsplatz().Equals(i)).ToList();
-
-                        //Arbeitsplatz 1 Kapa
+                        int kapazitätsbedarf = 0;
                         foreach (ArbeitsplatzKapa ak in l)
                         {
-                            if (ak.getTeilfk().Equals(49))
-                            {
-                                int fertigungszeit = ak.getFertigungszeit() * int.Parse(pp_p1_49_prod.Text);
-                                dataGridView_kp_uebersicht.Rows.Add(ak.getArbeitsplatz().ToString(), fertigungszeit.ToString());
-                            }
+                            
+                            int teil = ak.getTeilfk();
+                            int kapazitätsbedarfTeil = ak.getFertigungszeit() * teile_Produktion[teil];
+                            kapazitätsbedarf += kapazitätsbedarfTeil;
+                            
                         }
+                        dataGridView_kp_uebersicht.Rows.Add(i, kapazitätsbedarf.ToString());
                     }
                 }
 
