@@ -3080,13 +3080,7 @@
             this.imageList3.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
             resources.ApplyResources(this.imageList3, "imageList3");
             this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+           
             // 
             // Start
             // 

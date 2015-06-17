@@ -15,6 +15,7 @@ using ghostSCSIM.DatenbankDataSetTableAdapters;
 using ghostSCSIM.DAO;
 using ghostSCSIM.Domain;
 using ghostSCSIM.service;
+using ghostSCSIM.Service.Disposition;
 
 namespace ghostSCSIM
 {
@@ -646,24 +647,6 @@ namespace ghostSCSIM
             dataGridView_best_kaufteileverbrauch.ScrollBars = ScrollBars.Both;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Produktionsplanung prodPlanung = new Produktionsplanung();
-            prodPlanung.generate();
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            Produktionsplanung prodplan = new Produktionsplanung();
-            prodplan.generate();
-        }
-
-        private void button1_Click_2(object sender, EventArgs e)
-        {
-            Produktionsplanung prodplan = new Produktionsplanung();
-            prodplan.generate();
-        }
-
-       
+             
     }
 }
