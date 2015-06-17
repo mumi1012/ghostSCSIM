@@ -675,6 +675,40 @@ namespace ghostSCSIM
             }
         }
 
+        /// <summary>
+        /// Methode um den selected Tab mit Daten zu füllen
+        /// </summary>
+        /// private void tab1_SelectedIndexChanged(object sender, EventArgs e)
+        private void fillTabsWithData(object sender, EventArgs e)
+        {
+
+            if (tabControl1.SelectedTab == tabControl1.TabPages["tabPrognose"])
+            {
+                MessageBox.Show("Prog");
+            }
+
+            if (tabControl1.SelectedTab == tabControl1.TabPages["tabProdplan"])
+            {
+                MessageBox.Show("Prod");
+            }
+
+            if (tabControl1.SelectedTab == tabControl1.TabPages["tabKapa"])
+            {
+                MessageBox.Show("Kap");
+            }
+
+            if (tabControl1.SelectedTab == tabControl1.TabPages["tabBestellung"])
+            {
+                MessageBox.Show("best");
+            }
+
+            if (tabControl1.SelectedTab == tabControl1.TabPages["tabDirektV"])
+            {
+                MessageBox.Show("direktv");
+            }
+
+        }
+
        
     }
 }
