@@ -7,21 +7,34 @@ using ghostSCSIM.Domain;
 using ghostSCSIM.DAO;
 using ghostSCSIM.XML;
 
-namespace ghostSCSIM.service
+namespace ghostSCSIM.Service.Disposition
 {
-    class Produktionsplanung
+    /// <summary>
+    /// DispoHelper Klasse für die Anzeige der Kaufteile
+    /// </summary>
+    class DispoHelper
     {
 
         private DataContainer dc = Start.xmlData;
-        
+
         private List<TeilDisposition> ergebnisse = new List<TeilDisposition>();
 
-        //TeileDispo Objekte erstellen
-        public void generate()
+        internal List<TeilDisposition> Ergebnisse
+        {
+            get { return ergebnisse; }
+            set { ergebnisse = value; }
+        }
+
+        
+
+       /// <summary>
+       /// TeilDisposition-Objekte bauen anhand Programmplan und Ergebnissen der Vorperiode
+       /// </summary>
+        public List<TeilDisposition> generate()
         {
             DaoHelper daoHelper = new DaoHelper();
             List<Teil> teile_stammdaten = new List<Teil>();
-
+            Dictionary<int, int> produktionsMengen = Start.teile_Produktion;
             teile_stammdaten = daoHelper.getErzeugnisseStammdaten();
             
             //TeilDispoHelper Objekte bauen
@@ -40,18 +53,23 @@ namespace ghostSCSIM.service
                 int auftrag_in_bearbeitung = dc.ordersInWork.getInBearbeitungMengeByItem(teile_nummer);
                 teil_dispo.setAuftrage_bearbeitung(auftrag_in_bearbeitung);
                                
-               
-
                 //Aufträge in Warteschlange
                 int auftraege_warteschlange = dc.waitingListWorkstations.getWarteschlangeMengeByItem(teile_nummer);
                 teil_dispo.setAuftraege_warteschlange(auftraege_warteschlange);
 
-                //Produktionsmenge aus Textboxen
-                //int produktionsMenge = 
+                //Produktionsmengen aus dem Programmplan hinzufügen
+                int produktionsMenge = produktionsMengen[teil.getNummer()];
+                //Wenn Produktionsmenge aus dem Programmplan negativ ist, auf null setzen
+                if (produktionsMenge < 0) { produktionsMenge = 0; }
+                teil_dispo.setProduktionsauftrag_naechste_periode(produktionsMenge);
 
 
                 ergebnisse.Add(teil_dispo);
             }
+
+            return ergebnisse;
+           
+            
 
         }
     }

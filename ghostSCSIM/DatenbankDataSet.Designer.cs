@@ -567,7 +567,7 @@ namespace ghostSCSIM {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public TeilRow AddTeilRow(string Bezeichnung, string Verwendung, int Wert, string Buchstabe) {
+            public TeilRow AddTeilRow(string Bezeichnung, string Verwendung, double Wert, string Buchstabe) {
                 TeilRow rowTeilRow = ((TeilRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -620,7 +620,7 @@ namespace ghostSCSIM {
                 base.Columns.Add(this.columnBezeichnung);
                 this.columnVerwendung = new global::System.Data.DataColumn("Verwendung", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnVerwendung);
-                this.columnWert = new global::System.Data.DataColumn("Wert", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnWert = new global::System.Data.DataColumn("Wert", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnWert);
                 this.columnBuchstabe = new global::System.Data.DataColumn("Buchstabe", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBuchstabe);
@@ -2071,10 +2071,10 @@ namespace ghostSCSIM {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public int Wert {
+            public double Wert {
                 get {
                     try {
-                        return ((int)(this[this.tableTeil.WertColumn]));
+                        return ((double)(this[this.tableTeil.WertColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("Der Wert für Spalte Wert in Tabelle Teil ist DBNull.", e);
@@ -3549,7 +3549,7 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[2];
+            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[3];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT ID, Teil_FK, Lieferfrist, Abweichung, Bestellkosten, Teilepreis, Diskontme" +
@@ -3561,6 +3561,11 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
                 "\nFROM   Bestelldaten\r\nWHERE (Teil_FK = ?)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Teil_FK", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Teil_FK", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[2] = new global::System.Data.OleDb.OleDbCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT ID, Teil_FK, Lieferfrist, Abweichung, Bestellkosten, Teilepreis, Diskontme" +
+                "nge FROM Bestelldaten\r\nORDER BY Teil_FK";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3618,6 +3623,17 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
+            DatenbankDataSet.BestelldatenDataTable dataTable = new DatenbankDataSet.BestelldatenDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DatenbankDataSet.BestelldatenDataTable getTeilLieferdaten() {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
             DatenbankDataSet.BestelldatenDataTable dataTable = new DatenbankDataSet.BestelldatenDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

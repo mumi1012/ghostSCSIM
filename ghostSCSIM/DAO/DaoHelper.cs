@@ -55,8 +55,9 @@ namespace ghostSCSIM.DAO
                                     partId = teil.Field<int>("ID"),
                                     bezeichnung = teil.Field<string>("Bezeichnung"),
                                     verwendung = teil.Field<string>("Verwendung"),
-                                    wert = teil.Field<double>("Wert"),
-                                    buchstabe = teil.Field<string>("Buchstabe")
+                                    buchstabe = teil.Field<string>("Buchstabe"),
+                                    wert = teil.Field<double>("Wert")
+                                    
  
 
                                 }).ToList();
@@ -97,6 +98,30 @@ namespace ghostSCSIM.DAO
 
 
         }
+        public Dictionary<int, TeilLieferdaten> getTeilLieferdaten()
+        {
+            DatenbankDataSetTableAdapters.BestelldatenTableAdapter bestellDatenTableAdapter = new BestelldatenTableAdapter();
+            DataTable resultTable = bestellDatenTableAdapter.getTeilLieferdaten();
+
+            Dictionary<int, TeilLieferdaten> lieferDatenMap = new Dictionary<int, TeilLieferdaten>();
+            TeilLieferdaten lieferDaten = null;
+
+            foreach (DataRow dr in resultTable.Rows)
+            {
+                lieferDaten = new TeilLieferdaten();
+                int teileNummer = Convert.ToInt32(dr["Teil_FK"]);
+                lieferDaten.setTeileNummer(teileNummer);
+                lieferDaten.setWiederbeschaffungszeitPeriode(Convert.ToDouble(dr["Lieferfrist"]));
+                lieferDaten.setDiskontMenge(Convert.ToInt32(dr["Diskontmenge"]));
+                lieferDaten.setAbweichungPeriode(Convert.ToDouble(dr["Abweichung"]));
+                lieferDaten.setBestellkosten(Convert.ToDouble(dr["Bestellkosten"]));
+                lieferDaten.convertPeriodeZuTage(lieferDaten.getWiederbeschaffungszeitPeriode(), lieferDaten.getAbweichungPeriode());
+
+                lieferDatenMap.Add(teileNummer, lieferDaten);
+            }
+            return lieferDatenMap;
+        }
+
        public Stueckliste getStueckListeByFahrradnummer(int fahrradnummer)
        {
             DatenbankDataSetTableAdapters.PartsListPosTableAdapter partsListPostTbAdapter = new PartsListPosTableAdapter();

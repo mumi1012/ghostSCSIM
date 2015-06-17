@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ghostSCSIM.Domain
 {
     class Stueckliste
@@ -88,6 +89,62 @@ namespace ghostSCSIM.Domain
             
             return keys.ToList();
 
+        }
+
+        public StuecklisteItem getMengenBedarfKaufteilByTeilenummer(int teilenummer, Stueckliste stueckListe)
+        {
+            StuecklisteItem stueckListeItem = null;
+            int anzahl = 0;
+            foreach (Teil teil in stueckListe.getKeys())
+            {
+                LinkedList<StuecklisteItem> verwendeteTeile =  stueckListe.getVerwendeteTeileListe(teil);
+
+                foreach (StuecklisteItem item in verwendeteTeile.Where(item => item.getTeil().getNummer().Equals(teilenummer)))
+                {
+                    stueckListeItem = new StuecklisteItem();
+                    stueckListeItem.setTeil(item.getTeil());
+                    anzahl += item.getAnzahl();
+                }
+            }
+            if (stueckListeItem != null)
+            {
+                stueckListeItem.setAnzahl(anzahl);
+            }
+            
+            return stueckListeItem;
+        }
+
+        /// <summary>
+        /// Nettbedarf an Kaufteilen für das aktuelle Produktionsprogramm ermitteln, inklusive Sicherheitsbständen
+        /// </summary>
+        /// <param name="teilenummer"></param>
+        /// <returns></returns>
+        public int getNettoBedarfToFertigteilByTeilenummer(int teilenummer, Dictionary<int,int> produktionsProgramm)
+        {
+
+           //Keys der Stückliste ermitteln
+            IList<Teil> keys = this.getKeys();
+              
+            //Über Keys iterieren und nach Teilenummer suchen
+            int nettoBedarf = 0;
+
+            foreach (Teil teil in keys)
+            {
+                //Bruttobedarf zu dem Teil aus dem Produktionsprogramm
+                int bruttoBedarf = produktionsProgramm[teil.getNummer()];
+                
+                //Bei Teilenummer E26, E17 oder E16 werden die summierten Bedarfe verwendet, daher durch drei teilen
+                if (teil.getNummer().Equals(16) || teil.getNummer().Equals(17) || teil.getNummer().Equals(27)) {
+                    bruttoBedarf = bruttoBedarf / 3;
+                }
+                  
+                LinkedList<StuecklisteItem> verwendeteTeile = this.getVerwendeteTeileListe(teil);
+                foreach (StuecklisteItem item in verwendeteTeile.Where(item => item.getTeil().getNummer().Equals(teilenummer)))
+                {
+                    nettoBedarf += item.getAnzahl() * bruttoBedarf;
+                }
+            }
+            return nettoBedarf;
         }
     }
 }

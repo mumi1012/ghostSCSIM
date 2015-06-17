@@ -190,6 +190,15 @@ WHERE (Teil_FK = ?)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
+              <DbSource ConnectionRef="DatenbankConnectionString (Settings)" DbObjectName="Bestelldaten" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="getTeilLieferdaten" GetMethodModifier="Public" GetMethodName="getTeilLieferdaten" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="getTeilLieferdaten" UserSourceName="getTeilLieferdaten">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT ID, Teil_FK, Lieferfrist, Abweichung, Bestellkosten, Teilepreis, Diskontmenge FROM Bestelldaten
+ORDER BY Teil_FK</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
             </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Arbeitsplatz_TeilTableAdapter" GeneratorDataComponentClassName="Arbeitsplatz_TeilTableAdapter" Name="Arbeitsplatz_Teil" UserDataComponentName="Arbeitsplatz_TeilTableAdapter">
@@ -404,7 +413,7 @@ WHERE (PartsListPos.PartsListId = ?)</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Wert" msprop:Generator_ColumnVarNameInTable="columnWert" msprop:Generator_ColumnPropNameInRow="Wert" msprop:Generator_ColumnPropNameInTable="WertColumn" msprop:Generator_UserColumnName="Wert" type="xs:int" minOccurs="0" />
+              <xs:element name="Wert" msprop:Generator_ColumnVarNameInTable="columnWert" msprop:Generator_ColumnPropNameInRow="Wert" msprop:Generator_ColumnPropNameInTable="WertColumn" msprop:Generator_UserColumnName="Wert" type="xs:double" minOccurs="0" />
               <xs:element name="Buchstabe" msprop:Generator_ColumnVarNameInTable="columnBuchstabe" msprop:Generator_ColumnPropNameInRow="Buchstabe" msprop:Generator_ColumnPropNameInTable="BuchstabeColumn" msprop:Generator_UserColumnName="Buchstabe" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">

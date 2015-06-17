@@ -70,8 +70,11 @@
     <Compile Include="Domain\TeilDisposition.cs" />
     <Compile Include="Domain\TeilLieferdaten.cs" />
     <Compile Include="Domain\Verwendung.cs" />
+    <Compile Include="Service\Disposition\Disposition.cs" />
+    <Compile Include="Service\Disposition\DispositionErgebnis.cs" />
     <Compile Include="Service\kteilbedarf.cs" />
-    <Compile Include="Service\Produktionsplanung.cs" />
+    <Compile Include="Service\Disposition\DispoHelper.cs" />
+    <Compile Include="Service\Disposition\Produktionsprogramm.cs" />
     <Compile Include="Start.cs">
       <SubType>Form</SubType>
     </Compile>
