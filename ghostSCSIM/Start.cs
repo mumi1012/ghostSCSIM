@@ -441,7 +441,13 @@ namespace ghostSCSIM
                 teile_Produktion.Add(16, e16);
                 teile_Produktion.Add(17, e17);
 
-
+                foreach (int key in teile_Produktion.Keys.ToList())
+                {
+                    if(teile_Produktion[key] < 0)
+                    {
+                        teile_Produktion[key] = 0;
+                    }
+                }
 
 
                 DaoHelper dao = new DaoHelper();
@@ -516,6 +522,7 @@ namespace ghostSCSIM
                             String bestellkosten = lieferdaten.getBestellkosten().ToString();
 
                             //Kaufteillager DataGridView befüllen
+                            //TODO: ColumnHeaderText für Bestände und Bedarfe anpassen (statt n > aktuelle Periode aus xml)
                             dataGridView_best_kaufteillager.Rows.Add(teilenummer.ToString(), bezeichnung, bestand, lieferdauerTage, diskontmenge, bestellkosten);
 
                             int ausstehendeBestellungen = 0;
@@ -535,7 +542,7 @@ namespace ghostSCSIM
                 }
 
                 //Bestellliste DataGridView
-                //Eingaben validieren! Festlegen wann die Bestellung gesichert wird! > Extra Methode
+                //TODO: Eingaben validieren! Festlegen wann die Bestellung gesichert wird! > Extra Methode
                 foreach (DataGridViewRow row in dataGridView_best_bestellliste.Rows)
                 {
                     int teilenummer = Convert.ToInt32(row.Cells[0].Value); //hier sollten nur teilenummern von k teilen angenommen werden
@@ -544,7 +551,7 @@ namespace ghostSCSIM
                 }
 
                 //Direktverkauf DataGridView
-                //Eingaben validieren! Festlegen wann der Direktverkauf gesichert wird! > Extra Methode
+                //TODO: Eingaben validieren! Festlegen wann der Direktverkauf gesichert wird! > Extra Methode
                 foreach (DataGridViewRow row in dataGridView_dirver_direktverkauf.Rows)
                 {
                     int teilenummer = Convert.ToInt32(row.Cells[0].Value);
@@ -647,6 +654,27 @@ namespace ghostSCSIM
             dataGridView_best_kaufteileverbrauch.ScrollBars = ScrollBars.Both;
         }
 
-             
+       //Testbutton für das Generieren der Input XML-Datei
+        private void createXml_Click(object sender, EventArgs e)
+        {
+            var fileDialog = new SaveFileDialog { };
+            fileDialog.Title = "XML speichern";
+            fileDialog.Filter = "XML-Dateien (*.xml)|*.xml";
+
+            int game = xmlData.game;
+            int group = xmlData.group;
+            int period = xmlData.period;
+
+            fileDialog.FileName = game + "_" + group + "_" + period + "input";
+
+            fileDialog.ShowDialog();
+            if (fileDialog.FileName != "")
+            {
+                XmlIO xmlFile = new XmlIO();
+                xmlFile.createInputXml(fileDialog.FileName);
+            }
+        }
+
+       
     }
 }

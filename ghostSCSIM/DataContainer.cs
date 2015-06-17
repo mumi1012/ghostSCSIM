@@ -26,6 +26,14 @@ namespace ghostSCSIM
                 return _instance;
             }
         }
+        [XmlAttribute("game")]
+        public int game { get; set; }
+
+        [XmlAttribute("group")]
+        public int group { get; set; }
+
+        [XmlAttribute("period")]
+        public int period { get; set; }
 
         [XmlElement("warehousestock")]
         public WarehouseStock warehouseStock { get; set; }
