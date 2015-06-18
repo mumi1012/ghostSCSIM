@@ -27,6 +27,24 @@ namespace ghostSCSIM.XML
             
             return returnValue;
         }
+
+        public int getInBearbeitungMengeByArbeitsplatz(int arbeitsplatzId)
+        {
+            int returnValue = 0;
+            if (workplace != null)
+            {
+                foreach (Workplace wp in workplace)
+                {
+                    if (wp.id.Equals(arbeitsplatzId))
+                    {
+                        returnValue = wp.timeneed;
+                    }
+                }
+
+            }
+
+            return returnValue;
+        }
     }
     
 }

@@ -13,7 +13,15 @@ namespace ghostSCSIM.Domain
     {
         public int Compare(Teil a, Teil b)
         {
-            int result = a.getStuecklistenPos().CompareTo(b.getStuecklistenPos());
+            int result = 0;
+            result = a.getStuecklistenPos().CompareTo(b.getStuecklistenPos());
+
+            if (result == 0)
+            {
+                result = a.getNummer().CompareTo(b.getNummer());
+            }
+            
+
             return result;
         }
     }
