@@ -50,7 +50,7 @@ namespace ghostSCSIM
         }
         private void SwitchLanguage(string language)
         {
-            foreach (Control c in this.Controls)
+            /*foreach (Control c in this.Controls)
             {
                 ComponentResourceManager resourcesManager = new ComponentResourceManager(typeof(Start));
                 resourcesManager.ApplyResources(c, c.Name, new CultureInfo(language));
@@ -63,6 +63,22 @@ namespace ghostSCSIM
                         resourcesManager.ApplyResources(col, col.Name, new CultureInfo(language));
                     }
                 }
+            }*/
+
+            switch (language)
+            {
+                case "de":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("de");
+                    Controls.Clear();
+                    //Events.Dispose();
+                    InitializeComponent();
+                    break;
+                case "en":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+                    Controls.Clear();
+                    //Events.Dispose();
+                    InitializeComponent();
+                    break;
             }
 
         }
