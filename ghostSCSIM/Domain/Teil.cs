@@ -127,6 +127,11 @@ namespace ghostSCSIM.Domain
             return this.getNummer() == t.getNummer();
         }
 
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
          
     }
 }
