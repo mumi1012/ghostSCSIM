@@ -935,15 +935,15 @@ namespace ghostSCSIM
         {
             refreshHerrenfahrradView();
         }
-
         //Delegate Keypress Events, nur numerische Zeichen in TextBox erlaubt
-        public static void onlynum_KeyPress(object sender, KeyPressEventArgs e)
+        private void onlynum_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
                 e.Handled = true;
 
 
         }
+       
         /// <summary>
         /// Prognosen für Periode 2 - 4 aus in Produktionsprogramm übernehmen
         /// </summary>
