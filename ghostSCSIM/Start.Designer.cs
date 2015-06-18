@@ -419,6 +419,7 @@
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
             this.lbl_xml_import = new System.Windows.Forms.Label();
             this.lbl_xml_period = new System.Windows.Forms.Label();
+            this.btn_prog_save = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPrognose.SuspendLayout();
@@ -529,6 +530,7 @@
             // 
             // tabPrognose
             // 
+            this.tabPrognose.Controls.Add(this.btn_prog_save);
             this.tabPrognose.Controls.Add(this.herren_prog_p4);
             this.tabPrognose.Controls.Add(this.herren_prog_p3);
             this.tabPrognose.Controls.Add(this.herren_prog_p2);
@@ -3184,6 +3186,13 @@
             this.lbl_xml_period.BackColor = System.Drawing.Color.Transparent;
             this.lbl_xml_period.Name = "lbl_xml_period";
             // 
+            // btn_prog_save
+            // 
+            resources.ApplyResources(this.btn_prog_save, "btn_prog_save");
+            this.btn_prog_save.Name = "btn_prog_save";
+            this.btn_prog_save.UseVisualStyleBackColor = true;
+            this.btn_prog_save.Click += new System.EventHandler(this.btn_prog_save_Click);
+            // 
             // Start
             // 
             resources.ApplyResources(this, "$this");
@@ -3644,6 +3653,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_programm;
         private System.Windows.Forms.Label lbl_xml_import;
         private System.Windows.Forms.Label lbl_xml_period;
+        private System.Windows.Forms.Button btn_prog_save;
        
 
     }

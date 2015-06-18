@@ -117,5 +117,16 @@ namespace ghostSCSIM.Domain
                         + ", Verwendung= " + verwendung
                             + ", Wert= " + wert;
         }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null || GetType() != obj.GetType())
+                return false;
+
+            Teil t = (Teil)obj;
+            return this.getNummer() == t.getNummer();
+        }
+
+         
     }
 }

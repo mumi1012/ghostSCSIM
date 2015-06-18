@@ -192,7 +192,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;xmlInputButton.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <metadata name="notifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>165, 17</value>
@@ -206,6 +206,30 @@
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tabControl1.Alignment" type="System.Windows.Forms.TabAlignment, System.Windows.Forms">
     <value>Left</value>
+  </data>
+  <data name="btn_prog_save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>722, 435</value>
+  </data>
+  <data name="btn_prog_save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 52</value>
+  </data>
+  <data name="btn_prog_save.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="btn_prog_save.Text" xml:space="preserve">
+    <value>Speichern</value>
+  </data>
+  <data name="&gt;&gt;btn_prog_save.Name" xml:space="preserve">
+    <value>btn_prog_save</value>
+  </data>
+  <data name="&gt;&gt;btn_prog_save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_prog_save.Parent" xml:space="preserve">
+    <value>tabPrognose</value>
+  </data>
+  <data name="&gt;&gt;btn_prog_save.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="herren_prog_p4.Location" type="System.Drawing.Point, System.Drawing">
     <value>722, 305</value>
@@ -226,7 +250,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;herren_prog_p4.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="herren_prog_p3.Location" type="System.Drawing.Point, System.Drawing">
     <value>556, 305</value>
@@ -247,7 +271,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;herren_prog_p3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="herren_prog_p2.Location" type="System.Drawing.Point, System.Drawing">
     <value>393, 305</value>
@@ -268,7 +292,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;herren_prog_p2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="damen_prog_p4.Location" type="System.Drawing.Point, System.Drawing">
     <value>722, 243</value>
@@ -289,7 +313,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;damen_prog_p4.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="damen_prog_p3.Location" type="System.Drawing.Point, System.Drawing">
     <value>556, 243</value>
@@ -310,7 +334,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;damen_prog_p3.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="damen_prog_p2.Location" type="System.Drawing.Point, System.Drawing">
     <value>393, 243</value>
@@ -331,7 +355,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;damen_prog_p2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="kinder_prog_p4.Location" type="System.Drawing.Point, System.Drawing">
     <value>722, 174</value>
@@ -352,7 +376,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;kinder_prog_p4.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="kinder_prog_p3.Location" type="System.Drawing.Point, System.Drawing">
     <value>556, 175</value>
@@ -373,7 +397,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;kinder_prog_p3.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="kinder_prog_p2.Location" type="System.Drawing.Point, System.Drawing">
     <value>393, 175</value>
@@ -394,7 +418,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;kinder_prog_p2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="herren_prog_p1.Location" type="System.Drawing.Point, System.Drawing">
     <value>226, 305</value>
@@ -415,7 +439,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;herren_prog_p1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="damen_prog_p1.Location" type="System.Drawing.Point, System.Drawing">
     <value>226, 243</value>
@@ -436,7 +460,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;damen_prog_p1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="label_kinderf.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -466,7 +490,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;label_kinderf.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="label_damenf.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -496,7 +520,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;label_damenf.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="label_herrenf.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -526,7 +550,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;label_herrenf.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="label_prognose_n3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -556,7 +580,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;label_prognose_n3.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="label_prognose_n2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -586,7 +610,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;label_prognose_n2.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="label_prognose_n1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -616,7 +640,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;label_prognose_n1.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="label_prognose_n.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -646,7 +670,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;label_prognose_n.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="kinder_prog_p1.Location" type="System.Drawing.Point, System.Drawing">
     <value>226, 175</value>
@@ -667,7 +691,7 @@
     <value>tabPrognose</value>
   </data>
   <data name="&gt;&gt;kinder_prog_p1.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="tabPrognose.Location" type="System.Drawing.Point, System.Drawing">
     <value>28, 4</value>

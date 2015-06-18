@@ -26,6 +26,9 @@ namespace ghostSCSIM
         public static DataContainer xmlData = DataContainer.Instance;
         public static Dictionary<int, int> teile_Produktion = new Dictionary<int, int>();
 
+        //Produktionsprogramm aus Prognosen
+        private Produktionsprogramm produktionsProgramm = new Produktionsprogramm();
+
         //Produktionsprogramm aus View, Key = Teilenummer
         private static Dictionary<int, int> produktionP1 = new Dictionary<int, int>();
         private static Dictionary<int, int> produktionP2 = new Dictionary<int, int>();
@@ -395,6 +398,11 @@ namespace ghostSCSIM
 
                     //Bestellung Tab
                     List<Teil> teileStammdaten = dao.getKaufteileStammdaten();
+                   
+                    Disposition kaufteileDisposition = new Disposition();
+                    kaufteileDisposition.setProduktionsProgramm(produktionsProgramm);
+                    kaufteileDisposition.einkaufProgrammBerechnen();
+                    List<DispositionErgebnis> ergebnis = kaufteileDisposition.getDispositionsErgebnisse();
 
                     if (dataGridView_best_kaufteillager.Rows.Count == 0)
                     {
@@ -426,8 +434,18 @@ namespace ghostSCSIM
                                 }
 
                                 //Kaufteilbedarf DataGridView befüllen
-                                dataGridView_best_kaufteileverbrauch.Rows.Add(teilenummer.ToString(), bestand.ToString(), "bedarf n", "bedarf n+1", "bestand n+1", "bestand n+2", ausstehendeBestellungen.ToString());
-                            
+                                //TODO nochmal genau anschauen ob das auch so passt
+                                DispositionErgebnis dispoErgebnis = ergebnis.First(dispo => dispo.getTeil().Equals(teil));
+
+                                int bruttoBedarfP1 = dispoErgebnis.getBruttoBedarfPeriode1();
+                                int bruttoBedarfP2 = dispoErgebnis.getBruttoBedarfPeriode2();
+                                int bruttoBedarfP3 = dispoErgebnis.getBruttoBedarfPeriode3();
+                                int bruttoBedarfP4 = dispoErgebnis.getBruttoBedarfPeriode4();
+
+
+                                dataGridView_best_kaufteileverbrauch.Rows.Add(teilenummer.ToString(), bestand.ToString(), bruttoBedarfP1.ToString(), bruttoBedarfP2.ToString(), bruttoBedarfP3.ToString(), bruttoBedarfP4.ToString(), ausstehendeBestellungen.ToString());
+                                
+                                
                         }
                     }
 
@@ -907,6 +925,28 @@ namespace ghostSCSIM
         {
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
                 e.Handled = true;
+
+
+        }
+        /// <summary>
+        /// Prognosen für Periode 2 - 4 aus in Produktionsprogramm übernehmen
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btn_prog_save_Click(object sender, EventArgs e)
+        {
+            produktionsProgramm.P1_2 = Convert.ToInt32(kinder_prog_p2.Value);
+            produktionsProgramm.P1_3 = Convert.ToInt32(kinder_prog_p3.Value);
+            produktionsProgramm.P1_4 = Convert.ToInt32(kinder_prog_p4.Value);
+
+            produktionsProgramm.P2_2 = Convert.ToInt32(damen_prog_p2.Value);
+            produktionsProgramm.P2_3 = Convert.ToInt32(damen_prog_p3.Value);
+            produktionsProgramm.P2_4 = Convert.ToInt32(damen_prog_p4.Value);
+
+            produktionsProgramm.P3_2 = Convert.ToInt32(herren_prog_p2.Value);
+            produktionsProgramm.P3_3 = Convert.ToInt32(herren_prog_p3.Value);
+            produktionsProgramm.P3_4 = Convert.ToInt32(herren_prog_p4.Value);
+
 
 
         }
