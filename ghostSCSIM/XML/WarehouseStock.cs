@@ -43,7 +43,7 @@ namespace ghostSCSIM.XML
         [XmlIgnore]
         public decimal pct { get; set; }
 
-        [XmlElement("pct")]
+        [XmlAttribute("pct")]
         public string pctFormatted
         {
             get { return pct.ToString(CultureInfo.GetCultureInfo("de-DE").NumberFormat); }
@@ -53,7 +53,7 @@ namespace ghostSCSIM.XML
         [XmlIgnore]
         public decimal price { get; set; }
 
-        [XmlElement("price")]
+        [XmlAttribute("price")]
             public string priceFormatted {
                 get { return price.ToString(CultureInfo.GetCultureInfo("de-DE").NumberFormat); }
                 set { price = decimal.Parse(value, CultureInfo.GetCultureInfo("de-DE").NumberFormat); } 
@@ -62,7 +62,7 @@ namespace ghostSCSIM.XML
         [XmlIgnore]
         public decimal stockvalue { get; set; }
 
-        [XmlElement("stockvalue")]
+        [XmlAttribute("stockvalue")]
         public string stockvalueFormatted
         {
             get { return stockvalue.ToString(CultureInfo.GetCultureInfo("de-DE").NumberFormat); }

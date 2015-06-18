@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.spracheToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,6 +63,7 @@
             this.tabProdplan = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabKinderf = new System.Windows.Forms.TabPage();
+            this.btn_kf_save = new System.Windows.Forms.Button();
             this.pp_p1_18_prod = new System.Windows.Forms.TextBox();
             this.pp_p1_18_bearb = new System.Windows.Forms.TextBox();
             this.pp_p1_18_ws = new System.Windows.Forms.TextBox();
@@ -154,6 +155,7 @@
             this.label_pp_p1_vw = new System.Windows.Forms.Label();
             this.label_pp_p1_p1 = new System.Windows.Forms.Label();
             this.tabDamenf = new System.Windows.Forms.TabPage();
+            this.btn_df_save = new System.Windows.Forms.Button();
             this.pp_p2_19_prod = new System.Windows.Forms.TextBox();
             this.pp_p2_19_bearb = new System.Windows.Forms.TextBox();
             this.pp_p2_19_ws = new System.Windows.Forms.TextBox();
@@ -245,6 +247,7 @@
             this.label_pp_p2_vw = new System.Windows.Forms.Label();
             this.label_pp_p2_p2 = new System.Windows.Forms.Label();
             this.tabHerrenf = new System.Windows.Forms.TabPage();
+            this.btn_hf_save = new System.Windows.Forms.Button();
             this.pp_p3_20_prod = new System.Windows.Forms.TextBox();
             this.pp_p3_20_bearb = new System.Windows.Forms.TextBox();
             this.pp_p3_20_ws = new System.Windows.Forms.TextBox();
@@ -343,6 +346,7 @@
             this.pp_uebersicht_prozent = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pp_uebersicht_warteschlange = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pp_uebersicht_inBearbeitung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pp_uebersicht_programm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabKapa = new System.Windows.Forms.TabPage();
             this.tabControl_kp = new System.Windows.Forms.TabControl();
             this.tabPage_kp_uebersicht = new System.Windows.Forms.TabPage();
@@ -413,6 +417,8 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
+            this.lbl_xml_import = new System.Windows.Forms.Label();
+            this.lbl_xml_period = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPrognose.SuspendLayout();
@@ -839,9 +845,11 @@
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
             this.tabControl2.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl2.SelectedIndexChanged += new System.EventHandler(this.fillProdprogrammWithData);
             // 
             // tabKinderf
             // 
+            this.tabKinderf.Controls.Add(this.btn_kf_save);
             this.tabKinderf.Controls.Add(this.pp_p1_18_prod);
             this.tabKinderf.Controls.Add(this.pp_p1_18_bearb);
             this.tabKinderf.Controls.Add(this.pp_p1_18_ws);
@@ -936,6 +944,13 @@
             this.tabKinderf.Name = "tabKinderf";
             this.tabKinderf.UseVisualStyleBackColor = true;
             // 
+            // btn_kf_save
+            // 
+            resources.ApplyResources(this.btn_kf_save, "btn_kf_save");
+            this.btn_kf_save.Name = "btn_kf_save";
+            this.btn_kf_save.UseVisualStyleBackColor = true;
+            this.btn_kf_save.Click += new System.EventHandler(this.btn_kf_save_Click);
+            // 
             // pp_p1_18_prod
             // 
             resources.ApplyResources(this.pp_p1_18_prod, "pp_p1_18_prod");
@@ -960,6 +975,7 @@
             // 
             resources.ApplyResources(this.pp_p1_18_sb, "pp_p1_18_sb");
             this.pp_p1_18_sb.Name = "pp_p1_18_sb";
+            this.pp_p1_18_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p1_18_vw
             // 
@@ -995,6 +1011,7 @@
             // 
             resources.ApplyResources(this.pp_p1_13_sb, "pp_p1_13_sb");
             this.pp_p1_13_sb.Name = "pp_p1_13_sb";
+            this.pp_p1_13_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p1_13_vw
             // 
@@ -1030,6 +1047,7 @@
             // 
             resources.ApplyResources(this.pp_p1_7_sb, "pp_p1_7_sb");
             this.pp_p1_7_sb.Name = "pp_p1_7_sb";
+            this.pp_p1_7_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p1_7_vw
             // 
@@ -1065,6 +1083,7 @@
             // 
             resources.ApplyResources(this.pp_p1_49_sb, "pp_p1_49_sb");
             this.pp_p1_49_sb.Name = "pp_p1_49_sb";
+            this.pp_p1_49_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p1_49_vw
             // 
@@ -1100,6 +1119,7 @@
             // 
             resources.ApplyResources(this.pp_p1_10_sb, "pp_p1_10_sb");
             this.pp_p1_10_sb.Name = "pp_p1_10_sb";
+            this.pp_p1_10_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p1_10_vw
             // 
@@ -1135,6 +1155,7 @@
             // 
             resources.ApplyResources(this.pp_p1_4_sb, "pp_p1_4_sb");
             this.pp_p1_4_sb.Name = "pp_p1_4_sb";
+            this.pp_p1_4_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p1_4_vw
             // 
@@ -1170,6 +1191,7 @@
             // 
             resources.ApplyResources(this.pp_p1_50_sb, "pp_p1_50_sb");
             this.pp_p1_50_sb.Name = "pp_p1_50_sb";
+            this.pp_p1_50_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p1_50_vw
             // 
@@ -1205,6 +1227,7 @@
             // 
             resources.ApplyResources(this.pp_p1_17_sb, "pp_p1_17_sb");
             this.pp_p1_17_sb.Name = "pp_p1_17_sb";
+            this.pp_p1_17_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p1_17_vw
             // 
@@ -1240,6 +1263,7 @@
             // 
             resources.ApplyResources(this.pp_p1_16_sb, "pp_p1_16_sb");
             this.pp_p1_16_sb.Name = "pp_p1_16_sb";
+            this.pp_p1_16_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p1_16_vw
             // 
@@ -1275,6 +1299,7 @@
             // 
             resources.ApplyResources(this.pp_p1_51_sb, "pp_p1_51_sb");
             this.pp_p1_51_sb.Name = "pp_p1_51_sb";
+            this.pp_p1_51_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p1_51_vw
             // 
@@ -1310,6 +1335,7 @@
             // 
             resources.ApplyResources(this.pp_p1_26_sb, "pp_p1_26_sb");
             this.pp_p1_26_sb.Name = "pp_p1_26_sb";
+            this.pp_p1_26_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p1_26_vw
             // 
@@ -1345,6 +1371,7 @@
             // 
             resources.ApplyResources(this.pp_p1_p1_sb, "pp_p1_p1_sb");
             this.pp_p1_p1_sb.Name = "pp_p1_p1_sb";
+            this.pp_p1_p1_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p1_p1_vw
             // 
@@ -1388,6 +1415,7 @@
             // 
             // tabDamenf
             // 
+            this.tabDamenf.Controls.Add(this.btn_df_save);
             this.tabDamenf.Controls.Add(this.pp_p2_19_prod);
             this.tabDamenf.Controls.Add(this.pp_p2_19_bearb);
             this.tabDamenf.Controls.Add(this.pp_p2_19_ws);
@@ -1482,6 +1510,13 @@
             this.tabDamenf.Name = "tabDamenf";
             this.tabDamenf.UseVisualStyleBackColor = true;
             // 
+            // btn_df_save
+            // 
+            resources.ApplyResources(this.btn_df_save, "btn_df_save");
+            this.btn_df_save.Name = "btn_df_save";
+            this.btn_df_save.UseVisualStyleBackColor = true;
+            this.btn_df_save.Click += new System.EventHandler(this.btn_df_save_Click);
+            // 
             // pp_p2_19_prod
             // 
             resources.ApplyResources(this.pp_p2_19_prod, "pp_p2_19_prod");
@@ -1506,6 +1541,7 @@
             // 
             resources.ApplyResources(this.pp_p2_19_sb, "pp_p2_19_sb");
             this.pp_p2_19_sb.Name = "pp_p2_19_sb";
+            this.pp_p2_19_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p2_19_vw
             // 
@@ -1541,6 +1577,7 @@
             // 
             resources.ApplyResources(this.pp_p2_14_sb, "pp_p2_14_sb");
             this.pp_p2_14_sb.Name = "pp_p2_14_sb";
+            this.pp_p2_14_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p2_14_vw
             // 
@@ -1576,6 +1613,7 @@
             // 
             resources.ApplyResources(this.pp_p2_8_sb, "pp_p2_8_sb");
             this.pp_p2_8_sb.Name = "pp_p2_8_sb";
+            this.pp_p2_8_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p2_8_vw
             // 
@@ -1611,6 +1649,7 @@
             // 
             resources.ApplyResources(this.pp_p2_54_sb, "pp_p2_54_sb");
             this.pp_p2_54_sb.Name = "pp_p2_54_sb";
+            this.pp_p2_54_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p2_54_vw
             // 
@@ -1646,6 +1685,7 @@
             // 
             resources.ApplyResources(this.pp_p2_11_sb, "pp_p2_11_sb");
             this.pp_p2_11_sb.Name = "pp_p2_11_sb";
+            this.pp_p2_11_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p2_11_vw
             // 
@@ -1681,6 +1721,7 @@
             // 
             resources.ApplyResources(this.pp_p2_5_sb, "pp_p2_5_sb");
             this.pp_p2_5_sb.Name = "pp_p2_5_sb";
+            this.pp_p2_5_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p2_5_vw
             // 
@@ -1716,6 +1757,7 @@
             // 
             resources.ApplyResources(this.pp_p2_55_sb, "pp_p2_55_sb");
             this.pp_p2_55_sb.Name = "pp_p2_55_sb";
+            this.pp_p2_55_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p2_55_vw
             // 
@@ -1752,6 +1794,7 @@
             // 
             resources.ApplyResources(this.pp_p2_17_sb, "pp_p2_17_sb");
             this.pp_p2_17_sb.Name = "pp_p2_17_sb";
+            this.pp_p2_17_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p2_17_vw
             // 
@@ -1787,6 +1830,7 @@
             // 
             resources.ApplyResources(this.pp_p2_16_sb, "pp_p2_16_sb");
             this.pp_p2_16_sb.Name = "pp_p2_16_sb";
+            this.pp_p2_16_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p2_16_vw
             // 
@@ -1822,6 +1866,7 @@
             // 
             resources.ApplyResources(this.pp_p2_56_sb, "pp_p2_56_sb");
             this.pp_p2_56_sb.Name = "pp_p2_56_sb";
+            this.pp_p2_56_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p2_56_vw
             // 
@@ -1858,6 +1903,7 @@
             // 
             resources.ApplyResources(this.pp_p2_26_sb, "pp_p2_26_sb");
             this.pp_p2_26_sb.Name = "pp_p2_26_sb";
+            this.pp_p2_26_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p2_26_vw
             // 
@@ -1893,6 +1939,7 @@
             // 
             resources.ApplyResources(this.pp_p2_p2_sb, "pp_p2_p2_sb");
             this.pp_p2_p2_sb.Name = "pp_p2_p2_sb";
+            this.pp_p2_p2_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p2_p2_vw
             // 
@@ -1936,6 +1983,7 @@
             // 
             // tabHerrenf
             // 
+            this.tabHerrenf.Controls.Add(this.btn_hf_save);
             this.tabHerrenf.Controls.Add(this.pp_p3_20_prod);
             this.tabHerrenf.Controls.Add(this.pp_p3_20_bearb);
             this.tabHerrenf.Controls.Add(this.pp_p3_20_ws);
@@ -2030,6 +2078,13 @@
             this.tabHerrenf.Name = "tabHerrenf";
             this.tabHerrenf.UseVisualStyleBackColor = true;
             // 
+            // btn_hf_save
+            // 
+            resources.ApplyResources(this.btn_hf_save, "btn_hf_save");
+            this.btn_hf_save.Name = "btn_hf_save";
+            this.btn_hf_save.UseVisualStyleBackColor = true;
+            this.btn_hf_save.Click += new System.EventHandler(this.btn_hf_save_Click);
+            // 
             // pp_p3_20_prod
             // 
             resources.ApplyResources(this.pp_p3_20_prod, "pp_p3_20_prod");
@@ -2054,6 +2109,7 @@
             // 
             resources.ApplyResources(this.pp_p3_20_sb, "pp_p3_20_sb");
             this.pp_p3_20_sb.Name = "pp_p3_20_sb";
+            this.pp_p3_20_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p3_20_vw
             // 
@@ -2089,6 +2145,7 @@
             // 
             resources.ApplyResources(this.pp_p3_15_sb, "pp_p3_15_sb");
             this.pp_p3_15_sb.Name = "pp_p3_15_sb";
+            this.pp_p3_15_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p3_15_vw
             // 
@@ -2124,6 +2181,7 @@
             // 
             resources.ApplyResources(this.pp_p3_9_sb, "pp_p3_9_sb");
             this.pp_p3_9_sb.Name = "pp_p3_9_sb";
+            this.pp_p3_9_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p3_9_vw
             // 
@@ -2159,6 +2217,7 @@
             // 
             resources.ApplyResources(this.pp_p3_29_sb, "pp_p3_29_sb");
             this.pp_p3_29_sb.Name = "pp_p3_29_sb";
+            this.pp_p3_29_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p3_29_vw
             // 
@@ -2194,6 +2253,7 @@
             // 
             resources.ApplyResources(this.pp_p3_12_sb, "pp_p3_12_sb");
             this.pp_p3_12_sb.Name = "pp_p3_12_sb";
+            this.pp_p3_12_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p3_12_vw
             // 
@@ -2229,6 +2289,7 @@
             // 
             resources.ApplyResources(this.pp_p3_6_sb, "pp_p3_6_sb");
             this.pp_p3_6_sb.Name = "pp_p3_6_sb";
+            this.pp_p3_6_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p3_6_vw
             // 
@@ -2264,6 +2325,7 @@
             // 
             resources.ApplyResources(this.pp_p3_30_sb, "pp_p3_30_sb");
             this.pp_p3_30_sb.Name = "pp_p3_30_sb";
+            this.pp_p3_30_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p3_30_vw
             // 
@@ -2299,6 +2361,7 @@
             // 
             resources.ApplyResources(this.pp_p3_17_sb, "pp_p3_17_sb");
             this.pp_p3_17_sb.Name = "pp_p3_17_sb";
+            this.pp_p3_17_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p3_17_vw
             // 
@@ -2334,6 +2397,7 @@
             // 
             resources.ApplyResources(this.pp_p3_16_sb, "pp_p3_16_sb");
             this.pp_p3_16_sb.Name = "pp_p3_16_sb";
+            this.pp_p3_16_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p3_16_vw
             // 
@@ -2369,6 +2433,7 @@
             // 
             resources.ApplyResources(this.pp_p3_31_sb, "pp_p3_31_sb");
             this.pp_p3_31_sb.Name = "pp_p3_31_sb";
+            this.pp_p3_31_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p3_31_vw
             // 
@@ -2404,6 +2469,7 @@
             // 
             resources.ApplyResources(this.pp_p3_26_sb, "pp_p3_26_sb");
             this.pp_p3_26_sb.Name = "pp_p3_26_sb";
+            this.pp_p3_26_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p3_26_vw
             // 
@@ -2439,6 +2505,7 @@
             // 
             resources.ApplyResources(this.pp_p3_p3_sb, "pp_p3_p3_sb");
             this.pp_p3_p3_sb.Name = "pp_p3_p3_sb";
+            this.pp_p3_p3_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(onlynum_KeyPress);
             // 
             // pp_p3_p3_vw
             // 
@@ -2496,33 +2563,45 @@
             this.pp_uebersicht_Lagerbestand,
             this.pp_uebersicht_prozent,
             this.pp_uebersicht_warteschlange,
-            this.pp_uebersicht_inBearbeitung});
+            this.pp_uebersicht_inBearbeitung,
+            this.pp_uebersicht_programm});
             resources.ApplyResources(this.pp_uebersicht_grid, "pp_uebersicht_grid");
             this.pp_uebersicht_grid.Name = "pp_uebersicht_grid";
             // 
             // pp_uebersicht_teilnummer
             // 
+            resources.ApplyResources(this.pp_uebersicht_teilnummer, "pp_uebersicht_teilnummer");
             this.pp_uebersicht_teilnummer.Name = "pp_uebersicht_teilnummer";
             // 
             // pp_uebersicht_bezeichnung
             // 
+            resources.ApplyResources(this.pp_uebersicht_bezeichnung, "pp_uebersicht_bezeichnung");
             this.pp_uebersicht_bezeichnung.Name = "pp_uebersicht_bezeichnung";
             // 
             // pp_uebersicht_Lagerbestand
             // 
+            resources.ApplyResources(this.pp_uebersicht_Lagerbestand, "pp_uebersicht_Lagerbestand");
             this.pp_uebersicht_Lagerbestand.Name = "pp_uebersicht_Lagerbestand";
             // 
             // pp_uebersicht_prozent
             // 
+            resources.ApplyResources(this.pp_uebersicht_prozent, "pp_uebersicht_prozent");
             this.pp_uebersicht_prozent.Name = "pp_uebersicht_prozent";
             // 
             // pp_uebersicht_warteschlange
             // 
+            resources.ApplyResources(this.pp_uebersicht_warteschlange, "pp_uebersicht_warteschlange");
             this.pp_uebersicht_warteschlange.Name = "pp_uebersicht_warteschlange";
             // 
             // pp_uebersicht_inBearbeitung
             // 
+            resources.ApplyResources(this.pp_uebersicht_inBearbeitung, "pp_uebersicht_inBearbeitung");
             this.pp_uebersicht_inBearbeitung.Name = "pp_uebersicht_inBearbeitung";
+            // 
+            // pp_uebersicht_programm
+            // 
+            resources.ApplyResources(this.pp_uebersicht_programm, "pp_uebersicht_programm");
+            this.pp_uebersicht_programm.Name = "pp_uebersicht_programm";
             // 
             // tabKapa
             // 
@@ -2624,11 +2703,8 @@
             // 
             // Column_kp_uebersicht_2schicht
             // 
-            this.Column_kp_uebersicht_2schicht.FillWeight = 80F;
             resources.ApplyResources(this.Column_kp_uebersicht_2schicht, "Column_kp_uebersicht_2schicht");
             this.Column_kp_uebersicht_2schicht.Name = "Column_kp_uebersicht_2schicht";
-            this.Column_kp_uebersicht_2schicht.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column_kp_uebersicht_2schicht.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // Column_kp_uebersicht_3schicht
             // 
@@ -2920,18 +2996,18 @@
             // 
             // Column_best_bestelliste_nummer
             // 
-            dataGridViewCellStyle3.Format = "N0";
-            dataGridViewCellStyle3.NullValue = null;
-            this.Column_best_bestelliste_nummer.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Format = "N0";
+            dataGridViewCellStyle1.NullValue = null;
+            this.Column_best_bestelliste_nummer.DefaultCellStyle = dataGridViewCellStyle1;
             resources.ApplyResources(this.Column_best_bestelliste_nummer, "Column_best_bestelliste_nummer");
             this.Column_best_bestelliste_nummer.Name = "Column_best_bestelliste_nummer";
             this.Column_best_bestelliste_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Column_best_bestelliste_menge
             // 
-            dataGridViewCellStyle4.Format = "N0";
-            dataGridViewCellStyle4.NullValue = null;
-            this.Column_best_bestelliste_menge.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Format = "N0";
+            dataGridViewCellStyle2.NullValue = null;
+            this.Column_best_bestelliste_menge.DefaultCellStyle = dataGridViewCellStyle2;
             resources.ApplyResources(this.Column_best_bestelliste_menge, "Column_best_bestelliste_menge");
             this.Column_best_bestelliste_menge.Name = "Column_best_bestelliste_menge";
             this.Column_best_bestelliste_menge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -3096,10 +3172,24 @@
             resources.ApplyResources(this.imageList3, "imageList3");
             this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // lbl_xml_import
+            // 
+            resources.ApplyResources(this.lbl_xml_import, "lbl_xml_import");
+            this.lbl_xml_import.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_xml_import.Name = "lbl_xml_import";
+            // 
+            // lbl_xml_period
+            // 
+            resources.ApplyResources(this.lbl_xml_period, "lbl_xml_period");
+            this.lbl_xml_period.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_xml_period.Name = "lbl_xml_period";
+            // 
             // Start
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lbl_xml_period);
+            this.Controls.Add(this.lbl_xml_import);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -3506,16 +3596,6 @@
         private System.Windows.Forms.Label label_comment_2;
         private System.Windows.Forms.TabPage tabPage_dirver_direktverkauf;
         private System.Windows.Forms.DataGridView dataGridView_dirver_direktverkauf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_arbeitsplatz;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_kapazitaetsbedarf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_ruestzeit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_preKapazitaetsbedarf;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_preRuestzeit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_gesamt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_ueberstunden;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column_kp_uebersicht_2schicht;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column_kp_uebersicht_3schicht;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_leerzeit;
         private System.Windows.Forms.Label label_comment_3;
         private System.Windows.Forms.Label label_comment;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_nummer;
@@ -3540,14 +3620,31 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column_best_bestelliste_eil;
         private System.Windows.Forms.DataGridViewButtonColumn Column_best_bestelliste_loeschenButton;
         private System.Windows.Forms.DataGridView pp_uebersicht_grid;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button createXml;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_arbeitsplatz;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_kapazitaetsbedarf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_ruestzeit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_preKapazitaetsbedarf;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_preRuestzeit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_gesamt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_ueberstunden;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column_kp_uebersicht_2schicht;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column_kp_uebersicht_3schicht;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_leerzeit;
+        private System.Windows.Forms.Button btn_kf_save;
+        private System.Windows.Forms.Button btn_df_save;
+        private System.Windows.Forms.Button btn_hf_save;
         private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_teilnummer;
         private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_bezeichnung;
         private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_Lagerbestand;
         private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_prozent;
         private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_warteschlange;
         private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_inBearbeitung;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button createXml;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_programm;
+        private System.Windows.Forms.Label lbl_xml_import;
+        private System.Windows.Forms.Label lbl_xml_period;
+       
 
     }
 }

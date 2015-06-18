@@ -39,6 +39,49 @@ namespace ghostSCSIM.DAO
 
         }
         /// <summary>
+        /// Die Stammdaten der Kaufteile auslesen
+        /// </summary>
+        /// <returns></returns>
+        public List<Teil> getKaufteileStammdaten()
+        {
+
+            DatenbankDataSetTableAdapters.TeilTableAdapter teilTableAdapter = new TeilTableAdapter();
+            DataTable resultTable = teilTableAdapter.getKaufteileStammdaten();
+            List<Teil> teileListe = new List<Teil>();
+
+            foreach (DataRow dr in resultTable.Rows)
+            {
+
+                Teil einTeil = new Teil((int)dr["ID"], (string)dr["Bezeichnung"], (Verwendung)Enum.Parse(typeof(Verwendung), dr["Verwendung"].ToString(), true), (string)dr["Buchstabe"], Convert.ToDouble(dr["Wert"]));
+                teileListe.Add(einTeil);
+            }
+
+            return teileListe;
+
+        }
+        /// <summary>
+        /// Die Stammdaten der Kaufteile auslesen
+        /// </summary>
+        /// <returns></returns>
+        public List<Teil> getFertigerzeugnisseStammdaten()
+        {
+
+            DatenbankDataSetTableAdapters.TeilTableAdapter teilTableAdapter = new TeilTableAdapter();
+            DataTable resultTable = teilTableAdapter.getFertigerzeugnisseStammdaten();
+            List<Teil> teileListe = new List<Teil>();
+
+            foreach (DataRow dr in resultTable.Rows)
+            {
+
+                Teil einTeil = new Teil((int)dr["ID"], (string)dr["Bezeichnung"], (Verwendung)Enum.Parse(typeof(Verwendung), dr["Verwendung"].ToString(), true), (string)dr["Buchstabe"], Convert.ToDouble(dr["Wert"]));
+                teileListe.Add(einTeil);
+            }
+
+            return teileListe;
+
+        }
+
+        /// <summary>
         /// Die Stammdaten zu den Halb- und FE auslesen
         /// </summary>
         /// <returns></returns>
