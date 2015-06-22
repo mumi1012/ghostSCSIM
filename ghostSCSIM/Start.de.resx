@@ -118,16 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1155, 72</value>
+  <data name="tabDamenf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1242, 519</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 33</value>
+  <data name="tabHerrenf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1242, 519</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>XML laden</value>
+  <data name="pp_uebersicht_grid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1242, 519</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>XML laden 2</value>
+  <data name="tabPUebersicht.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1242, 519</value>
+  </data>
+  <data name="dataGridView_kp_aufloesung.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1240, 544</value>
+  </data>
+  <data name="tabPage_kp_aufloesung.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1248, 554</value>
+  </data>
+  <data name="tabPage_kp_info.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1248, 554</value>
+  </data>
+  <data name="dataGridView_best_kaufteileverbrauch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1240, 544</value>
+  </data>
+  <data name="tabPage_best_kaufteileverbrauch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1248, 554</value>
+  </data>
+  <data name="dataGridView_best_bestellliste.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1235, 529</value>
+  </data>
+  <data name="tabPage_best_bestellung.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1248, 554</value>
   </data>
 </root>

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ghostSCSIM.Domain
 {
+[Obsolete("Nicht mehr benutzen!", true)]
     class MengenStueckliste
     {
 

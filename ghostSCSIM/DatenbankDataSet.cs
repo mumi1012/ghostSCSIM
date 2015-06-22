@@ -2,6 +2,9 @@
     
     
     public partial class DatenbankDataSet {
+        partial class ETeildistrubutionDataTable
+        {
+        }
     }
 }
 
@@ -14,7 +17,9 @@ namespace ghostSCSIM.DatenbankDataSetTableAdapters {
     {
     }
     
-    
     public partial class TeilTableAdapter {
+    }
+
+    partial class ETeildistrubutionTableAdapter {
     }
 }

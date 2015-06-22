@@ -14,8 +14,27 @@ namespace ghostSCSIM
      * 
      * */
     [XmlRoot("results")]
-    public class DataContainer
+    public sealed class DataContainer
     {
+        private static readonly DataContainer _instance = new DataContainer();
+
+        static DataContainer() { }
+
+
+        public static DataContainer Instance {
+            get {
+                return _instance;
+            }
+        }
+        [XmlAttribute("game")]
+        public int game { get; set; }
+
+        [XmlAttribute("group")]
+        public int group { get; set; }
+
+        [XmlAttribute("period")]
+        public int period { get; set; }
+
         [XmlElement("warehousestock")]
         public WarehouseStock warehouseStock { get; set; }
 
@@ -46,7 +65,7 @@ namespace ghostSCSIM
         {
             return xmlImported;
         }
-        public DataContainer()
+        private DataContainer()
         {
             this.xmlImported = false;
         }

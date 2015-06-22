@@ -118,17 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1051, 55</value>
+  <data name="dEToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 30</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 33</value>
+  <data name="dEToolStripMenuItem.Text" xml:space="preserve">
+    <value>GER</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Load XML</value>
-  </data>
-  <data name="articleID.HeaderText" xml:space="preserve">
-    <value>ID</value>
+  <data name="eNToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 30</value>
   </data>
   <data name="spracheToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 29</value>
@@ -136,31 +133,388 @@
   <data name="spracheToolStripMenuItem.Text" xml:space="preserve">
     <value>Language</value>
   </data>
-  <data name="dEToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 30</value>
+  <data name="einstellungenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 29</value>
   </data>
-  <data name="eNToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 30</value>
+  <data name="einstellungenToolStripMenuItem.Text" xml:space="preserve">
+    <value>Settings</value>
   </data>
-  <data name="amount.HeaderText" xml:space="preserve">
+  <data name="xmlInputButton.Text" xml:space="preserve">
+    <value>Import XML</value>
+  </data>
+  <data name="btn_prog_save.Text" xml:space="preserve">
+    <value>Save Forecast</value>
+  </data>
+  <data name="label_kinderf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 20</value>
+  </data>
+  <data name="label_kinderf.Text" xml:space="preserve">
+    <value>Child's bicycle</value>
+  </data>
+  <data name="label_damenf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 20</value>
+  </data>
+  <data name="label_damenf.Text" xml:space="preserve">
+    <value>Ladies' bicycle</value>
+  </data>
+  <data name="label_herrenf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 20</value>
+  </data>
+  <data name="label_herrenf.Text" xml:space="preserve">
+    <value>Man's bicycle</value>
+  </data>
+  <data name="label_prognose_n3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 20</value>
+  </data>
+  <data name="label_prognose_n3.Text" xml:space="preserve">
+    <value>Period n+3</value>
+  </data>
+  <data name="label_prognose_n2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 20</value>
+  </data>
+  <data name="label_prognose_n2.Text" xml:space="preserve">
+    <value>Period n+2</value>
+  </data>
+  <data name="label_prognose_n1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 20</value>
+  </data>
+  <data name="label_prognose_n1.Text" xml:space="preserve">
+    <value>Period n+1</value>
+  </data>
+  <data name="label_prognose_n.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 20</value>
+  </data>
+  <data name="label_prognose_n.Text" xml:space="preserve">
+    <value>Period n</value>
+  </data>
+  <data name="tabPrognose.Text" xml:space="preserve">
+    <value>Forecast</value>
+  </data>
+  <data name="btn_kf_save.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="label_pp_p1_prod.Text" xml:space="preserve">
+    <value>Production</value>
+  </data>
+  <data name="label_pp_p1_bearb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 20</value>
+  </data>
+  <data name="label_pp_p1_bearb.Text" xml:space="preserve">
+    <value>in process</value>
+  </data>
+  <data name="label_pp_p1_ws.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 20</value>
+  </data>
+  <data name="label_pp_p1_ws.Text" xml:space="preserve">
+    <value>Waitinglist</value>
+  </data>
+  <data name="label_pp_p1_lager.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 20</value>
+  </data>
+  <data name="label_pp_p1_lager.Text" xml:space="preserve">
+    <value>Warehouse stock</value>
+  </data>
+  <data name="label_pp_p1_sb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 20</value>
+  </data>
+  <data name="label_pp_p1_sb.Text" xml:space="preserve">
+    <value>Safety stock</value>
+  </data>
+  <data name="label_pp_p1_vw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 20</value>
+  </data>
+  <data name="label_pp_p1_vw.Text" xml:space="preserve">
+    <value>Sellwish</value>
+  </data>
+  <data name="tabKinderf.Text" xml:space="preserve">
+    <value>Child's bicycle</value>
+  </data>
+  <data name="btn_df_save.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="label_pp_p2_prod.Text" xml:space="preserve">
+    <value>Production</value>
+  </data>
+  <data name="label_pp_p2_bearb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 20</value>
+  </data>
+  <data name="label_pp_p2_bearb.Text" xml:space="preserve">
+    <value>in process</value>
+  </data>
+  <data name="label_pp_p2_ws.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 20</value>
+  </data>
+  <data name="label_pp_p2_ws.Text" xml:space="preserve">
+    <value>Waitinglist</value>
+  </data>
+  <data name="label_pp_p2_lager.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 20</value>
+  </data>
+  <data name="label_pp_p2_lager.Text" xml:space="preserve">
+    <value>Warehouse stock</value>
+  </data>
+  <data name="label_pp_p2_sb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 20</value>
+  </data>
+  <data name="label_pp_p2_sb.Text" xml:space="preserve">
+    <value>Safety stock</value>
+  </data>
+  <data name="label_pp_p2_vw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 20</value>
+  </data>
+  <data name="label_pp_p2_vw.Text" xml:space="preserve">
+    <value>Sellwish</value>
+  </data>
+  <data name="tabDamenf.Text" xml:space="preserve">
+    <value>Ladies' bicycle</value>
+  </data>
+  <data name="btn_hf_save.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="label_pp_p3_prod.Text" xml:space="preserve">
+    <value>Production</value>
+  </data>
+  <data name="label_pp_p3_bearb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 20</value>
+  </data>
+  <data name="label_pp_p3_bearb.Text" xml:space="preserve">
+    <value>in process</value>
+  </data>
+  <data name="label_pp_p3_ws.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 20</value>
+  </data>
+  <data name="label_pp_p3_ws.Text" xml:space="preserve">
+    <value>Waitinglist</value>
+  </data>
+  <data name="label_pp_p3_lager.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 20</value>
+  </data>
+  <data name="label_pp_p3_lager.Text" xml:space="preserve">
+    <value>Warehouse stock</value>
+  </data>
+  <data name="label_pp_p3_sb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 20</value>
+  </data>
+  <data name="label_pp_p3_sb.Text" xml:space="preserve">
+    <value>Safety stock</value>
+  </data>
+  <data name="label_pp_p3_vw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 20</value>
+  </data>
+  <data name="label_pp_p3_vw.Text" xml:space="preserve">
+    <value>Sellwish</value>
+  </data>
+  <data name="tabHerrenf.Text" xml:space="preserve">
+    <value>Man's bicycle</value>
+  </data>
+  <data name="tabPUebersicht.Text" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="tabProdplan.Text" xml:space="preserve">
+    <value>Production plan</value>
+  </data>
+  <data name="Column_kp_uebersicht_arbeitsplatz.HeaderText" xml:space="preserve">
+    <value>Workplace</value>
+  </data>
+  <data name="Column_kp_uebersicht_kapazitaetsbedarf.HeaderText" xml:space="preserve">
+    <value>Capacity requirements</value>
+  </data>
+  <data name="Column_kp_uebersicht_ruestzeit.HeaderText" xml:space="preserve">
+    <value>Set-up time</value>
+  </data>
+  <data name="Column_kp_uebersicht_preKapazitaetsbedarf.HeaderText" xml:space="preserve">
+    <value>Capacity requirements from residues</value>
+  </data>
+  <data name="Column_kp_uebersicht_preRuestzeit.HeaderText" xml:space="preserve">
+    <value>Set-up time from residues</value>
+  </data>
+  <data name="Column_kp_uebersicht_gesamt.HeaderText" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Column_kp_uebersicht_ueberstunden.HeaderText" xml:space="preserve">
+    <value>Overtime</value>
+  </data>
+  <data name="Column_kp_uebersicht_2schicht.HeaderText" xml:space="preserve">
+    <value>2. shift</value>
+  </data>
+  <data name="Column_kp_uebersicht_3schicht.HeaderText" xml:space="preserve">
+    <value>3. shift</value>
+  </data>
+  <data name="Column_kp_uebersicht_leerzeit.HeaderText" xml:space="preserve">
+    <value>Idle time</value>
+  </data>
+  <data name="tabPage_kp_uebersicht.Text" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="tabPage_kp_uebersicht.ToolTipText" xml:space="preserve">
+    <value>Overview Capacityplan</value>
+  </data>
+  <data name="Column_kp_aufloesung_arbeitsplatz.HeaderText" xml:space="preserve">
+    <value>Workplace</value>
+  </data>
+  <data name="Column_kp_aufloesung_teil.HeaderText" xml:space="preserve">
+    <value>Part</value>
+  </data>
+  <data name="Column_kp_aufloesung_fertigungszeit.HeaderText" xml:space="preserve">
+    <value>Production time per unit</value>
+  </data>
+  <data name="Column_kp_aufloesung_kapazitaetsbedarfTeil.HeaderText" xml:space="preserve">
+    <value>Capacity requirements</value>
+  </data>
+  <data name="Column_kp_aufloesung_ruestzeitTeil.HeaderText" xml:space="preserve">
+    <value>Set-up time</value>
+  </data>
+  <data name="tabPage_kp_aufloesung.Text" xml:space="preserve">
+    <value>Resolution</value>
+  </data>
+  <data name="tabPage_kp_aufloesung.ToolTipText" xml:space="preserve">
+    <value>Resolution of the capacity requirements by parts</value>
+  </data>
+  <data name="tabPage_kp_info.ToolTipText" xml:space="preserve">
+    <value>Further information</value>
+  </data>
+  <data name="tabKapa.Text" xml:space="preserve">
+    <value>Capacity plan</value>
+  </data>
+  <data name="Column_best_kaufteillager_nummer.HeaderText" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="Column_best_kaufteillager_nummer.ToolTipText" xml:space="preserve">
+    <value>Number of the bought-out component</value>
+  </data>
+  <data name="Column_best_kaufteillager_bezeichnung.HeaderText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Column_best_kaufteillager_bezeichnung.ToolTipText" xml:space="preserve">
+    <value>Description of the K-item</value>
+  </data>
+  <data name="Column_best_kaufteillager_bestand.HeaderText" xml:space="preserve">
+    <value>Stock</value>
+  </data>
+  <data name="Column_best_kaufteillager_bestand.ToolTipText" xml:space="preserve">
+    <value>Current stock of the K-item</value>
+  </data>
+  <data name="Column_best_kaufteillager_lieferdauer.HeaderText" xml:space="preserve">
+    <value>Delivery time</value>
+  </data>
+  <data name="Column_best_kaufteillager_lieferdauer.ToolTipText" xml:space="preserve">
+    <value>Average delivery time of the K-item (in days)</value>
+  </data>
+  <data name="Column_best_kaufteillager_diskontmenge.HeaderText" xml:space="preserve">
+    <value>Discount amount</value>
+  </data>
+  <data name="Column_best_kaufteillager_diskontmenge.ToolTipText" xml:space="preserve">
+    <value>Discount amount of the K-item</value>
+  </data>
+  <data name="Column_best_kaufteillager_bestellkosten.HeaderText" xml:space="preserve">
+    <value>Ordering costs</value>
+  </data>
+  <data name="Column_best_kaufteillager_bestellkosten.ToolTipText" xml:space="preserve">
+    <value>Fixed costs for normal order of the K-item</value>
+  </data>
+  <data name="tabPage_best_kaufteillager.Text" xml:space="preserve">
+    <value>K-item stock</value>
+  </data>
+  <data name="Column_best_kaufteileverbrauch_nummer.HeaderText" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="Column_best_kaufteileverbrauch_nummer.ToolTipText" xml:space="preserve">
+    <value>Number of K-item</value>
+  </data>
+  <data name="Column_best_kaufteileverbrauch_bestand.HeaderText" xml:space="preserve">
+    <value>Stock</value>
+  </data>
+  <data name="Column_best_kaufteileverbrauch_bestand.ToolTipText" xml:space="preserve">
+    <value>Current stock of the K-item</value>
+  </data>
+  <data name="Column_best_kaufteileverbrauch_bruttobedarfN.HeaderText" xml:space="preserve">
+    <value>Gross requirements n</value>
+  </data>
+  <data name="Column_best_kaufteileverbrauch_bruttobedarfN.ToolTipText" xml:space="preserve">
+    <value>Gross requirements of the current period</value>
+  </data>
+  <data name="Column_best_kaufteileverbrauch_bruttobedarfN1.HeaderText" xml:space="preserve">
+    <value>Gross requirements n+1</value>
+  </data>
+  <data name="Column_best_kaufteileverbrauch_bruttobedarfN1.ToolTipText" xml:space="preserve">
+    <value>Planned gross requirements of the next period</value>
+  </data>
+  <data name="Column_best_kaufteileverbrauch_bestandN1.HeaderText" xml:space="preserve">
+    <value>Stock n+1</value>
+  </data>
+  <data name="Column_best_kaufteileverbrauch_bestandN1.ToolTipText" xml:space="preserve">
+    <value>Estimated Stock at the beginning of the next period</value>
+  </data>
+  <data name="Column_best_kaufteileverbrauch_bestandN2.HeaderText" xml:space="preserve">
+    <value>Stock n+2</value>
+  </data>
+  <data name="Column_best_kaufteileverbrauch_bestandN2.ToolTipText" xml:space="preserve">
+    <value>Estimated Stock at the beginning of the period after next</value>
+  </data>
+  <data name="Column_best_kaufteileverbrauch_ausstehendeBest.HeaderText" xml:space="preserve">
+    <value>Outstanding orders</value>
+  </data>
+  <data name="Column_best_kaufteileverbrauch_ausstehendeBest.ToolTipText" xml:space="preserve">
+    <value>Total delivery quantity of the outstanding orders</value>
+  </data>
+  <data name="tabPage_best_kaufteileverbrauch.Text" xml:space="preserve">
+    <value>K-item usage</value>
+  </data>
+  <data name="Column_best_bestelliste_nummer.HeaderText" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="Column_best_bestelliste_nummer.ToolTipText" xml:space="preserve">
+    <value>Number of the bought-out component</value>
+  </data>
+  <data name="Column_best_bestelliste_menge.HeaderText" xml:space="preserve">
     <value>Amount</value>
   </data>
-  <data name="id.HeaderText" xml:space="preserve">
-    <value>ID</value>
+  <data name="Column_best_bestelliste_menge.ToolTipText" xml:space="preserve">
+    <value>Quantity to be ordered of the bought-out component</value>
   </data>
-  <data name="pct.HeaderText" xml:space="preserve">
-    <value>in Percent</value>
+  <data name="Column_best_bestelliste_eil.HeaderText" xml:space="preserve">
+    <value>Fast</value>
   </data>
-  <data name="price.HeaderText" xml:space="preserve">
+  <data name="Column_best_bestelliste_eil.ToolTipText" xml:space="preserve">
+    <value>Selection activates a fast order</value>
+  </data>
+  <data name="Column_best_bestelliste_loeschenButton.HeaderText" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Column_best_bestelliste_loeschenButton.ToolTipText" xml:space="preserve">
+    <value>Confirming deletes the particular row</value>
+  </data>
+  <data name="tabPage_best_bestellung.Text" xml:space="preserve">
+    <value>Order list</value>
+  </data>
+  <data name="tabBestellung.Text" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="createXml.Text" xml:space="preserve">
+    <value>XML Output Test</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1051, 55</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 33</value>
+  </data>
+  <data name="Column_dirver_direktverkauf_nummer.HeaderText" xml:space="preserve">
+    <value>Partnumber</value>
+  </data>
+  <data name="Column_dirver_direktverkauf_menge.HeaderText" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Column_dirver_direktverkauf_preis.HeaderText" xml:space="preserve">
     <value>Price</value>
   </data>
-  <data name="startamount.HeaderText" xml:space="preserve">
-    <value>Startamount</value>
+  <data name="Column_dirver_direktverkauf_loeschenButton.HeaderText" xml:space="preserve">
+    <value>Edit</value>
   </data>
-  <data name="stockvalue.HeaderText" xml:space="preserve">
-    <value>Stockvalue</value>
+  <data name="tabPage_dirver_direktverkauf.Text" xml:space="preserve">
+    <value>Direct sales</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Load XML 2</value>
+  <data name="tabDirektV.Text" xml:space="preserve">
+    <value>Direct sales</value>
   </data>
 </root>

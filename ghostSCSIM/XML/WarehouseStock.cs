@@ -14,6 +14,19 @@ namespace ghostSCSIM.XML
     {
         [XmlElement("article")]
         public List<Article> article = new List<Article>();
+
+        public int getIndexOfArticleById(int id)
+        {
+            int index = 0;
+            foreach (Article a in this.article)
+            {
+                if (a.id.Equals(id))
+                {
+                    index = article.IndexOf(a);
+                }
+            }
+            return index;
+        }
     }
 
     public class Article
@@ -26,11 +39,11 @@ namespace ghostSCSIM.XML
 
         [XmlAttribute]
         public int startamount { get; set; }
-
+        
         [XmlIgnore]
         public decimal pct { get; set; }
 
-        [XmlElement("pct")]
+        [XmlAttribute("pct")]
         public string pctFormatted
         {
             get { return pct.ToString(CultureInfo.GetCultureInfo("de-DE").NumberFormat); }
@@ -40,7 +53,7 @@ namespace ghostSCSIM.XML
         [XmlIgnore]
         public decimal price { get; set; }
 
-        [XmlElement("price")]
+        [XmlAttribute("price")]
             public string priceFormatted {
                 get { return price.ToString(CultureInfo.GetCultureInfo("de-DE").NumberFormat); }
                 set { price = decimal.Parse(value, CultureInfo.GetCultureInfo("de-DE").NumberFormat); } 
@@ -49,7 +62,7 @@ namespace ghostSCSIM.XML
         [XmlIgnore]
         public decimal stockvalue { get; set; }
 
-        [XmlElement("stockvalue")]
+        [XmlAttribute("stockvalue")]
         public string stockvalueFormatted
         {
             get { return stockvalue.ToString(CultureInfo.GetCultureInfo("de-DE").NumberFormat); }

@@ -7,6 +7,7 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        
         /// <summary>
         /// Verwendete Ressourcen bereinigen.
         /// </summary>
@@ -41,6 +42,7 @@
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPrognose = new System.Windows.Forms.TabPage();
+            this.btn_prog_save = new System.Windows.Forms.Button();
             this.herren_prog_p4 = new System.Windows.Forms.NumericUpDown();
             this.herren_prog_p3 = new System.Windows.Forms.NumericUpDown();
             this.herren_prog_p2 = new System.Windows.Forms.NumericUpDown();
@@ -63,6 +65,7 @@
             this.tabProdplan = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabKinderf = new System.Windows.Forms.TabPage();
+            this.btn_kf_save = new System.Windows.Forms.Button();
             this.pp_p1_18_prod = new System.Windows.Forms.TextBox();
             this.pp_p1_18_bearb = new System.Windows.Forms.TextBox();
             this.pp_p1_18_ws = new System.Windows.Forms.TextBox();
@@ -154,6 +157,7 @@
             this.label_pp_p1_vw = new System.Windows.Forms.Label();
             this.label_pp_p1_p1 = new System.Windows.Forms.Label();
             this.tabDamenf = new System.Windows.Forms.TabPage();
+            this.btn_df_save = new System.Windows.Forms.Button();
             this.pp_p2_19_prod = new System.Windows.Forms.TextBox();
             this.pp_p2_19_bearb = new System.Windows.Forms.TextBox();
             this.pp_p2_19_ws = new System.Windows.Forms.TextBox();
@@ -245,6 +249,7 @@
             this.label_pp_p2_vw = new System.Windows.Forms.Label();
             this.label_pp_p2_p2 = new System.Windows.Forms.Label();
             this.tabHerrenf = new System.Windows.Forms.TabPage();
+            this.btn_hf_save = new System.Windows.Forms.Button();
             this.pp_p3_20_prod = new System.Windows.Forms.TextBox();
             this.pp_p3_20_bearb = new System.Windows.Forms.TextBox();
             this.pp_p3_20_ws = new System.Windows.Forms.TextBox();
@@ -336,6 +341,14 @@
             this.label_pp_p3_vw = new System.Windows.Forms.Label();
             this.label_pp_p3_p3 = new System.Windows.Forms.Label();
             this.tabPUebersicht = new System.Windows.Forms.TabPage();
+            this.pp_uebersicht_grid = new System.Windows.Forms.DataGridView();
+            this.pp_uebersicht_teilnummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pp_uebersicht_bezeichnung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pp_uebersicht_Lagerbestand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pp_uebersicht_prozent = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pp_uebersicht_warteschlange = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pp_uebersicht_inBearbeitung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pp_uebersicht_programm = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabKapa = new System.Windows.Forms.TabPage();
             this.tabControl_kp = new System.Windows.Forms.TabControl();
             this.tabPage_kp_uebersicht = new System.Windows.Forms.TabPage();
@@ -362,8 +375,15 @@
             this.textBox_comment = new System.Windows.Forms.TextBox();
             this.tabBestellung = new System.Windows.Forms.TabPage();
             this.tabControl_best = new System.Windows.Forms.TabControl();
+            this.tabPage_best_kaufteillager = new System.Windows.Forms.TabPage();
+            this.dataGridView_best_kaufteillager = new System.Windows.Forms.DataGridView();
+            this.Column_best_kaufteillager_nummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteillager_bezeichnung = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteillager_bestand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteillager_lieferdauer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteillager_diskontmenge = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteillager_bestellkosten = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage_best_kaufteileverbrauch = new System.Windows.Forms.TabPage();
-            this.testButton = new System.Windows.Forms.Button();
             this.dataGridView_best_kaufteileverbrauch = new System.Windows.Forms.DataGridView();
             this.Column_best_kaufteileverbrauch_nummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_best_kaufteileverbrauch_bestand = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -372,24 +392,17 @@
             this.Column_best_kaufteileverbrauch_bestandN1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_best_kaufteileverbrauch_bestandN2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_best_kaufteileverbrauch_ausstehendeBest = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPage_best_kaufteillager = new System.Windows.Forms.TabPage();
-            this.dataGridView_best_kaufteillager = new System.Windows.Forms.DataGridView();
-            this.Column_best_kaufteillager_nummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteillager_bezeichnung = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteillager_bestand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteillager_wareneingang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteillager_lieferdauer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteillager_diskontmenge = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_kaufteillager_bestellkosten = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage_best_bestellung = new System.Windows.Forms.TabPage();
             this.dataGridView_best_bestellliste = new System.Windows.Forms.DataGridView();
             this.Column_best_bestelliste_nummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_best_bestelliste_menge = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_best_bestelliste_eilbestellung = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.Column_best_bestelliste_eil = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column_best_bestelliste_loeschenButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tabDirektV = new System.Windows.Forms.TabPage();
             this.tabControl_dirver = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.createXml = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.label_comment_3 = new System.Windows.Forms.Label();
             this.label_comment_2 = new System.Windows.Forms.Label();
             this.tabPage_dirver_direktverkauf = new System.Windows.Forms.TabPage();
@@ -406,6 +419,8 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
+            this.lbl_xml_import = new System.Windows.Forms.Label();
+            this.lbl_xml_period = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPrognose.SuspendLayout();
@@ -426,6 +441,8 @@
             this.tabKinderf.SuspendLayout();
             this.tabDamenf.SuspendLayout();
             this.tabHerrenf.SuspendLayout();
+            this.tabPUebersicht.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pp_uebersicht_grid)).BeginInit();
             this.tabKapa.SuspendLayout();
             this.tabControl_kp.SuspendLayout();
             this.tabPage_kp_uebersicht.SuspendLayout();
@@ -435,10 +452,10 @@
             this.tabPage_kp_info.SuspendLayout();
             this.tabBestellung.SuspendLayout();
             this.tabControl_best.SuspendLayout();
-            this.tabPage_best_kaufteileverbrauch.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_best_kaufteileverbrauch)).BeginInit();
             this.tabPage_best_kaufteillager.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_best_kaufteillager)).BeginInit();
+            this.tabPage_best_kaufteileverbrauch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_best_kaufteileverbrauch)).BeginInit();
             this.tabPage_best_bestellung.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_best_bestellliste)).BeginInit();
             this.tabDirektV.SuspendLayout();
@@ -454,37 +471,37 @@
             // 
             // menuStrip1
             // 
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.spracheToolStripMenuItem,
             this.einstellungenToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
             // spracheToolStripMenuItem
             // 
+            resources.ApplyResources(this.spracheToolStripMenuItem, "spracheToolStripMenuItem");
             this.spracheToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dEToolStripMenuItem,
             this.eNToolStripMenuItem});
             this.spracheToolStripMenuItem.Name = "spracheToolStripMenuItem";
-            resources.ApplyResources(this.spracheToolStripMenuItem, "spracheToolStripMenuItem");
             // 
             // dEToolStripMenuItem
             // 
-            this.dEToolStripMenuItem.Name = "dEToolStripMenuItem";
             resources.ApplyResources(this.dEToolStripMenuItem, "dEToolStripMenuItem");
+            this.dEToolStripMenuItem.Name = "dEToolStripMenuItem";
             this.dEToolStripMenuItem.Click += new System.EventHandler(this.dEToolStripMenuItem_Click);
             // 
             // eNToolStripMenuItem
             // 
-            this.eNToolStripMenuItem.Name = "eNToolStripMenuItem";
             resources.ApplyResources(this.eNToolStripMenuItem, "eNToolStripMenuItem");
+            this.eNToolStripMenuItem.Name = "eNToolStripMenuItem";
             this.eNToolStripMenuItem.Click += new System.EventHandler(this.eNToolStripMenuItem_Click);
             // 
             // einstellungenToolStripMenuItem
             // 
-            this.einstellungenToolStripMenuItem.Name = "einstellungenToolStripMenuItem";
             resources.ApplyResources(this.einstellungenToolStripMenuItem, "einstellungenToolStripMenuItem");
+            this.einstellungenToolStripMenuItem.Name = "einstellungenToolStripMenuItem";
             // 
             // xmlInputButton
             // 
@@ -509,10 +526,13 @@
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.fillTabsWithData);
             this.tabControl1.Click += new System.EventHandler(this.fillFormsWithData);
             // 
             // tabPrognose
             // 
+            resources.ApplyResources(this.tabPrognose, "tabPrognose");
+            this.tabPrognose.Controls.Add(this.btn_prog_save);
             this.tabPrognose.Controls.Add(this.herren_prog_p4);
             this.tabPrognose.Controls.Add(this.herren_prog_p3);
             this.tabPrognose.Controls.Add(this.herren_prog_p2);
@@ -533,18 +553,24 @@
             this.tabPrognose.Controls.Add(this.label_prognose_n);
             this.tabPrognose.Controls.Add(this.kinder_prog_p1);
             this.tabPrognose.Controls.Add(this.xmlInputButton);
-            resources.ApplyResources(this.tabPrognose, "tabPrognose");
             this.tabPrognose.Name = "tabPrognose";
             this.tabPrognose.UseVisualStyleBackColor = true;
             // 
+            // btn_prog_save
+            // 
+            resources.ApplyResources(this.btn_prog_save, "btn_prog_save");
+            this.btn_prog_save.Name = "btn_prog_save";
+            this.btn_prog_save.UseVisualStyleBackColor = true;
+            this.btn_prog_save.Click += new System.EventHandler(this.btn_prog_save_Click);
+            // 
             // herren_prog_p4
             // 
+            resources.ApplyResources(this.herren_prog_p4, "herren_prog_p4");
             this.herren_prog_p4.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.herren_prog_p4, "herren_prog_p4");
             this.herren_prog_p4.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -559,12 +585,12 @@
             // 
             // herren_prog_p3
             // 
+            resources.ApplyResources(this.herren_prog_p3, "herren_prog_p3");
             this.herren_prog_p3.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.herren_prog_p3, "herren_prog_p3");
             this.herren_prog_p3.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -579,12 +605,12 @@
             // 
             // herren_prog_p2
             // 
+            resources.ApplyResources(this.herren_prog_p2, "herren_prog_p2");
             this.herren_prog_p2.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.herren_prog_p2, "herren_prog_p2");
             this.herren_prog_p2.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -599,12 +625,12 @@
             // 
             // damen_prog_p4
             // 
+            resources.ApplyResources(this.damen_prog_p4, "damen_prog_p4");
             this.damen_prog_p4.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.damen_prog_p4, "damen_prog_p4");
             this.damen_prog_p4.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -619,12 +645,12 @@
             // 
             // damen_prog_p3
             // 
+            resources.ApplyResources(this.damen_prog_p3, "damen_prog_p3");
             this.damen_prog_p3.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.damen_prog_p3, "damen_prog_p3");
             this.damen_prog_p3.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -639,12 +665,12 @@
             // 
             // damen_prog_p2
             // 
+            resources.ApplyResources(this.damen_prog_p2, "damen_prog_p2");
             this.damen_prog_p2.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.damen_prog_p2, "damen_prog_p2");
             this.damen_prog_p2.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -659,12 +685,12 @@
             // 
             // kinder_prog_p4
             // 
+            resources.ApplyResources(this.kinder_prog_p4, "kinder_prog_p4");
             this.kinder_prog_p4.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.kinder_prog_p4, "kinder_prog_p4");
             this.kinder_prog_p4.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -679,12 +705,12 @@
             // 
             // kinder_prog_p3
             // 
+            resources.ApplyResources(this.kinder_prog_p3, "kinder_prog_p3");
             this.kinder_prog_p3.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.kinder_prog_p3, "kinder_prog_p3");
             this.kinder_prog_p3.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -699,12 +725,12 @@
             // 
             // kinder_prog_p2
             // 
+            resources.ApplyResources(this.kinder_prog_p2, "kinder_prog_p2");
             this.kinder_prog_p2.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.kinder_prog_p2, "kinder_prog_p2");
             this.kinder_prog_p2.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -719,12 +745,12 @@
             // 
             // herren_prog_p1
             // 
+            resources.ApplyResources(this.herren_prog_p1, "herren_prog_p1");
             this.herren_prog_p1.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.herren_prog_p1, "herren_prog_p1");
             this.herren_prog_p1.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -739,12 +765,12 @@
             // 
             // damen_prog_p1
             // 
+            resources.ApplyResources(this.damen_prog_p1, "damen_prog_p1");
             this.damen_prog_p1.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.damen_prog_p1, "damen_prog_p1");
             this.damen_prog_p1.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -794,12 +820,12 @@
             // 
             // kinder_prog_p1
             // 
+            resources.ApplyResources(this.kinder_prog_p1, "kinder_prog_p1");
             this.kinder_prog_p1.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.kinder_prog_p1, "kinder_prog_p1");
             this.kinder_prog_p1.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -814,24 +840,27 @@
             // 
             // tabProdplan
             // 
-            this.tabProdplan.Controls.Add(this.tabControl2);
             resources.ApplyResources(this.tabProdplan, "tabProdplan");
+            this.tabProdplan.Controls.Add(this.tabControl2);
             this.tabProdplan.Name = "tabProdplan";
             this.tabProdplan.UseVisualStyleBackColor = true;
             // 
             // tabControl2
             // 
+            resources.ApplyResources(this.tabControl2, "tabControl2");
             this.tabControl2.Controls.Add(this.tabKinderf);
             this.tabControl2.Controls.Add(this.tabDamenf);
             this.tabControl2.Controls.Add(this.tabHerrenf);
             this.tabControl2.Controls.Add(this.tabPUebersicht);
-            resources.ApplyResources(this.tabControl2, "tabControl2");
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
             this.tabControl2.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl2.SelectedIndexChanged += new System.EventHandler(this.fillProdprogrammWithData);
             // 
             // tabKinderf
             // 
+            resources.ApplyResources(this.tabKinderf, "tabKinderf");
+            this.tabKinderf.Controls.Add(this.btn_kf_save);
             this.tabKinderf.Controls.Add(this.pp_p1_18_prod);
             this.tabKinderf.Controls.Add(this.pp_p1_18_bearb);
             this.tabKinderf.Controls.Add(this.pp_p1_18_ws);
@@ -922,9 +951,15 @@
             this.tabKinderf.Controls.Add(this.label_pp_p1_sb);
             this.tabKinderf.Controls.Add(this.label_pp_p1_vw);
             this.tabKinderf.Controls.Add(this.label_pp_p1_p1);
-            resources.ApplyResources(this.tabKinderf, "tabKinderf");
             this.tabKinderf.Name = "tabKinderf";
             this.tabKinderf.UseVisualStyleBackColor = true;
+            // 
+            // btn_kf_save
+            // 
+            resources.ApplyResources(this.btn_kf_save, "btn_kf_save");
+            this.btn_kf_save.Name = "btn_kf_save";
+            this.btn_kf_save.UseVisualStyleBackColor = true;
+            this.btn_kf_save.Click += new System.EventHandler(this.btn_kf_save_Click);
             // 
             // pp_p1_18_prod
             // 
@@ -950,6 +985,7 @@
             // 
             resources.ApplyResources(this.pp_p1_18_sb, "pp_p1_18_sb");
             this.pp_p1_18_sb.Name = "pp_p1_18_sb";
+            this.pp_p1_18_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p1_18_vw
             // 
@@ -985,6 +1021,7 @@
             // 
             resources.ApplyResources(this.pp_p1_13_sb, "pp_p1_13_sb");
             this.pp_p1_13_sb.Name = "pp_p1_13_sb";
+            this.pp_p1_13_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p1_13_vw
             // 
@@ -1020,6 +1057,7 @@
             // 
             resources.ApplyResources(this.pp_p1_7_sb, "pp_p1_7_sb");
             this.pp_p1_7_sb.Name = "pp_p1_7_sb";
+            this.pp_p1_7_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p1_7_vw
             // 
@@ -1055,6 +1093,7 @@
             // 
             resources.ApplyResources(this.pp_p1_49_sb, "pp_p1_49_sb");
             this.pp_p1_49_sb.Name = "pp_p1_49_sb";
+            this.pp_p1_49_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p1_49_vw
             // 
@@ -1090,6 +1129,7 @@
             // 
             resources.ApplyResources(this.pp_p1_10_sb, "pp_p1_10_sb");
             this.pp_p1_10_sb.Name = "pp_p1_10_sb";
+            this.pp_p1_10_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p1_10_vw
             // 
@@ -1125,6 +1165,7 @@
             // 
             resources.ApplyResources(this.pp_p1_4_sb, "pp_p1_4_sb");
             this.pp_p1_4_sb.Name = "pp_p1_4_sb";
+            this.pp_p1_4_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p1_4_vw
             // 
@@ -1160,6 +1201,7 @@
             // 
             resources.ApplyResources(this.pp_p1_50_sb, "pp_p1_50_sb");
             this.pp_p1_50_sb.Name = "pp_p1_50_sb";
+            this.pp_p1_50_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p1_50_vw
             // 
@@ -1195,6 +1237,7 @@
             // 
             resources.ApplyResources(this.pp_p1_17_sb, "pp_p1_17_sb");
             this.pp_p1_17_sb.Name = "pp_p1_17_sb";
+            this.pp_p1_17_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p1_17_vw
             // 
@@ -1230,6 +1273,7 @@
             // 
             resources.ApplyResources(this.pp_p1_16_sb, "pp_p1_16_sb");
             this.pp_p1_16_sb.Name = "pp_p1_16_sb";
+            this.pp_p1_16_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p1_16_vw
             // 
@@ -1265,6 +1309,7 @@
             // 
             resources.ApplyResources(this.pp_p1_51_sb, "pp_p1_51_sb");
             this.pp_p1_51_sb.Name = "pp_p1_51_sb";
+            this.pp_p1_51_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p1_51_vw
             // 
@@ -1300,6 +1345,7 @@
             // 
             resources.ApplyResources(this.pp_p1_26_sb, "pp_p1_26_sb");
             this.pp_p1_26_sb.Name = "pp_p1_26_sb";
+            this.pp_p1_26_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p1_26_vw
             // 
@@ -1335,6 +1381,7 @@
             // 
             resources.ApplyResources(this.pp_p1_p1_sb, "pp_p1_p1_sb");
             this.pp_p1_p1_sb.Name = "pp_p1_p1_sb";
+            this.pp_p1_p1_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p1_p1_vw
             // 
@@ -1378,6 +1425,8 @@
             // 
             // tabDamenf
             // 
+            resources.ApplyResources(this.tabDamenf, "tabDamenf");
+            this.tabDamenf.Controls.Add(this.btn_df_save);
             this.tabDamenf.Controls.Add(this.pp_p2_19_prod);
             this.tabDamenf.Controls.Add(this.pp_p2_19_bearb);
             this.tabDamenf.Controls.Add(this.pp_p2_19_ws);
@@ -1468,9 +1517,15 @@
             this.tabDamenf.Controls.Add(this.label_pp_p2_sb);
             this.tabDamenf.Controls.Add(this.label_pp_p2_vw);
             this.tabDamenf.Controls.Add(this.label_pp_p2_p2);
-            resources.ApplyResources(this.tabDamenf, "tabDamenf");
             this.tabDamenf.Name = "tabDamenf";
             this.tabDamenf.UseVisualStyleBackColor = true;
+            // 
+            // btn_df_save
+            // 
+            resources.ApplyResources(this.btn_df_save, "btn_df_save");
+            this.btn_df_save.Name = "btn_df_save";
+            this.btn_df_save.UseVisualStyleBackColor = true;
+            this.btn_df_save.Click += new System.EventHandler(this.btn_df_save_Click);
             // 
             // pp_p2_19_prod
             // 
@@ -1496,6 +1551,7 @@
             // 
             resources.ApplyResources(this.pp_p2_19_sb, "pp_p2_19_sb");
             this.pp_p2_19_sb.Name = "pp_p2_19_sb";
+            this.pp_p2_19_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p2_19_vw
             // 
@@ -1531,6 +1587,7 @@
             // 
             resources.ApplyResources(this.pp_p2_14_sb, "pp_p2_14_sb");
             this.pp_p2_14_sb.Name = "pp_p2_14_sb";
+            this.pp_p2_14_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p2_14_vw
             // 
@@ -1566,6 +1623,7 @@
             // 
             resources.ApplyResources(this.pp_p2_8_sb, "pp_p2_8_sb");
             this.pp_p2_8_sb.Name = "pp_p2_8_sb";
+            this.pp_p2_8_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p2_8_vw
             // 
@@ -1601,6 +1659,7 @@
             // 
             resources.ApplyResources(this.pp_p2_54_sb, "pp_p2_54_sb");
             this.pp_p2_54_sb.Name = "pp_p2_54_sb";
+            this.pp_p2_54_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p2_54_vw
             // 
@@ -1636,6 +1695,7 @@
             // 
             resources.ApplyResources(this.pp_p2_11_sb, "pp_p2_11_sb");
             this.pp_p2_11_sb.Name = "pp_p2_11_sb";
+            this.pp_p2_11_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p2_11_vw
             // 
@@ -1671,6 +1731,7 @@
             // 
             resources.ApplyResources(this.pp_p2_5_sb, "pp_p2_5_sb");
             this.pp_p2_5_sb.Name = "pp_p2_5_sb";
+            this.pp_p2_5_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p2_5_vw
             // 
@@ -1706,6 +1767,7 @@
             // 
             resources.ApplyResources(this.pp_p2_55_sb, "pp_p2_55_sb");
             this.pp_p2_55_sb.Name = "pp_p2_55_sb";
+            this.pp_p2_55_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p2_55_vw
             // 
@@ -1742,6 +1804,7 @@
             // 
             resources.ApplyResources(this.pp_p2_17_sb, "pp_p2_17_sb");
             this.pp_p2_17_sb.Name = "pp_p2_17_sb";
+            this.pp_p2_17_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p2_17_vw
             // 
@@ -1777,6 +1840,7 @@
             // 
             resources.ApplyResources(this.pp_p2_16_sb, "pp_p2_16_sb");
             this.pp_p2_16_sb.Name = "pp_p2_16_sb";
+            this.pp_p2_16_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p2_16_vw
             // 
@@ -1812,6 +1876,7 @@
             // 
             resources.ApplyResources(this.pp_p2_56_sb, "pp_p2_56_sb");
             this.pp_p2_56_sb.Name = "pp_p2_56_sb";
+            this.pp_p2_56_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p2_56_vw
             // 
@@ -1848,6 +1913,7 @@
             // 
             resources.ApplyResources(this.pp_p2_26_sb, "pp_p2_26_sb");
             this.pp_p2_26_sb.Name = "pp_p2_26_sb";
+            this.pp_p2_26_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p2_26_vw
             // 
@@ -1883,6 +1949,7 @@
             // 
             resources.ApplyResources(this.pp_p2_p2_sb, "pp_p2_p2_sb");
             this.pp_p2_p2_sb.Name = "pp_p2_p2_sb";
+            this.pp_p2_p2_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p2_p2_vw
             // 
@@ -1926,6 +1993,8 @@
             // 
             // tabHerrenf
             // 
+            resources.ApplyResources(this.tabHerrenf, "tabHerrenf");
+            this.tabHerrenf.Controls.Add(this.btn_hf_save);
             this.tabHerrenf.Controls.Add(this.pp_p3_20_prod);
             this.tabHerrenf.Controls.Add(this.pp_p3_20_bearb);
             this.tabHerrenf.Controls.Add(this.pp_p3_20_ws);
@@ -2016,9 +2085,15 @@
             this.tabHerrenf.Controls.Add(this.label_pp_p3_sb);
             this.tabHerrenf.Controls.Add(this.label_pp_p3_vw);
             this.tabHerrenf.Controls.Add(this.label_pp_p3_p3);
-            resources.ApplyResources(this.tabHerrenf, "tabHerrenf");
             this.tabHerrenf.Name = "tabHerrenf";
             this.tabHerrenf.UseVisualStyleBackColor = true;
+            // 
+            // btn_hf_save
+            // 
+            resources.ApplyResources(this.btn_hf_save, "btn_hf_save");
+            this.btn_hf_save.Name = "btn_hf_save";
+            this.btn_hf_save.UseVisualStyleBackColor = true;
+            this.btn_hf_save.Click += new System.EventHandler(this.btn_hf_save_Click);
             // 
             // pp_p3_20_prod
             // 
@@ -2044,6 +2119,7 @@
             // 
             resources.ApplyResources(this.pp_p3_20_sb, "pp_p3_20_sb");
             this.pp_p3_20_sb.Name = "pp_p3_20_sb";
+            this.pp_p3_20_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p3_20_vw
             // 
@@ -2079,6 +2155,7 @@
             // 
             resources.ApplyResources(this.pp_p3_15_sb, "pp_p3_15_sb");
             this.pp_p3_15_sb.Name = "pp_p3_15_sb";
+            this.pp_p3_15_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p3_15_vw
             // 
@@ -2114,6 +2191,7 @@
             // 
             resources.ApplyResources(this.pp_p3_9_sb, "pp_p3_9_sb");
             this.pp_p3_9_sb.Name = "pp_p3_9_sb";
+            this.pp_p3_9_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p3_9_vw
             // 
@@ -2149,6 +2227,7 @@
             // 
             resources.ApplyResources(this.pp_p3_29_sb, "pp_p3_29_sb");
             this.pp_p3_29_sb.Name = "pp_p3_29_sb";
+            this.pp_p3_29_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p3_29_vw
             // 
@@ -2184,6 +2263,7 @@
             // 
             resources.ApplyResources(this.pp_p3_12_sb, "pp_p3_12_sb");
             this.pp_p3_12_sb.Name = "pp_p3_12_sb";
+            this.pp_p3_12_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p3_12_vw
             // 
@@ -2219,6 +2299,7 @@
             // 
             resources.ApplyResources(this.pp_p3_6_sb, "pp_p3_6_sb");
             this.pp_p3_6_sb.Name = "pp_p3_6_sb";
+            this.pp_p3_6_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p3_6_vw
             // 
@@ -2254,6 +2335,7 @@
             // 
             resources.ApplyResources(this.pp_p3_30_sb, "pp_p3_30_sb");
             this.pp_p3_30_sb.Name = "pp_p3_30_sb";
+            this.pp_p3_30_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p3_30_vw
             // 
@@ -2289,6 +2371,7 @@
             // 
             resources.ApplyResources(this.pp_p3_17_sb, "pp_p3_17_sb");
             this.pp_p3_17_sb.Name = "pp_p3_17_sb";
+            this.pp_p3_17_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p3_17_vw
             // 
@@ -2324,6 +2407,7 @@
             // 
             resources.ApplyResources(this.pp_p3_16_sb, "pp_p3_16_sb");
             this.pp_p3_16_sb.Name = "pp_p3_16_sb";
+            this.pp_p3_16_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p3_16_vw
             // 
@@ -2359,6 +2443,7 @@
             // 
             resources.ApplyResources(this.pp_p3_31_sb, "pp_p3_31_sb");
             this.pp_p3_31_sb.Name = "pp_p3_31_sb";
+            this.pp_p3_31_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p3_31_vw
             // 
@@ -2394,6 +2479,7 @@
             // 
             resources.ApplyResources(this.pp_p3_26_sb, "pp_p3_26_sb");
             this.pp_p3_26_sb.Name = "pp_p3_26_sb";
+            this.pp_p3_26_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p3_26_vw
             // 
@@ -2429,6 +2515,7 @@
             // 
             resources.ApplyResources(this.pp_p3_p3_sb, "pp_p3_p3_sb");
             this.pp_p3_p3_sb.Name = "pp_p3_p3_sb";
+            this.pp_p3_p3_sb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.onlynum_KeyPress);
             // 
             // pp_p3_p3_vw
             // 
@@ -2473,35 +2560,86 @@
             // tabPUebersicht
             // 
             resources.ApplyResources(this.tabPUebersicht, "tabPUebersicht");
+            this.tabPUebersicht.Controls.Add(this.pp_uebersicht_grid);
             this.tabPUebersicht.Name = "tabPUebersicht";
             this.tabPUebersicht.UseVisualStyleBackColor = true;
             // 
+            // pp_uebersicht_grid
+            // 
+            resources.ApplyResources(this.pp_uebersicht_grid, "pp_uebersicht_grid");
+            this.pp_uebersicht_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pp_uebersicht_grid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.pp_uebersicht_teilnummer,
+            this.pp_uebersicht_bezeichnung,
+            this.pp_uebersicht_Lagerbestand,
+            this.pp_uebersicht_prozent,
+            this.pp_uebersicht_warteschlange,
+            this.pp_uebersicht_inBearbeitung,
+            this.pp_uebersicht_programm});
+            this.pp_uebersicht_grid.Name = "pp_uebersicht_grid";
+            // 
+            // pp_uebersicht_teilnummer
+            // 
+            resources.ApplyResources(this.pp_uebersicht_teilnummer, "pp_uebersicht_teilnummer");
+            this.pp_uebersicht_teilnummer.Name = "pp_uebersicht_teilnummer";
+            // 
+            // pp_uebersicht_bezeichnung
+            // 
+            resources.ApplyResources(this.pp_uebersicht_bezeichnung, "pp_uebersicht_bezeichnung");
+            this.pp_uebersicht_bezeichnung.Name = "pp_uebersicht_bezeichnung";
+            // 
+            // pp_uebersicht_Lagerbestand
+            // 
+            resources.ApplyResources(this.pp_uebersicht_Lagerbestand, "pp_uebersicht_Lagerbestand");
+            this.pp_uebersicht_Lagerbestand.Name = "pp_uebersicht_Lagerbestand";
+            // 
+            // pp_uebersicht_prozent
+            // 
+            resources.ApplyResources(this.pp_uebersicht_prozent, "pp_uebersicht_prozent");
+            this.pp_uebersicht_prozent.Name = "pp_uebersicht_prozent";
+            // 
+            // pp_uebersicht_warteschlange
+            // 
+            resources.ApplyResources(this.pp_uebersicht_warteschlange, "pp_uebersicht_warteschlange");
+            this.pp_uebersicht_warteschlange.Name = "pp_uebersicht_warteschlange";
+            // 
+            // pp_uebersicht_inBearbeitung
+            // 
+            resources.ApplyResources(this.pp_uebersicht_inBearbeitung, "pp_uebersicht_inBearbeitung");
+            this.pp_uebersicht_inBearbeitung.Name = "pp_uebersicht_inBearbeitung";
+            // 
+            // pp_uebersicht_programm
+            // 
+            resources.ApplyResources(this.pp_uebersicht_programm, "pp_uebersicht_programm");
+            this.pp_uebersicht_programm.Name = "pp_uebersicht_programm";
+            // 
             // tabKapa
             // 
-            this.tabKapa.Controls.Add(this.tabControl_kp);
             resources.ApplyResources(this.tabKapa, "tabKapa");
+            this.tabKapa.Controls.Add(this.tabControl_kp);
             this.tabKapa.Name = "tabKapa";
             this.tabKapa.UseVisualStyleBackColor = true;
             // 
             // tabControl_kp
             // 
+            resources.ApplyResources(this.tabControl_kp, "tabControl_kp");
             this.tabControl_kp.Controls.Add(this.tabPage_kp_uebersicht);
             this.tabControl_kp.Controls.Add(this.tabPage_kp_aufloesung);
             this.tabControl_kp.Controls.Add(this.tabPage_kp_info);
-            resources.ApplyResources(this.tabControl_kp, "tabControl_kp");
             this.tabControl_kp.Name = "tabControl_kp";
             this.tabControl_kp.SelectedIndex = 0;
             this.tabControl_kp.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             // 
             // tabPage_kp_uebersicht
             // 
-            this.tabPage_kp_uebersicht.Controls.Add(this.dataGridView_kp_uebersicht);
             resources.ApplyResources(this.tabPage_kp_uebersicht, "tabPage_kp_uebersicht");
+            this.tabPage_kp_uebersicht.Controls.Add(this.dataGridView_kp_uebersicht);
             this.tabPage_kp_uebersicht.Name = "tabPage_kp_uebersicht";
             this.tabPage_kp_uebersicht.UseVisualStyleBackColor = true;
             // 
             // dataGridView_kp_uebersicht
             // 
+            resources.ApplyResources(this.dataGridView_kp_uebersicht, "dataGridView_kp_uebersicht");
             this.dataGridView_kp_uebersicht.AllowUserToAddRows = false;
             this.dataGridView_kp_uebersicht.AllowUserToDeleteRows = false;
             this.dataGridView_kp_uebersicht.AllowUserToResizeColumns = false;
@@ -2519,7 +2657,6 @@
             this.Column_kp_uebersicht_2schicht,
             this.Column_kp_uebersicht_3schicht,
             this.Column_kp_uebersicht_leerzeit});
-            resources.ApplyResources(this.dataGridView_kp_uebersicht, "dataGridView_kp_uebersicht");
             this.dataGridView_kp_uebersicht.Name = "dataGridView_kp_uebersicht";
             this.dataGridView_kp_uebersicht.RowHeadersVisible = false;
             // 
@@ -2576,11 +2713,8 @@
             // 
             // Column_kp_uebersicht_2schicht
             // 
-            this.Column_kp_uebersicht_2schicht.FillWeight = 80F;
             resources.ApplyResources(this.Column_kp_uebersicht_2schicht, "Column_kp_uebersicht_2schicht");
             this.Column_kp_uebersicht_2schicht.Name = "Column_kp_uebersicht_2schicht";
-            this.Column_kp_uebersicht_2schicht.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column_kp_uebersicht_2schicht.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // Column_kp_uebersicht_3schicht
             // 
@@ -2600,13 +2734,14 @@
             // 
             // tabPage_kp_aufloesung
             // 
-            this.tabPage_kp_aufloesung.Controls.Add(this.dataGridView_kp_aufloesung);
             resources.ApplyResources(this.tabPage_kp_aufloesung, "tabPage_kp_aufloesung");
+            this.tabPage_kp_aufloesung.Controls.Add(this.dataGridView_kp_aufloesung);
             this.tabPage_kp_aufloesung.Name = "tabPage_kp_aufloesung";
             this.tabPage_kp_aufloesung.UseVisualStyleBackColor = true;
             // 
             // dataGridView_kp_aufloesung
             // 
+            resources.ApplyResources(this.dataGridView_kp_aufloesung, "dataGridView_kp_aufloesung");
             this.dataGridView_kp_aufloesung.AllowUserToAddRows = false;
             this.dataGridView_kp_aufloesung.AllowUserToDeleteRows = false;
             this.dataGridView_kp_aufloesung.AllowUserToResizeColumns = false;
@@ -2619,7 +2754,6 @@
             this.Column_kp_aufloesung_fertigungszeit,
             this.Column_kp_aufloesung_kapazitaetsbedarfTeil,
             this.Column_kp_aufloesung_ruestzeitTeil});
-            resources.ApplyResources(this.dataGridView_kp_aufloesung, "dataGridView_kp_aufloesung");
             this.dataGridView_kp_aufloesung.Name = "dataGridView_kp_aufloesung";
             this.dataGridView_kp_aufloesung.ReadOnly = true;
             this.dataGridView_kp_aufloesung.RowHeadersVisible = false;
@@ -2661,9 +2795,9 @@
             // 
             // tabPage_kp_info
             // 
+            resources.ApplyResources(this.tabPage_kp_info, "tabPage_kp_info");
             this.tabPage_kp_info.Controls.Add(this.label_comment);
             this.tabPage_kp_info.Controls.Add(this.textBox_comment);
-            resources.ApplyResources(this.tabPage_kp_info, "tabPage_kp_info");
             this.tabPage_kp_info.Name = "tabPage_kp_info";
             this.tabPage_kp_info.UseVisualStyleBackColor = true;
             // 
@@ -2676,43 +2810,104 @@
             // 
             resources.ApplyResources(this.textBox_comment, "textBox_comment");
             this.textBox_comment.Name = "textBox_comment";
-            this.textBox_comment.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // tabBestellung
             // 
-            this.tabBestellung.Controls.Add(this.tabControl_best);
             resources.ApplyResources(this.tabBestellung, "tabBestellung");
+            this.tabBestellung.Controls.Add(this.tabControl_best);
             this.tabBestellung.Name = "tabBestellung";
             this.tabBestellung.UseVisualStyleBackColor = true;
             // 
             // tabControl_best
             // 
-            this.tabControl_best.Controls.Add(this.tabPage_best_kaufteileverbrauch);
-            this.tabControl_best.Controls.Add(this.tabPage_best_kaufteillager);
-            this.tabControl_best.Controls.Add(this.tabPage_best_bestellung);
             resources.ApplyResources(this.tabControl_best, "tabControl_best");
+            this.tabControl_best.Controls.Add(this.tabPage_best_kaufteillager);
+            this.tabControl_best.Controls.Add(this.tabPage_best_kaufteileverbrauch);
+            this.tabControl_best.Controls.Add(this.tabPage_best_bestellung);
             this.tabControl_best.Name = "tabControl_best";
             this.tabControl_best.SelectedIndex = 0;
             this.tabControl_best.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             // 
+            // tabPage_best_kaufteillager
+            // 
+            resources.ApplyResources(this.tabPage_best_kaufteillager, "tabPage_best_kaufteillager");
+            this.tabPage_best_kaufteillager.Controls.Add(this.dataGridView_best_kaufteillager);
+            this.tabPage_best_kaufteillager.Name = "tabPage_best_kaufteillager";
+            this.tabPage_best_kaufteillager.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView_best_kaufteillager
+            // 
+            resources.ApplyResources(this.dataGridView_best_kaufteillager, "dataGridView_best_kaufteillager");
+            this.dataGridView_best_kaufteillager.AllowUserToAddRows = false;
+            this.dataGridView_best_kaufteillager.AllowUserToDeleteRows = false;
+            this.dataGridView_best_kaufteillager.AllowUserToResizeColumns = false;
+            this.dataGridView_best_kaufteillager.AllowUserToResizeRows = false;
+            this.dataGridView_best_kaufteillager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView_best_kaufteillager.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_best_kaufteillager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column_best_kaufteillager_nummer,
+            this.Column_best_kaufteillager_bezeichnung,
+            this.Column_best_kaufteillager_bestand,
+            this.Column_best_kaufteillager_lieferdauer,
+            this.Column_best_kaufteillager_diskontmenge,
+            this.Column_best_kaufteillager_bestellkosten});
+            this.dataGridView_best_kaufteillager.Name = "dataGridView_best_kaufteillager";
+            this.dataGridView_best_kaufteillager.ReadOnly = true;
+            this.dataGridView_best_kaufteillager.RowHeadersVisible = false;
+            // 
+            // Column_best_kaufteillager_nummer
+            // 
+            resources.ApplyResources(this.Column_best_kaufteillager_nummer, "Column_best_kaufteillager_nummer");
+            this.Column_best_kaufteillager_nummer.Name = "Column_best_kaufteillager_nummer";
+            this.Column_best_kaufteillager_nummer.ReadOnly = true;
+            this.Column_best_kaufteillager_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteillager_bezeichnung
+            // 
+            resources.ApplyResources(this.Column_best_kaufteillager_bezeichnung, "Column_best_kaufteillager_bezeichnung");
+            this.Column_best_kaufteillager_bezeichnung.Name = "Column_best_kaufteillager_bezeichnung";
+            this.Column_best_kaufteillager_bezeichnung.ReadOnly = true;
+            this.Column_best_kaufteillager_bezeichnung.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteillager_bestand
+            // 
+            this.Column_best_kaufteillager_bestand.DividerWidth = 3;
+            resources.ApplyResources(this.Column_best_kaufteillager_bestand, "Column_best_kaufteillager_bestand");
+            this.Column_best_kaufteillager_bestand.Name = "Column_best_kaufteillager_bestand";
+            this.Column_best_kaufteillager_bestand.ReadOnly = true;
+            this.Column_best_kaufteillager_bestand.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteillager_lieferdauer
+            // 
+            resources.ApplyResources(this.Column_best_kaufteillager_lieferdauer, "Column_best_kaufteillager_lieferdauer");
+            this.Column_best_kaufteillager_lieferdauer.Name = "Column_best_kaufteillager_lieferdauer";
+            this.Column_best_kaufteillager_lieferdauer.ReadOnly = true;
+            this.Column_best_kaufteillager_lieferdauer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteillager_diskontmenge
+            // 
+            resources.ApplyResources(this.Column_best_kaufteillager_diskontmenge, "Column_best_kaufteillager_diskontmenge");
+            this.Column_best_kaufteillager_diskontmenge.Name = "Column_best_kaufteillager_diskontmenge";
+            this.Column_best_kaufteillager_diskontmenge.ReadOnly = true;
+            this.Column_best_kaufteillager_diskontmenge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteillager_bestellkosten
+            // 
+            resources.ApplyResources(this.Column_best_kaufteillager_bestellkosten, "Column_best_kaufteillager_bestellkosten");
+            this.Column_best_kaufteillager_bestellkosten.Name = "Column_best_kaufteillager_bestellkosten";
+            this.Column_best_kaufteillager_bestellkosten.ReadOnly = true;
+            this.Column_best_kaufteillager_bestellkosten.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
             // tabPage_best_kaufteileverbrauch
             // 
-            this.tabPage_best_kaufteileverbrauch.Controls.Add(this.testButton);
-            this.tabPage_best_kaufteileverbrauch.Controls.Add(this.dataGridView_best_kaufteileverbrauch);
             resources.ApplyResources(this.tabPage_best_kaufteileverbrauch, "tabPage_best_kaufteileverbrauch");
+            this.tabPage_best_kaufteileverbrauch.Controls.Add(this.dataGridView_best_kaufteileverbrauch);
             this.tabPage_best_kaufteileverbrauch.Name = "tabPage_best_kaufteileverbrauch";
             this.tabPage_best_kaufteileverbrauch.UseVisualStyleBackColor = true;
-            this.tabPage_best_kaufteileverbrauch.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // testButton
-            // 
-            resources.ApplyResources(this.testButton, "testButton");
-            this.testButton.Name = "testButton";
-            this.testButton.UseVisualStyleBackColor = true;
-            this.testButton.Click += new System.EventHandler(this.testButton_Click);
             // 
             // dataGridView_best_kaufteileverbrauch
             // 
+            resources.ApplyResources(this.dataGridView_best_kaufteileverbrauch, "dataGridView_best_kaufteileverbrauch");
             this.dataGridView_best_kaufteileverbrauch.AllowUserToAddRows = false;
             this.dataGridView_best_kaufteileverbrauch.AllowUserToDeleteRows = false;
             this.dataGridView_best_kaufteileverbrauch.AllowUserToResizeColumns = false;
@@ -2727,7 +2922,6 @@
             this.Column_best_kaufteileverbrauch_bestandN1,
             this.Column_best_kaufteileverbrauch_bestandN2,
             this.Column_best_kaufteileverbrauch_ausstehendeBest});
-            resources.ApplyResources(this.dataGridView_best_kaufteileverbrauch, "dataGridView_best_kaufteileverbrauch");
             this.dataGridView_best_kaufteileverbrauch.Name = "dataGridView_best_kaufteileverbrauch";
             this.dataGridView_best_kaufteileverbrauch.ReadOnly = true;
             this.dataGridView_best_kaufteileverbrauch.RowHeadersVisible = false;
@@ -2787,95 +2981,16 @@
             this.Column_best_kaufteileverbrauch_ausstehendeBest.ReadOnly = true;
             this.Column_best_kaufteileverbrauch_ausstehendeBest.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // tabPage_best_kaufteillager
-            // 
-            this.tabPage_best_kaufteillager.Controls.Add(this.dataGridView_best_kaufteillager);
-            resources.ApplyResources(this.tabPage_best_kaufteillager, "tabPage_best_kaufteillager");
-            this.tabPage_best_kaufteillager.Name = "tabPage_best_kaufteillager";
-            this.tabPage_best_kaufteillager.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView_best_kaufteillager
-            // 
-            this.dataGridView_best_kaufteillager.AllowUserToAddRows = false;
-            this.dataGridView_best_kaufteillager.AllowUserToDeleteRows = false;
-            this.dataGridView_best_kaufteillager.AllowUserToResizeColumns = false;
-            this.dataGridView_best_kaufteillager.AllowUserToResizeRows = false;
-            this.dataGridView_best_kaufteillager.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView_best_kaufteillager.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_best_kaufteillager.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column_best_kaufteillager_nummer,
-            this.Column_best_kaufteillager_bezeichnung,
-            this.Column_best_kaufteillager_bestand,
-            this.Column_best_kaufteillager_wareneingang,
-            this.Column_best_kaufteillager_lieferdauer,
-            this.Column_best_kaufteillager_diskontmenge,
-            this.Column_best_kaufteillager_bestellkosten});
-            resources.ApplyResources(this.dataGridView_best_kaufteillager, "dataGridView_best_kaufteillager");
-            this.dataGridView_best_kaufteillager.Name = "dataGridView_best_kaufteillager";
-            this.dataGridView_best_kaufteillager.ReadOnly = true;
-            this.dataGridView_best_kaufteillager.RowHeadersVisible = false;
-            this.dataGridView_best_kaufteillager.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_best_kaufteillager_CellContentClick);
-            // 
-            // Column_best_kaufteillager_nummer
-            // 
-            resources.ApplyResources(this.Column_best_kaufteillager_nummer, "Column_best_kaufteillager_nummer");
-            this.Column_best_kaufteillager_nummer.Name = "Column_best_kaufteillager_nummer";
-            this.Column_best_kaufteillager_nummer.ReadOnly = true;
-            this.Column_best_kaufteillager_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteillager_bezeichnung
-            // 
-            resources.ApplyResources(this.Column_best_kaufteillager_bezeichnung, "Column_best_kaufteillager_bezeichnung");
-            this.Column_best_kaufteillager_bezeichnung.Name = "Column_best_kaufteillager_bezeichnung";
-            this.Column_best_kaufteillager_bezeichnung.ReadOnly = true;
-            this.Column_best_kaufteillager_bezeichnung.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteillager_bestand
-            // 
-            resources.ApplyResources(this.Column_best_kaufteillager_bestand, "Column_best_kaufteillager_bestand");
-            this.Column_best_kaufteillager_bestand.Name = "Column_best_kaufteillager_bestand";
-            this.Column_best_kaufteillager_bestand.ReadOnly = true;
-            this.Column_best_kaufteillager_bestand.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteillager_wareneingang
-            // 
-            this.Column_best_kaufteillager_wareneingang.DividerWidth = 3;
-            this.Column_best_kaufteillager_wareneingang.FillWeight = 101F;
-            resources.ApplyResources(this.Column_best_kaufteillager_wareneingang, "Column_best_kaufteillager_wareneingang");
-            this.Column_best_kaufteillager_wareneingang.Name = "Column_best_kaufteillager_wareneingang";
-            this.Column_best_kaufteillager_wareneingang.ReadOnly = true;
-            this.Column_best_kaufteillager_wareneingang.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteillager_lieferdauer
-            // 
-            resources.ApplyResources(this.Column_best_kaufteillager_lieferdauer, "Column_best_kaufteillager_lieferdauer");
-            this.Column_best_kaufteillager_lieferdauer.Name = "Column_best_kaufteillager_lieferdauer";
-            this.Column_best_kaufteillager_lieferdauer.ReadOnly = true;
-            this.Column_best_kaufteillager_lieferdauer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteillager_diskontmenge
-            // 
-            resources.ApplyResources(this.Column_best_kaufteillager_diskontmenge, "Column_best_kaufteillager_diskontmenge");
-            this.Column_best_kaufteillager_diskontmenge.Name = "Column_best_kaufteillager_diskontmenge";
-            this.Column_best_kaufteillager_diskontmenge.ReadOnly = true;
-            this.Column_best_kaufteillager_diskontmenge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_best_kaufteillager_bestellkosten
-            // 
-            resources.ApplyResources(this.Column_best_kaufteillager_bestellkosten, "Column_best_kaufteillager_bestellkosten");
-            this.Column_best_kaufteillager_bestellkosten.Name = "Column_best_kaufteillager_bestellkosten";
-            this.Column_best_kaufteillager_bestellkosten.ReadOnly = true;
-            this.Column_best_kaufteillager_bestellkosten.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
             // tabPage_best_bestellung
             // 
-            this.tabPage_best_bestellung.Controls.Add(this.dataGridView_best_bestellliste);
             resources.ApplyResources(this.tabPage_best_bestellung, "tabPage_best_bestellung");
+            this.tabPage_best_bestellung.Controls.Add(this.dataGridView_best_bestellliste);
             this.tabPage_best_bestellung.Name = "tabPage_best_bestellung";
             this.tabPage_best_bestellung.UseVisualStyleBackColor = true;
             // 
             // dataGridView_best_bestellliste
             // 
+            resources.ApplyResources(this.dataGridView_best_bestellliste, "dataGridView_best_bestellliste");
             this.dataGridView_best_bestellliste.AllowUserToResizeColumns = false;
             this.dataGridView_best_bestellliste.AllowUserToResizeRows = false;
             this.dataGridView_best_bestellliste.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -2883,9 +2998,8 @@
             this.dataGridView_best_bestellliste.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column_best_bestelliste_nummer,
             this.Column_best_bestelliste_menge,
-            this.Column_best_bestelliste_eilbestellung,
+            this.Column_best_bestelliste_eil,
             this.Column_best_bestelliste_loeschenButton});
-            resources.ApplyResources(this.dataGridView_best_bestellliste, "dataGridView_best_bestellliste");
             this.dataGridView_best_bestellliste.Name = "dataGridView_best_bestellliste";
             this.dataGridView_best_bestellliste.RowHeadersVisible = false;
             this.dataGridView_best_bestellliste.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_best_bestellliste_CellContentClick);
@@ -2908,13 +3022,13 @@
             this.Column_best_bestelliste_menge.Name = "Column_best_bestelliste_menge";
             this.Column_best_bestelliste_menge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // Column_best_bestelliste_eilbestellung
+            // Column_best_bestelliste_eil
             // 
-            this.Column_best_bestelliste_eilbestellung.DividerWidth = 3;
-            this.Column_best_bestelliste_eilbestellung.FillWeight = 101F;
-            resources.ApplyResources(this.Column_best_bestelliste_eilbestellung, "Column_best_bestelliste_eilbestellung");
-            this.Column_best_bestelliste_eilbestellung.Name = "Column_best_bestelliste_eilbestellung";
-            this.Column_best_bestelliste_eilbestellung.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_best_bestelliste_eil.DividerWidth = 3;
+            this.Column_best_bestelliste_eil.FillWeight = 15F;
+            resources.ApplyResources(this.Column_best_bestelliste_eil, "Column_best_bestelliste_eil");
+            this.Column_best_bestelliste_eil.Name = "Column_best_bestelliste_eil";
+            this.Column_best_bestelliste_eil.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Column_best_bestelliste_loeschenButton
             // 
@@ -2928,27 +3042,41 @@
             // 
             // tabDirektV
             // 
-            this.tabDirektV.Controls.Add(this.tabControl_dirver);
             resources.ApplyResources(this.tabDirektV, "tabDirektV");
+            this.tabDirektV.Controls.Add(this.tabControl_dirver);
             this.tabDirektV.Name = "tabDirektV";
             this.tabDirektV.UseVisualStyleBackColor = true;
             // 
             // tabControl_dirver
             // 
+            resources.ApplyResources(this.tabControl_dirver, "tabControl_dirver");
             this.tabControl_dirver.Controls.Add(this.tabPage1);
             this.tabControl_dirver.Controls.Add(this.tabPage_dirver_direktverkauf);
-            resources.ApplyResources(this.tabControl_dirver, "tabControl_dirver");
             this.tabControl_dirver.Name = "tabControl_dirver";
             this.tabControl_dirver.SelectedIndex = 0;
             this.tabControl_dirver.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             // 
             // tabPage1
             // 
+            resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.Controls.Add(this.createXml);
+            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.label_comment_3);
             this.tabPage1.Controls.Add(this.label_comment_2);
-            resources.ApplyResources(this.tabPage1, "tabPage1");
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // createXml
+            // 
+            resources.ApplyResources(this.createXml, "createXml");
+            this.createXml.Name = "createXml";
+            this.createXml.UseVisualStyleBackColor = true;
+            this.createXml.Click += new System.EventHandler(this.createXml_Click);
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
             // 
             // label_comment_3
             // 
@@ -2959,17 +3087,17 @@
             // 
             resources.ApplyResources(this.label_comment_2, "label_comment_2");
             this.label_comment_2.Name = "label_comment_2";
-            this.label_comment_2.Click += new System.EventHandler(this.label1_Click);
             // 
             // tabPage_dirver_direktverkauf
             // 
-            this.tabPage_dirver_direktverkauf.Controls.Add(this.dataGridView_dirver_direktverkauf);
             resources.ApplyResources(this.tabPage_dirver_direktverkauf, "tabPage_dirver_direktverkauf");
+            this.tabPage_dirver_direktverkauf.Controls.Add(this.dataGridView_dirver_direktverkauf);
             this.tabPage_dirver_direktverkauf.Name = "tabPage_dirver_direktverkauf";
             this.tabPage_dirver_direktverkauf.UseVisualStyleBackColor = true;
             // 
             // dataGridView_dirver_direktverkauf
             // 
+            resources.ApplyResources(this.dataGridView_dirver_direktverkauf, "dataGridView_dirver_direktverkauf");
             this.dataGridView_dirver_direktverkauf.AllowUserToResizeColumns = false;
             this.dataGridView_dirver_direktverkauf.AllowUserToResizeRows = false;
             this.dataGridView_dirver_direktverkauf.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -2979,9 +3107,9 @@
             this.Column_dirver_direktverkauf_menge,
             this.Column_dirver_direktverkauf_preis,
             this.Column_dirver_direktverkauf_loeschenButton});
-            resources.ApplyResources(this.dataGridView_dirver_direktverkauf, "dataGridView_dirver_direktverkauf");
             this.dataGridView_dirver_direktverkauf.Name = "dataGridView_dirver_direktverkauf";
             this.dataGridView_dirver_direktverkauf.RowHeadersVisible = false;
+            this.dataGridView_dirver_direktverkauf.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_dirver_direktverkauf_CellContentClick);
             // 
             // Column_dirver_direktverkauf_nummer
             // 
@@ -3054,10 +3182,24 @@
             resources.ApplyResources(this.imageList3, "imageList3");
             this.imageList3.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // lbl_xml_import
+            // 
+            resources.ApplyResources(this.lbl_xml_import, "lbl_xml_import");
+            this.lbl_xml_import.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_xml_import.Name = "lbl_xml_import";
+            // 
+            // lbl_xml_period
+            // 
+            resources.ApplyResources(this.lbl_xml_period, "lbl_xml_period");
+            this.lbl_xml_period.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_xml_period.Name = "lbl_xml_period";
+            // 
             // Start
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lbl_xml_period);
+            this.Controls.Add(this.lbl_xml_import);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -3088,6 +3230,8 @@
             this.tabDamenf.PerformLayout();
             this.tabHerrenf.ResumeLayout(false);
             this.tabHerrenf.PerformLayout();
+            this.tabPUebersicht.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pp_uebersicht_grid)).EndInit();
             this.tabKapa.ResumeLayout(false);
             this.tabControl_kp.ResumeLayout(false);
             this.tabPage_kp_uebersicht.ResumeLayout(false);
@@ -3098,10 +3242,10 @@
             this.tabPage_kp_info.PerformLayout();
             this.tabBestellung.ResumeLayout(false);
             this.tabControl_best.ResumeLayout(false);
-            this.tabPage_best_kaufteileverbrauch.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_best_kaufteileverbrauch)).EndInit();
             this.tabPage_best_kaufteillager.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_best_kaufteillager)).EndInit();
+            this.tabPage_best_kaufteileverbrauch.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_best_kaufteileverbrauch)).EndInit();
             this.tabPage_best_bestellung.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_best_bestellliste)).EndInit();
             this.tabDirektV.ResumeLayout(false);
@@ -3119,7 +3263,7 @@
 
         }
 
-       
+
 
         #endregion
 
@@ -3451,7 +3595,6 @@
         private System.Windows.Forms.TabPage tabPage_best_bestellung;
         private System.Windows.Forms.DataGridView dataGridView_best_bestellliste;
         private System.Windows.Forms.TabPage tabPage_best_kaufteileverbrauch;
-        private System.Windows.Forms.Button testButton;
         private System.Windows.Forms.DataGridView dataGridView_best_kaufteileverbrauch;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_aufloesung_arbeitsplatz;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_aufloesung_teil;
@@ -3463,6 +3606,32 @@
         private System.Windows.Forms.Label label_comment_2;
         private System.Windows.Forms.TabPage tabPage_dirver_direktverkauf;
         private System.Windows.Forms.DataGridView dataGridView_dirver_direktverkauf;
+        private System.Windows.Forms.Label label_comment_3;
+        private System.Windows.Forms.Label label_comment;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_nummer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_menge;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_preis;
+        private System.Windows.Forms.DataGridViewButtonColumn Column_dirver_direktverkauf_loeschenButton;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteillager_nummer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteillager_bezeichnung;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteillager_bestand;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteillager_lieferdauer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteillager_diskontmenge;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteillager_bestellkosten;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_nummer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bestand;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bruttobedarfN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bruttobedarfN1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bestandN1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bestandN2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_ausstehendeBest;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_bestelliste_nummer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_bestelliste_menge;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column_best_bestelliste_eil;
+        private System.Windows.Forms.DataGridViewButtonColumn Column_best_bestelliste_loeschenButton;
+        private System.Windows.Forms.DataGridView pp_uebersicht_grid;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button createXml;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_arbeitsplatz;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_kapazitaetsbedarf;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_ruestzeit;
@@ -3473,30 +3642,20 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column_kp_uebersicht_2schicht;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column_kp_uebersicht_3schicht;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_kp_uebersicht_leerzeit;
-        private System.Windows.Forms.Label label_comment_3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_nummer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bestand;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bruttobedarfN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bruttobedarfN1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bestandN1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bestandN2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_ausstehendeBest;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteillager_nummer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteillager_bezeichnung;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteillager_bestand;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteillager_wareneingang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteillager_lieferdauer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteillager_diskontmenge;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteillager_bestellkosten;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_nummer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_menge;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_preis;
-        private System.Windows.Forms.DataGridViewButtonColumn Column_dirver_direktverkauf_loeschenButton;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_bestelliste_nummer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_bestelliste_menge;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column_best_bestelliste_eilbestellung;
-        private System.Windows.Forms.DataGridViewButtonColumn Column_best_bestelliste_loeschenButton;
-        private System.Windows.Forms.Label label_comment;
+        private System.Windows.Forms.Button btn_kf_save;
+        private System.Windows.Forms.Button btn_df_save;
+        private System.Windows.Forms.Button btn_hf_save;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_teilnummer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_bezeichnung;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_Lagerbestand;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_prozent;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_warteschlange;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_inBearbeitung;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pp_uebersicht_programm;
+        private System.Windows.Forms.Label lbl_xml_import;
+        private System.Windows.Forms.Label lbl_xml_period;
+        private System.Windows.Forms.Button btn_prog_save;
+       
+
     }
 }
-
