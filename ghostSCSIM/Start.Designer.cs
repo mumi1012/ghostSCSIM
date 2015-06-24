@@ -2827,6 +2827,7 @@
             this.tabControl_best.Name = "tabControl_best";
             this.tabControl_best.SelectedIndex = 0;
             this.tabControl_best.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl_best.SelectedIndexChanged += new System.EventHandler(this.fillTabKaufteileverbrauchWithData);
             // 
             // tabPage_best_kaufteillager
             // 
