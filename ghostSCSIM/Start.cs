@@ -454,6 +454,13 @@ namespace ghostSCSIM
 
                             int gesamt = kapazitätsbedarf + ruestzeit + rueckstaendekapa + rueckstaendez;
 
+                            if (gesamt > 2400 && gesamt <= 3600)
+                            { 
+                                int differenz = gesamt - 2400;
+                                int ueberstunden = differenz / 5;
+                                dataGridView_kp_uebersicht.Rows.Add(i, kapazitätsbedarf.ToString(), ruestzeit.ToString(), rueckstaendekapa.ToString(), rueckstaendez.ToString(), gesamt.ToString(), ueberstunden.ToString(), true, false);
+                            }
+
                             if (gesamt > 3600 && gesamt <= 7200)
                             {
                                 dataGridView_kp_uebersicht.Rows.Add(i, kapazitätsbedarf.ToString(), ruestzeit.ToString(), rueckstaendekapa.ToString(), rueckstaendez.ToString(), gesamt.ToString(), "0", true, false);
