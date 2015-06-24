@@ -6217,7 +6217,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabDamenf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>850, 380</value>
+    <value>831, 380</value>
   </data>
   <data name="tabDamenf.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -9901,7 +9901,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabHerrenf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>850, 380</value>
+    <value>831, 380</value>
   </data>
   <data name="tabHerrenf.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -12505,7 +12505,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabPUebersicht.Size" type="System.Drawing.Size, System.Drawing">
-    <value>850, 380</value>
+    <value>831, 380</value>
   </data>
   <data name="tabPUebersicht.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -12553,7 +12553,7 @@
     <value>0, 0</value>
   </data>
   <data name="pp_uebersicht_grid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>850, 380</value>
+    <value>831, 380</value>
   </data>
   <data name="pp_uebersicht_grid.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -12847,7 +12847,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_kp_aufloesung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>854, 390</value>
+    <value>835, 390</value>
   </data>
   <data name="tabPage_kp_aufloesung.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -12892,7 +12892,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_kp_aufloesung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>848, 384</value>
+    <value>829, 384</value>
   </data>
   <data name="dataGridView_kp_aufloesung.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -12970,7 +12970,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_kp_info.Size" type="System.Drawing.Size, System.Drawing">
-    <value>854, 390</value>
+    <value>835, 390</value>
   </data>
   <data name="tabPage_kp_info.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -13261,7 +13261,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_best_kaufteileverbrauch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>854, 390</value>
+    <value>835, 390</value>
   </data>
   <data name="tabPage_best_kaufteileverbrauch.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -13309,7 +13309,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_best_kaufteileverbrauch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>848, 384</value>
+    <value>829, 384</value>
   </data>
   <data name="dataGridView_best_kaufteileverbrauch.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -13408,7 +13408,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_best_bestellung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>854, 390</value>
+    <value>835, 390</value>
   </data>
   <data name="tabPage_best_bestellung.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -13447,7 +13447,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_best_bestellliste.Size" type="System.Drawing.Size, System.Drawing">
-    <value>854, 344</value>
+    <value>835, 344</value>
   </data>
   <data name="dataGridView_best_bestellliste.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -13747,7 +13747,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_dirver_direktverkauf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>854, 390</value>
+    <value>835, 390</value>
   </data>
   <data name="tabPage_dirver_direktverkauf.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -13786,7 +13786,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_dirver_direktverkauf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>848, 384</value>
+    <value>829, 384</value>
   </data>
   <data name="dataGridView_dirver_direktverkauf.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>

@@ -8,7 +8,6 @@ namespace ghostSCSIM.Domain
 {
     class Reihenfolgenplanung
     {
-
         private string teil;
         private int menge;
         private int splittmenge;
@@ -19,7 +18,7 @@ namespace ghostSCSIM.Domain
             this.menge = menge;
             this.splittmenge = splittmenge;
         }
-
+        
         public string getTeil()
         {
             return teil;
@@ -49,5 +48,6 @@ namespace ghostSCSIM.Domain
         {
             this.splittmenge = splittmenge;
         }
+                
     }
 }
