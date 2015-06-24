@@ -16,6 +16,8 @@ namespace ghostSCSIM.Service.Disposition
         private StuecklisteItem stuecklisteItemP2 { get; set; }
         private StuecklisteItem stuecklisteItemP3 { get; set; }
 
+        private List<StuecklisteItem> teileVerwendungsNachweis;
+
         private int bruttoBedarfPeriode1 = 0;  
         private int bruttoBedarfPeriode2 = 0;
         private int bruttoBedarfPeriode3 = 0;    
@@ -30,12 +32,14 @@ namespace ghostSCSIM.Service.Disposition
         private int materialGehtAusInPeriode = -999;
         private int bestellPeriode;
 
+       
+
         public DispositionErgebnis(Teil teil, StuecklisteItem stuecklisteItemP1,
                StuecklisteItem stuecklisteItemP2,
                StuecklisteItem stuecklisteItemP3,
                TeilLieferdaten lieferdaten, int bruttoBedarfPeriode1,
                int bruttoBedarfPeriode2, int bruttoBedarfPeriode3,
-               int bruttoBedarfPeriode4)
+               int bruttoBedarfPeriode4, List<StuecklisteItem> teileVerwendungsnachweis)
         {
             this.teil = teil;
             this.stuecklisteItemP1 = stuecklisteItemP1;
@@ -47,11 +51,18 @@ namespace ghostSCSIM.Service.Disposition
             this.bruttoBedarfPeriode3 = bruttoBedarfPeriode3;
             this.bruttoBedarfPeriode4 = bruttoBedarfPeriode4;
 
+            this.teileVerwendungsNachweis = teileVerwendungsnachweis;
+
             this.lieferDaten = lieferdaten;
 
             MaterialGehtAusBerechnen();
             bestellPeriodeBerechnen();
             
+        }
+
+        private void addTeileVerwendungsnachweis(List<StuecklisteItem> verwendeteTeil)
+        {
+            this.teileVerwendungsNachweis = verwendeteTeil;
         }
 
         private void bestellPeriodeBerechnen()
@@ -60,6 +71,9 @@ namespace ghostSCSIM.Service.Disposition
             double gesamtWiederbeschaffungszeit = lieferDaten
                                       .getWiederbeschaffungszeitPeriode()
                                       + lieferDaten.getAbweichungPeriode();
+
+            //Ermitteln wie lange die Reichweite ist = materialGehtAusAmTag
+            
         }
 
         private void MaterialGehtAusBerechnen()
@@ -99,6 +113,11 @@ namespace ghostSCSIM.Service.Disposition
             }
         }
 
+        //private List<Bestellung> erstelleBestellListe()
+        //{
+
+        //}
+
         //Getter & Setter
         public Teil getTeil()
         {
@@ -108,6 +127,11 @@ namespace ghostSCSIM.Service.Disposition
         public void setTeil(Teil teil)
         {
             this.teil = teil;
+        }
+
+        public List<StuecklisteItem> getTeileVerwendungsnachweis()
+        {
+            return this.teileVerwendungsNachweis;
         }
 
         public TeilLieferdaten getLieferDaten()

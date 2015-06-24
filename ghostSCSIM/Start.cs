@@ -34,9 +34,9 @@ namespace ghostSCSIM
         private static Dictionary<int, int> produktionP2 = new Dictionary<int, int>();
         private static Dictionary<int, int> produktionP3 = new Dictionary<int, int>();
 
-       
-        
+        private List<DispositionErgebnis> dispoErgebnis { get; set; }
 
+                
         private DaoHelper dao = new DaoHelper();
 
         
@@ -279,6 +279,8 @@ namespace ghostSCSIM
 
         }
 
+      
+
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
@@ -307,6 +309,14 @@ namespace ghostSCSIM
         private void dataGridView_best_kaufteileverbrauch_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             dataGridView_best_kaufteileverbrauch.ScrollBars = ScrollBars.Both;
+
+            if (e.ColumnIndex == 0)
+            {
+                var teileInformation = new Teilinformation("kteil", Convert.ToInt32(dataGridView_best_kaufteileverbrauch.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString()));
+                teileInformation.GetTeilvonETeilMitMenge(dispoErgebnis);
+               
+                teileInformation.Show();
+            }
         }
 
        //Testbutton für das Generieren der Input XML-Datei
@@ -383,7 +393,14 @@ namespace ghostSCSIM
                                 int teil = ak.getTeilfk();
                                 int ruestz = ak.getRuestzeit();
                                 int fertigz = ak.getFertigungszeit();
-                                int kapazitätsbedarfTeil = fertigz * teile_Produktion[teil];
+
+                                int kapazitätsbedarfTeil = 0;
+                                //Nur wenn der Key gefunden wurde berechnen, sonst KeyNotFoundException
+                                if(teile_Produktion.TryGetValue(teil, out kapazitätsbedarfTeil)) {
+                                   kapazitätsbedarfTeil = fertigz * teile_Produktion[teil];
+                                }
+
+                               
                                 ruestzeit += ruestz;
                                 kapazitätsbedarf += kapazitätsbedarfTeil;
 
@@ -418,8 +435,10 @@ namespace ghostSCSIM
                     Disposition kaufteileDisposition = new Disposition();
                     kaufteileDisposition.setProduktionsProgramm(produktionsProgramm);
                     kaufteileDisposition.einkaufProgrammBerechnen();
-                    List<DispositionErgebnis> ergebnis = kaufteileDisposition.getDispositionsErgebnisse();
 
+                    dispoErgebnis = kaufteileDisposition.getDispositionsErgebnisse();
+                    
+                    
                     if (dataGridView_best_kaufteillager.Rows.Count == 0)
                     {
                         foreach (Teil teil in teileStammdaten)
@@ -451,12 +470,13 @@ namespace ghostSCSIM
 
                                 //Kaufteilbedarf DataGridView befüllen
                                 //TODO nochmal genau anschauen ob das auch so passt
-                                DispositionErgebnis dispoErgebnis = ergebnis.First(dispo => dispo.getTeil().Equals(teil));
+                                DispositionErgebnis einDispoErgebnis = dispoErgebnis.First(dispo => dispo.getTeil().Equals(teil));
 
-                                int bruttoBedarfP1 = dispoErgebnis.getBruttoBedarfPeriode1();
-                                int bruttoBedarfP2 = dispoErgebnis.getBruttoBedarfPeriode2();
-                                int bruttoBedarfP3 = dispoErgebnis.getBruttoBedarfPeriode3();
-                                int bruttoBedarfP4 = dispoErgebnis.getBruttoBedarfPeriode4();
+
+                                int bruttoBedarfP1 = einDispoErgebnis.getBruttoBedarfPeriode1();
+                                int bruttoBedarfP2 = einDispoErgebnis.getBruttoBedarfPeriode2();
+                                int bruttoBedarfP3 = einDispoErgebnis.getBruttoBedarfPeriode3();
+                                int bruttoBedarfP4 = einDispoErgebnis.getBruttoBedarfPeriode4();
 
 
                                 dataGridView_best_kaufteileverbrauch.Rows.Add(teilenummer.ToString(), bestand.ToString(), bruttoBedarfP1.ToString(), bruttoBedarfP2.ToString(), bruttoBedarfP3.ToString(), bruttoBedarfP4.ToString(), ausstehendeBestellungen.ToString());

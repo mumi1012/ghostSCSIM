@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace ghostSCSIM.Domain
 {
    class StuecklisteItem
+
     {
        private Teil teil;
        /// <summary>
@@ -14,7 +15,8 @@ namespace ghostSCSIM.Domain
        /// </summary>
        private Teil parent;
        private int anzahl;
-       
+       private int nettoBedarf;
+              
        
        public StuecklisteItem(Teil teil, Teil parent, int anzahl)
        {
@@ -22,6 +24,16 @@ namespace ghostSCSIM.Domain
            this.anzahl = anzahl;
            this.parent = parent;
        }
+
+       public StuecklisteItem(Teil teil, Teil parent, int anzahl, int nettoBedarf)
+       {
+           this.teil = teil;
+           this.anzahl = anzahl;
+           this.parent = parent;
+           this.nettoBedarf = nettoBedarf;
+          
+       }
+
        public StuecklisteItem() { }
 
        public Teil getTeil()
@@ -53,6 +65,18 @@ namespace ghostSCSIM.Domain
        {
            return parent;
        }
+
+       public void setNettobedarf(int nettoBedarf)
+       {
+           this.nettoBedarf = nettoBedarf;
+       }
+
+       public int getNettobedarf()
+       {
+           return nettoBedarf;
+       }
+
+       
 
        public override string ToString()
        {

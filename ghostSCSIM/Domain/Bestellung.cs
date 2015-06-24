@@ -20,11 +20,11 @@ namespace ghostSCSIM.Domain
 
         }
 
-        public Bestellung(int periode, Bestelltyp bestellTyp, int menge,
+        public Bestellung(int periode, int bestellTypNumber, int menge,
                 Teil teil, bool eingetroffen)
         {
             this.periode = periode;
-            this.bestellTyp = bestellTyp;
+            this.bestellTyp = (bestellTypNumber == 4) ? Bestelltyp.N : Bestelltyp.F;
             this.menge = menge;
             this.teil = teil;
             this.eingetroffen = eingetroffen;
@@ -55,9 +55,9 @@ namespace ghostSCSIM.Domain
             return bestellTyp;
         }
 
-        public void setBestellTyp(Bestelltyp bestellTyp)
+        public void setBestellTyp(int bestellTypNumber)
         {
-            this.bestellTyp = bestellTyp;
+            this.bestellTyp = (bestellTypNumber == 4) ? Bestelltyp.N : Bestelltyp.F;
         }
 
         public int getMenge()

@@ -71,6 +71,37 @@ namespace ghostSCSIM.Domain
             return getTeilStueckliste(teil);
           
         }
+
+        public List<StuecklisteItem> getTeileVerwendungsNachweis(int teileNummer, Dictionary<int,int> produktionsProgramm)
+        {
+
+            List<StuecklisteItem> teileVerwendungsnachweis = new List<StuecklisteItem>();
+
+            //Keys der Stückliste ermitteln
+            IList<Teil> keys = this.getKeys();
+            
+            foreach (Teil eTeil in keys)
+            {
+                int bruttoBedarf = 0;
+                if (produktionsProgramm.TryGetValue(eTeil.getNummer(), out bruttoBedarf)) {
+                
+                    bruttoBedarf = produktionsProgramm[eTeil.getNummer()];
+                }
+
+                LinkedList<StuecklisteItem> verwendeteTeile = this.getVerwendeteTeileListe(eTeil);
+                foreach (StuecklisteItem item in verwendeteTeile.Where(item => item.getTeil().getNummer().Equals(teileNummer)))
+                {
+                    int anzahl = item.getAnzahl();
+                    int nettoBedarf = bruttoBedarf;
+                    if (nettoBedarf != 0)
+                    {
+                        StuecklisteItem result = new StuecklisteItem(item.getTeil(), eTeil, anzahl, nettoBedarf);
+                        teileVerwendungsnachweis.Add(result);
+                    }
+                }
+            }
+            return teileVerwendungsnachweis;
+        }
         //Hilfsmethode um die Teilstückliste aufzubauen
         private Stueckliste getTeilStueckliste(Teil parent)
         {
@@ -131,7 +162,13 @@ namespace ghostSCSIM.Domain
             foreach (Teil teil in keys)
             {
                 //Bruttobedarf zu dem Teil aus dem Produktionsprogramm
-                int bruttoBedarf = produktionsProgramm[teil.getNummer()];
+
+                int bruttoBedarf = 0;
+                if (produktionsProgramm.TryGetValue(teil.getNummer(), out bruttoBedarf))
+                {
+                    bruttoBedarf = produktionsProgramm[teil.getNummer()];
+                }
+                
                 
                 //Bei Teilenummer E26, E17 oder E16 werden die summierten Bedarfe verwendet, daher durch drei teilen
                 if (teil.getNummer().Equals(16) || teil.getNummer().Equals(17) || teil.getNummer().Equals(27)) {
@@ -146,5 +183,7 @@ namespace ghostSCSIM.Domain
             }
             return nettoBedarf;
         }
+
+        
     }
 }

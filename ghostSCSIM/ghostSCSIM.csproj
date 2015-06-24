@@ -81,6 +81,12 @@
     <Compile Include="Start.Designer.cs">
       <DependentUpon>Start.cs</DependentUpon>
     </Compile>
+    <Compile Include="Teilinformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teilinformation.Designer.cs">
+      <DependentUpon>Teilinformation.cs</DependentUpon>
+    </Compile>
     <Compile Include="XML\FutureInwardStockMovement.cs" />
     <Compile Include="XML\IdletimeCosts.cs" />
     <Compile Include="XML\InwardStockMovement.cs" />
@@ -103,6 +109,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Teilinformation.resx">
+      <DependentUpon>Teilinformation.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DatenbankDataSet.xsc">
       <DependentUpon>DatenbankDataSet.xsd</DependentUpon>
     </None>

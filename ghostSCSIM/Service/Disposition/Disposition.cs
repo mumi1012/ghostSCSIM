@@ -31,6 +31,8 @@ namespace ghostSCSIM.Service.Disposition
         public void einkaufProgrammBerechnen()
         {
             Dictionary<int, TeilLieferdaten> teilLieferdaten = daoHelper.getTeilLieferdaten();
+            //Offene Bestellungen aus XML, Key = Order_ID
+            List<Bestellung> offeneBestellungen = new List<Bestellung>();
             //Lagerbestände aus der Vorperiode setzen
             foreach(int teileNummer in teilLieferdaten.Keys) {
                 var teil_lagerbestand = dc.warehouseStock.article.SingleOrDefault(article => article.id.Equals(teileNummer));
@@ -38,9 +40,21 @@ namespace ghostSCSIM.Service.Disposition
                 {
                     teilLieferdaten[teileNummer].setLagerMenge(teil_lagerbestand.amount);
                 }
-                    
+                                    
             }
-                     
+
+            //TODO hier weitermachen
+            foreach (var order in dc.futureInwardStockMovement.orders.AsEnumerable())
+            {
+                Teil teil = new Teil();
+                teil.setNummer(order.article);
+                Bestellung bestellung = new Bestellung(order.orderperiod, order.mode, order.amount, teil, false);
+
+                offeneBestellungen.Add(bestellung);
+                
+
+
+            }                     
             
 
             //Stücklisten holen
@@ -72,10 +86,25 @@ namespace ghostSCSIM.Service.Disposition
                 StuecklisteItem stueckListeItemP2 = stueckListeP2.getMengenBedarfKaufteilByTeilenummer(teilenummer, stueckListeP2);
                 StuecklisteItem stueckListeItemP3 = stueckListeP3.getMengenBedarfKaufteilByTeilenummer(teilenummer, stueckListeP3);
 
+                Stueckliste[] alleStuecklisten = new Stueckliste[3];
+                alleStuecklisten[0] = stueckListeP1;
+                alleStuecklisten[1] = stueckListeP2;
+                alleStuecklisten[2] = stueckListeP3;
+
+                List<StuecklisteItem> teileVerwendungsNachweis = new List<StuecklisteItem>();
+                //TODO Nochmal überprüfen zwecks doppelten Einträgen E16,17,26
+                for (int i = 0; i < alleStuecklisten.Count(); ++i)
+                {
+                    teileVerwendungsNachweis.AddRange(alleStuecklisten[i].getTeileVerwendungsNachweis(teilenummer, teileProduktion));
+                }
+
+                                
+
                 //Periode 1 anhand der Werte aus dem Produktionsprogramm -> mit Sicherheitsbeständen
                 if (stueckListeItemP1 != null)
                 {
                     nettoBedarfPeriode1 += stueckListeP1.getNettoBedarfToFertigteilByTeilenummer(teilenummer, teileProduktion);
+                    
                 }
                 if (stueckListeItemP2 != null)
                 {
@@ -150,17 +179,22 @@ namespace ghostSCSIM.Service.Disposition
                         stueckListeItemP2, stueckListeItemP3,
                         currentLieferDaten, nettoBedarfPeriode1,
                         bruttoBedarfPeriode2, bruttoBedarfPeriode3,
-                        bruttoBedarfPeriode4);
+                        bruttoBedarfPeriode4, teileVerwendungsNachweis);
 
                 //Ergebnis zur Liste zufügen
                 ergebnisse.Add(kaufTeilDispoErgebnis);
             }
+            
         }
 
         public List<DispositionErgebnis> getDispositionsErgebnisse()
         {
-            return ergebnisse;
+            return this.ergebnisse;
         }
+
+       
+
+          
            
         
 
