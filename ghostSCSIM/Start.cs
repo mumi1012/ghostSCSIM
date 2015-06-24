@@ -549,6 +549,10 @@ namespace ghostSCSIM
                 
             }
 
+            if (tabControl1.SelectedTab == tabControl1.TabPages["tabReihenfolge"])
+            {
+                dataGridView_rf_planung.Rows.Add("P1", "100", "0", "▲", "▼");
+            }
             
 
             if (tabControl1.SelectedTab == tabControl1.TabPages["tabDirektV"])
