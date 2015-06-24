@@ -22,6 +22,9 @@ namespace ghostSCSIM
     public partial class Start : Form
     {
 
+        //DaoHelper
+        private DaoHelper dao = new DaoHelper();
+
         // Neuen Datenbehälter für den XML Input anlegen
         public static DataContainer xmlData = DataContainer.Instance;
         public static Dictionary<int, int> teile_Produktion = new Dictionary<int, int>();
@@ -32,6 +35,10 @@ namespace ghostSCSIM
         //Produktionsprogramm aus Prognosen
         private Produktionsprogramm produktionsProgramm = new Produktionsprogramm();
 
+        //Teilestammdaten
+        private static List<Teil> teileStammdaten = new List<Teil>();
+                          
+                
         //Produktionsprogramm aus View, Key = Teilenummer
         private static Dictionary<int, int> produktionP1 = new Dictionary<int, int>();
         private static Dictionary<int, int> produktionP2 = new Dictionary<int, int>();
@@ -40,8 +47,8 @@ namespace ghostSCSIM
         private List<DispositionErgebnis> dispoErgebnis { get; set; }
 
                 
-        private DaoHelper dao = new DaoHelper();
 
+        
         
         private List<String> produktionsMengenAusView = new List<String>();
 
@@ -322,7 +329,7 @@ namespace ghostSCSIM
             }
         }
 
-        //Testbutton für das Generieren der Input XML-Datei
+       //Testbutton für das Generieren der Input XML-Datei
         private void createXml_Click(object sender, EventArgs e)
         {
             var fileDialog = new SaveFileDialog { };
@@ -393,6 +400,8 @@ namespace ghostSCSIM
             {
                 if (xmlData.getXmlImported())
                 {
+                    //Erste TabPage laden
+                    tabControl2.SelectedTab = tabControl2.TabPages["tabKinderf"];
                     refreshKinderFahrradView();
                                        
                 }
@@ -459,6 +468,7 @@ namespace ghostSCSIM
                     }
                 }
             }
+
             //Bestellungen Tabs befüllen
             if (tabControl1.SelectedTab == tabControl1.TabPages["tabBestellung"])
             {
@@ -466,9 +476,13 @@ namespace ghostSCSIM
                 if (xmlData.getXmlImported())
                 {
 
+                    tabControl_best.SelectedTab = tabControl_best.TabPages["tabPage_best_kaufteillager"];
                     //Bestellung Tab
-                    List<Teil> teileStammdaten = dao.getKaufteileStammdaten();
-
+                    if (Start.teileStammdaten.Count == 0)
+                    {
+                        Start.teileStammdaten = dao.getKaufteileStammdaten();
+                    }
+                   
                     //ColumnHeaderText Bedarf/Bestand an Periode anpassen
                     //TODO: Für Sprachsteuerung anpassbar machen
                     //TODO: Angleichen bei neuer Column Anordnung
@@ -485,11 +499,13 @@ namespace ghostSCSIM
                     kaufteileDisposition.setProduktionsProgramm(produktionsProgramm);
                     kaufteileDisposition.einkaufProgrammBerechnen();
 
-                    dispoErgebnis = kaufteileDisposition.getDispositionsErgebnisse();
+                    
                     
                     
                     if (dataGridView_best_kaufteillager.Rows.Count == 0)
                     {
+
+
                         foreach (Teil teil in teileStammdaten)
                         {
                             int teilenummer = teil.getNummer();
@@ -506,6 +522,57 @@ namespace ghostSCSIM
                                 //Kaufteillager DataGridView befüllen
                                 dataGridView_best_kaufteillager.Rows.Add(teilenummer.ToString(), bezeichnung, bestand, lieferdauerTage, diskontmenge, bestellkosten);
 
+                                
+
+                                
+                                
+                                
+                        }
+                    }
+
+                    //Bestellliste DataGridView
+                    //TODO: Eingaben validieren! Festlegen wann die Bestellung gesichert wird! > Extra Methode
+                    foreach (DataGridViewRow row in dataGridView_best_bestellliste.Rows)
+                    {
+                        int teilenummer = Convert.ToInt32(row.Cells[0].Value); //hier sollten nur teilenummern von k teilen angenommen werden
+                        int bestellmenge = Convert.ToInt32(row.Cells[1].Value);
+                        bool eil = (DataGridViewCheckBoxCell)row.Cells[2].Value != null;
+                    }
+                }
+                
+            }
+
+            
+
+            if (tabControl1.SelectedTab == tabControl1.TabPages["tabDirektV"])
+            {
+                MessageBox.Show("direktv");
+            }
+
+        }
+
+        private void fillTabKaufteileverbrauchWithData(object sender, EventArgs e) {
+
+            if (tabControl_best.SelectedTab == tabControl_best.TabPages["tabPage_best_kaufteileverbrauch"])
+            {
+                if (xmlData.getXmlImported())
+                {
+                    //DataGrid vor dem Befüllen noch mal leeren um die aktuellen Daten zu erhalten
+                    if (dataGridView_best_kaufteileverbrauch.Rows.Count > 0)
+                    {
+                        dataGridView_best_kaufteileverbrauch.Rows.Clear();
+                    }
+                    Disposition kaufteileDisposition = new Disposition();
+                    kaufteileDisposition.setProduktionsProgramm(produktionsProgramm);
+                    kaufteileDisposition.einkaufProgrammBerechnen();
+
+                    dispoErgebnis = kaufteileDisposition.getDispositionsErgebnisse();
+
+                    foreach (Teil teil in teileStammdaten)
+                    {
+                        int teilenummer = teil.getNummer();
+                        int warehouseStockIndex = xmlData.warehouseStock.getIndexOfArticleById(teilenummer);
+                        String bestand = xmlData.warehouseStock.article[warehouseStockIndex].amount.ToString();
                                 int ausstehendeBestellungen = 0;
 
                                 foreach (Order o in xmlData.futureInwardStockMovement.orders)
@@ -516,15 +583,16 @@ namespace ghostSCSIM
                                     }
                                 }
 
-                            //Kaufteilbedarf DataGridView befüllen
-                            //TODO nochmal genau anschauen ob das auch so passt
-                            DispositionErgebnis einDispoErgebnis = dispoErgebnis.First(dispo => dispo.getTeil().Equals(teil));
+
+                                //Kaufteilbedarf DataGridView befüllen
+                                //TODO nochmal genau anschauen ob das auch so passt
+                                DispositionErgebnis einDispoErgebnis = dispoErgebnis.First(dispo => dispo.getTeil().Equals(teil));
 
 
-                            int bruttoBedarfP1 = einDispoErgebnis.getBruttoBedarfPeriode1();
-                            int bruttoBedarfP2 = einDispoErgebnis.getBruttoBedarfPeriode2();
-                            int bruttoBedarfP3 = einDispoErgebnis.getBruttoBedarfPeriode3();
-                            int bruttoBedarfP4 = einDispoErgebnis.getBruttoBedarfPeriode4();
+                                int bruttoBedarfP1 = einDispoErgebnis.getBruttoBedarfPeriode1();
+                                int bruttoBedarfP2 = einDispoErgebnis.getBruttoBedarfPeriode2();
+                                int bruttoBedarfP3 = einDispoErgebnis.getBruttoBedarfPeriode3();
+                                int bruttoBedarfP4 = einDispoErgebnis.getBruttoBedarfPeriode4();
 
 
                             int indexOfNewRow = dataGridView_best_kaufteileverbrauch.Rows.Add(teilenummer.ToString(), bestand.ToString(), bruttoBedarfP1.ToString(), bruttoBedarfP2.ToString(), bruttoBedarfP3.ToString(), bruttoBedarfP4.ToString());
@@ -559,14 +627,11 @@ namespace ghostSCSIM
                         int bestellmenge = Convert.ToInt32(row.Cells[1].Value);
                         bool eil = (DataGridViewCheckBoxCell)row.Cells[2].Value != null;
                     }
+                        
                 }
                 
-            }
-
-            if (tabControl1.SelectedTab == tabControl1.TabPages["tabDirektV"])
-            {
-                MessageBox.Show("direktv");
-            }
+            
+            
 
         }
 
@@ -599,7 +664,7 @@ namespace ghostSCSIM
             {
                 teilenummerCell.ErrorText = "Bitte geben Sie das zu bestellende Kaufteil an!";
                 row.ErrorText = "Bitte geben Sie das zu bestellende Kaufteil an!";
-            }
+        }
 
             //Keine Zahl
             else if (!int.TryParse(teilenummerCell.FormattedValue.ToString(), out intValue))
@@ -1129,6 +1194,6 @@ namespace ghostSCSIM
 
 
 
-        }       
+        }
     }
 }
