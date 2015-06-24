@@ -47,6 +47,7 @@
     <Compile Include="DAO\DaoHelper.cs" />
     <Compile Include="DAO\TeileHelper.cs" />
     <Compile Include="DataContainer.cs" />
+    <Compile Include="DataContainerResult.cs" />
     <Compile Include="DatenbankDataSet.cs">
       <DependentUpon>DatenbankDataSet.xsd</DependentUpon>
       <SubType>Component</SubType>
@@ -58,8 +59,10 @@
     </Compile>
     <Compile Include="Domain\ArbeitsplatzKapa.cs" />
     <Compile Include="Domain\ArbeitsplatzKosten.cs" />
+    <Compile Include="Domain\Bestellposition.cs" />
     <Compile Include="Domain\Bestelltyp.cs" />
     <Compile Include="Domain\Bestellung.cs" />
+    <Compile Include="Domain\Direktverkauf.cs" />
     <Compile Include="Domain\Ebedarf.cs" />
     <Compile Include="Domain\MengenStueckliste.cs" />
     <Compile Include="Domain\MengenStuecklisteItem.cs" />
@@ -97,6 +100,7 @@
     <Compile Include="XML\WarehouseStock.cs" />
     <Compile Include="XML\Workplace.cs" />
     <Compile Include="XML\XmlIO.cs" />
+    <Compile Include="XML\XmlOutput.cs" />
     <EmbeddedResource Include="Start.de.resx" />
     <EmbeddedResource Include="Start.en.resx" />
     <EmbeddedResource Include="Start.resx" />
