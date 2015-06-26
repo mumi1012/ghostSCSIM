@@ -517,4 +517,7 @@
   <data name="tabDirektV.Text" xml:space="preserve">
     <value>Direct sales</value>
   </data>
+  <data name="lbl_xml_import.Text" xml:space="preserve">
+    <value>Result Period:</value>
+  </data>
 </root>

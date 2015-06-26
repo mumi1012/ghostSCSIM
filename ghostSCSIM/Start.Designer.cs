@@ -471,6 +471,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.DarkGray;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.spracheToolStripMenuItem,
@@ -531,6 +532,7 @@
             // 
             // tabPrognose
             // 
+            this.tabPrognose.BackColor = System.Drawing.Color.LightGray;
             this.tabPrognose.Controls.Add(this.btn_prog_save);
             this.tabPrognose.Controls.Add(this.herren_prog_p4);
             this.tabPrognose.Controls.Add(this.herren_prog_p3);
@@ -552,9 +554,9 @@
             this.tabPrognose.Controls.Add(this.label_prognose_n);
             this.tabPrognose.Controls.Add(this.kinder_prog_p1);
             this.tabPrognose.Controls.Add(this.xmlInputButton);
+            this.tabPrognose.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.tabPrognose, "tabPrognose");
             this.tabPrognose.Name = "tabPrognose";
-            this.tabPrognose.UseVisualStyleBackColor = true;
             // 
             // btn_prog_save
             // 
@@ -565,12 +567,12 @@
             // 
             // herren_prog_p4
             // 
+            resources.ApplyResources(this.herren_prog_p4, "herren_prog_p4");
             this.herren_prog_p4.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.herren_prog_p4, "herren_prog_p4");
             this.herren_prog_p4.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -585,12 +587,12 @@
             // 
             // herren_prog_p3
             // 
+            resources.ApplyResources(this.herren_prog_p3, "herren_prog_p3");
             this.herren_prog_p3.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.herren_prog_p3, "herren_prog_p3");
             this.herren_prog_p3.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -605,12 +607,12 @@
             // 
             // herren_prog_p2
             // 
+            resources.ApplyResources(this.herren_prog_p2, "herren_prog_p2");
             this.herren_prog_p2.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.herren_prog_p2, "herren_prog_p2");
             this.herren_prog_p2.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -625,12 +627,12 @@
             // 
             // damen_prog_p4
             // 
+            resources.ApplyResources(this.damen_prog_p4, "damen_prog_p4");
             this.damen_prog_p4.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.damen_prog_p4, "damen_prog_p4");
             this.damen_prog_p4.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -645,12 +647,12 @@
             // 
             // damen_prog_p3
             // 
+            resources.ApplyResources(this.damen_prog_p3, "damen_prog_p3");
             this.damen_prog_p3.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.damen_prog_p3, "damen_prog_p3");
             this.damen_prog_p3.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -665,12 +667,12 @@
             // 
             // damen_prog_p2
             // 
+            resources.ApplyResources(this.damen_prog_p2, "damen_prog_p2");
             this.damen_prog_p2.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.damen_prog_p2, "damen_prog_p2");
             this.damen_prog_p2.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -685,12 +687,12 @@
             // 
             // kinder_prog_p4
             // 
+            resources.ApplyResources(this.kinder_prog_p4, "kinder_prog_p4");
             this.kinder_prog_p4.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.kinder_prog_p4, "kinder_prog_p4");
             this.kinder_prog_p4.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -705,12 +707,12 @@
             // 
             // kinder_prog_p3
             // 
+            resources.ApplyResources(this.kinder_prog_p3, "kinder_prog_p3");
             this.kinder_prog_p3.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.kinder_prog_p3, "kinder_prog_p3");
             this.kinder_prog_p3.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -725,12 +727,12 @@
             // 
             // kinder_prog_p2
             // 
+            resources.ApplyResources(this.kinder_prog_p2, "kinder_prog_p2");
             this.kinder_prog_p2.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.kinder_prog_p2, "kinder_prog_p2");
             this.kinder_prog_p2.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -745,12 +747,12 @@
             // 
             // herren_prog_p1
             // 
+            resources.ApplyResources(this.herren_prog_p1, "herren_prog_p1");
             this.herren_prog_p1.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.herren_prog_p1, "herren_prog_p1");
             this.herren_prog_p1.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -765,12 +767,12 @@
             // 
             // damen_prog_p1
             // 
+            resources.ApplyResources(this.damen_prog_p1, "damen_prog_p1");
             this.damen_prog_p1.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.damen_prog_p1, "damen_prog_p1");
             this.damen_prog_p1.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -820,12 +822,12 @@
             // 
             // kinder_prog_p1
             // 
+            resources.ApplyResources(this.kinder_prog_p1, "kinder_prog_p1");
             this.kinder_prog_p1.Increment = new decimal(new int[] {
             50,
             0,
             0,
             0});
-            resources.ApplyResources(this.kinder_prog_p1, "kinder_prog_p1");
             this.kinder_prog_p1.Maximum = new decimal(new int[] {
             9999,
             0,
@@ -859,6 +861,7 @@
             // 
             // tabKinderf
             // 
+            this.tabKinderf.BackColor = System.Drawing.Color.LightGray;
             this.tabKinderf.Controls.Add(this.btn_kf_save);
             this.tabKinderf.Controls.Add(this.pp_p1_18_prod);
             this.tabKinderf.Controls.Add(this.pp_p1_18_bearb);
@@ -952,7 +955,6 @@
             this.tabKinderf.Controls.Add(this.label_pp_p1_p1);
             resources.ApplyResources(this.tabKinderf, "tabKinderf");
             this.tabKinderf.Name = "tabKinderf";
-            this.tabKinderf.UseVisualStyleBackColor = true;
             // 
             // btn_kf_save
             // 
@@ -1425,6 +1427,7 @@
             // 
             // tabDamenf
             // 
+            this.tabDamenf.BackColor = System.Drawing.Color.LightGray;
             this.tabDamenf.Controls.Add(this.btn_df_save);
             this.tabDamenf.Controls.Add(this.pp_p2_19_prod);
             this.tabDamenf.Controls.Add(this.pp_p2_19_bearb);
@@ -1518,7 +1521,6 @@
             this.tabDamenf.Controls.Add(this.label_pp_p2_p2);
             resources.ApplyResources(this.tabDamenf, "tabDamenf");
             this.tabDamenf.Name = "tabDamenf";
-            this.tabDamenf.UseVisualStyleBackColor = true;
             // 
             // btn_df_save
             // 
@@ -1993,6 +1995,7 @@
             // 
             // tabHerrenf
             // 
+            this.tabHerrenf.BackColor = System.Drawing.Color.LightGray;
             this.tabHerrenf.Controls.Add(this.btn_hf_save);
             this.tabHerrenf.Controls.Add(this.pp_p3_20_prod);
             this.tabHerrenf.Controls.Add(this.pp_p3_20_bearb);
@@ -2086,7 +2089,6 @@
             this.tabHerrenf.Controls.Add(this.label_pp_p3_p3);
             resources.ApplyResources(this.tabHerrenf, "tabHerrenf");
             this.tabHerrenf.Name = "tabHerrenf";
-            this.tabHerrenf.UseVisualStyleBackColor = true;
             // 
             // btn_hf_save
             // 
@@ -2577,6 +2579,7 @@
             this.pp_uebersicht_programm});
             resources.ApplyResources(this.pp_uebersicht_grid, "pp_uebersicht_grid");
             this.pp_uebersicht_grid.Name = "pp_uebersicht_grid";
+            this.pp_uebersicht_grid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.pp_uebersicht_grid_CellContentClick);
             // 
             // pp_uebersicht_teilnummer
             // 
@@ -3187,13 +3190,13 @@
             // lbl_xml_import
             // 
             resources.ApplyResources(this.lbl_xml_import, "lbl_xml_import");
-            this.lbl_xml_import.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_xml_import.BackColor = System.Drawing.Color.DarkGray;
             this.lbl_xml_import.Name = "lbl_xml_import";
             // 
             // lbl_xml_period
             // 
             resources.ApplyResources(this.lbl_xml_period, "lbl_xml_period");
-            this.lbl_xml_period.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_xml_period.BackColor = System.Drawing.Color.DarkGray;
             this.lbl_xml_period.Name = "lbl_xml_period";
             // 
             // Start

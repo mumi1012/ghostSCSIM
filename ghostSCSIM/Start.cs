@@ -158,7 +158,7 @@ namespace ghostSCSIM
             OleDbDataAdapter oledbAdapter;
             DataSet ds = new DataSet();
             string sql = null;
-            int i = 0;
+            //int i = 0;
 
             sql = "SELECT * FROM Lager";
             connection = new OleDbConnection(connectionString);
@@ -199,7 +199,16 @@ namespace ghostSCSIM
                 lbl_xml_period.Text = xmlData.period.ToString();
                 lbl_xml_period.Visible = true;
 
-                MessageBox.Show("XML_File erfolgreich importiert!");
+                //MessageBox.Show("XML_File erfolgreich importiert!");
+                if ((Thread.CurrentThread.CurrentUICulture).ToString() == "en")
+                {
+                    MessageBox.Show("XML-File successfully imported!");
+                }
+                else
+                {
+                    MessageBox.Show("XML-Datei erfolgreich importiert!");
+                }
+               
             }
         }
 
@@ -1200,6 +1209,11 @@ namespace ghostSCSIM
             produktionsProgramm.P3_4 = Convert.ToInt32(herren_prog_p4.Value);
 
 
+
+        }
+
+        private void pp_uebersicht_grid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

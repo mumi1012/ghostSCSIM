@@ -174,14 +174,17 @@
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="xmlInputButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="xmlInputButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>35, 283</value>
+    <value>81, 327</value>
   </data>
   <data name="xmlInputButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="xmlInputButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 34</value>
+    <value>110, 55</value>
   </data>
   <data name="xmlInputButton.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -213,14 +216,17 @@
   <data name="tabControl1.Alignment" type="System.Windows.Forms.TabAlignment, System.Windows.Forms">
     <value>Left</value>
   </data>
+  <data name="btn_prog_save.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="btn_prog_save.Location" type="System.Drawing.Point, System.Drawing">
-    <value>481, 283</value>
+    <value>639, 327</value>
   </data>
   <data name="btn_prog_save.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="btn_prog_save.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 34</value>
+    <value>110, 55</value>
   </data>
   <data name="btn_prog_save.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
@@ -240,14 +246,17 @@
   <data name="&gt;&gt;btn_prog_save.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="herren_prog_p4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="herren_prog_p4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>481, 198</value>
+    <value>659, 216</value>
   </data>
   <data name="herren_prog_p4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="herren_prog_p4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>90, 23</value>
   </data>
   <data name="herren_prog_p4.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
@@ -264,14 +273,17 @@
   <data name="&gt;&gt;herren_prog_p4.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="herren_prog_p3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="herren_prog_p3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 198</value>
+    <value>517, 216</value>
   </data>
   <data name="herren_prog_p3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="herren_prog_p3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>90, 23</value>
   </data>
   <data name="herren_prog_p3.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
@@ -288,14 +300,17 @@
   <data name="&gt;&gt;herren_prog_p3.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="herren_prog_p2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="herren_prog_p2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>262, 198</value>
+    <value>377, 216</value>
   </data>
   <data name="herren_prog_p2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="herren_prog_p2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>90, 23</value>
   </data>
   <data name="herren_prog_p2.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
@@ -312,14 +327,17 @@
   <data name="&gt;&gt;herren_prog_p2.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="damen_prog_p4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="damen_prog_p4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>481, 158</value>
+    <value>659, 168</value>
   </data>
   <data name="damen_prog_p4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="damen_prog_p4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>90, 23</value>
   </data>
   <data name="damen_prog_p4.TabIndex" type="System.Int32, mscorlib">
     <value>52</value>
@@ -336,14 +354,17 @@
   <data name="&gt;&gt;damen_prog_p4.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="damen_prog_p3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="damen_prog_p3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 158</value>
+    <value>517, 168</value>
   </data>
   <data name="damen_prog_p3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="damen_prog_p3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>90, 23</value>
   </data>
   <data name="damen_prog_p3.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
@@ -360,14 +381,17 @@
   <data name="&gt;&gt;damen_prog_p3.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="damen_prog_p2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="damen_prog_p2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>262, 158</value>
+    <value>377, 168</value>
   </data>
   <data name="damen_prog_p2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="damen_prog_p2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>90, 23</value>
   </data>
   <data name="damen_prog_p2.TabIndex" type="System.Int32, mscorlib">
     <value>50</value>
@@ -384,14 +408,17 @@
   <data name="&gt;&gt;damen_prog_p2.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="kinder_prog_p4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="kinder_prog_p4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>481, 113</value>
+    <value>659, 116</value>
   </data>
   <data name="kinder_prog_p4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="kinder_prog_p4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>90, 23</value>
   </data>
   <data name="kinder_prog_p4.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
@@ -408,14 +435,17 @@
   <data name="&gt;&gt;kinder_prog_p4.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="kinder_prog_p3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="kinder_prog_p3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>371, 114</value>
+    <value>517, 117</value>
   </data>
   <data name="kinder_prog_p3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="kinder_prog_p3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>90, 23</value>
   </data>
   <data name="kinder_prog_p3.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -432,14 +462,17 @@
   <data name="&gt;&gt;kinder_prog_p3.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="kinder_prog_p2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="kinder_prog_p2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>262, 114</value>
+    <value>377, 117</value>
   </data>
   <data name="kinder_prog_p2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="kinder_prog_p2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>90, 23</value>
   </data>
   <data name="kinder_prog_p2.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -456,14 +489,17 @@
   <data name="&gt;&gt;kinder_prog_p2.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="herren_prog_p1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="herren_prog_p1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>151, 198</value>
+    <value>239, 216</value>
   </data>
   <data name="herren_prog_p1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="herren_prog_p1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>90, 23</value>
   </data>
   <data name="herren_prog_p1.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -480,14 +516,17 @@
   <data name="&gt;&gt;herren_prog_p1.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="damen_prog_p1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="damen_prog_p1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>151, 158</value>
+    <value>239, 168</value>
   </data>
   <data name="damen_prog_p1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="damen_prog_p1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>90, 23</value>
   </data>
   <data name="damen_prog_p1.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -507,17 +546,20 @@
   <data name="label_kinderf.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label_kinderf.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="label_kinderf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label_kinderf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 114</value>
+    <value>78, 118</value>
   </data>
   <data name="label_kinderf.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label_kinderf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 13</value>
+    <value>95, 17</value>
   </data>
   <data name="label_kinderf.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -540,17 +582,20 @@
   <data name="label_damenf.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label_damenf.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="label_damenf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label_damenf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 162</value>
+    <value>78, 173</value>
   </data>
   <data name="label_damenf.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label_damenf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 13</value>
+    <value>99, 17</value>
   </data>
   <data name="label_damenf.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -573,17 +618,20 @@
   <data name="label_herrenf.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label_herrenf.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="label_herrenf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label_herrenf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 202</value>
+    <value>78, 221</value>
   </data>
   <data name="label_herrenf.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label_herrenf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 13</value>
+    <value>98, 17</value>
   </data>
   <data name="label_herrenf.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -606,17 +654,20 @@
   <data name="label_prognose_n3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label_prognose_n3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="label_prognose_n3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label_prognose_n3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>479, 86</value>
+    <value>658, 73</value>
   </data>
   <data name="label_prognose_n3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label_prognose_n3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 13</value>
+    <value>85, 17</value>
   </data>
   <data name="label_prognose_n3.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -639,17 +690,20 @@
   <data name="label_prognose_n2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label_prognose_n2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="label_prognose_n2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label_prognose_n2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>368, 86</value>
+    <value>515, 73</value>
   </data>
   <data name="label_prognose_n2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label_prognose_n2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 13</value>
+    <value>85, 17</value>
   </data>
   <data name="label_prognose_n2.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
@@ -672,17 +726,20 @@
   <data name="label_prognose_n1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label_prognose_n1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="label_prognose_n1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label_prognose_n1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>259, 86</value>
+    <value>375, 73</value>
   </data>
   <data name="label_prognose_n1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label_prognose_n1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 13</value>
+    <value>85, 17</value>
   </data>
   <data name="label_prognose_n1.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -705,17 +762,20 @@
   <data name="label_prognose_n.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label_prognose_n.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="label_prognose_n.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label_prognose_n.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 86</value>
+    <value>238, 73</value>
   </data>
   <data name="label_prognose_n.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="label_prognose_n.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 13</value>
+    <value>69, 17</value>
   </data>
   <data name="label_prognose_n.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -735,14 +795,17 @@
   <data name="&gt;&gt;label_prognose_n.ZOrder" xml:space="preserve">
     <value>18</value>
   </data>
+  <data name="kinder_prog_p1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="kinder_prog_p1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>151, 114</value>
+    <value>239, 117</value>
   </data>
   <data name="kinder_prog_p1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="kinder_prog_p1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 20</value>
+    <value>90, 23</value>
   </data>
   <data name="kinder_prog_p1.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -3364,7 +3427,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabKinderf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>850, 380</value>
+    <value>850, 386</value>
   </data>
   <data name="tabKinderf.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -5959,7 +6022,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabDamenf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>850, 380</value>
+    <value>850, 386</value>
   </data>
   <data name="tabDamenf.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -8551,7 +8614,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabHerrenf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>850, 380</value>
+    <value>850, 386</value>
   </data>
   <data name="tabHerrenf.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -8577,11 +8640,17 @@
   <data name="pp_uebersicht_teilnummer.HeaderText" xml:space="preserve">
     <value>Teilenummer</value>
   </data>
+  <data name="pp_uebersicht_teilnummer.Width" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
   <metadata name="pp_uebersicht_bezeichnung.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="pp_uebersicht_bezeichnung.HeaderText" xml:space="preserve">
     <value>Bezeichnung</value>
+  </data>
+  <data name="pp_uebersicht_bezeichnung.Width" type="System.Int32, mscorlib">
+    <value>115</value>
   </data>
   <metadata name="pp_uebersicht_Lagerbestand.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -8589,11 +8658,17 @@
   <data name="pp_uebersicht_Lagerbestand.HeaderText" xml:space="preserve">
     <value>Lagerbestand</value>
   </data>
+  <data name="pp_uebersicht_Lagerbestand.Width" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
   <metadata name="pp_uebersicht_prozent.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="pp_uebersicht_prozent.HeaderText" xml:space="preserve">
     <value>Prozentual</value>
+  </data>
+  <data name="pp_uebersicht_prozent.Width" type="System.Int32, mscorlib">
+    <value>112</value>
   </data>
   <metadata name="pp_uebersicht_warteschlange.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -8601,17 +8676,26 @@
   <data name="pp_uebersicht_warteschlange.HeaderText" xml:space="preserve">
     <value>Warteschlange</value>
   </data>
+  <data name="pp_uebersicht_warteschlange.Width" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
   <metadata name="pp_uebersicht_inBearbeitung.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="pp_uebersicht_inBearbeitung.HeaderText" xml:space="preserve">
     <value>In Bearbeitung</value>
   </data>
+  <data name="pp_uebersicht_inBearbeitung.Width" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
   <metadata name="pp_uebersicht_programm.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="pp_uebersicht_programm.HeaderText" xml:space="preserve">
     <value>Programm</value>
+  </data>
+  <data name="pp_uebersicht_programm.Width" type="System.Int32, mscorlib">
+    <value>112</value>
   </data>
   <data name="pp_uebersicht_grid.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -8620,7 +8704,7 @@
     <value>0, 0</value>
   </data>
   <data name="pp_uebersicht_grid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>850, 380</value>
+    <value>850, 386</value>
   </data>
   <data name="pp_uebersicht_grid.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -8644,7 +8728,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabPUebersicht.Size" type="System.Drawing.Size, System.Drawing">
-    <value>850, 380</value>
+    <value>850, 386</value>
   </data>
   <data name="tabPUebersicht.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -8677,7 +8761,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>858, 406</value>
+    <value>858, 412</value>
   </data>
   <data name="tabControl2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -9577,7 +9661,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_dirver_direktverkauf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>848, 387</value>
+    <value>848, 384</value>
   </data>
   <data name="dataGridView_dirver_direktverkauf.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -9601,7 +9685,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_dirver_direktverkauf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>854, 393</value>
+    <value>854, 390</value>
   </data>
   <data name="tabPage_dirver_direktverkauf.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -9745,19 +9829,19 @@
     <value>NoControl</value>
   </data>
   <data name="lbl_xml_import.Location" type="System.Drawing.Point, System.Drawing">
-    <value>692, 6</value>
+    <value>692, 7</value>
   </data>
   <data name="lbl_xml_import.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="lbl_xml_import.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 13</value>
+    <value>86, 13</value>
   </data>
   <data name="lbl_xml_import.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
   </data>
   <data name="lbl_xml_import.Text" xml:space="preserve">
-    <value>Result Period:</value>
+    <value>Ergebnisperiode:</value>
   </data>
   <data name="&gt;&gt;lbl_xml_import.Name" xml:space="preserve">
     <value>lbl_xml_import</value>
@@ -9778,7 +9862,7 @@
     <value>True</value>
   </data>
   <data name="lbl_xml_period.Location" type="System.Drawing.Point, System.Drawing">
-    <value>769, 7</value>
+    <value>782, 7</value>
   </data>
   <data name="lbl_xml_period.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
