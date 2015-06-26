@@ -2601,7 +2601,6 @@
             this.pp_uebersicht_programm});
             resources.ApplyResources(this.pp_uebersicht_grid, "pp_uebersicht_grid");
             this.pp_uebersicht_grid.Name = "pp_uebersicht_grid";
-            this.pp_uebersicht_grid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.pp_uebersicht_grid_CellContentClick);
             // 
             // pp_uebersicht_teilnummer
             // 

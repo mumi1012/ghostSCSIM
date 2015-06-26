@@ -872,9 +872,8 @@ namespace ghostSCSIM
 
             return rf;
         }
+    
 
-
-        private void fillTabKaufteileverbrauchWithData(object sender, EventArgs e) {
         private void fillBestellungsTabWithData(object sender, EventArgs e) {
 
             if (tabControl_best.SelectedTab == tabControl_best.TabPages["tabPage_best_bestellung"])
