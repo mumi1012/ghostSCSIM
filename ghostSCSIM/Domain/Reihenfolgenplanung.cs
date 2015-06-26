@@ -18,7 +18,7 @@ namespace ghostSCSIM.Domain
             this.menge = menge;
             this.splittmenge = splittmenge;
         }
-        
+
         public string getTeil()
         {
             return teil;

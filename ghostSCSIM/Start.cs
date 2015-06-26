@@ -1547,14 +1547,12 @@ namespace ghostSCSIM
             var senderGrid = (DataGridView)sender;           
             
             if (senderGrid.Columns[e.ColumnIndex].HeaderText == "Vor")
-            {
-                
+            {                
                     int index = e.RowIndex;
                     string teil = senderGrid.Rows[index].Cells["Column_rf_rfPlanung_Teil"].Value.ToString();
 
-                    Reihenfolgenplanung p = listRfpglobal.Single(t => t.getTeil() == teil);
-
-
+                    Reihenfolgenplanung p = listRfpglobal.ElementAt(index);   
+                   
                 if (listRfpglobal.First.Value.getTeil() != p.getTeil())
                     {
                     string teilvor = senderGrid.Rows[index - 1].Cells["Column_rf_rfPlanung_Teil"].Value.ToString();
@@ -1581,7 +1579,8 @@ namespace ghostSCSIM
             {
                 int index = e.RowIndex;
                 string teil = senderGrid.Rows[index].Cells["Column_rf_rfPlanung_Teil"].Value.ToString();
-                Reihenfolgenplanung p = listRfpglobal.Single(t => t.getTeil() == teil);
+                Reihenfolgenplanung p = listRfpglobal.ElementAt(index);               
+
                 if (listRfpglobal.Last.Value.getTeil() != p.getTeil())
                 {
                     listRfpglobal.Remove(p);
@@ -1605,7 +1604,7 @@ namespace ghostSCSIM
             }
           
 
-        }
+        }       
 
         private Reihenfolgenplanung getItemByTeil(string teil)
         {
