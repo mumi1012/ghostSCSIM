@@ -401,6 +401,7 @@
             this.tabReihenfolge = new System.Windows.Forms.TabPage();
             this.tabControl_reihen = new System.Windows.Forms.TabControl();
             this.tabReihenfolgePlanung = new System.Windows.Forms.TabPage();
+            this.rf_splitten_button = new System.Windows.Forms.Button();
             this.dataGridView_rf_planung = new System.Windows.Forms.DataGridView();
             this.Column_rf_rfPlanung_Teil = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_rf_rfPlanung_menge = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -3072,13 +3073,25 @@
             // 
             // tabReihenfolgePlanung
             // 
+            this.tabReihenfolgePlanung.Controls.Add(this.rf_splitten_button);
             this.tabReihenfolgePlanung.Controls.Add(this.dataGridView_rf_planung);
             resources.ApplyResources(this.tabReihenfolgePlanung, "tabReihenfolgePlanung");
             this.tabReihenfolgePlanung.Name = "tabReihenfolgePlanung";
             this.tabReihenfolgePlanung.UseVisualStyleBackColor = true;
             // 
+            // rf_splitten_button
+            // 
+            resources.ApplyResources(this.rf_splitten_button, "rf_splitten_button");
+            this.rf_splitten_button.Name = "rf_splitten_button";
+            this.rf_splitten_button.UseVisualStyleBackColor = true;
+            this.rf_splitten_button.Click += new System.EventHandler(this.rf_splitten_button_Click);
+            // 
             // dataGridView_rf_planung
             // 
+            this.dataGridView_rf_planung.AllowUserToAddRows = false;
+            this.dataGridView_rf_planung.AllowUserToDeleteRows = false;
+            this.dataGridView_rf_planung.AllowUserToResizeColumns = false;
+            this.dataGridView_rf_planung.AllowUserToResizeRows = false;
             this.dataGridView_rf_planung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_rf_planung.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column_rf_rfPlanung_Teil,
@@ -3094,31 +3107,37 @@
             // 
             resources.ApplyResources(this.Column_rf_rfPlanung_Teil, "Column_rf_rfPlanung_Teil");
             this.Column_rf_rfPlanung_Teil.Name = "Column_rf_rfPlanung_Teil";
+            this.Column_rf_rfPlanung_Teil.ReadOnly = true;
+            this.Column_rf_rfPlanung_Teil.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_rf_rfPlanung_Teil.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Column_rf_rfPlanung_menge
             // 
             resources.ApplyResources(this.Column_rf_rfPlanung_menge, "Column_rf_rfPlanung_menge");
             this.Column_rf_rfPlanung_menge.Name = "Column_rf_rfPlanung_menge";
+            this.Column_rf_rfPlanung_menge.ReadOnly = true;
+            this.Column_rf_rfPlanung_menge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_rf_rfPlanung_menge.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Column_rf_rfPlanung_Splitt
             // 
             resources.ApplyResources(this.Column_rf_rfPlanung_Splitt, "Column_rf_rfPlanung_Splitt");
             this.Column_rf_rfPlanung_Splitt.Name = "Column_rf_rfPlanung_Splitt";
+            this.Column_rf_rfPlanung_Splitt.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_rf_rfPlanung_Splitt.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Column_rf_rfPlanung_Vor
             // 
             resources.ApplyResources(this.Column_rf_rfPlanung_Vor, "Column_rf_rfPlanung_Vor");
             this.Column_rf_rfPlanung_Vor.Name = "Column_rf_rfPlanung_Vor";
-            this.Column_rf_rfPlanung_Vor.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column_rf_rfPlanung_Vor.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column_rf_rfPlanung_Vor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Column_rf_rfPlanung_Vor.Text = "test";
             // 
             // Column_rf_rfPlanung_Zurueck
             // 
             resources.ApplyResources(this.Column_rf_rfPlanung_Zurueck, "Column_rf_rfPlanung_Zurueck");
             this.Column_rf_rfPlanung_Zurueck.Name = "Column_rf_rfPlanung_Zurueck";
-            this.Column_rf_rfPlanung_Zurueck.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column_rf_rfPlanung_Zurueck.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column_rf_rfPlanung_Zurueck.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Column_rf_rfPlanung_Zurueck.Text = "↓";
             // 
             // tabDirektV
@@ -3749,6 +3768,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_rf_rfPlanung_Splitt;
         private System.Windows.Forms.DataGridViewButtonColumn Column_rf_rfPlanung_Vor;
         private System.Windows.Forms.DataGridViewButtonColumn Column_rf_rfPlanung_Zurueck;
+        private System.Windows.Forms.Button rf_splitten_button;
        
 
     }

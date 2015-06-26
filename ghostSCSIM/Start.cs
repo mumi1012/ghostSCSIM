@@ -41,6 +41,9 @@ namespace ghostSCSIM
         //Reihenfolgenplanung
         private LinkedList<Reihenfolgenplanung> listRfpglobal = new LinkedList<Reihenfolgenplanung>();
 
+        //Wird 1 wenn Produktionsplan Übersicht geklickt wurde
+        private int uebersicht_geklickt = 0;
+
         //Produktionsprogramm aus View, Key = Teilenummer
         private static Dictionary<int, int> produktionP1 = new Dictionary<int, int>();
         private static Dictionary<int, int> produktionP2 = new Dictionary<int, int>();
@@ -551,7 +554,11 @@ namespace ghostSCSIM
                 dataGridView_rf_planung.Rows.Clear();
                 if (xmlData.getXmlImported())
                 {
-                    refreshReihenfolgenplanung();           
+                    if(uebersicht_geklickt == 1)
+                    {
+                        refreshReihenfolgenplanung();    
+                    }
+                           
                 }
 
             }
@@ -579,7 +586,8 @@ namespace ghostSCSIM
             foreach (Reihenfolgenplanung r in listRfpglobal)
             {
                 dataGridView_rf_planung.Rows.Add(r.getTeil(), r.getMenge().ToString(), r.getSplittmenge().ToString(), "▲", "▼");
-            }        
+            }
+
         }
 
 
@@ -1373,7 +1381,7 @@ namespace ghostSCSIM
                 {
                     if (xmlData.getXmlImported())
                     {
-                        
+                        uebersicht_geklickt = 1;
                         getProduktionsDict();
                         List<Teil> teilListe = new List<Teil>();
                         teilListe = dao.getFertigerzeugnisseStammdaten();
@@ -1617,6 +1625,30 @@ namespace ghostSCSIM
             }
             return null;  
 
+        }
+
+        private void rf_splitten_button_Click(object sender, EventArgs e)
+        {
+            DataGridView sender1 = dataGridView_rf_planung;
+            var senderGrid = (DataGridView)sender1;           
+            
+            for(int i=0; i<listRfpglobal.Count-1; i++)
+            {
+                string teil = senderGrid.Rows[i].Cells["Column_rf_rfPlanung_Teil"].Value.ToString();
+                int splitt = int.Parse(senderGrid.Rows[i].Cells["Column_rf_rfPlanung_Splitt"].Value.ToString());
+                if(splitt > 0)
+                {
+                    Reihenfolgenplanung p = getItemByTeil(teil);            
+                    
+                    Reihenfolgenplanung pold = new Reihenfolgenplanung(p.getTeil(), p.getMenge()-splitt, 0);
+                    Reihenfolgenplanung pnew = new Reihenfolgenplanung(p.getTeil()+".", splitt, 0);
+                    listRfpglobal.AddLast(pold);
+                    listRfpglobal.AddLast(pnew);
+                    listRfpglobal.Remove(p);
+                }               
+            }
+            dataGridView_rf_planung.Rows.Clear();
+            refreshReihenfolgenplanung();
         }
         
     }
