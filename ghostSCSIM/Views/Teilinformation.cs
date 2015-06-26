@@ -8,7 +8,7 @@ using ghostSCSIM.Domain;
 using System.Text;
 
 
-namespace ghostSCSIM
+namespace ghostSCSIM.Views
 {
     public partial class Teilinformation : Form
     {
