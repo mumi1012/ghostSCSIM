@@ -1548,32 +1548,60 @@ namespace ghostSCSIM
             
             if (senderGrid.Columns[e.ColumnIndex].HeaderText == "Vor")
             {
-                int index = e.RowIndex;
-                string teil = senderGrid.Rows[index].Cells["Column_rf_rfPlanung_Teil"].Value.ToString();
-                Reihenfolgenplanung p = listRfpglobal.Single(t => t.getTeil() == teil);
-
-                listRfpglobal.Remove(p);
                 
-                string teilvor = senderGrid.Rows[index-1].Cells["Column_rf_rfPlanung_Teil"].Value.ToString();
-                Reihenfolgenplanung pvor = getItemByTeil(teilvor);
+                    int index = e.RowIndex;
+                    string teil = senderGrid.Rows[index].Cells["Column_rf_rfPlanung_Teil"].Value.ToString();
 
-                LinkedListNode<Reihenfolgenplanung> gefunden = null;
+                    Reihenfolgenplanung p = listRfpglobal.Single(t => t.getTeil() == teil);
 
-                for(LinkedListNode<Reihenfolgenplanung> node = listRfpglobal.First; node!=listRfpglobal.Last.Next; node = node.Next)
-                {
-                    if(node.Value.getTeil() == pvor.getTeil())
+
+                if (listRfpglobal.First.Value.getTeil() != p.getTeil())
                     {
-                        gefunden = node;
+                    string teilvor = senderGrid.Rows[index - 1].Cells["Column_rf_rfPlanung_Teil"].Value.ToString();
+                    Reihenfolgenplanung pvor = getItemByTeil(teilvor);
+
+                    LinkedListNode<Reihenfolgenplanung> gefunden = null;
+
+                    for (LinkedListNode<Reihenfolgenplanung> node = listRfpglobal.First; node != listRfpglobal.Last.Next; node = node.Next)
+                    {
+                        if (node.Value.getTeil() == pvor.getTeil())
+                        {
+                            gefunden = node;
+                        }
                     }
-                }
-                listRfpglobal.AddBefore(gefunden, p);
+
+                    listRfpglobal.Remove(p);
+                    listRfpglobal.AddBefore(gefunden, p);
+                }              
                 dataGridView_rf_planung.Rows.Clear();
                 refreshReihenfolgenplanung(); 
             }
 
             if (senderGrid.Columns[e.ColumnIndex].HeaderText == "Zurück")
             {
-                MessageBox.Show("Down");
+                int index = e.RowIndex;
+                string teil = senderGrid.Rows[index].Cells["Column_rf_rfPlanung_Teil"].Value.ToString();
+                Reihenfolgenplanung p = listRfpglobal.Single(t => t.getTeil() == teil);
+                if (listRfpglobal.Last.Value.getTeil() != p.getTeil())
+                {
+                    listRfpglobal.Remove(p);
+
+                    string teildanach = senderGrid.Rows[index + 1].Cells["Column_rf_rfPlanung_Teil"].Value.ToString();
+                    Reihenfolgenplanung pnach = getItemByTeil(teildanach);
+
+                    LinkedListNode<Reihenfolgenplanung> gefunden = null;
+
+                    for (LinkedListNode<Reihenfolgenplanung> node = listRfpglobal.First; node != listRfpglobal.Last.Next; node = node.Next)
+                    {
+                        if (node.Value.getTeil() == pnach.getTeil())
+                        {
+                            gefunden = node;
+                        }
+                    }
+                    listRfpglobal.AddAfter(gefunden, p);
+                }
+                dataGridView_rf_planung.Rows.Clear();
+                refreshReihenfolgenplanung();
             }
           
 
