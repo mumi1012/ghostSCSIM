@@ -187,17 +187,10 @@ namespace ghostSCSIM
             }
         }
 
-
-
         private void fillFormsWithData(object sender, EventArgs e)
         {
             if (xmlData.getXmlImported())
             {
-            
-
-
-
-                
 
                 //Direktverkauf DataGridView
                 //TODO: Eingaben validieren! Festlegen wann der Direktverkauf gesichert wird! > Extra Methode
@@ -210,30 +203,12 @@ namespace ghostSCSIM
 
             }
 
-
-
         }
-
-
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label_pp_p2_59_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
 
         private void Start_Load(object sender, EventArgs e)
         {
             // TODO: Diese Codezeile lädt Daten in die Tabelle "datenbankDataSet.Bestelldaten". Sie können sie bei Bedarf verschieben oder entfernen.
             this.bestelldatenTableAdapter.Fill(this.datenbankDataSet.Bestelldaten);
-
-
         }
 
         private void testButton_Click(object sender, EventArgs e)
@@ -248,11 +223,6 @@ namespace ghostSCSIM
             MessageBox.Show(lieferDaten.ToString());
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void dataGridView_best_bestellliste_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             var senderGrid = (DataGridView)sender;
@@ -263,34 +233,6 @@ namespace ghostSCSIM
             }
         }
 
-        private void tabPage_best_kaufteilverbrauch_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView_best_kaufteillager_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-      
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
         private void dataGridView_dirver_direktverkauf_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             var senderGrid = (DataGridView)sender;
@@ -300,6 +242,7 @@ namespace ghostSCSIM
                 dataGridView_dirver_direktverkauf.Rows.RemoveAt(dataGridView_dirver_direktverkauf.CurrentRow.Index);
             }
         }
+
         private void dataGridView_best_kaufteileverbrauch_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             dataGridView_best_kaufteileverbrauch.ScrollBars = ScrollBars.Both;
@@ -535,10 +478,78 @@ namespace ghostSCSIM
 
             if (tabControl1.SelectedTab == tabControl1.TabPages["tabDirektV"])
             {
-                MessageBox.Show("direktv");
+                //MessageBox.Show("direktv");
+            }
+
+            if (tabControl1.SelectedTab == tabControl1.TabPages["tabUebersicht"])
+            {
+                fillFertigungDataGridView();
+                fillKapaDataGridView();
+                fillBestDataGridView();
+                fillDirverDataGridView();
             }
 
         }
+
+
+        #region Übersicht
+
+        //TODO:
+        private void fillFertigungDataGridView()
+        {
+            foreach (DataGridViewRow row in dataGridView_rf_planung.Rows)
+            {
+                dataGridView_uebersicht_fertigung.Rows.Add(row.Cells[0].Value, row.Cells[1].Value);
+            }
+        }
+
+        //TODO:
+        private void fillKapaDataGridView()
+        {
+            foreach (DataGridViewRow row in dataGridView_kp_uebersicht.Rows)
+            {
+                int schichten = 1;
+                if (Convert.ToBoolean(row.Cells[8].Value))
+                    schichten = 3;
+                else if (Convert.ToBoolean(row.Cells[7].Value))
+                    schichten = 2;
+
+                dataGridView_uebersicht_kapa.Rows.Add(row.Cells[0].Value, row.Cells[6].Value, schichten);
+            }
+        }
+
+        //TODO:
+        private void fillBestDataGridView()
+        {
+            //foreach (Bestellung bestellung in bestellungsListe)
+            //{
+            //    bool bestelltyp = false;
+            //    if (bestellung.getBestellTyp().Equals(Bestelltyp.F))
+            //    {
+            //        bestelltyp = true;
+            //    }
+            //    dataGridView_uebersicht_best.Rows.Add(bestellung.getTeil().getNummer(), bestellung.getMenge(), bestelltyp);
+            //}
+
+            foreach (DataGridViewRow row in dataGridView_best_bestellliste.Rows)
+            {
+                if(!row.IsNewRow)
+                    dataGridView_uebersicht_best.Rows.Add(row.Cells[0].Value, row.Cells[1].Value, row.Cells[2].Value);
+            }
+        }
+
+        //TODO:
+        private void fillDirverDataGridView()
+        {
+            foreach (DataGridViewRow row in dataGridView_dirver_direktverkauf.Rows)
+            {
+                if(!row.IsNewRow)
+                    dataGridView_uebersicht_dirver.Rows.Add(row.Cells[0].Value, row.Cells[1].Value, row.Cells[2].Value, row.Cells[3].Value);
+            }
+        }
+
+        #endregion
+
 
         private void refreshReihenfolgenplanung()
         {
@@ -649,6 +660,7 @@ namespace ghostSCSIM
 
             return rf;
         }
+
         private LinkedList<Reihenfolgenplanung> getRfByKDH()
         {
             LinkedList<Reihenfolgenplanung> rKDH = new LinkedList<Reihenfolgenplanung>();
@@ -673,7 +685,6 @@ namespace ghostSCSIM
 
             return rKDH;
         }
-
 
         private LinkedList<Reihenfolgenplanung> getRfByEndprodukt(string p)
         {
@@ -873,7 +884,6 @@ namespace ghostSCSIM
             return rf;
         }
     
-
         private void fillBestellungsTabWithData(object sender, EventArgs e) {
 
             if (tabControl_best.SelectedTab == tabControl_best.TabPages["tabPage_best_bestellung"])
@@ -1029,11 +1039,11 @@ namespace ghostSCSIM
                             bool bestellungType = false;
                             if (bestellung.getBestellTyp().Equals(Bestelltyp.F)) {
                                 bestellungType = true;
-                    }
+                            }
                         
                             dataGridView_best_bestellliste.Rows.Add(bestellung.getTeil().getNummer(), bestellung.getMenge(), bestellungType);
                         }
-                }
+                    }
                 
             }
         }
@@ -1570,7 +1580,6 @@ namespace ghostSCSIM
             
         }
 
-       
         private void btn_kf_save_Click(object sender, EventArgs e)
         {
             refreshKinderFahrradView();
@@ -1717,6 +1726,5 @@ namespace ghostSCSIM
             dataGridView_rf_planung.Rows.Clear();
             refreshReihenfolgenplanung();
         }
-        
     }
 }
