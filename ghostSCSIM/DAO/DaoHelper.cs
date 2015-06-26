@@ -131,6 +131,7 @@ namespace ghostSCSIM.DAO
                         lieferDaten.setWiederbeschaffungszeitPeriode(Convert.ToDouble(dr["Lieferfrist"]));
                         lieferDaten.setDiskontMenge(Convert.ToInt32(dr["Diskontmenge"]));
                         lieferDaten.setAbweichungPeriode(Convert.ToDouble(dr["Abweichung"]));
+                        lieferDaten.setTeilePreis(Convert.ToDouble(dr["Teilepreis"]));
                         lieferDaten.setBestellkosten(Convert.ToDouble(dr["Bestellkosten"]));
                         lieferDaten.convertPeriodeZuTage(lieferDaten.getWiederbeschaffungszeitPeriode(), lieferDaten.getAbweichungPeriode());
                     }
@@ -158,6 +159,7 @@ namespace ghostSCSIM.DAO
                 lieferDaten.setDiskontMenge(Convert.ToInt32(dr["Diskontmenge"]));
                 lieferDaten.setAbweichungPeriode(Convert.ToDouble(dr["Abweichung"]));
                 lieferDaten.setBestellkosten(Convert.ToDouble(dr["Bestellkosten"]));
+                lieferDaten.setTeilePreis(Convert.ToDouble(dr["Teilepreis"]));
                 lieferDaten.convertPeriodeZuTage(lieferDaten.getWiederbeschaffungszeitPeriode(), lieferDaten.getAbweichungPeriode());
 
                 lieferDatenMap.Add(teileNummer, lieferDaten);

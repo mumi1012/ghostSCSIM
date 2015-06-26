@@ -1,4 +1,4 @@
-﻿namespace ghostSCSIM
+﻿namespace ghostSCSIM.Views
 {
     partial class Teilinformation
     {

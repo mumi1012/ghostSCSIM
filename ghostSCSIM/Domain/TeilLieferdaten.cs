@@ -13,12 +13,14 @@ namespace ghostSCSIM.Domain
     // Serializable in C#?
 	private int lagerMenge;
 	private int diskontMenge;
+    private double teilePreis;
 	private double bestellkosten;
 	private double wiederbeschaffungszeitPeriode;
 	private int wiederbeschaffungszeitTage;
 	private double abweichungPeriode;
 	private int abweichungtage;
 	private int teileNummer;
+    
 
 	public int getLagerMenge() {
 		return lagerMenge;
@@ -84,11 +86,22 @@ namespace ghostSCSIM.Domain
 	public void setTeileNummer(int teileNummer) {
 		this.teileNummer = teileNummer;
 	}
+
+    public double getTeilePreis()
+    {
+        return teilePreis;
+    }
+
+    public void setTeilePreis(double preis)
+    {
+        this.teilePreis = preis;
+    }
     //Periode in Tage konvertieren
     public void convertPeriodeZuTage(double wiederBeschaffungszeitPeriode, double abweichungPeriode) {
         setAbweichungTage(Convert.ToInt32(abweichungPeriode*5));
         setWiederbeschaffungszeitTage(Convert.ToInt32(wiederbeschaffungszeitPeriode*5));
     }
+
     public override string ToString()
     {
         return "Teil_Lieferdaten: [teilenummer= " + teileNummer

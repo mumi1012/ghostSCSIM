@@ -32,7 +32,7 @@ namespace ghostSCSIM.Service.Disposition
         {
             Dictionary<int, TeilLieferdaten> teilLieferdaten = daoHelper.getTeilLieferdaten();
             //Offene Bestellungen aus XML, Key = Order_ID
-            List<Bestellung> offeneBestellungen = new List<Bestellung>();
+            
             //Lagerbestände aus der Vorperiode setzen
             foreach(int teileNummer in teilLieferdaten.Keys) {
                 var teil_lagerbestand = dc.warehouseStock.article.SingleOrDefault(article => article.id.Equals(teileNummer));
@@ -40,21 +40,12 @@ namespace ghostSCSIM.Service.Disposition
                 {
                     teilLieferdaten[teileNummer].setLagerMenge(teil_lagerbestand.amount);
                 }
-                                    
+
+                                                   
             }
 
-            //TODO hier weitermachen
-            foreach (var order in dc.futureInwardStockMovement.orders.AsEnumerable())
-            {
-                Teil teil = new Teil();
-                teil.setNummer(order.article);
-                Bestellung bestellung = new Bestellung(order.orderperiod, order.mode, order.amount, teil, false);
-
-                offeneBestellungen.Add(bestellung);
-                
-
-
-            }                     
+          
+            
             
 
             //Stücklisten holen
@@ -66,9 +57,25 @@ namespace ghostSCSIM.Service.Disposition
 
         }
 
-        private void berechnen(Dictionary<int, TeilLieferdaten> teilLieferdaten, Stueckliste stueckListeP1, Stueckliste stueckListeP2, Stueckliste stueckListeP3, Dictionary<int, int> teileProduktion) {
+        private void berechnen(Dictionary<int, TeilLieferdaten> teilLieferdaten, Stueckliste stueckListeP1, Stueckliste stueckListeP2,
+            Stueckliste stueckListeP3, Dictionary<int, int> teileProduktion) {
             foreach (var kvp in teilLieferdaten)
             {
+                //Offene Bestellungen zu diesem Teil 
+                List<Bestellung> offeneBestellungen = new List<Bestellung>();
+
+                foreach (var order in dc.futureInwardStockMovement.orders.AsEnumerable())
+                {
+                    //Wenn das aktuell betrachtete Teil auch dem aus der XML Order entspricht
+                    if (kvp.Key.Equals(order.article))
+                    {
+                        Teil teil = new Teil();
+                        teil.setNummer(order.article);
+                        Bestellung bestellung = new Bestellung(order.orderperiod, order.mode, order.amount, teil, false);
+                        offeneBestellungen.Add(bestellung);
+                     }              
+                }                     
+
                 //Ergebnisse
                 int nettoBedarfPeriode1 = 0;
                 int bruttoBedarfPeriode2 = 0;
@@ -98,14 +105,34 @@ namespace ghostSCSIM.Service.Disposition
                     teileVerwendungsNachweis.AddRange(alleStuecklisten[i].getTeileVerwendungsNachweis(teilenummer, teileProduktion));
                 }
 
-                                
-
-                //Periode 1 anhand der Werte aus dem Produktionsprogramm -> mit Sicherheitsbeständen
-                if (stueckListeItemP1 != null)
+                //Doppelte Einträge für E16,17,26 löschen
+                StuecklisteItem[] duplicates = teileVerwendungsNachweis.FindAll(item => item.getParent().getNummer() == 16).ToArray();
+                for (int i = 0; i < duplicates.Count() - 1; ++i)
                 {
-                    nettoBedarfPeriode1 += stueckListeP1.getNettoBedarfToFertigteilByTeilenummer(teilenummer, teileProduktion);
-                    
+                    teileVerwendungsNachweis.Remove(duplicates[i]);
                 }
+
+                duplicates = teileVerwendungsNachweis.FindAll(item => item.getParent().getNummer() == 17).ToArray();
+                for (int i = 0; i < duplicates.Count() - 1; ++i)
+                {
+                    teileVerwendungsNachweis.Remove(duplicates[i]);
+                }
+
+                duplicates = teileVerwendungsNachweis.FindAll(item => item.getParent().getNummer() == 26).ToArray();
+                for (int i = 0; i < duplicates.Count() - 1; ++i)
+                {
+                    teileVerwendungsNachweis.Remove(duplicates[i]);
+                }
+
+
+
+
+                    //Periode 1 anhand der Werte aus dem Produktionsprogramm -> mit Sicherheitsbeständen
+                    if (stueckListeItemP1 != null)
+                    {
+                        nettoBedarfPeriode1 += stueckListeP1.getNettoBedarfToFertigteilByTeilenummer(teilenummer, teileProduktion);
+
+                    }
                 if (stueckListeItemP2 != null)
                 {
                     nettoBedarfPeriode1 += stueckListeP2.getNettoBedarfToFertigteilByTeilenummer(teilenummer, teileProduktion);
@@ -179,7 +206,7 @@ namespace ghostSCSIM.Service.Disposition
                         stueckListeItemP2, stueckListeItemP3,
                         currentLieferDaten, nettoBedarfPeriode1,
                         bruttoBedarfPeriode2, bruttoBedarfPeriode3,
-                        bruttoBedarfPeriode4, teileVerwendungsNachweis);
+                        bruttoBedarfPeriode4, teileVerwendungsNachweis, offeneBestellungen);
 
                 //Ergebnis zur Liste zufügen
                 ergebnisse.Add(kaufTeilDispoErgebnis);

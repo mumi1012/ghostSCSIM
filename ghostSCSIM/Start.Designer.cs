@@ -387,10 +387,16 @@
             this.dataGridView_best_kaufteileverbrauch = new System.Windows.Forms.DataGridView();
             this.Column_best_kaufteileverbrauch_nummer = new System.Windows.Forms.DataGridViewLinkColumn();
             this.Column_best_kaufteileverbrauch_bestand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteileverbrauch_Lagerzugang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteileverbrauch_produktionskritisch = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column_best_kaufteileverbrauch_bruttobedarfN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_best_kaufteileverbrauch_bruttobedarfN1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteileverbrauch_bruttobedarfN2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteileverbrauch_bruttobedarfN3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_best_kaufteileverbrauch_bestandN1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_best_kaufteileverbrauch_bestandN2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteileverbrauch_bestandN3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_best_kaufteileverbrauch_bestandN4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_best_kaufteileverbrauch_ausstehendeBest = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.tabPage_best_bestellung = new System.Windows.Forms.TabPage();
             this.dataGridView_best_bestellliste = new System.Windows.Forms.DataGridView();
@@ -502,6 +508,7 @@
             // 
             this.einstellungenToolStripMenuItem.Name = "einstellungenToolStripMenuItem";
             resources.ApplyResources(this.einstellungenToolStripMenuItem, "einstellungenToolStripMenuItem");
+            this.einstellungenToolStripMenuItem.Click += new System.EventHandler(this.openSettings);
             // 
             // xmlInputButton
             // 
@@ -2827,7 +2834,7 @@
             this.tabControl_best.Name = "tabControl_best";
             this.tabControl_best.SelectedIndex = 0;
             this.tabControl_best.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.tabControl_best.SelectedIndexChanged += new System.EventHandler(this.fillTabKaufteileverbrauchWithData);
+            this.tabControl_best.SelectedIndexChanged += new System.EventHandler(this.fillBestellungsTabWithData);
             // 
             // tabPage_best_kaufteillager
             // 
@@ -2917,14 +2924,21 @@
             this.dataGridView_best_kaufteileverbrauch.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column_best_kaufteileverbrauch_nummer,
             this.Column_best_kaufteileverbrauch_bestand,
+            this.Column_best_kaufteileverbrauch_Lagerzugang,
+            this.Column_best_kaufteileverbrauch_produktionskritisch,
             this.Column_best_kaufteileverbrauch_bruttobedarfN,
             this.Column_best_kaufteileverbrauch_bruttobedarfN1,
+            this.Column_best_kaufteileverbrauch_bruttobedarfN2,
+            this.Column_best_kaufteileverbrauch_bruttobedarfN3,
             this.Column_best_kaufteileverbrauch_bestandN1,
             this.Column_best_kaufteileverbrauch_bestandN2,
+            this.Column_best_kaufteileverbrauch_bestandN3,
+            this.Column_best_kaufteileverbrauch_bestandN4,
             this.Column_best_kaufteileverbrauch_ausstehendeBest});
             resources.ApplyResources(this.dataGridView_best_kaufteileverbrauch, "dataGridView_best_kaufteileverbrauch");
             this.dataGridView_best_kaufteileverbrauch.Name = "dataGridView_best_kaufteileverbrauch";
             this.dataGridView_best_kaufteileverbrauch.RowHeadersVisible = false;
+            this.dataGridView_best_kaufteileverbrauch.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_best_kaufteileverbrauch.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_best_kaufteileverbrauch_CellContentClick);
             // 
             // Column_best_kaufteileverbrauch_nummer
@@ -2937,12 +2951,25 @@
             // 
             // Column_best_kaufteileverbrauch_bestand
             // 
-            this.Column_best_kaufteileverbrauch_bestand.DividerWidth = 3;
             this.Column_best_kaufteileverbrauch_bestand.FillWeight = 101F;
             resources.ApplyResources(this.Column_best_kaufteileverbrauch_bestand, "Column_best_kaufteileverbrauch_bestand");
             this.Column_best_kaufteileverbrauch_bestand.Name = "Column_best_kaufteileverbrauch_bestand";
             this.Column_best_kaufteileverbrauch_bestand.ReadOnly = true;
             this.Column_best_kaufteileverbrauch_bestand.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteileverbrauch_Lagerzugang
+            // 
+            resources.ApplyResources(this.Column_best_kaufteileverbrauch_Lagerzugang, "Column_best_kaufteileverbrauch_Lagerzugang");
+            this.Column_best_kaufteileverbrauch_Lagerzugang.Name = "Column_best_kaufteileverbrauch_Lagerzugang";
+            // 
+            // Column_best_kaufteileverbrauch_produktionskritisch
+            // 
+            this.Column_best_kaufteileverbrauch_produktionskritisch.DividerWidth = 3;
+            resources.ApplyResources(this.Column_best_kaufteileverbrauch_produktionskritisch, "Column_best_kaufteileverbrauch_produktionskritisch");
+            this.Column_best_kaufteileverbrauch_produktionskritisch.Name = "Column_best_kaufteileverbrauch_produktionskritisch";
+            this.Column_best_kaufteileverbrauch_produktionskritisch.ReadOnly = true;
+            this.Column_best_kaufteileverbrauch_produktionskritisch.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column_best_kaufteileverbrauch_produktionskritisch.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // Column_best_kaufteileverbrauch_bruttobedarfN
             // 
@@ -2953,12 +2980,22 @@
             // 
             // Column_best_kaufteileverbrauch_bruttobedarfN1
             // 
-            this.Column_best_kaufteileverbrauch_bruttobedarfN1.DividerWidth = 3;
             this.Column_best_kaufteileverbrauch_bruttobedarfN1.FillWeight = 101F;
             resources.ApplyResources(this.Column_best_kaufteileverbrauch_bruttobedarfN1, "Column_best_kaufteileverbrauch_bruttobedarfN1");
             this.Column_best_kaufteileverbrauch_bruttobedarfN1.Name = "Column_best_kaufteileverbrauch_bruttobedarfN1";
             this.Column_best_kaufteileverbrauch_bruttobedarfN1.ReadOnly = true;
             this.Column_best_kaufteileverbrauch_bruttobedarfN1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteileverbrauch_bruttobedarfN2
+            // 
+            resources.ApplyResources(this.Column_best_kaufteileverbrauch_bruttobedarfN2, "Column_best_kaufteileverbrauch_bruttobedarfN2");
+            this.Column_best_kaufteileverbrauch_bruttobedarfN2.Name = "Column_best_kaufteileverbrauch_bruttobedarfN2";
+            // 
+            // Column_best_kaufteileverbrauch_bruttobedarfN3
+            // 
+            this.Column_best_kaufteileverbrauch_bruttobedarfN3.DividerWidth = 3;
+            resources.ApplyResources(this.Column_best_kaufteileverbrauch_bruttobedarfN3, "Column_best_kaufteileverbrauch_bruttobedarfN3");
+            this.Column_best_kaufteileverbrauch_bruttobedarfN3.Name = "Column_best_kaufteileverbrauch_bruttobedarfN3";
             // 
             // Column_best_kaufteileverbrauch_bestandN1
             // 
@@ -2969,12 +3006,22 @@
             // 
             // Column_best_kaufteileverbrauch_bestandN2
             // 
-            this.Column_best_kaufteileverbrauch_bestandN2.DividerWidth = 3;
             this.Column_best_kaufteileverbrauch_bestandN2.FillWeight = 101F;
             resources.ApplyResources(this.Column_best_kaufteileverbrauch_bestandN2, "Column_best_kaufteileverbrauch_bestandN2");
             this.Column_best_kaufteileverbrauch_bestandN2.Name = "Column_best_kaufteileverbrauch_bestandN2";
             this.Column_best_kaufteileverbrauch_bestandN2.ReadOnly = true;
             this.Column_best_kaufteileverbrauch_bestandN2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_best_kaufteileverbrauch_bestandN3
+            // 
+            resources.ApplyResources(this.Column_best_kaufteileverbrauch_bestandN3, "Column_best_kaufteileverbrauch_bestandN3");
+            this.Column_best_kaufteileverbrauch_bestandN3.Name = "Column_best_kaufteileverbrauch_bestandN3";
+            // 
+            // Column_best_kaufteileverbrauch_bestandN4
+            // 
+            this.Column_best_kaufteileverbrauch_bestandN4.DividerWidth = 3;
+            resources.ApplyResources(this.Column_best_kaufteileverbrauch_bestandN4, "Column_best_kaufteileverbrauch_bestandN4");
+            this.Column_best_kaufteileverbrauch_bestandN4.Name = "Column_best_kaufteileverbrauch_bestandN4";
             // 
             // Column_best_kaufteileverbrauch_ausstehendeBest
             // 
@@ -3652,10 +3699,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteillager_bestellkosten;
         private System.Windows.Forms.DataGridViewLinkColumn Column_best_kaufteileverbrauch_nummer;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bestand;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_Lagerzugang;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column_best_kaufteileverbrauch_produktionskritisch;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bruttobedarfN;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bruttobedarfN1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bruttobedarfN2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bruttobedarfN3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bestandN1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bestandN2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bestandN3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_kaufteileverbrauch_bestandN4;
         private System.Windows.Forms.DataGridViewComboBoxColumn Column_best_kaufteileverbrauch_ausstehendeBest;
        
 

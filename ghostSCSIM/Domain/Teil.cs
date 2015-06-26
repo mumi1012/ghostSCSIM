@@ -44,6 +44,11 @@ namespace ghostSCSIM.Domain
             this.stuecklistenPos = stuecklistenPos;
         }
 
+        public Teil(int nummer)
+        {
+            this.nummer = nummer;
+        }
+
         public Teil(int nummer, String bezeichnung, String buchstabe, double wert)
         {
             this.nummer = nummer;
