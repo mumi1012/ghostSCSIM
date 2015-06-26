@@ -135,9 +135,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\Einstellungen.resx">
-      <DependentUpon>Einstellungen.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\Teilinformation.resx">
       <DependentUpon>Teilinformation.cs</DependentUpon>
     </EmbeddedResource>
