@@ -72,6 +72,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatenbankDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Domain\Reihenfolgenplanung.cs" />
     <Compile Include="Domain\ArbeitsplatzKapa.cs" />
     <Compile Include="Domain\ArbeitsplatzKosten.cs" />
     <Compile Include="Domain\Bestellposition.cs" />

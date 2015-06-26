@@ -31,6 +31,40 @@ namespace ghostSCSIM.XML
             return returnValue;
         }
 
+        public int getWarteschlangeMengeByKHDItem(int item)
+        {
+            int returnValue = 0;
+            foreach (WlWorkplace wp in workplaces)
+            {
+                if (wp.waitinglist != null)
+                {
+                    foreach (Waitinglist wl in wp.waitinglist)
+                        if (wl.item.Equals(item))
+                        {
+                            returnValue = wl.amount/3;
+                        }
+                }
+
+            }
+            return returnValue;
+        }
+
+        public List<Waitinglist> getListWarteschlange()
+        {
+            List<Waitinglist> listWarteschlange = new List<Waitinglist>();
+            foreach(WlWorkplace wp in workplaces)
+            {
+                if (wp.waitinglist != null)
+                {
+                    foreach(Waitinglist wl in wp.waitinglist)
+                    {
+                        listWarteschlange.Add(wl);
+                    }
+                }
+            }
+            return listWarteschlange;
+        }
+
 
         public List<Waitinglist> getWaitinglistByArbeitsplatzId(int arbeitsplatzId)
         {

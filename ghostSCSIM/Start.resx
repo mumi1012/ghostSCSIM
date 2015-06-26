@@ -823,7 +823,7 @@
     <value>19</value>
   </data>
   <data name="tabPrognose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 4</value>
+    <value>42, 4</value>
   </data>
   <data name="tabPrognose.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -832,7 +832,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabPrognose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>862, 416</value>
+    <value>843, 416</value>
   </data>
   <data name="tabPrognose.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -8779,7 +8779,7 @@
     <value>0</value>
   </data>
   <data name="tabProdplan.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 4</value>
+    <value>42, 4</value>
   </data>
   <data name="tabProdplan.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -8788,7 +8788,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabProdplan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>862, 416</value>
+    <value>843, 416</value>
   </data>
   <data name="tabProdplan.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -8875,7 +8875,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_kp_uebersicht.Size" type="System.Drawing.Size, System.Drawing">
-    <value>848, 384</value>
+    <value>829, 384</value>
   </data>
   <data name="dataGridView_kp_uebersicht.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -8899,7 +8899,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_kp_uebersicht.Size" type="System.Drawing.Size, System.Drawing">
-    <value>854, 390</value>
+    <value>835, 390</value>
   </data>
   <data name="tabPage_kp_uebersicht.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -8959,7 +8959,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_kp_aufloesung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>848, 384</value>
+    <value>829, 384</value>
   </data>
   <data name="dataGridView_kp_aufloesung.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -8983,7 +8983,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_kp_aufloesung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>854, 390</value>
+    <value>835, 390</value>
   </data>
   <data name="tabPage_kp_aufloesung.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -9064,7 +9064,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_kp_info.Size" type="System.Drawing.Size, System.Drawing">
-    <value>854, 390</value>
+    <value>835, 390</value>
   </data>
   <data name="tabPage_kp_info.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -9094,7 +9094,7 @@
     <value>0, 0</value>
   </data>
   <data name="tabControl_kp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>862, 416</value>
+    <value>843, 416</value>
   </data>
   <data name="tabControl_kp.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -9112,13 +9112,13 @@
     <value>0</value>
   </data>
   <data name="tabKapa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 4</value>
+    <value>42, 4</value>
   </data>
   <data name="tabKapa.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabKapa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>862, 416</value>
+    <value>843, 416</value>
   </data>
   <data name="tabKapa.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -9199,7 +9199,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_best_kaufteillager.Size" type="System.Drawing.Size, System.Drawing">
-    <value>848, 384</value>
+    <value>829, 384</value>
   </data>
   <data name="dataGridView_best_kaufteillager.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -9223,7 +9223,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_best_kaufteillager.Size" type="System.Drawing.Size, System.Drawing">
-    <value>854, 390</value>
+    <value>835, 390</value>
   </data>
   <data name="tabPage_best_kaufteillager.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -9316,7 +9316,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_best_kaufteileverbrauch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>848, 384</value>
+    <value>829, 384</value>
   </data>
   <data name="dataGridView_best_kaufteileverbrauch.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -9340,7 +9340,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_best_kaufteileverbrauch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>854, 390</value>
+    <value>835, 390</value>
   </data>
   <data name="tabPage_best_kaufteileverbrauch.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -9403,7 +9403,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_best_bestellliste.Size" type="System.Drawing.Size, System.Drawing">
-    <value>854, 344</value>
+    <value>835, 344</value>
   </data>
   <data name="dataGridView_best_bestellliste.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -9427,7 +9427,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_best_bestellung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>854, 390</value>
+    <value>835, 390</value>
   </data>
   <data name="tabPage_best_bestellung.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -9454,7 +9454,7 @@
     <value>0, 0</value>
   </data>
   <data name="tabControl_best.Size" type="System.Drawing.Size, System.Drawing">
-    <value>862, 416</value>
+    <value>843, 416</value>
   </data>
   <data name="tabControl_best.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -9472,13 +9472,13 @@
     <value>0</value>
   </data>
   <data name="tabBestellung.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 4</value>
+    <value>42, 4</value>
   </data>
   <data name="tabBestellung.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabBestellung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>862, 416</value>
+    <value>843, 416</value>
   </data>
   <data name="tabBestellung.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -9497,6 +9497,162 @@
   </data>
   <data name="&gt;&gt;tabBestellung.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="rf_splitten_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>535, 180</value>
+  </data>
+  <data name="rf_splitten_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 78</value>
+  </data>
+  <data name="rf_splitten_button.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="rf_splitten_button.Text" xml:space="preserve">
+    <value>Splitten</value>
+  </data>
+  <data name="&gt;&gt;rf_splitten_button.Name" xml:space="preserve">
+    <value>rf_splitten_button</value>
+  </data>
+  <data name="&gt;&gt;rf_splitten_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rf_splitten_button.Parent" xml:space="preserve">
+    <value>tabReihenfolgePlanung</value>
+  </data>
+  <data name="&gt;&gt;rf_splitten_button.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="Column_rf_rfPlanung_Teil.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_rf_rfPlanung_Teil.HeaderText" xml:space="preserve">
+    <value>Teil</value>
+  </data>
+  <metadata name="Column_rf_rfPlanung_menge.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_rf_rfPlanung_menge.HeaderText" xml:space="preserve">
+    <value>Menge</value>
+  </data>
+  <metadata name="Column_rf_rfPlanung_Splitt.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_rf_rfPlanung_Splitt.HeaderText" xml:space="preserve">
+    <value>Splittmenge</value>
+  </data>
+  <metadata name="Column_rf_rfPlanung_Vor.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_rf_rfPlanung_Vor.HeaderText" xml:space="preserve">
+    <value>Vor</value>
+  </data>
+  <data name="Column_rf_rfPlanung_Vor.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <metadata name="Column_rf_rfPlanung_Zurueck.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_rf_rfPlanung_Zurueck.HeaderText" xml:space="preserve">
+    <value>Zurück</value>
+  </data>
+  <data name="Column_rf_rfPlanung_Zurueck.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="dataGridView_rf_planung.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="dataGridView_rf_planung.Size" type="System.Drawing.Size, System.Drawing">
+    <value>843, 398</value>
+  </data>
+  <data name="dataGridView_rf_planung.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_rf_planung.Name" xml:space="preserve">
+    <value>dataGridView_rf_planung</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_rf_planung.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_rf_planung.Parent" xml:space="preserve">
+    <value>tabReihenfolgePlanung</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_rf_planung.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabReihenfolgePlanung.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabReihenfolgePlanung.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabReihenfolgePlanung.Size" type="System.Drawing.Size, System.Drawing">
+    <value>839, 394</value>
+  </data>
+  <data name="tabReihenfolgePlanung.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabReihenfolgePlanung.Text" xml:space="preserve">
+    <value>Reihenfolgenplanung</value>
+  </data>
+  <data name="&gt;&gt;tabReihenfolgePlanung.Name" xml:space="preserve">
+    <value>tabReihenfolgePlanung</value>
+  </data>
+  <data name="&gt;&gt;tabReihenfolgePlanung.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabReihenfolgePlanung.Parent" xml:space="preserve">
+    <value>tabControl_reihen</value>
+  </data>
+  <data name="&gt;&gt;tabReihenfolgePlanung.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabControl_reihen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tabControl_reihen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>847, 420</value>
+  </data>
+  <data name="tabControl_reihen.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControl_reihen.Name" xml:space="preserve">
+    <value>tabControl_reihen</value>
+  </data>
+  <data name="&gt;&gt;tabControl_reihen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl_reihen.Parent" xml:space="preserve">
+    <value>tabReihenfolge</value>
+  </data>
+  <data name="&gt;&gt;tabControl_reihen.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabReihenfolge.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 4</value>
+  </data>
+  <data name="tabReihenfolge.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabReihenfolge.Size" type="System.Drawing.Size, System.Drawing">
+    <value>843, 416</value>
+  </data>
+  <data name="tabReihenfolge.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tabReihenfolge.Text" xml:space="preserve">
+    <value>Reihenfolge</value>
+  </data>
+  <data name="&gt;&gt;tabReihenfolge.Name" xml:space="preserve">
+    <value>tabReihenfolge</value>
+  </data>
+  <data name="&gt;&gt;tabReihenfolge.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabReihenfolge.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabReihenfolge.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="createXml.Location" type="System.Drawing.Point, System.Drawing">
     <value>712, 321</value>
@@ -9610,7 +9766,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>854, 390</value>
+    <value>835, 390</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -9712,7 +9868,7 @@
     <value>0, 0</value>
   </data>
   <data name="tabControl_dirver.Size" type="System.Drawing.Size, System.Drawing">
-    <value>862, 416</value>
+    <value>843, 416</value>
   </data>
   <data name="tabControl_dirver.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -9730,13 +9886,13 @@
     <value>0</value>
   </data>
   <data name="tabDirektV.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 4</value>
+    <value>42, 4</value>
   </data>
   <data name="tabDirektV.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabDirektV.Size" type="System.Drawing.Size, System.Drawing">
-    <value>862, 416</value>
+    <value>843, 416</value>
   </data>
   <data name="tabDirektV.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -9754,7 +9910,7 @@
     <value>tabControl1</value>
   </data>
   <data name="&gt;&gt;tabDirektV.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="tabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -10171,6 +10327,36 @@
     <value>Column_best_bestelliste_loeschenButton</value>
   </data>
   <data name="&gt;&gt;Column_best_bestelliste_loeschenButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_rf_rfPlanung_Teil.Name" xml:space="preserve">
+    <value>Column_rf_rfPlanung_Teil</value>
+  </data>
+  <data name="&gt;&gt;Column_rf_rfPlanung_Teil.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_rf_rfPlanung_menge.Name" xml:space="preserve">
+    <value>Column_rf_rfPlanung_menge</value>
+  </data>
+  <data name="&gt;&gt;Column_rf_rfPlanung_menge.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_rf_rfPlanung_Splitt.Name" xml:space="preserve">
+    <value>Column_rf_rfPlanung_Splitt</value>
+  </data>
+  <data name="&gt;&gt;Column_rf_rfPlanung_Splitt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_rf_rfPlanung_Vor.Name" xml:space="preserve">
+    <value>Column_rf_rfPlanung_Vor</value>
+  </data>
+  <data name="&gt;&gt;Column_rf_rfPlanung_Vor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_rf_rfPlanung_Zurueck.Name" xml:space="preserve">
+    <value>Column_rf_rfPlanung_Zurueck</value>
+  </data>
+  <data name="&gt;&gt;Column_rf_rfPlanung_Zurueck.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;Column_dirver_direktverkauf_nummer.Name" xml:space="preserve">

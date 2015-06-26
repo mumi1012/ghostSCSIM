@@ -42,6 +42,11 @@ namespace ghostSCSIM
         //Teilestammdaten
         private static List<Teil> teileStammdaten = new List<Teil>();
                           
+        //Reihenfolgenplanung
+        private LinkedList<Reihenfolgenplanung> listRfpglobal = new LinkedList<Reihenfolgenplanung>();
+
+        //Wird 1 wenn Produktionsplan Übersicht geklickt wurde
+        private int uebersicht_geklickt = 0;
         //Bestellliste
         private List<Bestellung> bestellungsListe;
                 
@@ -173,12 +178,12 @@ namespace ghostSCSIM
                 if ((Thread.CurrentThread.CurrentUICulture).ToString() == "en")
                 {
                     MessageBox.Show("XML-File successfully imported!");
-                }
+            }
                 else
                 {
                     MessageBox.Show("XML-Datei erfolgreich importiert!");
-                }
-               
+        }
+
             }
         }
 
@@ -498,11 +503,6 @@ namespace ghostSCSIM
                                 //Kaufteillager DataGridView befüllen
                                 dataGridView_best_kaufteillager.Rows.Add(teilenummer.ToString(), bezeichnung, bestand, lieferdauerTage, diskontmenge, bestellkosten);
 
-                                
-
-                                
-                                
-                                
                         }
                     }
 
@@ -518,6 +518,19 @@ namespace ghostSCSIM
                 
             }
 
+            if (tabControl1.SelectedTab == tabControl1.TabPages["tabReihenfolge"])
+            {
+                dataGridView_rf_planung.Rows.Clear();
+                if (xmlData.getXmlImported())
+                {
+                    if(uebersicht_geklickt == 1)
+                    {
+                        refreshReihenfolgenplanung();    
+                }
+                
+            }
+
+            }
             
 
             if (tabControl1.SelectedTab == tabControl1.TabPages["tabDirektV"])
@@ -527,6 +540,341 @@ namespace ghostSCSIM
 
         }
 
+        private void refreshReihenfolgenplanung()
+        {
+            if (listRfpglobal.Count == 0)
+            {
+                string highestVW = getHighestVW();
+                listRfpglobal = getReihenfolgeByHighestVW(highestVW);
+                LinkedList<Reihenfolgenplanung> listKDH = getRfByKDH();
+                foreach (Reihenfolgenplanung r in listKDH)
+                {
+                    listRfpglobal.AddFirst(r);
+                }
+            }
+            foreach (Reihenfolgenplanung r in listRfpglobal)
+            {
+                dataGridView_rf_planung.Rows.Add(r.getTeil(), r.getMenge().ToString(), r.getSplittmenge().ToString(), "▲", "▼");
+            }
+
+        }
+
+
+        private string getHighestVW()
+        {
+            int p1 = Convert.ToInt32(kinder_prog_p1.Value);
+            int p2 = Convert.ToInt32(damen_prog_p1.Value);
+            int p3 = Convert.ToInt32(herren_prog_p1.Value);
+
+            if(p1 > p2 && p1 > p3)
+            {
+                return "p1";
+            }
+            if (p2 > p1 && p2 > p3)
+            {
+                return "p2";
+            }
+            if (p3 > p1 && p3 > p2)
+            {
+                return "p3";
+            }
+            return "p1";
+        }
+
+        
+
+        private LinkedList<Reihenfolgenplanung> getReihenfolgeByHighestVW(string vw)
+        {
+            LinkedList<Reihenfolgenplanung> rf = new LinkedList<Reihenfolgenplanung>();
+            
+            if(vw == "p1")
+            {
+                LinkedList<Reihenfolgenplanung> r1 = getRfByEndprodukt(vw);
+                foreach(Reihenfolgenplanung r in r1)
+                {
+                    rf.AddLast(r);
+                }
+                LinkedList<Reihenfolgenplanung> r2 = getRfByEndprodukt("p2");
+                foreach (Reihenfolgenplanung r in r2)
+                {
+                    rf.AddLast(r);
+                }
+                LinkedList<Reihenfolgenplanung> r3 = getRfByEndprodukt("p3");
+                foreach (Reihenfolgenplanung r in r3)
+                {
+                    rf.AddLast(r);
+                }
+                return rf;
+            }
+
+            if(vw == "p2")
+            {
+                LinkedList<Reihenfolgenplanung> r2 = getRfByEndprodukt(vw);
+                foreach (Reihenfolgenplanung r in r2)
+                {
+                    rf.AddLast(r);
+                }
+                LinkedList<Reihenfolgenplanung> r1 = getRfByEndprodukt("p1");
+                foreach (Reihenfolgenplanung r in r1)
+                {
+                    rf.AddLast(r);
+                }
+                LinkedList<Reihenfolgenplanung> r3 = getRfByEndprodukt("p3");
+                foreach (Reihenfolgenplanung r in r3)
+                {
+                    rf.AddLast(r);
+                }
+                return rf;
+            }
+
+            if (vw == "p3")
+            {
+                LinkedList<Reihenfolgenplanung> r3 = getRfByEndprodukt(vw);
+                foreach (Reihenfolgenplanung r in r3)
+                {
+                    rf.AddLast(r);
+                }
+                LinkedList<Reihenfolgenplanung> r1 = getRfByEndprodukt("p1");
+                foreach (Reihenfolgenplanung r in r1)
+                {
+                    rf.AddLast(r);
+                }
+                LinkedList<Reihenfolgenplanung> r2 = getRfByEndprodukt("p2");
+                foreach (Reihenfolgenplanung r in r2)
+                {
+                    rf.AddLast(r);
+                }
+                return rf;
+            }
+
+            return rf;
+        }
+        private LinkedList<Reihenfolgenplanung> getRfByKDH()
+        {
+            LinkedList<Reihenfolgenplanung> rKDH = new LinkedList<Reihenfolgenplanung>();
+            if (produktionP1[16] >= 0 && produktionP2[16] >= 0 && produktionP3[16] >= 0)
+            {
+                int e16 = produktionP1[16] + produktionP2[16] + produktionP3[16];
+                Reihenfolgenplanung r16 = new Reihenfolgenplanung("16", e16, 0);
+                rKDH.AddLast(r16);
+            }
+            if (produktionP1[17] >= 0 && produktionP2[17] >= 0 && produktionP3[17] >= 0)
+            {
+                int e17 = produktionP1[17] + produktionP2[17] + produktionP3[17];
+                Reihenfolgenplanung r17 = new Reihenfolgenplanung("17", e17, 0);
+                rKDH.AddLast(r17);
+            }
+            if (produktionP1[26] >= 0 && produktionP2[26] >= 0 && produktionP3[26] >= 0)
+            {
+                int e26 = produktionP1[26] + produktionP2[26] + produktionP3[26];
+                Reihenfolgenplanung r26 = new Reihenfolgenplanung("26", e26, 0);
+                rKDH.AddLast(r26);
+            }
+
+            return rKDH;
+        }
+
+
+        private LinkedList<Reihenfolgenplanung> getRfByEndprodukt(string p)
+        {
+            LinkedList<Reihenfolgenplanung> rf = new LinkedList<Reihenfolgenplanung>();            
+            if (p == "p1")
+            {
+                if (produktionP1[1] > 0)
+                {
+                    Reihenfolgenplanung r1 = new Reihenfolgenplanung("1", produktionP1[1], 0);
+                    rf.AddLast(r1);
+                }
+                    if(produktionP1[51] > 0)
+                {
+                    Reihenfolgenplanung r51 = new Reihenfolgenplanung("51", produktionP1[51], 0);
+                    rf.AddLast(r51);
+                }
+                if (produktionP1[50] > 0)
+                {
+                    Reihenfolgenplanung r50 = new Reihenfolgenplanung("50", produktionP1[50], 0);
+                    rf.AddLast(r50);
+                }       
+                if (produktionP1[49] > 0)
+                {
+                    Reihenfolgenplanung r49 = new Reihenfolgenplanung("49", produktionP1[49], 0);
+                    rf.AddLast(r49);
+                }
+                if (produktionP1[4] > 0)
+                {                    
+                    double i = Math.Ceiling(Convert.ToDouble(produktionP1[4])/2);
+                    Reihenfolgenplanung r4_1 = new Reihenfolgenplanung("4", Convert.ToInt32(i), 0);
+                    rf.AddLast(r4_1);
+                }
+                if (produktionP1[7] > 0)
+                {
+                    double i = Math.Ceiling(Convert.ToDouble(produktionP1[7]) / 2);
+                    Reihenfolgenplanung r7_1 = new Reihenfolgenplanung("7", Convert.ToInt32(i), 0);
+                    rf.AddLast(r7_1);
+                }
+                if (produktionP1[4] > 0)
+                {
+                    double i = Math.Ceiling(Convert.ToDouble(produktionP1[4]) / 2);
+                    Reihenfolgenplanung r4_2 = new Reihenfolgenplanung("4", Convert.ToInt32(i), 0);
+                    rf.AddLast(r4_2);
+                }
+                if (produktionP1[7] > 0)
+                {
+                    double i = Math.Ceiling(Convert.ToDouble(produktionP1[7]) / 2);
+                    Reihenfolgenplanung r7_2 = new Reihenfolgenplanung("7", Convert.ToInt32(i), 0);
+                    rf.AddLast(r7_2);
+                }
+                if (produktionP1[10] > 0)
+                {
+                    Reihenfolgenplanung r10 = new Reihenfolgenplanung("10", produktionP1[10], 0);
+                    rf.AddLast(r10);
+                }
+                if (produktionP1[13] > 0)
+                {
+                    Reihenfolgenplanung r13 = new Reihenfolgenplanung("13", produktionP1[13], 0);
+                    rf.AddLast(r13);
+                }
+                if (produktionP1[18] > 0)
+                {
+                    Reihenfolgenplanung r18 = new Reihenfolgenplanung("18", produktionP1[18], 0);
+                    rf.AddLast(r18);
+                }
+                return rf;
+            }
+
+            if (p == "p2")
+            {
+                if (produktionP2[2] > 0)
+                {
+                    Reihenfolgenplanung r2 = new Reihenfolgenplanung("2", produktionP2[2], 0);
+                    rf.AddLast(r2);
+                }
+                if (produktionP2[56] > 0)
+                {
+                    Reihenfolgenplanung r56 = new Reihenfolgenplanung("56", produktionP2[56], 0);
+                    rf.AddLast(r56);
+                }
+                if (produktionP2[55] > 0)
+                {
+                    Reihenfolgenplanung r55 = new Reihenfolgenplanung("55", produktionP2[55], 0);
+                    rf.AddLast(r55);
+                }
+                if (produktionP2[54] > 0)
+                {
+                    Reihenfolgenplanung r54 = new Reihenfolgenplanung("54", produktionP2[54], 0);
+                    rf.AddLast(r54);
+                }
+                if (produktionP2[5] > 0)
+                {
+                    double i = Math.Ceiling(Convert.ToDouble(produktionP2[5]) / 2);
+                    Reihenfolgenplanung r5_1 = new Reihenfolgenplanung("5", Convert.ToInt32(i), 0);
+                    rf.AddLast(r5_1);
+                }
+                if (produktionP2[8] > 0)
+                {
+                    double i = Math.Ceiling(Convert.ToDouble(produktionP2[8]) / 2);
+                    Reihenfolgenplanung r8_1 = new Reihenfolgenplanung("8", Convert.ToInt32(i), 0);
+                    rf.AddLast(r8_1);
+                }
+                if (produktionP2[5] > 0)
+                {
+                    double i = Math.Ceiling(Convert.ToDouble(produktionP2[5]) / 2);
+                    Reihenfolgenplanung r5_2 = new Reihenfolgenplanung("5", Convert.ToInt32(i), 0);
+                    rf.AddLast(r5_2);
+                }
+                if (produktionP2[8] > 0)
+                {
+                    double i = Math.Ceiling(Convert.ToDouble(produktionP2[8]) / 2);
+                    Reihenfolgenplanung r8_2 = new Reihenfolgenplanung("8", Convert.ToInt32(i), 0);
+                    rf.AddLast(r8_2);
+                }
+                if (produktionP2[11] > 0)
+                {
+                    Reihenfolgenplanung r11 = new Reihenfolgenplanung("11", produktionP2[11], 0);
+                    rf.AddLast(r11);
+                }
+                if (produktionP2[14] > 0)
+                {
+                    Reihenfolgenplanung r14 = new Reihenfolgenplanung("14", produktionP2[14], 0);
+                    rf.AddLast(r14);
+                }
+                if (produktionP2[19] > 0)
+                {
+                    Reihenfolgenplanung r19 = new Reihenfolgenplanung("19", produktionP2[19], 0);
+                    rf.AddLast(r19);
+                }
+                return rf;
+            }
+
+            if (p == "p3")
+            {
+                if (produktionP3[3] > 0)
+                {
+                    Reihenfolgenplanung r3 = new Reihenfolgenplanung("3", produktionP3[3], 0);
+                    rf.AddLast(r3);
+                }
+                if (produktionP3[31] > 0)
+                {
+                    Reihenfolgenplanung r31 = new Reihenfolgenplanung("31", produktionP3[31], 0);
+                    rf.AddLast(r31);
+                }
+                if (produktionP3[30] > 0)
+                {
+                    Reihenfolgenplanung r30 = new Reihenfolgenplanung("30", produktionP3[30], 0);
+                    rf.AddLast(r30);
+                }
+                if (produktionP3[29] > 0)
+                {
+                    Reihenfolgenplanung r29 = new Reihenfolgenplanung("29", produktionP3[29], 0);
+                    rf.AddLast(r29);
+                }
+                if (produktionP3[6] > 0)
+                {
+                    double i = Math.Ceiling(Convert.ToDouble(produktionP3[6]) / 2);
+                    Reihenfolgenplanung r6_1 = new Reihenfolgenplanung("6", Convert.ToInt32(i), 0);
+                    rf.AddLast(r6_1);
+                }
+                if (produktionP3[9] > 0)
+                {
+                    double i = Math.Ceiling(Convert.ToDouble(produktionP3[9]) / 2);
+                    Reihenfolgenplanung r9_1 = new Reihenfolgenplanung("9", Convert.ToInt32(i), 0);
+                    rf.AddLast(r9_1);
+                }
+                if (produktionP3[6] > 0)
+                {
+                    double i = Math.Ceiling(Convert.ToDouble(produktionP3[6]) / 2);
+                    Reihenfolgenplanung r6_2 = new Reihenfolgenplanung("6", Convert.ToInt32(i), 0);
+                    rf.AddLast(r6_2);
+                }
+                if (produktionP3[9] > 0)
+                {
+                    double i = Math.Ceiling(Convert.ToDouble(produktionP3[9]) / 2);
+                    Reihenfolgenplanung r9_2 = new Reihenfolgenplanung("9", Convert.ToInt32(i), 0);
+                    rf.AddLast(r9_2);
+                }
+                if (produktionP3[12] > 0)
+                {
+                    Reihenfolgenplanung r12 = new Reihenfolgenplanung("12", produktionP3[12], 0);
+                    rf.AddLast(r12);
+                }
+                if (produktionP3[15] > 0)
+                {
+                    Reihenfolgenplanung r15 = new Reihenfolgenplanung("15", produktionP3[15], 0);
+                    rf.AddLast(r15);
+                }
+                if (produktionP3[20] > 0)
+                {
+                    Reihenfolgenplanung r20 = new Reihenfolgenplanung("20", produktionP3[20], 0);
+                    rf.AddLast(r20);
+                }
+                return rf;
+            }
+
+            return rf;
+        }
+
+
+        private void fillTabKaufteileverbrauchWithData(object sender, EventArgs e) {
         private void fillBestellungsTabWithData(object sender, EventArgs e) {
 
             if (tabControl_best.SelectedTab == tabControl_best.TabPages["tabPage_best_bestellung"])
@@ -808,14 +1156,14 @@ namespace ghostSCSIM
                 //Warteschleife und InBearbeitung 
                 pp_p1_p1_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(1).ToString();
                 pp_p1_p1_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(1).ToString();
-                pp_p1_26_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(26).ToString();
-                pp_p1_26_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(26).ToString();
+                pp_p1_26_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByKHDItem(26).ToString();
+                pp_p1_26_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByKHDItem(26).ToString();
                 pp_p1_51_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(51).ToString();
                 pp_p1_51_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(51).ToString();
-                pp_p1_16_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(16).ToString();
-                pp_p1_16_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(16).ToString();
-                pp_p1_17_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(17).ToString();
-                pp_p1_17_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(17).ToString();
+                pp_p1_16_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByKHDItem(16).ToString();
+                pp_p1_16_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByKHDItem(16).ToString();
+                pp_p1_17_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByKHDItem(17).ToString();
+                pp_p1_17_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByKHDItem(17).ToString();
                 pp_p1_50_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(50).ToString();
                 pp_p1_50_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(50).ToString();
                 pp_p1_4_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(4).ToString();
@@ -906,14 +1254,14 @@ namespace ghostSCSIM
 
                 pp_p2_p2_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(2).ToString();
                 pp_p2_p2_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(2).ToString();
-                pp_p2_26_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(26).ToString();
-                pp_p2_26_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(26).ToString();
+                pp_p2_26_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByKHDItem(26).ToString();
+                pp_p2_26_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByKHDItem(26).ToString();
                 pp_p2_56_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(56).ToString();
                 pp_p2_56_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(56).ToString();
-                pp_p2_16_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(16).ToString();
-                pp_p2_16_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(16).ToString();
-                pp_p2_17_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(17).ToString();
-                pp_p2_17_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(17).ToString();
+                pp_p2_16_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByKHDItem(16).ToString();
+                pp_p2_16_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByKHDItem(16).ToString();
+                pp_p2_17_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByKHDItem(17).ToString();
+                pp_p2_17_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByKHDItem(17).ToString();
                 pp_p2_55_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(55).ToString();
                 pp_p2_55_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(55).ToString();
                 pp_p2_5_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(5).ToString();
@@ -1004,14 +1352,14 @@ namespace ghostSCSIM
 
                 pp_p3_p3_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(3).ToString();
                 pp_p3_p3_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(3).ToString();
-                pp_p3_26_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(26).ToString();
-                pp_p3_26_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(26).ToString();
+                pp_p3_26_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByKHDItem(26).ToString();
+                pp_p3_26_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByKHDItem(26).ToString();
                 pp_p3_31_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(31).ToString();
                 pp_p3_31_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(31).ToString();
-                pp_p3_16_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(16).ToString();
-                pp_p3_16_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(16).ToString();
-                pp_p3_17_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(17).ToString();
-                pp_p3_17_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(17).ToString();
+                pp_p3_16_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByKHDItem(16).ToString();
+                pp_p3_16_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByKHDItem(16).ToString();
+                pp_p3_17_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByKHDItem(17).ToString();
+                pp_p3_17_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByKHDItem(17).ToString();
                 pp_p3_30_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(30).ToString();
                 pp_p3_30_bearb.Text = xmlData.ordersInWork.getInBearbeitungMengeByItem(30).ToString();
                 pp_p3_6_ws.Text = xmlData.waitingListWorkstations.getWarteschlangeMengeByItem(6).ToString();
@@ -1101,7 +1449,7 @@ namespace ghostSCSIM
                 {
                     if (xmlData.getXmlImported())
                     {
-                        
+                        uebersicht_geklickt = 1;
                         getProduktionsDict();
                         List<Teil> teilListe = new List<Teil>();
                         teilListe = dao.getFertigerzeugnisseStammdaten();
@@ -1270,9 +1618,106 @@ namespace ghostSCSIM
 
         }
 
-        private void pp_uebersicht_grid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView_rf_planung_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            var senderGrid = (DataGridView)sender;           
+            
+            if (senderGrid.Columns[e.ColumnIndex].HeaderText == "Vor")
+            {                
+                    int index = e.RowIndex;
+                    string teil = senderGrid.Rows[index].Cells["Column_rf_rfPlanung_Teil"].Value.ToString();
+
+                    Reihenfolgenplanung p = listRfpglobal.ElementAt(index);   
+                   
+                if (listRfpglobal.First.Value.getTeil() != p.getTeil())
+                    {
+                    string teilvor = senderGrid.Rows[index - 1].Cells["Column_rf_rfPlanung_Teil"].Value.ToString();
+                    Reihenfolgenplanung pvor = getItemByTeil(teilvor);
+
+                    LinkedListNode<Reihenfolgenplanung> gefunden = null;
+
+                    for (LinkedListNode<Reihenfolgenplanung> node = listRfpglobal.First; node != listRfpglobal.Last.Next; node = node.Next)
+                    {
+                        if (node.Value.getTeil() == pvor.getTeil())
+                        {
+                            gefunden = node;
+                        }
+                    }
+
+                    listRfpglobal.Remove(p);
+                    listRfpglobal.AddBefore(gefunden, p);
+                }              
+                dataGridView_rf_planung.Rows.Clear();
+                refreshReihenfolgenplanung(); 
+            }
+
+            if (senderGrid.Columns[e.ColumnIndex].HeaderText == "Zurück")
+            {
+                int index = e.RowIndex;
+                string teil = senderGrid.Rows[index].Cells["Column_rf_rfPlanung_Teil"].Value.ToString();
+                Reihenfolgenplanung p = listRfpglobal.ElementAt(index);               
+
+                if (listRfpglobal.Last.Value.getTeil() != p.getTeil())
+                {
+                    listRfpglobal.Remove(p);
+
+                    string teildanach = senderGrid.Rows[index + 1].Cells["Column_rf_rfPlanung_Teil"].Value.ToString();
+                    Reihenfolgenplanung pnach = getItemByTeil(teildanach);
+
+                    LinkedListNode<Reihenfolgenplanung> gefunden = null;
+
+                    for (LinkedListNode<Reihenfolgenplanung> node = listRfpglobal.First; node != listRfpglobal.Last.Next; node = node.Next)
+                    {
+                        if (node.Value.getTeil() == pnach.getTeil())
+                        {
+                            gefunden = node;
+                        }
+                    }
+                    listRfpglobal.AddAfter(gefunden, p);
+                }
+                dataGridView_rf_planung.Rows.Clear();
+                refreshReihenfolgenplanung();
+            }
+          
+
+        }       
+
+        private Reihenfolgenplanung getItemByTeil(string teil)
+        {
+            foreach (Reihenfolgenplanung r in listRfpglobal)
+            {
+                if(r.getTeil() == teil)
+                {
+                    return r;
+                }
+            }
+            return null;  
 
         }
+
+        private void rf_splitten_button_Click(object sender, EventArgs e)
+        {
+            DataGridView sender1 = dataGridView_rf_planung;
+            var senderGrid = (DataGridView)sender1;           
+
+            for(int i=0; i<listRfpglobal.Count-1; i++)
+            {
+                string teil = senderGrid.Rows[i].Cells["Column_rf_rfPlanung_Teil"].Value.ToString();
+                int splitt = int.Parse(senderGrid.Rows[i].Cells["Column_rf_rfPlanung_Splitt"].Value.ToString());
+                if(splitt > 0)
+                {
+                    Reihenfolgenplanung p = getItemByTeil(teil);            
+
+                    Reihenfolgenplanung pold = new Reihenfolgenplanung(p.getTeil(), p.getMenge()-splitt, 0);
+                    Reihenfolgenplanung pnew = new Reihenfolgenplanung(p.getTeil()+".", splitt, 0);
+                    listRfpglobal.AddLast(pold);
+                    listRfpglobal.AddLast(pnew);
+                    listRfpglobal.Remove(p);
+                }               
+            }
+            dataGridView_rf_planung.Rows.Clear();
+            refreshReihenfolgenplanung();
+        }
+        
     }
 }
