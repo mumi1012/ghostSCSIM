@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using ghostSCSIM.Service.Disposition;
 using System.Threading.Tasks;
 
 namespace ghostSCSIM.Domain
@@ -60,6 +61,8 @@ namespace ghostSCSIM.Domain
         {
             this.splittmenge = splittmenge;
         }
-                
+
+        
+
     }
 }

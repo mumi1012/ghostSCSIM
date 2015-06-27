@@ -48,6 +48,9 @@ namespace ghostSCSIM
         //Wird 1 wenn Produktionsplan Übersicht geklickt wurde
         private int uebersicht_geklickt = 0;
 
+        //Wird 1 wenn Bestellung Tab geklickt wurde
+        private int bestellung_geklickt = 0;
+
         //index für die neuen Reihenfolgen
         private int reihenIndex = 1000;
 
@@ -340,11 +343,12 @@ namespace ghostSCSIM
 
             if (tabControl1.SelectedTab == tabControl1.TabPages["tabKapa"])
             {
+                
                 if (xmlData.getXmlImported())
                 {
-
-                    List<ArbeitsplatzKapa> liste = dao.getArbeitsplaetzeKapa();
                     dataGridView_kp_uebersicht.Rows.Clear();
+                    List<ArbeitsplatzKapa> liste = dao.getArbeitsplaetzeKapa();
+                    
                     if (dataGridView_kp_uebersicht.Rows.Count == 0)
                     {
                         for (int i = 1; i < 16; i++)
@@ -392,7 +396,7 @@ namespace ghostSCSIM
                                 dataGridView_kp_uebersicht.Rows.Add(i, kapazitätsbedarf.ToString(), ruestzeit.ToString(), rueckstaendekapa.ToString(), rueckstaendez.ToString(), gesamt.ToString(), ueberstunden.ToString(), true, false);
                             }
 
-                            if (gesamt > 3600 && gesamt <= 7200)
+                            else if (gesamt > 3600 && gesamt <= 7200)
                             {
                                 dataGridView_kp_uebersicht.Rows.Add(i, kapazitätsbedarf.ToString(), ruestzeit.ToString(), rueckstaendekapa.ToString(), rueckstaendez.ToString(), gesamt.ToString(), "0", true, false);
                             }
@@ -468,6 +472,7 @@ namespace ghostSCSIM
             if (tabControl1.SelectedTab == tabControl1.TabPages["tabReihenfolge"])
             {
                 dataGridView_rf_planung.Rows.Clear();
+                listRfpglobal.Clear();
                 if (xmlData.getXmlImported())
                 {
                     if(uebersicht_geklickt == 1)
@@ -568,12 +573,78 @@ namespace ghostSCSIM
                     listRfpglobal.AddFirst(r);
                 }
             }
+            if (bestellung_geklickt == 1)
+            {
+                List<int> kritisch = getKritischeTeile(dispoErgebnis);
+                if (kritisch.Count() > 0)
+                {
+                    sortListCritical(kritisch);
+                }
+            }
             foreach (Reihenfolgenplanung r in listRfpglobal)
             {
                 dataGridView_rf_planung.Rows.Add(r.getTeil(), r.getMenge().ToString(), r.getSplittmenge().ToString(), "▲", "▼", r.getIndex());
             }
 
         }
+
+        private List<int> getKritischeTeile(List<DispositionErgebnis> dispositionsErgebnis)
+        {
+            List<int> liste = new List<int>();
+
+            foreach (DispositionErgebnis de in dispositionsErgebnis)
+            {
+                if (de.getCriticalFlag() == 2)
+                {
+                    List<StuecklisteItem> teileVerwendungsnachweis = de.getTeileVerwendungsnachweis();
+                    foreach (StuecklisteItem item in teileVerwendungsnachweis)
+                    {
+                        Teil verwendetesTeil = item.getParent();                        
+                        liste.Add(verwendetesTeil.getNummer());
+                        int x = 0;
+                        foreach (int i in liste)
+                        {
+                            if(i == verwendetesTeil.getNummer())
+                            {
+                                x++;
+                            }
+                        }
+                        if(x>1)
+                        {
+                            liste.Remove(verwendetesTeil.getNummer());
+                        }
+                        
+                    }
+                    
+                }
+            }
+            return liste;
+        }
+
+        private void sortListCritical(List<int> li)
+        {
+            foreach(int i in li)
+            {
+                
+                    LinkedListNode<Reihenfolgenplanung> gefunden = null;
+                    //TODO: Alle Teile suchen! bisher immer noch ein wenn mehrmals auftritt
+                        for (LinkedListNode<Reihenfolgenplanung> node = listRfpglobal.First; node != listRfpglobal.Last.Next; node = node.Next)
+                        {
+                            if (int.Parse(node.Value.getTeil()) == i)
+                            {
+                                gefunden = node;
+                            }
+                        }
+                        if (listRfpglobal.Contains(gefunden.Value))
+                        {
+                            listRfpglobal.Remove(gefunden);
+                            listRfpglobal.AddLast(gefunden);
+                        }
+                    
+            }
+
+        }
+
 
 
         private string getHighestVW()
@@ -900,7 +971,7 @@ namespace ghostSCSIM
             {
                 if (xmlData.getXmlImported())
                 {
-
+                    bestellung_geklickt = 1;
                     //ColumnHeaderText Bedarf/Bestand an Periode anpassen
                     //TODO: Für Sprachsteuerung anpassbar machen
                     //TODO: Angleichen bei neuer Column Anordnung
@@ -1738,6 +1809,14 @@ namespace ghostSCSIM
             }
             dataGridView_rf_planung.Rows.Clear();
             refreshReihenfolgenplanung();
+        }
+
+        private void button_kapa_safe_Click(object sender, EventArgs e)
+        {
+            /*DataGridView sender1 = dataGridView_kp_uebersicht;
+            var senderGrid = (DataGridView)sender1;     
+            foreach*/
+
         }
     }
 }

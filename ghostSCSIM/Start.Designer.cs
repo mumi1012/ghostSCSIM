@@ -31,8 +31,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.spracheToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -2997,18 +2997,18 @@
             // 
             // Column_best_bestelliste_nummer
             // 
-            dataGridViewCellStyle3.Format = "N0";
-            dataGridViewCellStyle3.NullValue = null;
-            this.Column_best_bestelliste_nummer.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Format = "N0";
+            dataGridViewCellStyle5.NullValue = null;
+            this.Column_best_bestelliste_nummer.DefaultCellStyle = dataGridViewCellStyle5;
             resources.ApplyResources(this.Column_best_bestelliste_nummer, "Column_best_bestelliste_nummer");
             this.Column_best_bestelliste_nummer.Name = "Column_best_bestelliste_nummer";
             this.Column_best_bestelliste_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Column_best_bestelliste_menge
             // 
-            dataGridViewCellStyle4.Format = "N0";
-            dataGridViewCellStyle4.NullValue = null;
-            this.Column_best_bestelliste_menge.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.Format = "N0";
+            dataGridViewCellStyle6.NullValue = null;
+            this.Column_best_bestelliste_menge.DefaultCellStyle = dataGridViewCellStyle6;
             resources.ApplyResources(this.Column_best_bestelliste_menge, "Column_best_bestelliste_menge");
             this.Column_best_bestelliste_menge.Name = "Column_best_bestelliste_menge";
             this.Column_best_bestelliste_menge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -3482,6 +3482,7 @@
             resources.ApplyResources(this.button_kapa_safe, "button_kapa_safe");
             this.button_kapa_safe.Name = "button_kapa_safe";
             this.button_kapa_safe.UseVisualStyleBackColor = true;
+            this.button_kapa_safe.Click += new System.EventHandler(this.button_kapa_safe_Click);
             // 
             // Start
             // 

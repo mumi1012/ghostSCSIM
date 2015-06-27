@@ -555,57 +555,30 @@
   <metadata name="Column_kp_uebersicht_arbeitsplatz.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Column_kp_uebersicht_arbeitsplatz.HeaderText" xml:space="preserve">
-    <value>Arbeitsplatz</value>
-  </data>
   <metadata name="Column_kp_uebersicht_kapazitaetsbedarf.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Column_kp_uebersicht_kapazitaetsbedarf.HeaderText" xml:space="preserve">
-    <value>Kapazitätsbedarf</value>
-  </data>
   <metadata name="Column_kp_uebersicht_ruestzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Column_kp_uebersicht_ruestzeit.HeaderText" xml:space="preserve">
-    <value>Rüstzeit</value>
-  </data>
   <metadata name="Column_kp_uebersicht_preKapazitaetsbedarf.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Column_kp_uebersicht_preKapazitaetsbedarf.HeaderText" xml:space="preserve">
-    <value>Kapazitätsbedarf aus Rückständen</value>
-  </data>
   <metadata name="Column_kp_uebersicht_preRuestzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Column_kp_uebersicht_preRuestzeit.HeaderText" xml:space="preserve">
-    <value>Rüstzeit aus Rückständen</value>
-  </data>
   <metadata name="Column_kp_uebersicht_gesamt.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Column_kp_uebersicht_gesamt.HeaderText" xml:space="preserve">
-    <value>Gesamt</value>
-  </data>
   <metadata name="Column_kp_uebersicht_ueberstunden.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Column_kp_uebersicht_ueberstunden.HeaderText" xml:space="preserve">
-    <value>Überstunden</value>
-  </data>
   <metadata name="Column_kp_uebersicht_2schicht.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Column_kp_uebersicht_2schicht.HeaderText" xml:space="preserve">
-    <value>2. Schicht</value>
-  </data>
   <metadata name="Column_kp_uebersicht_3schicht.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="Column_kp_uebersicht_3schicht.HeaderText" xml:space="preserve">
-    <value>3. Schicht</value>
-  </data>
   <data name="dataGridView_kp_uebersicht.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -12785,6 +12758,60 @@
   </data>
   <data name="pp_uebersicht_programm.Width" type="System.Int32, mscorlib">
     <value>112</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_arbeitsplatz.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_arbeitsplatz.HeaderText" xml:space="preserve">
+    <value>Arbeitsplatz</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_kapazitaetsbedarf.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_kapazitaetsbedarf.HeaderText" xml:space="preserve">
+    <value>Kapazitätsbedarf</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_ruestzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_ruestzeit.HeaderText" xml:space="preserve">
+    <value>Rüstzeit</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_preKapazitaetsbedarf.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_preKapazitaetsbedarf.HeaderText" xml:space="preserve">
+    <value>Kapazitätsbedarf aus Rückständen</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_preRuestzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_preRuestzeit.HeaderText" xml:space="preserve">
+    <value>Rüstzeit aus Rückständen</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_gesamt.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_gesamt.HeaderText" xml:space="preserve">
+    <value>Gesamt</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_ueberstunden.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_ueberstunden.HeaderText" xml:space="preserve">
+    <value>Überstunden</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_2schicht.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_2schicht.HeaderText" xml:space="preserve">
+    <value>2. Schicht</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_3schicht.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column_kp_uebersicht_3schicht.HeaderText" xml:space="preserve">
+    <value>3. Schicht</value>
   </data>
   <data name="&gt;&gt;tabPage_best_kaufteillager.Name" xml:space="preserve">
     <value>tabPage_best_kaufteillager</value>
