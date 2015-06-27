@@ -31,8 +31,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.spracheToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -398,6 +398,12 @@
             this.tabReihenfolgePlanung = new System.Windows.Forms.TabPage();
             this.rf_splitten_button = new System.Windows.Forms.Button();
             this.dataGridView_rf_planung = new System.Windows.Forms.DataGridView();
+            this.Column_rf_rfPlanung_Teil = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_rf_rfPlanung_menge = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_rf_rfPlanung_Splitt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_rf_rfPlanung_Vor = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Column_rf_rfPlanung_Zurueck = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Column_rf_rfPlanung_Index = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabDirektV = new System.Windows.Forms.TabPage();
             this.tabControl_dirver = new System.Windows.Forms.TabControl();
             this.tabPage_dirver_direktverkauf = new System.Windows.Forms.TabPage();
@@ -441,12 +447,7 @@
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
             this.lbl_xml_import = new System.Windows.Forms.Label();
             this.lbl_xml_period = new System.Windows.Forms.Label();
-            this.Column_rf_rfPlanung_Teil = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_rf_rfPlanung_menge = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_rf_rfPlanung_Splitt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_rf_rfPlanung_Vor = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column_rf_rfPlanung_Zurueck = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column_rf_rfPlanung_Index = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button_kapa_safe = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPrognose.SuspendLayout();
@@ -2666,6 +2667,7 @@
             // 
             // tabPage_kp_uebersicht
             // 
+            this.tabPage_kp_uebersicht.Controls.Add(this.button_kapa_safe);
             this.tabPage_kp_uebersicht.Controls.Add(this.dataGridView_kp_uebersicht);
             resources.ApplyResources(this.tabPage_kp_uebersicht, "tabPage_kp_uebersicht");
             this.tabPage_kp_uebersicht.Name = "tabPage_kp_uebersicht";
@@ -2995,18 +2997,18 @@
             // 
             // Column_best_bestelliste_nummer
             // 
-            dataGridViewCellStyle1.Format = "N0";
-            dataGridViewCellStyle1.NullValue = null;
-            this.Column_best_bestelliste_nummer.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Format = "N0";
+            dataGridViewCellStyle3.NullValue = null;
+            this.Column_best_bestelliste_nummer.DefaultCellStyle = dataGridViewCellStyle3;
             resources.ApplyResources(this.Column_best_bestelliste_nummer, "Column_best_bestelliste_nummer");
             this.Column_best_bestelliste_nummer.Name = "Column_best_bestelliste_nummer";
             this.Column_best_bestelliste_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Column_best_bestelliste_menge
             // 
-            dataGridViewCellStyle2.Format = "N0";
-            dataGridViewCellStyle2.NullValue = null;
-            this.Column_best_bestelliste_menge.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Format = "N0";
+            dataGridViewCellStyle4.NullValue = null;
+            this.Column_best_bestelliste_menge.DefaultCellStyle = dataGridViewCellStyle4;
             resources.ApplyResources(this.Column_best_bestelliste_menge, "Column_best_bestelliste_menge");
             this.Column_best_bestelliste_menge.Name = "Column_best_bestelliste_menge";
             this.Column_best_bestelliste_menge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -3076,6 +3078,48 @@
             resources.ApplyResources(this.dataGridView_rf_planung, "dataGridView_rf_planung");
             this.dataGridView_rf_planung.Name = "dataGridView_rf_planung";
             this.dataGridView_rf_planung.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_rf_planung_CellContentClick);
+            // 
+            // Column_rf_rfPlanung_Teil
+            // 
+            resources.ApplyResources(this.Column_rf_rfPlanung_Teil, "Column_rf_rfPlanung_Teil");
+            this.Column_rf_rfPlanung_Teil.Name = "Column_rf_rfPlanung_Teil";
+            this.Column_rf_rfPlanung_Teil.ReadOnly = true;
+            this.Column_rf_rfPlanung_Teil.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_rf_rfPlanung_Teil.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column_rf_rfPlanung_menge
+            // 
+            resources.ApplyResources(this.Column_rf_rfPlanung_menge, "Column_rf_rfPlanung_menge");
+            this.Column_rf_rfPlanung_menge.Name = "Column_rf_rfPlanung_menge";
+            this.Column_rf_rfPlanung_menge.ReadOnly = true;
+            this.Column_rf_rfPlanung_menge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_rf_rfPlanung_menge.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column_rf_rfPlanung_Splitt
+            // 
+            resources.ApplyResources(this.Column_rf_rfPlanung_Splitt, "Column_rf_rfPlanung_Splitt");
+            this.Column_rf_rfPlanung_Splitt.Name = "Column_rf_rfPlanung_Splitt";
+            this.Column_rf_rfPlanung_Splitt.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_rf_rfPlanung_Splitt.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column_rf_rfPlanung_Vor
+            // 
+            resources.ApplyResources(this.Column_rf_rfPlanung_Vor, "Column_rf_rfPlanung_Vor");
+            this.Column_rf_rfPlanung_Vor.Name = "Column_rf_rfPlanung_Vor";
+            this.Column_rf_rfPlanung_Vor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_rf_rfPlanung_Vor.Text = "test";
+            // 
+            // Column_rf_rfPlanung_Zurueck
+            // 
+            resources.ApplyResources(this.Column_rf_rfPlanung_Zurueck, "Column_rf_rfPlanung_Zurueck");
+            this.Column_rf_rfPlanung_Zurueck.Name = "Column_rf_rfPlanung_Zurueck";
+            this.Column_rf_rfPlanung_Zurueck.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column_rf_rfPlanung_Zurueck.Text = "↓";
+            // 
+            // Column_rf_rfPlanung_Index
+            // 
+            resources.ApplyResources(this.Column_rf_rfPlanung_Index, "Column_rf_rfPlanung_Index");
+            this.Column_rf_rfPlanung_Index.Name = "Column_rf_rfPlanung_Index";
             // 
             // tabDirektV
             // 
@@ -3433,47 +3477,11 @@
             this.lbl_xml_period.BackColor = System.Drawing.Color.DarkGray;
             this.lbl_xml_period.Name = "lbl_xml_period";
             // 
-            // Column_rf_rfPlanung_Teil
+            // button_kapa_safe
             // 
-            resources.ApplyResources(this.Column_rf_rfPlanung_Teil, "Column_rf_rfPlanung_Teil");
-            this.Column_rf_rfPlanung_Teil.Name = "Column_rf_rfPlanung_Teil";
-            this.Column_rf_rfPlanung_Teil.ReadOnly = true;
-            this.Column_rf_rfPlanung_Teil.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column_rf_rfPlanung_Teil.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Column_rf_rfPlanung_menge
-            // 
-            resources.ApplyResources(this.Column_rf_rfPlanung_menge, "Column_rf_rfPlanung_menge");
-            this.Column_rf_rfPlanung_menge.Name = "Column_rf_rfPlanung_menge";
-            this.Column_rf_rfPlanung_menge.ReadOnly = true;
-            this.Column_rf_rfPlanung_menge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column_rf_rfPlanung_menge.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Column_rf_rfPlanung_Splitt
-            // 
-            resources.ApplyResources(this.Column_rf_rfPlanung_Splitt, "Column_rf_rfPlanung_Splitt");
-            this.Column_rf_rfPlanung_Splitt.Name = "Column_rf_rfPlanung_Splitt";
-            this.Column_rf_rfPlanung_Splitt.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column_rf_rfPlanung_Splitt.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Column_rf_rfPlanung_Vor
-            // 
-            resources.ApplyResources(this.Column_rf_rfPlanung_Vor, "Column_rf_rfPlanung_Vor");
-            this.Column_rf_rfPlanung_Vor.Name = "Column_rf_rfPlanung_Vor";
-            this.Column_rf_rfPlanung_Vor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column_rf_rfPlanung_Vor.Text = "test";
-            // 
-            // Column_rf_rfPlanung_Zurueck
-            // 
-            resources.ApplyResources(this.Column_rf_rfPlanung_Zurueck, "Column_rf_rfPlanung_Zurueck");
-            this.Column_rf_rfPlanung_Zurueck.Name = "Column_rf_rfPlanung_Zurueck";
-            this.Column_rf_rfPlanung_Zurueck.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column_rf_rfPlanung_Zurueck.Text = "↓";
-            // 
-            // Column_rf_rfPlanung_Index
-            // 
-            resources.ApplyResources(this.Column_rf_rfPlanung_Index, "Column_rf_rfPlanung_Index");
-            this.Column_rf_rfPlanung_Index.Name = "Column_rf_rfPlanung_Index";
+            resources.ApplyResources(this.button_kapa_safe, "button_kapa_safe");
+            this.button_kapa_safe.Name = "button_kapa_safe";
+            this.button_kapa_safe.UseVisualStyleBackColor = true;
             // 
             // Start
             // 
@@ -3968,6 +3976,7 @@
         private System.Windows.Forms.DataGridViewButtonColumn Column_rf_rfPlanung_Vor;
         private System.Windows.Forms.DataGridViewButtonColumn Column_rf_rfPlanung_Zurueck;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_rf_rfPlanung_Index;
+        private System.Windows.Forms.Button button_kapa_safe;
        
 
     }
