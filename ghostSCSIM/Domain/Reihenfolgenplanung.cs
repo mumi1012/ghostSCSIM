@@ -8,15 +8,27 @@ namespace ghostSCSIM.Domain
 {
     class Reihenfolgenplanung
     {
+        private int index;
         private string teil;
         private int menge;
         private int splittmenge;
 
-        public Reihenfolgenplanung(string teil, int menge, int splittmenge)
+        public Reihenfolgenplanung(int index, string teil, int menge, int splittmenge)
         {
+            this.index = index;
             this.teil = teil;
             this.menge = menge;
             this.splittmenge = splittmenge;
+        }
+
+        public int getIndex()
+        {
+            return index;
+        }
+
+        public void setIndex(int index)
+        {
+            this.index = index;
         }
 
         public string getTeil()
