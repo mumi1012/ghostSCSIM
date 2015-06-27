@@ -1717,12 +1717,12 @@ namespace ghostSCSIM
             DataGridView sender1 = dataGridView_rf_planung;
             var senderGrid = (DataGridView)sender1;            
             for(int i=0; i<senderGrid.Rows.Count; i++)
-            {              
+            {
 
-
+                int menge = int.Parse(senderGrid.Rows[i].Cells["Column_rf_rfPlanung_menge"].Value.ToString());
                     int index = int.Parse(senderGrid.Rows[i].Cells["Column_rf_rfPlanung_Index"].Value.ToString());
                     int splitt = int.Parse(senderGrid.Rows[i].Cells["Column_rf_rfPlanung_Splitt"].Value.ToString());
-                    if (splitt > 0)
+                    if (splitt > 0 && splitt <= menge)
                     {
                         Reihenfolgenplanung p = getItemByIndex(index);
                         Reihenfolgenplanung pold = new Reihenfolgenplanung(reihenIndex, p.getTeil(), p.getMenge() - splitt, 0);
@@ -1734,6 +1734,7 @@ namespace ghostSCSIM
                         listRfpglobal.AddLast(pnew);
                         listRfpglobal.Remove(p);
                     }
+                    
                 
             }
             dataGridView_rf_planung.Rows.Clear();
