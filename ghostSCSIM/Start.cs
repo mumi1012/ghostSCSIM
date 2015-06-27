@@ -483,6 +483,7 @@ namespace ghostSCSIM
 
             if (tabControl1.SelectedTab == tabControl1.TabPages["tabUebersicht"])
             {
+                
                 fillFertigungDataGridView();
                 fillKapaDataGridView();
                 fillBestDataGridView();
@@ -497,10 +498,11 @@ namespace ghostSCSIM
         //TODO:
         private void fillFertigungDataGridView()
         {
-            foreach (DataGridViewRow row in dataGridView_rf_planung.Rows)
+            dataGridView_uebersicht_fertigung.Rows.Clear();
+            foreach (Reihenfolgenplanung r in listRfpglobal)
             {
-                dataGridView_uebersicht_fertigung.Rows.Add(row.Cells[0].Value, row.Cells[1].Value);
-            }
+                dataGridView_uebersicht_fertigung.Rows.Add(r.getTeil(), r.getMenge());
+            }            
         }
 
         //TODO:
