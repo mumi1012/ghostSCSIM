@@ -33,6 +33,8 @@ namespace ghostSCSIM
         private const String enPeriode = "Period";
         private const String deBestand = "Bestand";
         private const String enBestand = "Stock";
+        private const String deSaveXML = "XML Speichern";
+        private const String enSaveXML = "Save XML";
 
 
         //Risikovariable für die Abweichung der Lieferdaten
@@ -67,6 +69,7 @@ namespace ghostSCSIM
         //Wird 1 wenn Bestellung Tab geklickt wurde
         private int bestellung_geklickt = 0;
 
+        private int bestellListeErzeugt = 0;
 
         //index für die neuen Reihenfolgen
         private int reihenIndex = 1000;
@@ -594,12 +597,12 @@ namespace ghostSCSIM
         private void createXml_Click(object sender, EventArgs e)
         {
             var fileDialog = new SaveFileDialog { };
-            fileDialog.Title = "XML speichern";
+            fileDialog.Title = (culInfo == de) ? deSaveXML : enSaveXML;
             fileDialog.Filter = "XML-Dateien (*.xml)|*.xml";
 
             int game = xmlData.game;
             int group = xmlData.group;
-            int period = xmlData.period;
+            int period = xmlData.period+1;
 
             fileDialog.FileName = game + "_" + group + "_" + period + "input";
 
@@ -615,10 +618,25 @@ namespace ghostSCSIM
         private void collectOutputData()
         {
             xmlResult.setVertriebswuensche(Convert.ToInt32(kinder_prog_p1.Text), Convert.ToInt32(damen_prog_p1.Text), Convert.ToInt32(herren_prog_p1.Text));
+            if (listRfpglobal != null)
+            {
             xmlResult.setFertigung(listRfpglobal);
+            }
+            if (arbeitsplatzListe != null)
+            {
             xmlResult.setArbeitsplaetze(arbeitsplatzListe);
+            }
+            if (bestellungsListe != null)
+            {
             xmlResult.setBestellung(bestellungsListe);
+            }
+            if (direktverkaufListe != null)
+            {
             xmlResult.setDirektverkauf(direktverkaufListe);
+        }
+
+            
+            
         }
 
         /// <summary>
@@ -627,7 +645,7 @@ namespace ghostSCSIM
         /// private void tab1_SelectedIndexChanged(object sender, EventArgs e)
         private void fillTabsWithData(object sender, EventArgs e)
         {
-           #region tabPrognose
+            #region tabPrognose
             if (tabControl1.SelectedTab == tabControl1.TabPages["tabPrognose"])
             {
                
@@ -653,67 +671,67 @@ namespace ghostSCSIM
                 {
                     if (uebersicht_kapa == 1)
                     {
-                        dataGridView_kp_uebersicht.Rows.Clear();
+                    dataGridView_kp_uebersicht.Rows.Clear();
                         kapazitaetsListe.Clear();
-                        if (dataGridView_kp_uebersicht.Rows.Count == 0)
-                        {
+                    if (dataGridView_kp_uebersicht.Rows.Count == 0)
+                    {
                             List<ArbeitsplatzKapa> liste = dao.getArbeitsplaetzeKapa();
                             int x = 0;
-                            for (int i = 1; i < 16; i++)
+                        for (int i = 1; i < 16; i++)
+                        {
+                            List<ArbeitsplatzKapa> l = liste.Where(arbeitsplatzKapa => arbeitsplatzKapa.getArbeitsplatz().Equals(i)).ToList();
+                            int kapazitätsbedarf = 0;
+                            int ruestzeit = 0;
+                            int rueckstaendez = 0;
+                            List<Waitinglist> waitinglist = xmlData.waitingListWorkstations.getWaitinglistByArbeitsplatzId(i);
+                            int rueckstaendekapa = 0;
+                            foreach (Waitinglist wl in waitinglist)
                             {
-                                List<ArbeitsplatzKapa> l = liste.Where(arbeitsplatzKapa => arbeitsplatzKapa.getArbeitsplatz().Equals(i)).ToList();
-                                int kapazitätsbedarf = 0;
-                                int ruestzeit = 0;
-                                int rueckstaendez = 0;
-                                List<Waitinglist> waitinglist = xmlData.waitingListWorkstations.getWaitinglistByArbeitsplatzId(i);
-                                int rueckstaendekapa = 0;
-                                foreach (Waitinglist wl in waitinglist)
-                                {
-                                    rueckstaendekapa += wl.timeneed;
-                                    int teil = wl.item;
-                                    ArbeitsplatzKapa t = liste.Single(a => a.getTeilfk().Equals(teil) && a.getArbeitsplatz().Equals(i));
-                                    rueckstaendez += t.getRuestzeit();
-                                }
-                                rueckstaendekapa += xmlData.ordersInWork.getInBearbeitungMengeByArbeitsplatz(i);
+                                rueckstaendekapa += wl.timeneed;
+                                int teil = wl.item;
+                                ArbeitsplatzKapa t = liste.Single(a => a.getTeilfk().Equals(teil) && a.getArbeitsplatz().Equals(i));
+                                rueckstaendez += t.getRuestzeit();
+                            }
+                            rueckstaendekapa += xmlData.ordersInWork.getInBearbeitungMengeByArbeitsplatz(i);
 
-                                foreach (ArbeitsplatzKapa ak in l)
-                                {
+                            foreach (ArbeitsplatzKapa ak in l)
+                            {
 
                                     x = ak.getTeilfk();
-                                    int ruestz = ak.getRuestzeit();
-                                    int fertigz = ak.getFertigungszeit();
+                                int ruestz = ak.getRuestzeit();
+                                int fertigz = ak.getFertigungszeit();
 
-                                    int kapazitätsbedarfTeil = 0;
-                                    //Nur wenn der Key gefunden wurde berechnen, sonst KeyNotFoundException
+                                int kapazitätsbedarfTeil = 0;
+                                //Nur wenn der Key gefunden wurde berechnen, sonst KeyNotFoundException
                                     if (teile_Produktion.TryGetValue(x, out kapazitätsbedarfTeil))
                                     {
                                         kapazitätsbedarfTeil = fertigz * teile_Produktion[x];
-                                    }
-
-
-                                    ruestzeit += ruestz;
-                                    kapazitätsbedarf += kapazitätsbedarfTeil;
-
                                 }
 
-                                int gesamt = kapazitätsbedarf + ruestzeit + rueckstaendekapa + rueckstaendez;
+                               
+                                ruestzeit += ruestz;
+                                kapazitätsbedarf += kapazitätsbedarfTeil;
+
+                            }
+
+                            int gesamt = kapazitätsbedarf + ruestzeit + rueckstaendekapa + rueckstaendez;
 
 
-                                if (gesamt > 2400 && gesamt <= 3600)
-                                {
-                                    int differenz = gesamt - 2400;
-                                    int ueberstunden = differenz / 5;
+                            if (gesamt > 2400 && gesamt <= 3600)
+                            { 
+                                int differenz = gesamt - 2400;
+                                int ueberstunden = differenz / 5;
                                     ArbeitsplatzKapa a = new ArbeitsplatzKapa(i, x, int.Parse(ruestzeit.ToString()), int.Parse(kapazitätsbedarf.ToString()), int.Parse(rueckstaendekapa.ToString()), int.Parse(rueckstaendez.ToString()), int.Parse(gesamt.ToString()), int.Parse(ueberstunden.ToString()), false, false);
                                     kapazitaetsListe.Add(a);
-                                }
+                            }
 
-                                else if (gesamt > 3600 && gesamt <= 7200)
-                                {
+                            else if (gesamt > 3600 && gesamt <= 7200)
+                            {
                                     ArbeitsplatzKapa a = new ArbeitsplatzKapa(i, x, int.Parse(ruestzeit.ToString()), int.Parse(kapazitätsbedarf.ToString()), int.Parse(rueckstaendekapa.ToString()), int.Parse(rueckstaendez.ToString()), int.Parse(gesamt.ToString()), 0, true, false);
                                     kapazitaetsListe.Add(a);
-                                }
+                            }
                                 else if (gesamt > 7200 && gesamt <= 8400)
-                                {
+                            {
                                     int differenz = gesamt - 7200;
                                     int ueberstunden = differenz / 5;
                                     ArbeitsplatzKapa a = new ArbeitsplatzKapa(i, x, int.Parse(ruestzeit.ToString()), int.Parse(kapazitätsbedarf.ToString()), int.Parse(rueckstaendekapa.ToString()), int.Parse(rueckstaendez.ToString()), int.Parse(gesamt.ToString()), int.Parse(ueberstunden.ToString()), true, false);
@@ -723,8 +741,8 @@ namespace ghostSCSIM
                                 {
                                     ArbeitsplatzKapa a = new ArbeitsplatzKapa(i, x, int.Parse(ruestzeit.ToString()), int.Parse(kapazitätsbedarf.ToString()), int.Parse(rueckstaendekapa.ToString()), int.Parse(rueckstaendez.ToString()), int.Parse(gesamt.ToString()), 0, true, true);
                                     kapazitaetsListe.Add(a);
-                                }
-                                else
+                            }
+                            else
                                 {
                                     ArbeitsplatzKapa a = new ArbeitsplatzKapa(i, x, int.Parse(ruestzeit.ToString()), int.Parse(kapazitätsbedarf.ToString()), int.Parse(rueckstaendekapa.ToString()), int.Parse(rueckstaendez.ToString()), int.Parse(gesamt.ToString()), 0, false, false);
                                     kapazitaetsListe.Add(a);
@@ -739,9 +757,9 @@ namespace ghostSCSIM
                             uebersicht_kapa = 0;
                         }
                     }
-                    }
-                    
                 }
+                    
+            }
             #endregion
             #region tabBestellung
             //Bestellungen Tabs befüllen
@@ -854,6 +872,8 @@ namespace ghostSCSIM
         private void fillBestDataGridView()
         {
             dataGridView_uebersicht_best.Rows.Clear();
+            if (bestellungsListe != null)
+            {
             foreach (Bestellung bestellung in bestellungsListe)
             {
                 bool bestelltyp = false;
@@ -863,6 +883,7 @@ namespace ghostSCSIM
                 int lastRowAdded = dataGridView_uebersicht_best.Rows.Add(bestellung.getTeil().getNummer(), bestellung.getMenge(), bestelltyp);
                 dataGridView_uebersicht_best_ValidateRow(dataGridView_uebersicht_best.Rows[lastRowAdded]);
             }
+        }
         }
 
         private void fillDirverDataGridView()
@@ -1422,16 +1443,18 @@ namespace ghostSCSIM
         {            
                 if (xmlData.getXmlImported() && dispoErgebnis != null)
                 {
+                    dataGridView_best_bestellliste.Rows.Clear();
                                     
-                    if (dataGridView_best_bestellliste.Rows.Count > 0)
+                    BestellVerwaltung bestellVerwaltung;
+                    //Initial erstellen
+                    if (bestellListeErzeugt == 0)
                     {
-                        dataGridView_best_bestellliste.Rows.Clear();
+                        bestellVerwaltung = new BestellVerwaltung();
+                        bestellVerwaltung.generiereBestellListe(dispoErgebnis);
+                        bestellungsListe = bestellVerwaltung.getBestellungListe();
                     }
+                    //Else = Liste schon erzeugt
                    
-                    BestellVerwaltung bestellVerwaltung = new BestellVerwaltung();
-                    bestellVerwaltung.generiereBestellListe(dispoErgebnis);
-
-                    bestellungsListe = bestellVerwaltung.getBestellungListe();
                     if (bestellungsListe != null && bestellungsListe.Count > 0)
                     {
                         foreach (Bestellung bestellung in bestellungsListe)
@@ -1464,7 +1487,11 @@ namespace ghostSCSIM
 
             if (dataGridView_best_bestellliste.Rows.Count > 0)
             {
-                if (bestellungsListe != null && bestellungsListe.Count > 0)
+                if (bestellungsListe == null)
+                {
+                    bestellungsListe = new List<Bestellung>();
+                }
+                if (bestellungsListe.Count > 0)
                 {
                     bestellungsListe.Clear();
                 }
@@ -1480,6 +1507,7 @@ namespace ghostSCSIM
 
                 }
             }
+            bestellListeErzeugt = 1;
         }
         //Bestellungen Liste zurücksetzen
         private void btn_best_reset_Click(object sender, EventArgs e)
@@ -1487,7 +1515,9 @@ namespace ghostSCSIM
             if (bestellungsListe != null)
             {
                 bestellungsListe.Clear();
+                
             }
+            bestellListeErzeugt = 0;
             generateBestellListe();
         }
 
@@ -2177,7 +2207,7 @@ namespace ghostSCSIM
         private void button_kapa_safe_Click(object sender, EventArgs e)
         {
             DataGridView sender1 = dataGridView_kp_uebersicht;
-            var senderGrid = (DataGridView)sender1;
+            var senderGrid = (DataGridView)sender1;     
             foreach (ArbeitsplatzKapa ak in kapazitaetsListe)
             {
                 for (int i = 0; i < dataGridView_kp_uebersicht.Rows.Count; i++)
@@ -2225,8 +2255,5 @@ namespace ghostSCSIM
             }
         }
 
-        
-
-      
     }
 }

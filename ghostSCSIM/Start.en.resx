@@ -532,4 +532,94 @@
   <data name="Column_best_kaufteileverbrauch_produktionskritisch.ToolTipText" xml:space="preserve">
     <value>Necessary parts will be delivered during the week. Dependent products will be queued later in the production order.</value>
   </data>
+  <data name="btn_best_reset.Text" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="btn_best_save.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btn_direv_reset.Text" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="btn_direv_save.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Column_best_bestelliste_loeschenButton.Text" xml:space="preserve">
+    <value>Delete Row</value>
+  </data>
+  <data name="Column_rf_rfPlanung_menge.HeaderText" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Column_rf_rfPlanung_Splitt.HeaderText" xml:space="preserve">
+    <value>Split Amount</value>
+  </data>
+  <data name="Column_rf_rfPlanung_Teil.HeaderText" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="Column_rf_rfPlanung_Vor.HeaderText" xml:space="preserve">
+    <value>Prior</value>
+  </data>
+  <data name="Column_rf_rfPlanung_Zurueck.HeaderText" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Column_uebersicht_best_eil.HeaderText" xml:space="preserve">
+    <value>Fast</value>
+  </data>
+  <data name="Column_uebersicht_best_menge.HeaderText" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Column_uebersicht_best_nummer.HeaderText" xml:space="preserve">
+    <value>Purchase Part</value>
+  </data>
+  <data name="Column_uebersicht_dirver_menge.HeaderText" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Column_uebersicht_dirver_nummer.HeaderText" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="Column_uebersicht_dirver_preis.HeaderText" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="Column_uebersicht_dirver_strafe.HeaderText" xml:space="preserve">
+    <value>Penalty</value>
+  </data>
+  <data name="Column_uebersicht_fertigung_menge.HeaderText" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Column_uebersicht_fertigung_nummer.HeaderText" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="Column_uebersicht_kapa_nummer.HeaderText" xml:space="preserve">
+    <value>Working Place</value>
+  </data>
+  <data name="Column_uebersicht_kapa_schichten.HeaderText" xml:space="preserve">
+    <value>Shift</value>
+  </data>
+  <data name="Column_uebersicht_kapa_ueberstunden.HeaderText" xml:space="preserve">
+    <value>Overtime</value>
+  </data>
+  <data name="label_uebersicht_best.Text" xml:space="preserve">
+    <value>Orders</value>
+  </data>
+  <data name="label_uebersicht_dirver.Text" xml:space="preserve">
+    <value>Direct sales</value>
+  </data>
+  <data name="label_uebersicht_fertigung.Text" xml:space="preserve">
+    <value>Production orders</value>
+  </data>
+  <data name="label_uebersicht_kapa.Text" xml:space="preserve">
+    <value>Capacity plan</value>
+  </data>
+  <data name="rf_splitten_button.Text" xml:space="preserve">
+    <value>Split</value>
+  </data>
+  <data name="tabReihenfolge.Text" xml:space="preserve">
+    <value>Production Order</value>
+  </data>
+  <data name="tabReihenfolgePlanung.Text" xml:space="preserve">
+    <value>Production Order</value>
+  </data>
+  <data name="tabUebersicht.Text" xml:space="preserve">
+    <value>Overview</value>
+  </data>
 </root>

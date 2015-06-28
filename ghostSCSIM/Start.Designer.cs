@@ -408,6 +408,7 @@
             this.Column_rf_rfPlanung_Zurueck = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column_rf_rfPlanung_Index = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabDirektV = new System.Windows.Forms.TabPage();
+            this.btn_direv_reset = new System.Windows.Forms.Button();
             this.tabControl_dirver = new System.Windows.Forms.TabControl();
             this.tabPage_dirver_direktverkauf = new System.Windows.Forms.TabPage();
             this.btn_direv_reset = new System.Windows.Forms.Button();
@@ -418,6 +419,7 @@
             this.Column_dirver_direktverkauf_preis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_dirver_direktverkauf_strafe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_dirver_direktverkauf_loeschenButton = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btn_direv_save = new System.Windows.Forms.Button();
             this.tabUebersicht = new System.Windows.Forms.TabPage();
             this.tabControl_uebersicht = new System.Windows.Forms.TabControl();
             this.tabUebersicht_uebersicht = new System.Windows.Forms.TabPage();
@@ -3003,6 +3005,7 @@
             resources.ApplyResources(this.btn_best_reset, "btn_best_reset");
             this.btn_best_reset.Name = "btn_best_reset";
             this.btn_best_reset.UseVisualStyleBackColor = true;
+            this.btn_best_reset.Click += new System.EventHandler(this.btn_best_reset_Click);
             // 
             // btn_best_addRow
             // 
@@ -3158,10 +3161,18 @@
             // 
             // tabDirektV
             // 
+            this.tabDirektV.Controls.Add(this.btn_direv_reset);
             this.tabDirektV.Controls.Add(this.tabControl_dirver);
+            this.tabDirektV.Controls.Add(this.btn_direv_save);
             resources.ApplyResources(this.tabDirektV, "tabDirektV");
             this.tabDirektV.Name = "tabDirektV";
             this.tabDirektV.UseVisualStyleBackColor = true;
+            // 
+            // btn_direv_reset
+            // 
+            resources.ApplyResources(this.btn_direv_reset, "btn_direv_reset");
+            this.btn_direv_reset.Name = "btn_direv_reset";
+            this.btn_direv_reset.UseVisualStyleBackColor = true;
             // 
             // tabControl_dirver
             // 
@@ -3169,13 +3180,10 @@
             resources.ApplyResources(this.tabControl_dirver, "tabControl_dirver");
             this.tabControl_dirver.Name = "tabControl_dirver";
             this.tabControl_dirver.SelectedIndex = 0;
-            this.tabControl_dirver.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl_dirver.Leave += new System.EventHandler(this.tabControl_dirver_Leave);
             // 
             // tabPage_dirver_direktverkauf
             // 
-            this.tabPage_dirver_direktverkauf.Controls.Add(this.btn_direv_reset);
-            this.tabPage_dirver_direktverkauf.Controls.Add(this.btn_direv_save);
             this.tabPage_dirver_direktverkauf.Controls.Add(this.dataGridView_dirver_direktverkauf);
             resources.ApplyResources(this.tabPage_dirver_direktverkauf, "tabPage_dirver_direktverkauf");
             this.tabPage_dirver_direktverkauf.Name = "tabPage_dirver_direktverkauf";
@@ -3250,6 +3258,13 @@
             this.Column_dirver_direktverkauf_loeschenButton.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Column_dirver_direktverkauf_loeschenButton.Text = "Zeile löschen";
             this.Column_dirver_direktverkauf_loeschenButton.UseColumnTextForButtonValue = true;
+            // 
+            // btn_direv_save
+            // 
+            resources.ApplyResources(this.btn_direv_save, "btn_direv_save");
+            this.btn_direv_save.Name = "btn_direv_save";
+            this.btn_direv_save.UseVisualStyleBackColor = true;
+            this.btn_direv_save.Click += new System.EventHandler(this.btn_direv_save_Click);
             // 
             // tabUebersicht
             // 
@@ -3540,6 +3555,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Start";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Start_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
