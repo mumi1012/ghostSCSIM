@@ -14,12 +14,12 @@ namespace ghostSCSIM.Domain
         private double preis;
         private double strafe;
 
-        public Direktverkauf(Teil teil, int menge, double preis)
+        public Direktverkauf(Teil teil, int menge, double preis, double strafe)
         {
             this.teil = teil;
             this.menge = menge;
             this.preis = preis;
-            this.strafe = 0.0;
+            this.strafe = strafe;
         }
 
 

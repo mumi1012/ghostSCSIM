@@ -520,4 +520,16 @@
   <data name="lbl_xml_import.Text" xml:space="preserve">
     <value>Result Period:</value>
   </data>
+  <data name="Column_best_kaufteileverbrauch_Lagerzugang.HeaderText" xml:space="preserve">
+    <value>Net inward stock movement</value>
+  </data>
+  <data name="Column_best_kaufteileverbrauch_produktionskritisch.HeaderText" xml:space="preserve">
+    <value>Critical for production</value>
+  </data>
+  <data name="Column_best_kaufteileverbrauch_Lagerzugang.ToolTipText" xml:space="preserve">
+    <value>Net inward stock movement after production demand.</value>
+  </data>
+  <data name="Column_best_kaufteileverbrauch_produktionskritisch.ToolTipText" xml:space="preserve">
+    <value>Necessary parts will be delivered during the week. Dependent products will be queued later in the production order.</value>
+  </data>
 </root>

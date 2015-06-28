@@ -21,7 +21,7 @@ namespace ghostSCSIM.Service.Disposition
 
         private List<Bestellung> offeneBestellungen;
 
-       
+        private int aktuellePeriode = Start.xmlData.period;
         private int lagerzugang;
 
         private int bruttoBedarfPeriode0 = 0;  
@@ -77,7 +77,6 @@ namespace ghostSCSIM.Service.Disposition
 
             this.lieferDaten = lieferdaten;
 
-            MaterialGehtAusBerechnen();
             bestaendeBerechnen();
             bestellPeriodeBerechnen();
             
@@ -228,7 +227,6 @@ namespace ghostSCSIM.Service.Disposition
 
         public void bestaendeBerechnen()
         {
-            int aktuellePeriode = Start.xmlData.period;
             int aktuellerLagerbestand = lieferDaten.getLagerMenge();
             
             int[] bruttoBedarfe = new int[4];
@@ -239,12 +237,28 @@ namespace ghostSCSIM.Service.Disposition
 
 
             //Bestand n+1
+            //Zunächst prüfen ob der Lagerbestand für die Produktion ausreichend ist
+            if ((aktuellerLagerbestand - bruttoBedarfPeriode0) > 0)
+            {
+                criticalFlag = 0;
+            }
+           
             bestandPeriode[0] = aktuellerLagerbestand + berechneLagerZugang(aktuellePeriode) - bruttoBedarfPeriode0;
 
             //Wenn der Bestand in der Folgeperiode > 0 ist, Anzeige als Lagerzugang
             if (berechneLagerZugang(aktuellePeriode) > 0)
             {
-                lagerzugang = bestandPeriode[0] - aktuellerLagerbestand;
+                int menge = bestandPeriode[0] - aktuellerLagerbestand;
+                if (menge > 0)
+                {
+                    lagerzugang = menge;
+                }
+                else
+                {
+                    lagerzugang = 0;
+                }
+                    
+               
             }
 
             //Bestand n+2 - n+4
@@ -261,7 +275,7 @@ namespace ghostSCSIM.Service.Disposition
                 }
             }
             //Material geht in der ersten Periode schon aus
-            if (materialGehtAusInPeriode == 0)
+            if (materialGehtAusInPeriode == aktuellePeriode)
             {
                 criticalFlag = 2;
             }
@@ -292,14 +306,34 @@ namespace ghostSCSIM.Service.Disposition
                     //Prüfen ob Teil direkt zu Beginn der Periode verfügbar ist = Tag 1 (0.0), direkt zur Menge hinzurechnen
                     if (verfuegbarInProduktion == periode)
                     {
+                        if (periode == aktuellePeriode)
+                        {
+                            criticalFlag = 0;
+                        }
                         menge += bestellung.getMenge();
                     }
                     //Teil kommt in der Periode zwischen Tag 2 = 0.2 und Tag 4 = 0.8
                     else if (verfuegbarInProduktion > periode && verfuegbarInProduktion <= (periode + 0.9))
                     {
                         menge += bestellung.getMenge();
-                        //Kritisch für Produktion; Fertigerzeugnisse die von diesem Teil abhängen später produzieren
-                        criticalFlag = 1;
+                        //Wenn die Periode = aktuelle Planperiode, dann criticalFlag = 1 setzen
+                        if (periode == aktuellePeriode)
+                        {
+                            //Hier nochmal prüfen ob mit den Lagerzugang der Bedarf gedeckt ist
+                            int fehlMenge = lieferDaten.getLagerMenge() - bruttoBedarfPeriode0;
+                            if(fehlMenge < 0) 
+                            {
+                                //Bestellmenge ausreichend
+                                if (bestellung.getMenge() >= fehlMenge)
+                                {
+                                    criticalFlag = 1;
+                                }
+                            }
+                           
+
+                                                            
+                        }
+                       
                     }
                                         
                 }

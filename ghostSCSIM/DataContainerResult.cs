@@ -92,13 +92,18 @@ namespace ghostSCSIM
             this.direktverkauf.Clear();
             foreach (Direktverkauf dv in direktverkauf)
             {
-                this.direktverkauf.Add(new Direktverkauf(dv.getTeil(), dv.getMenge(), dv.getPreis()));
+                this.direktverkauf.Add(new Direktverkauf(dv.getTeil(), dv.getMenge(), dv.getPreis(), dv.getStrafe()));
             }
         }
 
-        public void addDirektverkauf(Teil teil, int menge, double preis)
+        public void addDirektverkauf(Teil teil, int menge, double preis, double strafe)
         {
-            this.direktverkauf.Add(new Direktverkauf(teil, menge, preis));
+            this.direktverkauf.Add(new Direktverkauf(teil, menge, preis, strafe));
+        }
+
+        public void addDirektverakuf(Direktverkauf dv)
+        {
+            this.direktverkauf.Add(dv);
         }
 
     }
