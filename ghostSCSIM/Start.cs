@@ -33,6 +33,8 @@ namespace ghostSCSIM
         private const String enPeriode = "Period";
         private const String deBestand = "Bestand";
         private const String enBestand = "Stock";
+        private const String deSaveXML = "XML Speichern";
+        private const String enSaveXML = "Save XML";
 
 
         //Risikovariable für die Abweichung der Lieferdaten
@@ -65,6 +67,8 @@ namespace ghostSCSIM
 
         //Wird 1 wenn Bestellung Tab geklickt wurde
         private int bestellung_geklickt = 0;
+
+        private int bestellListeErzeugt = 0;
 
         //index für die neuen Reihenfolgen
         private int reihenIndex = 1000;
@@ -589,12 +593,12 @@ namespace ghostSCSIM
         private void createXml_Click(object sender, EventArgs e)
         {
             var fileDialog = new SaveFileDialog { };
-            fileDialog.Title = "XML speichern";
+            fileDialog.Title = (culInfo == de) ? deSaveXML : enSaveXML;
             fileDialog.Filter = "XML-Dateien (*.xml)|*.xml";
 
             int game = xmlData.game;
             int group = xmlData.group;
-            int period = xmlData.period;
+            int period = xmlData.period+1;
 
             fileDialog.FileName = game + "_" + group + "_" + period + "input";
 
@@ -610,10 +614,25 @@ namespace ghostSCSIM
         private void collectOutputData()
         {
             xmlResult.setVertriebswuensche(Convert.ToInt32(kinder_prog_p1.Text), Convert.ToInt32(damen_prog_p1.Text), Convert.ToInt32(herren_prog_p1.Text));
-            xmlResult.setFertigung(listRfpglobal);
-            xmlResult.setArbeitsplaetze(arbeitsplatzListe);
-            xmlResult.setBestellung(bestellungsListe);
-            xmlResult.setDirektverkauf(direktverkaufListe);
+            if (listRfpglobal != null)
+            {
+                xmlResult.setFertigung(listRfpglobal);
+            }
+            if (arbeitsplatzListe != null)
+            {
+                xmlResult.setArbeitsplaetze(arbeitsplatzListe);
+            }
+            if (bestellungsListe != null)
+            {
+                xmlResult.setBestellung(bestellungsListe);
+            }
+            if (direktverkaufListe != null)
+            {
+                xmlResult.setDirektverkauf(direktverkaufListe);
+            }
+            
+            
+            
         }
 
         /// <summary>
@@ -823,14 +842,17 @@ namespace ghostSCSIM
         private void fillBestDataGridView()
         {
             dataGridView_uebersicht_best.Rows.Clear();
-            foreach (Bestellung bestellung in bestellungsListe)
+            if (bestellungsListe != null)
             {
-                bool bestelltyp = false;
-                if (bestellung.getBestellTyp().Equals(Bestelltyp.F))
-                    bestelltyp = true;
+                foreach (Bestellung bestellung in bestellungsListe)
+                {
+                    bool bestelltyp = false;
+                    if (bestellung.getBestellTyp().Equals(Bestelltyp.F))
+                        bestelltyp = true;
 
-                int lastRowAdded = dataGridView_uebersicht_best.Rows.Add(bestellung.getTeil().getNummer(), bestellung.getMenge(), bestelltyp);
-                dataGridView_uebersicht_best_ValidateRow(dataGridView_uebersicht_best.Rows[lastRowAdded]);
+                    int lastRowAdded = dataGridView_uebersicht_best.Rows.Add(bestellung.getTeil().getNummer(), bestellung.getMenge(), bestelltyp);
+                    dataGridView_uebersicht_best_ValidateRow(dataGridView_uebersicht_best.Rows[lastRowAdded]);
+                }
             }
         }
 
@@ -1287,7 +1309,7 @@ namespace ghostSCSIM
 
             if (tabControl_best.SelectedTab == tabControl_best.TabPages["tabPage_best_bestellung"])
             {
-                generateBestellListe();
+                 generateBestellListe();
             }
 
             if (tabControl_best.SelectedTab == tabControl_best.TabPages["tabPage_best_kaufteileverbrauch"])
@@ -1391,16 +1413,18 @@ namespace ghostSCSIM
         {            
                 if (xmlData.getXmlImported() && dispoErgebnis != null)
                 {
-                                    
-                    if (dataGridView_best_bestellliste.Rows.Count > 0)
+                    dataGridView_best_bestellliste.Rows.Clear();
+                    
+                    BestellVerwaltung bestellVerwaltung;
+                    //Initial erstellen
+                    if (bestellListeErzeugt == 0)
                     {
-                        dataGridView_best_bestellliste.Rows.Clear();
+                        bestellVerwaltung = new BestellVerwaltung();
+                        bestellVerwaltung.generiereBestellListe(dispoErgebnis);
+                        bestellungsListe = bestellVerwaltung.getBestellungListe();
                     }
-                   
-                    BestellVerwaltung bestellVerwaltung = new BestellVerwaltung();
-                    bestellVerwaltung.generiereBestellListe(dispoErgebnis);
-
-                    bestellungsListe = bestellVerwaltung.getBestellungListe();
+                    //Else = Liste schon erzeugt
+                                       
                     if (bestellungsListe != null && bestellungsListe.Count > 0)
                     {
                         foreach (Bestellung bestellung in bestellungsListe)
@@ -1433,7 +1457,11 @@ namespace ghostSCSIM
 
             if (dataGridView_best_bestellliste.Rows.Count > 0)
             {
-                if (bestellungsListe != null && bestellungsListe.Count > 0)
+                if (bestellungsListe == null)
+                {
+                    bestellungsListe = new List<Bestellung>();
+                }
+                if (bestellungsListe.Count > 0)
                 {
                     bestellungsListe.Clear();
                 }
@@ -1449,6 +1477,7 @@ namespace ghostSCSIM
 
                 }
             }
+            bestellListeErzeugt = 1;
         }
         //Bestellungen Liste zurücksetzen
         private void btn_best_reset_Click(object sender, EventArgs e)
@@ -1456,7 +1485,9 @@ namespace ghostSCSIM
             if (bestellungsListe != null)
             {
                 bestellungsListe.Clear();
+                
             }
+            bestellListeErzeugt = 0;
             generateBestellListe();
         }
 
@@ -2180,8 +2211,5 @@ namespace ghostSCSIM
             }
         }
 
-        
-
-      
     }
 }
