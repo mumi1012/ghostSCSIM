@@ -466,7 +466,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabPrognose.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 416</value>
+    <value>843, 446</value>
   </data>
   <data name="tabPrognose.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -508,7 +508,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabProdplan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 416</value>
+    <value>843, 446</value>
   </data>
   <data name="tabProdplan.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -528,18 +528,6 @@
   <data name="&gt;&gt;tabProdplan.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="button_kapa_safe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>580, 391</value>
-  </data>
-  <data name="button_kapa_safe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="button_kapa_safe.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="button_kapa_safe.Text" xml:space="preserve">
-    <value>Speichern</value>
-  </data>
   <data name="&gt;&gt;button_kapa_safe.Name" xml:space="preserve">
     <value>button_kapa_safe</value>
   </data>
@@ -550,45 +538,6 @@
     <value>tabPage_kp_uebersicht</value>
   </data>
   <data name="&gt;&gt;button_kapa_safe.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="Column_kp_uebersicht_arbeitsplatz.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_kp_uebersicht_kapazitaetsbedarf.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_kp_uebersicht_ruestzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_kp_uebersicht_preKapazitaetsbedarf.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_kp_uebersicht_preRuestzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_kp_uebersicht_gesamt.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_kp_uebersicht_ueberstunden.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_kp_uebersicht_2schicht.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Column_kp_uebersicht_3schicht.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="dataGridView_kp_uebersicht.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="dataGridView_kp_uebersicht.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="dataGridView_kp_uebersicht.Size" type="System.Drawing.Size, System.Drawing">
-    <value>829, 414</value>
-  </data>
-  <data name="dataGridView_kp_uebersicht.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;dataGridView_kp_uebersicht.Name" xml:space="preserve">
@@ -703,7 +652,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabBestellung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 416</value>
+    <value>843, 446</value>
   </data>
   <data name="tabBestellung.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -742,7 +691,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabReihenfolge.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 416</value>
+    <value>843, 446</value>
   </data>
   <data name="tabReihenfolge.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -761,6 +710,57 @@
   </data>
   <data name="&gt;&gt;tabReihenfolge.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_dirver_direktverkauf.Name" xml:space="preserve">
+    <value>dataGridView_dirver_direktverkauf</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_dirver_direktverkauf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_dirver_direktverkauf.Parent" xml:space="preserve">
+    <value>tabPage_dirver_direktverkauf</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_dirver_direktverkauf.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage_dirver_direktverkauf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage_dirver_direktverkauf.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage_dirver_direktverkauf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>835, 420</value>
+  </data>
+  <data name="tabPage_dirver_direktverkauf.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabPage_dirver_direktverkauf.Text" xml:space="preserve">
+    <value>Direktverkauf</value>
+  </data>
+  <data name="&gt;&gt;tabPage_dirver_direktverkauf.Name" xml:space="preserve">
+    <value>tabPage_dirver_direktverkauf</value>
+  </data>
+  <data name="&gt;&gt;tabPage_dirver_direktverkauf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_dirver_direktverkauf.Parent" xml:space="preserve">
+    <value>tabControl_dirver</value>
+  </data>
+  <data name="&gt;&gt;tabPage_dirver_direktverkauf.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabControl_dirver.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tabControl_dirver.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tabControl_dirver.Size" type="System.Drawing.Size, System.Drawing">
+    <value>843, 446</value>
+  </data>
+  <data name="tabControl_dirver.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;tabControl_dirver.Name" xml:space="preserve">
     <value>tabControl_dirver</value>
@@ -781,7 +781,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabDirektV.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 416</value>
+    <value>843, 446</value>
   </data>
   <data name="tabDirektV.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -820,7 +820,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabUebersicht.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 416</value>
+    <value>843, 446</value>
   </data>
   <data name="tabUebersicht.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1525,7 +1525,7 @@
     <value>3</value>
   </data>
   <data name="tabControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+    <value>Fill</value>
   </data>
   <data name="tabControl2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8pt</value>
@@ -1537,7 +1537,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabControl2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 412</value>
+    <value>839, 442</value>
   </data>
   <data name="tabControl2.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2656,7 +2656,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabKinderf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>831, 386</value>
+    <value>831, 416</value>
   </data>
   <data name="tabKinderf.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -6343,7 +6343,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabDamenf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>831, 386</value>
+    <value>831, 416</value>
   </data>
   <data name="tabDamenf.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -10027,7 +10027,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabHerrenf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>831, 386</value>
+    <value>831, 416</value>
   </data>
   <data name="tabHerrenf.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -12631,7 +12631,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabPUebersicht.Size" type="System.Drawing.Size, System.Drawing">
-    <value>831, 386</value>
+    <value>831, 416</value>
   </data>
   <data name="tabPUebersicht.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -12679,7 +12679,7 @@
     <value>0, 0</value>
   </data>
   <data name="pp_uebersicht_grid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>831, 386</value>
+    <value>831, 416</value>
   </data>
   <data name="pp_uebersicht_grid.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -12758,6 +12758,81 @@
   </data>
   <data name="pp_uebersicht_programm.Width" type="System.Int32, mscorlib">
     <value>112</value>
+  </data>
+  <data name="button_kapa_safe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>580, 391</value>
+  </data>
+  <data name="button_kapa_safe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button_kapa_safe.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button_kapa_safe.Text" xml:space="preserve">
+    <value>Speichern</value>
+  </data>
+  <data name="&gt;&gt;button_kapa_safe.Name" xml:space="preserve">
+    <value>button_kapa_safe</value>
+  </data>
+  <data name="&gt;&gt;button_kapa_safe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_kapa_safe.Parent" xml:space="preserve">
+    <value>tabPage_kp_uebersicht</value>
+  </data>
+  <data name="&gt;&gt;button_kapa_safe.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_arbeitsplatz.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_kp_uebersicht_kapazitaetsbedarf.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_kp_uebersicht_ruestzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_kp_uebersicht_preKapazitaetsbedarf.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_kp_uebersicht_preRuestzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_kp_uebersicht_gesamt.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_kp_uebersicht_ueberstunden.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_kp_uebersicht_2schicht.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_kp_uebersicht_3schicht.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="dataGridView_kp_uebersicht.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dataGridView_kp_uebersicht.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="dataGridView_kp_uebersicht.Size" type="System.Drawing.Size, System.Drawing">
+    <value>829, 414</value>
+  </data>
+  <data name="dataGridView_kp_uebersicht.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_uebersicht.Name" xml:space="preserve">
+    <value>dataGridView_kp_uebersicht</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_uebersicht.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_uebersicht.Parent" xml:space="preserve">
+    <value>tabPage_kp_uebersicht</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_uebersicht.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="Column_kp_uebersicht_arbeitsplatz.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -12856,7 +12931,7 @@
     <value>0, 0</value>
   </data>
   <data name="tabControl_best.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 416</value>
+    <value>843, 446</value>
   </data>
   <data name="tabControl_best.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -12892,7 +12967,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_best_kaufteillager.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 390</value>
+    <value>835, 420</value>
   </data>
   <data name="tabPage_best_kaufteillager.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -12937,7 +13012,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_best_kaufteillager.Size" type="System.Drawing.Size, System.Drawing">
-    <value>829, 384</value>
+    <value>829, 414</value>
   </data>
   <data name="dataGridView_best_kaufteillager.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -13030,7 +13105,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_best_kaufteileverbrauch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 390</value>
+    <value>835, 420</value>
   </data>
   <data name="tabPage_best_kaufteileverbrauch.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -13078,7 +13153,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_best_kaufteileverbrauch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>829, 384</value>
+    <value>829, 414</value>
   </data>
   <data name="dataGridView_best_kaufteileverbrauch.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -13177,7 +13252,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage_best_bestellung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 390</value>
+    <value>835, 420</value>
   </data>
   <data name="tabPage_best_bestellung.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -13216,7 +13291,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_best_bestellliste.Size" type="System.Drawing.Size, System.Drawing">
-    <value>829, 384</value>
+    <value>829, 414</value>
   </data>
   <data name="dataGridView_best_bestellliste.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -13281,11 +13356,14 @@
   <data name="&gt;&gt;tabReihenfolgePlanung.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="tabControl_reihen.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="tabControl_reihen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>2, 2</value>
   </data>
   <data name="tabControl_reihen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>847, 420</value>
+    <value>839, 442</value>
   </data>
   <data name="tabControl_reihen.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -13333,7 +13411,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabReihenfolgePlanung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 394</value>
+    <value>831, 416</value>
   </data>
   <data name="tabReihenfolgePlanung.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -13405,7 +13483,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_rf_planung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>833, 388</value>
+    <value>825, 410</value>
   </data>
   <data name="dataGridView_rf_planung.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -13467,78 +13545,6 @@
   <data name="Column_rf_rfPlanung_Index.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;tabPage_dirver_direktverkauf.Name" xml:space="preserve">
-    <value>tabPage_dirver_direktverkauf</value>
-  </data>
-  <data name="&gt;&gt;tabPage_dirver_direktverkauf.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage_dirver_direktverkauf.Parent" xml:space="preserve">
-    <value>tabControl_dirver</value>
-  </data>
-  <data name="&gt;&gt;tabPage_dirver_direktverkauf.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabControl_dirver.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, -5</value>
-  </data>
-  <data name="tabControl_dirver.Size" type="System.Drawing.Size, System.Drawing">
-    <value>843, 421</value>
-  </data>
-  <data name="tabControl_dirver.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tabControl_dirver.Name" xml:space="preserve">
-    <value>tabControl_dirver</value>
-  </data>
-  <data name="&gt;&gt;tabControl_dirver.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl_dirver.Parent" xml:space="preserve">
-    <value>tabDirektV</value>
-  </data>
-  <data name="&gt;&gt;tabControl_dirver.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_dirver_direktverkauf.Name" xml:space="preserve">
-    <value>dataGridView_dirver_direktverkauf</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_dirver_direktverkauf.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_dirver_direktverkauf.Parent" xml:space="preserve">
-    <value>tabPage_dirver_direktverkauf</value>
-  </data>
-  <data name="&gt;&gt;dataGridView_dirver_direktverkauf.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPage_dirver_direktverkauf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPage_dirver_direktverkauf.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage_dirver_direktverkauf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 395</value>
-  </data>
-  <data name="tabPage_dirver_direktverkauf.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="tabPage_dirver_direktverkauf.Text" xml:space="preserve">
-    <value>Direktverkauf</value>
-  </data>
-  <data name="&gt;&gt;tabPage_dirver_direktverkauf.Name" xml:space="preserve">
-    <value>tabPage_dirver_direktverkauf</value>
-  </data>
-  <data name="&gt;&gt;tabPage_dirver_direktverkauf.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage_dirver_direktverkauf.Parent" xml:space="preserve">
-    <value>tabControl_dirver</value>
-  </data>
-  <data name="&gt;&gt;tabPage_dirver_direktverkauf.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="Column_dirver_direktverkauf_nummer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -13561,7 +13567,7 @@
     <value>3, 3</value>
   </data>
   <data name="dataGridView_dirver_direktverkauf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>829, 389</value>
+    <value>829, 414</value>
   </data>
   <data name="dataGridView_dirver_direktverkauf.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -13620,11 +13626,14 @@
   <data name="&gt;&gt;tabUebersicht_uebersicht.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="tabControl_uebersicht.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="tabControl_uebersicht.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>2, 2</value>
   </data>
   <data name="tabControl_uebersicht.Size" type="System.Drawing.Size, System.Drawing">
-    <value>847, 416</value>
+    <value>839, 442</value>
   </data>
   <data name="tabControl_uebersicht.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -13756,7 +13765,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tabUebersicht_uebersicht.Size" type="System.Drawing.Size, System.Drawing">
-    <value>839, 390</value>
+    <value>831, 416</value>
   </data>
   <data name="tabUebersicht_uebersicht.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>

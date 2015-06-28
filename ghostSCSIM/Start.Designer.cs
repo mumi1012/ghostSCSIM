@@ -352,6 +352,7 @@
             this.tabKapa = new System.Windows.Forms.TabPage();
             this.tabControl_kp = new System.Windows.Forms.TabControl();
             this.tabPage_kp_uebersicht = new System.Windows.Forms.TabPage();
+            this.button_kapa_safe = new System.Windows.Forms.Button();
             this.dataGridView_kp_uebersicht = new System.Windows.Forms.DataGridView();
             this.Column_kp_uebersicht_arbeitsplatz = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_kp_uebersicht_kapazitaetsbedarf = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -447,7 +448,6 @@
             this.imageList3 = new System.Windows.Forms.ImageList(this.components);
             this.lbl_xml_import = new System.Windows.Forms.Label();
             this.lbl_xml_period = new System.Windows.Forms.Label();
-            this.button_kapa_safe = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPrognose.SuspendLayout();
@@ -2664,6 +2664,7 @@
             this.tabControl_kp.Name = "tabControl_kp";
             this.tabControl_kp.SelectedIndex = 0;
             this.tabControl_kp.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl_kp.Leave += new System.EventHandler(this.tabControl_kapa_Leave);
             // 
             // tabPage_kp_uebersicht
             // 
@@ -2672,6 +2673,13 @@
             resources.ApplyResources(this.tabPage_kp_uebersicht, "tabPage_kp_uebersicht");
             this.tabPage_kp_uebersicht.Name = "tabPage_kp_uebersicht";
             this.tabPage_kp_uebersicht.UseVisualStyleBackColor = true;
+            // 
+            // button_kapa_safe
+            // 
+            resources.ApplyResources(this.button_kapa_safe, "button_kapa_safe");
+            this.button_kapa_safe.Name = "button_kapa_safe";
+            this.button_kapa_safe.UseVisualStyleBackColor = true;
+            this.button_kapa_safe.Click += new System.EventHandler(this.button_kapa_safe_Click);
             // 
             // dataGridView_kp_uebersicht
             // 
@@ -2695,6 +2703,8 @@
             resources.ApplyResources(this.dataGridView_kp_uebersicht, "dataGridView_kp_uebersicht");
             this.dataGridView_kp_uebersicht.Name = "dataGridView_kp_uebersicht";
             this.dataGridView_kp_uebersicht.RowHeadersVisible = false;
+            this.dataGridView_kp_uebersicht.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dataGridView_kp_uebersicht_EditingControlShowing);
+            this.dataGridView_kp_uebersicht.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dataGridView_kp_uebersicht_ValidateRow);
             // 
             // Column_kp_uebersicht_arbeitsplatz
             // 
@@ -2993,6 +3003,7 @@
             this.dataGridView_best_bestellliste.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dataGridView_best_bestellliste.Name = "dataGridView_best_bestellliste";
             this.dataGridView_best_bestellliste.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_best_bestellliste_CellContentClick);
+            this.dataGridView_best_bestellliste.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dataGridView_best_bestellliste_EditingControlShowing);
             this.dataGridView_best_bestellliste.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dataGridView_best_bestellliste_ValidateRow);
             // 
             // Column_best_bestelliste_nummer
@@ -3135,6 +3146,7 @@
             this.tabControl_dirver.Name = "tabControl_dirver";
             this.tabControl_dirver.SelectedIndex = 0;
             this.tabControl_dirver.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl_dirver.Leave += new System.EventHandler(this.tabControl_dirver_Leave);
             // 
             // tabPage_dirver_direktverkauf
             // 
@@ -3161,6 +3173,8 @@
             this.dataGridView_dirver_direktverkauf.Name = "dataGridView_dirver_direktverkauf";
             this.dataGridView_dirver_direktverkauf.RowHeadersVisible = false;
             this.dataGridView_dirver_direktverkauf.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_dirver_direktverkauf_CellContentClick);
+            this.dataGridView_dirver_direktverkauf.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dataGridView_dirver_direktverkauf_EditingControlShowing);
+            this.dataGridView_dirver_direktverkauf.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dataGridView_dirver_direktverkauf_ValidateRow);
             // 
             // Column_dirver_direktverkauf_nummer
             // 
@@ -3476,13 +3490,6 @@
             resources.ApplyResources(this.lbl_xml_period, "lbl_xml_period");
             this.lbl_xml_period.BackColor = System.Drawing.Color.DarkGray;
             this.lbl_xml_period.Name = "lbl_xml_period";
-            // 
-            // button_kapa_safe
-            // 
-            resources.ApplyResources(this.button_kapa_safe, "button_kapa_safe");
-            this.button_kapa_safe.Name = "button_kapa_safe";
-            this.button_kapa_safe.UseVisualStyleBackColor = true;
-            this.button_kapa_safe.Click += new System.EventHandler(this.button_kapa_safe_Click);
             // 
             // Start
             // 
