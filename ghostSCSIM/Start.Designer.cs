@@ -31,8 +31,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.spracheToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -410,13 +410,8 @@
             this.tabDirektV = new System.Windows.Forms.TabPage();
             this.tabControl_dirver = new System.Windows.Forms.TabControl();
             this.tabPage_dirver_direktverkauf = new System.Windows.Forms.TabPage();
-            this.btn_direv_reset = new System.Windows.Forms.Button();
+            this.btn_dirver_save = new System.Windows.Forms.Button();
             this.dataGridView_dirver_direktverkauf = new System.Windows.Forms.DataGridView();
-            this.Column_dirver_direktverkauf_nummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_dirver_direktverkauf_menge = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_dirver_direktverkauf_preis = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_dirver_direktverkauf_strafe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column_dirver_direktverkauf_loeschenButton = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btn_direv_save = new System.Windows.Forms.Button();
             this.tabUebersicht = new System.Windows.Forms.TabPage();
             this.tabControl_uebersicht = new System.Windows.Forms.TabControl();
@@ -452,6 +447,10 @@
             this.lbl_xml_period = new System.Windows.Forms.Label();
             this.datenbankDataSet1 = new ghostSCSIM.DatenbankDataSet();
             this.bestelldatenTableAdapter = new ghostSCSIM.DatenbankDataSetTableAdapters.BestelldatenTableAdapter();
+            this.Column_dirver_direktverkauf_nummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_dirver_direktverkauf_menge = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_dirver_direktverkauf_preis = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column_dirver_direktverkauf_strafe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPrognose.SuspendLayout();
@@ -3040,18 +3039,18 @@
             // 
             // Column_best_bestelliste_nummer
             // 
-            dataGridViewCellStyle5.Format = "N0";
-            dataGridViewCellStyle5.NullValue = null;
-            this.Column_best_bestelliste_nummer.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle9.Format = "N0";
+            dataGridViewCellStyle9.NullValue = null;
+            this.Column_best_bestelliste_nummer.DefaultCellStyle = dataGridViewCellStyle9;
             resources.ApplyResources(this.Column_best_bestelliste_nummer, "Column_best_bestelliste_nummer");
             this.Column_best_bestelliste_nummer.Name = "Column_best_bestelliste_nummer";
             this.Column_best_bestelliste_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Column_best_bestelliste_menge
             // 
-            dataGridViewCellStyle6.Format = "N0";
-            dataGridViewCellStyle6.NullValue = null;
-            this.Column_best_bestelliste_menge.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle10.Format = "N0";
+            dataGridViewCellStyle10.NullValue = null;
+            this.Column_best_bestelliste_menge.DefaultCellStyle = dataGridViewCellStyle10;
             resources.ApplyResources(this.Column_best_bestelliste_menge, "Column_best_bestelliste_menge");
             this.Column_best_bestelliste_menge.Name = "Column_best_bestelliste_menge";
             this.Column_best_bestelliste_menge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -3182,20 +3181,23 @@
             // 
             // tabPage_dirver_direktverkauf
             // 
-            this.tabPage_dirver_direktverkauf.Controls.Add(this.btn_direv_reset);
+            this.tabPage_dirver_direktverkauf.Controls.Add(this.btn_dirver_save);
             this.tabPage_dirver_direktverkauf.Controls.Add(this.dataGridView_dirver_direktverkauf);
             resources.ApplyResources(this.tabPage_dirver_direktverkauf, "tabPage_dirver_direktverkauf");
             this.tabPage_dirver_direktverkauf.Name = "tabPage_dirver_direktverkauf";
             this.tabPage_dirver_direktverkauf.UseVisualStyleBackColor = true;
             // 
-            // btn_direv_reset
+            // btn_dirver_save
             // 
-            resources.ApplyResources(this.btn_direv_reset, "btn_direv_reset");
-            this.btn_direv_reset.Name = "btn_direv_reset";
-            this.btn_direv_reset.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.btn_dirver_save, "btn_dirver_save");
+            this.btn_dirver_save.Name = "btn_dirver_save";
+            this.btn_dirver_save.UseVisualStyleBackColor = true;
+            this.btn_dirver_save.Click += new System.EventHandler(this.btn_direv_save_Click);
             // 
             // dataGridView_dirver_direktverkauf
             // 
+            this.dataGridView_dirver_direktverkauf.AllowUserToAddRows = false;
+            this.dataGridView_dirver_direktverkauf.AllowUserToDeleteRows = false;
             this.dataGridView_dirver_direktverkauf.AllowUserToResizeColumns = false;
             this.dataGridView_dirver_direktverkauf.AllowUserToResizeRows = false;
             this.dataGridView_dirver_direktverkauf.BackgroundColor = System.Drawing.Color.LightGray;
@@ -3204,8 +3206,7 @@
             this.Column_dirver_direktverkauf_nummer,
             this.Column_dirver_direktverkauf_menge,
             this.Column_dirver_direktverkauf_preis,
-            this.Column_dirver_direktverkauf_strafe,
-            this.Column_dirver_direktverkauf_loeschenButton});
+            this.Column_dirver_direktverkauf_strafe});
             this.dataGridView_dirver_direktverkauf.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             resources.ApplyResources(this.dataGridView_dirver_direktverkauf, "dataGridView_dirver_direktverkauf");
             this.dataGridView_dirver_direktverkauf.Name = "dataGridView_dirver_direktverkauf";
@@ -3213,41 +3214,6 @@
             this.dataGridView_dirver_direktverkauf.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_dirver_direktverkauf_CellContentClick);
             this.dataGridView_dirver_direktverkauf.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dataGridView_dirver_direktverkauf_EditingControlShowing);
             this.dataGridView_dirver_direktverkauf.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dataGridView_dirver_direktverkauf_ValidateRow);
-            // 
-            // Column_dirver_direktverkauf_nummer
-            // 
-            resources.ApplyResources(this.Column_dirver_direktverkauf_nummer, "Column_dirver_direktverkauf_nummer");
-            this.Column_dirver_direktverkauf_nummer.Name = "Column_dirver_direktverkauf_nummer";
-            this.Column_dirver_direktverkauf_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_dirver_direktverkauf_menge
-            // 
-            resources.ApplyResources(this.Column_dirver_direktverkauf_menge, "Column_dirver_direktverkauf_menge");
-            this.Column_dirver_direktverkauf_menge.Name = "Column_dirver_direktverkauf_menge";
-            this.Column_dirver_direktverkauf_menge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_dirver_direktverkauf_preis
-            // 
-            resources.ApplyResources(this.Column_dirver_direktverkauf_preis, "Column_dirver_direktverkauf_preis");
-            this.Column_dirver_direktverkauf_preis.Name = "Column_dirver_direktverkauf_preis";
-            this.Column_dirver_direktverkauf_preis.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_dirver_direktverkauf_strafe
-            // 
-            this.Column_dirver_direktverkauf_strafe.DividerWidth = 3;
-            this.Column_dirver_direktverkauf_strafe.FillWeight = 101F;
-            resources.ApplyResources(this.Column_dirver_direktverkauf_strafe, "Column_dirver_direktverkauf_strafe");
-            this.Column_dirver_direktverkauf_strafe.Name = "Column_dirver_direktverkauf_strafe";
-            this.Column_dirver_direktverkauf_strafe.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column_dirver_direktverkauf_loeschenButton
-            // 
-            resources.ApplyResources(this.Column_dirver_direktverkauf_loeschenButton, "Column_dirver_direktverkauf_loeschenButton");
-            this.Column_dirver_direktverkauf_loeschenButton.Name = "Column_dirver_direktverkauf_loeschenButton";
-            this.Column_dirver_direktverkauf_loeschenButton.ReadOnly = true;
-            this.Column_dirver_direktverkauf_loeschenButton.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column_dirver_direktverkauf_loeschenButton.Text = "Zeile löschen";
-            this.Column_dirver_direktverkauf_loeschenButton.UseColumnTextForButtonValue = true;
             // 
             // btn_direv_save
             // 
@@ -3534,6 +3500,31 @@
             // bestelldatenTableAdapter
             // 
             this.bestelldatenTableAdapter.ClearBeforeFill = true;
+            // 
+            // Column_dirver_direktverkauf_nummer
+            // 
+            resources.ApplyResources(this.Column_dirver_direktverkauf_nummer, "Column_dirver_direktverkauf_nummer");
+            this.Column_dirver_direktverkauf_nummer.Name = "Column_dirver_direktverkauf_nummer";
+            this.Column_dirver_direktverkauf_nummer.ReadOnly = true;
+            this.Column_dirver_direktverkauf_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_dirver_direktverkauf_menge
+            // 
+            resources.ApplyResources(this.Column_dirver_direktverkauf_menge, "Column_dirver_direktverkauf_menge");
+            this.Column_dirver_direktverkauf_menge.Name = "Column_dirver_direktverkauf_menge";
+            this.Column_dirver_direktverkauf_menge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_dirver_direktverkauf_preis
+            // 
+            resources.ApplyResources(this.Column_dirver_direktverkauf_preis, "Column_dirver_direktverkauf_preis");
+            this.Column_dirver_direktverkauf_preis.Name = "Column_dirver_direktverkauf_preis";
+            this.Column_dirver_direktverkauf_preis.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column_dirver_direktverkauf_strafe
+            // 
+            resources.ApplyResources(this.Column_dirver_direktverkauf_strafe, "Column_dirver_direktverkauf_strafe");
+            this.Column_dirver_direktverkauf_strafe.Name = "Column_dirver_direktverkauf_strafe";
+            this.Column_dirver_direktverkauf_strafe.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Start
             // 
@@ -4022,17 +4013,16 @@
         private System.Windows.Forms.Button btn_best_reset;
         private System.Windows.Forms.Button btn_best_addRow;
         private System.Windows.Forms.Button btn_best_save;
-        private System.Windows.Forms.Button btn_direv_reset;
         private System.Windows.Forms.Button btn_direv_save;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_bestelliste_nummer;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_bestelliste_menge;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column_best_bestelliste_eil;
         private System.Windows.Forms.DataGridViewButtonColumn Column_best_bestelliste_loeschenButton;
+        private System.Windows.Forms.Button btn_dirver_save;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_nummer;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_menge;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_preis;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_strafe;
-        private System.Windows.Forms.DataGridViewButtonColumn Column_dirver_direktverkauf_loeschenButton;
        
 
     }

@@ -651,59 +651,77 @@
   <data name="&gt;&gt;tabReihenfolge.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="btn_direv_reset.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="btn_dirver_save.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btn_direv_reset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>786, 5</value>
+  <data name="btn_dirver_save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>737, 6</value>
   </data>
-  <data name="btn_direv_reset.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="btn_dirver_save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 23</value>
   </data>
-  <data name="btn_direv_reset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 23</value>
+  <data name="btn_dirver_save.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="btn_direv_reset.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="btn_dirver_save.Text" xml:space="preserve">
+    <value>Speichern</value>
   </data>
-  <data name="btn_direv_reset.Text" xml:space="preserve">
-    <value>Zurücksetzen</value>
+  <data name="&gt;&gt;btn_dirver_save.Name" xml:space="preserve">
+    <value>btn_dirver_save</value>
   </data>
-  <data name="&gt;&gt;btn_direv_reset.Name" xml:space="preserve">
-    <value>btn_direv_reset</value>
-  </data>
-  <data name="&gt;&gt;btn_direv_reset.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_dirver_save.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_direv_reset.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btn_dirver_save.Parent" xml:space="preserve">
     <value>tabPage_dirver_direktverkauf</value>
   </data>
-  <data name="&gt;&gt;btn_direv_reset.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btn_dirver_save.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="Column_dirver_direktverkauf_nummer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="Column_dirver_direktverkauf_nummer.HeaderText" xml:space="preserve">
+    <value>Teilenummer</value>
+  </data>
+  <data name="Column_dirver_direktverkauf_nummer.Width" type="System.Int32, mscorlib">
+    <value>245</value>
+  </data>
   <metadata name="Column_dirver_direktverkauf_menge.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="Column_dirver_direktverkauf_menge.HeaderText" xml:space="preserve">
+    <value>Menge</value>
+  </data>
+  <data name="Column_dirver_direktverkauf_menge.Width" type="System.Int32, mscorlib">
+    <value>245</value>
+  </data>
   <metadata name="Column_dirver_direktverkauf_preis.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="Column_dirver_direktverkauf_preis.HeaderText" xml:space="preserve">
+    <value>Preis</value>
+  </data>
+  <data name="Column_dirver_direktverkauf_preis.Width" type="System.Int32, mscorlib">
+    <value>245</value>
+  </data>
   <metadata name="Column_dirver_direktverkauf_strafe.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column_dirver_direktverkauf_loeschenButton.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="Column_dirver_direktverkauf_strafe.HeaderText" xml:space="preserve">
+    <value>Strafe</value>
+  </data>
+  <data name="Column_dirver_direktverkauf_strafe.Width" type="System.Int32, mscorlib">
+    <value>243</value>
+  </data>
   <data name="dataGridView_dirver_direktverkauf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 35</value>
+    <value>3, 37</value>
   </data>
   <data name="dataGridView_dirver_direktverkauf.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
   <data name="dataGridView_dirver_direktverkauf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>982, 463</value>
+    <value>982, 461</value>
   </data>
   <data name="dataGridView_dirver_direktverkauf.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -13827,51 +13845,6 @@
   <data name="Column_rf_rfPlanung_Index.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <metadata name="Column_dirver_direktverkauf_nummer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_dirver_direktverkauf_nummer.HeaderText" xml:space="preserve">
-    <value>Teilenummer</value>
-  </data>
-  <data name="Column_dirver_direktverkauf_nummer.Width" type="System.Int32, mscorlib">
-    <value>195</value>
-  </data>
-  <metadata name="Column_dirver_direktverkauf_menge.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_dirver_direktverkauf_menge.HeaderText" xml:space="preserve">
-    <value>Menge</value>
-  </data>
-  <data name="Column_dirver_direktverkauf_menge.Width" type="System.Int32, mscorlib">
-    <value>196</value>
-  </data>
-  <metadata name="Column_dirver_direktverkauf_preis.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_dirver_direktverkauf_preis.HeaderText" xml:space="preserve">
-    <value>Preis</value>
-  </data>
-  <data name="Column_dirver_direktverkauf_preis.Width" type="System.Int32, mscorlib">
-    <value>195</value>
-  </data>
-  <metadata name="Column_dirver_direktverkauf_strafe.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_dirver_direktverkauf_strafe.HeaderText" xml:space="preserve">
-    <value>Strafe</value>
-  </data>
-  <data name="Column_dirver_direktverkauf_strafe.Width" type="System.Int32, mscorlib">
-    <value>197</value>
-  </data>
-  <metadata name="Column_dirver_direktverkauf_loeschenButton.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="Column_dirver_direktverkauf_loeschenButton.HeaderText" xml:space="preserve">
-    <value>Bearbeiten</value>
-  </data>
-  <data name="Column_dirver_direktverkauf_loeschenButton.Width" type="System.Int32, mscorlib">
-    <value>196</value>
-  </data>
   <data name="&gt;&gt;tabUebersicht_uebersicht.Name" xml:space="preserve">
     <value>tabUebersicht_uebersicht</value>
   </data>
@@ -14838,36 +14811,6 @@
   <data name="&gt;&gt;Column_rf_rfPlanung_Index.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_nummer.Name" xml:space="preserve">
-    <value>Column_dirver_direktverkauf_nummer</value>
-  </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_nummer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_menge.Name" xml:space="preserve">
-    <value>Column_dirver_direktverkauf_menge</value>
-  </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_menge.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_preis.Name" xml:space="preserve">
-    <value>Column_dirver_direktverkauf_preis</value>
-  </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_preis.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_strafe.Name" xml:space="preserve">
-    <value>Column_dirver_direktverkauf_strafe</value>
-  </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_strafe.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_loeschenButton.Name" xml:space="preserve">
-    <value>Column_dirver_direktverkauf_loeschenButton</value>
-  </data>
-  <data name="&gt;&gt;Column_dirver_direktverkauf_loeschenButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewButtonColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;Column_uebersicht_dirver_nummer.Name" xml:space="preserve">
     <value>Column_uebersicht_dirver_nummer</value>
   </data>
@@ -14987,6 +14930,30 @@
   </data>
   <data name="&gt;&gt;bestelldatenTableAdapter.Type" xml:space="preserve">
     <value>ghostSCSIM.DatenbankDataSetTableAdapters.BestelldatenTableAdapter, DatenbankDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Column_dirver_direktverkauf_nummer.Name" xml:space="preserve">
+    <value>Column_dirver_direktverkauf_nummer</value>
+  </data>
+  <data name="&gt;&gt;Column_dirver_direktverkauf_nummer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_dirver_direktverkauf_menge.Name" xml:space="preserve">
+    <value>Column_dirver_direktverkauf_menge</value>
+  </data>
+  <data name="&gt;&gt;Column_dirver_direktverkauf_menge.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_dirver_direktverkauf_preis.Name" xml:space="preserve">
+    <value>Column_dirver_direktverkauf_preis</value>
+  </data>
+  <data name="&gt;&gt;Column_dirver_direktverkauf_preis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column_dirver_direktverkauf_strafe.Name" xml:space="preserve">
+    <value>Column_dirver_direktverkauf_strafe</value>
+  </data>
+  <data name="&gt;&gt;Column_dirver_direktverkauf_strafe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Start</value>

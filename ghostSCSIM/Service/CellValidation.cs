@@ -100,7 +100,7 @@ namespace ghostSCSIM.service
             //Artikelnummer ist keine gültige Kaufteilnummer
             else
             {
-                List<Teil> teileListe = new List<Teil>(dao.getTeilStammdaten());
+                List<Teil> teileListe = new List<Teil>(dao.getFertigerzeugnisseStammdaten());
                 //Liste aller Teilenummern
                 List<int> teilenummern = new List<int>();
 
@@ -134,7 +134,7 @@ namespace ghostSCSIM.service
                 return false;
             }
             //Menge: Keine (positive) Ganzzahl
-            else if (!int.TryParse(mengeCell.FormattedValue.ToString(), out intValue) || intValue <= 0)
+            else if (!int.TryParse(mengeCell.FormattedValue.ToString(), out intValue) || intValue < 0)
             {
                 return false;
             }
@@ -158,7 +158,7 @@ namespace ghostSCSIM.service
                 return false;
             }
             //Preis ist keine (positive) Dezimalzahl
-            else if (!double.TryParse(preisCell.FormattedValue.ToString(), out doubleValue) || doubleValue <= 0)
+            else if (!double.TryParse(preisCell.FormattedValue.ToString(), out doubleValue) || doubleValue < 0)
             {
                 return false;
             }

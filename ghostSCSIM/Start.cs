@@ -458,7 +458,7 @@ namespace ghostSCSIM
 
             if (!validateCell.direktverkaufNummerIsValid(teilenummerCell))
             {
-                teilenummerCell.ErrorText = "Bitte geben Sie eine gültige Teilenummer an!";
+                teilenummerCell.ErrorText = "Bitte geben Sie eine gültige Artikelnummer an!";
 
                 return false;
             }
@@ -837,7 +837,12 @@ namespace ghostSCSIM
             #region tabDirektV
             if (tabControl1.SelectedTab == tabControl1.TabPages["tabDirektV"])
             {
-                
+                if (dataGridView_dirver_direktverkauf.Rows.Count == 0)
+                {
+                    dataGridView_dirver_direktverkauf.Rows.Add(1, 0, 0.00, 0.00);
+                    dataGridView_dirver_direktverkauf.Rows.Add(2, 0, 0.00, 0.00);
+                    dataGridView_dirver_direktverkauf.Rows.Add(3, 0, 0.00, 0.00);
+                }
             }
             #endregion
             #region tabUebersicht
@@ -2243,23 +2248,11 @@ namespace ghostSCSIM
 
             if (dataGridView_dirver_direktverkauf.Rows.Count > 0)
             {
-              
-                foreach (DataGridViewRow row in dataGridView_dirver_direktverkauf.Rows)
+              foreach (DataGridViewRow row in dataGridView_dirver_direktverkauf.Rows)
                 {
-                    int teileNummer = Convert.ToInt32(row.Cells[0].Value);
-                    int menge = Convert.ToInt32(row.Cells[1].Value);
-                    double preis = Convert.ToDouble(row.Cells[2].Value);
-                    double strafe = Convert.ToDouble(row.Cells[3].Value);
-
-                    //Dummy-Validierung
-                    if (!((teileNummer > 59) || (teileNummer < 1)))
-                    {
-                        Direktverkauf dv = new Direktverkauf(new Teil(teileNummer), menge, preis, strafe);
-                        direktVerkauf.Add(dv);
-                    }
+                    saveAsDirektverkauf(row);
                 }
             }
         }
-
     }
 }
