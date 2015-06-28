@@ -54,7 +54,7 @@ namespace ghostSCSIM
 
         //Teilestammdaten
         private static List<Teil> teileStammdaten = new List<Teil>();
-        
+                          
         //Direktverkauf
         private List<Direktverkauf> direktVerkauf;          
         //Reihenfolgenplanung
@@ -71,8 +71,17 @@ namespace ghostSCSIM
 
         //Bestellliste
         private List<Bestellung> bestellungsListe;
+                
+        //Arbeitsplätze
+        private List<Arbeitsplatz> arbeitsplatzListe = new List<Arbeitsplatz>();
+                 
+        //Direktverkäufe
+        private List<Direktverkauf> direktverkaufListe = new List<Direktverkauf>();
 
-                        
+        //Validierung
+        private CellValidation validateCell = new CellValidation();
+                
+                 
         //Produktionsprogramm aus View, Key = Teilenummer
         private static Dictionary<int, int> produktionP1 = new Dictionary<int, int>();
         private static Dictionary<int, int> produktionP2 = new Dictionary<int, int>();
@@ -247,6 +256,7 @@ namespace ghostSCSIM
             MessageBox.Show(lieferDaten.ToString());
         }
 
+        //Delete Button Bestellliste
         private void dataGridView_best_bestellliste_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             var senderGrid = (DataGridView)sender;
@@ -257,6 +267,7 @@ namespace ghostSCSIM
             }
         }
 
+        //Delete Button Direktverkauf
         private void dataGridView_dirver_direktverkauf_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             var senderGrid = (DataGridView)sender;
@@ -280,7 +291,301 @@ namespace ghostSCSIM
             }
         }
 
-       //Testbutton für das Generieren der Input XML-Datei
+
+        #region Validierung
+
+        //Nur numerische Zeichen als Eingabe beim Kapazitätsplan DataGridView akzeptieren
+        private void dataGridView_kp_uebersicht_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            e.Control.KeyPress += new KeyPressEventHandler(onlynum_KeyPress);
+        }
+
+        /// <summary>
+        /// Validierungsanzeige für Kapazitätsplan
+        /// </summary>
+        /// <returns></returns>
+        private void dataGridView_kp_uebersicht_ValidateRow(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            //Keine Validierung falls es sich um eine neue Zeile handelt
+            if (dataGridView_kp_uebersicht.Rows[e.RowIndex].IsNewRow)
+                return;
+
+            DataGridViewCell ueberstundenCell = dataGridView_kp_uebersicht.Rows[e.RowIndex].Cells[6];
+            bool dreiSchichten = Convert.ToBoolean(dataGridView_kp_uebersicht.Rows[e.RowIndex].Cells[8].Value);
+            kapazitaetsplan_ueberstunden_isValid(ueberstundenCell, dreiSchichten);
+
+            e.Cancel = !kapazitaetsplan_ueberstunden_isValid(ueberstundenCell, dreiSchichten); //TODO: User am Verlassen der Zeile hindern?
+        }
+
+        //Hilfsmethode für die Validierung der "Überstunden"-Spalte im Kapazitätsplan
+        private bool kapazitaetsplan_ueberstunden_isValid(DataGridViewCell ueberstundenCell, bool dreiSchichten)
+        {
+            ueberstundenCell.ErrorText = "";
+
+            //Keine Eingabe oder keine positive Zahl
+            if (!validateCell.kapaPlanUeberstundenIsValid(ueberstundenCell))
+            {
+                ueberstundenCell.ErrorText = "Bitte geben Sie eine gültige Überstundenanzahl an!";
+
+                return false;
+            }
+            //Maximale Überstundenanzahl überschritten
+            else if (!validateCell.kapaPlanUeberstundenMaxIsValid(ueberstundenCell))
+            {
+                ueberstundenCell.ErrorText = "Die maximale Überstundenanzahl beträgt 240 Minuten pro Tag!";
+
+                return false;
+            }
+            //Überstunden trotz 3 Schichten angesetzt
+            else if (!validateCell.kapaPlanUeberstundenSchichtIsValid(ueberstundenCell, dreiSchichten))
+            {
+                ueberstundenCell.ErrorText = "Bei einer Anzahl von 3 Schichten sind keine Überstunden möglich!";
+
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+
+        //Nur numerische Zeichen als Eingabe bei der Bestellliste DataGridView akzeptieren
+        private void dataGridView_best_bestellliste_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            e.Control.KeyPress += new KeyPressEventHandler(onlynum_KeyPress);
+        }
+
+        /// <summary>
+        /// Eingaben beim Datagridview für die Bestellliste validieren und gegebenenfalls die Zeile sperren
+        /// </summary>
+        /// <returns></returns>
+        private void dataGridView_best_bestellliste_ValidateRow(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            //Keine Validierung falls es sich um eine neue Zeile handelt
+            if (dataGridView_best_bestellliste.Rows[e.RowIndex].IsNewRow)
+                return;
+
+            DataGridViewCell nummerCell = dataGridView_best_bestellliste.Rows[e.RowIndex].Cells[0];
+            DataGridViewCell mengeCell = dataGridView_best_bestellliste.Rows[e.RowIndex].Cells[1];
+
+            bestellliste_menge_isValid(mengeCell);
+            bestellliste_nummer_isValid(nummerCell);
+            e.Cancel = !bestellliste_menge_isValid(mengeCell) || !bestellliste_nummer_isValid(nummerCell);
+        }
+
+        //Hilfsmethode für die Validierung der "Nummer"-Spalte in der Bestellliste
+        private bool bestellliste_nummer_isValid(DataGridViewCell teilenummerCell)
+        {
+            teilenummerCell.ErrorText = "";
+
+            if (!validateCell.bestellungNummerIsValid(teilenummerCell))
+            {
+                teilenummerCell.ErrorText = "Bitte geben Sie eine gültige Kaufteilnummer an!";
+
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        //Hilfsmethode für die Validierung der "Menge"-Spalte in der Bestellliste
+        private bool bestellliste_menge_isValid(DataGridViewCell mengeCell)
+        {
+            mengeCell.ErrorText = "";
+
+            if (!validateCell.bestellungMengeIsValid(mengeCell))
+            {
+                mengeCell.ErrorText = "Bitte geben Sie die zu bestellende Menge an!";
+
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+
+        //Nur numerische Zeichen oder numerische Zeichen und einen Punkt als Eingabe bei der Bestellliste DataGridView akzeptieren
+        private void dataGridView_dirver_direktverkauf_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            e.Control.KeyPress += new KeyPressEventHandler(direktverkauf_KeyPress);
+        }
+
+        /// <summary>
+        /// Eingaben beim Datagridview für den Direktverkauf validieren und gegebenenfalls die Zeile sperren
+        /// </summary>
+        /// <returns></returns>
+        private void dataGridView_dirver_direktverkauf_ValidateRow(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            //Keine Validierung falls es sich um eine neue Zeile handelt
+            if (dataGridView_dirver_direktverkauf.Rows[e.RowIndex].IsNewRow)
+                return;
+
+            DataGridViewCell nummerCell = dataGridView_dirver_direktverkauf.Rows[e.RowIndex].Cells[0];
+            DataGridViewCell mengeCell = dataGridView_dirver_direktverkauf.Rows[e.RowIndex].Cells[1];
+            DataGridViewCell preisCell = dataGridView_dirver_direktverkauf.Rows[e.RowIndex].Cells[2];
+            DataGridViewCell strafeCell = dataGridView_dirver_direktverkauf.Rows[e.RowIndex].Cells[3];
+
+            direktverkauf_strafe_isValid(strafeCell);
+            direktverkauf_preis_isValid(preisCell);
+            direktverkauf_menge_isValid(mengeCell);
+            direktverkauf_nummer_isValid(nummerCell);
+            e.Cancel = !direktverkauf_preis_isValid(preisCell) || !direktverkauf_menge_isValid(mengeCell) || !direktverkauf_nummer_isValid(nummerCell);
+        }
+
+        //Hilfsmethode für die Validierung der "Nummer"-Spalte im Direktverkauf
+        private bool direktverkauf_nummer_isValid(DataGridViewCell teilenummerCell)
+        {
+            teilenummerCell.ErrorText = "";
+
+            if (!validateCell.direktverkaufNummerIsValid(teilenummerCell))
+            {
+                teilenummerCell.ErrorText = "Bitte geben Sie eine gültige Teilenummer an!";
+
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        //Hilfsmethode für die Validierung der "Menge"-Spalte im Direktverkauf
+        private bool direktverkauf_menge_isValid(DataGridViewCell mengeCell)
+        {
+            mengeCell.ErrorText = "";
+
+            if (!validateCell.direktverkaufMengeIsValid(mengeCell))
+            {
+                mengeCell.ErrorText = "Bitte geben Sie die zu verkaufende Menge an!";
+
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        //Hilfsmethode für die Validierung der "Preis"-Spalte im Direktverkauf
+        private bool direktverkauf_preis_isValid(DataGridViewCell preisCell)
+        {
+            preisCell.ErrorText = "";
+
+            if (!validateCell.direktverkaufPreisIsValid(preisCell))
+            {
+                preisCell.ErrorText = "Bitte geben Sie einen Verkaufspreis an!";
+
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        //Hilfsmethode für die Validierung der "Strafe"-Spalte im Direktverkauf
+        private bool direktverkauf_strafe_isValid(DataGridViewCell strafeCell)
+        {
+            strafeCell.ErrorText = "";
+
+            //Keine Eingabe
+            if (!validateCell.direktverkaufStrafeIsValid(strafeCell))
+            {
+                strafeCell.ErrorText = "Bitte geben Sie die Höhe der Strafzahlung an!";
+
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        //TODO: Validierung Fertigung
+
+        #endregion
+
+
+        #region Daten von Kapa und DVerkauf in Listen speichern
+
+        //Daten des Kapazitätsplan DataGridView speichern, sobald die Kapazitätsplan TabControl verlassen wird
+        private void tabControl_kapa_Leave(object sender, EventArgs e)
+        {
+            TabControl senderTabControl = (TabControl)sender;
+
+            if (senderTabControl == tabControl_kp)
+            {
+                arbeitsplatzListe.Clear();
+
+                foreach (DataGridViewRow row in dataGridView_kp_uebersicht.Rows)
+                {
+                    saveAsArbeitsplatz(row);
+                }
+            }
+        }
+
+        private void saveAsArbeitsplatz(DataGridViewRow row)
+        {
+            int apNummer = Convert.ToInt32(row.Cells[0].Value);
+            int ueberstunden = Convert.ToInt32(row.Cells[6].Value); ;
+            int schichten = 1;
+            if (Convert.ToBoolean(row.Cells[8].Value))
+                schichten = 3;
+            else if (Convert.ToBoolean(row.Cells[7].Value))
+                schichten = 2;
+            
+            arbeitsplatzListe.Add(new Arbeitsplatz(apNummer, ueberstunden, schichten));
+        }
+
+        //Daten des Direktverkauf DataGridView speichern, sobald die Direktverkauf TabControl verlassen wird
+        private void tabControl_dirver_Leave(object sender, EventArgs e)
+        {
+            TabControl senderTabControl = (TabControl)sender;
+
+            if (senderTabControl == tabControl_dirver)
+            {
+                direktverkaufListe.Clear();
+
+                foreach (DataGridViewRow row in dataGridView_dirver_direktverkauf.Rows)
+                {
+                    saveAsDirektverkauf(row);
+                }
+            }
+        }
+
+        private void saveAsDirektverkauf(DataGridViewRow row)
+        {
+            if (!row.IsNewRow)
+            {
+                Teil teil = getTeilByTeilenummer(Convert.ToInt32(row.Cells[0].Value));
+                int menge = Convert.ToInt32(row.Cells[1].Value);
+                double preis = Math.Round(Convert.ToDouble(row.Cells[2].Value), 2);
+                double strafe = Math.Round(Convert.ToDouble(row.Cells[3].Value), 2);
+
+                direktverkaufListe.Add(new Direktverkauf(teil, menge, preis, strafe));
+            }
+        }
+
+
+        private Teil getTeilByTeilenummer(int teilenummer)
+        {
+            List<Teil> teileStammdaten = dao.getTeilStammdaten();
+            foreach (Teil t in teileStammdaten)
+            {
+                if (t.getNummer() == teilenummer)
+                    return t;
+            }
+            return null;
+        }
+
+        #endregion
+
+       //Button für das Generieren der Input XML-Datei
         private void createXml_Click(object sender, EventArgs e)
         {
             var fileDialog = new SaveFileDialog { };
@@ -304,35 +609,11 @@ namespace ghostSCSIM
 
         private void collectOutputData()
         {
-            //Vertriebswünsche:
-            //xmlResult.setVertriebswuensche(Convert.ToInt32(pp_p1_p1_vw.Text.), Convert.ToInt32(pp_p2_p2_vw.Text), Convert.ToInt32(pp_p3_p3_vw.Text));
-            xmlResult.setVertriebswuensche(100, 100, 100);
-
-            //Bestellliste
-            foreach (DataGridViewRow row in dataGridView_best_bestellliste.Rows)
-            {
-                int teilenummer = Convert.ToInt32(row.Cells[0].Value);
-                //TODO: Teil anhand der Teilenummer finden (ohne Pfusch)!
-                Teil teil = dao.getKaufteileStammdaten()[teilenummer];
-                int menge = Convert.ToInt32(row.Cells[1].Value);
-                bool eilbestellung = false;
-                if (row.Cells[2].Value != null)
-                {
-                    eilbestellung = true;
-                }
-                xmlResult.addBestellposition(teil, menge, eilbestellung);
-            }
-
-            //Direktverkauf:
-            foreach (DataGridViewRow row in dataGridView_dirver_direktverkauf.Rows)
-            {
-                int teilenummer = Convert.ToInt32(row.Cells[0].Value);
-                //TODO: Teil anhand der Teilenummer finden (ohne Pfusch)!
-                Teil teil = dao.getKaufteileStammdaten()[teilenummer];
-                int menge = Convert.ToInt32(row.Cells[1].Value);
-                double preis = Convert.ToDouble(row.Cells[2].Value);
-                xmlResult.addDirektverkauf(teil, menge, preis, 0.0);
-            }
+            xmlResult.setVertriebswuensche(Convert.ToInt32(kinder_prog_p1.Text), Convert.ToInt32(damen_prog_p1.Text), Convert.ToInt32(herren_prog_p1.Text));
+            xmlResult.setFertigung(listRfpglobal);
+            xmlResult.setArbeitsplaetze(arbeitsplatzListe);
+            xmlResult.setBestellung(bestellungsListe);
+            xmlResult.setDirektverkauf(direktverkaufListe);
         }
 
         /// <summary>
@@ -344,7 +625,7 @@ namespace ghostSCSIM
             #region tabPrognose
             if (tabControl1.SelectedTab == tabControl1.TabPages["tabPrognose"])
             {
-
+               
             }
             #endregion
             #region tabProdplan
@@ -479,7 +760,7 @@ namespace ghostSCSIM
 
                     
                 }
-
+                
             }
             #endregion
             #region tabReihenfolge
@@ -517,9 +798,9 @@ namespace ghostSCSIM
 
         }
 
+
         #region Übersicht
 
-        //TODO:
         private void fillFertigungDataGridView()
         {
             dataGridView_uebersicht_fertigung.Rows.Clear();
@@ -529,50 +810,73 @@ namespace ghostSCSIM
             }            
         }
 
-        //TODO:
         private void fillKapaDataGridView()
         {
-            foreach (DataGridViewRow row in dataGridView_kp_uebersicht.Rows)
+            dataGridView_uebersicht_kapa.Rows.Clear();
+            foreach (Arbeitsplatz ap in arbeitsplatzListe)
             {
-                int schichten = 1;
-                if (Convert.ToBoolean(row.Cells[8].Value))
-                    schichten = 3;
-                else if (Convert.ToBoolean(row.Cells[7].Value))
-                    schichten = 2;
-
-                dataGridView_uebersicht_kapa.Rows.Add(row.Cells[0].Value, row.Cells[6].Value, schichten);
+                int lastRowAdded = dataGridView_uebersicht_kapa.Rows.Add(ap.getApNummer(), ap.getUeberstunden(), ap.getSchichten());
+                dataGridView_uebersicht_kapa_ValidateRow(dataGridView_uebersicht_kapa.Rows[lastRowAdded]);
             }
         }
 
-       
         private void fillBestDataGridView()
         {
-            //foreach (Bestellung bestellung in bestellungsListe)
-            //{
-            //    bool bestelltyp = false;
-            //    if (bestellung.getBestellTyp().Equals(Bestelltyp.F))
-            //    {
-            //        bestelltyp = true;
-            //    }
-            //    dataGridView_uebersicht_best.Rows.Add(bestellung.getTeil().getNummer(), bestellung.getMenge(), bestelltyp);
-            //}            
             dataGridView_uebersicht_best.Rows.Clear();
-            foreach (DataGridViewRow row in dataGridView_best_bestellliste.Rows)
+            foreach (Bestellung bestellung in bestellungsListe)
             {
-                
-                if(!row.IsNewRow)
-                    dataGridView_uebersicht_best.Rows.Add(row.Cells[0].Value, row.Cells[1].Value, row.Cells[2].Value);
+                bool bestelltyp = false;
+                if (bestellung.getBestellTyp().Equals(Bestelltyp.F))
+                    bestelltyp = true;
+
+                int lastRowAdded = dataGridView_uebersicht_best.Rows.Add(bestellung.getTeil().getNummer(), bestellung.getMenge(), bestelltyp);
+                dataGridView_uebersicht_best_ValidateRow(dataGridView_uebersicht_best.Rows[lastRowAdded]);
             }
         }
 
-        //TODO:
         private void fillDirverDataGridView()
         {
-            foreach (DataGridViewRow row in dataGridView_dirver_direktverkauf.Rows)
+            dataGridView_uebersicht_dirver.Rows.Clear();
+            foreach (Direktverkauf dv in direktverkaufListe)
             {
-                if(!row.IsNewRow)
-                    dataGridView_uebersicht_dirver.Rows.Add(row.Cells[0].Value, row.Cells[1].Value, row.Cells[2].Value, row.Cells[3].Value);
+                int lastRowAdded = dataGridView_uebersicht_dirver.Rows.Add(dv.getTeil().getNummer(), dv.getMenge(), dv.getPreis(), dv.getStrafe());
+                dataGridView_uebersicht_dirver_ValidateRow(dataGridView_uebersicht_dirver.Rows[lastRowAdded]);
             }
+        }
+
+        //TODO: Validate Reihenfolge
+
+        /// <summary>
+        /// Validierungsanzeige für Zeilen des DataGridView Kapazitätsplan im Tab Übersicht
+        /// </summary>
+        /// <returns></returns>
+        private void dataGridView_uebersicht_kapa_ValidateRow(DataGridViewRow row)
+        {
+            bool dreiSchichten = Convert.ToInt32(row.Cells[2].Value) == 3;
+            
+            kapazitaetsplan_ueberstunden_isValid(row.Cells[1], dreiSchichten);
+        }
+
+        /// <summary>
+        /// Validierungsanzeige für Zeilen des DataGridView Bestellung im Tab Übersicht
+        /// </summary>
+        /// <returns></returns>
+        private void dataGridView_uebersicht_best_ValidateRow(DataGridViewRow row)
+            {
+            bestellliste_menge_isValid(row.Cells[1]);
+            bestellliste_nummer_isValid(row.Cells[0]);
+            }
+
+        /// <summary>
+        /// Validierungsanzeige für Zeilen des DataGridView Direktverkauf im Tab Übersicht
+        /// </summary>
+        /// <returns></returns>
+        private void dataGridView_uebersicht_dirver_ValidateRow(DataGridViewRow row)
+        {
+            direktverkauf_strafe_isValid(row.Cells[3]);
+            direktverkauf_preis_isValid(row.Cells[2]);
+            direktverkauf_menge_isValid(row.Cells[1]);
+            direktverkauf_nummer_isValid(row.Cells[0]);
         }
 
         #endregion
@@ -976,7 +1280,7 @@ namespace ghostSCSIM
 
             return rf;
         }
-
+    
         #region Bestellung
         private void fillBestellungsTabWithData(object sender, EventArgs e)
         {
@@ -995,7 +1299,7 @@ namespace ghostSCSIM
                     //TODO: Für Sprachsteuerung anpassbar machen
                     //TODO: Angleichen bei neuer Column Anordnung
                     int periodN = xmlData.period;
-
+                    
                     string bruttoBedarfPeriodeLocalised = culInfo.Contains(de) ? (deBruttobedarf + " " + dePeriode) : (enBruttobedarf + " " + enPeriode);
                     string bestandPeriodeLocalised = culInfo.Contains(de) ? (deBestand + " " + dePeriode) : (enBestand + " " + enPeriode);
 
@@ -1023,66 +1327,66 @@ namespace ghostSCSIM
                     {
                         int teilenummer = teil.getNummer();
 
-                        DispositionErgebnis einDispoErgebnis = dispoErgebnis.First(dispo => dispo.getTeil().Equals(teil));
+                                DispositionErgebnis einDispoErgebnis = dispoErgebnis.First(dispo => dispo.getTeil().Equals(teil));
 
 
-                        int bruttoBedarfP1 = einDispoErgebnis.getBruttoBedarfPeriode1();
-                        int bruttoBedarfP2 = einDispoErgebnis.getBruttoBedarfPeriode2();
-                        int bruttoBedarfP3 = einDispoErgebnis.getBruttoBedarfPeriode3();
-                        int bruttoBedarfP4 = einDispoErgebnis.getBruttoBedarfPeriode4();
+                                int bruttoBedarfP1 = einDispoErgebnis.getBruttoBedarfPeriode1();
+                                int bruttoBedarfP2 = einDispoErgebnis.getBruttoBedarfPeriode2();
+                                int bruttoBedarfP3 = einDispoErgebnis.getBruttoBedarfPeriode3();
+                                int bruttoBedarfP4 = einDispoErgebnis.getBruttoBedarfPeriode4();
 
-                        //Lagerbestand nach Periode 1 wenn noch Restteile aus angekommener Bestellung vorhanden sind
-                        int lagerBestand = einDispoErgebnis.getLieferDaten().getLagerMenge();
-                        int lagerZugang = einDispoErgebnis.getLagerzugang();
-
-
-                        int[] bestaende = einDispoErgebnis.getBestaende();
-                        int bestandN1 = bestaende[0];
-                        int bestandN2 = bestaende[1];
-                        int bestandN3 = bestaende[2];
-                        int bestandN4 = bestaende[3];
+                                //Lagerbestand nach Periode 1 wenn noch Restteile aus angekommener Bestellung vorhanden sind
+                                int lagerBestand = einDispoErgebnis.getLieferDaten().getLagerMenge();
+                                int lagerZugang = einDispoErgebnis.getLagerzugang();
 
 
-                        int criticalFlag = einDispoErgebnis.getCriticalFlag();
+                                int[] bestaende = einDispoErgebnis.getBestaende();
+                                int bestandN1 = bestaende[0];
+                                int bestandN2 = bestaende[1];
+                                int bestandN3 = bestaende[2];
+                                int bestandN4 = bestaende[3];
+                                
 
+                                int criticalFlag = einDispoErgebnis.getCriticalFlag();
+                                
                         int indexOfNewRow = dataGridView_best_kaufteileverbrauch.Rows.Add(teilenummer.ToString(), lagerBestand.ToString(), lagerZugang.ToString(), false,
-                            bruttoBedarfP1.ToString(), bruttoBedarfP2.ToString(), bruttoBedarfP3.ToString(), bruttoBedarfP4.ToString(),
-                            bestandN1.ToString(), bestandN2.ToString(), bestandN3.ToString(), bestandN4.ToString());
+                                    bruttoBedarfP1.ToString(), bruttoBedarfP2.ToString(), bruttoBedarfP3.ToString(), bruttoBedarfP4.ToString(),
+                                    bestandN1.ToString(), bestandN2.ToString(), bestandN3.ToString(), bestandN4.ToString());
+                            
+                            //Produktion kann nicht durchgeführt werden
+                            if (criticalFlag == 2)
+                            {
+                                dataGridView_best_kaufteileverbrauch.Rows[indexOfNewRow].Cells["Column_best_kaufteileverbrauch_bestandN1"].Style.BackColor = Color.Red;
+                                                               
+                            }
 
-                        //Produktion kann nicht durchgeführt werden
-                        if (criticalFlag == 2)
-                        {
-                            dataGridView_best_kaufteileverbrauch.Rows[indexOfNewRow].Cells["Column_best_kaufteileverbrauch_bestandN1"].Style.BackColor = Color.Red;
-
-                        }
-
-                        if (criticalFlag == 1)
-                        {
+                            if (criticalFlag == 1)
+                            {
                             dataGridView_best_kaufteileverbrauch.Rows[indexOfNewRow].Cells["Column_best_kaufteileverbrauch_produktionskritisch"].Value = true;
-                            //dataGridView_best_kaufteileverbrauch.Rows[indexOfNewRow].Cells["Column_best_kaufteileverbrauch_bestandN1"].Style.ForeColor = ControlPaint.Light(Color.Red);
-                        }
+                                //dataGridView_best_kaufteileverbrauch.Rows[indexOfNewRow].Cells["Column_best_kaufteileverbrauch_bestandN1"].Style.ForeColor = ControlPaint.Light(Color.Red);
+                            }
 
                         int index = 0;
                         if (criticalFlag == 2)
-                        {
+                                {
                             index = 1;
-                        }
+                            }
                         //Zellen leicht rot einfärben wenn Bestand negativ
                         while (index < bestaende.Count())
-                        {
-                            if (bestaende[index] <= 0)
                             {
-
+                            if (bestaende[index] <= 0)
+                                {
+                                    
                                 dataGridView_best_kaufteileverbrauch.Rows[indexOfNewRow].Cells[index + 8].Style.ForeColor = ControlPaint.Light(Color.Red);
-                            }
+                                    }
                             ++index;
-                        }
+                                    }
 
+                                }
+                            }
+                        }
                     }
-                }
-            }
-        }
-        
+
         private void generateBestellListe()
         {            
                 if (xmlData.getXmlImported() && dispoErgebnis != null)
@@ -1112,15 +1416,15 @@ namespace ghostSCSIM
                 
             }
         }
-
-       
+            
+            
         //Neue Zeile zu den Bestellungrows hinzufügen
         private void btn_best_addRow_Click(object sender, EventArgs e)
         {
             dataGridView_best_bestellliste.Rows.Add();
             int newIndex = dataGridView_best_bestellliste.Rows.Count-1;
             dataGridView_best_bestellliste.CurrentCell = this.dataGridView_best_bestellliste["Column_best_bestelliste_nummer", newIndex];
-            
+
         }
 
         //Bestellliste speichern
@@ -1155,32 +1459,8 @@ namespace ghostSCSIM
             }
             generateBestellListe();
         }
+
         
-        //Eingaben in der Bestellliste validieren
-        private void dataGridView_best_bestellliste_ValidateRow(object sender, DataGridViewCellCancelEventArgs e)
-        {
-            //Keine Validierung falls es sich um eine neue Zeile handelt
-            if (dataGridView_best_bestellliste.Rows[e.RowIndex].IsNewRow)
-                return;
-
-            DataGridViewCell nummerCell = dataGridView_best_bestellliste.Rows[e.RowIndex].Cells[0];
-            DataGridViewCell mengeCell = dataGridView_best_bestellliste.Rows[e.RowIndex].Cells[1];
-
-            //Validierung erfolgreich
-            if (bestellliste_menge_validieren(mengeCell) && bestellliste_nummer_validieren(nummerCell))
-            {
-                int nummer = Convert.ToInt32(dataGridView_best_bestellliste.Rows[e.RowIndex].Cells[0].Value);
-                int menge = Convert.ToInt32(dataGridView_best_bestellliste.Rows[e.RowIndex].Cells[1].Value);
-                bool eil = Convert.ToBoolean(dataGridView_best_bestellliste.Rows[e.RowIndex].Cells[2].Value);
-            }
-           
-
-            
-
-            //TODO: Falls User bei falschen Eingaben am Wechseln der Zeile gehindert werden soll (dazu Hilfsmethoden statt void bool):
-            //e.Cancel = !bestellliste_menge_validieren(mengeCell) && !bestellliste_nummer_validieren(nummerCell);
-        }
-
         //Hilfsmethode für die Validierung der "Nummer"-Spalte in der Bestellliste
         private bool bestellliste_nummer_validieren(DataGridViewCell teilenummerCell)
         {
@@ -1712,6 +1992,21 @@ namespace ghostSCSIM
                 e.Handled = true;
 
 
+        }
+       
+        //Keypress Handling speziell für das Direktverkauf DataGridView
+        private void direktverkauf_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (dataGridView_dirver_direktverkauf.CurrentCell.ColumnIndex == 2 || dataGridView_dirver_direktverkauf.CurrentCell.ColumnIndex == 3)
+            {
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && !(e.KeyChar == ','))
+                    e.Handled = true;
+            }
+            else
+            {
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                    e.Handled = true;
+            }
         }
        
         /// <summary>

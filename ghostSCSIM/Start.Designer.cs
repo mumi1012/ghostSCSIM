@@ -2668,6 +2668,7 @@
             this.tabControl_kp.Name = "tabControl_kp";
             this.tabControl_kp.SelectedIndex = 0;
             this.tabControl_kp.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl_kp.Leave += new System.EventHandler(this.tabControl_kapa_Leave);
             // 
             // tabPage_kp_uebersicht
             // 
@@ -2706,6 +2707,8 @@
             resources.ApplyResources(this.dataGridView_kp_uebersicht, "dataGridView_kp_uebersicht");
             this.dataGridView_kp_uebersicht.Name = "dataGridView_kp_uebersicht";
             this.dataGridView_kp_uebersicht.RowHeadersVisible = false;
+            this.dataGridView_kp_uebersicht.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dataGridView_kp_uebersicht_EditingControlShowing);
+            this.dataGridView_kp_uebersicht.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dataGridView_kp_uebersicht_ValidateRow);
             // 
             // Column_kp_uebersicht_arbeitsplatz
             // 
@@ -3025,6 +3028,7 @@
             resources.ApplyResources(this.dataGridView_best_bestellliste, "dataGridView_best_bestellliste");
             this.dataGridView_best_bestellliste.Name = "dataGridView_best_bestellliste";
             this.dataGridView_best_bestellliste.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_best_bestellliste_CellContentClick);
+            this.dataGridView_best_bestellliste.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dataGridView_best_bestellliste_EditingControlShowing);
             this.dataGridView_best_bestellliste.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dataGridView_best_bestellliste_ValidateRow);
             // 
             // tabReihenfolge
@@ -3131,6 +3135,7 @@
             this.tabControl_dirver.Name = "tabControl_dirver";
             this.tabControl_dirver.SelectedIndex = 0;
             this.tabControl_dirver.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl_dirver.Leave += new System.EventHandler(this.tabControl_dirver_Leave);
             // 
             // tabPage_dirver_direktverkauf
             // 
@@ -3159,6 +3164,8 @@
             this.dataGridView_dirver_direktverkauf.Name = "dataGridView_dirver_direktverkauf";
             this.dataGridView_dirver_direktverkauf.RowHeadersVisible = false;
             this.dataGridView_dirver_direktverkauf.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_dirver_direktverkauf_CellContentClick);
+            this.dataGridView_dirver_direktverkauf.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dataGridView_dirver_direktverkauf_EditingControlShowing);
+            this.dataGridView_dirver_direktverkauf.RowValidating += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dataGridView_dirver_direktverkauf_ValidateRow);
             // 
             // Column_dirver_direktverkauf_nummer
             // 

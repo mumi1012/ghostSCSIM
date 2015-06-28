@@ -47,31 +47,6 @@ namespace ghostSCSIM.XML
 
             writer.WriteStartElement("selldirect");
 
-            //Nur falls kein P1 zum Direktverkauf ausgewählt wurde
-            writer.WriteStartElement("item");
-            writer.WriteAttributeString("article", "1");
-            writer.WriteAttributeString("quantity", "0");
-            writer.WriteAttributeString("price", "0.0");
-            writer.WriteAttributeString("penalty", "0.0");
-            writer.WriteEndElement();
-
-            //Nur falls kein P2 zum Direktverkauf ausgewählt wurde
-            writer.WriteStartElement("item");
-            writer.WriteAttributeString("article", "2");
-            writer.WriteAttributeString("quantity", "0");
-            writer.WriteAttributeString("price", "0.0");
-            writer.WriteAttributeString("penalty", "0.0");
-            writer.WriteEndElement();
-
-            //Nur falls kein P3 zum Direktverkauf ausgewählt wurde
-            writer.WriteStartElement("item");
-            writer.WriteAttributeString("article", "3");
-            writer.WriteAttributeString("quantity", "0");
-            writer.WriteAttributeString("price", "0.0");
-            writer.WriteAttributeString("penalty", "0.0");
-            writer.WriteEndElement();
-
-            //TODO: Daten für Direktverkauf
             foreach (Direktverkauf dv in outputData.getDirektverkauf())
             {
                 writer.WriteStartElement("item");
@@ -86,42 +61,41 @@ namespace ghostSCSIM.XML
 
             writer.WriteStartElement("orderlist");
 
-            //TODO: Daten für Bestellungen
-            foreach (Bestellposition bp in outputData.getBestellung())
+            foreach (Bestellung best in outputData.getBestellung())
             {
+                int bestelltyp = (best.getBestellTyp() == Bestelltyp.F) ? 4 : 5;
+
                 writer.WriteStartElement("order");
-                writer.WriteAttributeString("article", bp.getTeil().getNummer().ToString());
-                writer.WriteAttributeString("quantity", bp.getMenge().ToString());
-                writer.WriteAttributeString("modus", bp.getBestelltyp().ToString());
+                writer.WriteAttributeString("article", best.getTeil().getNummer().ToString());
+                writer.WriteAttributeString("quantity", best.getMenge().ToString());
+                writer.WriteAttributeString("modus", bestelltyp.ToString());
                 writer.WriteEndElement();
             }
             writer.WriteEndElement();
 
             writer.WriteStartElement("productionlist");
-            //TODO: Daten für Produktionsplan
-            /*
-            foreach (Teil t in produktionsplan)
+
+            foreach (Reihenfolgenplanung rfp in outputData.getFertigung())
             {
                 writer.WriteStartElement("production");
-                writer.WriteAttributeString("article", t.getTeilenummer());
-                writer.WriteAttributeString("quantity", t.getMenge());
+                writer.WriteAttributeString("article", rfp.getTeil());
+                writer.WriteAttributeString("quantity", rfp.getMenge().ToString());
                 writer.WriteEndElement();
             }
-            */
+
             writer.WriteEndElement();
 
             writer.WriteStartElement("workingtimelist");
-            //TODO: Daten für Schichten/Überstunden
-            /*
-            foreach (Arbeitsplatz ap in arbeitsplaetze)
+
+            foreach (Arbeitsplatz ap in outputData.getArbeitsplaetze())
             {
                 writer.WriteStartElement("workingtime");
-                writer.WriteAttributeString("station", ap.getArbeitsplatznummer());
-                writer.WriteAttributeString("shift", ap.getSchicht());
-                writer.WriteAttributeString("overtime", ap.getUeberstunden());
+                writer.WriteAttributeString("station", ap.getApNummer().ToString());
+                writer.WriteAttributeString("shift", ap.getSchichten().ToString());
+                writer.WriteAttributeString("overtime", ap.getUeberstunden().ToString());
                 writer.WriteEndElement();
             }
-            */
+
             writer.WriteEndElement();
 
             writer.WriteEndDocument();

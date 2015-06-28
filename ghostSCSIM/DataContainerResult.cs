@@ -17,16 +17,20 @@ namespace ghostSCSIM
         private int vertriebswunschP1;
         private int vertriebswunschP2;
         private int vertriebswunschP3;
-        private List<Bestellposition> bestellung;
+        private List<Bestellung> bestellung;
         private List<Direktverkauf> direktverkauf;
+        private List<Arbeitsplatz> arbeitsplaetze;
+        private LinkedList<Reihenfolgenplanung> fertigung;
 
         private DataContainerResult()
         {
             this.vertriebswunschP1 = 0;
             this.vertriebswunschP2 = 0;
             this.vertriebswunschP3 = 0;
-            this.bestellung = new List<Bestellposition>();
+            this.bestellung = new List<Bestellung>();
             this.direktverkauf = new List<Direktverkauf>();
+            this.arbeitsplaetze = new List<Arbeitsplatz>();
+            this.fertigung = new LinkedList<Reihenfolgenplanung>();
         }
 
 
@@ -62,23 +66,29 @@ namespace ghostSCSIM
         }
 
 
-        public List<Bestellposition> getBestellung()
+        public List<Bestellung> getBestellung()
         {
             return bestellung;
         }
 
-        public void setBestellung(List<Bestellposition> bestellung)
+        public void setBestellung(List<Bestellung> bestellung)
         {
             this.bestellung.Clear();
-            foreach (Bestellposition bp in bestellung)
+            foreach (Bestellung bp in bestellung)
             {
-                this.bestellung.Add(new Bestellposition(bp.getTeil(), bp.getMenge(), bp.isEilbestellung()));
+                int bestelltyp = (bp.getBestellTyp() == Bestelltyp.F) ? 4 : 5;
+                this.bestellung.Add(new Bestellung(bp.getTeil(), bp.getMenge(), bestelltyp));
             }
+            }
+
+        public void addBestellung(Teil teil, int menge, int bestelltyp)
+        {
+            this.bestellung.Add(new Bestellung(teil, menge, bestelltyp));
         }
 
-        public void addBestellposition(Teil teil, int menge, bool eilbestellung)
+        public void clearBestellung()
         {
-            this.bestellung.Add(new Bestellposition(teil, menge, eilbestellung));
+            this.bestellung.Clear();
         }
 
 
@@ -100,10 +110,57 @@ namespace ghostSCSIM
         {
             this.direktverkauf.Add(new Direktverkauf(teil, menge, preis, strafe));
         }
-
-        public void addDirektverakuf(Direktverkauf dv)
+        
+        public void removeDirektverkaufAtIndex(int index)
         {
-            this.direktverkauf.Add(dv);
+            this.direktverkauf.RemoveAt(index);
+        }
+
+        public void clearDirektverkauf()
+        {
+            this.direktverkauf.Clear();
+        }
+
+
+        public List<Arbeitsplatz> getArbeitsplaetze()
+        {
+            return arbeitsplaetze;
+        }
+
+        public void setArbeitsplaetze(List<Arbeitsplatz> arbeitsplaetze)
+        {
+            this.arbeitsplaetze.Clear();
+            foreach (Arbeitsplatz ap in arbeitsplaetze)
+            {
+                this.arbeitsplaetze.Add(new Arbeitsplatz(ap.getApNummer(), ap.getUeberstunden(), ap.getSchichten()));
+            }
+        }
+
+        public void addArbeitsplatz(int arbeitsplatznummer, int ueberstunden, int schichten)
+        {
+            this.arbeitsplaetze.Add(new Arbeitsplatz(arbeitsplatznummer, ueberstunden, schichten));
+        }
+
+        public void clearArbeitsplaetze()
+        {
+            this.arbeitsplaetze.Clear();
+        }
+
+
+        public LinkedList<Reihenfolgenplanung> getFertigung()
+        {
+            return fertigung;
+            }
+
+        public void setFertigung(LinkedList<Reihenfolgenplanung> fertigung)
+        {
+            this.fertigung.Clear();
+            this.fertigung = new LinkedList<Reihenfolgenplanung>(fertigung);
+        }
+
+        public void clearFertigung()
+        {
+            this.fertigung.Clear();
         }
 
     }

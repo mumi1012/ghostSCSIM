@@ -519,6 +519,72 @@
   <data name="&gt;&gt;tabProdplan.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;button_kapa_safe.Name" xml:space="preserve">
+    <value>button_kapa_safe</value>
+  </data>
+  <data name="&gt;&gt;button_kapa_safe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_kapa_safe.Parent" xml:space="preserve">
+    <value>tabPage_kp_uebersicht</value>
+  </data>
+  <data name="&gt;&gt;button_kapa_safe.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_uebersicht.Name" xml:space="preserve">
+    <value>dataGridView_kp_uebersicht</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_uebersicht.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_uebersicht.Parent" xml:space="preserve">
+    <value>tabPage_kp_uebersicht</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_uebersicht.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPage_kp_uebersicht.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage_kp_uebersicht.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tabPage_kp_uebersicht.Size" type="System.Drawing.Size, System.Drawing">
+    <value>835, 420</value>
+  </data>
+  <data name="tabPage_kp_uebersicht.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage_kp_uebersicht.Text" xml:space="preserve">
+    <value>Übersicht</value>
+  </data>
+  <data name="tabPage_kp_uebersicht.ToolTipText" xml:space="preserve">
+    <value>Übersicht zur Kapazitätsplanung</value>
+  </data>
+  <data name="&gt;&gt;tabPage_kp_uebersicht.Name" xml:space="preserve">
+    <value>tabPage_kp_uebersicht</value>
+  </data>
+  <data name="&gt;&gt;tabPage_kp_uebersicht.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_kp_uebersicht.Parent" xml:space="preserve">
+    <value>tabControl_kp</value>
+  </data>
+  <data name="&gt;&gt;tabPage_kp_uebersicht.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabControl_kp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tabControl_kp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tabControl_kp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>843, 446</value>
+  </data>
+  <data name="tabControl_kp.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;tabControl_kp.Name" xml:space="preserve">
     <value>tabControl_kp</value>
   </data>
@@ -1468,7 +1534,7 @@
     <value>3</value>
   </data>
   <data name="tabControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+    <value>Fill</value>
   </data>
   <data name="tabControl2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8pt</value>
@@ -12063,6 +12129,57 @@
   <metadata name="Column_kp_uebersicht_arbeitsplatz.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="Column_kp_uebersicht_kapazitaetsbedarf.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_kp_uebersicht_ruestzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_kp_uebersicht_preKapazitaetsbedarf.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_kp_uebersicht_preRuestzeit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_kp_uebersicht_gesamt.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_kp_uebersicht_ueberstunden.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_kp_uebersicht_2schicht.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_kp_uebersicht_3schicht.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="dataGridView_kp_uebersicht.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dataGridView_kp_uebersicht.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="dataGridView_kp_uebersicht.Size" type="System.Drawing.Size, System.Drawing">
+    <value>829, 414</value>
+  </data>
+  <data name="dataGridView_kp_uebersicht.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_uebersicht.Name" xml:space="preserve">
+    <value>dataGridView_kp_uebersicht</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_uebersicht.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_uebersicht.Parent" xml:space="preserve">
+    <value>tabPage_kp_uebersicht</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_kp_uebersicht.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="Column_kp_uebersicht_arbeitsplatz.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="Column_kp_uebersicht_arbeitsplatz.HeaderText" xml:space="preserve">
     <value>Arbeitsplatz</value>
   </data>
@@ -12687,8 +12804,11 @@
   <data name="&gt;&gt;tabReihenfolgePlanung.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="tabControl_reihen.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="tabControl_reihen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>2, 2</value>
   </data>
   <data name="tabControl_reihen.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -12891,6 +13011,45 @@
   <metadata name="Column_dirver_direktverkauf_nummer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="Column_dirver_direktverkauf_menge.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_dirver_direktverkauf_preis.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_dirver_direktverkauf_strafe.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column_dirver_direktverkauf_loeschenButton.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="dataGridView_dirver_direktverkauf.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dataGridView_dirver_direktverkauf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="dataGridView_dirver_direktverkauf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>829, 414</value>
+  </data>
+  <data name="dataGridView_dirver_direktverkauf.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_dirver_direktverkauf.Name" xml:space="preserve">
+    <value>dataGridView_dirver_direktverkauf</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_dirver_direktverkauf.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_dirver_direktverkauf.Parent" xml:space="preserve">
+    <value>tabPage_dirver_direktverkauf</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_dirver_direktverkauf.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="Column_dirver_direktverkauf_nummer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="Column_dirver_direktverkauf_nummer.HeaderText" xml:space="preserve">
     <value>Teilenummer</value>
   </data>
@@ -12930,8 +13089,11 @@
   <data name="&gt;&gt;tabUebersicht_uebersicht.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="tabControl_uebersicht.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="tabControl_uebersicht.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>2, 2</value>
   </data>
   <data name="tabControl_uebersicht.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
