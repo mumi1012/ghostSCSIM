@@ -31,8 +31,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.spracheToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -408,11 +408,9 @@
             this.Column_rf_rfPlanung_Zurueck = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column_rf_rfPlanung_Index = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabDirektV = new System.Windows.Forms.TabPage();
-            this.btn_direv_reset = new System.Windows.Forms.Button();
             this.tabControl_dirver = new System.Windows.Forms.TabControl();
             this.tabPage_dirver_direktverkauf = new System.Windows.Forms.TabPage();
             this.btn_direv_reset = new System.Windows.Forms.Button();
-            this.btn_direv_save = new System.Windows.Forms.Button();
             this.dataGridView_dirver_direktverkauf = new System.Windows.Forms.DataGridView();
             this.Column_dirver_direktverkauf_nummer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column_dirver_direktverkauf_menge = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -2898,6 +2896,7 @@
             resources.ApplyResources(this.dataGridView_best_kaufteileverbrauch, "dataGridView_best_kaufteileverbrauch");
             this.dataGridView_best_kaufteileverbrauch.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dataGridView_best_kaufteileverbrauch.Name = "dataGridView_best_kaufteileverbrauch";
+            this.dataGridView_best_kaufteileverbrauch.ReadOnly = true;
             this.dataGridView_best_kaufteileverbrauch.RowHeadersVisible = false;
             this.dataGridView_best_kaufteileverbrauch.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView_best_kaufteileverbrauch.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_best_kaufteileverbrauch_CellContentClick);
@@ -2922,12 +2921,14 @@
             // 
             resources.ApplyResources(this.Column_best_kaufteileverbrauch_Lagerzugang, "Column_best_kaufteileverbrauch_Lagerzugang");
             this.Column_best_kaufteileverbrauch_Lagerzugang.Name = "Column_best_kaufteileverbrauch_Lagerzugang";
+            this.Column_best_kaufteileverbrauch_Lagerzugang.ReadOnly = true;
             // 
             // Column_best_kaufteileverbrauch_produktionskritisch
             // 
             this.Column_best_kaufteileverbrauch_produktionskritisch.DividerWidth = 3;
             resources.ApplyResources(this.Column_best_kaufteileverbrauch_produktionskritisch, "Column_best_kaufteileverbrauch_produktionskritisch");
             this.Column_best_kaufteileverbrauch_produktionskritisch.Name = "Column_best_kaufteileverbrauch_produktionskritisch";
+            this.Column_best_kaufteileverbrauch_produktionskritisch.ReadOnly = true;
             this.Column_best_kaufteileverbrauch_produktionskritisch.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Column_best_kaufteileverbrauch_produktionskritisch.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
@@ -2950,12 +2951,14 @@
             // 
             resources.ApplyResources(this.Column_best_kaufteileverbrauch_bruttobedarfN2, "Column_best_kaufteileverbrauch_bruttobedarfN2");
             this.Column_best_kaufteileverbrauch_bruttobedarfN2.Name = "Column_best_kaufteileverbrauch_bruttobedarfN2";
+            this.Column_best_kaufteileverbrauch_bruttobedarfN2.ReadOnly = true;
             // 
             // Column_best_kaufteileverbrauch_bruttobedarfN3
             // 
             this.Column_best_kaufteileverbrauch_bruttobedarfN3.DividerWidth = 3;
             resources.ApplyResources(this.Column_best_kaufteileverbrauch_bruttobedarfN3, "Column_best_kaufteileverbrauch_bruttobedarfN3");
             this.Column_best_kaufteileverbrauch_bruttobedarfN3.Name = "Column_best_kaufteileverbrauch_bruttobedarfN3";
+            this.Column_best_kaufteileverbrauch_bruttobedarfN3.ReadOnly = true;
             // 
             // Column_best_kaufteileverbrauch_bestandN1
             // 
@@ -2976,12 +2979,14 @@
             // 
             resources.ApplyResources(this.Column_best_kaufteileverbrauch_bestandN3, "Column_best_kaufteileverbrauch_bestandN3");
             this.Column_best_kaufteileverbrauch_bestandN3.Name = "Column_best_kaufteileverbrauch_bestandN3";
+            this.Column_best_kaufteileverbrauch_bestandN3.ReadOnly = true;
             // 
             // Column_best_kaufteileverbrauch_bestandN4
             // 
             this.Column_best_kaufteileverbrauch_bestandN4.DividerWidth = 3;
             resources.ApplyResources(this.Column_best_kaufteileverbrauch_bestandN4, "Column_best_kaufteileverbrauch_bestandN4");
             this.Column_best_kaufteileverbrauch_bestandN4.Name = "Column_best_kaufteileverbrauch_bestandN4";
+            this.Column_best_kaufteileverbrauch_bestandN4.ReadOnly = true;
             // 
             // tabPage_best_bestellung
             // 
@@ -3019,7 +3024,6 @@
             this.dataGridView_best_bestellliste.AllowUserToAddRows = false;
             this.dataGridView_best_bestellliste.AllowUserToResizeColumns = false;
             this.dataGridView_best_bestellliste.AllowUserToResizeRows = false;
-            this.dataGridView_best_bestellliste.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_best_bestellliste.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView_best_bestellliste.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_best_bestellliste.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3036,18 +3040,18 @@
             // 
             // Column_best_bestelliste_nummer
             // 
-            dataGridViewCellStyle1.Format = "N0";
-            dataGridViewCellStyle1.NullValue = null;
-            this.Column_best_bestelliste_nummer.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Format = "N0";
+            dataGridViewCellStyle5.NullValue = null;
+            this.Column_best_bestelliste_nummer.DefaultCellStyle = dataGridViewCellStyle5;
             resources.ApplyResources(this.Column_best_bestelliste_nummer, "Column_best_bestelliste_nummer");
             this.Column_best_bestelliste_nummer.Name = "Column_best_bestelliste_nummer";
             this.Column_best_bestelliste_nummer.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Column_best_bestelliste_menge
             // 
-            dataGridViewCellStyle2.Format = "N0";
-            dataGridViewCellStyle2.NullValue = null;
-            this.Column_best_bestelliste_menge.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Format = "N0";
+            dataGridViewCellStyle6.NullValue = null;
+            this.Column_best_bestelliste_menge.DefaultCellStyle = dataGridViewCellStyle6;
             resources.ApplyResources(this.Column_best_bestelliste_menge, "Column_best_bestelliste_menge");
             this.Column_best_bestelliste_menge.Name = "Column_best_bestelliste_menge";
             this.Column_best_bestelliste_menge.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -3116,6 +3120,7 @@
             resources.ApplyResources(this.dataGridView_rf_planung, "dataGridView_rf_planung");
             this.dataGridView_rf_planung.Name = "dataGridView_rf_planung";
             this.dataGridView_rf_planung.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_rf_planung_CellContentClick);
+            this.dataGridView_rf_planung.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dataGridView_rf_planung_EditingControlShowing);
             // 
             // Column_rf_rfPlanung_Teil
             // 
@@ -3161,18 +3166,11 @@
             // 
             // tabDirektV
             // 
-            this.tabDirektV.Controls.Add(this.btn_direv_reset);
             this.tabDirektV.Controls.Add(this.tabControl_dirver);
             this.tabDirektV.Controls.Add(this.btn_direv_save);
             resources.ApplyResources(this.tabDirektV, "tabDirektV");
             this.tabDirektV.Name = "tabDirektV";
             this.tabDirektV.UseVisualStyleBackColor = true;
-            // 
-            // btn_direv_reset
-            // 
-            resources.ApplyResources(this.btn_direv_reset, "btn_direv_reset");
-            this.btn_direv_reset.Name = "btn_direv_reset";
-            this.btn_direv_reset.UseVisualStyleBackColor = true;
             // 
             // tabControl_dirver
             // 
@@ -3184,6 +3182,7 @@
             // 
             // tabPage_dirver_direktverkauf
             // 
+            this.tabPage_dirver_direktverkauf.Controls.Add(this.btn_direv_reset);
             this.tabPage_dirver_direktverkauf.Controls.Add(this.dataGridView_dirver_direktverkauf);
             resources.ApplyResources(this.tabPage_dirver_direktverkauf, "tabPage_dirver_direktverkauf");
             this.tabPage_dirver_direktverkauf.Name = "tabPage_dirver_direktverkauf";
@@ -3195,18 +3194,10 @@
             this.btn_direv_reset.Name = "btn_direv_reset";
             this.btn_direv_reset.UseVisualStyleBackColor = true;
             // 
-            // btn_direv_save
-            // 
-            resources.ApplyResources(this.btn_direv_save, "btn_direv_save");
-            this.btn_direv_save.Name = "btn_direv_save";
-            this.btn_direv_save.UseVisualStyleBackColor = true;
-            this.btn_direv_save.Click += new System.EventHandler(this.btn_direv_save_Click);
-            // 
             // dataGridView_dirver_direktverkauf
             // 
             this.dataGridView_dirver_direktverkauf.AllowUserToResizeColumns = false;
             this.dataGridView_dirver_direktverkauf.AllowUserToResizeRows = false;
-            this.dataGridView_dirver_direktverkauf.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_dirver_direktverkauf.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView_dirver_direktverkauf.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_dirver_direktverkauf.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -3215,8 +3206,8 @@
             this.Column_dirver_direktverkauf_preis,
             this.Column_dirver_direktverkauf_strafe,
             this.Column_dirver_direktverkauf_loeschenButton});
-            resources.ApplyResources(this.dataGridView_dirver_direktverkauf, "dataGridView_dirver_direktverkauf");
             this.dataGridView_dirver_direktverkauf.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            resources.ApplyResources(this.dataGridView_dirver_direktverkauf, "dataGridView_dirver_direktverkauf");
             this.dataGridView_dirver_direktverkauf.Name = "dataGridView_dirver_direktverkauf";
             this.dataGridView_dirver_direktverkauf.RowHeadersVisible = false;
             this.dataGridView_dirver_direktverkauf.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_dirver_direktverkauf_CellContentClick);
@@ -3243,7 +3234,6 @@
             // 
             // Column_dirver_direktverkauf_strafe
             // 
-            this.Column_dirver_direktverkauf_strafe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column_dirver_direktverkauf_strafe.DividerWidth = 3;
             this.Column_dirver_direktverkauf_strafe.FillWeight = 101F;
             resources.ApplyResources(this.Column_dirver_direktverkauf_strafe, "Column_dirver_direktverkauf_strafe");
@@ -3555,7 +3545,6 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Start";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Start_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -3981,11 +3970,6 @@
         private System.Windows.Forms.TabPage tabUebersicht;
         private System.Windows.Forms.TabControl tabControl_uebersicht;
         private System.Windows.Forms.TabPage tabUebersicht_uebersicht;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_nummer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_menge;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_preis;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_strafe;
-        private System.Windows.Forms.DataGridViewButtonColumn Column_dirver_direktverkauf_loeschenButton;
         private System.Windows.Forms.DataGridView dataGridView_uebersicht_dirver;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_uebersicht_dirver_nummer;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_uebersicht_dirver_menge;
@@ -4044,6 +4028,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column_best_bestelliste_menge;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column_best_bestelliste_eil;
         private System.Windows.Forms.DataGridViewButtonColumn Column_best_bestelliste_loeschenButton;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_nummer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_menge;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_preis;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column_dirver_direktverkauf_strafe;
+        private System.Windows.Forms.DataGridViewButtonColumn Column_dirver_direktverkauf_loeschenButton;
        
 
     }

@@ -303,6 +303,12 @@ namespace ghostSCSIM
         #region Validierung
 
         //Nur numerische Zeichen als Eingabe beim Kapazitätsplan DataGridView akzeptieren
+        private void dataGridView_rf_planung_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            e.Control.KeyPress += new KeyPressEventHandler(onlynum_KeyPress);
+        }
+
+        //Nur numerische Zeichen als Eingabe beim Kapazitätsplan DataGridView akzeptieren
         private void dataGridView_kp_uebersicht_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
         {
             e.Control.KeyPress += new KeyPressEventHandler(onlynum_KeyPress);
@@ -1478,7 +1484,7 @@ namespace ghostSCSIM
             dataGridView_best_bestellliste.Rows.Add();
             int newIndex = dataGridView_best_bestellliste.Rows.Count-1;
             dataGridView_best_bestellliste.CurrentCell = this.dataGridView_best_bestellliste["Column_best_bestelliste_nummer", newIndex];
-
+            dataGridView_best_bestellliste.BeginEdit(true);
         }
 
         //Bestellliste speichern
