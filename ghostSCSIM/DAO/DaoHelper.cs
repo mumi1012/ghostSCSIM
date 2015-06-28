@@ -278,7 +278,7 @@ namespace ghostSCSIM.DAO
 
             foreach (DataRow dr in result.Rows)
             {
-                ArbeitsplatzKapa eiDing = new ArbeitsplatzKapa((int)dr["Arbeitsplatz"], (int)dr["Teil_FK"], (int)dr["Rüstzeit"], (int)dr["Fertigungszeit"]);
+                ArbeitsplatzKapa eiDing = new ArbeitsplatzKapa((int)dr["Arbeitsplatz"], (int)dr["Teil_FK"], (int)dr["Rüstzeit"], (int)dr["Fertigungszeit"], 0, 0, 0, 0, false, false);
                 listeArbeitsplatzKapa.Add(eiDing);
             }
 

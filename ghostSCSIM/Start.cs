@@ -62,9 +62,11 @@ namespace ghostSCSIM
 
         //Wird 1 wenn Produktionsplan Übersicht geklickt wurde
         private int uebersicht_geklickt = 0;
+        private int uebersicht_kapa = 0;
 
         //Wird 1 wenn Bestellung Tab geklickt wurde
         private int bestellung_geklickt = 0;
+
 
         //index für die neuen Reihenfolgen
         private int reihenIndex = 1000;
@@ -77,6 +79,9 @@ namespace ghostSCSIM
                  
         //Direktverkäufe
         private List<Direktverkauf> direktverkaufListe = new List<Direktverkauf>();
+
+       //Kapazität
+        private List<ArbeitsplatzKapa> kapazitaetsListe = new List<ArbeitsplatzKapa>();
 
         //Validierung
         private CellValidation validateCell = new CellValidation();
@@ -622,7 +627,7 @@ namespace ghostSCSIM
         /// private void tab1_SelectedIndexChanged(object sender, EventArgs e)
         private void fillTabsWithData(object sender, EventArgs e)
         {
-            #region tabPrognose
+           #region tabPrognose
             if (tabControl1.SelectedTab == tabControl1.TabPages["tabPrognose"])
             {
                
@@ -646,76 +651,102 @@ namespace ghostSCSIM
                 
                 if (xmlData.getXmlImported())
                 {
-                    dataGridView_kp_uebersicht.Rows.Clear();
-                    List<ArbeitsplatzKapa> liste = dao.getArbeitsplaetzeKapa();
-                    
-                    if (dataGridView_kp_uebersicht.Rows.Count == 0)
+                    if (uebersicht_kapa == 1)
                     {
-                        for (int i = 1; i < 16; i++)
+                        dataGridView_kp_uebersicht.Rows.Clear();
+                        kapazitaetsListe.Clear();
+                        if (dataGridView_kp_uebersicht.Rows.Count == 0)
                         {
-                            List<ArbeitsplatzKapa> l = liste.Where(arbeitsplatzKapa => arbeitsplatzKapa.getArbeitsplatz().Equals(i)).ToList();
-                            int kapazitätsbedarf = 0;
-                            int ruestzeit = 0;
-                            int rueckstaendez = 0;
-                            List<Waitinglist> waitinglist = xmlData.waitingListWorkstations.getWaitinglistByArbeitsplatzId(i);
-                            int rueckstaendekapa = 0;
-                            foreach (Waitinglist wl in waitinglist)
+                            List<ArbeitsplatzKapa> liste = dao.getArbeitsplaetzeKapa();
+                            int x = 0;
+                            for (int i = 1; i < 16; i++)
                             {
-                                rueckstaendekapa += wl.timeneed;
-                                int teil = wl.item;
-                                ArbeitsplatzKapa t = liste.Single(a => a.getTeilfk().Equals(teil) && a.getArbeitsplatz().Equals(i));
-                                rueckstaendez += t.getRuestzeit();
-                            }
-                            rueckstaendekapa += xmlData.ordersInWork.getInBearbeitungMengeByArbeitsplatz(i);
+                                List<ArbeitsplatzKapa> l = liste.Where(arbeitsplatzKapa => arbeitsplatzKapa.getArbeitsplatz().Equals(i)).ToList();
+                                int kapazitätsbedarf = 0;
+                                int ruestzeit = 0;
+                                int rueckstaendez = 0;
+                                List<Waitinglist> waitinglist = xmlData.waitingListWorkstations.getWaitinglistByArbeitsplatzId(i);
+                                int rueckstaendekapa = 0;
+                                foreach (Waitinglist wl in waitinglist)
+                                {
+                                    rueckstaendekapa += wl.timeneed;
+                                    int teil = wl.item;
+                                    ArbeitsplatzKapa t = liste.Single(a => a.getTeilfk().Equals(teil) && a.getArbeitsplatz().Equals(i));
+                                    rueckstaendez += t.getRuestzeit();
+                                }
+                                rueckstaendekapa += xmlData.ordersInWork.getInBearbeitungMengeByArbeitsplatz(i);
 
-                            foreach (ArbeitsplatzKapa ak in l)
-                            {
+                                foreach (ArbeitsplatzKapa ak in l)
+                                {
 
-                                int teil = ak.getTeilfk();
-                                int ruestz = ak.getRuestzeit();
-                                int fertigz = ak.getFertigungszeit();
+                                    x = ak.getTeilfk();
+                                    int ruestz = ak.getRuestzeit();
+                                    int fertigz = ak.getFertigungszeit();
 
-                                int kapazitätsbedarfTeil = 0;
-                                //Nur wenn der Key gefunden wurde berechnen, sonst KeyNotFoundException
-                                if(teile_Produktion.TryGetValue(teil, out kapazitätsbedarfTeil)) {
-                                   kapazitätsbedarfTeil = fertigz * teile_Produktion[teil];
+                                    int kapazitätsbedarfTeil = 0;
+                                    //Nur wenn der Key gefunden wurde berechnen, sonst KeyNotFoundException
+                                    if (teile_Produktion.TryGetValue(x, out kapazitätsbedarfTeil))
+                                    {
+                                        kapazitätsbedarfTeil = fertigz * teile_Produktion[x];
+                                    }
+
+
+                                    ruestzeit += ruestz;
+                                    kapazitätsbedarf += kapazitätsbedarfTeil;
+
                                 }
 
-                               
-                                ruestzeit += ruestz;
-                                kapazitätsbedarf += kapazitätsbedarfTeil;
+                                int gesamt = kapazitätsbedarf + ruestzeit + rueckstaendekapa + rueckstaendez;
+
+
+                                if (gesamt > 2400 && gesamt <= 3600)
+                                {
+                                    int differenz = gesamt - 2400;
+                                    int ueberstunden = differenz / 5;
+                                    ArbeitsplatzKapa a = new ArbeitsplatzKapa(i, x, int.Parse(ruestzeit.ToString()), int.Parse(kapazitätsbedarf.ToString()), int.Parse(rueckstaendekapa.ToString()), int.Parse(rueckstaendez.ToString()), int.Parse(gesamt.ToString()), int.Parse(ueberstunden.ToString()), false, false);
+                                    kapazitaetsListe.Add(a);
+                                }
+
+                                else if (gesamt > 3600 && gesamt <= 7200)
+                                {
+                                    ArbeitsplatzKapa a = new ArbeitsplatzKapa(i, x, int.Parse(ruestzeit.ToString()), int.Parse(kapazitätsbedarf.ToString()), int.Parse(rueckstaendekapa.ToString()), int.Parse(rueckstaendez.ToString()), int.Parse(gesamt.ToString()), 0, true, false);
+                                    kapazitaetsListe.Add(a);
+                                }
+                                else if (gesamt > 7200 && gesamt <= 8400)
+                                {
+                                    int differenz = gesamt - 7200;
+                                    int ueberstunden = differenz / 5;
+                                    ArbeitsplatzKapa a = new ArbeitsplatzKapa(i, x, int.Parse(ruestzeit.ToString()), int.Parse(kapazitätsbedarf.ToString()), int.Parse(rueckstaendekapa.ToString()), int.Parse(rueckstaendez.ToString()), int.Parse(gesamt.ToString()), int.Parse(ueberstunden.ToString()), true, false);
+                                    kapazitaetsListe.Add(a);
+                                }
+                                else if (gesamt > 8400)
+                                {
+                                    ArbeitsplatzKapa a = new ArbeitsplatzKapa(i, x, int.Parse(ruestzeit.ToString()), int.Parse(kapazitätsbedarf.ToString()), int.Parse(rueckstaendekapa.ToString()), int.Parse(rueckstaendez.ToString()), int.Parse(gesamt.ToString()), 0, true, true);
+                                    kapazitaetsListe.Add(a);
+                                }
+                                else
+                                {
+                                    ArbeitsplatzKapa a = new ArbeitsplatzKapa(i, x, int.Parse(ruestzeit.ToString()), int.Parse(kapazitätsbedarf.ToString()), int.Parse(rueckstaendekapa.ToString()), int.Parse(rueckstaendez.ToString()), int.Parse(gesamt.ToString()), 0, false, false);
+                                    kapazitaetsListe.Add(a);
+                                }
 
                             }
-
-                            int gesamt = kapazitätsbedarf + ruestzeit + rueckstaendekapa + rueckstaendez;
-
-                            if (gesamt > 2400 && gesamt <= 3600)
-                            { 
-                                int differenz = gesamt - 2400;
-                                int ueberstunden = differenz / 5;
-                                dataGridView_kp_uebersicht.Rows.Add(i, kapazitätsbedarf.ToString(), ruestzeit.ToString(), rueckstaendekapa.ToString(), rueckstaendez.ToString(), gesamt.ToString(), ueberstunden.ToString(), true, false);
-                            }
-
-                            else if (gesamt > 3600 && gesamt <= 7200)
+                            for (int index = 0; index < kapazitaetsListe.Count; index++)
                             {
-                                dataGridView_kp_uebersicht.Rows.Add(i, kapazitätsbedarf.ToString(), ruestzeit.ToString(), rueckstaendekapa.ToString(), rueckstaendez.ToString(), gesamt.ToString(), "0", true, false);
+                                ArbeitsplatzKapa ak = kapazitaetsListe[index];
+                                dataGridView_kp_uebersicht.Rows.Add(ak.getArbeitsplatz(), ak.getFertigungszeit(), ak.getRuestzeit(), ak.getRueckstaendekapa(), ak.getRueckstaendez(), ak.getGesamt(), ak.getUeberstunden(), ak.getSchicht2(), ak.getSchicht3());
                             }
-                            else if (gesamt > 7200)
-                            {
-                                dataGridView_kp_uebersicht.Rows.Add(i, kapazitätsbedarf.ToString(), ruestzeit.ToString(), rueckstaendekapa.ToString(), rueckstaendez.ToString(), gesamt.ToString(), "0", true, true);
-                            }
-                            else
-                                dataGridView_kp_uebersicht.Rows.Add(i, kapazitätsbedarf.ToString(), ruestzeit.ToString(), rueckstaendekapa.ToString(), rueckstaendez.ToString(), gesamt.ToString(), "0", false, false);
+                            uebersicht_kapa = 0;
                         }
                     }
+                    }
+                    
                 }
-            }
             #endregion
             #region tabBestellung
             //Bestellungen Tabs befüllen
             if (tabControl1.SelectedTab == tabControl1.TabPages["tabBestellung"])
             {
-                
                 if (xmlData.getXmlImported())
                 {
 
@@ -1827,6 +1858,7 @@ namespace ghostSCSIM
             }
         }
 
+
         public void fillProdprogrammWithData(object sender, EventArgs e)
         {
             if (xmlData.getXmlImported()) { 
@@ -1849,6 +1881,7 @@ namespace ghostSCSIM
                 {
                     if (xmlData.getXmlImported())
                     {
+                        uebersicht_kapa = 1;
                         uebersicht_geklickt = 1;
                         getProduktionsDict();
                         List<Teil> teilListe = new List<Teil>();
@@ -2143,9 +2176,21 @@ namespace ghostSCSIM
 
         private void button_kapa_safe_Click(object sender, EventArgs e)
         {
-            /*DataGridView sender1 = dataGridView_kp_uebersicht;
-            var senderGrid = (DataGridView)sender1;     
-            foreach*/
+            DataGridView sender1 = dataGridView_kp_uebersicht;
+            var senderGrid = (DataGridView)sender1;
+            foreach (ArbeitsplatzKapa ak in kapazitaetsListe)
+            {
+                for (int i = 0; i < dataGridView_kp_uebersicht.Rows.Count; i++)
+                {
+                    if (int.Parse(dataGridView_kp_uebersicht.Rows[i].Cells["Column_kp_uebersicht_arbeitsplatz"].Value.ToString()) == ak.getArbeitsplatz() && int.Parse(dataGridView_kp_uebersicht.Rows[i].Cells["Column_kp_uebersicht_ueberstunden"].Value.ToString()) != ak.getUeberstunden())
+                    {
+                        int ueberstunden = int.Parse(dataGridView_kp_uebersicht.Rows[i].Cells["Column_kp_uebersicht_ueberstunden"].Value.ToString());
+                        ak.setUeberstunden(ueberstunden);
+                    }
+
+                }
+            }
+
 
         }
 
